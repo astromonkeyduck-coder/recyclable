@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { LocationSearch } from "@/components/facilities/location-search";
 import { FilterBar } from "@/components/facilities/filter-bar";
 import { FacilityCard } from "@/components/facilities/facility-card";
@@ -13,6 +14,14 @@ import { filterFacilities, type FacilityFilters } from "@/lib/facilities/filter"
 import type { Coordinates, FacilityWithDistance } from "@/lib/facilities/types";
 import { FACILITY_CATEGORY_META } from "@/lib/facilities/types";
 
+const INITIAL_LIMIT = 20;
+const LOAD_MORE_LIMIT = 10;
+
+type FacilitiesResponse = {
+  facilities: FacilityWithDistance[];
+  total: number;
+};
+
 export default function FacilitiesPage() {
   const geo = useGeolocation();
   const [locationLabel, setLocationLabel] = useState<string | null>(null);
@@ -21,10 +30,20 @@ export default function FacilitiesPage() {
 
   const coords = geo.coordinates;
 
-  const { data: facilities, isLoading } = useQuery<FacilityWithDistance[]>({
+  const {
+    data,
+    isLoading,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+  } = useInfiniteQuery<FacilitiesResponse>({
     queryKey: ["facilities", coords?.lat, coords?.lng],
-    queryFn: async () => {
+    queryFn: async ({ pageParam }) => {
+      const offset = pageParam as number;
+      const limit = offset === 0 ? INITIAL_LIMIT : LOAD_MORE_LIMIT;
       const params = new URLSearchParams();
+      params.set("limit", String(limit));
+      params.set("offset", String(offset));
       if (coords) {
         params.set("lat", String(coords.lat));
         params.set("lng", String(coords.lng));
@@ -34,13 +53,26 @@ export default function FacilitiesPage() {
       if (!res.ok) throw new Error("Failed to load facilities");
       return res.json();
     },
+    initialPageParam: 0,
+    getNextPageParam: (_lastPage, allPages) => {
+      const total = allPages[0]?.total ?? 0;
+      const loaded = allPages.reduce((sum, p) => sum + p.facilities.length, 0);
+      return loaded < total ? loaded : undefined;
+    },
     staleTime: 5 * 60_000,
   });
 
-  const filtered = useMemo(() => {
-    if (!facilities) return [];
-    return filterFacilities(facilities, filters);
-  }, [facilities, filters]);
+  const allFacilities = useMemo(
+    () => data?.pages.flatMap((p) => p.facilities) ?? [],
+    [data],
+  );
+  const totalCount = data?.pages[0]?.total ?? 0;
+
+  const filtered = useMemo(
+    () => filterFacilities(allFacilities, filters),
+    [allFacilities, filters],
+  );
+  const remaining = totalCount - allFacilities.length;
 
   const handleLocationSelect = useCallback(
     (c: Coordinates, label: string) => {
@@ -106,7 +138,7 @@ export default function FacilitiesPage() {
         <FilterBar
           filters={filters}
           onChange={setFilters}
-          resultCount={filtered.length}
+          resultCount={totalCount}
         />
       </div>
 
@@ -136,7 +168,9 @@ export default function FacilitiesPage() {
                   </motion.div>
 
                   <div>
-                    <p className="font-semibold text-sm">{filtered.length} facilities found</p>
+                    <p className="font-semibold text-sm">
+                      {filtered.length} of {totalCount} facilities
+                    </p>
                     <p className="text-xs text-muted-foreground mt-1">
                       {locationLabel ?? "Near your location"}
                     </p>
@@ -225,6 +259,32 @@ export default function FacilitiesPage() {
                   />
                 ))}
               </AnimatePresence>
+
+              {hasNextPage && (
+                <motion.div
+                  className="flex flex-col items-center gap-2 py-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="gap-2"
+                    onClick={() => fetchNextPage()}
+                    disabled={isFetchingNextPage}
+                  >
+                    {isFetchingNextPage ? (
+                      <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                    ) : null}
+                    {isFetchingNextPage
+                      ? "Loading..."
+                      : `Load ${Math.min(LOAD_MORE_LIMIT, remaining)} more`}
+                  </Button>
+                  <span className="text-[11px] text-muted-foreground">
+                    Showing {allFacilities.length} of {totalCount}
+                  </span>
+                </motion.div>
+              )}
             </div>
           )}
         </div>

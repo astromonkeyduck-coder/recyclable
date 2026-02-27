@@ -2,10 +2,11 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { Recycle, MapPin, X, Bookmark } from "lucide-react";
+import { Recycle, MapPin, Bookmark } from "lucide-react";
 import { SearchBar } from "@/components/search/search-bar";
 import { SearchChips } from "@/components/search/search-chips";
 import { ScanUploadButtons } from "@/components/scan/scan-button";
+import { EcoStatsBanner } from "@/components/common/eco-stats-banner";
 import { SeasonalTipBanner } from "@/components/common/seasonal-tip-banner";
 import { useSearchHistory } from "@/hooks/use-search-history";
 import { useLocation } from "@/hooks/use-location";
@@ -14,6 +15,7 @@ import { useProviderList } from "@/hooks/use-provider";
 import { useSfx } from "@/components/sfx/sfx-context";
 import { CATEGORY_META } from "@/lib/utils/categories";
 import { CategoryIcon } from "@/components/common/category-icon";
+import { ItemHistoryTimeline } from "@/components/common/item-history-timeline";
 import { Suspense, useEffect, useState } from "react";
 
 function HomeContent() {
@@ -96,6 +98,11 @@ function HomeContent() {
 
       <SeasonalTipBanner />
 
+      {/* Eco stats */}
+      <div className="mt-6 w-full flex justify-center">
+        <EcoStatsBanner />
+      </div>
+
       {/* Saved items */}
       {bookmarks.length > 0 && (
         <motion.div
@@ -138,74 +145,20 @@ function HomeContent() {
         </motion.div>
       )}
 
-      {/* Recent searches */}
-      {history.length > 0 && (
-        <motion.div
-          className="mt-6 w-full max-w-lg"
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="mb-3 flex items-center justify-between">
-            <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-              Recent searches
-            </p>
-            <button
-              type="button"
-              onClick={() => {
-                sfx.tap();
-                clearHistory();
-              }}
-              className="text-xs text-muted-foreground hover:text-foreground"
-            >
-              Clear
-            </button>
-          </div>
-          <div
-            className="flex flex-wrap justify-center gap-2"
-            role="list"
-            aria-label="Recent searches"
-          >
-            {history.slice(0, 10).map((entry, i) => {
-              const meta = entry.category
-                ? CATEGORY_META[entry.category]
-                : null;
-              return (
-                <div
-                  key={`${entry.query}-${i}`}
-                  className="group relative inline-flex focus-within:z-10"
-                  role="listitem"
-                >
-                  <button
-                    onClick={() => {
-                      sfx.pop();
-                      addToHistory(entry.query, entry.category);
-                      router.push(
-                        `/result?q=${encodeURIComponent(entry.query)}&provider=${providerId}`
-                      );
-                    }}
-                    className="inline-flex items-center gap-1.5 rounded-full border bg-muted/50 pl-3 pr-7 py-1.5 text-xs font-medium text-muted-foreground hover:border-foreground/30 hover:text-foreground active:scale-95 focus-visible:ring-2 focus-visible:ring-ring"
-                  >
-                    {meta && <CategoryIcon category={entry.category!} size="xs" bare />}
-                    {entry.query}
-                  </button>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      sfx.tap();
-                      removeFromHistory(entry.query);
-                    }}
-                    className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full p-0.5 text-muted-foreground/50 opacity-0 transition-opacity hover:text-foreground group-hover:opacity-100 group-focus-within:opacity-100 focus-visible:opacity-100 focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-full"
-                    aria-label={`Remove ${entry.query}`}
-                  >
-                    <X className="h-3 w-3" />
-                  </button>
-                </div>
-              );
-            })}
-          </div>
-        </motion.div>
-      )}
+      {/* History timeline */}
+      <ItemHistoryTimeline
+        history={history}
+        providerId={providerId}
+        onSelect={(entry) => {
+          sfx.pop();
+          addToHistory(entry.query, entry.category);
+          router.push(
+            `/result?q=${encodeURIComponent(entry.query)}&provider=${providerId}`
+          );
+        }}
+        onRemove={removeFromHistory}
+        onClear={clearHistory}
+      />
 
       {/* Popular searches */}
       <motion.div

@@ -1,0 +1,3903 @@
+{
+  "id": "us-specialty",
+  "coverage": {
+    "country": "US"
+  },
+  "source": {
+    "name": "US Specialty Recycling Facilities",
+    "url": "https://isthisrecyclable.com",
+    "license": "Generated facility data"
+  },
+  "facilities": [
+    {
+      "id": "spec-981",
+      "name": "New York Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "7812 Recovery Ln",
+        "city": "New York",
+        "region": "NY",
+        "postalCode": "10001",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 40.7506,
+        "lng": -74.0481
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-982",
+      "name": "Los Angeles Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "6691 Salvage Rd",
+        "city": "Los Angeles",
+        "region": "CA",
+        "postalCode": "91301",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 34.0239,
+        "lng": -118.2505
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-983",
+      "name": "Chicago Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "8995 Green Blvd",
+        "city": "Chicago",
+        "region": "IL",
+        "postalCode": "60608",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.8387,
+        "lng": -87.5765
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-984",
+      "name": "Houston Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "4132 Warehouse Row",
+        "city": "Houston",
+        "region": "TX",
+        "postalCode": "77001",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 29.7707,
+        "lng": -95.329
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-985",
+      "name": "Phoenix Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "9467 Warehouse Row",
+        "city": "Phoenix",
+        "region": "AZ",
+        "postalCode": "85016",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.4183,
+        "lng": -112.0193
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-986",
+      "name": "Philadelphia Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "3454 Recovery Ln",
+        "city": "Philadelphia",
+        "region": "PA",
+        "postalCode": "19123",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.9165,
+        "lng": -75.1169
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-987",
+      "name": "Philadelphia Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "8166 Industrial Ave",
+        "city": "Philadelphia",
+        "region": "PA",
+        "postalCode": "19111",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.9258,
+        "lng": -75.1226
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-988",
+      "name": "San Antonio Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "8524 Green Blvd",
+        "city": "San Antonio",
+        "region": "TX",
+        "postalCode": "78240",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 29.4447,
+        "lng": -98.4654
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-989",
+      "name": "San Diego Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "310 Green Blvd",
+        "city": "San Diego",
+        "region": "CA",
+        "postalCode": "92109",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.7506,
+        "lng": -117.2033
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-990",
+      "name": "San Diego Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "6116 Industrial Ave",
+        "city": "San Diego",
+        "region": "CA",
+        "postalCode": "92117",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.7369,
+        "lng": -117.1427
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-991",
+      "name": "Dallas Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "8686 Recovery Ln",
+        "city": "Dallas",
+        "region": "TX",
+        "postalCode": "75201",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.7479,
+        "lng": -96.767
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-992",
+      "name": "Dallas Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "6719 Warehouse Row",
+        "city": "Dallas",
+        "region": "TX",
+        "postalCode": "75219",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.777,
+        "lng": -96.843
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-993",
+      "name": "Austin Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "4778 Recovery Ln",
+        "city": "Austin",
+        "region": "TX",
+        "postalCode": "78704",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 30.246,
+        "lng": -97.8014
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-994",
+      "name": "Jacksonville Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "958 Industrial Ave",
+        "city": "Jacksonville",
+        "region": "FL",
+        "postalCode": "32207",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 30.3059,
+        "lng": -81.6737
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-995",
+      "name": "San Jose Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "1337 Industrial Ave",
+        "city": "San Jose",
+        "region": "CA",
+        "postalCode": "95134",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 37.3436,
+        "lng": -121.8395
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-996",
+      "name": "Fort Worth Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "3440 Industrial Ave",
+        "city": "Fort Worth",
+        "region": "TX",
+        "postalCode": "76101",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.7495,
+        "lng": -97.3215
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-997",
+      "name": "Columbus Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "5626 Recovery Ln",
+        "city": "Columbus",
+        "region": "OH",
+        "postalCode": "43206",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.9672,
+        "lng": -82.9949
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-998",
+      "name": "Columbus Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "1058 Recovery Ln",
+        "city": "Columbus",
+        "region": "OH",
+        "postalCode": "43202",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.9366,
+        "lng": -83.0158
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-999",
+      "name": "Charlotte Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "1599 Industrial Ave",
+        "city": "Charlotte",
+        "region": "NC",
+        "postalCode": "28226",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.2524,
+        "lng": -80.9018
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1000",
+      "name": "Charlotte Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "5640 Warehouse Row",
+        "city": "Charlotte",
+        "region": "NC",
+        "postalCode": "28202",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.213,
+        "lng": -80.7993
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1001",
+      "name": "Indianapolis Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "7453 Warehouse Row",
+        "city": "Indianapolis",
+        "region": "IN",
+        "postalCode": "46205",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.7328,
+        "lng": -86.2101
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1002",
+      "name": "San Francisco Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "5926 Industrial Ave",
+        "city": "San Francisco",
+        "region": "CA",
+        "postalCode": "94107",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 37.7917,
+        "lng": -122.3894
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1003",
+      "name": "San Francisco Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "4954 Green Blvd",
+        "city": "San Francisco",
+        "region": "CA",
+        "postalCode": "94114",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 37.7327,
+        "lng": -122.4196
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1004",
+      "name": "Seattle Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "9130 Warehouse Row",
+        "city": "Seattle",
+        "region": "WA",
+        "postalCode": "98109",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 47.5624,
+        "lng": -122.3089
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-1005",
+      "name": "Seattle Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "3257 Salvage Rd",
+        "city": "Seattle",
+        "region": "WA",
+        "postalCode": "98103",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 47.5985,
+        "lng": -122.3694
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1006",
+      "name": "Denver Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "996 Green Blvd",
+        "city": "Denver",
+        "region": "CO",
+        "postalCode": "80204",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.716,
+        "lng": -105.0012
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1007",
+      "name": "Denver Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "8275 Recovery Ln",
+        "city": "Denver",
+        "region": "CO",
+        "postalCode": "80205",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.6818,
+        "lng": -104.9764
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1008",
+      "name": "Washington Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "6818 Green Blvd",
+        "city": "Washington",
+        "region": "DC",
+        "postalCode": "20003",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.948,
+        "lng": -77.0119
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1009",
+      "name": "Washington Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "8560 Recovery Ln",
+        "city": "Washington",
+        "region": "DC",
+        "postalCode": "20001",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.9497,
+        "lng": -77.0469
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1010",
+      "name": "Nashville Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "4372 Recovery Ln",
+        "city": "Nashville",
+        "region": "TN",
+        "postalCode": "37203",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.1773,
+        "lng": -86.7716
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1011",
+      "name": "Nashville Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "8581 Salvage Rd",
+        "city": "Nashville",
+        "region": "TN",
+        "postalCode": "37203",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.2107,
+        "lng": -86.7761
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1012",
+      "name": "Oklahoma City Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "3180 Green Blvd",
+        "city": "Oklahoma City",
+        "region": "OK",
+        "postalCode": "73114",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.5099,
+        "lng": -97.5671
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1013",
+      "name": "El Paso Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "5432 Salvage Rd",
+        "city": "El Paso",
+        "region": "TX",
+        "postalCode": "79924",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 31.7708,
+        "lng": -106.4981
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-1014",
+      "name": "Boston Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "476 Industrial Ave",
+        "city": "Boston",
+        "region": "MA",
+        "postalCode": "02108",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 42.3163,
+        "lng": -71.0203
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1015",
+      "name": "Portland Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "1109 Industrial Ave",
+        "city": "Portland",
+        "region": "OR",
+        "postalCode": "97203",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 45.4826,
+        "lng": -122.6261
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1016",
+      "name": "Las Vegas Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "3618 Warehouse Row",
+        "city": "Las Vegas",
+        "region": "NV",
+        "postalCode": "89121",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.179,
+        "lng": -115.1766
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1017",
+      "name": "Las Vegas Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "809 Warehouse Row",
+        "city": "Las Vegas",
+        "region": "NV",
+        "postalCode": "89109",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.1311,
+        "lng": -115.0798
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-1018",
+      "name": "Memphis Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "6158 Warehouse Row",
+        "city": "Memphis",
+        "region": "TN",
+        "postalCode": "38112",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.1781,
+        "lng": -90.0846
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1019",
+      "name": "Louisville Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "3830 Industrial Ave",
+        "city": "Louisville",
+        "region": "KY",
+        "postalCode": "40201",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.2437,
+        "lng": -85.8041
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1020",
+      "name": "Baltimore Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "3984 Green Blvd",
+        "city": "Baltimore",
+        "region": "MD",
+        "postalCode": "21202",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.3465,
+        "lng": -76.6426
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1021",
+      "name": "Baltimore Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "7973 Recovery Ln",
+        "city": "Baltimore",
+        "region": "MD",
+        "postalCode": "21213",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.2355,
+        "lng": -76.5619
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1022",
+      "name": "Milwaukee Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "5716 Recovery Ln",
+        "city": "Milwaukee",
+        "region": "WI",
+        "postalCode": "53201",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 43.0225,
+        "lng": -87.8962
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-1023",
+      "name": "Albuquerque Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "4171 Salvage Rd",
+        "city": "Albuquerque",
+        "region": "NM",
+        "postalCode": "87108",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.0436,
+        "lng": -106.6408
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1024",
+      "name": "Albuquerque Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "4752 Industrial Ave",
+        "city": "Albuquerque",
+        "region": "NM",
+        "postalCode": "87106",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.0885,
+        "lng": -106.6609
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1025",
+      "name": "Tucson Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "6862 Warehouse Row",
+        "city": "Tucson",
+        "region": "AZ",
+        "postalCode": "85701",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.253,
+        "lng": -110.9361
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1026",
+      "name": "Fresno Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "8772 Salvage Rd",
+        "city": "Fresno",
+        "region": "CA",
+        "postalCode": "93710",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.7031,
+        "lng": -119.8299
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-1027",
+      "name": "Sacramento Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "5881 Industrial Ave",
+        "city": "Sacramento",
+        "region": "CA",
+        "postalCode": "95816",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.5764,
+        "lng": -121.4366
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1028",
+      "name": "Mesa Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "8020 Recovery Ln",
+        "city": "Mesa",
+        "region": "AZ",
+        "postalCode": "85203",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.4499,
+        "lng": -111.8574
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1029",
+      "name": "Kansas City Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "6710 Industrial Ave",
+        "city": "Kansas City",
+        "region": "MO",
+        "postalCode": "64106",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.0873,
+        "lng": -94.5431
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1030",
+      "name": "Kansas City Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "9727 Green Blvd",
+        "city": "Kansas City",
+        "region": "MO",
+        "postalCode": "64108",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.1356,
+        "lng": -94.5341
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1031",
+      "name": "Atlanta Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "1931 Warehouse Row",
+        "city": "Atlanta",
+        "region": "GA",
+        "postalCode": "30305",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.7805,
+        "lng": -84.3746
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1032",
+      "name": "Atlanta Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "9295 Salvage Rd",
+        "city": "Atlanta",
+        "region": "GA",
+        "postalCode": "30312",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.8021,
+        "lng": -84.3536
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1033",
+      "name": "Omaha Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "9148 Warehouse Row",
+        "city": "Omaha",
+        "region": "NE",
+        "postalCode": "68101",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.2624,
+        "lng": -95.9692
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1034",
+      "name": "Omaha Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "1283 Green Blvd",
+        "city": "Omaha",
+        "region": "NE",
+        "postalCode": "68106",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.3021,
+        "lng": -95.9914
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1035",
+      "name": "Colorado Springs Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "2875 Green Blvd",
+        "city": "Colorado Springs",
+        "region": "CO",
+        "postalCode": "80906",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.8654,
+        "lng": -104.8537
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1036",
+      "name": "Colorado Springs Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "2787 Industrial Ave",
+        "city": "Colorado Springs",
+        "region": "CO",
+        "postalCode": "80905",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.8768,
+        "lng": -104.8794
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1037",
+      "name": "Raleigh Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "6977 Industrial Ave",
+        "city": "Raleigh",
+        "region": "NC",
+        "postalCode": "27609",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.7737,
+        "lng": -78.6375
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1038",
+      "name": "Raleigh Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "9425 Warehouse Row",
+        "city": "Raleigh",
+        "region": "NC",
+        "postalCode": "27601",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.7873,
+        "lng": -78.6358
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1039",
+      "name": "Long Beach Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "2943 Recovery Ln",
+        "city": "Long Beach",
+        "region": "CA",
+        "postalCode": "90806",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.8049,
+        "lng": -118.1385
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1040",
+      "name": "Virginia Beach Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "4864 Salvage Rd",
+        "city": "Virginia Beach",
+        "region": "VA",
+        "postalCode": "23452",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.8633,
+        "lng": -75.977
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1041",
+      "name": "Virginia Beach Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "524 Warehouse Row",
+        "city": "Virginia Beach",
+        "region": "VA",
+        "postalCode": "23451",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.8057,
+        "lng": -75.9984
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1042",
+      "name": "Miami Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "5906 Recovery Ln",
+        "city": "Miami",
+        "region": "FL",
+        "postalCode": "33127",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 25.7407,
+        "lng": -80.1806
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1043",
+      "name": "Oakland Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "4997 Green Blvd",
+        "city": "Oakland",
+        "region": "CA",
+        "postalCode": "94602",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 37.7962,
+        "lng": -122.3013
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1044",
+      "name": "Oakland Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "4762 Green Blvd",
+        "city": "Oakland",
+        "region": "CA",
+        "postalCode": "94603",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 37.7706,
+        "lng": -122.2136
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1045",
+      "name": "Minneapolis Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "1681 Industrial Ave",
+        "city": "Minneapolis",
+        "region": "MN",
+        "postalCode": "55408",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 44.9647,
+        "lng": -93.2718
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1046",
+      "name": "Tampa Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "1867 Warehouse Row",
+        "city": "Tampa",
+        "region": "FL",
+        "postalCode": "33603",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 27.9226,
+        "lng": -82.4125
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1047",
+      "name": "Tampa Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "3842 Green Blvd",
+        "city": "Tampa",
+        "region": "FL",
+        "postalCode": "33607",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 27.9518,
+        "lng": -82.4036
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1048",
+      "name": "Tulsa Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "8727 Green Blvd",
+        "city": "Tulsa",
+        "region": "OK",
+        "postalCode": "74110",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.1044,
+        "lng": -96.0485
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1049",
+      "name": "Arlington Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "2183 Salvage Rd",
+        "city": "Arlington",
+        "region": "TX",
+        "postalCode": "76002",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.7093,
+        "lng": -97.099
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1050",
+      "name": "New Orleans Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "5623 Warehouse Row",
+        "city": "New Orleans",
+        "region": "LA",
+        "postalCode": "70112",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 29.9628,
+        "lng": -90.078
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1051",
+      "name": "New Orleans Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "7829 Recovery Ln",
+        "city": "New Orleans",
+        "region": "LA",
+        "postalCode": "70115",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 29.9947,
+        "lng": -90.0743
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1052",
+      "name": "Wichita Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "6665 Industrial Ave",
+        "city": "Wichita",
+        "region": "KS",
+        "postalCode": "67204",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 37.7181,
+        "lng": -97.2913
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1053",
+      "name": "Cleveland Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "7243 Industrial Ave",
+        "city": "Cleveland",
+        "region": "OH",
+        "postalCode": "44108",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.4849,
+        "lng": -81.6615
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1054",
+      "name": "Cleveland Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "973 Industrial Ave",
+        "city": "Cleveland",
+        "region": "OH",
+        "postalCode": "44105",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.4562,
+        "lng": -81.6438
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1055",
+      "name": "Bakersfield Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "4809 Industrial Ave",
+        "city": "Bakersfield",
+        "region": "CA",
+        "postalCode": "93305",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.3569,
+        "lng": -119.0246
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1056",
+      "name": "Aurora Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "2347 Recovery Ln",
+        "city": "Aurora",
+        "region": "CO",
+        "postalCode": "80016",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.7569,
+        "lng": -104.8314
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1057",
+      "name": "Anaheim Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "3835 Industrial Ave",
+        "city": "Anaheim",
+        "region": "CA",
+        "postalCode": "92806",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.858,
+        "lng": -117.9333
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1058",
+      "name": "Anaheim Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "2275 Green Blvd",
+        "city": "Anaheim",
+        "region": "CA",
+        "postalCode": "92805",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.8681,
+        "lng": -117.8575
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1059",
+      "name": "Honolulu Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "1345 Salvage Rd",
+        "city": "Honolulu",
+        "region": "HI",
+        "postalCode": "96813",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 21.3634,
+        "lng": -157.8554
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1060",
+      "name": "Santa Ana Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "6972 Warehouse Row",
+        "city": "Santa Ana",
+        "region": "CA",
+        "postalCode": "92701",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.7428,
+        "lng": -117.9196
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1061",
+      "name": "Santa Ana Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "7555 Warehouse Row",
+        "city": "Santa Ana",
+        "region": "CA",
+        "postalCode": "92701",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.7336,
+        "lng": -117.8815
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1062",
+      "name": "Riverside Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "6422 Salvage Rd",
+        "city": "Riverside",
+        "region": "CA",
+        "postalCode": "92505",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.9196,
+        "lng": -117.4273
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1063",
+      "name": "Riverside Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "4751 Salvage Rd",
+        "city": "Riverside",
+        "region": "CA",
+        "postalCode": "92506",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.8939,
+        "lng": -117.3366
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1064",
+      "name": "Corpus Christi Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "9887 Warehouse Row",
+        "city": "Corpus Christi",
+        "region": "TX",
+        "postalCode": "78405",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 27.7943,
+        "lng": -97.3409
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1065",
+      "name": "Pittsburgh Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "8685 Salvage Rd",
+        "city": "Pittsburgh",
+        "region": "PA",
+        "postalCode": "15219",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 40.4453,
+        "lng": -80.0035
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-1066",
+      "name": "Lexington Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "7967 Industrial Ave",
+        "city": "Lexington",
+        "region": "KY",
+        "postalCode": "40502",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.0882,
+        "lng": -84.5486
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1067",
+      "name": "Anchorage Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "6016 Salvage Rd",
+        "city": "Anchorage",
+        "region": "AK",
+        "postalCode": "99501",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 61.1726,
+        "lng": -149.9538
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1068",
+      "name": "Stockton Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "449 Green Blvd",
+        "city": "Stockton",
+        "region": "CA",
+        "postalCode": "95202",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 37.9193,
+        "lng": -121.2985
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1069",
+      "name": "Stockton Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "9143 Warehouse Row",
+        "city": "Stockton",
+        "region": "CA",
+        "postalCode": "95202",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.0024,
+        "lng": -121.2489
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1070",
+      "name": "St. Louis Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "2823 Salvage Rd",
+        "city": "St. Louis",
+        "region": "MO",
+        "postalCode": "63112",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.6589,
+        "lng": -90.2222
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1071",
+      "name": "St. Louis Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "2211 Recovery Ln",
+        "city": "St. Louis",
+        "region": "MO",
+        "postalCode": "63102",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 38.6632,
+        "lng": -90.1645
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1072",
+      "name": "Cincinnati Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "2540 Green Blvd",
+        "city": "Cincinnati",
+        "region": "OH",
+        "postalCode": "45204",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.0954,
+        "lng": -84.4712
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1073",
+      "name": "Cincinnati Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "5549 Recovery Ln",
+        "city": "Cincinnati",
+        "region": "OH",
+        "postalCode": "45208",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.1462,
+        "lng": -84.5244
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1074",
+      "name": "St. Paul Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "7160 Industrial Ave",
+        "city": "St. Paul",
+        "region": "MN",
+        "postalCode": "55108",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 44.9434,
+        "lng": -93.1196
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1075",
+      "name": "Newark Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "8569 Industrial Ave",
+        "city": "Newark",
+        "region": "NJ",
+        "postalCode": "07103",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 40.7111,
+        "lng": -74.1881
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1076",
+      "name": "Greensboro Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "480 Green Blvd",
+        "city": "Greensboro",
+        "region": "NC",
+        "postalCode": "27407",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.0255,
+        "lng": -79.813
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1077",
+      "name": "Greensboro Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "7506 Recovery Ln",
+        "city": "Greensboro",
+        "region": "NC",
+        "postalCode": "27403",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.1304,
+        "lng": -79.8057
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1078",
+      "name": "Buffalo Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "8907 Industrial Ave",
+        "city": "Buffalo",
+        "region": "NY",
+        "postalCode": "14207",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 42.8924,
+        "lng": -78.9124
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1079",
+      "name": "Buffalo Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "4494 Industrial Ave",
+        "city": "Buffalo",
+        "region": "NY",
+        "postalCode": "14203",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 42.9285,
+        "lng": -78.8194
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1080",
+      "name": "Plano Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "1178 Warehouse Row",
+        "city": "Plano",
+        "region": "TX",
+        "postalCode": "75023",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.0063,
+        "lng": -96.7277
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1081",
+      "name": "Lincoln Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "5242 Warehouse Row",
+        "city": "Lincoln",
+        "region": "NE",
+        "postalCode": "68505",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 40.8486,
+        "lng": -96.7069
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1082",
+      "name": "Lincoln Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "5595 Recovery Ln",
+        "city": "Lincoln",
+        "region": "NE",
+        "postalCode": "68504",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 40.8387,
+        "lng": -96.7452
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1083",
+      "name": "Orlando Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "4129 Industrial Ave",
+        "city": "Orlando",
+        "region": "FL",
+        "postalCode": "32809",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 28.5849,
+        "lng": -81.3841
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1084",
+      "name": "Irvine Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "2716 Recovery Ln",
+        "city": "Irvine",
+        "region": "CA",
+        "postalCode": "92614",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.7426,
+        "lng": -117.8826
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1085",
+      "name": "Norfolk Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "660 Recovery Ln",
+        "city": "Norfolk",
+        "region": "VA",
+        "postalCode": "23507",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.9026,
+        "lng": -76.2696
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1086",
+      "name": "Norfolk Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "2322 Green Blvd",
+        "city": "Norfolk",
+        "region": "VA",
+        "postalCode": "23504",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.9057,
+        "lng": -76.2835
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1087",
+      "name": "Durham Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "2644 Green Blvd",
+        "city": "Durham",
+        "region": "NC",
+        "postalCode": "27713",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.0095,
+        "lng": -78.8955
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1088",
+      "name": "Madison Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "5370 Green Blvd",
+        "city": "Madison",
+        "region": "WI",
+        "postalCode": "53701",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 43.0852,
+        "lng": -89.4315
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1089",
+      "name": "Chandler Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "7200 Salvage Rd",
+        "city": "Chandler",
+        "region": "AZ",
+        "postalCode": "85226",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.342,
+        "lng": -111.8652
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1090",
+      "name": "Chandler Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "2984 Green Blvd",
+        "city": "Chandler",
+        "region": "AZ",
+        "postalCode": "85249",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.3543,
+        "lng": -111.8157
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1091",
+      "name": "Baton Rouge Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "9576 Green Blvd",
+        "city": "Baton Rouge",
+        "region": "LA",
+        "postalCode": "70810",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 30.4336,
+        "lng": -91.1785
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1092",
+      "name": "Lubbock Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "6173 Recovery Ln",
+        "city": "Lubbock",
+        "region": "TX",
+        "postalCode": "79404",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.5977,
+        "lng": -101.8645
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1093",
+      "name": "Scottsdale Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "5845 Industrial Ave",
+        "city": "Scottsdale",
+        "region": "AZ",
+        "postalCode": "85251",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.4876,
+        "lng": -111.8717
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1094",
+      "name": "Scottsdale Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "1028 Green Blvd",
+        "city": "Scottsdale",
+        "region": "AZ",
+        "postalCode": "85254",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.5283,
+        "lng": -111.8689
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1095",
+      "name": "Reno Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "5654 Salvage Rd",
+        "city": "Reno",
+        "region": "NV",
+        "postalCode": "89501",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 39.4714,
+        "lng": -119.8142
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1096",
+      "name": "Glendale Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "2551 Warehouse Row",
+        "city": "Glendale",
+        "region": "AZ",
+        "postalCode": "85304",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.5933,
+        "lng": -112.1885
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1097",
+      "name": "Glendale Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "6959 Salvage Rd",
+        "city": "Glendale",
+        "region": "AZ",
+        "postalCode": "85303",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.5248,
+        "lng": -112.1498
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1098",
+      "name": "Gilbert Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "5126 Recovery Ln",
+        "city": "Gilbert",
+        "region": "AZ",
+        "postalCode": "85297",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.3761,
+        "lng": -111.8433
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-1099",
+      "name": "Gilbert Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "3819 Green Blvd",
+        "city": "Gilbert",
+        "region": "AZ",
+        "postalCode": "85234",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.3495,
+        "lng": -111.8062
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1100",
+      "name": "Winston-Salem Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "1322 Green Blvd",
+        "city": "Winston-Salem",
+        "region": "NC",
+        "postalCode": "27105",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 36.1189,
+        "lng": -80.2516
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1101",
+      "name": "Boise Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "3280 Warehouse Row",
+        "city": "Boise",
+        "region": "ID",
+        "postalCode": "83704",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 43.6216,
+        "lng": -116.1918
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1102",
+      "name": "Richmond Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "9533 Warehouse Row",
+        "city": "Richmond",
+        "region": "VA",
+        "postalCode": "23226",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 37.495,
+        "lng": -77.3855
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1103",
+      "name": "Spokane Mattress Recycling",
+      "category": "dropoff",
+      "address": {
+        "street": "7253 Recovery Ln",
+        "city": "Spokane",
+        "region": "WA",
+        "postalCode": "99205",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 47.6116,
+        "lng": -117.4407
+      },
+      "acceptedMaterials": [
+        "mattresses",
+        "box springs",
+        "futons",
+        "crib mattresses"
+      ],
+      "hours": "Tue-Sat 9am-4pm",
+      "notes": "Fee per mattress applies. No wet or heavily soiled mattresses."
+    },
+    {
+      "id": "spec-1104",
+      "name": "Spokane Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "3360 Salvage Rd",
+        "city": "Spokane",
+        "region": "WA",
+        "postalCode": "99202",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 47.6697,
+        "lng": -117.4548
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1105",
+      "name": "Des Moines Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "2126 Salvage Rd",
+        "city": "Des Moines",
+        "region": "IA",
+        "postalCode": "50315",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.5589,
+        "lng": -93.5777
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1106",
+      "name": "Salt Lake City Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "6313 Warehouse Row",
+        "city": "Salt Lake City",
+        "region": "UT",
+        "postalCode": "84104",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 40.7485,
+        "lng": -111.8804
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1107",
+      "name": "Salt Lake City Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "6967 Warehouse Row",
+        "city": "Salt Lake City",
+        "region": "UT",
+        "postalCode": "84111",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 40.8094,
+        "lng": -111.9332
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1108",
+      "name": "Birmingham Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "4989 Salvage Rd",
+        "city": "Birmingham",
+        "region": "AL",
+        "postalCode": "35201",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.5317,
+        "lng": -86.7435
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1109",
+      "name": "Birmingham Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "4273 Green Blvd",
+        "city": "Birmingham",
+        "region": "AL",
+        "postalCode": "35206",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 33.5074,
+        "lng": -86.7456
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1110",
+      "name": "Rochester Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "7482 Industrial Ave",
+        "city": "Rochester",
+        "region": "NY",
+        "postalCode": "14606",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 43.1102,
+        "lng": -77.5936
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1111",
+      "name": "Tacoma Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "9737 Salvage Rd",
+        "city": "Tacoma",
+        "region": "WA",
+        "postalCode": "98406",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 47.21,
+        "lng": -122.4762
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1112",
+      "name": "Knoxville Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "1489 Industrial Ave",
+        "city": "Knoxville",
+        "region": "TN",
+        "postalCode": "37916",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.9575,
+        "lng": -83.964
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1113",
+      "name": "Knoxville Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "5675 Recovery Ln",
+        "city": "Knoxville",
+        "region": "TN",
+        "postalCode": "37917",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 35.905,
+        "lng": -83.9611
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1114",
+      "name": "Tallahassee Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "8788 Salvage Rd",
+        "city": "Tallahassee",
+        "region": "FL",
+        "postalCode": "32308",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 30.4817,
+        "lng": -84.228
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1115",
+      "name": "Providence Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "2195 Industrial Ave",
+        "city": "Providence",
+        "region": "RI",
+        "postalCode": "02907",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.8187,
+        "lng": -71.3639
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1116",
+      "name": "Bridgeport Scrap Metal Recyclers",
+      "category": "recycling_center",
+      "address": {
+        "street": "1172 Green Blvd",
+        "city": "Bridgeport",
+        "region": "CT",
+        "postalCode": "06601",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.1885,
+        "lng": -73.1436
+      },
+      "acceptedMaterials": [
+        "scrap metal",
+        "aluminum",
+        "copper",
+        "brass",
+        "steel",
+        "iron",
+        "stainless steel",
+        "wire"
+      ],
+      "hours": "Mon-Fri 7am-5pm, Sat 8am-12pm",
+      "notes": "Pays cash for scrap metal by weight."
+    },
+    {
+      "id": "spec-1117",
+      "name": "Bridgeport Used Oil Collection Center",
+      "category": "hazardous_waste",
+      "address": {
+        "street": "3394 Industrial Ave",
+        "city": "Bridgeport",
+        "region": "CT",
+        "postalCode": "06604",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.1528,
+        "lng": -73.224
+      },
+      "acceptedMaterials": [
+        "motor oil",
+        "cooking oil",
+        "transmission fluid",
+        "brake fluid",
+        "oil filters",
+        "antifreeze"
+      ],
+      "hours": "Mon-Sat 8am-5pm",
+      "notes": "Limit 5 gallons per visit. Must be in sealed containers."
+    },
+    {
+      "id": "spec-1118",
+      "name": "Little Rock Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "1073 Warehouse Row",
+        "city": "Little Rock",
+        "region": "AR",
+        "postalCode": "72205",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 34.8005,
+        "lng": -92.2609
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1119",
+      "name": "Hartford Paper Shredding & Recycling",
+      "category": "recycling_center",
+      "address": {
+        "street": "6065 Recovery Ln",
+        "city": "Hartford",
+        "region": "CT",
+        "postalCode": "06103",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.7763,
+        "lng": -72.6234
+      },
+      "acceptedMaterials": [
+        "paper",
+        "confidential documents",
+        "cardboard",
+        "magazines",
+        "junk mail",
+        "phone books"
+      ],
+      "hours": "Mon-Fri 8am-5pm",
+      "notes": "Free document shredding events monthly. Call for schedule."
+    },
+    {
+      "id": "spec-1120",
+      "name": "Hartford Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "9583 Recovery Ln",
+        "city": "Hartford",
+        "region": "CT",
+        "postalCode": "06103",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 41.7492,
+        "lng": -72.6162
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1121",
+      "name": "Chattanooga Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "5642 Warehouse Row",
+        "city": "Chattanooga",
+        "region": "TN",
+        "postalCode": "37402",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 34.9926,
+        "lng": -85.3121
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1122",
+      "name": "Jackson Tire Recycling Center",
+      "category": "dropoff",
+      "address": {
+        "street": "1172 Green Blvd",
+        "city": "Jackson",
+        "region": "MS",
+        "postalCode": "39202",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.2803,
+        "lng": -90.165
+      },
+      "acceptedMaterials": [
+        "tires",
+        "truck tires",
+        "bicycle tires",
+        "rubber"
+      ],
+      "hours": "Mon-Fri 8am-4:30pm",
+      "notes": "Small fee per tire. Call ahead for large quantities."
+    },
+    {
+      "id": "spec-1123",
+      "name": "Jackson Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "1205 Recovery Ln",
+        "city": "Jackson",
+        "region": "MS",
+        "postalCode": "39204",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.2648,
+        "lng": -90.1438
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1124",
+      "name": "Charleston Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "619 Green Blvd",
+        "city": "Charleston",
+        "region": "SC",
+        "postalCode": "29407",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.8288,
+        "lng": -79.9833
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1125",
+      "name": "Charleston Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "9911 Salvage Rd",
+        "city": "Charleston",
+        "region": "SC",
+        "postalCode": "29401",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.7941,
+        "lng": -79.9452
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    },
+    {
+      "id": "spec-1126",
+      "name": "Savannah Plastic Bag Drop-off",
+      "category": "plastic_bags",
+      "address": {
+        "street": "4639 Salvage Rd",
+        "city": "Savannah",
+        "region": "GA",
+        "postalCode": "31406",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.0291,
+        "lng": -81.0887
+      },
+      "acceptedMaterials": [
+        "plastic bags",
+        "plastic film",
+        "bubble wrap",
+        "shrink wrap",
+        "dry cleaning bags",
+        "bread bags",
+        "newspaper bags"
+      ],
+      "hours": "Mon-Sun 6am-10pm",
+      "notes": "Located in grocery store vestibule. Bags must be clean and dry."
+    },
+    {
+      "id": "spec-1127",
+      "name": "Savannah Textile Recovery",
+      "category": "textiles",
+      "address": {
+        "street": "7578 Salvage Rd",
+        "city": "Savannah",
+        "region": "GA",
+        "postalCode": "31401",
+        "country": "US"
+      },
+      "coordinates": {
+        "lat": 32.1365,
+        "lng": -81.1324
+      },
+      "acceptedMaterials": [
+        "clothing",
+        "shoes",
+        "textiles",
+        "linens",
+        "towels",
+        "blankets",
+        "curtains",
+        "stuffed animals"
+      ],
+      "hours": "24/7 outdoor drop box",
+      "notes": "Unattended drop box available 24/7. Items must be clean and dry."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "climate-iq",
+  "name": "Climate IQ",
+  "description": "Test your environmental knowledge with data-driven trivia.",
+  "icon": "🧠",
+  "color": "#8B5CF6",
+  "defaultTimeLimit": 20,
+  "questionsPerRound": 10,
+  "difficultyLevels": [
+    {
+      "id": "ciq-easy",
+      "label": "easy",
+      "questions": [
+        {"id":"ciq-e1","type":"multiple_choice","prompt":"How long does a plastic bottle take to decompose in a landfill?","options":["10 years","50 years","200 years","450+ years"],"correctAnswer":"450+ years","explanation":"Plastic bottles can take 450+ years to decompose. Some scientists estimate up to 1,000 years.","category":"waste","funFact":"Every piece of plastic ever made still exists somewhere on Earth."},
+        {"id":"ciq-e2","type":"true_false","prompt":"Glass is 100% recyclable and can be recycled endlessly.","options":["True","False"],"correctAnswer":"True","explanation":"Glass can be recycled over and over without any loss in quality or purity.","category":"materials"},
+        {"id":"ciq-e3","type":"multiple_choice","prompt":"What percentage of the world's ocean pollution is plastic?","options":["40%","60%","80%","95%"],"correctAnswer":"80%","explanation":"Approximately 80% of marine debris is plastic, mostly from land-based sources.","category":"waste","funFact":"By 2050, there could be more plastic than fish in the ocean by weight."},
+        {"id":"ciq-e4","type":"true_false","prompt":"Recycling one aluminum can saves enough energy to run a TV for 3 hours.","options":["True","False"],"correctAnswer":"True","explanation":"Recycling aluminum uses 95% less energy than making new aluminum from raw materials.","category":"energy"},
+        {"id":"ciq-e5","type":"multiple_choice","prompt":"Which country recycles the most waste?","options":["USA","Japan","Germany","Sweden"],"correctAnswer":"Germany","explanation":"Germany recycles about 67% of its waste, the highest rate of any major country.","category":"recycling"},
+        {"id":"ciq-e6","type":"multiple_choice","prompt":"How many trees does recycling one ton of paper save?","options":["5 trees","12 trees","17 trees","25 trees"],"correctAnswer":"17 trees","explanation":"Recycling one ton of paper saves 17 trees and 7,000 gallons of water.","category":"recycling"},
+        {"id":"ciq-e7","type":"true_false","prompt":"Food waste in landfills produces methane, a greenhouse gas.","options":["True","False"],"correctAnswer":"True","explanation":"Food decomposing anaerobically in landfills produces methane, which is 80x more potent than CO2 over 20 years.","category":"climate"},
+        {"id":"ciq-e8","type":"multiple_choice","prompt":"What is the most commonly littered item in the world?","options":["Plastic bottles","Cigarette butts","Food wrappers","Straws"],"correctAnswer":"Cigarette butts","explanation":"Cigarette filters are the most littered item globally — 4.5 trillion are discarded each year.","category":"waste","funFact":"Cigarette butts contain plastic (cellulose acetate) and take 10+ years to decompose."},
+        {"id":"ciq-e9","type":"multiple_choice","prompt":"How much of the plastic ever produced has been recycled?","options":["About 9%","About 25%","About 50%","About 75%"],"correctAnswer":"About 9%","explanation":"Only about 9% of all plastic ever produced has been recycled. 12% has been incinerated, and 79% is in landfills or the environment.","category":"recycling"},
+        {"id":"ciq-e10","type":"multiple_choice","prompt":"What does the number inside the recycling symbol on plastic mean?","options":["How many times it can be recycled","The type of plastic resin","The year it was made","Its recycling priority"],"correctAnswer":"The type of plastic resin","explanation":"The number (1-7) identifies the type of plastic resin, not whether it's recyclable.","category":"materials"}
+      ]
+    },
+    {
+      "id": "ciq-medium",
+      "label": "medium",
+      "questions": [
+        {"id":"ciq-m1","type":"multiple_choice","prompt":"What percentage of US household waste could be composted?","options":["10%","20%","30%","50%"],"correctAnswer":"30%","explanation":"About 30% of what we throw away is food scraps and yard waste that could be composted.","category":"waste"},
+        {"id":"ciq-m2","type":"multiple_choice","prompt":"How much water is saved by recycling one ton of paper?","options":["1,000 gallons","3,500 gallons","7,000 gallons","15,000 gallons"],"correctAnswer":"7,000 gallons","explanation":"Recycling paper saves massive amounts of water compared to making paper from virgin wood pulp.","category":"recycling"},
+        {"id":"ciq-m3","type":"true_false","prompt":"Biodegradable plastics break down in regular landfills.","options":["True","False"],"correctAnswer":"False","explanation":"Most biodegradable plastics need specific conditions (heat, oxygen) found only in industrial composting facilities, not landfills.","category":"materials"},
+        {"id":"ciq-m4","type":"multiple_choice","prompt":"What is the biggest source of greenhouse gas emissions globally?","options":["Transportation","Agriculture","Energy production","Waste management"],"correctAnswer":"Energy production","explanation":"Energy production (electricity and heat) accounts for about 25% of global greenhouse gas emissions.","category":"climate"},
+        {"id":"ciq-m5","type":"multiple_choice","prompt":"How many plastic bags are used worldwide each minute?","options":["100,000","500,000","1 million","2 million"],"correctAnswer":"1 million","explanation":"An estimated 1 million plastic bags are used every minute worldwide.","category":"waste","funFact":"The average plastic bag is used for just 12 minutes."},
+        {"id":"ciq-m6","type":"true_false","prompt":"Wishcycling (putting non-recyclable items in recycling hoping they get recycled) actually helps.","options":["True","False"],"correctAnswer":"False","explanation":"Wishcycling contaminates entire recycling loads, causing more waste, not less.","category":"recycling"},
+        {"id":"ciq-m7","type":"multiple_choice","prompt":"How long does a glass bottle take to decompose in a landfill?","options":["100 years","500 years","4,000 years","1 million+ years"],"correctAnswer":"1 million+ years","explanation":"Glass is incredibly durable and can take over 1 million years to decompose naturally.","category":"materials"},
+        {"id":"ciq-m8","type":"multiple_choice","prompt":"What percentage of e-waste is properly recycled globally?","options":["5%","17%","35%","50%"],"correctAnswer":"17%","explanation":"Only about 17% of electronic waste is formally collected and recycled worldwide.","category":"recycling","funFact":"E-waste contains more gold per ton than gold ore."},
+        {"id":"ciq-m9","type":"multiple_choice","prompt":"How many pounds of trash does the average American produce per day?","options":["2 pounds","4.4 pounds","6 pounds","8 pounds"],"correctAnswer":"4.4 pounds","explanation":"The average American generates about 4.4 pounds of trash per day, or about 1,600 pounds per year.","category":"waste"},
+        {"id":"ciq-m10","type":"true_false","prompt":"Recycling creates more jobs than landfilling the same amount of waste.","options":["True","False"],"correctAnswer":"True","explanation":"Recycling creates 10x more jobs than landfilling — about 36 jobs per 10,000 tons vs 6 for landfills.","category":"recycling"}
+      ]
+    },
+    {
+      "id": "ciq-hard",
+      "label": "hard",
+      "questions": [
+        {"id":"ciq-h1","type":"multiple_choice","prompt":"What year did the first plastic recycling symbol appear?","options":["1970","1988","1995","2001"],"correctAnswer":"1988","explanation":"The resin identification coding system was introduced in 1988 by the Society of the Plastics Industry.","category":"recycling"},
+        {"id":"ciq-h2","type":"multiple_choice","prompt":"Which plastic type is most commonly recycled?","options":["#1 PET","#2 HDPE","#5 PP","#4 LDPE"],"correctAnswer":"#1 PET","explanation":"PET (#1) is the most recycled plastic, commonly used for water and soda bottles.","category":"materials"},
+        {"id":"ciq-h3","type":"multiple_choice","prompt":"What is 'downcycling'?","options":["Recycling into a lower-quality product","Recycling at a slower rate","Composting underground","Sending waste to developing countries"],"correctAnswer":"Recycling into a lower-quality product","explanation":"Downcycling means recycling a material into something of lesser quality than the original.","category":"recycling"},
+        {"id":"ciq-h4","type":"true_false","prompt":"The Great Pacific Garbage Patch is a solid island of trash.","options":["True","False"],"correctAnswer":"False","explanation":"It's actually a vast area of microplastic particles suspended in the water — not a visible island.","category":"waste","funFact":"The Great Pacific Garbage Patch is twice the size of Texas."},
+        {"id":"ciq-h5","type":"multiple_choice","prompt":"What percentage of the world's oil production goes to making plastics?","options":["2%","4%","8%","14%"],"correctAnswer":"8%","explanation":"About 8% of the world's oil production is used to manufacture plastics.","category":"energy"},
+        {"id":"ciq-h6","type":"multiple_choice","prompt":"Which country first banned single-use plastic bags?","options":["France","Kenya","Bangladesh","Australia"],"correctAnswer":"Bangladesh","explanation":"Bangladesh became the first country to ban thin plastic bags in 2002 after they clogged drainage systems and worsened flooding.","category":"waste"},
+        {"id":"ciq-h7","type":"multiple_choice","prompt":"How much food is wasted globally each year?","options":["500 million tons","1 billion tons","1.3 billion tons","2 billion tons"],"correctAnswer":"1.3 billion tons","explanation":"About 1.3 billion tons of food is wasted annually — roughly one-third of all food produced.","category":"waste"},
+        {"id":"ciq-h8","type":"true_false","prompt":"Microplastics have been found in human blood.","options":["True","False"],"correctAnswer":"True","explanation":"A 2022 study found microplastics in 77% of human blood samples tested.","category":"waste","funFact":"Humans may ingest up to 5 grams of microplastic per week — the weight of a credit card."},
+        {"id":"ciq-h9","type":"multiple_choice","prompt":"What is the carbon footprint of a single cheeseburger?","options":["0.5 kg CO2","1.5 kg CO2","3.5 kg CO2","6 kg CO2"],"correctAnswer":"3.5 kg CO2","explanation":"A single cheeseburger produces about 3.5 kg of CO2 when you include farming, processing, and transportation.","category":"climate"},
+        {"id":"ciq-h10","type":"multiple_choice","prompt":"Which material has the highest recycling rate in the US?","options":["Aluminum","Glass","Paper","Lead-acid batteries"],"correctAnswer":"Lead-acid batteries","explanation":"Lead-acid batteries (car batteries) have a 99% recycling rate — the highest of any material.","category":"recycling"}
+      ]
+    },
+    {
+      "id": "ciq-expert",
+      "label": "expert",
+      "questions": [
+        {"id":"ciq-x1","type":"multiple_choice","prompt":"What is the term for designing products for easy disassembly and recycling?","options":["Circular design","Design for disassembly","Cradle to cradle","All of the above"],"correctAnswer":"All of the above","explanation":"All three terms describe approaches to designing products with end-of-life recycling in mind.","category":"materials"},
+        {"id":"ciq-x2","type":"multiple_choice","prompt":"What temperature is needed for industrial composting?","options":["50-70°F","100-130°F","130-170°F","200-250°F"],"correctAnswer":"130-170°F","explanation":"Industrial composting reaches 130-170°F, hot enough to kill pathogens and break down tough materials.","category":"recycling"},
+        {"id":"ciq-x3","type":"true_false","prompt":"Sweden imports trash from other countries to fuel its waste-to-energy plants.","options":["True","False"],"correctAnswer":"True","explanation":"Sweden recycles so effectively that it imports waste from Norway and other countries to power its WTE plants.","category":"energy","funFact":"Less than 1% of Sweden's household waste goes to landfill."},
+        {"id":"ciq-x4","type":"multiple_choice","prompt":"What does EPR stand for in waste management policy?","options":["Environmental Protection Regulation","Extended Producer Responsibility","Efficient Processing Rate","Emission Prevention Requirement"],"correctAnswer":"Extended Producer Responsibility","explanation":"EPR makes manufacturers responsible for the end-of-life management of their products and packaging.","category":"recycling"},
+        {"id":"ciq-x5","type":"multiple_choice","prompt":"How much energy does recycling aluminum save vs making new?","options":["50%","75%","85%","95%"],"correctAnswer":"95%","explanation":"Recycling aluminum saves 95% of the energy needed to make new aluminum from bauxite ore.","category":"energy"},
+        {"id":"ciq-x6","type":"multiple_choice","prompt":"What is 'chemical recycling' of plastics?","options":["Using chemicals to clean plastic","Breaking plastic back to monomers","Mixing plastic with chemicals for disposal","None of the above"],"correctAnswer":"Breaking plastic back to monomers","explanation":"Chemical recycling breaks polymers back into their base monomers, allowing creation of virgin-quality plastic.","category":"materials"},
+        {"id":"ciq-x7","type":"true_false","prompt":"The fashion industry produces more carbon emissions than international aviation and shipping combined.","options":["True","False"],"correctAnswer":"True","explanation":"The fashion industry accounts for about 10% of global carbon emissions — more than aviation and shipping combined.","category":"climate"},
+        {"id":"ciq-x8","type":"multiple_choice","prompt":"What is the theoretical maximum recycling rate possible for a modern economy?","options":["50%","70%","85%","100%"],"correctAnswer":"85%","explanation":"Experts estimate about 85% is the practical maximum, as some materials degrade or are contaminated beyond recovery.","category":"recycling"},
+        {"id":"ciq-x9","type":"multiple_choice","prompt":"How many times can paper fiber be recycled before it's too short?","options":["2-3 times","5-7 times","10-12 times","Unlimited"],"correctAnswer":"5-7 times","explanation":"Paper fibers shorten with each recycling cycle. After 5-7 times, they're too short to hold together.","category":"materials"},
+        {"id":"ciq-x10","type":"multiple_choice","prompt":"What percentage of ocean plastic comes from just 10 rivers?","options":["20%","40%","60%","80%"],"correctAnswer":"80%","explanation":"Eight of the top 10 rivers are in Asia, and two are in Africa. Better waste management in these areas would dramatically reduce ocean plastic.","category":"waste"}
+      ]
+    }
+  ]
+}

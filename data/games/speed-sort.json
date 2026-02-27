@@ -1,0 +1,95 @@
+{
+  "id": "speed-sort",
+  "name": "Speed Sort",
+  "description": "30-second challenge. Tap to sort items into the right bin.",
+  "icon": "⚡",
+  "color": "#22C55E",
+  "defaultTimeLimit": 5,
+  "questionsPerRound": 15,
+  "difficultyLevels": [
+    {
+      "id": "ss-easy",
+      "label": "easy",
+      "questions": [
+        {"id":"ss-e1","type":"speed_sort","prompt":"Plastic water bottle","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Plastic bottles are recyclable.","category":"recycling"},
+        {"id":"ss-e2","type":"speed_sort","prompt":"Banana peel","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Fruit scraps are compostable.","category":"recycling"},
+        {"id":"ss-e3","type":"speed_sort","prompt":"Aluminum can","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Aluminum cans are recyclable.","category":"recycling"},
+        {"id":"ss-e4","type":"speed_sort","prompt":"Styrofoam cup","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Styrofoam is not recyclable curbside.","category":"recycling"},
+        {"id":"ss-e5","type":"speed_sort","prompt":"Newspaper","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Paper is recyclable.","category":"recycling"},
+        {"id":"ss-e6","type":"speed_sort","prompt":"Apple core","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Fruit is compostable.","category":"recycling"},
+        {"id":"ss-e7","type":"speed_sort","prompt":"Glass jar","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Glass is recyclable.","category":"recycling"},
+        {"id":"ss-e8","type":"speed_sort","prompt":"Plastic bag","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Plastic bags jam recycling machinery.","category":"recycling"},
+        {"id":"ss-e9","type":"speed_sort","prompt":"Cardboard box","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Flatten and recycle.","category":"recycling"},
+        {"id":"ss-e10","type":"speed_sort","prompt":"Coffee grounds","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Great for compost.","category":"recycling"},
+        {"id":"ss-e11","type":"speed_sort","prompt":"Egg shells","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Eggshells add calcium to compost.","category":"recycling"},
+        {"id":"ss-e12","type":"speed_sort","prompt":"Pizza box (greasy)","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Greasy parts can be composted.","category":"recycling"},
+        {"id":"ss-e13","type":"speed_sort","prompt":"Tin can","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Metal cans are recyclable.","category":"recycling"},
+        {"id":"ss-e14","type":"speed_sort","prompt":"Tea bags","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Paper tea bags are compostable.","category":"recycling"},
+        {"id":"ss-e15","type":"speed_sort","prompt":"Junk mail","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Paper mail is recyclable.","category":"recycling"}
+      ]
+    },
+    {
+      "id": "ss-medium",
+      "label": "medium",
+      "questions": [
+        {"id":"ss-m1","type":"speed_sort","prompt":"Candy wrapper","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Metallized plastic film.","category":"recycling"},
+        {"id":"ss-m2","type":"speed_sort","prompt":"Yogurt container","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Rinse and recycle.","category":"recycling"},
+        {"id":"ss-m3","type":"speed_sort","prompt":"Used paper towel","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Paper towels are compostable.","category":"recycling"},
+        {"id":"ss-m4","type":"speed_sort","prompt":"Chip bag","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Multi-layer film packaging.","category":"recycling"},
+        {"id":"ss-m5","type":"speed_sort","prompt":"Wine cork","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Natural cork is compostable.","category":"recycling"},
+        {"id":"ss-m6","type":"speed_sort","prompt":"Milk carton","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Cartons are recyclable.","category":"recycling"},
+        {"id":"ss-m7","type":"speed_sort","prompt":"Disposable coffee cup","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Plastic-lined cups aren't recyclable.","category":"recycling"},
+        {"id":"ss-m8","type":"speed_sort","prompt":"Orange peel","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Citrus peels are compostable.","category":"recycling"},
+        {"id":"ss-m9","type":"speed_sort","prompt":"Cereal box","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Flatten and recycle.","category":"recycling"},
+        {"id":"ss-m10","type":"speed_sort","prompt":"Bubble wrap","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Plastic film, not curbside recyclable.","category":"recycling"},
+        {"id":"ss-m11","type":"speed_sort","prompt":"Stale bread","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Bread is compostable.","category":"recycling"},
+        {"id":"ss-m12","type":"speed_sort","prompt":"Aerosol can (empty)","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Empty aerosols are recyclable metal.","category":"recycling"},
+        {"id":"ss-m13","type":"speed_sort","prompt":"Toothbrush","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Mixed materials, not recyclable.","category":"recycling"},
+        {"id":"ss-m14","type":"speed_sort","prompt":"Paper plate (used)","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Food-soiled paper is compostable.","category":"recycling"},
+        {"id":"ss-m15","type":"speed_sort","prompt":"Greeting card","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Plain paper cards are recyclable.","category":"recycling"}
+      ]
+    },
+    {
+      "id": "ss-hard",
+      "label": "hard",
+      "questions": [
+        {"id":"ss-h1","type":"speed_sort","prompt":"Frozen food box","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Moisture-barrier coating.","category":"materials"},
+        {"id":"ss-h2","type":"speed_sort","prompt":"Receipt","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Thermal paper with BPA.","category":"materials"},
+        {"id":"ss-h3","type":"speed_sort","prompt":"Prescription bottle","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"#5 PP plastic, recyclable.","category":"recycling"},
+        {"id":"ss-h4","type":"speed_sort","prompt":"Red Solo cup","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"#6 polystyrene, not recyclable.","category":"materials"},
+        {"id":"ss-h5","type":"speed_sort","prompt":"Wax paper","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Wax coating prevents recycling.","category":"materials"},
+        {"id":"ss-h6","type":"speed_sort","prompt":"Aluminum foil (clean)","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Clean foil is recyclable.","category":"recycling"},
+        {"id":"ss-h7","type":"speed_sort","prompt":"Granola bar wrapper","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Flexible plastic packaging.","category":"recycling"},
+        {"id":"ss-h8","type":"speed_sort","prompt":"Window envelope","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Small plastic window is OK.","category":"recycling"},
+        {"id":"ss-h9","type":"speed_sort","prompt":"Bamboo toothbrush","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Bamboo handle is compostable. Remove bristles.","category":"materials"},
+        {"id":"ss-h10","type":"speed_sort","prompt":"Broken mirror","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Coated glass, not recyclable.","category":"materials"},
+        {"id":"ss-h11","type":"speed_sort","prompt":"Parchment paper","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Silicone-coated, not recyclable.","category":"materials"},
+        {"id":"ss-h12","type":"speed_sort","prompt":"Deodorant stick","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Mixed plastics, mechanism inside.","category":"materials"},
+        {"id":"ss-h13","type":"speed_sort","prompt":"Sticky note","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Adhesive is water-soluble, recyclable.","category":"recycling"},
+        {"id":"ss-h14","type":"speed_sort","prompt":"Avocado pit","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Organic matter, compostable.","category":"recycling"},
+        {"id":"ss-h15","type":"speed_sort","prompt":"Shredded paper","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Put in a paper bag first.","category":"recycling"}
+      ]
+    },
+    {
+      "id": "ss-expert",
+      "label": "expert",
+      "questions": [
+        {"id":"ss-x1","type":"speed_sort","prompt":"Black plastic tray","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Optical sorters can't detect it.","category":"materials"},
+        {"id":"ss-x2","type":"speed_sort","prompt":"Compostable PLA cup","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Industrial compost only, not recyclable.","category":"materials"},
+        {"id":"ss-x3","type":"speed_sort","prompt":"Pyrex dish","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Different glass composition.","category":"materials"},
+        {"id":"ss-x4","type":"speed_sort","prompt":"Dryer lint","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Natural fiber lint is compostable.","category":"materials"},
+        {"id":"ss-x5","type":"speed_sort","prompt":"Metallic wrapping paper","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Fails scrunch test — it's not paper.","category":"materials"},
+        {"id":"ss-x6","type":"speed_sort","prompt":"Hair from hairbrush","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Human hair is compostable nitrogen.","category":"materials"},
+        {"id":"ss-x7","type":"speed_sort","prompt":"Worn out leather belt","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Treated leather isn't compostable.","category":"materials"},
+        {"id":"ss-x8","type":"speed_sort","prompt":"Clean pizza box top","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Clean parts of pizza boxes are recyclable.","category":"recycling"},
+        {"id":"ss-x9","type":"speed_sort","prompt":"Silica gel packet","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Non-toxic but not recyclable.","category":"materials"},
+        {"id":"ss-x10","type":"speed_sort","prompt":"Cardboard toilet paper tube","options":["Recycle","Trash","Compost"],"correctAnswer":"Recycle","explanation":"Clean cardboard tube.","category":"recycling"},
+        {"id":"ss-x11","type":"speed_sort","prompt":"Cling wrap (used)","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Thin film + food residue.","category":"recycling"},
+        {"id":"ss-x12","type":"speed_sort","prompt":"Cotton balls","options":["Recycle","Trash","Compost"],"correctAnswer":"Compost","explanation":"Pure cotton is compostable.","category":"materials"},
+        {"id":"ss-x13","type":"speed_sort","prompt":"Broken crayon","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Wax + pigment, not recyclable.","category":"materials"},
+        {"id":"ss-x14","type":"speed_sort","prompt":"Rubber band","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Rubber tangles in machinery.","category":"materials"},
+        {"id":"ss-x15","type":"speed_sort","prompt":"Nail polish bottle","options":["Recycle","Trash","Compost"],"correctAnswer":"Trash","explanation":"Chemical residue, too small.","category":"materials"}
+      ]
+    }
+  ]
+}

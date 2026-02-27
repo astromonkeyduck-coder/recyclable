@@ -1,0 +1,1487 @@
+{
+  "id": "philadelphia",
+  "displayName": "Philadelphia, PA",
+  "coverage": {
+    "country": "US",
+    "region": "PA",
+    "city": "Philadelphia",
+    "zips": [
+      "19102", "19103", "19104", "19106", "19107", "19109",
+      "19111", "19112", "19113", "19114", "19115", "19116",
+      "19118", "19119", "19120", "19121", "19122", "19123",
+      "19124", "19125", "19126", "19127", "19128", "19129",
+      "19130", "19131", "19132", "19133", "19134", "19135",
+      "19136", "19137", "19138", "19139", "19140", "19141",
+      "19142", "19143", "19144", "19145", "19146", "19147",
+      "19148", "19149", "19150", "19151", "19152", "19153",
+      "19154"
+    ],
+    "aliases": [
+      "philadelphia pennsylvania",
+      "philadelphia pa",
+      "philly",
+      "city of brotherly love"
+    ]
+  },
+  "source": {
+    "name": "City of Philadelphia Streets Department",
+    "url": "https://www.phila.gov/programs/recycling-program/what-to-recycle/",
+    "generatedAt": "2026-02-27",
+    "notes": "Based on official City of Philadelphia recycling program guidelines. Single-stream blue bin recycling with weekly collection. Empty paint cans and aerosol cans are accepted.",
+    "license": "Public government data"
+  },
+  "materials": [
+    {
+      "id": "plastic-bottles",
+      "name": "Plastic bottles",
+      "aliases": ["plastic bottle", "water bottle", "soda bottle", "pop bottle", "beverage bottle", "drink bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Empty, rinse, and let dry",
+        "Replace the cap",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Includes water, soda, juice, and sports drink bottles",
+        "Labels can stay on"
+      ],
+      "commonMistakes": [
+        "Don't include bottles with liquid still inside",
+        "Don't crush; caps should be replaced"
+      ],
+      "tags": ["plastic", "bottle", "blue-bin"],
+      "examples": ["Water bottle", "Soda bottle", "Juice bottle", "Sports drink bottle"]
+    },
+    {
+      "id": "plastic-jugs",
+      "name": "Plastic jugs",
+      "aliases": ["milk jug", "juice jug", "water jug", "gallon jug", "plastic gallon", "laundry detergent jug"],
+      "category": "recycle",
+      "instructions": [
+        "Empty, rinse, and let dry",
+        "Replace the cap",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Includes milk jugs, juice jugs, and detergent jugs"
+      ],
+      "commonMistakes": [
+        "Don't leave product inside",
+        "Don't include jugs that held hazardous chemicals (pesticides, etc.)"
+      ],
+      "tags": ["plastic", "jug", "blue-bin"],
+      "examples": ["Milk jug", "Water jug", "Juice jug", "Laundry detergent jug"]
+    },
+    {
+      "id": "detergent-bottles",
+      "name": "Detergent and shampoo bottles",
+      "aliases": ["detergent bottle", "shampoo bottle", "conditioner bottle", "body wash bottle", "soap bottle", "dish soap bottle", "hand soap bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Empty, rinse, and let dry",
+        "Replace the cap or pump",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Pump and spray tops can stay on the bottle"
+      ],
+      "commonMistakes": [
+        "Don't include bottles with product still inside"
+      ],
+      "tags": ["plastic", "bottle", "blue-bin"],
+      "examples": ["Shampoo bottle", "Conditioner bottle", "Dish soap bottle", "Body wash bottle", "Hand soap bottle"]
+    },
+    {
+      "id": "pump-spray-bottles",
+      "name": "Pump and spray bottles",
+      "aliases": ["spray bottle", "pump bottle", "trigger sprayer", "cleaning spray bottle", "spray cleaner bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Empty, rinse, and let dry",
+        "Leave the pump or spray mechanism attached",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Plastic spray and pump bottles from cleaning products are accepted"
+      ],
+      "commonMistakes": [
+        "Don't include bottles that held hazardous materials (pesticides, etc.)"
+      ],
+      "tags": ["plastic", "bottle", "blue-bin"],
+      "examples": ["Windex bottle", "All-purpose cleaner spray", "Pump soap bottle"]
+    },
+    {
+      "id": "five-gallon-buckets",
+      "name": "5-gallon buckets",
+      "aliases": ["5 gallon bucket", "five gallon bucket", "plastic bucket", "homer bucket", "paint bucket"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse thoroughly",
+        "Remove any non-plastic handles if possible",
+        "Place in or next to BLUE recycling bin"
+      ],
+      "notes": [
+        "Philadelphia accepts 5-gallon plastic buckets in recycling",
+        "Must be empty and clean"
+      ],
+      "commonMistakes": [
+        "Don't include buckets that still contain paint or chemicals",
+        "Don't include buckets with heavy residue that won't rinse out"
+      ],
+      "tags": ["plastic", "bucket", "blue-bin"],
+      "examples": ["Home Depot bucket", "Empty joint compound bucket", "Clean paint bucket"]
+    },
+    {
+      "id": "hard-plastic-containers",
+      "name": "Hard plastic food containers",
+      "aliases": ["plastic container", "takeout container", "yogurt cup", "yogurt container", "deli container", "butter tub", "sour cream container", "cottage cheese container", "hard plastic takeout"],
+      "category": "recycle",
+      "instructions": [
+        "Empty, rinse, and let dry",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Must be hard/rigid plastic, not flexible film or styrofoam",
+        "Includes yogurt cups, deli containers, butter tubs, and hard plastic takeout containers"
+      ],
+      "commonMistakes": [
+        "Don't include styrofoam containers; those go in the trash",
+        "Don't include flexible plastic pouches or bags"
+      ],
+      "tags": ["plastic", "container", "blue-bin"],
+      "examples": ["Yogurt cup", "Deli container", "Butter tub", "Sour cream tub", "Hard plastic takeout container"]
+    },
+    {
+      "id": "plastic-caps",
+      "name": "Bottle caps",
+      "aliases": ["bottle cap", "plastic cap", "metal bottle cap", "soda cap", "water bottle cap", "beer cap"],
+      "category": "recycle",
+      "instructions": [
+        "Keep caps attached to their bottles whenever possible",
+        "Loose metal bottle caps can be placed inside an aluminum can and crimped shut",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Both plastic and metal bottle caps are accepted in Philadelphia",
+        "Attaching caps to bottles prevents them from falling through sorting equipment"
+      ],
+      "commonMistakes": [
+        "Don't throw loose small caps in; they can fall through sorting screens"
+      ],
+      "tags": ["plastic", "metal", "cap", "blue-bin"],
+      "examples": ["Water bottle cap", "Soda bottle cap", "Beer bottle cap", "Juice cap"]
+    },
+    {
+      "id": "aluminum-cans",
+      "name": "Aluminum cans",
+      "aliases": ["aluminum can", "soda can", "beer can", "beverage can", "pop can", "seltzer can", "sparkling water can"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "No need to crush cans",
+        "Labels can stay on"
+      ],
+      "commonMistakes": [
+        "Don't include cans with food still inside"
+      ],
+      "tags": ["metal", "aluminum", "can", "blue-bin"],
+      "examples": ["Soda can", "Beer can", "Seltzer can", "Energy drink can"]
+    },
+    {
+      "id": "steel-tin-cans",
+      "name": "Steel and tin cans",
+      "aliases": ["steel can", "tin can", "food can", "soup can", "bean can", "vegetable can", "tuna can", "cat food can", "dog food can", "canned food"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Labels can stay on",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Includes all food and pet food cans"
+      ],
+      "commonMistakes": [
+        "Don't include cans with food residue; rinse them out"
+      ],
+      "tags": ["metal", "steel", "tin", "can", "blue-bin"],
+      "examples": ["Soup can", "Bean can", "Tuna can", "Vegetable can", "Pet food can"]
+    },
+    {
+      "id": "empty-paint-cans",
+      "name": "Empty paint cans",
+      "aliases": ["paint can", "empty paint can", "dried paint can", "latex paint can"],
+      "category": "recycle",
+      "instructions": [
+        "Ensure the can is completely empty or has only dried residue",
+        "Remove the lid and place it separately in the bin",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Philadelphia accepts empty paint cans in curbside recycling",
+        "Can must be fully empty with only dry residue remaining",
+        "Cans with wet or liquid paint must go to a Sanitation Convenience Center"
+      ],
+      "commonMistakes": [
+        "Don't put cans with wet or liquid paint in recycling",
+        "Don't include spray paint cans here; see empty aerosol cans"
+      ],
+      "tags": ["metal", "paint", "blue-bin"],
+      "examples": ["Empty latex paint can", "Dried-out paint can", "Empty primer can", "Empty stain can"]
+    },
+    {
+      "id": "empty-aerosol-cans",
+      "name": "Empty aerosol cans",
+      "aliases": ["aerosol can", "spray can", "aerosol", "deodorant spray can", "hairspray can", "cooking spray can"],
+      "category": "recycle",
+      "instructions": [
+        "Ensure the can is completely empty (no hissing when you press the nozzle)",
+        "Do NOT puncture the can",
+        "Leave the nozzle on",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Philadelphia accepts empty aerosol cans in curbside recycling",
+        "Must be fully depressurized and empty"
+      ],
+      "commonMistakes": [
+        "Don't recycle aerosol cans that still have product or pressure inside",
+        "Don't puncture aerosol cans; this is dangerous"
+      ],
+      "tags": ["metal", "aerosol", "blue-bin"],
+      "examples": ["Hairspray can", "Cooking spray can", "Deodorant spray can", "WD-40 can", "Spray paint can (empty)"]
+    },
+    {
+      "id": "aluminum-foil",
+      "name": "Aluminum foil",
+      "aliases": ["tin foil", "aluminium foil", "foil", "aluminum wrap"],
+      "category": "recycle",
+      "instructions": [
+        "Clean off all food residue",
+        "Ball up small pieces into a larger ball (at least 2 inches)",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Must be clean; heavily soiled foil goes in the trash"
+      ],
+      "commonMistakes": [
+        "Don't recycle foil with baked-on food that won't come off",
+        "Don't include foil-lined paper or foil-backed insulation"
+      ],
+      "tags": ["metal", "aluminum", "foil", "blue-bin"],
+      "examples": ["Clean aluminum foil sheet", "Foil from baked potato", "Aluminum foil wrap"]
+    },
+    {
+      "id": "pie-tins",
+      "name": "Aluminum pie tins and trays",
+      "aliases": ["pie tin", "pie plate", "aluminum tray", "foil tray", "foil pan", "disposable baking pan", "turkey pan", "roasting pan foil"],
+      "category": "recycle",
+      "instructions": [
+        "Clean off all food residue",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Includes disposable aluminum baking pans and pie plates"
+      ],
+      "commonMistakes": [
+        "Don't recycle heavily soiled trays that can't be cleaned"
+      ],
+      "tags": ["metal", "aluminum", "tray", "blue-bin"],
+      "examples": ["Pie tin", "Disposable aluminum baking pan", "Foil roasting pan", "Aluminum food tray"]
+    },
+    {
+      "id": "glass-bottles-jars",
+      "name": "Glass bottles and jars",
+      "aliases": ["glass bottle", "glass jar", "wine bottle", "beer bottle", "liquor bottle", "mason jar", "pickle jar", "sauce jar", "jam jar", "salsa jar"],
+      "category": "recycle",
+      "instructions": [
+        "Empty, rinse, and let dry",
+        "Remove metal lids (recycle lids separately)",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "All colors of glass bottles and jars are accepted",
+        "Labels can stay on"
+      ],
+      "commonMistakes": [
+        "Don't include window glass, mirrors, ceramics, or Pyrex",
+        "Don't include drinking glasses or light bulbs",
+        "Don't include broken glass; wrap it and put in trash for safety"
+      ],
+      "tags": ["glass", "bottle", "jar", "blue-bin"],
+      "examples": ["Wine bottle", "Beer bottle", "Pasta sauce jar", "Pickle jar", "Jam jar", "Olive oil bottle"]
+    },
+    {
+      "id": "newspapers",
+      "name": "Newspapers",
+      "aliases": ["newspaper", "newsprint", "daily paper", "sunday paper"],
+      "category": "recycle",
+      "instructions": [
+        "Keep dry",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Inserts and supplements can stay with the newspaper"
+      ],
+      "commonMistakes": [
+        "Don't include newspapers that are wet or heavily soiled"
+      ],
+      "tags": ["paper", "newspaper", "blue-bin"],
+      "examples": ["Philadelphia Inquirer", "Daily News", "Sunday newspaper", "Newspaper inserts"]
+    },
+    {
+      "id": "magazines",
+      "name": "Magazines and catalogs",
+      "aliases": ["magazine", "catalog", "catalogue", "periodical", "glossy magazine", "booklet"],
+      "category": "recycle",
+      "instructions": [
+        "Remove any plastic wrap",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Glossy and coated paper magazines are accepted",
+        "Includes catalogs, booklets, and brochures"
+      ],
+      "commonMistakes": [
+        "Don't include wet or moldy magazines"
+      ],
+      "tags": ["paper", "magazine", "blue-bin"],
+      "examples": ["Magazine", "Catalog", "Product brochure", "Newsletter"]
+    },
+    {
+      "id": "junk-mail",
+      "name": "Junk mail and envelopes",
+      "aliases": ["junk mail", "mail", "envelope", "letter", "flyer", "ad mail", "window envelope", "direct mail"],
+      "category": "recycle",
+      "instructions": [
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Window envelopes are OK; the small plastic window is accepted",
+        "Includes all paper mail, flyers, and advertisements"
+      ],
+      "commonMistakes": [
+        "Don't include padded or bubble-lined mailers; those go in the trash"
+      ],
+      "tags": ["paper", "mail", "envelope", "blue-bin"],
+      "examples": ["Junk mail", "Envelope", "Window envelope", "Advertising flyer", "Political mailer"]
+    },
+    {
+      "id": "writing-paper",
+      "name": "Writing and office paper",
+      "aliases": ["writing paper", "office paper", "printer paper", "copy paper", "notebook paper", "lined paper", "loose leaf", "construction paper"],
+      "category": "recycle",
+      "instructions": [
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Includes white and colored paper",
+        "Staples and paper clips are OK; no need to remove them"
+      ],
+      "commonMistakes": [
+        "Don't include paper towels or tissues; those go in the trash",
+        "Don't include waxed or plastic-coated paper"
+      ],
+      "tags": ["paper", "office", "blue-bin"],
+      "examples": ["Printer paper", "Notebook paper", "Sticky notes", "Copy paper", "Construction paper"]
+    },
+    {
+      "id": "paper-bags",
+      "name": "Paper bags",
+      "aliases": ["paper bag", "brown bag", "grocery bag paper", "lunch bag", "kraft bag"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten the bag",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Includes brown grocery bags and lunch bags",
+        "Must be clean and dry"
+      ],
+      "commonMistakes": [
+        "Don't include paper bags that are wet or heavily food-soiled"
+      ],
+      "tags": ["paper", "bag", "blue-bin"],
+      "examples": ["Brown grocery bag", "Paper lunch bag", "Kraft paper bag"]
+    },
+    {
+      "id": "paperback-books",
+      "name": "Paperback books",
+      "aliases": ["paperback", "paperback book", "soft cover book", "pocket book"],
+      "category": "recycle",
+      "instructions": [
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Paperback books are accepted in Philadelphia recycling",
+        "Consider donating books in good condition before recycling"
+      ],
+      "commonMistakes": [
+        "Don't include hardcover books; remove the hard covers first or donate them"
+      ],
+      "tags": ["paper", "book", "blue-bin"],
+      "examples": ["Paperback novel", "Pocket book", "Soft cover textbook"]
+    },
+    {
+      "id": "greeting-cards",
+      "name": "Non-metallic greeting cards",
+      "aliases": ["greeting card", "birthday card", "holiday card", "thank you card", "card"],
+      "category": "recycle",
+      "instructions": [
+        "Remove any metallic decorations, ribbons, or batteries",
+        "Place paper card in BLUE recycling bin"
+      ],
+      "notes": [
+        "Only non-metallic, non-glittered cards are accepted",
+        "Cards with batteries (musical cards) must have batteries removed first"
+      ],
+      "commonMistakes": [
+        "Don't recycle cards with glitter, metallic finishes, or foil",
+        "Don't forget to remove batteries from musical cards"
+      ],
+      "tags": ["paper", "card", "blue-bin"],
+      "examples": ["Birthday card", "Holiday card", "Thank-you card", "Invitation"]
+    },
+    {
+      "id": "corrugated-cardboard",
+      "name": "Corrugated cardboard boxes",
+      "aliases": ["cardboard", "cardboard box", "corrugated box", "shipping box", "moving box", "amazon box", "delivery box"],
+      "category": "recycle",
+      "instructions": [
+        "Break down and flatten all boxes",
+        "Remove packing materials (styrofoam, bubble wrap, air pillows)",
+        "Place in or next to BLUE recycling bin"
+      ],
+      "notes": [
+        "Must be flattened",
+        "Remove any styrofoam or plastic packing inside"
+      ],
+      "commonMistakes": [
+        "Don't include wax-coated cardboard (some produce boxes)",
+        "Don't leave packing peanuts or styrofoam inside"
+      ],
+      "tags": ["cardboard", "box", "blue-bin"],
+      "examples": ["Amazon box", "Shipping box", "Moving box", "Appliance box"]
+    },
+    {
+      "id": "pizza-boxes",
+      "name": "Pizza boxes",
+      "aliases": ["pizza box", "pizza carton"],
+      "category": "recycle",
+      "instructions": [
+        "Remove any leftover food or liners",
+        "Flatten the box",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Philadelphia accepts clean pizza boxes in recycling",
+        "Light grease staining is OK; heavy grease or stuck-on cheese is not"
+      ],
+      "commonMistakes": [
+        "Don't include the box if it has a lot of stuck-on cheese or food",
+        "Don't forget to remove any leftover pizza or liners"
+      ],
+      "tags": ["cardboard", "pizza", "blue-bin"],
+      "examples": ["Pizza delivery box", "Frozen pizza box"]
+    },
+    {
+      "id": "paper-towel-rolls",
+      "name": "Paper towel and toilet paper rolls",
+      "aliases": ["paper towel roll", "toilet paper roll", "cardboard tube", "tp roll", "paper towel tube", "wrapping paper tube"],
+      "category": "recycle",
+      "instructions": [
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Cardboard tubes from paper towels, toilet paper, and wrapping paper are all accepted"
+      ],
+      "commonMistakes": [
+        "Don't include the paper towels themselves; those go in the trash"
+      ],
+      "tags": ["cardboard", "tube", "blue-bin"],
+      "examples": ["Paper towel roll", "Toilet paper roll", "Gift wrap tube"]
+    },
+    {
+      "id": "cardboard-egg-cartons",
+      "name": "Cardboard egg cartons",
+      "aliases": ["egg carton", "egg box", "paper egg carton", "cardboard egg box"],
+      "category": "recycle",
+      "instructions": [
+        "Remove any remaining egg shells",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Only cardboard/paper egg cartons are recyclable",
+        "Styrofoam egg cartons go in the trash"
+      ],
+      "commonMistakes": [
+        "Don't recycle styrofoam egg cartons; those go in the trash",
+        "Don't include egg cartons with heavy egg residue"
+      ],
+      "tags": ["cardboard", "egg-carton", "blue-bin"],
+      "examples": ["Cardboard egg carton", "Paper pulp egg carton"]
+    },
+    {
+      "id": "milk-cartons",
+      "name": "Milk and juice cartons",
+      "aliases": ["milk carton", "juice carton", "cream carton", "half and half carton", "oat milk carton", "almond milk carton"],
+      "category": "recycle",
+      "instructions": [
+        "Empty, rinse, and let dry",
+        "Replace the cap if it has one",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Includes gable-top (refrigerated) and shelf-stable cartons",
+        "Philadelphia accepts all food and beverage cartons"
+      ],
+      "commonMistakes": [
+        "Don't leave liquid inside",
+        "Don't flatten shelf-stable cartons; they have a foil layer and sorting machines detect shape"
+      ],
+      "tags": ["carton", "blue-bin"],
+      "examples": ["Milk carton", "Juice carton", "Cream carton", "Oat milk carton", "Almond milk carton"]
+    },
+    {
+      "id": "soup-wine-cartons",
+      "name": "Soup and wine cartons",
+      "aliases": ["soup carton", "broth carton", "wine carton", "stock carton", "aseptic carton", "tetra pak"],
+      "category": "recycle",
+      "instructions": [
+        "Empty, rinse, and let dry",
+        "Replace the cap if it has one",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Includes Tetra Pak and other shelf-stable cartons"
+      ],
+      "commonMistakes": [
+        "Don't leave liquid inside"
+      ],
+      "tags": ["carton", "blue-bin"],
+      "examples": ["Soup carton", "Broth box", "Wine carton", "Coconut water carton"]
+    },
+    {
+      "id": "plastic-bags",
+      "name": "Plastic bags",
+      "aliases": ["plastic bag", "grocery bag", "shopping bag", "produce bag", "bread bag", "ziplock", "ziploc", "plastic film", "plastic wrap", "cling wrap", "saran wrap"],
+      "category": "trash",
+      "instructions": [
+        "Do NOT place in recycling bin; they jam sorting machinery",
+        "Place in regular trash",
+        "Better: return clean, dry bags to grocery store collection bins"
+      ],
+      "notes": [
+        "Plastic bags are the #1 contaminant in Philadelphia recycling",
+        "Many grocery stores have bag collection bins near the entrance"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; they tangle in sorting equipment",
+        "Don't bag your recyclables in plastic bags; put items loose in the bin"
+      ],
+      "tags": ["plastic", "bag", "film", "trash", "not-recyclable"],
+      "examples": ["Grocery bag", "Produce bag", "Bread bag", "Ziplock bag", "Dry cleaning bag"]
+    },
+    {
+      "id": "styrofoam",
+      "name": "Styrofoam",
+      "aliases": ["styrofoam", "polystyrene", "foam", "styrofoam container", "styrofoam cup", "foam cup", "foam tray", "meat tray styrofoam", "eps", "expanded polystyrene"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Do NOT place in recycling bin"
+      ],
+      "notes": [
+        "Styrofoam is not recyclable in Philadelphia",
+        "Includes foam cups, food containers, meat trays, and protective packaging"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin",
+        "Don't confuse hard plastic containers with styrofoam; hard plastic is recyclable"
+      ],
+      "tags": ["styrofoam", "foam", "trash", "not-recyclable"],
+      "examples": ["Styrofoam takeout container", "Foam cup", "Styrofoam meat tray", "Styrofoam egg carton", "Foam packing block"]
+    },
+    {
+      "id": "packing-peanuts",
+      "name": "Packing peanuts",
+      "aliases": ["packing peanut", "packing peanuts", "styrofoam peanuts", "foam peanuts", "packing material"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Alternatively, offer them for reuse on community boards or to shipping stores"
+      ],
+      "notes": [
+        "Not recyclable in Philadelphia curbside programs",
+        "Some shipping stores will accept clean packing peanuts for reuse"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin",
+        "Don't mix with recyclable materials"
+      ],
+      "tags": ["styrofoam", "packing", "trash", "not-recyclable"],
+      "examples": ["Styrofoam packing peanuts", "Biodegradable packing peanuts"]
+    },
+    {
+      "id": "plastic-straws",
+      "name": "Plastic straws",
+      "aliases": ["plastic straw", "straw", "drinking straw", "bendy straw", "cocktail straw"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Do NOT place in recycling bin"
+      ],
+      "notes": [
+        "Straws are too small and lightweight for sorting machinery",
+        "Consider switching to reusable straws"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; they fall through sorting screens"
+      ],
+      "tags": ["plastic", "straw", "trash", "not-recyclable"],
+      "examples": ["Plastic drinking straw", "Bendy straw", "Cocktail straw"]
+    },
+    {
+      "id": "coffee-cup-lids",
+      "name": "Coffee cup lids",
+      "aliases": ["coffee lid", "cup lid", "plastic lid", "drink lid", "to-go cup lid", "sippy lid"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Do NOT place in recycling bin"
+      ],
+      "notes": [
+        "Disposable coffee cup lids are not accepted in Philadelphia recycling",
+        "Too small and lightweight for sorting equipment"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin",
+        "Don't confuse with larger rigid plastic container lids (which may be recyclable)"
+      ],
+      "tags": ["plastic", "lid", "trash", "not-recyclable"],
+      "examples": ["Coffee cup lid", "Iced drink lid", "To-go cup lid"]
+    },
+    {
+      "id": "plastic-cutlery",
+      "name": "Plastic cutlery",
+      "aliases": ["plastic fork", "plastic knife", "plastic spoon", "plastic utensil", "plastic silverware", "disposable cutlery", "disposable utensils"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Do NOT place in recycling bin"
+      ],
+      "notes": [
+        "Plastic utensils are not recyclable in Philadelphia",
+        "Consider carrying reusable utensils"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin"
+      ],
+      "tags": ["plastic", "utensil", "trash", "not-recyclable"],
+      "examples": ["Plastic fork", "Plastic knife", "Plastic spoon", "Plastic spork"]
+    },
+    {
+      "id": "waxed-paper",
+      "name": "Waxed paper and wax-coated cardboard",
+      "aliases": ["waxed paper", "wax paper", "waxed cardboard", "wax coated paper", "freezer paper", "parchment paper", "butcher paper waxed"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Do NOT place in recycling bin"
+      ],
+      "notes": [
+        "Wax coating prevents paper fibers from being recycled",
+        "Includes waxed produce boxes, freezer paper, and wax-coated paper"
+      ],
+      "commonMistakes": [
+        "Don't confuse with plain paper or cardboard, which are recyclable",
+        "Don't put in the BLUE recycling bin"
+      ],
+      "tags": ["paper", "wax", "trash", "not-recyclable"],
+      "examples": ["Wax paper", "Waxed produce box", "Freezer paper", "Waxed butcher paper"]
+    },
+    {
+      "id": "disposable-coffee-cups",
+      "name": "Disposable coffee cups",
+      "aliases": ["coffee cup", "paper cup", "hot cup", "to-go cup", "disposable cup", "latte cup"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Do NOT place in recycling bin"
+      ],
+      "notes": [
+        "Disposable coffee cups have a plastic lining that makes them non-recyclable",
+        "Some coffee shops offer discounts for bringing a reusable cup"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; the plastic lining contaminates paper recycling",
+        "Don't confuse the cardboard sleeve with the cup; the sleeve can be recycled separately"
+      ],
+      "tags": ["paper", "cup", "lined", "trash", "not-recyclable"],
+      "examples": ["Hot coffee cup", "Starbucks cup", "Dunkin' cup", "To-go latte cup"]
+    },
+    {
+      "id": "window-panes",
+      "name": "Window glass and mirrors",
+      "aliases": ["window glass", "window pane", "mirror", "plate glass", "flat glass", "tempered glass", "safety glass"],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully in newspaper or cardboard for safety",
+        "Place in regular trash",
+        "For large panes, take to a Sanitation Convenience Center"
+      ],
+      "notes": [
+        "Window glass, mirrors, and plate glass are chemically different from bottle glass",
+        "They cannot be recycled with bottles and jars"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; different melting point than container glass",
+        "Don't confuse with glass bottles and jars, which are recyclable"
+      ],
+      "tags": ["glass", "window", "mirror", "trash", "not-recyclable"],
+      "examples": ["Window pane", "Mirror", "Glass tabletop", "Shower door glass"]
+    },
+    {
+      "id": "light-bulbs",
+      "name": "Light bulbs",
+      "aliases": ["light bulb", "lightbulb", "led bulb", "incandescent bulb", "halogen bulb"],
+      "category": "trash",
+      "instructions": [
+        "Wrap in paper or place in original packaging",
+        "Place in regular trash"
+      ],
+      "notes": [
+        "LED and incandescent bulbs go in the trash",
+        "CFL (compact fluorescent) bulbs contain mercury and should go to a Sanitation Convenience Center"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin",
+        "Don't put CFL bulbs in the trash; take them to a Convenience Center"
+      ],
+      "tags": ["bulb", "trash", "not-recyclable"],
+      "examples": ["LED bulb", "Incandescent bulb", "Halogen bulb"]
+    },
+    {
+      "id": "fluorescent-bulbs",
+      "name": "Fluorescent and CFL bulbs",
+      "aliases": ["fluorescent bulb", "cfl bulb", "compact fluorescent", "fluorescent tube", "tube light"],
+      "category": "hazardous",
+      "instructions": [
+        "Do NOT place in trash or recycling",
+        "Take to a Sanitation Convenience Center for proper disposal"
+      ],
+      "notes": [
+        "Fluorescent bulbs contain mercury and are considered hazardous waste",
+        "Sanitation Convenience Centers accept them for free"
+      ],
+      "commonMistakes": [
+        "Don't throw in the trash; mercury is a hazardous pollutant",
+        "Don't put in the BLUE recycling bin"
+      ],
+      "tags": ["bulb", "hazardous", "mercury", "drop-off"],
+      "examples": ["CFL bulb", "Fluorescent tube", "Compact fluorescent light"]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": ["battery", "batteries", "aa battery", "aaa battery", "9v battery", "d battery", "c battery", "lithium battery", "rechargeable battery", "button battery"],
+      "category": "hazardous",
+      "instructions": [
+        "Do NOT place in trash or recycling",
+        "Tape the terminals of lithium and 9V batteries to prevent fires",
+        "Take to a Sanitation Convenience Center"
+      ],
+      "notes": [
+        "All battery types are accepted at Sanitation Convenience Centers",
+        "Some retailers (Home Depot, Lowe's, Staples) also accept rechargeable batteries"
+      ],
+      "commonMistakes": [
+        "Don't throw batteries in the trash; they can cause fires in garbage trucks",
+        "Don't put in the BLUE recycling bin"
+      ],
+      "tags": ["battery", "hazardous", "drop-off"],
+      "examples": ["AA battery", "AAA battery", "9V battery", "Lithium-ion battery", "Button cell battery", "Car battery"]
+    },
+    {
+      "id": "electronics",
+      "name": "Electronics and e-waste",
+      "aliases": ["electronics", "e-waste", "computer", "laptop", "phone", "cell phone", "tablet", "monitor", "keyboard", "mouse", "printer", "tv", "television"],
+      "category": "dropoff",
+      "instructions": [
+        "Do NOT place in trash or recycling",
+        "Take to a Sanitation Convenience Center",
+        "Erase personal data from devices before disposal"
+      ],
+      "notes": [
+        "Pennsylvania law prohibits putting electronics in the trash",
+        "Sanitation Convenience Centers accept electronics for free",
+        "Some retailers offer electronics recycling (Best Buy, Staples)"
+      ],
+      "commonMistakes": [
+        "Don't put in the trash; it's illegal in PA",
+        "Don't put in the BLUE recycling bin",
+        "Don't forget to wipe personal data"
+      ],
+      "tags": ["electronics", "e-waste", "drop-off"],
+      "examples": ["Old laptop", "Broken phone", "CRT TV", "Computer monitor", "Printer", "Cables and cords"]
+    },
+    {
+      "id": "paint-liquid",
+      "name": "Liquid paint",
+      "aliases": ["paint", "liquid paint", "latex paint", "oil paint", "oil-based paint", "stain", "varnish", "wood stain"],
+      "category": "hazardous",
+      "instructions": [
+        "Do NOT place in trash or recycling",
+        "Take to a Sanitation Convenience Center",
+        "Keep in original labeled container with lid secured"
+      ],
+      "notes": [
+        "Liquid and wet paint is hazardous waste",
+        "Empty or fully dried paint cans can go in BLUE recycling bin",
+        "To dry out small amounts of latex paint: add kitty litter, let dry, then trash the solid"
+      ],
+      "commonMistakes": [
+        "Don't pour paint down the drain",
+        "Don't put liquid paint in the trash or recycling"
+      ],
+      "tags": ["paint", "hazardous", "drop-off"],
+      "examples": ["Can of latex paint", "Oil-based stain", "Varnish", "Wood stain"]
+    },
+    {
+      "id": "motor-oil",
+      "name": "Motor oil and automotive fluids",
+      "aliases": ["motor oil", "used oil", "engine oil", "transmission fluid", "brake fluid", "antifreeze", "coolant", "automotive fluid"],
+      "category": "hazardous",
+      "instructions": [
+        "Do NOT place in trash or pour down drains",
+        "Take to a Sanitation Convenience Center",
+        "Keep in a sealed, leak-proof container"
+      ],
+      "notes": [
+        "Many auto parts stores (AutoZone, O'Reilly) also accept used motor oil"
+      ],
+      "commonMistakes": [
+        "Don't pour down a drain or onto the ground",
+        "Don't put in the trash"
+      ],
+      "tags": ["oil", "automotive", "hazardous", "drop-off"],
+      "examples": ["Used motor oil", "Old antifreeze", "Brake fluid", "Transmission fluid"]
+    },
+    {
+      "id": "pesticides-chemicals",
+      "name": "Pesticides and household chemicals",
+      "aliases": ["pesticide", "herbicide", "insecticide", "pool chemicals", "household chemical", "solvent", "turpentine", "paint thinner", "acetone"],
+      "category": "hazardous",
+      "instructions": [
+        "Do NOT place in trash or pour down drains",
+        "Keep in original labeled container",
+        "Take to a Sanitation Convenience Center"
+      ],
+      "notes": [
+        "Includes pesticides, herbicides, pool chemicals, solvents, and other toxic chemicals"
+      ],
+      "commonMistakes": [
+        "Don't pour down drains or into storm sewers",
+        "Don't mix different chemicals together"
+      ],
+      "tags": ["chemical", "hazardous", "drop-off"],
+      "examples": ["Weed killer", "Ant spray", "Pool chlorine", "Paint thinner", "Turpentine"]
+    },
+    {
+      "id": "propane-tanks",
+      "name": "Propane tanks",
+      "aliases": ["propane tank", "propane cylinder", "camping propane", "grill propane", "small propane"],
+      "category": "hazardous",
+      "instructions": [
+        "Do NOT place in trash or recycling",
+        "Take to a Sanitation Convenience Center"
+      ],
+      "notes": [
+        "Pressurized tanks are dangerous in trash and recycling machinery",
+        "Some propane suppliers offer tank exchange programs"
+      ],
+      "commonMistakes": [
+        "Don't put in the trash; pressurized containers can explode in trucks",
+        "Don't put in the BLUE recycling bin"
+      ],
+      "tags": ["propane", "pressurized", "hazardous", "drop-off"],
+      "examples": ["Small camping propane canister", "Grill propane tank", "Portable propane cylinder"]
+    },
+    {
+      "id": "medications",
+      "name": "Medications",
+      "aliases": ["medication", "medicine", "prescription drugs", "pills", "over the counter medicine", "otc medicine", "expired medicine"],
+      "category": "hazardous",
+      "instructions": [
+        "Do NOT place in trash or flush down the toilet",
+        "Use a police department drug take-back box",
+        "Or take to a Sanitation Convenience Center"
+      ],
+      "notes": [
+        "Many Philadelphia police districts have 24/7 medication drop-off boxes",
+        "DEA National Take-Back events are held periodically"
+      ],
+      "commonMistakes": [
+        "Don't flush medications; they contaminate water supply",
+        "Don't put in the trash where children or pets could find them"
+      ],
+      "tags": ["medication", "hazardous", "drop-off"],
+      "examples": ["Expired prescription pills", "Old cough syrup", "Unused antibiotics", "Pain medication"]
+    },
+    {
+      "id": "yard-waste",
+      "name": "Yard waste",
+      "aliases": ["yard waste", "leaves", "grass clippings", "branches", "brush", "yard trimmings", "lawn waste", "garden waste"],
+      "category": "compost",
+      "instructions": [
+        "Place leaves in paper bags or open containers (NOT plastic bags)",
+        "Bundle branches (under 4 feet long, under 6 inches diameter)",
+        "Set out on your scheduled yard waste collection day"
+      ],
+      "notes": [
+        "Philadelphia collects yard waste on a seasonal schedule (typically spring and fall)",
+        "Check phila.gov for your collection schedule",
+        "Do NOT use plastic bags for yard waste"
+      ],
+      "commonMistakes": [
+        "Don't put yard waste in plastic bags; use paper bags or leave loose in a can",
+        "Don't mix yard waste with regular trash",
+        "Don't put out yard waste outside the scheduled collection period"
+      ],
+      "tags": ["yard", "leaves", "branches", "compost", "seasonal"],
+      "examples": ["Bagged leaves", "Grass clippings", "Tree branches", "Bush trimmings", "Garden weeds"]
+    },
+    {
+      "id": "food-scraps",
+      "name": "Food scraps",
+      "aliases": ["food scraps", "food waste", "compost", "kitchen scraps", "vegetable scraps", "fruit scraps", "coffee grounds", "tea bags"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Consider home composting as an alternative"
+      ],
+      "notes": [
+        "Philadelphia does NOT have a curbside composting program",
+        "Some community gardens and farmers markets accept food scraps",
+        "Bennett Compost and other private services offer residential pickup for a fee"
+      ],
+      "commonMistakes": [
+        "Don't put food scraps in the BLUE recycling bin; they contaminate recyclables"
+      ],
+      "tags": ["food", "trash", "no-curbside-compost"],
+      "examples": ["Banana peel", "Apple core", "Vegetable trimmings", "Coffee grounds", "Eggshells"]
+    },
+    {
+      "id": "paper-towels-napkins",
+      "name": "Paper towels and napkins",
+      "aliases": ["paper towel", "napkin", "tissue", "facial tissue", "kleenex", "paper napkin"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Paper towels and napkins are not recyclable due to food contamination and short fibers",
+        "If Philadelphia had composting, these would be compostable"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin"
+      ],
+      "tags": ["paper", "towel", "napkin", "trash", "not-recyclable"],
+      "examples": ["Used paper towel", "Paper napkin", "Facial tissue"]
+    },
+    {
+      "id": "diapers",
+      "name": "Diapers",
+      "aliases": ["diaper", "nappy", "disposable diaper", "pull-up", "adult diaper", "incontinence product"],
+      "category": "trash",
+      "instructions": [
+        "Wrap and seal used diapers",
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Disposable diapers are not recyclable or compostable"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin"
+      ],
+      "tags": ["diaper", "trash", "not-recyclable"],
+      "examples": ["Disposable baby diaper", "Adult diaper", "Pull-ups"]
+    },
+    {
+      "id": "ceramics-pyrex",
+      "name": "Ceramics, pottery, and Pyrex",
+      "aliases": ["ceramic", "pottery", "pyrex", "porcelain", "china", "terracotta", "clay pot", "ceramic mug", "broken mug", "broken plate"],
+      "category": "trash",
+      "instructions": [
+        "Wrap broken pieces carefully",
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Ceramics and heat-resistant glass (Pyrex) are chemically different from recyclable bottle glass",
+        "They contaminate glass recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; they ruin glass recycling batches",
+        "Don't confuse with glass bottles and jars"
+      ],
+      "tags": ["ceramic", "pottery", "pyrex", "trash", "not-recyclable"],
+      "examples": ["Broken coffee mug", "Ceramic plate", "Pyrex dish", "Flower pot", "Porcelain figurine"]
+    },
+    {
+      "id": "clothing-textiles",
+      "name": "Clothing and textiles",
+      "aliases": ["clothing", "clothes", "textiles", "fabric", "shoes", "shirt", "pants", "jacket", "towel", "sheets", "bedding", "curtains"],
+      "category": "dropoff",
+      "instructions": [
+        "Donate wearable clothing to local thrift stores or donation bins",
+        "Damaged textiles can go to textile recycling bins (found at many locations)",
+        "As a last resort, bag and place in regular trash"
+      ],
+      "notes": [
+        "Philadelphia has textile recycling bins throughout the city",
+        "Even damaged, stained, or torn textiles can be recycled into rags and insulation"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin",
+        "Don't throw away wearable clothing; donate it first"
+      ],
+      "tags": ["textile", "clothing", "donation", "drop-off"],
+      "examples": ["Old t-shirt", "Worn-out jeans", "Stained towels", "Used bed sheets", "Single shoes"]
+    },
+    {
+      "id": "scrap-metal",
+      "name": "Scrap metal and appliances",
+      "aliases": ["scrap metal", "metal", "appliance", "toaster", "microwave", "washer", "dryer", "refrigerator", "stove", "metal pipe", "metal furniture"],
+      "category": "dropoff",
+      "instructions": [
+        "Small metal items: place next to BLUE recycling bin on collection day",
+        "Large appliances: take to a Sanitation Convenience Center",
+        "Or schedule a bulk pickup through 311 or phila.gov"
+      ],
+      "notes": [
+        "Philadelphia Streets Department collects large items on request",
+        "Refrigerators and AC units must have refrigerant removed by a certified technician before disposal"
+      ],
+      "commonMistakes": [
+        "Don't leave large appliances on the curb without scheduling a pickup",
+        "Don't put small appliances in the BLUE bin; place next to it"
+      ],
+      "tags": ["metal", "appliance", "bulk", "drop-off"],
+      "examples": ["Old toaster", "Broken microwave", "Metal shelving", "Old washing machine", "Scrap pipe"]
+    },
+    {
+      "id": "mattresses-furniture",
+      "name": "Mattresses and furniture",
+      "aliases": ["mattress", "box spring", "furniture", "couch", "sofa", "desk", "table", "chair", "bookshelf", "dresser"],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a bulk pickup through 311 or phila.gov",
+        "Or take to a Sanitation Convenience Center",
+        "Do NOT leave on the curb without scheduling"
+      ],
+      "notes": [
+        "Bulk item pickup is available through the Streets Department",
+        "Consider donating usable furniture to local charities"
+      ],
+      "commonMistakes": [
+        "Don't dump on the curb; illegal dumping carries fines in Philadelphia",
+        "Don't block sidewalks or streets with discarded furniture"
+      ],
+      "tags": ["furniture", "mattress", "bulk", "drop-off"],
+      "examples": ["Old mattress", "Broken couch", "Desk", "Dining table", "Bookshelf"]
+    },
+    {
+      "id": "tires",
+      "name": "Tires",
+      "aliases": ["tire", "car tire", "bicycle tire", "rubber tire"],
+      "category": "dropoff",
+      "instructions": [
+        "Take to a Sanitation Convenience Center",
+        "Or return to a tire retailer when purchasing new tires"
+      ],
+      "notes": [
+        "Tires are not collected with regular trash or recycling",
+        "Limit of 4 tires per visit at Convenience Centers (off the rim)"
+      ],
+      "commonMistakes": [
+        "Don't put in the trash or leave on the curb",
+        "Don't illegally dump tires; fines apply"
+      ],
+      "tags": ["tire", "rubber", "drop-off"],
+      "examples": ["Car tire", "Truck tire", "Bicycle tire"]
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking oil and grease",
+      "aliases": ["cooking oil", "vegetable oil", "frying oil", "grease", "bacon grease", "used oil cooking"],
+      "category": "trash",
+      "instructions": [
+        "Let cool completely",
+        "Pour into a sealed, non-recyclable container (e.g., old milk carton)",
+        "Place sealed container in regular trash",
+        "NEVER pour down the drain"
+      ],
+      "notes": [
+        "Pouring grease down the drain causes sewer blockages ('fatbergs')",
+        "Some Sanitation Convenience Centers accept cooking oil for recycling into biodiesel"
+      ],
+      "commonMistakes": [
+        "Don't pour down the drain or toilet",
+        "Don't put liquid grease directly in the trash; contain it first"
+      ],
+      "tags": ["oil", "grease", "cooking", "trash"],
+      "examples": ["Used frying oil", "Bacon grease", "Old vegetable oil"]
+    },
+    {
+      "id": "padded-mailers",
+      "name": "Padded mailers and bubble wrap",
+      "aliases": ["padded mailer", "bubble mailer", "bubble wrap", "bubble envelope", "padded envelope", "jiffy bag"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Padded mailers combine paper and plastic/foam, making them non-recyclable",
+        "Bubble wrap can be returned to grocery store plastic bag collection bins"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin",
+        "Don't confuse with plain paper envelopes, which are recyclable"
+      ],
+      "tags": ["mailer", "bubble-wrap", "trash", "not-recyclable"],
+      "examples": ["Amazon padded mailer", "Bubble envelope", "Bubble wrap sheet"]
+    },
+    {
+      "id": "hardcover-books",
+      "name": "Hardcover books",
+      "aliases": ["hardcover book", "hard cover book", "textbook", "hardback"],
+      "category": "dropoff",
+      "instructions": [
+        "Donate to a library, school, or thrift store",
+        "If not donatable, remove the hard cover and recycle the paper pages in the BLUE bin",
+        "Hard covers go in the trash"
+      ],
+      "notes": [
+        "Philadelphia Free Library accepts book donations",
+        "Consider using Little Free Libraries in your neighborhood"
+      ],
+      "commonMistakes": [
+        "Don't put a whole hardcover book in the recycling bin; the binding glue and cover board cause problems"
+      ],
+      "tags": ["book", "donation", "drop-off"],
+      "examples": ["Hardcover novel", "Textbook", "Encyclopedia", "Coffee table book"]
+    },
+    {
+      "id": "shredded-paper",
+      "name": "Shredded paper",
+      "aliases": ["shredded paper", "paper shreds", "cross-cut paper"],
+      "category": "recycle",
+      "instructions": [
+        "Place shredded paper in a paper bag and staple or tape shut",
+        "Place the bag in the BLUE recycling bin"
+      ],
+      "notes": [
+        "Loose shredded paper can jam machinery and blow away",
+        "Containing it in a paper bag keeps it together through the sorting process"
+      ],
+      "commonMistakes": [
+        "Don't put loose shredded paper directly in the bin; it scatters",
+        "Don't use a plastic bag to contain shredded paper"
+      ],
+      "tags": ["paper", "shredded", "blue-bin"],
+      "examples": ["Shredded documents", "Cross-cut paper shreds"]
+    },
+    {
+      "id": "cereal-boxes",
+      "name": "Cereal and food boxes",
+      "aliases": ["cereal box", "food box", "cracker box", "pasta box", "snack box", "tissue box", "paperboard box"],
+      "category": "recycle",
+      "instructions": [
+        "Remove the inner plastic liner/bag",
+        "Flatten the box",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Thin cardboard (paperboard) food boxes are accepted",
+        "Includes cereal, pasta, cracker, and snack boxes"
+      ],
+      "commonMistakes": [
+        "Don't include the inner plastic bag; that goes in the trash",
+        "Don't include frozen food boxes; they have a moisture coating and go in the trash"
+      ],
+      "tags": ["cardboard", "paperboard", "box", "blue-bin"],
+      "examples": ["Cereal box", "Cracker box", "Pasta box", "Tissue box", "Granola bar box"]
+    },
+    {
+      "id": "frozen-food-boxes",
+      "name": "Frozen food boxes",
+      "aliases": ["frozen food box", "frozen dinner box", "tv dinner box", "ice cream box", "frozen pizza box"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Frozen food boxes have a moisture-resistant coating that prevents recycling",
+        "This includes ice cream cartons, frozen dinner boxes, and frozen vegetable bags"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; the coating contaminates paper recycling",
+        "Don't confuse with regular cereal/food boxes, which ARE recyclable"
+      ],
+      "tags": ["cardboard", "coated", "trash", "not-recyclable"],
+      "examples": ["Frozen dinner box", "Ice cream carton", "Frozen pizza box", "Frozen vegetable box"]
+    },
+    {
+      "id": "hangers",
+      "name": "Hangers",
+      "aliases": ["hanger", "clothes hanger", "wire hanger", "plastic hanger", "wooden hanger", "coat hanger"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Consider donating to dry cleaners or thrift stores"
+      ],
+      "notes": [
+        "Hangers tangle in recycling machinery regardless of material",
+        "Wire, plastic, and wooden hangers all go in the trash"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; they jam sorting equipment"
+      ],
+      "tags": ["hanger", "trash", "not-recyclable"],
+      "examples": ["Wire hanger", "Plastic hanger", "Wooden hanger"]
+    },
+    {
+      "id": "christmas-lights",
+      "name": "String lights and holiday lights",
+      "aliases": ["christmas lights", "holiday lights", "string lights", "fairy lights", "light strand"],
+      "category": "dropoff",
+      "instructions": [
+        "Take to a Sanitation Convenience Center",
+        "Some hardware stores accept them seasonally"
+      ],
+      "notes": [
+        "String lights contain copper wire that can be recycled, but they tangle in sorting machinery"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; they wrap around equipment",
+        "Don't put in the trash if you can drop them off for recycling"
+      ],
+      "tags": ["lights", "electronics", "holiday", "drop-off"],
+      "examples": ["Old Christmas lights", "Broken string lights", "Holiday light strands"]
+    },
+    {
+      "id": "sharps",
+      "name": "Needles and sharps",
+      "aliases": ["needle", "syringe", "sharps", "lancet", "insulin needle", "epipen"],
+      "category": "hazardous",
+      "instructions": [
+        "Place in a rigid, puncture-proof container (e.g., laundry detergent bottle) labeled 'SHARPS'",
+        "When full, tape the container shut",
+        "Take to a Sanitation Convenience Center or participating pharmacy"
+      ],
+      "notes": [
+        "Never put loose sharps in the trash or recycling",
+        "Some pharmacies accept sharps containers"
+      ],
+      "commonMistakes": [
+        "Don't throw loose needles in the trash; sanitation workers can be injured",
+        "Don't put in the BLUE recycling bin"
+      ],
+      "tags": ["sharps", "medical", "hazardous", "drop-off"],
+      "examples": ["Insulin syringe", "Lancet", "EpiPen", "Hypodermic needle"]
+    },
+    {
+      "id": "smoke-detectors",
+      "name": "Smoke detectors",
+      "aliases": ["smoke detector", "smoke alarm", "carbon monoxide detector", "co detector"],
+      "category": "hazardous",
+      "instructions": [
+        "Take to a Sanitation Convenience Center",
+        "Some contain small amounts of radioactive material (americium-241)"
+      ],
+      "notes": [
+        "Ionization smoke detectors contain radioactive material and require special disposal",
+        "Check if the manufacturer offers a mail-back program"
+      ],
+      "commonMistakes": [
+        "Don't put in the trash or recycling"
+      ],
+      "tags": ["smoke-detector", "hazardous", "drop-off"],
+      "examples": ["Old smoke detector", "Expired carbon monoxide detector"]
+    },
+    {
+      "id": "thermal-receipts",
+      "name": "Thermal receipts",
+      "aliases": ["receipt", "thermal receipt", "register receipt", "store receipt", "atm receipt"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Thermal paper (shiny, slick receipts) contains BPA and is not recyclable",
+        "Choose digital receipts when possible"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE recycling bin; BPA contaminates paper recycling"
+      ],
+      "tags": ["paper", "thermal", "receipt", "trash", "not-recyclable"],
+      "examples": ["Grocery store receipt", "ATM receipt", "Gas station receipt"]
+    },
+    {
+      "id": "rigid-plastic-clamshells",
+      "name": "Rigid plastic clamshells",
+      "aliases": ["clamshell", "berry container", "strawberry container", "salad container", "bakery container", "clear plastic container", "hinged plastic container"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in BLUE recycling bin"
+      ],
+      "notes": [
+        "Rigid clear hinged plastic containers are accepted",
+        "Must be hard plastic, not foam"
+      ],
+      "commonMistakes": [
+        "Don't include styrofoam clamshells; those go in the trash"
+      ],
+      "tags": ["plastic", "clamshell", "container", "blue-bin"],
+      "examples": ["Berry container", "Salad clamshell", "Bakery container", "Deli clamshell"]
+    }
+  ],
+  "guidelines": {
+    "recycle": [
+      "BLUE BIN: Newspapers, magazines, junk mail, envelopes, writing paper, paper bags",
+      "BLUE BIN: Paperback books, non-metallic greeting cards",
+      "BLUE BIN: Plastic bottles, jugs, hard plastic containers, 5-gallon buckets",
+      "BLUE BIN: Detergent/shampoo bottles, pump/spray bottles",
+      "BLUE BIN: Aluminum/steel/tin cans, empty paint cans, empty aerosol cans",
+      "BLUE BIN: Aluminum foil, pie tins, metal bottle caps",
+      "BLUE BIN: All glass bottles and jars (empty, rinsed, dry)",
+      "BLUE BIN: Flattened corrugated cardboard, clean pizza boxes, paper towel rolls",
+      "BLUE BIN: Cardboard egg cartons, cereal/food boxes",
+      "BLUE BIN: Milk, juice, soup, and wine cartons (empty, rinsed, dry)"
+    ],
+    "compost": [
+      "No curbside composting program in Philadelphia",
+      "Yard waste is collected separately on a seasonal schedule (paper bags only, no plastic bags)",
+      "Consider home composting or private composting services (e.g., Bennett Compost)",
+      "Some community gardens and farmers markets accept food scraps"
+    ],
+    "trash": [
+      "Plastic bags, plastic film, plastic wrap",
+      "Styrofoam (cups, containers, trays, packing)",
+      "Packing peanuts",
+      "Plastic straws, coffee cup lids, plastic cutlery",
+      "Waxed paper and wax-coated cardboard",
+      "Disposable coffee cups (plastic-lined)",
+      "Frozen food boxes (moisture-coated)",
+      "Window glass, mirrors, ceramics, Pyrex",
+      "Light bulbs (LED, incandescent, halogen)",
+      "Hangers of any type",
+      "Paper towels, napkins, tissues",
+      "Thermal receipts",
+      "Diapers"
+    ]
+  },
+  "notAccepted": {
+    "recycle": [
+      "Plastic bags, film, and wrap; they jam sorting machinery",
+      "Styrofoam; not recyclable in Philadelphia",
+      "Packing peanuts",
+      "Plastic straws; too small for sorting equipment",
+      "Coffee cup lids; too small for sorting equipment",
+      "Plastic cutlery",
+      "Waxed paper and wax-coated cardboard",
+      "Disposable coffee cups (plastic-lined)",
+      "Frozen food boxes (moisture-coated)",
+      "Window glass, mirrors, ceramics, Pyrex",
+      "Light bulbs of any type",
+      "Batteries",
+      "Hangers",
+      "Thermal receipts (contain BPA)",
+      "Padded mailers and bubble wrap"
+    ],
+    "compost": [
+      "Philadelphia does not offer curbside composting",
+      "Food scraps go in regular trash unless you use a private composting service"
+    ]
+  },
+  "tips": [
+    "Philadelphia uses SINGLE-STREAM recycling: all recyclables go in one BLUE bin",
+    "Empty, rinse, and dry containers before recycling; they don't need to be spotless",
+    "Flatten cardboard boxes to save space in your blue bin",
+    "Clean pizza boxes ARE accepted; just remove leftover food",
+    "Empty paint cans and empty aerosol cans ARE accepted in the blue bin",
+    "5-gallon plastic buckets ARE recyclable in Philadelphia",
+    "Plastic bags are the #1 contaminant; NEVER put them in the blue bin",
+    "Don't bag your recyclables in plastic bags; put items loose in the bin",
+    "Return plastic bags to grocery store collection bins instead",
+    "Bottle caps should stay on their bottles; loose caps fall through sorting screens",
+    "Shredded paper goes in a paper bag, stapled shut, then in the blue bin",
+    "Yard waste has a separate seasonal collection; use paper bags, not plastic",
+    "Philadelphia does NOT have curbside composting; food scraps go in trash",
+    "Take hazardous waste (batteries, paint, chemicals) to a Sanitation Convenience Center",
+    "Schedule bulk pickups (furniture, appliances) through 311 or phila.gov",
+    "When in doubt, put it in the trash; contamination ruins entire recycling loads"
+  ],
+  "locations": [
+    {
+      "name": "Sanitation Convenience Center — Northwest",
+      "address": "Domino Lane & Umbria St, Philadelphia, PA 19128",
+      "phone": "215-685-2500",
+      "url": "https://www.phila.gov/programs/sanitation-convenience-centers/",
+      "accepts": [
+        "Electronics and e-waste",
+        "Batteries",
+        "Fluorescent bulbs and CFLs",
+        "Liquid paint and stains",
+        "Motor oil and automotive fluids",
+        "Pesticides and household chemicals",
+        "Propane tanks",
+        "Tires (limit 4, off rim)",
+        "Bulk items (furniture, mattresses)",
+        "Yard waste"
+      ],
+      "notes": "Open Wednesday through Sunday, 8 AM–6 PM. Closed Monday and Tuesday. Philadelphia residents only; proof of residency may be required."
+    },
+    {
+      "name": "Sanitation Convenience Center — Northeast",
+      "address": "State Rd & Ashburner St, Philadelphia, PA 19136",
+      "phone": "215-685-2500",
+      "url": "https://www.phila.gov/programs/sanitation-convenience-centers/",
+      "accepts": [
+        "Electronics and e-waste",
+        "Batteries",
+        "Fluorescent bulbs and CFLs",
+        "Liquid paint and stains",
+        "Motor oil and automotive fluids",
+        "Pesticides and household chemicals",
+        "Propane tanks",
+        "Tires (limit 4, off rim)",
+        "Bulk items (furniture, mattresses)",
+        "Yard waste"
+      ],
+      "notes": "Open Wednesday through Sunday, 8 AM–6 PM. Closed Monday and Tuesday. Philadelphia residents only; proof of residency may be required."
+    },
+    {
+      "name": "Sanitation Convenience Center — South",
+      "address": "3033 S 63rd St, Philadelphia, PA 19153",
+      "phone": "215-685-2500",
+      "url": "https://www.phila.gov/programs/sanitation-convenience-centers/",
+      "accepts": [
+        "Electronics and e-waste",
+        "Batteries",
+        "Fluorescent bulbs and CFLs",
+        "Liquid paint and stains",
+        "Motor oil and automotive fluids",
+        "Pesticides and household chemicals",
+        "Propane tanks",
+        "Tires (limit 4, off rim)",
+        "Bulk items (furniture, mattresses)",
+        "Yard waste"
+      ],
+      "notes": "Open Wednesday through Sunday, 8 AM–6 PM. Closed Monday and Tuesday. Philadelphia residents only; proof of residency may be required."
+    }
+  ]
+}

@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { AnalyzingOverlay } from "./analyzing-overlay";
 import { ImagePreview } from "./image-preview";
 import { BarcodeScanner } from "./barcode-scanner";
+import { MultiItemPicker } from "./multi-item-picker";
 import { useSfx } from "@/components/sfx/sfx-context";
 import { toast } from "sonner";
 
@@ -22,6 +23,15 @@ type ScanUploadButtonsProps = {
   autoOpenCamera?: boolean;
 };
 
+type PendingScanData = {
+  labels: string[];
+  guessedName: string;
+  confidence: number;
+  productDescription?: string;
+  textFound?: string;
+  materialComposition?: string;
+};
+
 export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
   const [cameraOpen, setCameraOpen] = useState(false);
   const [barcodeOpen, setBarcodeOpen] = useState(false);
@@ -29,10 +39,28 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
   const [analyzing, setAnalyzing] = useState<string | null>(null);
   const [phase, setPhase] = useState<AnalysisPhase>("uploading");
   const [isUploading, setIsUploading] = useState(false);
+  const [pendingScan, setPendingScan] = useState<PendingScanData | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   const { providerId } = useLocation();
   const sfx = useSfx();
+
+  const navigateToResult = useCallback(
+    (q: string, scanData: PendingScanData) => {
+      const params = new URLSearchParams({
+        q,
+        provider: providerId,
+        scan: "true",
+        labels: JSON.stringify(scanData.labels),
+        confidence: String(scanData.confidence),
+      });
+      if (scanData.productDescription) params.set("product", scanData.productDescription);
+      if (scanData.textFound) params.set("textFound", scanData.textFound);
+      if (scanData.materialComposition) params.set("material", scanData.materialComposition);
+      router.push(`/result?${params.toString()}`);
+    },
+    [providerId, router]
+  );
 
   useEffect(() => {
     if (autoOpenCamera) {
@@ -85,24 +113,26 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
         }
 
         const q = data.guessedItemName || data.labels?.[0] || "";
-        const params = new URLSearchParams({
-          q,
-          provider: providerId,
-          scan: "true",
-          labels: JSON.stringify(data.labels || []),
-          confidence: String(data.visionConfidence ?? 0),
-        });
-        if (data.productDescription) {
-          params.set("product", data.productDescription);
-        }
-        if (data.textFound) {
-          params.set("textFound", data.textFound);
-        }
-        if (data.materialComposition) {
-          params.set("material", data.materialComposition);
-        }
+        const scanPayload: PendingScanData = {
+          labels: data.labels || [],
+          guessedName: q,
+          confidence: data.visionConfidence ?? 0,
+          productDescription: data.productDescription,
+          textFound: data.textFound,
+          materialComposition: data.materialComposition,
+        };
+
         setPhase("finalizing");
-        router.push(`/result?${params.toString()}`);
+
+        const uniqueLabels = [
+          ...new Set((data.labels || []).map((l: string) => l.toLowerCase())),
+        ];
+        if (uniqueLabels.length > 1) {
+          setPendingScan(scanPayload);
+          return;
+        }
+
+        navigateToResult(q, scanPayload);
       } catch {
         const msg = navigator.onLine
           ? "Scan failed. Please try again."
@@ -288,6 +318,26 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
           >
             <AnalyzingOverlay imageDataUrl={analyzing} phase={phase} />
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Multi-item picker */}
+      <AnimatePresence>
+        {pendingScan && (
+          <MultiItemPicker
+            labels={pendingScan.labels}
+            guessedName={pendingScan.guessedName}
+            onSelect={(label) => {
+              const data = pendingScan;
+              setPendingScan(null);
+              navigateToResult(label, data);
+            }}
+            onClose={() => {
+              const data = pendingScan;
+              setPendingScan(null);
+              navigateToResult(data.guessedName, data);
+            }}
+          />
         )}
       </AnimatePresence>
     </>

@@ -38,14 +38,39 @@ export function useGeolocation(): GeoState {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(coords));
   }, []);
 
-  const requestPermission = useCallback(() => {
+  const requestPermission = useCallback(async () => {
     if (!("geolocation" in navigator)) {
-      setError("Geolocation is not supported by your browser");
+      setError("Geolocation is not supported by your browser.");
+      return;
+    }
+
+    if (
+      typeof window !== "undefined" &&
+      window.location.protocol !== "https:" &&
+      window.location.hostname !== "localhost"
+    ) {
+      setError("Location requires a secure (HTTPS) connection.");
       return;
     }
 
     setLoading(true);
     setError(null);
+
+    // Check browser permission state first (if available)
+    if ("permissions" in navigator) {
+      try {
+        const status = await navigator.permissions.query({ name: "geolocation" });
+        if (status.state === "denied") {
+          setError(
+            "Location is blocked for this site. Open your browser settings, find this site's permissions, and allow Location. Then try again."
+          );
+          setLoading(false);
+          return;
+        }
+      } catch {
+        // Permissions API not supported for geolocation on this browser — continue
+      }
+    }
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -59,16 +84,23 @@ export function useGeolocation(): GeoState {
         persist(coords);
       },
       (err) => {
-        const message =
-          err.code === err.PERMISSION_DENIED
-            ? "Location access denied. You can search by ZIP code or city instead."
-            : err.code === err.POSITION_UNAVAILABLE
-              ? "Unable to determine your location. Try searching by ZIP code."
-              : "Location request timed out. Try searching by ZIP code.";
+        let message: string;
+        if (err.code === err.PERMISSION_DENIED) {
+          const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+          message = isIOS
+            ? "Location denied. On iOS: tap the \"AA\" button in the address bar → Website Settings → Location → Allow. Then try again."
+            : "Location denied. Check your browser's site settings and make sure Location is set to Allow for this site.";
+        } else if (err.code === err.POSITION_UNAVAILABLE) {
+          message =
+            "Unable to determine your location. Make sure Location Services are turned on in your device settings, or search by ZIP code.";
+        } else {
+          message =
+            "Location request timed out. Make sure you have a clear GPS signal, or search by ZIP code.";
+        }
         setError(message);
         setLoading(false);
       },
-      { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
+      { enableHighAccuracy: true, timeout: 15000, maximumAge: 300000 }
     );
   }, [persist]);
 

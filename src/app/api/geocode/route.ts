@@ -16,11 +16,18 @@ export async function GET(req: NextRequest) {
   }
 
   try {
+    const isZip = /^\d{5}$/.test(query);
     const url = new URL("https://nominatim.openstreetmap.org/search");
-    url.searchParams.set("q", query);
     url.searchParams.set("format", "json");
     url.searchParams.set("limit", "5");
-    url.searchParams.set("countrycodes", "us");
+
+    if (isZip) {
+      url.searchParams.set("postalcode", query);
+      url.searchParams.set("country", "us");
+    } else {
+      url.searchParams.set("q", query);
+      url.searchParams.set("countrycodes", "us");
+    }
 
     const res = await fetch(url.toString(), {
       headers: { "User-Agent": "isthisrecyclable.com/1.0" },

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { CategoryIcon } from "@/components/common/category-icon";
 import { ConfidenceMeter } from "./confidence-meter";
+import { Celebration } from "./celebration";
 import { ShareButton } from "./share-button";
 import {
   AlertTriangle,
@@ -142,6 +143,7 @@ export function ResultCard({
             transition={{ type: "spring", stiffness: 200, damping: 14, delay: 0.1 }}
             className="relative"
           >
+            <Celebration category={material.category} materialId={material.id} />
             <div className={cn(
               "flex h-20 w-20 items-center justify-center rounded-full ring-4 ring-white/60 dark:ring-white/10 shadow-xl",
               meta.bgColor
@@ -444,6 +446,8 @@ export function ResultCard({
                   itemName={material.name}
                   category={material.category}
                   providerName={providerName}
+                  confidence={confidence}
+                  instructions={material.instructions}
                 />
               </div>
             </motion.div>

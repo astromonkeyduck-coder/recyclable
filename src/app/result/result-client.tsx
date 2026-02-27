@@ -27,6 +27,7 @@ import Link from "next/link";
 import type { Material } from "@/lib/providers/types";
 import { useSfx } from "@/components/sfx/sfx-context";
 import { useSearchHistory } from "@/hooks/use-search-history";
+import { useEcoStats } from "@/hooks/use-eco-stats";
 
 type ResolveResult = {
   best: Material | null;
@@ -130,6 +131,7 @@ function ResultContent() {
     null
   );
   const { addToHistory } = useSearchHistory();
+  const { logLookup } = useEcoStats();
 
   const {
     data,
@@ -174,11 +176,17 @@ function ResultContent() {
   const sfx = useSfx();
   const playedRef = useRef(false);
 
+  const loggedRef = useRef(false);
+
   useEffect(() => {
     if (data?.best && q) {
       addToHistory(q, data.best.category);
+      if (!loggedRef.current) {
+        logLookup(data.best.category);
+        loggedRef.current = true;
+      }
     }
-  }, [data?.best, q, addToHistory]);
+  }, [data?.best, q, addToHistory, logLookup]);
 
   useEffect(() => {
     if (playedRef.current) return;

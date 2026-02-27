@@ -1,18 +1,27 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Share2, Check, Copy } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Share2, Link2, Image, Loader2 } from "lucide-react";
 import { useState, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import { CATEGORY_META } from "@/lib/utils/categories";
 import type { DisposalCategory } from "@/lib/providers/types";
 import { toast } from "sonner";
 import { useSfx } from "@/components/sfx/sfx-context";
+import { generateShareImage } from "./share-card-canvas";
 
 type ShareButtonProps = {
   itemName: string;
   category: DisposalCategory;
   providerName: string;
+  confidence?: number;
+  instructions?: string[];
 };
 
 function buildShareUrl(itemName: string, providerId: string): string {
@@ -24,13 +33,19 @@ function buildShareUrl(itemName: string, providerId: string): string {
   return `${base}/result?${params.toString()}`;
 }
 
-export function ShareButton({ itemName, category, providerName }: ShareButtonProps) {
-  const [copied, setCopied] = useState(false);
+export function ShareButton({
+  itemName,
+  category,
+  providerName,
+  confidence = 0,
+  instructions = [],
+}: ShareButtonProps) {
+  const [generatingImage, setGeneratingImage] = useState(false);
   const searchParams = useSearchParams();
   const providerId = searchParams.get("provider") ?? "general";
   const sfx = useSfx();
 
-  const handleShare = useCallback(async () => {
+  const handleShareLink = useCallback(async () => {
     const meta = CATEGORY_META[category];
     const shareUrl = buildShareUrl(itemName, providerId);
     const actionMap: Record<string, string> = {
@@ -61,22 +76,79 @@ export function ShareButton({ itemName, category, providerName }: ShareButtonPro
     try {
       await navigator.clipboard.writeText(shareUrl);
       sfx.ding();
-      setCopied(true);
       toast.success("Link copied to clipboard");
-      setTimeout(() => setCopied(false), 2500);
     } catch {
       toast.error("Could not copy link");
     }
-  }, [itemName, category, providerName, providerId]);
+  }, [itemName, category, providerName, providerId, sfx]);
+
+  const handleShareImage = useCallback(async () => {
+    setGeneratingImage(true);
+    try {
+      const blob = await generateShareImage({
+        itemName,
+        category,
+        confidence,
+        instructions,
+        providerName,
+      });
+
+      const file = new File([blob], `${itemName.toLowerCase().replace(/\s+/g, "-")}-disposal.png`, {
+        type: "image/png",
+      });
+
+      if (navigator.share && navigator.canShare?.({ files: [file] })) {
+        await navigator.share({
+          files: [file],
+          title: `How to dispose of ${itemName}`,
+        });
+        toast.success("Shared!");
+      } else {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = file.name;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        sfx.ding();
+        toast.success("Image downloaded!");
+      }
+    } catch (err) {
+      if (err instanceof Error && err.name === "AbortError") return;
+      toast.error("Could not generate image");
+    } finally {
+      setGeneratingImage(false);
+    }
+  }, [itemName, category, confidence, instructions, providerName, sfx]);
 
   return (
-    <Button variant="outline" size="sm" onClick={handleShare} className="gap-1.5">
-      {copied ? (
-        <Check className="h-3.5 w-3.5 text-green-600" />
-      ) : (
-        <Share2 className="h-3.5 w-3.5" />
-      )}
-      {copied ? "Copied!" : "Share"}
-    </Button>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" size="sm" className="gap-1.5">
+          <Share2 className="h-3.5 w-3.5" />
+          Share
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-44">
+        <DropdownMenuItem onClick={handleShareLink} className="gap-2">
+          <Link2 className="h-3.5 w-3.5" />
+          Share link
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={handleShareImage}
+          disabled={generatingImage}
+          className="gap-2"
+        >
+          {generatingImage ? (
+            <Loader2 className="h-3.5 w-3.5 animate-spin" />
+          ) : (
+            <Image className="h-3.5 w-3.5" />
+          )}
+          Share as image
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

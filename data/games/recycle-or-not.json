@@ -1,0 +1,77 @@
+{
+  "id": "recycle-or-not",
+  "name": "Recycle or Not?",
+  "description": "Rapid-fire item classification. How fast can you sort?",
+  "icon": "♻️",
+  "color": "#3B82F6",
+  "defaultTimeLimit": 15,
+  "questionsPerRound": 10,
+  "difficultyLevels": [
+    {
+      "id": "ron-easy",
+      "label": "easy",
+      "questions": [
+        {"id":"ron-e1","type":"multiple_choice","prompt":"Plastic water bottle","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Plastic water bottles (#1 PET) are widely recyclable. Empty, rinse, replace the cap.","category":"recycling","funFact":"Recycling one plastic bottle saves enough energy to power a lightbulb for 3 hours."},
+        {"id":"ron-e2","type":"multiple_choice","prompt":"Banana peel","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Compost","explanation":"Banana peels are organic and compostable. They break down quickly in a compost bin.","category":"recycling","funFact":"Banana peels can also be used to polish shoes and silverware."},
+        {"id":"ron-e3","type":"multiple_choice","prompt":"Aluminum soda can","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Aluminum cans are infinitely recyclable and one of the most valuable recyclables.","category":"recycling","funFact":"A recycled aluminum can returns to the shelf as a new can in just 60 days."},
+        {"id":"ron-e4","type":"multiple_choice","prompt":"Styrofoam cup","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Styrofoam (polystyrene) is not accepted in most curbside recycling programs.","category":"recycling","funFact":"Americans throw away 25 billion styrofoam cups every year."},
+        {"id":"ron-e5","type":"multiple_choice","prompt":"Cardboard box","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Cardboard is one of the most recycled materials. Flatten boxes before recycling.","category":"recycling","funFact":"Over 80% of products sold in the US are packaged in corrugated cardboard."},
+        {"id":"ron-e6","type":"multiple_choice","prompt":"AA battery","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Hazardous","explanation":"Batteries contain toxic chemicals and can cause fires. Take to hazardous waste drop-off.","category":"recycling","funFact":"Batteries cause over 65% of fires at waste and recycling facilities."},
+        {"id":"ron-e7","type":"multiple_choice","prompt":"Glass wine bottle","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Glass is 100% recyclable and can be recycled endlessly without losing quality.","category":"recycling","funFact":"Glass takes over 1 million years to decompose in a landfill."},
+        {"id":"ron-e8","type":"multiple_choice","prompt":"Plastic grocery bag","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Plastic bags jam recycling machinery. Take to store drop-off or put in trash.","category":"recycling","funFact":"The average plastic bag is used for only 12 minutes before being discarded."},
+        {"id":"ron-e9","type":"multiple_choice","prompt":"Newspaper","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Newspaper is one of the most commonly recycled materials.","category":"recycling","funFact":"Recycling one ton of newspaper saves 17 trees."},
+        {"id":"ron-e10","type":"multiple_choice","prompt":"Coffee grounds","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Compost","explanation":"Coffee grounds are excellent for composting. They add nitrogen to the soil.","category":"recycling","funFact":"Starbucks gives away free used coffee grounds for composting."},
+        {"id":"ron-e11","type":"multiple_choice","prompt":"Pizza box","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Most programs accept lightly soiled pizza boxes. Tear off heavily greased parts.","category":"recycling"},
+        {"id":"ron-e12","type":"multiple_choice","prompt":"Old t-shirt","options":["Recycle","Trash","Compost","Drop-off"],"correctAnswer":"Drop-off","explanation":"Donate wearable clothing. Worn-out textiles go in textile recycling bins.","category":"recycling","funFact":"The average American throws away 81 pounds of clothing per year."}
+      ]
+    },
+    {
+      "id": "ron-medium",
+      "label": "medium",
+      "questions": [
+        {"id":"ron-m1","type":"multiple_choice","prompt":"Snickers candy wrapper","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Candy wrappers are metallized plastic film — multi-layer materials that cannot be recycled.","category":"recycling","funFact":"Candy wrappers look metallic but are NOT aluminum — they're plastic with a thin metal coating."},
+        {"id":"ron-m2","type":"multiple_choice","prompt":"Egg carton (paper)","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Paper egg cartons are recyclable. Styrofoam egg cartons go in trash.","category":"recycling"},
+        {"id":"ron-m3","type":"multiple_choice","prompt":"Doritos chip bag","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Chip bags are metallized plastic film — the shiny interior is aluminum bonded to plastic.","category":"recycling"},
+        {"id":"ron-m4","type":"multiple_choice","prompt":"Toothpaste tube","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Most toothpaste tubes are multi-layer plastic with residue — not recyclable curbside.","category":"materials"},
+        {"id":"ron-m5","type":"multiple_choice","prompt":"Broken ceramic mug","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Ceramics melt at different temperatures than glass and ruin glass recycling batches.","category":"materials"},
+        {"id":"ron-m6","type":"multiple_choice","prompt":"K-Cup coffee pod","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Coffee pods are mixed materials (plastic + foil + coffee) — not recyclable curbside.","category":"recycling"},
+        {"id":"ron-m7","type":"multiple_choice","prompt":"Receipts","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Most receipts are thermal paper coated with BPA — they contaminate recycling.","category":"materials","funFact":"Thermal receipts contain BPA, an endocrine disruptor."},
+        {"id":"ron-m8","type":"multiple_choice","prompt":"Wine cork (natural)","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Compost","explanation":"Natural cork is biodegradable and compostable. Synthetic corks go in trash.","category":"recycling"},
+        {"id":"ron-m9","type":"multiple_choice","prompt":"Old iPhone","options":["Recycle","Trash","Compost","Drop-off"],"correctAnswer":"Drop-off","explanation":"Phones contain valuable metals and toxic materials. Take to e-waste recycling.","category":"recycling","funFact":"There's more gold in a ton of phones than a ton of gold ore."},
+        {"id":"ron-m10","type":"multiple_choice","prompt":"Frozen food box","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Frozen food boxes are coated with a moisture barrier that prevents recycling.","category":"materials"}
+      ]
+    },
+    {
+      "id": "ron-hard",
+      "label": "hard",
+      "questions": [
+        {"id":"ron-h1","type":"multiple_choice","prompt":"Aerosol can (empty)","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Empty aerosol cans are recyclable as metal. Non-empty ones are hazardous waste.","category":"recycling"},
+        {"id":"ron-h2","type":"multiple_choice","prompt":"Bubble wrap","options":["Recycle","Trash","Compost","Drop-off"],"correctAnswer":"Trash","explanation":"Bubble wrap is plastic film that jams recycling machinery. Store drop-off or trash.","category":"recycling"},
+        {"id":"ron-h3","type":"multiple_choice","prompt":"Juice pouch (Capri Sun)","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Juice pouches are multi-layer mixed materials — not recyclable curbside.","category":"materials"},
+        {"id":"ron-h4","type":"multiple_choice","prompt":"Prescription bottle (empty)","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Prescription bottles are #5 PP plastic — recyclable in most programs. Remove the label first.","category":"recycling"},
+        {"id":"ron-h5","type":"multiple_choice","prompt":"Parchment paper","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Parchment paper has a silicone coating that prevents recycling.","category":"materials"},
+        {"id":"ron-h6","type":"multiple_choice","prompt":"Disposable razor","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Razors are mixed materials (metal + plastic) — wrap blade for safety and trash.","category":"materials"},
+        {"id":"ron-h7","type":"multiple_choice","prompt":"Mirror","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Mirrors have a metallic coating that makes them incompatible with glass recycling.","category":"materials"},
+        {"id":"ron-h8","type":"multiple_choice","prompt":"Motor oil","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Hazardous","explanation":"Motor oil is a hazardous material. Take to auto parts stores or hazardous waste facilities.","category":"recycling","funFact":"One gallon of used motor oil can contaminate 1 million gallons of water."},
+        {"id":"ron-h9","type":"multiple_choice","prompt":"Red Solo cup","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Red Solo cups are #6 polystyrene — NOT recyclable in most curbside programs despite being rigid.","category":"materials"},
+        {"id":"ron-h10","type":"multiple_choice","prompt":"Clothes hanger (wire)","options":["Recycle","Trash","Compost","Drop-off"],"correctAnswer":"Trash","explanation":"Wire hangers tangle in recycling machinery. Return to dry cleaners or trash.","category":"recycling"}
+      ]
+    },
+    {
+      "id": "ron-expert",
+      "label": "expert",
+      "questions": [
+        {"id":"ron-x1","type":"multiple_choice","prompt":"Tetra Pak carton","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Tetra Pak cartons are accepted in most curbside programs. Don't flatten them.","category":"materials","funFact":"Tetra Pak cartons are made of 75% paper, 20% polyethylene, and 5% aluminum."},
+        {"id":"ron-x2","type":"multiple_choice","prompt":"Spiral notebook (with wire)","options":["Recycle","Trash","Compost","Drop-off"],"correctAnswer":"Recycle","explanation":"Remove the spiral wire (recycle as metal), then recycle the paper.","category":"materials"},
+        {"id":"ron-x3","type":"multiple_choice","prompt":"Latex paint (dried out)","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Dried latex paint can go in trash. Liquid latex paint must go to hazardous waste.","category":"recycling"},
+        {"id":"ron-x4","type":"multiple_choice","prompt":"CFL light bulb","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Hazardous","explanation":"CFL bulbs contain mercury. Take to Home Depot, Lowe's, or hazardous waste drop-off.","category":"recycling","funFact":"A single CFL bulb contains about 4mg of mercury."},
+        {"id":"ron-x5","type":"multiple_choice","prompt":"Black plastic takeout container","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Black plastic can't be detected by optical sorting machines in recycling facilities.","category":"materials","funFact":"Optical sorters use near-infrared light to identify plastics — black absorbs the light, making it invisible."},
+        {"id":"ron-x6","type":"multiple_choice","prompt":"Pyrex dish","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Trash","explanation":"Pyrex has a different chemical composition than bottle glass and ruins recycling batches.","category":"materials"},
+        {"id":"ron-x7","type":"multiple_choice","prompt":"Compostable cup (PLA)","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Compost","explanation":"PLA cups are commercially compostable but NOT recyclable. Industrial compost only.","category":"materials"},
+        {"id":"ron-x8","type":"multiple_choice","prompt":"Shredded paper","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"Shredded paper is recyclable but must be placed in a paper bag first so it doesn't scatter.","category":"recycling"},
+        {"id":"ron-x9","type":"multiple_choice","prompt":"Window envelope","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Recycle","explanation":"The small plastic window is fine — modern recycling handles it without removal.","category":"recycling"},
+        {"id":"ron-x10","type":"multiple_choice","prompt":"Propane tank","options":["Recycle","Trash","Compost","Hazardous"],"correctAnswer":"Hazardous","explanation":"Pressurized containers are fire and explosion risks. Take to hazardous waste facility.","category":"recycling"}
+      ]
+    }
+  ]
+}
