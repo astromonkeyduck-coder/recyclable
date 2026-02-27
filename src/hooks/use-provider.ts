@@ -20,8 +20,12 @@ export function useProviderList() {
     queryFn: async () => {
       const res = await fetch("/api/providers");
       if (!res.ok) throw new Error("Failed to load providers");
-      return res.json();
+      const data = await res.json();
+      if (Array.isArray(data)) return data;
+      throw new Error("Invalid providers response");
     },
     staleTime: 30 * 60 * 1000,
+    retry: 2,
+    retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 5000),
   });
 }

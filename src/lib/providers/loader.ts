@@ -31,13 +31,24 @@ export async function listProviderIds(): Promise<string[]> {
 export async function listProviders(): Promise<
   Array<{ id: string; displayName: string; coverage: Provider["coverage"] }>
 > {
-  const ids = await listProviderIds();
-  const providers = await Promise.all(ids.map((id) => loadProvider(id)));
-  return providers.map((p) => ({
-    id: p.id,
-    displayName: p.displayName,
-    coverage: p.coverage,
-  }));
+  let ids: string[];
+  try {
+    ids = await listProviderIds();
+  } catch {
+    return [{ id: "general", displayName: "General guidance", coverage: { country: "US" } }];
+  }
+  const results = await Promise.allSettled(ids.map((id) => loadProvider(id)));
+  const list = results
+    .filter((r): r is PromiseFulfilledResult<Provider> => r.status === "fulfilled")
+    .map((r) => ({
+      id: r.value.id,
+      displayName: r.value.displayName,
+      coverage: r.value.coverage,
+    }));
+  if (list.length === 0) {
+    return [{ id: "general", displayName: "General guidance", coverage: { country: "US" } }];
+  }
+  return list;
 }
 
 export async function findProviderByLocation(

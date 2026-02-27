@@ -11,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
-import { MapPin, ChevronDown, Check, LocateFixed } from "lucide-react";
+import { MapPin, ChevronDown, Check, LocateFixed, RotateCcw } from "lucide-react";
 import { useSfx } from "@/components/sfx/sfx-context";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -20,7 +20,7 @@ const NUDGE_KEY = "itr-location-nudge-seen";
 
 export function LocationSelector() {
   const { providerId, setProviderId, isLoaded, detectLocation } = useLocation();
-  const { data: providers, isLoading } = useProviderList();
+  const { data: providers, isLoading, isError, refetch } = useProviderList();
   const sfx = useSfx();
   const [showNudge, setShowNudge] = useState(false);
   const [detecting, setDetecting] = useState(false);
@@ -40,13 +40,13 @@ export function LocationSelector() {
   };
 
   const currentProvider = providers?.find((p) => p.id === providerId);
-  const displayName = currentProvider?.displayName ?? "Select location";
-
-  if (!isLoaded) return null;
+  const displayName = currentProvider?.displayName ?? (isLoaded ? "Select location" : "…");
+  const isLoadingProviders = isLoading || !isLoaded;
 
   return (
     <div className="relative">
       <DropdownMenu
+        modal={false}
         onOpenChange={(open) => {
           if (open) dismissNudge();
         }}
@@ -74,25 +74,48 @@ export function LocationSelector() {
         <DropdownMenuContent align="end" className="w-56">
           <DropdownMenuLabel>Choose your location</DropdownMenuLabel>
           <DropdownMenuSeparator />
-          {isLoading && (
-            <DropdownMenuItem disabled>Loading...</DropdownMenuItem>
+          {isLoadingProviders ? (
+            <DropdownMenuItem disabled>Loading locations…</DropdownMenuItem>
+          ) : (
+            providers?.map((p) => (
+              <DropdownMenuItem
+                key={p.id}
+                onClick={() => {
+                  sfx.pop();
+                  setProviderId(p.id, p.displayName);
+                  dismissNudge();
+                }}
+                className="gap-2"
+              >
+                <Check
+                  className={`h-3.5 w-3.5 ${p.id === providerId ? "opacity-100" : "opacity-0"}`}
+                />
+                {p.displayName}
+              </DropdownMenuItem>
+            ))
           )}
-          {providers?.map((p) => (
-            <DropdownMenuItem
-              key={p.id}
-              onClick={() => {
-                sfx.pop();
-                setProviderId(p.id, p.displayName);
-                dismissNudge();
-              }}
-              className="gap-2"
-            >
-              <Check
-                className={`h-3.5 w-3.5 ${p.id === providerId ? "opacity-100" : "opacity-0"}`}
-              />
-              {p.displayName}
+          {!isLoadingProviders && (!providers || providers.length === 0) && !isError && (
+            <DropdownMenuItem disabled className="text-xs text-muted-foreground">
+              No locations loaded
             </DropdownMenuItem>
-          ))}
+          )}
+          {isError && (
+            <>
+              <DropdownMenuItem disabled className="text-xs text-muted-foreground">
+                Couldn&apos;t load locations
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => {
+                  sfx.tap();
+                  refetch();
+                }}
+                className="gap-2"
+              >
+                <RotateCcw className="h-3.5 w-3.5" />
+                Retry
+              </DropdownMenuItem>
+            </>
+          )}
           <DropdownMenuSeparator />
           <DropdownMenuItem
             onClick={async () => {
