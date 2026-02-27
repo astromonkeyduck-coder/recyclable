@@ -1,30 +1,53 @@
 "use client";
 
-import { Camera, Upload, Loader2 } from "lucide-react";
+import { Camera, Upload, Loader2, Barcode } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState, useCallback, useRef, lazy, Suspense } from "react";
+import { useState, useCallback, useRef, useEffect, lazy, Suspense } from "react";
 import { useRouter } from "next/navigation";
 import { useLocation } from "@/hooks/use-location";
 import { AnimatePresence, motion } from "framer-motion";
 import { AnalyzingOverlay } from "./analyzing-overlay";
+import { ImagePreview } from "./image-preview";
+import { BarcodeScanner } from "./barcode-scanner";
+import { useSfx } from "@/components/sfx/sfx-context";
+import { toast } from "sonner";
+
+export type AnalysisPhase = "uploading" | "scanning" | "matching" | "finalizing";
 
 const CameraView = lazy(() =>
   import("./camera-view").then((m) => ({ default: m.CameraView }))
 );
 
-export function ScanUploadButtons() {
+type ScanUploadButtonsProps = {
+  autoOpenCamera?: boolean;
+};
+
+export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
   const [cameraOpen, setCameraOpen] = useState(false);
+  const [barcodeOpen, setBarcodeOpen] = useState(false);
+  const [preview, setPreview] = useState<string | null>(null);
   const [analyzing, setAnalyzing] = useState<string | null>(null);
+  const [phase, setPhase] = useState<AnalysisPhase>("uploading");
   const [isUploading, setIsUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   const { providerId } = useLocation();
+  const sfx = useSfx();
+
+  useEffect(() => {
+    if (autoOpenCamera) {
+      setCameraOpen(true);
+    }
+  }, [autoOpenCamera]);
 
   const processImage = useCallback(
     async (dataUrl: string) => {
+      setPreview(null);
+      setPhase("uploading");
       setAnalyzing(dataUrl);
       setIsUploading(true);
       try {
+        setPhase("scanning");
         const res = await fetch("/api/scan", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -32,14 +55,35 @@ export function ScanUploadButtons() {
         });
 
         if (!res.ok) {
-          const err = await res.json().catch(() => ({ error: "Scan failed" }));
+          const err = await res
+            .json()
+            .catch(() => ({ error: "Scan failed" }));
+          const msg = err.error || "Scan failed";
           router.push(
-            `/result?q=&provider=${providerId}&error=${encodeURIComponent(err.error || "Scan failed")}`
+            `/result?q=&provider=${providerId}&scan=true&error=${encodeURIComponent(msg)}`
           );
           return;
         }
 
+        setPhase("matching");
         const data = await res.json();
+
+        // Handle funny non-waste detection
+        if (data.isNotWaste && data.funnyResponse) {
+          setPhase("finalizing");
+          const params = new URLSearchParams({
+            q: "",
+            provider: providerId,
+            scan: "true",
+            funny: data.funnyResponse,
+          });
+          if (data.productDescription) {
+            params.set("product", data.productDescription);
+          }
+          router.push(`/result?${params.toString()}`);
+          return;
+        }
+
         const q = data.guessedItemName || data.labels?.[0] || "";
         const params = new URLSearchParams({
           q,
@@ -57,13 +101,45 @@ export function ScanUploadButtons() {
         if (data.materialComposition) {
           params.set("material", data.materialComposition);
         }
+        setPhase("finalizing");
         router.push(`/result?${params.toString()}`);
       } catch {
-        router.push(`/result?q=&provider=${providerId}&error=Network+error`);
+        const msg = navigator.onLine
+          ? "Scan failed. Please try again."
+          : "No internet connection. Photo scanning requires the internet.";
+        router.push(
+          `/result?q=&provider=${providerId}&scan=true&error=${encodeURIComponent(msg)}`
+        );
       } finally {
         setIsUploading(false);
         setAnalyzing(null);
         setCameraOpen(false);
+      }
+    },
+    [providerId, router]
+  );
+
+  const handleBarcodeScan = useCallback(
+    async (barcode: string) => {
+      setBarcodeOpen(false);
+      try {
+        const res = await fetch(
+          `/api/barcode?upc=${encodeURIComponent(barcode)}`
+        );
+        const data = await res.json();
+        if (data.found && data.productName) {
+          router.push(
+            `/result?q=${encodeURIComponent(data.productName)}&provider=${providerId}&barcode=1`
+          );
+        } else {
+          toast.error("Product not found. Try searching by name.");
+          router.push(
+            `/result?q=${encodeURIComponent(barcode)}&provider=${providerId}`
+          );
+        }
+      } catch {
+        toast.error("Lookup failed. Try searching by name.");
+        router.push(`/result?q=&provider=${providerId}`);
       }
     },
     [providerId, router]
@@ -77,13 +153,13 @@ export function ScanUploadButtons() {
       const reader = new FileReader();
       reader.onloadend = () => {
         if (typeof reader.result === "string") {
-          processImage(reader.result);
+          setPreview(reader.result);
         }
       };
       reader.readAsDataURL(file);
       if (fileInputRef.current) fileInputRef.current.value = "";
     },
-    [processImage]
+    []
   );
 
   return (
@@ -91,7 +167,10 @@ export function ScanUploadButtons() {
       <div className="flex gap-3">
         <Button
           size="lg"
-          onClick={() => setCameraOpen(true)}
+          onClick={() => {
+            sfx.click();
+            setCameraOpen(true);
+          }}
           disabled={isUploading}
           className="gap-2 flex-1 sm:flex-none"
         >
@@ -105,12 +184,29 @@ export function ScanUploadButtons() {
         <Button
           size="lg"
           variant="outline"
-          onClick={() => fileInputRef.current?.click()}
+          onClick={() => {
+            sfx.click();
+            fileInputRef.current?.click();
+          }}
           disabled={isUploading}
           className="gap-2 flex-1 sm:flex-none"
         >
           <Upload className="h-4 w-4" />
           Upload
+        </Button>
+        <Button
+          size="lg"
+          variant="outline"
+          onClick={() => {
+            sfx.click();
+            setBarcodeOpen(true);
+          }}
+          disabled={isUploading}
+          className="gap-2 flex-1 sm:flex-none"
+          aria-label="Scan barcode"
+        >
+          <Barcode className="h-4 w-4" />
+          Barcode
         </Button>
         <input
           ref={fileInputRef}
@@ -121,6 +217,21 @@ export function ScanUploadButtons() {
           aria-label="Upload a photo"
         />
       </div>
+
+      {/* Image preview overlay */}
+      <AnimatePresence>
+        {preview && (
+          <ImagePreview
+            imageDataUrl={preview}
+            onConfirm={() => processImage(preview)}
+            onRetake={() => {
+              setPreview(null);
+              setCameraOpen(true);
+            }}
+            onCancel={() => setPreview(null)}
+          />
+        )}
+      </AnimatePresence>
 
       {/* Full-screen camera overlay */}
       <AnimatePresence>
@@ -137,7 +248,9 @@ export function ScanUploadButtons() {
                 <div className="flex h-full items-center justify-center bg-black">
                   <div className="flex flex-col items-center gap-4">
                     <Loader2 className="h-8 w-8 animate-spin text-white/50" />
-                    <span className="text-sm text-white/50">Starting camera...</span>
+                    <span className="text-sm text-white/50">
+                      Starting camera...
+                    </span>
                   </div>
                 </div>
               }
@@ -145,12 +258,22 @@ export function ScanUploadButtons() {
               <CameraView
                 onCapture={(dataUrl) => {
                   setCameraOpen(false);
-                  processImage(dataUrl);
+                  setPreview(dataUrl);
                 }}
                 onClose={() => setCameraOpen(false)}
               />
             </Suspense>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Barcode scanner overlay */}
+      <AnimatePresence>
+        {barcodeOpen && (
+          <BarcodeScanner
+            onScan={handleBarcodeScan}
+            onClose={() => setBarcodeOpen(false)}
+          />
         )}
       </AnimatePresence>
 
@@ -163,7 +286,7 @@ export function ScanUploadButtons() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <AnalyzingOverlay imageDataUrl={analyzing} />
+            <AnalyzingOverlay imageDataUrl={analyzing} phase={phase} />
           </motion.div>
         )}
       </AnimatePresence>

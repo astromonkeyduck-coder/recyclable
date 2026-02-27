@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/utils/site-url";
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Frequently asked questions about Is this recyclable?",
+  description:
+    "Frequently asked questions about Is this recyclable? — how it works, privacy, accuracy, and adding your city.",
+  alternates: { canonical: `${getSiteUrl()}/faq` },
 };
 
 const faqs = [
@@ -40,9 +43,26 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function FAQPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <h1 className="text-2xl font-bold mb-1">FAQ</h1>
       <p className="text-muted-foreground mb-8">
         Frequently asked questions about Is this recyclable?

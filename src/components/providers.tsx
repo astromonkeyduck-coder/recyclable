@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { useState, type ReactNode } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { MusicProvider } from "@/components/music/music-context";
+import { SfxProvider } from "@/components/sfx/sfx-context";
 
 export function AppProviders({ children }: { children: ReactNode }) {
   const [queryClient] = useState(
@@ -23,8 +24,10 @@ export function AppProviders({ children }: { children: ReactNode }) {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         <MusicProvider>
-          {children}
-          <Toaster position="bottom-center" />
+          <SfxProvider>
+            {children}
+            <Toaster position="bottom-center" />
+          </SfxProvider>
         </MusicProvider>
       </ThemeProvider>
     </QueryClientProvider>

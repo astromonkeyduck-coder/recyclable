@@ -78,6 +78,8 @@ export const ScanOutputSchema = z.object({
   textFound: z.string().optional(),
   materialComposition: z.string().optional(),
   productDescription: z.string().optional(),
+  funnyResponse: z.string().optional(),
+  isNotWaste: z.boolean().optional(),
 });
 
 export const ResolveOutputSchema = z.object({

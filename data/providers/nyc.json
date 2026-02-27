@@ -1,0 +1,1539 @@
+{
+  "id": "nyc",
+  "displayName": "New York City, NY",
+  "coverage": {
+    "country": "US",
+    "region": "NY",
+    "city": "New York City",
+    "zips": [
+      "10001", "10002", "10003", "10004", "10005", "10006", "10007",
+      "10009", "10010", "10011", "10012", "10013", "10014",
+      "10016", "10017", "10018", "10019",
+      "10021", "10022", "10023", "10024", "10025", "10026", "10027", "10028", "10029",
+      "10030", "10031", "10032", "10033", "10034", "10035", "10036", "10037", "10038", "10039", "10040",
+      "10044", "10065", "10069", "10075", "10128", "10280",
+      "10301", "10302", "10303", "10304", "10305", "10306", "10307", "10308", "10309", "10310", "10311", "10312", "10313", "10314",
+      "11201", "11202", "11203", "11204", "11205", "11206", "11207", "11208", "11209", "11210",
+      "11211", "11212", "11213", "11214", "11215", "11216", "11217", "11218", "11219", "11220",
+      "11222", "11223", "11224", "11225", "11226", "11227", "11228",
+      "11229", "11230", "11231", "11232", "11233", "11234", "11235", "11236", "11237", "11238", "11239",
+      "11101", "11102", "11103", "11104", "11105", "11106",
+      "11354", "11355", "11356", "11357", "11358", "11359", "11360", "11361", "11362", "11363", "11364", "11365", "11366", "11367", "11368", "11369", "11370", "11371", "11372", "11373", "11374", "11375",
+      "11377", "11378", "11385",
+      "11413", "11414", "11415", "11416", "11417", "11418", "11419", "11420", "11421",
+      "11427", "11428", "11429", "11430", "11431", "11432", "11433", "11434", "11435", "11436",
+      "10451", "10452", "10453", "10454", "10455", "10456", "10457", "10458", "10459", "10460",
+      "10461", "10462", "10463", "10464", "10465", "10466", "10467", "10468", "10469", "10470",
+      "10471", "10472", "10473", "10474", "10475"
+    ],
+    "aliases": [
+      "new york city",
+      "nyc",
+      "new york",
+      "manhattan",
+      "brooklyn",
+      "queens",
+      "bronx",
+      "staten island",
+      "the city"
+    ]
+  },
+  "source": {
+    "name": "NYC Department of Sanitation (DSNY)",
+    "url": "https://www.nyc.gov/assets/dsny/site/services/recycling",
+    "generatedAt": "2026-02-26",
+    "notes": "Based on official DSNY recycling, composting, and waste disposal guidelines. NYC uses a dual-bin recycling system: BLUE bin for metal/glass/plastic/cartons and GREEN bin for paper/cardboard only.",
+    "license": "Public government data"
+  },
+  "materials": [
+    {
+      "id": "plastic-bottles",
+      "name": "Plastic bottles",
+      "aliases": ["plastic bottle", "water bottle", "soda bottle", "shampoo bottle", "detergent bottle", "plastic jug", "milk jug"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse the bottle",
+        "Replace the cap — leave caps on",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Only rigid plastic bottles — no flexible plastic",
+        "Labels can stay on"
+      ],
+      "commonMistakes": [
+        "Don't put in the GREEN bin — that's for paper only",
+        "Don't include flexible squeeze pouches",
+        "Don't include bottles with product still inside"
+      ],
+      "tags": ["plastic", "bottle", "blue-bin"],
+      "examples": ["Water bottle", "Soda bottle", "Shampoo bottle", "Laundry detergent jug", "Milk jug"]
+    },
+    {
+      "id": "rigid-plastic-containers",
+      "name": "Rigid plastic containers",
+      "aliases": ["plastic container", "yogurt cup", "yogurt container", "deli container", "takeout container", "tupperware", "butter tub", "sour cream container", "cottage cheese container"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Must be rigid plastic — if you can't easily crumple it, it's rigid",
+        "Includes yogurt cups, deli containers, butter tubs"
+      ],
+      "commonMistakes": [
+        "Don't include flexible or film plastic",
+        "Don't include styrofoam containers — styrofoam is banned in NYC",
+        "Don't put in the GREEN bin — that's for paper only"
+      ],
+      "tags": ["plastic", "container", "blue-bin"],
+      "examples": ["Yogurt cup", "Deli container", "Butter tub", "Sour cream container"]
+    },
+    {
+      "id": "plastic-clamshells",
+      "name": "Plastic clamshell containers",
+      "aliases": ["clamshell", "berry container", "strawberry container", "blueberry container", "salad container", "bakery container", "clear plastic container"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Rigid clear plastic hinged containers are accepted",
+        "Includes berry containers, salad boxes, bakery boxes"
+      ],
+      "commonMistakes": [
+        "Don't include styrofoam clamshells — those are banned in NYC and go in trash",
+        "Don't put in the GREEN bin"
+      ],
+      "tags": ["plastic", "container", "blue-bin"],
+      "examples": ["Strawberry container", "Salad clamshell", "Bakery container", "Grape container"]
+    },
+    {
+      "id": "plastic-jugs",
+      "name": "Plastic jugs",
+      "aliases": ["milk jug", "water jug", "juice jug", "gallon jug", "plastic gallon"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Replace the cap",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Includes milk jugs, water jugs, juice jugs"
+      ],
+      "commonMistakes": [
+        "Don't put in the GREEN bin — that's for paper only"
+      ],
+      "tags": ["plastic", "bottle", "jug", "blue-bin"],
+      "examples": ["Gallon milk jug", "Water jug", "Orange juice jug"]
+    },
+    {
+      "id": "glass-bottles-jars",
+      "name": "Glass bottles and jars",
+      "aliases": ["glass bottle", "glass jar", "wine bottle", "beer bottle", "sauce jar", "mason jar", "pickle jar", "olive oil bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Metal lids can stay on or be recycled separately",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "All colors of glass are accepted",
+        "NYC accepts glass bottles and jars only — not other types of glass"
+      ],
+      "commonMistakes": [
+        "Don't include broken glass — wrap it and place in trash",
+        "Don't include window glass, mirrors, ceramics, or Pyrex",
+        "Don't include drinking glasses or light bulbs",
+        "Don't put in the GREEN bin — that's for paper only"
+      ],
+      "tags": ["glass", "bottle", "jar", "blue-bin"],
+      "examples": ["Wine bottle", "Beer bottle", "Pasta sauce jar", "Pickle jar", "Olive oil bottle"]
+    },
+    {
+      "id": "aluminum-cans",
+      "name": "Aluminum cans",
+      "aliases": ["aluminum can", "soda can", "beer can", "pop can", "beverage can", "la croix can", "seltzer can"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Aluminum cans are among the most valuable recyclables",
+        "Labels can stay on",
+        "NY has a 5¢ bottle deposit — you can also return for refund"
+      ],
+      "commonMistakes": [
+        "Don't crush cans in NYC — they need to be identifiable for sorting",
+        "Don't put in the GREEN bin"
+      ],
+      "tags": ["metal", "aluminum", "can", "blue-bin"],
+      "examples": ["Soda can", "Beer can", "Seltzer can", "Energy drink can"]
+    },
+    {
+      "id": "steel-tin-cans",
+      "name": "Steel and tin cans",
+      "aliases": ["tin can", "steel can", "soup can", "food can", "tuna can", "bean can", "canned food"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Labels can stay on",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Both steel and tin-plated cans are accepted",
+        "If a magnet sticks to it, it's steel"
+      ],
+      "commonMistakes": [
+        "Don't include cans with food still inside",
+        "Don't put in the GREEN bin"
+      ],
+      "tags": ["metal", "steel", "tin", "can", "blue-bin"],
+      "examples": ["Soup can", "Tuna can", "Bean can", "Tomato paste can", "Pet food can"]
+    },
+    {
+      "id": "aluminum-foil",
+      "name": "Aluminum foil",
+      "aliases": ["aluminum foil", "tin foil", "foil", "foil wrap"],
+      "category": "recycle",
+      "instructions": [
+        "Clean off all food residue",
+        "Ball up clean foil into a fist-sized ball",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Must be clean — greasy or food-caked foil goes in trash or brown bin"
+      ],
+      "commonMistakes": [
+        "Don't recycle foil covered in baked-on grease — trash it",
+        "Don't put tiny scraps in recycling — ball them together"
+      ],
+      "tags": ["metal", "aluminum", "blue-bin"],
+      "examples": ["Clean aluminum foil sheets", "Foil from baked potato (if clean)"]
+    },
+    {
+      "id": "aluminum-trays-pans",
+      "name": "Aluminum trays and pans",
+      "aliases": ["aluminum tray", "aluminum pan", "foil tray", "pie tin", "aluminum baking pan", "roasting pan disposable"],
+      "category": "recycle",
+      "instructions": [
+        "Clean off all food residue",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "NYC accepts clean aluminum trays and pans — unlike some other cities"
+      ],
+      "commonMistakes": [
+        "Don't recycle trays caked with food — rinse them first",
+        "Don't put in the GREEN bin"
+      ],
+      "tags": ["metal", "aluminum", "blue-bin"],
+      "examples": ["Disposable pie tin", "Aluminum roasting pan", "Takeout aluminum tray"]
+    },
+    {
+      "id": "metal-lids-caps",
+      "name": "Metal lids and caps",
+      "aliases": ["metal lid", "metal cap", "jar lid", "bottle cap metal", "can lid"],
+      "category": "recycle",
+      "instructions": [
+        "Collect small metal lids inside a steel can",
+        "Crimp the can closed to keep lids inside",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Loose small metal pieces fall through sorting screens — always contain them"
+      ],
+      "commonMistakes": [
+        "Don't toss loose metal lids into recycling — they fall through the screens"
+      ],
+      "tags": ["metal", "blue-bin"],
+      "examples": ["Jar lid", "Bottle cap (metal)", "Can lid"]
+    },
+    {
+      "id": "aerosol-cans",
+      "name": "Aerosol cans",
+      "aliases": ["aerosol can", "spray can", "hairspray can", "cooking spray can", "spray paint can", "deodorant spray can"],
+      "category": "recycle",
+      "instructions": [
+        "Must be completely empty",
+        "Do NOT puncture the can",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Only empty aerosol cans — partial cans are hazardous waste"
+      ],
+      "commonMistakes": [
+        "Don't recycle cans that still have pressure — they're hazardous",
+        "Don't puncture aerosol cans"
+      ],
+      "tags": ["metal", "blue-bin", "spray"],
+      "examples": ["Empty hairspray can", "Empty cooking spray can", "Empty spray paint can"]
+    },
+    {
+      "id": "milk-juice-cartons",
+      "name": "Milk and juice cartons",
+      "aliases": ["milk carton", "juice carton", "juice box", "aseptic carton", "shelf-stable carton", "oat milk carton", "broth carton", "Tetra Pak"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Replace the cap if it has one",
+        "Place in BLUE bin (metal/glass/plastic/cartons) — NOT the green bin"
+      ],
+      "notes": [
+        "Cartons go in the BLUE bin in NYC, not with paper",
+        "Includes gable-top (refrigerated) and aseptic (shelf-stable) cartons"
+      ],
+      "commonMistakes": [
+        "Don't put cartons in the GREEN bin — despite being made of paper, they go in BLUE",
+        "Don't flatten cartons — they need to be 3D for sorting"
+      ],
+      "tags": ["carton", "blue-bin"],
+      "examples": ["Milk carton", "Juice box", "Oat milk carton", "Broth carton", "Coconut water carton"]
+    },
+    {
+      "id": "cleaning-bottles",
+      "name": "Cleaning product bottles",
+      "aliases": ["cleaning bottle", "spray bottle", "windex bottle", "bleach bottle", "cleaning product", "lysol bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Empty completely",
+        "Rinse briefly",
+        "Leave the spray trigger on",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Rigid plastic cleaning bottles are recyclable in NYC"
+      ],
+      "commonMistakes": [
+        "Don't recycle bottles that still contain product",
+        "Don't put in the GREEN bin"
+      ],
+      "tags": ["plastic", "container", "household", "blue-bin"],
+      "examples": ["Windex bottle", "Clorox bleach bottle", "Dawn dish soap bottle", "Lysol spray bottle"]
+    },
+    {
+      "id": "prescription-bottles",
+      "name": "Prescription bottles",
+      "aliases": ["prescription bottle", "pill bottle", "medicine bottle", "orange pill bottle", "vitamin bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Remove the label (it contains personal health info)",
+        "Rinse out residue",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Rigid plastic — accepted in NYC recycling"
+      ],
+      "commonMistakes": [
+        "Don't forget to remove the label with your personal information",
+        "Don't put medications in recycling — those need safe disposal"
+      ],
+      "tags": ["plastic", "medical", "container", "blue-bin"],
+      "examples": ["Orange prescription bottle", "Vitamin bottle"]
+    },
+    {
+      "id": "bottle-caps-plastic",
+      "name": "Bottle caps (plastic)",
+      "aliases": ["bottle cap", "plastic cap", "soda cap", "water bottle cap"],
+      "category": "recycle",
+      "instructions": [
+        "Leave plastic caps ON their bottles",
+        "Recycle the whole bottle with cap in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Loose caps fall through sorting screens — always leave them on the bottle"
+      ],
+      "commonMistakes": [
+        "Don't remove the cap and toss it in separately — leave it on the bottle"
+      ],
+      "tags": ["plastic", "blue-bin"],
+      "examples": ["Water bottle cap", "Soda bottle cap"]
+    },
+    {
+      "id": "cardboard",
+      "name": "Cardboard",
+      "aliases": ["corrugated cardboard", "cardboard box", "shipping box", "amazon box", "moving box", "corrugated box"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten all boxes",
+        "Remove packing materials (styrofoam, bubble wrap, air pillows)",
+        "Place in GREEN bin (paper/cardboard ONLY) — NOT the blue bin"
+      ],
+      "notes": [
+        "NYC separates paper from other recyclables — cardboard goes in the GREEN bin",
+        "Flatten boxes so they fit in the bin"
+      ],
+      "commonMistakes": [
+        "Don't put cardboard in the BLUE bin — it goes in GREEN",
+        "Don't include cardboard soaked with grease — greasy portions go in brown bin (compost)",
+        "Remove all styrofoam, bubble wrap, and plastic inserts"
+      ],
+      "tags": ["paper", "cardboard", "green-bin"],
+      "examples": ["Amazon box", "Moving box", "Appliance box", "Shipping box"]
+    },
+    {
+      "id": "paperboard-boxes",
+      "name": "Paperboard boxes (cereal boxes, tissue boxes)",
+      "aliases": ["cereal box", "tissue box", "shoe box", "pasta box", "cracker box", "paperboard", "food box", "snack box"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten the box",
+        "Remove any plastic liners or windows",
+        "Place in GREEN bin (paper/cardboard ONLY)"
+      ],
+      "notes": [
+        "Paperboard is thinner than corrugated cardboard but still goes in the GREEN bin"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE bin — paper products go in GREEN",
+        "Don't include frozen food boxes — those have a moisture coating and go in trash"
+      ],
+      "tags": ["paper", "cardboard", "green-bin"],
+      "examples": ["Cereal box", "Tissue box", "Shoe box", "Pasta box", "Cracker box"]
+    },
+    {
+      "id": "newspaper",
+      "name": "Newspapers",
+      "aliases": ["newspaper", "newsprint", "daily news", "new york times", "new york post", "daily paper"],
+      "category": "recycle",
+      "instructions": [
+        "Place directly in GREEN bin (paper/cardboard ONLY)",
+        "Do NOT bag newspapers in plastic bags"
+      ],
+      "notes": [
+        "Newspapers are one of the most valuable paper recyclables",
+        "Inserts and circulars can stay in"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE bin — newspapers go in GREEN",
+        "Don't bag them in plastic bags — place loose in the green bin"
+      ],
+      "tags": ["paper", "newspaper", "green-bin"],
+      "examples": ["New York Times", "Daily News", "New York Post", "Sunday newspaper"]
+    },
+    {
+      "id": "magazines-catalogs",
+      "name": "Magazines and catalogs",
+      "aliases": ["magazine", "catalog", "catalogue", "glossy paper", "periodical", "brochure"],
+      "category": "recycle",
+      "instructions": [
+        "Place in GREEN bin (paper/cardboard ONLY)",
+        "Glossy coating is fine — still recyclable"
+      ],
+      "notes": [
+        "Staples can stay in — they're removed during processing"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE bin — magazines go in GREEN",
+        "Don't remove staples — they're handled at the facility"
+      ],
+      "tags": ["paper", "magazine", "green-bin"],
+      "examples": ["Time magazine", "IKEA catalog", "Vogue", "Brochure"]
+    },
+    {
+      "id": "office-paper",
+      "name": "Office and printer paper",
+      "aliases": ["office paper", "printer paper", "copy paper", "notebook paper", "loose leaf paper", "letter paper", "computer paper"],
+      "category": "recycle",
+      "instructions": [
+        "Place in GREEN bin (paper/cardboard ONLY)"
+      ],
+      "notes": [
+        "Includes white and colored paper",
+        "Staples and paper clips can stay"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE bin — all paper goes in GREEN",
+        "Don't include paper contaminated with food or grease"
+      ],
+      "tags": ["paper", "green-bin"],
+      "examples": ["Printer paper", "Notebook paper", "Legal pad paper", "Sticky notes"]
+    },
+    {
+      "id": "mail-envelopes",
+      "name": "Mail and envelopes",
+      "aliases": ["junk mail", "mail", "envelope", "letter", "flyer", "coupon", "postcard", "window envelope"],
+      "category": "recycle",
+      "instructions": [
+        "Place in GREEN bin (paper/cardboard ONLY)",
+        "Window envelopes are fine — the plastic window is removed during processing"
+      ],
+      "notes": [
+        "Shred sensitive mail first if needed, then place shreds in a paper bag in the GREEN bin"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE bin — paper goes in GREEN",
+        "Don't include padded/bubble mailers — those go in trash"
+      ],
+      "tags": ["paper", "mail", "green-bin"],
+      "examples": ["Junk mail", "Bills", "Greeting cards", "Postcards", "Window envelopes"]
+    },
+    {
+      "id": "paper-bags",
+      "name": "Paper bags",
+      "aliases": ["paper bag", "brown bag", "lunch bag", "grocery paper bag", "kraft bag"],
+      "category": "recycle",
+      "instructions": [
+        "Place in GREEN bin (paper/cardboard ONLY)",
+        "Can be used to contain shredded paper"
+      ],
+      "notes": [
+        "Clean paper bags are recyclable — food-soiled bags can go in the brown bin (compost)"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE bin — paper bags go in GREEN",
+        "Grease-soaked bags go in the brown compost bin instead"
+      ],
+      "tags": ["paper", "bag", "green-bin"],
+      "examples": ["Grocery paper bag", "Lunch bag", "Takeout paper bag"]
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "aliases": ["book", "textbook", "hardcover book", "paperback", "softcover book", "novel"],
+      "category": "recycle",
+      "instructions": [
+        "Place in GREEN bin (paper/cardboard ONLY)",
+        "Hardcovers can go in as-is — the cover is removed during processing"
+      ],
+      "notes": [
+        "Consider donating books in good condition to the New York Public Library or local Little Free Library first"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE bin — books go in GREEN"
+      ],
+      "tags": ["paper", "green-bin"],
+      "examples": ["Paperback novel", "Textbook", "Hardcover book", "Children's book"]
+    },
+    {
+      "id": "paper-egg-cartons",
+      "name": "Paper egg cartons",
+      "aliases": ["egg carton", "paper egg carton", "cardboard egg carton"],
+      "category": "recycle",
+      "instructions": [
+        "Place in GREEN bin (paper/cardboard ONLY)"
+      ],
+      "notes": [
+        "Paper/cardboard egg cartons only — styrofoam egg cartons go in trash (banned in NYC)",
+        "Can also be composted in the brown bin"
+      ],
+      "commonMistakes": [
+        "Don't recycle styrofoam egg cartons — those are banned and go in trash",
+        "Don't put in the BLUE bin"
+      ],
+      "tags": ["paper", "green-bin"],
+      "examples": ["Cardboard egg carton", "Paper pulp egg carton"]
+    },
+    {
+      "id": "wrapping-paper",
+      "name": "Wrapping paper",
+      "aliases": ["wrapping paper", "gift wrap", "tissue paper gift"],
+      "category": "recycle",
+      "instructions": [
+        "Plain paper wrapping goes in GREEN bin (paper/cardboard ONLY)",
+        "Remove all tape, ribbons, and bows first"
+      ],
+      "notes": [
+        "Metallic, glittery, or plastic-coated wrapping paper is NOT recyclable — trash it"
+      ],
+      "commonMistakes": [
+        "Don't recycle metallic or glittery wrapping paper — it goes in trash",
+        "Don't include ribbons or bows — those go in trash"
+      ],
+      "tags": ["paper", "green-bin"],
+      "examples": ["Plain paper gift wrap", "Kraft wrapping paper"]
+    },
+    {
+      "id": "shredded-paper",
+      "name": "Shredded paper",
+      "aliases": ["shredded paper", "shredded documents", "paper shreds"],
+      "category": "recycle",
+      "instructions": [
+        "Place shredded paper inside a paper bag",
+        "Fold the top of the bag closed",
+        "Place the bag in GREEN bin (paper/cardboard ONLY)"
+      ],
+      "notes": [
+        "Loose shredded paper jams machinery — always bag it in a paper bag"
+      ],
+      "commonMistakes": [
+        "Don't dump loose shredded paper in the bin",
+        "Don't use a plastic bag — use a paper bag"
+      ],
+      "tags": ["paper", "green-bin"],
+      "examples": ["Shredded bank statements", "Shredded tax documents"]
+    },
+    {
+      "id": "phone-books",
+      "name": "Phone books and directories",
+      "aliases": ["phone book", "telephone directory", "yellow pages", "white pages"],
+      "category": "recycle",
+      "instructions": [
+        "Place in GREEN bin (paper/cardboard ONLY)"
+      ],
+      "notes": [
+        "Spine glue is removed during processing"
+      ],
+      "commonMistakes": [
+        "Don't put in the BLUE bin"
+      ],
+      "tags": ["paper", "green-bin"],
+      "examples": ["Yellow Pages", "Local phone directory"]
+    },
+    {
+      "id": "pizza-box",
+      "name": "Pizza box",
+      "aliases": ["pizza box", "pizza carton"],
+      "category": "recycle",
+      "instructions": [
+        "Clean top of the box: flatten and place in GREEN bin (paper/cardboard ONLY)",
+        "Greasy bottom of the box: place in BROWN bin (compost)",
+        "If the entire box is greasy, put the whole thing in the BROWN bin"
+      ],
+      "notes": [
+        "NYC lets you split the box — clean portions recycle, greasy portions compost"
+      ],
+      "commonMistakes": [
+        "Don't put the greasy part in the GREEN bin — grease contaminates paper recycling",
+        "Don't put the clean part in the BLUE bin — it's paper, so it goes in GREEN"
+      ],
+      "tags": ["paper", "cardboard", "food", "green-bin"],
+      "examples": ["Domino's pizza box", "Joe's Pizza box"]
+    },
+    {
+      "id": "food-scraps",
+      "name": "Food scraps (general)",
+      "aliases": ["food scraps", "food waste", "table scraps", "plate scrapings", "leftovers", "spoiled food"],
+      "category": "compost",
+      "instructions": [
+        "Place in BROWN bin (organics/compost)",
+        "No need to separate — all food scraps are accepted",
+        "Can be placed loose or in a bag lined with newspaper"
+      ],
+      "notes": [
+        "NYC's curbside composting program accepts ALL food scraps including meat, dairy, and bones",
+        "Expanding to all five boroughs"
+      ],
+      "commonMistakes": [
+        "Don't put food in the recycling bins",
+        "Don't use plastic bags to line the brown bin — use newspaper or compostable bags"
+      ],
+      "tags": ["compost", "food", "brown-bin"],
+      "examples": ["Plate scrapings", "Spoiled leftovers", "Uneaten food"]
+    },
+    {
+      "id": "fruit-vegetable-scraps",
+      "name": "Fruit and vegetable scraps",
+      "aliases": ["fruit scraps", "vegetable scraps", "banana peel", "apple core", "potato peel", "carrot peel", "onion skin", "fruit peel"],
+      "category": "compost",
+      "instructions": [
+        "Place in BROWN bin (organics/compost)"
+      ],
+      "notes": [
+        "All fruit and vegetable scraps including peels, cores, rinds, and seeds"
+      ],
+      "commonMistakes": [
+        "Don't put produce stickers in compost — peel them off first"
+      ],
+      "tags": ["compost", "food", "brown-bin"],
+      "examples": ["Banana peel", "Apple core", "Potato peels", "Onion skins", "Watermelon rind"]
+    },
+    {
+      "id": "coffee-grounds-filters",
+      "name": "Coffee grounds and filters",
+      "aliases": ["coffee grounds", "coffee filter", "used coffee", "coffee grinds", "k-cup grounds"],
+      "category": "compost",
+      "instructions": [
+        "Place coffee grounds and paper filters in BROWN bin (organics/compost)"
+      ],
+      "notes": [
+        "Paper filters are compostable",
+        "K-Cup pods must be emptied — grounds in brown bin, pod in trash"
+      ],
+      "commonMistakes": [
+        "Don't compost K-Cup plastic pods — only the grounds inside"
+      ],
+      "tags": ["compost", "food", "brown-bin"],
+      "examples": ["Used coffee grounds", "Paper coffee filter", "Coffee grinds"]
+    },
+    {
+      "id": "tea-bags",
+      "name": "Tea bags",
+      "aliases": ["tea bag", "tea leaves", "loose tea", "herbal tea bag"],
+      "category": "compost",
+      "instructions": [
+        "Place in BROWN bin (organics/compost)",
+        "Remove any staples or tags if possible"
+      ],
+      "notes": [
+        "Most tea bags are compostable, though some contain plastic mesh — those go in trash"
+      ],
+      "commonMistakes": [
+        "Check if the tea bag is silky/plastic mesh — those can't be composted"
+      ],
+      "tags": ["compost", "food", "brown-bin"],
+      "examples": ["Used tea bag", "Loose tea leaves"]
+    },
+    {
+      "id": "eggshells",
+      "name": "Eggshells",
+      "aliases": ["eggshell", "egg shell", "egg shells"],
+      "category": "compost",
+      "instructions": [
+        "Place in BROWN bin (organics/compost)"
+      ],
+      "notes": [
+        "Eggshells add calcium to compost"
+      ],
+      "commonMistakes": [
+        "Don't put eggs in recycling — they go in the brown compost bin"
+      ],
+      "tags": ["compost", "food", "brown-bin"],
+      "examples": ["Cracked eggshells"]
+    },
+    {
+      "id": "meat-bones-dairy",
+      "name": "Meat, bones, and dairy",
+      "aliases": ["meat scraps", "bones", "chicken bones", "fish bones", "cheese", "dairy", "meat", "fat", "grease"],
+      "category": "compost",
+      "instructions": [
+        "Place in BROWN bin (organics/compost)",
+        "NYC's industrial composting accepts ALL food including meat, bones, and dairy"
+      ],
+      "notes": [
+        "Unlike backyard composting, NYC's industrial process handles meat and dairy"
+      ],
+      "commonMistakes": [
+        "Don't pour liquid grease in the brown bin — absorb it with newspaper first or let it solidify"
+      ],
+      "tags": ["compost", "food", "brown-bin"],
+      "examples": ["Chicken bones", "Steak trimmings", "Cheese rinds", "Fish scraps"]
+    },
+    {
+      "id": "bread-pasta-grains",
+      "name": "Bread, pasta, rice, and grains",
+      "aliases": ["bread", "pasta", "rice", "cereal", "stale bread", "cooked rice", "noodles", "grains", "oatmeal"],
+      "category": "compost",
+      "instructions": [
+        "Place in BROWN bin (organics/compost)"
+      ],
+      "notes": [
+        "Includes cooked and uncooked bread, pasta, rice, and cereals"
+      ],
+      "commonMistakes": [
+        "Don't put these in the trash — they're compostable"
+      ],
+      "tags": ["compost", "food", "brown-bin"],
+      "examples": ["Stale bread", "Leftover pasta", "Cooked rice", "Stale cereal"]
+    },
+    {
+      "id": "food-soiled-paper",
+      "name": "Food-soiled paper (napkins, paper towels, paper plates)",
+      "aliases": ["napkin", "paper towel", "paper plate", "food-soiled paper", "dirty paper", "paper napkin", "used paper towel", "tissue"],
+      "category": "compost",
+      "instructions": [
+        "Place in BROWN bin (organics/compost)",
+        "Includes napkins, paper towels, paper plates, and tissues"
+      ],
+      "notes": [
+        "Food-soiled paper cannot be recycled but CAN be composted",
+        "Unsoiled paper towels and tissues can also go in the brown bin"
+      ],
+      "commonMistakes": [
+        "Don't put food-soiled paper in the GREEN recycling bin — it contaminates paper recycling",
+        "Don't put paper towels in the BLUE bin either"
+      ],
+      "tags": ["compost", "paper", "brown-bin"],
+      "examples": ["Used napkins", "Greasy paper towel", "Paper plate with food", "Tissues"]
+    },
+    {
+      "id": "yard-waste",
+      "name": "Yard waste (leaves, grass, branches)",
+      "aliases": ["yard waste", "leaves", "grass clippings", "branches", "twigs", "garden waste", "lawn clippings", "brush"],
+      "category": "compost",
+      "instructions": [
+        "Place in BROWN bin (organics/compost)",
+        "Large branches: cut to 4-foot lengths, tie in bundles, place next to the brown bin"
+      ],
+      "notes": [
+        "Seasonal leaf collection may also be available — check DSNY schedule"
+      ],
+      "commonMistakes": [
+        "Don't bag yard waste in plastic bags",
+        "Don't include treated or painted wood"
+      ],
+      "tags": ["compost", "yard", "brown-bin"],
+      "examples": ["Fallen leaves", "Grass clippings", "Small branches", "Weeds"]
+    },
+    {
+      "id": "houseplants-flowers",
+      "name": "Houseplants and flowers",
+      "aliases": ["houseplant", "flowers", "dead flowers", "flower bouquet", "potted plant", "wilted flowers", "dried flowers"],
+      "category": "compost",
+      "instructions": [
+        "Remove from the pot — plant matter goes in BROWN bin (organics/compost)",
+        "Clay or plastic pots go in trash (rigid plastic pots MAY go in blue bin)"
+      ],
+      "notes": [
+        "Soil can go in the brown bin with the plant"
+      ],
+      "commonMistakes": [
+        "Don't put the plastic or clay pot in the brown bin"
+      ],
+      "tags": ["compost", "brown-bin"],
+      "examples": ["Dead houseplant", "Wilted flower bouquet", "Dried flowers"]
+    },
+    {
+      "id": "styrofoam",
+      "name": "Polystyrene foam (Styrofoam)",
+      "aliases": ["styrofoam", "polystyrene", "foam cup", "foam container", "packing peanuts", "foam tray", "foam plate", "EPS", "foam cooler", "styrofoam cup"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Styrofoam is BANNED in NYC — businesses cannot distribute it",
+        "Any styrofoam you encounter still goes in the trash — it is not recyclable"
+      ],
+      "notes": [
+        "NYC banned single-use styrofoam food containers and packing peanuts",
+        "Despite the ban, you may still receive styrofoam from deliveries — it goes in trash"
+      ],
+      "commonMistakes": [
+        "Don't put styrofoam in the BLUE or GREEN recycling bins",
+        "Don't assume styrofoam can be composted — it cannot"
+      ],
+      "tags": ["plastic", "foam", "banned"],
+      "examples": ["Styrofoam takeout container", "Foam coffee cup", "Packing peanuts", "Foam meat tray", "Foam egg carton"]
+    },
+    {
+      "id": "plastic-bags",
+      "name": "Plastic bags",
+      "aliases": ["plastic bag", "grocery bag", "shopping bag", "produce bag", "zip-lock bag", "ziplock bag", "bread bag", "plastic film"],
+      "category": "dropoff",
+      "instructions": [
+        "Do NOT place in any curbside recycling bin",
+        "Return clean, dry plastic bags to store drop-off bins (most grocery stores have them)",
+        "If no drop-off available, place in regular trash"
+      ],
+      "notes": [
+        "Plastic bags are the #1 contaminant in NYC recycling — they jam sorting machinery",
+        "Many NYC stores (Target, Whole Foods, Key Food) have bag return bins at the entrance"
+      ],
+      "commonMistakes": [
+        "Never bag your recyclables in plastic bags — empty items directly into the bins",
+        "Don't put any plastic film, bags, or wrap in curbside recycling"
+      ],
+      "tags": ["plastic", "bag", "film", "store-return"],
+      "examples": ["Grocery bag", "Produce bag", "Bread bag", "Dry cleaning bag", "Newspaper sleeve"]
+    },
+    {
+      "id": "plastic-film-wrap",
+      "name": "Plastic film and wrap",
+      "aliases": ["plastic wrap", "cling wrap", "saran wrap", "bubble wrap", "shrink wrap", "plastic film", "pallet wrap", "air pillows"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Bubble wrap and air pillows: deflate first to save space",
+        "Some clean film can go to store drop-off with plastic bags"
+      ],
+      "notes": [
+        "Flexible plastic cannot go in curbside recycling in NYC"
+      ],
+      "commonMistakes": [
+        "Don't put any flexible plastic in the BLUE or GREEN bins",
+        "Don't put bubble wrap in recycling"
+      ],
+      "tags": ["plastic", "film", "wrap"],
+      "examples": ["Saran wrap", "Bubble wrap", "Shrink wrap from packages", "Air pillows"]
+    },
+    {
+      "id": "candy-chip-wrappers",
+      "name": "Candy wrappers, chip bags, and snack pouches",
+      "aliases": ["candy wrapper", "chip bag", "snack bag", "granola bar wrapper", "protein bar wrapper", "energy bar wrapper", "foil wrapper"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Multi-layer flexible packaging — not recyclable"
+      ],
+      "notes": [
+        "These look metallic but are actually layers of plastic and aluminum fused together — not separable"
+      ],
+      "commonMistakes": [
+        "Don't put chip bags in recycling — they are NOT aluminum",
+        "Don't put candy wrappers in recycling"
+      ],
+      "tags": ["plastic", "film", "food", "wrapper"],
+      "examples": ["Lay's chip bag", "Snickers wrapper", "Kind bar wrapper", "Capri Sun pouch"]
+    },
+    {
+      "id": "disposable-coffee-cups",
+      "name": "Disposable coffee cups",
+      "aliases": ["coffee cup", "paper cup", "disposable cup", "to-go cup", "hot cup", "Starbucks cup"],
+      "category": "trash",
+      "instructions": [
+        "Lined paper cups: place in regular trash",
+        "Plastic lids: place in BLUE bin (metal/glass/plastic/cartons)",
+        "Paper sleeve: place in GREEN bin (paper/cardboard ONLY)"
+      ],
+      "notes": [
+        "Paper coffee cups have a plastic lining that prevents recycling",
+        "Separate the lid (blue bin) and sleeve (green bin) from the cup (trash)"
+      ],
+      "commonMistakes": [
+        "Don't put the whole cup in the GREEN bin — the plastic lining makes the cup non-recyclable",
+        "Do recycle the plastic lid in the BLUE bin"
+      ],
+      "tags": ["paper", "plastic", "food", "beverage"],
+      "examples": ["Starbucks hot cup", "Dunkin' cup", "Bodega coffee cup"]
+    },
+    {
+      "id": "frozen-food-boxes",
+      "name": "Frozen food boxes",
+      "aliases": ["frozen food box", "frozen dinner box", "ice cream carton", "frozen pizza box", "TV dinner box"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Coated with a moisture barrier that prevents recycling"
+      ],
+      "notes": [
+        "The coating that prevents sogginess also prevents recycling — unlike regular paperboard"
+      ],
+      "commonMistakes": [
+        "Don't put these in the GREEN bin — they're not recyclable like regular cardboard"
+      ],
+      "tags": ["paper", "cardboard", "food", "frozen"],
+      "examples": ["DiGiorno pizza box", "Hot Pockets box", "Amy's frozen dinner box", "Ice cream carton"]
+    },
+    {
+      "id": "thermal-receipts",
+      "name": "Receipts (thermal paper)",
+      "aliases": ["receipt", "thermal receipt", "store receipt", "ATM receipt", "register receipt"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Thermal paper contains BPA — do not recycle or compost"
+      ],
+      "notes": [
+        "If the receipt is shiny/smooth, it's thermal paper and goes in trash",
+        "Non-thermal receipts (matte paper) can go in the GREEN bin"
+      ],
+      "commonMistakes": [
+        "Don't put thermal receipts in the GREEN bin — they contaminate paper recycling with BPA",
+        "Don't compost thermal receipts"
+      ],
+      "tags": ["paper"],
+      "examples": ["CVS receipt", "Grocery store receipt", "ATM receipt"]
+    },
+    {
+      "id": "diapers",
+      "name": "Diapers",
+      "aliases": ["diaper", "disposable diaper", "baby diaper", "adult diaper", "pull-up"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Wrap or bag soiled diapers before disposal"
+      ],
+      "notes": [
+        "Not recyclable or compostable"
+      ],
+      "commonMistakes": [
+        "Don't put diapers in any recycling or compost bin"
+      ],
+      "tags": ["hygiene", "baby"],
+      "examples": ["Pampers diaper", "Huggies diaper", "Adult incontinence product"]
+    },
+    {
+      "id": "ceramics-pottery",
+      "name": "Ceramics, pottery, and dishware",
+      "aliases": ["ceramic", "pottery", "plate", "mug", "ceramic mug", "china", "porcelain", "dish", "bowl ceramic", "Pyrex"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Wrap broken pieces for safety"
+      ],
+      "notes": [
+        "Ceramics and pottery are NOT glass — they contaminate glass recycling",
+        "Consider donating intact dishware"
+      ],
+      "commonMistakes": [
+        "Don't put ceramics in the BLUE bin with glass — they're different materials",
+        "Don't put Pyrex or drinking glasses in recycling"
+      ],
+      "tags": ["household", "glass"],
+      "examples": ["Broken coffee mug", "Old dinner plate", "Pyrex dish", "Porcelain bowl"]
+    },
+    {
+      "id": "mirrors-window-glass",
+      "name": "Mirrors and window glass",
+      "aliases": ["mirror", "window glass", "plate glass", "picture frame glass", "glass pane"],
+      "category": "trash",
+      "instructions": [
+        "Wrap in newspaper or cardboard",
+        "Label 'GLASS' for safety of sanitation workers",
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Mirrors and window glass have different melting points than bottle glass — they contaminate recycling"
+      ],
+      "commonMistakes": [
+        "Don't put mirrors or window glass in the BLUE bin"
+      ],
+      "tags": ["glass", "household"],
+      "examples": ["Broken mirror", "Window pane", "Picture frame glass"]
+    },
+    {
+      "id": "broken-glass",
+      "name": "Broken glass",
+      "aliases": ["broken glass", "shattered glass", "glass shards"],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully in newspaper or cardboard",
+        "Label 'GLASS' or 'SHARP' on the outside for sanitation worker safety",
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Broken glass is dangerous to sorting workers — never put it in recycling"
+      ],
+      "commonMistakes": [
+        "Don't put broken glass in the BLUE bin — even if it was a recyclable bottle"
+      ],
+      "tags": ["glass", "safety"],
+      "examples": ["Broken wine glass", "Shattered drinking glass", "Broken vase"]
+    },
+    {
+      "id": "plastic-utensils",
+      "name": "Plastic utensils",
+      "aliases": ["plastic fork", "plastic knife", "plastic spoon", "disposable utensils", "plastic cutlery", "takeout utensils"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Too small and often contaminated for recycling"
+      ],
+      "notes": [
+        "Consider carrying reusable utensils — NYC restaurants must ask before including disposable ones"
+      ],
+      "commonMistakes": [
+        "Don't put plastic utensils in recycling"
+      ],
+      "tags": ["plastic", "food", "dining"],
+      "examples": ["Plastic fork from takeout", "Disposable knife", "Plastic spoon"]
+    },
+    {
+      "id": "straws",
+      "name": "Straws",
+      "aliases": ["straw", "plastic straw", "paper straw", "drinking straw"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Too small to be captured by recycling machinery"
+      ],
+      "notes": [
+        "Both plastic and paper straws go in trash — paper straws aren't efficiently composted at scale",
+        "Consider reusable straws"
+      ],
+      "commonMistakes": [
+        "Don't put straws in recycling or compost"
+      ],
+      "tags": ["plastic", "food"],
+      "examples": ["Plastic straw", "Paper straw", "Smoothie straw"]
+    },
+    {
+      "id": "wax-paper",
+      "name": "Wax paper and parchment paper",
+      "aliases": ["wax paper", "waxed paper", "parchment paper", "baking paper", "butcher paper waxed"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Wax coating prevents recycling"
+      ],
+      "notes": [
+        "Uncoated parchment paper can go in the brown bin (compost)"
+      ],
+      "commonMistakes": [
+        "Don't put wax paper in the GREEN bin"
+      ],
+      "tags": ["paper"],
+      "examples": ["Wax paper", "Parchment paper from baking"]
+    },
+    {
+      "id": "hangers",
+      "name": "Hangers",
+      "aliases": ["hanger", "clothes hanger", "wire hanger", "plastic hanger", "coat hanger", "wooden hanger"],
+      "category": "trash",
+      "instructions": [
+        "Wire hangers: return to your dry cleaner for reuse",
+        "Plastic and wooden hangers: place in regular trash",
+        "Do NOT put any hangers in curbside recycling"
+      ],
+      "notes": [
+        "Hangers jam recycling machinery due to their shape"
+      ],
+      "commonMistakes": [
+        "Never put hangers in curbside recycling bins"
+      ],
+      "tags": ["plastic", "metal", "household"],
+      "examples": ["Wire dry cleaning hanger", "Plastic store hanger", "Wooden hanger"]
+    },
+    {
+      "id": "pens-markers-tape",
+      "name": "Pens, markers, and tape",
+      "aliases": ["pen", "marker", "tape", "scotch tape", "packing tape", "sharpie", "highlighter"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Mixed materials — not recyclable curbside"
+      ],
+      "notes": [
+        "Some brands (like Crayola and BIC) offer mail-back recycling programs"
+      ],
+      "commonMistakes": [
+        "Don't put pens or markers in recycling"
+      ],
+      "tags": ["office", "household"],
+      "examples": ["Ballpoint pen", "Sharpie marker", "Roll of tape", "Highlighter"]
+    },
+    {
+      "id": "padded-mailers",
+      "name": "Padded mailers and bubble envelopes",
+      "aliases": ["padded mailer", "bubble mailer", "padded envelope", "bubble envelope", "Amazon mailer"],
+      "category": "trash",
+      "instructions": [
+        "Place in regular trash",
+        "Mixed paper and plastic — cannot be separated for recycling"
+      ],
+      "notes": [
+        "Even paper-exterior padded mailers contain plastic bubble lining"
+      ],
+      "commonMistakes": [
+        "Don't put padded mailers in the GREEN bin — the plastic lining contaminates paper recycling"
+      ],
+      "tags": ["paper", "plastic", "mail"],
+      "examples": ["Amazon padded mailer", "Bubble envelope", "Poly mailer"]
+    },
+    {
+      "id": "textiles-clothing",
+      "name": "Textiles and clothing",
+      "aliases": ["clothing", "clothes", "shirt", "pants", "jacket", "towel", "blanket", "sheets", "linens", "textile", "fabric", "curtains", "rags"],
+      "category": "dropoff",
+      "instructions": [
+        "Place in a CLEAR bag and set out curbside on your recycling day",
+        "Or donate wearable items to Goodwill, Salvation Army, or Housing Works",
+        "Or drop off at GrowNYC Textile Recycling at greenmarket locations"
+      ],
+      "notes": [
+        "NYC accepts textiles curbside — place in a CLEAR (not black) bag on recycling day",
+        "Includes clothing, towels, sheets, curtains, and fabric in any condition",
+        "Even stained or torn textiles are accepted — they're recycled into rags or fiber"
+      ],
+      "commonMistakes": [
+        "Don't put textiles loose in the GREEN or BLUE bins",
+        "Don't use a black trash bag — must be a CLEAR bag so workers can identify it",
+        "Don't throw textiles in the trash if you can avoid it"
+      ],
+      "tags": ["textile", "clothing", "donation", "curbside"],
+      "examples": ["Old t-shirts", "Worn jeans", "Stained towels", "Bed sheets", "Curtains"]
+    },
+    {
+      "id": "shoes",
+      "name": "Shoes",
+      "aliases": ["shoes", "sneakers", "running shoes", "boots", "sandals", "flip flops", "old shoes", "heels"],
+      "category": "dropoff",
+      "instructions": [
+        "Place in a CLEAR bag with other textiles and set out on recycling day",
+        "Or donate wearable shoes to Goodwill, Housing Works, or Salvation Army",
+        "Nike stores in NYC accept old athletic shoes"
+      ],
+      "notes": [
+        "Shoes count as textiles in NYC — accepted curbside in clear bags"
+      ],
+      "commonMistakes": [
+        "Don't put shoes in recycling bins",
+        "Tie pairs together when donating"
+      ],
+      "tags": ["textile", "clothing", "donation"],
+      "examples": ["Old sneakers", "Worn-out boots", "Broken flip flops"]
+    },
+    {
+      "id": "electronics",
+      "name": "Electronics (e-waste)",
+      "aliases": ["electronics", "e-waste", "computer", "laptop", "phone", "cell phone", "tablet", "TV", "television", "monitor", "printer", "keyboard", "mouse", "charger", "cable", "cords"],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule FREE pickup with DSNY by calling 311 or visiting nyc.gov",
+        "Or drop off at the Lower East Side Ecology Center (e-waste events)",
+        "Or drop off at a DSNY Special Waste Drop-off site"
+      ],
+      "notes": [
+        "It is ILLEGAL to put electronics in NYC trash — there is a fine",
+        "DSNY offers free e-waste pickup — schedule online or by calling 311",
+        "Best Buy and Staples also accept some electronics for recycling"
+      ],
+      "commonMistakes": [
+        "Don't put electronics in the trash — it's illegal in NYC and carries a fine",
+        "Don't put electronics in any curbside recycling bin"
+      ],
+      "tags": ["electronic", "hazardous", "pickup"],
+      "examples": ["Old laptop", "Broken phone", "CRT monitor", "Printer", "Tangled cables"]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": ["battery", "batteries", "AA battery", "AAA battery", "9-volt battery", "lithium battery", "rechargeable battery", "car battery"],
+      "category": "hazardous",
+      "instructions": [
+        "Tape the terminals of lithium and 9-volt batteries to prevent fires",
+        "Drop off at a DSNY Special Waste Drop-off site or participating retailer",
+        "Call 311 to find the nearest drop-off location",
+        "Car batteries: bring to an auto parts store (they are required to accept them)"
+      ],
+      "notes": [
+        "Never put batteries in regular trash or recycling — they cause fires in garbage trucks",
+        "Many NYC stores (Staples, Home Depot, Best Buy) have battery drop-off bins"
+      ],
+      "commonMistakes": [
+        "Don't put batteries in any curbside bin — they cause fires",
+        "Don't forget to tape the terminals of 9V and lithium batteries"
+      ],
+      "tags": ["hazardous", "electronic"],
+      "examples": ["AA batteries", "9-volt battery", "Laptop battery", "Phone battery", "Car battery"]
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "aliases": ["paint", "latex paint", "oil paint", "paint can", "spray paint can", "stain", "varnish"],
+      "category": "hazardous",
+      "instructions": [
+        "Latex paint: dry it out (add kitty litter or sawdust), then place solidified paint in trash",
+        "Oil-based paint: bring to a DSNY Special Waste Drop-off site",
+        "Never pour paint down the drain"
+      ],
+      "notes": [
+        "Latex paint can go in trash once fully dried/solidified",
+        "Oil-based paint, stain, and varnish are hazardous and need drop-off"
+      ],
+      "commonMistakes": [
+        "Don't pour paint down the drain or toilet",
+        "Don't put liquid paint in the trash"
+      ],
+      "tags": ["hazardous", "household", "chemical"],
+      "examples": ["Leftover wall paint", "Paint can", "Wood stain", "Varnish"]
+    },
+    {
+      "id": "fluorescent-bulbs",
+      "name": "Fluorescent bulbs and CFLs",
+      "aliases": ["fluorescent bulb", "CFL", "compact fluorescent", "fluorescent tube", "tube light"],
+      "category": "hazardous",
+      "instructions": [
+        "Bring to a DSNY Special Waste Drop-off site",
+        "Or drop off at participating Home Depot or IKEA stores",
+        "Handle carefully — these contain mercury"
+      ],
+      "notes": [
+        "Regular incandescent and LED bulbs go in the trash — only fluorescent/CFL bulbs are hazardous"
+      ],
+      "commonMistakes": [
+        "Don't put fluorescent bulbs in recycling or trash",
+        "Don't break them — they contain mercury vapor"
+      ],
+      "tags": ["hazardous", "household", "mercury"],
+      "examples": ["CFL spiral bulb", "4-foot fluorescent tube", "Compact fluorescent bulb"]
+    },
+    {
+      "id": "motor-oil-automotive",
+      "name": "Motor oil and automotive fluids",
+      "aliases": ["motor oil", "used oil", "engine oil", "transmission fluid", "brake fluid", "antifreeze", "coolant"],
+      "category": "hazardous",
+      "instructions": [
+        "Bring to a DSNY Special Waste Drop-off site",
+        "Many auto parts stores (AutoZone, Pep Boys) accept used motor oil",
+        "Store in a sealed, leak-proof container for transport"
+      ],
+      "notes": [
+        "Never pour automotive fluids down storm drains, sewers, or in the trash"
+      ],
+      "commonMistakes": [
+        "Don't pour down the drain or storm sewer",
+        "Don't mix different automotive fluids together"
+      ],
+      "tags": ["hazardous", "automotive", "chemical"],
+      "examples": ["Used motor oil", "Old antifreeze", "Brake fluid"]
+    },
+    {
+      "id": "propane-tanks",
+      "name": "Propane tanks and compressed gas",
+      "aliases": ["propane tank", "propane cylinder", "compressed gas", "butane canister", "camping fuel"],
+      "category": "hazardous",
+      "instructions": [
+        "Bring to a DSNY Special Waste Drop-off site",
+        "Small 1-lb camping propane canisters: must be completely empty, then place in BLUE bin",
+        "Full or partially full tanks: hazardous waste drop-off only"
+      ],
+      "notes": [
+        "Pressurized containers can explode in garbage trucks"
+      ],
+      "commonMistakes": [
+        "Don't put propane tanks in regular trash",
+        "Don't puncture propane tanks"
+      ],
+      "tags": ["hazardous", "pressurized"],
+      "examples": ["BBQ propane tank", "1-lb camping propane", "Butane lighter refill"]
+    },
+    {
+      "id": "medications",
+      "name": "Medications and pharmaceuticals",
+      "aliases": ["medication", "medicine", "prescription drugs", "over-the-counter medicine", "pills", "expired medicine", "pharmaceutical"],
+      "category": "hazardous",
+      "instructions": [
+        "Drop off at an NYC pharmacy with a medication take-back program",
+        "Or bring to a DSNY Special Waste Drop-off site",
+        "If no drop-off available: mix pills with kitty litter or coffee grounds in a sealed bag, then trash"
+      ],
+      "notes": [
+        "Many NYC pharmacies have permanent drug take-back bins",
+        "Never flush medications — they contaminate the water supply"
+      ],
+      "commonMistakes": [
+        "Don't flush medications down the toilet",
+        "Don't put medications in recycling"
+      ],
+      "tags": ["hazardous", "medical", "pharmaceutical"],
+      "examples": ["Expired prescription pills", "Old Advil", "Unused antibiotics"]
+    },
+    {
+      "id": "light-bulbs-led-incandescent",
+      "name": "Light bulbs (LED and incandescent)",
+      "aliases": ["light bulb", "LED bulb", "incandescent bulb", "halogen bulb"],
+      "category": "trash",
+      "instructions": [
+        "Wrap in paper or the original packaging",
+        "Place in regular trash"
+      ],
+      "notes": [
+        "Regular (non-fluorescent) bulbs are safe for trash",
+        "Fluorescent and CFL bulbs contain mercury and need hazardous waste drop-off"
+      ],
+      "commonMistakes": [
+        "Don't put light bulbs in recycling — they break and contaminate glass",
+        "Don't confuse with fluorescent/CFL bulbs which are hazardous"
+      ],
+      "tags": ["household", "glass"],
+      "examples": ["LED bulb", "Old incandescent bulb", "Halogen bulb"]
+    },
+    {
+      "id": "mattresses-bulk",
+      "name": "Mattresses and bulk items",
+      "aliases": ["mattress", "box spring", "couch", "sofa", "furniture", "bulk item", "large item", "dresser", "table"],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a free bulk pickup with DSNY by calling 311 or visiting nyc.gov",
+        "Mattresses must be sealed in a plastic bag before curbside pickup (NYC bedbug law)",
+        "Set out on your scheduled collection day"
+      ],
+      "notes": [
+        "NYC provides free curbside bulk pickup — just schedule in advance",
+        "Mattress encasement bags are available at hardware stores"
+      ],
+      "commonMistakes": [
+        "Don't leave mattresses or furniture on the curb without scheduling pickup first",
+        "Don't forget to bag mattresses in plastic"
+      ],
+      "tags": ["bulk", "furniture", "pickup"],
+      "examples": ["Old mattress", "Broken couch", "Desk", "Bookshelf"]
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking oil and grease",
+      "aliases": ["cooking oil", "vegetable oil", "frying oil", "grease", "bacon grease", "used cooking oil"],
+      "category": "compost",
+      "instructions": [
+        "Small amounts: absorb with newspaper or paper towels and place in BROWN bin (compost)",
+        "Large amounts: let solidify, scrape into brown bin or sealed container for drop-off",
+        "Never pour oil down the drain"
+      ],
+      "notes": [
+        "Some restaurants and drop-off sites accept large quantities of used cooking oil for biodiesel"
+      ],
+      "commonMistakes": [
+        "Never pour grease down the drain — it causes sewer blockages",
+        "Don't put liquid oil directly in the brown bin — absorb it first"
+      ],
+      "tags": ["compost", "food", "brown-bin"],
+      "examples": ["Used frying oil", "Bacon grease", "Leftover cooking oil"]
+    },
+    {
+      "id": "rigid-plastic-cups",
+      "name": "Rigid plastic cups",
+      "aliases": ["plastic cup", "solo cup", "party cup", "clear plastic cup", "iced coffee cup"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in BLUE bin (metal/glass/plastic/cartons)"
+      ],
+      "notes": [
+        "Rigid plastic cups only — not foam cups (banned in NYC)"
+      ],
+      "commonMistakes": [
+        "Don't include styrofoam cups — those are banned and go in trash",
+        "Don't include cups with straws — remove straw (trash) and recycle cup (blue bin)"
+      ],
+      "tags": ["plastic", "blue-bin", "beverage"],
+      "examples": ["Solo cup", "Clear iced coffee cup", "Party cup"]
+    },
+    {
+      "id": "scrap-metal",
+      "name": "Scrap metal",
+      "aliases": ["scrap metal", "metal pipe", "wire", "pots and pans", "metal cookware", "curtain rod", "metal shelf"],
+      "category": "recycle",
+      "instructions": [
+        "Small items: place in BLUE bin (metal/glass/plastic/cartons)",
+        "Large items (over 4 feet): schedule bulk pickup with 311"
+      ],
+      "notes": [
+        "NYC accepts scrap metal in the BLUE bin — pots, pans, small appliances without electronics"
+      ],
+      "commonMistakes": [
+        "Don't put large metal items in the blue bin — schedule bulk pickup instead"
+      ],
+      "tags": ["metal", "blue-bin", "household"],
+      "examples": ["Old pot or pan", "Metal curtain rod", "Small metal shelf", "Metal wire"]
+    },
+    {
+      "id": "small-appliances",
+      "name": "Small appliances (non-electronic)",
+      "aliases": ["toaster", "blender", "coffee maker", "iron", "can opener", "hand mixer"],
+      "category": "recycle",
+      "instructions": [
+        "Place small metal appliances in BLUE bin (metal/glass/plastic/cartons)",
+        "If the appliance has a circuit board or screen, it's e-waste — schedule DSNY pickup instead"
+      ],
+      "notes": [
+        "Simple metal appliances (toasters, manual mixers) go in the blue bin",
+        "Anything with a digital display or computer chip is e-waste"
+      ],
+      "commonMistakes": [
+        "Don't confuse with electronics — if it has a screen or circuit board, it's e-waste"
+      ],
+      "tags": ["metal", "blue-bin", "appliance"],
+      "examples": ["Broken toaster", "Old hand mixer", "Manual can opener"]
+    }
+  ],
+  "rulesSummary": {
+    "accepted": {
+      "recycle": [
+        "BLUE BIN: Plastic bottles and rigid containers (empty, clean, caps on)",
+        "BLUE BIN: Glass bottles and jars (empty, clean)",
+        "BLUE BIN: Aluminum and steel/tin cans (empty, clean)",
+        "BLUE BIN: Milk and juice cartons (Tetra Pak, gable-top)",
+        "BLUE BIN: Aluminum foil and trays (clean)",
+        "BLUE BIN: Aerosol cans (completely empty)",
+        "BLUE BIN: Rigid plastic cups, clamshells, and containers",
+        "BLUE BIN: Metal lids, caps, small scrap metal, pots and pans",
+        "GREEN BIN: Cardboard and corrugated boxes (flattened)",
+        "GREEN BIN: Newspapers, magazines, catalogs",
+        "GREEN BIN: Office paper, printer paper, notebook paper",
+        "GREEN BIN: Mail, envelopes, paper bags, books",
+        "GREEN BIN: Paperboard boxes (cereal, tissue, shoe boxes)",
+        "GREEN BIN: Wrapping paper (non-metallic), phone books",
+        "GREEN BIN: Shredded paper (in a paper bag)"
+      ],
+      "compost": [
+        "BROWN BIN: All food scraps including meat, bones, dairy",
+        "BROWN BIN: Fruit and vegetable peels, coffee grounds, tea bags",
+        "BROWN BIN: Food-soiled paper (napkins, paper towels, paper plates)",
+        "BROWN BIN: Yard waste, leaves, grass clippings",
+        "BROWN BIN: Houseplants, flowers, bread, pasta, rice"
+      ],
+      "trash": [
+        "Styrofoam (banned in NYC — trash only)",
+        "Plastic film, bags, and wrap (return bags to store if possible)",
+        "Candy wrappers, chip bags, snack pouches",
+        "Disposable coffee cups (lined)",
+        "Frozen food boxes",
+        "Thermal receipts, wax paper",
+        "Diapers, plastic utensils, straws",
+        "Ceramics, mirrors, window glass, broken glass",
+        "Hangers, pens, markers, light bulbs (LED/incandescent)"
+      ]
+    },
+    "notAccepted": {
+      "recycle": [
+        "Plastic bags and flexible film — they jam machinery",
+        "Styrofoam — banned in NYC, goes in trash",
+        "Food waste — goes in brown compost bin",
+        "Ceramics, Pyrex, window glass, mirrors",
+        "Hangers of any type",
+        "Straws, plastic utensils",
+        "Padded mailers and bubble envelopes",
+        "Frozen food boxes (moisture-coated)",
+        "Disposable coffee cups (plastic-lined)"
+      ],
+      "compost": [
+        "Plastic bags or plastic-lined bags",
+        "Pet waste or kitty litter",
+        "Treated or painted wood",
+        "Thermal receipts (contain BPA)",
+        "Styrofoam or any plastic"
+      ]
+    },
+    "tips": [
+      "NYC has a DUAL bin system: BLUE for metal/glass/plastic/cartons, GREEN for paper/cardboard only",
+      "Cartons (milk, juice, broth) go in BLUE — not GREEN — despite being made of paper",
+      "Styrofoam is banned citywide — it always goes in the trash",
+      "Textiles go curbside in a CLEAR bag on recycling day — or donate them",
+      "Electronics are illegal to trash — schedule free DSNY pickup via 311",
+      "Plastic bags go back to the store — never in curbside recycling",
+      "Rinse containers — they don't need to be spotless, just empty",
+      "Flatten cardboard to save space in the green bin",
+      "When in doubt, put it in the trash — contamination ruins entire truckloads",
+      "Pizza box trick: clean top in GREEN bin, greasy bottom in BROWN bin",
+      "Schedule bulk pickups (mattresses, furniture) via 311 — it's free",
+      "Mattresses must be sealed in a plastic bag (NYC bedbug law)"
+    ]
+  },
+  "locations": [
+    {
+      "name": "DSNY Special Waste Drop-off Sites",
+      "phone": "311",
+      "url": "https://www.nyc.gov/safedisposal",
+      "accepts": [
+        "Batteries",
+        "Paint",
+        "Motor oil",
+        "Pesticides",
+        "Propane tanks",
+        "Fluorescent bulbs",
+        "Medications",
+        "Automotive fluids"
+      ],
+      "notes": "Multiple locations across NYC — call 311 or visit the website for the nearest site and hours"
+    },
+    {
+      "name": "Lower East Side Ecology Center",
+      "address": "469 President St, Brooklyn, NY 11215",
+      "url": "https://www.lesecologycenter.org",
+      "accepts": [
+        "Computers",
+        "Laptops",
+        "Phones",
+        "Tablets",
+        "Monitors",
+        "Printers",
+        "Cables and peripherals"
+      ],
+      "notes": "Also hosts regular e-waste collection events at Union Square and other Manhattan locations"
+    },
+    {
+      "name": "GrowNYC Textile Recycling",
+      "url": "https://www.grownyc.org/clothing",
+      "accepts": [
+        "Clothing",
+        "Shoes",
+        "Towels",
+        "Sheets",
+        "Fabric scraps"
+      ],
+      "notes": "Drop-off available at various greenmarket locations across NYC — check website for schedule"
+    }
+  ]
+}

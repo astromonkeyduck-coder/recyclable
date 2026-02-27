@@ -7,6 +7,7 @@ import { useSearchParams } from "next/navigation";
 import { CATEGORY_META } from "@/lib/utils/categories";
 import type { DisposalCategory } from "@/lib/providers/types";
 import { toast } from "sonner";
+import { useSfx } from "@/components/sfx/sfx-context";
 
 type ShareButtonProps = {
   itemName: string;
@@ -27,6 +28,7 @@ export function ShareButton({ itemName, category, providerName }: ShareButtonPro
   const [copied, setCopied] = useState(false);
   const searchParams = useSearchParams();
   const providerId = searchParams.get("provider") ?? "general";
+  const sfx = useSfx();
 
   const handleShare = useCallback(async () => {
     const meta = CATEGORY_META[category];
@@ -40,6 +42,7 @@ export function ShareButton({ itemName, category, providerName }: ShareButtonPro
           text,
           url: shareUrl,
         });
+        toast.success("Shared!");
         return;
       } catch (err) {
         if (err instanceof Error && err.name === "AbortError") return;
@@ -48,6 +51,7 @@ export function ShareButton({ itemName, category, providerName }: ShareButtonPro
 
     try {
       await navigator.clipboard.writeText(shareUrl);
+      sfx.ding();
       setCopied(true);
       toast.success("Link copied to clipboard");
       setTimeout(() => setCopied(false), 2500);

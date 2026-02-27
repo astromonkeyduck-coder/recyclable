@@ -3,9 +3,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const PLAYLIST = [
-  { src: "/audio/niceindie.wav", title: "Indie Vibes" },
-  { src: "/audio/firstsongrec.wav", title: "First Song" },
-  { src: "/audio/recycleee.wav", title: "Recycle" },
+  { src: "/audio/niceindie.wav", title: "Golden Hour" },
+  { src: "/audio/firstsongrec.wav", title: "Curbside Dreams" },
+  { src: "/audio/recycleee.wav", title: "Second Life" },
 ];
 
 export type MusicPlayerState = {
@@ -54,7 +54,7 @@ export function useMusicPlayer(): MusicPlayerState {
       setCurrentTrack((prev) => {
         const next = (prev + 1) % PLAYLIST.length;
         audio.src = PLAYLIST[next].src;
-        audio.play().catch(() => {});
+        audio.play().catch((err) => console.warn("Track advance failed:", err));
         return next;
       });
     });
@@ -62,22 +62,26 @@ export function useMusicPlayer(): MusicPlayerState {
     return audio;
   }, []);
 
-  const toggle = useCallback(() => {
+  const toggle = useCallback(async () => {
     const audio = initAudio();
 
     if (!hasInteracted) {
       setHasInteracted(true);
     }
 
-    if (ctxRef.current?.state === "suspended") {
-      ctxRef.current.resume();
-    }
-
     if (isPlaying) {
       audio.pause();
       setIsPlaying(false);
     } else {
-      audio.play().then(() => setIsPlaying(true)).catch(() => {});
+      try {
+        if (ctxRef.current?.state === "suspended") {
+          await ctxRef.current.resume();
+        }
+        await audio.play();
+        setIsPlaying(true);
+      } catch (err) {
+        console.warn("Audio playback failed:", err);
+      }
     }
   }, [isPlaying, hasInteracted, initAudio]);
 
@@ -88,19 +92,25 @@ export function useMusicPlayer(): MusicPlayerState {
     }
   }, [isMuted]);
 
-  const next = useCallback(() => {
+  const next = useCallback(async () => {
     const audio = audioRef.current;
     if (!audio) return;
 
-    setCurrentTrack((prev) => {
-      const nextIdx = (prev + 1) % PLAYLIST.length;
-      audio.src = PLAYLIST[nextIdx].src;
-      if (isPlaying) {
-        audio.play().catch(() => {});
+    const nextIdx = (currentTrack + 1) % PLAYLIST.length;
+    setCurrentTrack(nextIdx);
+    audio.src = PLAYLIST[nextIdx].src;
+
+    if (isPlaying) {
+      try {
+        if (ctxRef.current?.state === "suspended") {
+          await ctxRef.current.resume();
+        }
+        await audio.play();
+      } catch (err) {
+        console.warn("Track skip failed:", err);
       }
-      return nextIdx;
-    });
-  }, [isPlaying]);
+    }
+  }, [isPlaying, currentTrack]);
 
   useEffect(() => {
     return () => {

@@ -5,6 +5,8 @@ import { AppProviders } from "@/components/providers";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingVisualizer } from "@/components/music/floating-visualizer";
+import { InstallPrompt } from "@/components/common/install-prompt";
+import { OfflineIndicator } from "@/components/common/offline-indicator";
 import { getSiteUrl } from "@/lib/utils/site-url";
 import Script from "next/script";
 
@@ -94,6 +96,27 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Is this recyclable?",
+              url: siteUrl,
+              description:
+                "Snap a photo or search any item to instantly find out how to dispose of it correctly. Local recycling, trash, compost, and drop-off rules for your area.",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: `${siteUrl}/result?q={search_term_string}`,
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
         <Script
           id="adsense"
           async
@@ -103,13 +126,21 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:bg-background focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:shadow-lg focus:ring-2 focus:ring-ring"
+        >
+          Skip to content
+        </a>
         <AppProviders>
           <div className="flex min-h-svh flex-col">
             <Header />
-            <main className="flex-1">{children}</main>
+            <OfflineIndicator />
+            <main id="main-content" className="flex-1">{children}</main>
             <Footer />
           </div>
           <FloatingVisualizer />
+          <InstallPrompt />
         </AppProviders>
         <Script
           id="sw-register"

@@ -14,14 +14,16 @@ export async function GET(req: NextRequest) {
     const provider = await loadProvider(providerId);
     const results = searchMaterials(provider, q, 8);
 
-    return NextResponse.json(
-      results.map((r) => ({
-        materialId: r.material.id,
-        name: r.material.name,
-        category: r.material.category,
-        score: r.score,
-      }))
-    );
+    const data = results.map((r) => ({
+      materialId: r.material.id,
+      name: r.material.name,
+      category: r.material.category,
+      score: r.score,
+    }));
+
+    return NextResponse.json(data, {
+      headers: { "Cache-Control": "public, max-age=300, s-maxage=600" },
+    });
   } catch (error) {
     console.error("Search error:", error);
     return NextResponse.json(

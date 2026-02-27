@@ -1,10 +1,11 @@
 import OpenAI from "openai";
+import { env } from "@/lib/env";
 
 let _client: OpenAI | null = null;
 
 export function getOpenAIClient(): OpenAI {
   if (!_client) {
-    const apiKey = process.env.OPENAI_API_KEY;
+    const apiKey = env.server.OPENAI_API_KEY;
     if (!apiKey) {
       throw new Error("OPENAI_API_KEY environment variable is not set");
     }
@@ -14,9 +15,9 @@ export function getOpenAIClient(): OpenAI {
 }
 
 export function getVisionModel(): string {
-  return process.env.OPENAI_MODEL_VISION ?? "gpt-4o";
+  return env.server.OPENAI_MODEL_VISION;
 }
 
 export function getTextModel(): string {
-  return process.env.OPENAI_MODEL_TEXT ?? "gpt-4o-mini";
+  return env.server.OPENAI_MODEL_TEXT;
 }

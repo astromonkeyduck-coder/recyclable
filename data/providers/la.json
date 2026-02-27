@@ -1,0 +1,2167 @@
+{
+  "id": "la",
+  "displayName": "Los Angeles, CA",
+  "coverage": {
+    "country": "US",
+    "region": "CA",
+    "city": "Los Angeles",
+    "zips": [
+      "90001",
+      "90002",
+      "90003",
+      "90004",
+      "90005",
+      "90006",
+      "90007",
+      "90008",
+      "90009",
+      "90010",
+      "90011",
+      "90012",
+      "90013",
+      "90014",
+      "90015",
+      "90016",
+      "90017",
+      "90018",
+      "90019",
+      "90020",
+      "90021",
+      "90022",
+      "90023",
+      "90024",
+      "90025",
+      "90026",
+      "90027",
+      "90028",
+      "90029",
+      "90031",
+      "90032",
+      "90033",
+      "90034",
+      "90035",
+      "90036",
+      "90037",
+      "90038",
+      "90039",
+      "90040",
+      "90041",
+      "90042",
+      "90043",
+      "90044",
+      "90045",
+      "90046",
+      "90047",
+      "90048",
+      "90049",
+      "90056",
+      "90057",
+      "90058",
+      "90059",
+      "90061",
+      "90062",
+      "90063",
+      "90064",
+      "90065",
+      "90066",
+      "90067",
+      "90068",
+      "90069",
+      "90077",
+      "90079",
+      "90089",
+      "90090",
+      "90094",
+      "90095"
+    ],
+    "aliases": [
+      "los angeles",
+      "la",
+      "l.a.",
+      "la california",
+      "city of angels"
+    ]
+  },
+  "source": {
+    "name": "LA Sanitation & Environment",
+    "url": "https://www.lacitysan.org/cs/groups/public/documents/document/y250/mdax/~edisp/cnt044002.pdf",
+    "generatedAt": "2026-02-27",
+    "notes": "Placeholder based on general US guidance. Replace with official LA extraction when available.",
+    "license": "Public domain"
+  },
+  "materials": [
+    {
+      "id": "plastic-bottles",
+      "name": "Plastic bottles",
+      "aliases": [
+        "water bottle",
+        "soda bottle",
+        "plastic bottle",
+        "PET bottle",
+        "HDPE bottle",
+        "beverage bottle"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse the bottle",
+        "Replace the cap",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Most curbside programs accept #1 (PET) and #2 (HDPE) plastics"
+      ],
+      "commonMistakes": [
+        "Don't crush bottles if your program uses optical sorting",
+        "Don't include bottles with liquid still in them"
+      ],
+      "tags": [
+        "plastic",
+        "beverage",
+        "container"
+      ],
+      "examples": [
+        "Water bottle",
+        "Soda bottle",
+        "Juice bottle",
+        "Shampoo bottle"
+      ]
+    },
+    {
+      "id": "plastic-containers",
+      "name": "Plastic containers",
+      "aliases": [
+        "plastic tub",
+        "yogurt container",
+        "deli container",
+        "plastic cup",
+        "takeout container"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Remove any film lids",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Check the number on the bottom — #1, #2, and #5 are most commonly accepted"
+      ],
+      "commonMistakes": [
+        "Black plastic is often not recyclable",
+        "Film lids are usually trash"
+      ],
+      "tags": [
+        "plastic",
+        "container",
+        "food"
+      ],
+      "examples": [
+        "Yogurt tub",
+        "Cottage cheese container",
+        "Deli container"
+      ]
+    },
+    {
+      "id": "plastic-bags",
+      "name": "Plastic bags",
+      "aliases": [
+        "grocery bag",
+        "shopping bag",
+        "plastic film",
+        "produce bag",
+        "bread bag",
+        "zip-lock bag"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Do NOT place in curbside recycling",
+        "Many grocery stores have drop-off bins for plastic bag recycling",
+        "If no drop-off is available, place in trash"
+      ],
+      "notes": [
+        "Plastic bags jam recycling machinery and are the #1 contaminant"
+      ],
+      "commonMistakes": [
+        "Never bag your recyclables in plastic bags",
+        "Don't put plastic wrap or film in curbside recycling"
+      ],
+      "tags": [
+        "plastic",
+        "film",
+        "bag"
+      ],
+      "examples": [
+        "Grocery bag",
+        "Produce bag",
+        "Newspaper sleeve",
+        "Dry cleaning bag"
+      ]
+    },
+    {
+      "id": "aluminum-cans",
+      "name": "Aluminum cans",
+      "aliases": [
+        "soda can",
+        "beer can",
+        "aluminum can",
+        "tin can",
+        "beverage can",
+        "pop can"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "No need to crush (unless your program requires it)",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Aluminum is infinitely recyclable and one of the most valuable recyclables"
+      ],
+      "commonMistakes": [
+        "Don't include cans with food residue",
+        "Aluminum foil is often accepted too — check locally"
+      ],
+      "tags": [
+        "metal",
+        "aluminum",
+        "beverage",
+        "can"
+      ],
+      "examples": [
+        "Soda can",
+        "Beer can",
+        "Sparkling water can",
+        "Energy drink can"
+      ]
+    },
+    {
+      "id": "steel-cans",
+      "name": "Steel / tin cans",
+      "aliases": [
+        "tin can",
+        "steel can",
+        "soup can",
+        "food can",
+        "canned goods"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Labels can stay on",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Use a magnet to test — steel cans are magnetic, aluminum is not"
+      ],
+      "commonMistakes": [
+        "Don't include cans with food still in them"
+      ],
+      "tags": [
+        "metal",
+        "steel",
+        "tin",
+        "food",
+        "can"
+      ],
+      "examples": [
+        "Soup can",
+        "Bean can",
+        "Tuna can",
+        "Tomato paste can"
+      ]
+    },
+    {
+      "id": "glass-bottles",
+      "name": "Glass bottles and jars",
+      "aliases": [
+        "glass bottle",
+        "glass jar",
+        "wine bottle",
+        "beer bottle",
+        "mason jar",
+        "sauce jar"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Remove metal lids (recycle separately)",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Some programs separate glass by color; check locally"
+      ],
+      "commonMistakes": [
+        "Don't include broken glass — wrap and trash it",
+        "Window glass, mirrors, and ceramics are NOT recyclable in curbside bins"
+      ],
+      "tags": [
+        "glass",
+        "container",
+        "beverage"
+      ],
+      "examples": [
+        "Wine bottle",
+        "Beer bottle",
+        "Pasta sauce jar",
+        "Pickle jar"
+      ]
+    },
+    {
+      "id": "cardboard",
+      "name": "Cardboard",
+      "aliases": [
+        "corrugated cardboard",
+        "shipping box",
+        "moving box",
+        "cardboard box",
+        "amazon box",
+        "delivery box"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Break down and flatten boxes",
+        "Remove tape and packing materials if possible",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Cardboard is one of the most successfully recycled materials"
+      ],
+      "commonMistakes": [
+        "Don't recycle cardboard soaked with grease (e.g., pizza boxes with oil stains)",
+        "Remove styrofoam and plastic inserts"
+      ],
+      "tags": [
+        "paper",
+        "cardboard",
+        "packaging"
+      ],
+      "examples": [
+        "Amazon box",
+        "Cereal box",
+        "Shoe box",
+        "Shipping box"
+      ]
+    },
+    {
+      "id": "newspaper",
+      "name": "Newspaper",
+      "aliases": [
+        "newspaper",
+        "newsprint",
+        "daily paper"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place directly in recycling bin",
+        "No need to remove staples"
+      ],
+      "notes": [
+        "One of the oldest and most commonly recycled materials"
+      ],
+      "commonMistakes": [
+        "Don't include newspaper that's been used as packing material with food grease"
+      ],
+      "tags": [
+        "paper",
+        "newspaper"
+      ],
+      "examples": [
+        "Daily newspaper",
+        "Weekly flyer",
+        "Newsprint"
+      ]
+    },
+    {
+      "id": "mixed-paper",
+      "name": "Paper",
+      "aliases": [
+        "office paper",
+        "printer paper",
+        "junk mail",
+        "notebook paper",
+        "copy paper",
+        "envelopes",
+        "paper bags"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place in recycling bin",
+        "Shredded paper should be placed in a paper bag first"
+      ],
+      "notes": [
+        "Most clean, dry paper is recyclable"
+      ],
+      "commonMistakes": [
+        "Don't include paper towels or tissues (those are compost/trash)",
+        "Don't include wax-coated paper"
+      ],
+      "tags": [
+        "paper",
+        "office"
+      ],
+      "examples": [
+        "Printer paper",
+        "Junk mail",
+        "Envelopes",
+        "Paper bags",
+        "Magazines"
+      ]
+    },
+    {
+      "id": "pizza-box",
+      "name": "Pizza box",
+      "aliases": [
+        "pizza box",
+        "pizza carton"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Remove any leftover food",
+        "If the box is heavily greased on the bottom, tear off the greasy part and trash it",
+        "Recycle the clean top portion"
+      ],
+      "notes": [
+        "Many modern recycling programs now accept lightly soiled pizza boxes"
+      ],
+      "commonMistakes": [
+        "Don't include the wax paper liner",
+        "A few grease spots are usually OK — a soaking box is not"
+      ],
+      "tags": [
+        "paper",
+        "cardboard",
+        "food",
+        "packaging"
+      ],
+      "examples": [
+        "Pizza delivery box"
+      ]
+    },
+    {
+      "id": "styrofoam",
+      "name": "Styrofoam",
+      "aliases": [
+        "styrofoam",
+        "polystyrene",
+        "foam cup",
+        "foam container",
+        "packing peanuts",
+        "EPS",
+        "foam tray"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash",
+        "Some areas have specialized Styrofoam drop-off locations"
+      ],
+      "notes": [
+        "Expanded polystyrene (EPS) is not accepted in most curbside programs"
+      ],
+      "commonMistakes": [
+        "Don't put Styrofoam in recycling — it contaminates the stream",
+        "Packing peanuts can sometimes be returned to shipping stores"
+      ],
+      "tags": [
+        "plastic",
+        "foam",
+        "packaging"
+      ],
+      "examples": [
+        "Foam coffee cup",
+        "Takeout container",
+        "Meat tray",
+        "Packing peanuts"
+      ]
+    },
+    {
+      "id": "fruit",
+      "name": "Fruit / fruit scraps",
+      "aliases": [
+        "fruit",
+        "apple",
+        "banana",
+        "orange",
+        "grapes",
+        "grape",
+        "strawberry",
+        "strawberries",
+        "blueberries",
+        "blueberry",
+        "watermelon",
+        "melon",
+        "peach",
+        "pear",
+        "plum",
+        "mango",
+        "pineapple",
+        "kiwi",
+        "lemon",
+        "lime",
+        "grapefruit",
+        "cherries",
+        "cherry",
+        "raspberries",
+        "raspberry",
+        "avocado",
+        "tomato",
+        "fruit peel",
+        "banana peel",
+        "orange peel",
+        "apple core",
+        "fruit scraps",
+        "rotten fruit",
+        "old fruit",
+        "expired fruit",
+        "moldy fruit"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Compost bin if your area has composting",
+        "Home composting works great for fruit scraps",
+        "If no composting available, place in trash",
+        "Never put in recycling"
+      ],
+      "notes": [
+        "Fruit is one of the best items for composting — it breaks down quickly",
+        "Citrus peels are fine in municipal composting but may slow home composting"
+      ],
+      "commonMistakes": [
+        "Don't put fruit in recycling",
+        "Don't throw fruit on the ground outdoors — it attracts pests"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost",
+        "fruit"
+      ],
+      "examples": [
+        "Banana peel",
+        "Apple core",
+        "Grape stems",
+        "Watermelon rind",
+        "Orange peel",
+        "Strawberry tops",
+        "Avocado pit"
+      ]
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetables / vegetable scraps",
+      "aliases": [
+        "vegetable",
+        "vegetables",
+        "veggie",
+        "veggies",
+        "carrot",
+        "carrots",
+        "broccoli",
+        "celery",
+        "lettuce",
+        "spinach",
+        "kale",
+        "onion",
+        "potato",
+        "potatoes",
+        "potato peel",
+        "corn",
+        "corn cob",
+        "corn husk",
+        "cucumber",
+        "pepper",
+        "bell pepper",
+        "mushroom",
+        "mushrooms",
+        "zucchini",
+        "squash",
+        "cabbage",
+        "cauliflower",
+        "asparagus",
+        "green beans",
+        "peas",
+        "garlic",
+        "ginger",
+        "beet",
+        "beets",
+        "radish",
+        "turnip",
+        "sweet potato",
+        "eggplant",
+        "salad",
+        "old salad",
+        "wilted lettuce",
+        "rotten vegetables",
+        "expired vegetables",
+        "vegetable scraps",
+        "veggie scraps"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Compost bin if available",
+        "Great for home composting",
+        "If no composting, place in trash",
+        "Never put in recycling"
+      ],
+      "notes": [
+        "All vegetables and vegetable scraps are compostable",
+        "Onion and garlic are fine in municipal composting"
+      ],
+      "commonMistakes": [
+        "Don't put vegetables in recycling"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost",
+        "vegetable"
+      ],
+      "examples": [
+        "Carrot peels",
+        "Broccoli stems",
+        "Wilted lettuce",
+        "Onion skins",
+        "Potato peels",
+        "Corn cobs"
+      ]
+    },
+    {
+      "id": "meat-bones",
+      "name": "Meat and bones",
+      "aliases": [
+        "meat",
+        "chicken",
+        "chicken bones",
+        "beef",
+        "steak",
+        "pork",
+        "ham",
+        "turkey",
+        "bacon",
+        "sausage",
+        "hot dog",
+        "hamburger",
+        "ground beef",
+        "ribs",
+        "lamb",
+        "fish",
+        "salmon",
+        "tuna",
+        "shrimp",
+        "bones",
+        "meat scraps",
+        "raw meat",
+        "cooked meat",
+        "leftover meat",
+        "expired meat",
+        "rotten meat"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash — most curbside composting does NOT accept meat",
+        "Wrap in newspaper or a bag to contain odor",
+        "Put out on collection day to avoid attracting animals"
+      ],
+      "notes": [
+        "Meat attracts pests and creates odor in compost bins",
+        "Some industrial composting facilities accept meat — check locally",
+        "Never pour meat grease down the drain"
+      ],
+      "commonMistakes": [
+        "Don't put in home compost bins — it attracts rats and creates odor",
+        "Don't put in recycling",
+        "Don't pour grease down the drain"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "meat"
+      ],
+      "examples": [
+        "Chicken bones",
+        "Steak trimmings",
+        "Fish scraps",
+        "Turkey carcass",
+        "Bacon grease"
+      ]
+    },
+    {
+      "id": "dairy",
+      "name": "Dairy products",
+      "aliases": [
+        "dairy",
+        "milk",
+        "cheese",
+        "yogurt",
+        "butter",
+        "cream",
+        "sour cream",
+        "cream cheese",
+        "cottage cheese",
+        "ice cream",
+        "expired milk",
+        "spoiled milk",
+        "old cheese",
+        "moldy cheese",
+        "whipped cream",
+        "half and half"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash — most composting programs don't accept dairy",
+        "Pour expired milk down the drain (small amounts are fine)",
+        "Container goes in recycling after rinsing"
+      ],
+      "notes": [
+        "The dairy product itself goes in trash, but the container may be recyclable",
+        "Yogurt cups (#5 plastic) are recyclable after rinsing"
+      ],
+      "commonMistakes": [
+        "Don't compost dairy in home bins — it attracts pests",
+        "Don't forget to recycle the container separately"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "dairy"
+      ],
+      "examples": [
+        "Expired milk",
+        "Moldy cheese",
+        "Old yogurt",
+        "Spoiled cream"
+      ]
+    },
+    {
+      "id": "bread-grains",
+      "name": "Bread and grains",
+      "aliases": [
+        "bread",
+        "toast",
+        "bagel",
+        "muffin",
+        "croissant",
+        "roll",
+        "bun",
+        "tortilla",
+        "pita",
+        "naan",
+        "rice",
+        "pasta",
+        "noodles",
+        "cereal",
+        "oatmeal",
+        "crackers",
+        "stale bread",
+        "moldy bread",
+        "old bread",
+        "expired bread",
+        "crumbs",
+        "breadcrumbs",
+        "flour",
+        "pancake",
+        "waffle"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Compost if available — bread and grains break down well",
+        "If no composting, place in trash",
+        "Stale bread can also be left out for birds (in appropriate areas)"
+      ],
+      "notes": [
+        "Bread composts quickly but may attract pests in open bins",
+        "Cooked pasta and rice are compostable too"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "In home compost, bury bread under other material to avoid attracting pests"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost",
+        "grain"
+      ],
+      "examples": [
+        "Stale bread",
+        "Moldy bagel",
+        "Leftover rice",
+        "Old pasta",
+        "Expired tortillas"
+      ]
+    },
+    {
+      "id": "eggs-shells",
+      "name": "Eggs / eggshells",
+      "aliases": [
+        "egg",
+        "eggs",
+        "eggshell",
+        "eggshells",
+        "egg shell",
+        "egg shells",
+        "raw egg",
+        "cracked egg",
+        "boiled egg",
+        "hard boiled egg"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Eggshells: crush and add to compost — they add calcium",
+        "Raw or cooked eggs: compost if available, otherwise trash",
+        "Never put in recycling"
+      ],
+      "notes": [
+        "Eggshells are excellent for compost and garden soil",
+        "Rinsing eggshells before composting reduces odor"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Crush eggshells before composting for faster breakdown"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost"
+      ],
+      "examples": [
+        "Cracked eggshells",
+        "Hard boiled egg shells",
+        "Raw egg remnants"
+      ]
+    },
+    {
+      "id": "coffee-tea",
+      "name": "Coffee grounds / tea bags",
+      "aliases": [
+        "coffee",
+        "coffee grounds",
+        "used coffee",
+        "coffee filter",
+        "tea",
+        "tea bag",
+        "tea bags",
+        "tea leaves",
+        "used tea bag",
+        "coffee beans",
+        "espresso grounds",
+        "k-cup grounds"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Coffee grounds and paper filters: compost",
+        "Tea bags: compost if they're paper (remove the staple)",
+        "If no composting, place in trash"
+      ],
+      "notes": [
+        "Coffee grounds are excellent for compost — they add nitrogen",
+        "Some tea bags contain plastic mesh — those go in trash"
+      ],
+      "commonMistakes": [
+        "Check that tea bags are paper, not plastic mesh",
+        "Don't put in recycling"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost",
+        "beverage"
+      ],
+      "examples": [
+        "Used coffee grounds",
+        "Coffee filter with grounds",
+        "Used tea bags",
+        "Loose tea leaves"
+      ]
+    },
+    {
+      "id": "cooked-food",
+      "name": "Cooked food / leftovers",
+      "aliases": [
+        "leftovers",
+        "leftover food",
+        "cooked food",
+        "old food",
+        "expired food",
+        "spoiled food",
+        "pizza",
+        "old pizza",
+        "french fries",
+        "fries",
+        "sandwich",
+        "soup",
+        "stew",
+        "curry",
+        "casserole",
+        "fried rice",
+        "takeout leftovers",
+        "dinner leftovers",
+        "lunch leftovers",
+        "uneaten food",
+        "plate scrapings"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Compost bin if your program accepts cooked food",
+        "Many curbside programs accept all food waste including cooked food",
+        "If no composting, place in trash",
+        "Scrape into compost/trash — don't put the plate in"
+      ],
+      "notes": [
+        "Check if your local program accepts cooked food — many do",
+        "Wrap in newspaper to reduce odor if trashing"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "The container/plate is separate from the food — dispose of each correctly"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost"
+      ],
+      "examples": [
+        "Old pizza slices",
+        "Leftover pasta",
+        "Cold french fries",
+        "Soup gone bad",
+        "Uneaten sandwich"
+      ]
+    },
+    {
+      "id": "snacks-candy",
+      "name": "Snacks and candy",
+      "aliases": [
+        "candy",
+        "chocolate",
+        "gum",
+        "chewing gum",
+        "gummy bears",
+        "gummies",
+        "chips",
+        "popcorn",
+        "pretzels",
+        "cookies",
+        "cookie",
+        "cake",
+        "brownie",
+        "donut",
+        "doughnut",
+        "pastry",
+        "pie",
+        "ice cream cone",
+        "lollipop",
+        "hard candy",
+        "jelly beans",
+        "skittles",
+        "m&ms",
+        "snickers",
+        "reeses",
+        "kit kat",
+        "twix",
+        "oreos",
+        "goldfish crackers",
+        "cheez-its",
+        "trail mix",
+        "nuts",
+        "peanuts",
+        "almonds",
+        "granola"
+      ],
+      "category": "compost",
+      "instructions": [
+        "The food itself: compost if available, otherwise trash",
+        "The wrapper/packaging: trash (see candy wrapper / chip bag entries)",
+        "Separate the food from its packaging"
+      ],
+      "notes": [
+        "The snack food is organic and compostable, but the wrapper almost never is",
+        "Gum is trash — it doesn't break down"
+      ],
+      "commonMistakes": [
+        "Don't put wrappers in compost — only the food",
+        "Chewing gum goes in trash, not compost"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost",
+        "snack"
+      ],
+      "examples": [
+        "Stale chips",
+        "Old cookies",
+        "Melted chocolate",
+        "Leftover popcorn",
+        "Expired candy"
+      ]
+    },
+    {
+      "id": "condiments",
+      "name": "Condiments and sauces",
+      "aliases": [
+        "ketchup",
+        "mustard",
+        "mayo",
+        "mayonnaise",
+        "hot sauce",
+        "soy sauce",
+        "salad dressing",
+        "ranch",
+        "bbq sauce",
+        "sriracha",
+        "salsa",
+        "guacamole",
+        "hummus",
+        "peanut butter",
+        "jelly",
+        "jam",
+        "honey",
+        "maple syrup",
+        "olive oil",
+        "vinegar",
+        "relish",
+        "tartar sauce"
+      ],
+      "category": "compost",
+      "instructions": [
+        "The sauce/condiment itself: compost or trash",
+        "Squeeze packets: trash (mixed materials)",
+        "Glass bottles: rinse and recycle",
+        "Plastic bottles: rinse and recycle"
+      ],
+      "notes": [
+        "Separate the container from the contents — they have different disposal paths"
+      ],
+      "commonMistakes": [
+        "Don't recycle bottles with sauce still in them — rinse first",
+        "Squeeze packets are trash, not recycling"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost"
+      ],
+      "examples": [
+        "Old ketchup",
+        "Expired mayo",
+        "Used sauce packets",
+        "Empty peanut butter jar"
+      ]
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages / drinks",
+      "aliases": [
+        "drink",
+        "juice",
+        "soda",
+        "pop",
+        "lemonade",
+        "iced tea",
+        "sweet tea",
+        "smoothie",
+        "milkshake",
+        "protein shake",
+        "sports drink",
+        "gatorade",
+        "energy drink",
+        "red bull",
+        "monster",
+        "kombucha",
+        "sparkling water",
+        "seltzer",
+        "la croix",
+        "coke",
+        "coca-cola",
+        "pepsi",
+        "sprite",
+        "dr pepper",
+        "mountain dew",
+        "fanta",
+        "root beer"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Pour leftover liquid down the drain — small amounts are fine",
+        "The container goes in recycling (can, bottle, or carton)",
+        "Don't pour sugary drinks on the ground outside"
+      ],
+      "notes": [
+        "The liquid itself is fine to drain — focus on recycling the container"
+      ],
+      "commonMistakes": [
+        "Don't recycle containers with liquid still in them — empty first",
+        "Don't pour large amounts of milk or juice outside — use the drain"
+      ],
+      "tags": [
+        "beverage",
+        "food",
+        "liquid"
+      ],
+      "examples": [
+        "Flat soda",
+        "Old juice",
+        "Expired Gatorade",
+        "Leftover smoothie"
+      ]
+    },
+    {
+      "id": "food-waste",
+      "name": "Food waste (general)",
+      "aliases": [
+        "food scraps",
+        "kitchen scraps",
+        "food leftovers",
+        "spoiled food",
+        "vegetable scraps",
+        "fruit peels",
+        "food waste",
+        "table scraps",
+        "plate scrapings",
+        "expired food",
+        "rotten food",
+        "old food",
+        "bad food",
+        "gone bad"
+      ],
+      "category": "compost",
+      "instructions": [
+        "If your area has curbside composting, place in compost bin",
+        "Otherwise, consider home composting",
+        "If neither is available, place in trash"
+      ],
+      "notes": [
+        "Food waste in landfills generates methane, a potent greenhouse gas",
+        "When in doubt about a specific food, it's almost certainly compostable"
+      ],
+      "commonMistakes": [
+        "Don't put food waste in recycling",
+        "Meat and dairy may not be accepted in all composting programs"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "compost"
+      ],
+      "examples": [
+        "Banana peel",
+        "Apple core",
+        "Coffee grounds",
+        "Egg shells",
+        "Vegetable trimmings"
+      ]
+    },
+    {
+      "id": "yard-waste",
+      "name": "Yard waste",
+      "aliases": [
+        "grass clippings",
+        "leaves",
+        "branches",
+        "garden waste",
+        "lawn clippings",
+        "hedge trimmings"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Place in yard waste bin if available",
+        "Many municipalities offer seasonal yard waste pickup",
+        "Can also be home composted"
+      ],
+      "notes": [
+        "Check local rules — some areas ban yard waste from trash"
+      ],
+      "commonMistakes": [
+        "Don't bag yard waste in plastic bags unless specified",
+        "Don't include treated wood or invasive plants"
+      ],
+      "tags": [
+        "organic",
+        "yard",
+        "garden"
+      ],
+      "examples": [
+        "Grass clippings",
+        "Fallen leaves",
+        "Small branches",
+        "Flower trimmings"
+      ]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": [
+        "battery",
+        "AA battery",
+        "AAA battery",
+        "lithium battery",
+        "rechargeable battery",
+        "9V battery",
+        "button cell"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Never place in regular trash or recycling",
+        "Take to a battery recycling drop-off (many hardware stores accept them)",
+        "Tape the terminals of lithium batteries before disposal"
+      ],
+      "notes": [
+        "Batteries can cause fires in garbage trucks and recycling facilities"
+      ],
+      "commonMistakes": [
+        "Don't throw batteries in the trash",
+        "Don't put them in curbside recycling"
+      ],
+      "tags": [
+        "electronics",
+        "hazardous",
+        "battery"
+      ],
+      "examples": [
+        "AA batteries",
+        "AAA batteries",
+        "9V battery",
+        "Laptop battery",
+        "Phone battery"
+      ]
+    },
+    {
+      "id": "electronics",
+      "name": "Electronics / E-waste",
+      "aliases": [
+        "e-waste",
+        "electronic waste",
+        "old phone",
+        "computer",
+        "laptop",
+        "tablet",
+        "TV",
+        "television",
+        "monitor",
+        "printer"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to an e-waste recycling center",
+        "Many retailers (Best Buy, Staples) offer free e-waste drop-off",
+        "Delete personal data before disposal"
+      ],
+      "notes": [
+        "It's illegal to put e-waste in the trash in many states"
+      ],
+      "commonMistakes": [
+        "Don't put electronics in curbside recycling",
+        "Don't throw in trash — contains toxic materials"
+      ],
+      "tags": [
+        "electronics",
+        "e-waste",
+        "metal"
+      ],
+      "examples": [
+        "Old phone",
+        "Broken laptop",
+        "TV",
+        "Printer",
+        "Cables",
+        "Chargers"
+      ]
+    },
+    {
+      "id": "light-bulbs",
+      "name": "Light bulbs",
+      "aliases": [
+        "light bulb",
+        "lightbulb",
+        "CFL",
+        "fluorescent bulb",
+        "LED bulb",
+        "incandescent bulb"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "CFL and fluorescent bulbs contain mercury — take to a hazardous waste drop-off",
+        "LED bulbs can go to e-waste recycling",
+        "Incandescent bulbs go in the trash (wrap to prevent breakage)"
+      ],
+      "notes": [
+        "Home Depot and Lowe's accept CFL bulbs for recycling"
+      ],
+      "commonMistakes": [
+        "Don't put CFL or fluorescent bulbs in regular trash",
+        "Don't break them — mercury vapor is hazardous"
+      ],
+      "tags": [
+        "hazardous",
+        "household",
+        "lighting"
+      ],
+      "examples": [
+        "CFL spiral bulb",
+        "Fluorescent tube",
+        "LED bulb",
+        "Incandescent bulb"
+      ]
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "aliases": [
+        "latex paint",
+        "oil paint",
+        "house paint",
+        "spray paint",
+        "paint can"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Latex paint: dry it out with kitty litter or sawdust, then trash the solidified paint",
+        "Oil-based paint: take to a hazardous waste facility",
+        "Never pour paint down the drain"
+      ],
+      "notes": [
+        "Many communities have paint recycling programs or swap events"
+      ],
+      "commonMistakes": [
+        "Don't pour paint down the drain or into storm drains",
+        "Empty dry paint cans can often be recycled as metal"
+      ],
+      "tags": [
+        "hazardous",
+        "household",
+        "chemical"
+      ],
+      "examples": [
+        "Latex wall paint",
+        "Oil-based stain",
+        "Spray paint can"
+      ]
+    },
+    {
+      "id": "motor-oil",
+      "name": "Motor oil",
+      "aliases": [
+        "used oil",
+        "engine oil",
+        "automotive oil",
+        "car oil"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Collect in a sealed container",
+        "Take to an auto parts store or hazardous waste facility",
+        "Never pour down drains or on the ground"
+      ],
+      "notes": [
+        "Most auto parts stores accept used motor oil for free"
+      ],
+      "commonMistakes": [
+        "Don't mix motor oil with other fluids",
+        "Don't pour into storm drains"
+      ],
+      "tags": [
+        "hazardous",
+        "automotive",
+        "chemical"
+      ],
+      "examples": [
+        "Used engine oil",
+        "Transmission fluid"
+      ]
+    },
+    {
+      "id": "medications",
+      "name": "Medications",
+      "aliases": [
+        "medicine",
+        "prescription drugs",
+        "pills",
+        "over-the-counter medicine",
+        "expired medicine",
+        "pharmaceuticals"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to a pharmacy drug take-back program",
+        "Many police stations have drop-off boxes",
+        "If no drop-off available: mix with coffee grounds or kitty litter, seal in a container, and trash"
+      ],
+      "notes": [
+        "DEA National Prescription Drug Take Back Day happens twice a year"
+      ],
+      "commonMistakes": [
+        "Don't flush medications down the toilet (unless specifically instructed)",
+        "Don't throw in regular trash without rendering unusable"
+      ],
+      "tags": [
+        "hazardous",
+        "pharmaceutical",
+        "household"
+      ],
+      "examples": [
+        "Expired Tylenol",
+        "Old prescriptions",
+        "Vitamins"
+      ]
+    },
+    {
+      "id": "clothing",
+      "name": "Clothing and textiles",
+      "aliases": [
+        "clothes",
+        "old clothes",
+        "used clothing",
+        "textiles",
+        "fabric",
+        "shoes",
+        "sneakers"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Donate wearable clothing to thrift stores",
+        "Place unwearable textiles in textile recycling bins",
+        "Some retailers accept old clothing (H&M, North Face)"
+      ],
+      "notes": [
+        "Textiles in landfills take decades to decompose"
+      ],
+      "commonMistakes": [
+        "Don't put clothing in curbside recycling",
+        "Wet or moldy clothing should be trashed"
+      ],
+      "tags": [
+        "textile",
+        "clothing",
+        "donation"
+      ],
+      "examples": [
+        "Old t-shirt",
+        "Worn jeans",
+        "Old sneakers",
+        "Towels"
+      ]
+    },
+    {
+      "id": "aluminum-foil",
+      "name": "Aluminum foil",
+      "aliases": [
+        "tin foil",
+        "foil",
+        "aluminum foil wrap"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Clean off food residue",
+        "Ball up into a fist-sized ball for easier processing",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Many programs accept clean aluminum foil"
+      ],
+      "commonMistakes": [
+        "Don't recycle foil contaminated with food",
+        "Foil-lined chip bags are NOT recyclable"
+      ],
+      "tags": [
+        "metal",
+        "aluminum",
+        "kitchen"
+      ],
+      "examples": [
+        "Clean aluminum foil sheets",
+        "Foil pie pans"
+      ]
+    },
+    {
+      "id": "paper-towels",
+      "name": "Paper towels and napkins",
+      "aliases": [
+        "paper towel",
+        "napkin",
+        "tissue",
+        "paper napkin",
+        "facial tissue",
+        "kleenex"
+      ],
+      "category": "compost",
+      "instructions": [
+        "If you have composting: add to compost bin",
+        "Otherwise: place in trash",
+        "Never place in recycling"
+      ],
+      "notes": [
+        "Paper towels cannot be recycled because the fibers are too short"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Paper towels used with chemicals should go in trash, not compost"
+      ],
+      "tags": [
+        "paper",
+        "compost",
+        "kitchen",
+        "bathroom"
+      ],
+      "examples": [
+        "Used paper towel",
+        "Napkin",
+        "Tissue"
+      ]
+    },
+    {
+      "id": "milk-carton",
+      "name": "Milk / juice cartons",
+      "aliases": [
+        "milk carton",
+        "juice carton",
+        "drink carton",
+        "tetra pak",
+        "juice box",
+        "aseptic carton"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Replace cap if it has one",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Most curbside programs now accept cartons — check locally"
+      ],
+      "commonMistakes": [
+        "Don't flatten cartons — 3D shape helps sorting machines identify them"
+      ],
+      "tags": [
+        "paper",
+        "packaging",
+        "beverage",
+        "carton"
+      ],
+      "examples": [
+        "Milk carton",
+        "Orange juice carton",
+        "Juice box",
+        "Broth carton"
+      ]
+    },
+    {
+      "id": "aerosol-cans",
+      "name": "Aerosol cans",
+      "aliases": [
+        "aerosol",
+        "spray can",
+        "aerosol can",
+        "hairspray can",
+        "air freshener can"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Must be completely empty",
+        "Do NOT puncture",
+        "Remove plastic cap and recycle separately",
+        "Place empty can in recycling bin"
+      ],
+      "notes": [
+        "Non-empty aerosols may be considered hazardous waste"
+      ],
+      "commonMistakes": [
+        "Don't recycle if still pressurized or has product remaining",
+        "Never puncture aerosol cans"
+      ],
+      "tags": [
+        "metal",
+        "container",
+        "household"
+      ],
+      "examples": [
+        "Hairspray can",
+        "Cooking spray can",
+        "Air freshener"
+      ]
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking oil / grease",
+      "aliases": [
+        "cooking oil",
+        "vegetable oil",
+        "grease",
+        "frying oil",
+        "used cooking oil"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Let cool completely",
+        "Pour into a sealed non-recyclable container",
+        "Place sealed container in trash",
+        "Some areas have cooking oil recycling programs"
+      ],
+      "notes": [
+        "Never pour oil or grease down the drain — it causes sewer blockages"
+      ],
+      "commonMistakes": [
+        "Don't pour down the sink",
+        "Don't pour into storm drains"
+      ],
+      "tags": [
+        "organic",
+        "food",
+        "kitchen"
+      ],
+      "examples": [
+        "Used frying oil",
+        "Bacon grease",
+        "Olive oil"
+      ]
+    },
+    {
+      "id": "diapers",
+      "name": "Diapers",
+      "aliases": [
+        "diaper",
+        "disposable diaper",
+        "baby diaper",
+        "adult diaper",
+        "nappy"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap used diapers tightly",
+        "Place in trash"
+      ],
+      "notes": [
+        "Diapers are not recyclable or compostable in most municipal programs"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Some specialty services offer diaper composting — check locally"
+      ],
+      "tags": [
+        "hygiene",
+        "baby",
+        "household"
+      ],
+      "examples": [
+        "Disposable baby diaper",
+        "Adult incontinence product"
+      ]
+    },
+    {
+      "id": "coffee-cups",
+      "name": "Disposable coffee cups",
+      "aliases": [
+        "coffee cup",
+        "paper cup",
+        "hot cup",
+        "to-go cup",
+        "starbucks cup"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Most paper coffee cups are NOT recyclable due to plastic lining",
+        "Place in trash",
+        "Plastic lids are often recyclable — check locally"
+      ],
+      "notes": [
+        "Consider using a reusable cup to reduce waste"
+      ],
+      "commonMistakes": [
+        "Don't put lined paper cups in recycling",
+        "The plastic lid and paper sleeve may be recyclable separately"
+      ],
+      "tags": [
+        "paper",
+        "food",
+        "beverage"
+      ],
+      "examples": [
+        "Starbucks cup",
+        "Dunkin cup",
+        "To-go coffee cup"
+      ]
+    },
+    {
+      "id": "wine-corks",
+      "name": "Wine corks",
+      "aliases": [
+        "cork",
+        "wine cork",
+        "natural cork",
+        "synthetic cork"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Natural cork: compost or recycle at specialty programs",
+        "Synthetic cork: place in trash",
+        "Whole Foods and some wine shops accept corks for recycling"
+      ],
+      "notes": [
+        "Natural cork is biodegradable"
+      ],
+      "commonMistakes": [
+        "Don't put in curbside recycling"
+      ],
+      "tags": [
+        "organic",
+        "beverage"
+      ],
+      "examples": [
+        "Natural wine cork",
+        "Champagne cork"
+      ]
+    },
+    {
+      "id": "tires",
+      "name": "Tires",
+      "aliases": [
+        "tire",
+        "car tire",
+        "bicycle tire",
+        "rubber tire"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to a tire retailer or auto shop",
+        "Many municipalities offer tire collection events",
+        "Never dump illegally"
+      ],
+      "notes": [
+        "Most tire retailers are required to accept old tires when you buy new ones"
+      ],
+      "commonMistakes": [
+        "Don't put in curbside trash",
+        "Don't dump in nature"
+      ],
+      "tags": [
+        "automotive",
+        "rubber"
+      ],
+      "examples": [
+        "Car tire",
+        "Truck tire",
+        "Bicycle tire"
+      ]
+    },
+    {
+      "id": "sharps",
+      "name": "Needles / sharps",
+      "aliases": [
+        "needle",
+        "syringe",
+        "lancet",
+        "sharps",
+        "insulin needle",
+        "medical needle"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Place in an FDA-cleared sharps container",
+        "When full, take to a designated drop-off or mail-back program",
+        "Never place loose sharps in trash or recycling"
+      ],
+      "notes": [
+        "Improper disposal puts sanitation workers at risk"
+      ],
+      "commonMistakes": [
+        "Never put in recycling",
+        "Never put loose in trash bags",
+        "Don't flush down the toilet"
+      ],
+      "tags": [
+        "medical",
+        "hazardous",
+        "sharps"
+      ],
+      "examples": [
+        "Insulin needles",
+        "Lancets",
+        "Syringes"
+      ]
+    },
+    {
+      "id": "propane-tanks",
+      "name": "Propane tanks",
+      "aliases": [
+        "propane tank",
+        "propane cylinder",
+        "camping propane",
+        "gas canister"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Never place in trash or recycling",
+        "Small camping canisters: check for local hazardous waste collection",
+        "Large tanks: return to a propane dealer for refill or exchange"
+      ],
+      "notes": [
+        "Pressurized containers are a fire and explosion risk in garbage trucks"
+      ],
+      "commonMistakes": [
+        "Never puncture",
+        "Don't put in curbside bins"
+      ],
+      "tags": [
+        "hazardous",
+        "pressurized",
+        "fuel"
+      ],
+      "examples": [
+        "Small camping propane canister",
+        "BBQ propane tank"
+      ]
+    },
+    {
+      "id": "mattress",
+      "name": "Mattress",
+      "aliases": [
+        "mattress",
+        "bed mattress",
+        "box spring"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a bulk pickup with your municipality",
+        "Take to a mattress recycling facility",
+        "Some retailers offer take-back when delivering a new mattress"
+      ],
+      "notes": [
+        "Mattresses are recyclable — steel springs, foam, and fabric can all be recovered"
+      ],
+      "commonMistakes": [
+        "Don't leave on the curb without scheduling pickup",
+        "Don't put in dumpsters without permission"
+      ],
+      "tags": [
+        "furniture",
+        "bulk",
+        "household"
+      ],
+      "examples": [
+        "Twin mattress",
+        "King mattress",
+        "Box spring"
+      ]
+    },
+    {
+      "id": "bubble-wrap",
+      "name": "Bubble wrap / packing materials",
+      "aliases": [
+        "bubble wrap",
+        "packing material",
+        "air pillows",
+        "packing foam"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Bubble wrap and air pillows: deflate and trash (or drop off with plastic bags at grocery stores)",
+        "Packing peanuts: return to shipping stores like UPS",
+        "Don't place in curbside recycling"
+      ],
+      "notes": [
+        "Plastic film clogs recycling machinery"
+      ],
+      "commonMistakes": [
+        "Don't put in curbside recycling",
+        "Don't let packing peanuts blow into the environment"
+      ],
+      "tags": [
+        "plastic",
+        "packaging",
+        "film"
+      ],
+      "examples": [
+        "Bubble wrap",
+        "Air pillows",
+        "Packing peanuts"
+      ]
+    },
+    {
+      "id": "fluorescent-tubes",
+      "name": "Fluorescent tubes",
+      "aliases": [
+        "fluorescent tube",
+        "fluorescent light",
+        "tube light",
+        "T8 bulb",
+        "T12 bulb"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Contains mercury — handle with care",
+        "Take to a hazardous waste facility or participating retailer",
+        "Home Depot and Lowe's accept fluorescent tubes"
+      ],
+      "notes": [
+        "If a tube breaks, ventilate the area and clean up carefully"
+      ],
+      "commonMistakes": [
+        "Don't put in regular trash",
+        "Don't break them"
+      ],
+      "tags": [
+        "hazardous",
+        "lighting",
+        "mercury"
+      ],
+      "examples": [
+        "4-foot fluorescent tube",
+        "Compact fluorescent lamp (CFL)"
+      ]
+    },
+    {
+      "id": "wax-paper",
+      "name": "Wax paper / parchment paper",
+      "aliases": [
+        "wax paper",
+        "waxed paper",
+        "parchment paper",
+        "baking paper"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash",
+        "Not recyclable due to wax or silicone coating"
+      ],
+      "notes": [
+        "Uncoated parchment paper may be compostable — check locally"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Don't confuse with regular paper"
+      ],
+      "tags": [
+        "paper",
+        "kitchen",
+        "cooking"
+      ],
+      "examples": [
+        "Wax paper",
+        "Parchment paper",
+        "Baking sheet liner"
+      ]
+    },
+    {
+      "id": "books",
+      "name": "Book",
+      "aliases": [
+        "book",
+        "paperback",
+        "hardcover",
+        "textbook",
+        "novel",
+        "hardback",
+        "softcover",
+        "paperback book",
+        "hardcover book",
+        "library book"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Donate if in good condition — libraries, thrift stores, and Little Free Libraries accept books",
+        "If damaged or unusable, remove the cover from hardcovers (trash the cover if it has a glossy laminate)",
+        "Recycle the paper pages in your recycling bin"
+      ],
+      "notes": [
+        "Books are made of paper and are recyclable, but donating is always the better option",
+        "Hardcover bindings with glue and fabric may need to be removed before recycling the pages"
+      ],
+      "commonMistakes": [
+        "Don't throw usable books in the trash — donate them first",
+        "Glossy laminated covers on hardcovers are not recyclable"
+      ],
+      "tags": [
+        "paper",
+        "book",
+        "donation",
+        "reuse"
+      ],
+      "examples": [
+        "Paperback novel",
+        "Hardcover textbook",
+        "Children's book",
+        "Cookbook",
+        "Old encyclopedia"
+      ]
+    },
+    {
+      "id": "magazines",
+      "name": "Magazine",
+      "aliases": [
+        "magazine",
+        "catalog",
+        "catalogue",
+        "glossy magazine",
+        "periodical",
+        "brochure",
+        "flyer",
+        "pamphlet"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place directly in recycling bin",
+        "No need to remove staples or subscription cards",
+        "Glossy coating is fine — modern recycling handles it"
+      ],
+      "notes": [
+        "Magazines and catalogs are accepted in virtually all curbside programs"
+      ],
+      "commonMistakes": [
+        "Don't remove the staples — recycling equipment handles them",
+        "Magazines with heavy plastic wrapping: remove the plastic wrap first (trash it)"
+      ],
+      "tags": [
+        "paper",
+        "magazine",
+        "glossy"
+      ],
+      "examples": [
+        "Time magazine",
+        "National Geographic",
+        "IKEA catalog",
+        "Coupon flyer"
+      ]
+    },
+    {
+      "id": "envelopes",
+      "name": "Envelopes and mail",
+      "aliases": [
+        "envelope",
+        "junk mail",
+        "letter",
+        "mail",
+        "window envelope",
+        "padded envelope",
+        "mailer"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Regular paper envelopes: place in recycling",
+        "Window envelopes: recycle as-is — the small plastic window is OK",
+        "Padded/bubble mailers: trash (mixed materials)"
+      ],
+      "notes": [
+        "The small plastic window in envelopes is fine in modern recycling"
+      ],
+      "commonMistakes": [
+        "Don't worry about removing the plastic window",
+        "Padded bubble mailers cannot be recycled curbside"
+      ],
+      "tags": [
+        "paper",
+        "mail",
+        "office"
+      ],
+      "examples": [
+        "Letter envelope",
+        "Window envelope",
+        "Junk mail",
+        "Wedding invitation"
+      ]
+    },
+    {
+      "id": "wrapping-paper",
+      "name": "Wrapping paper",
+      "aliases": [
+        "wrapping paper",
+        "gift wrap",
+        "tissue paper",
+        "gift bag",
+        "christmas wrapping"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Plain paper wrapping (no glitter, foil, or lamination): recycle",
+        "Metallic, glittery, or laminated wrapping paper: trash",
+        "Do the scrunch test — if it stays scrunched, it's paper (recycle). If it springs back, it's metallic (trash)",
+        "Tissue paper: compost or trash (fibers too short to recycle)"
+      ],
+      "notes": [
+        "Most wrapping paper has foil or glitter and goes in the trash"
+      ],
+      "commonMistakes": [
+        "Don't assume all wrapping paper is recyclable",
+        "Remove tape and bows before recycling plain paper wrap"
+      ],
+      "tags": [
+        "paper",
+        "holiday",
+        "gift"
+      ],
+      "examples": [
+        "Birthday wrapping paper",
+        "Christmas gift wrap",
+        "Tissue paper",
+        "Gift bag"
+      ]
+    }
+  ],
+  "rulesSummary": {
+    "accepted": {
+      "recycle": [
+        "Plastic bottles and containers (#1, #2, #5)",
+        "Aluminum and steel cans",
+        "Glass bottles and jars",
+        "Cardboard and cereal boxes (flattened)",
+        "Paper, newspapers, magazines, books, mail, envelopes",
+        "Milk and juice cartons",
+        "Empty aerosol cans",
+        "Plastic clamshells (berry containers, salad boxes)",
+        "Clean aluminum foil and foil trays",
+        "Sticky notes, greeting cards (no glitter)",
+        "Prescription bottles (remove label)",
+        "Cleaning product and detergent bottles"
+      ],
+      "compost": [
+        "Food scraps (fruit, vegetables, coffee grounds, eggshells)",
+        "Yard waste (grass, leaves, small branches)",
+        "Paper towels, napkins, and plain paper plates",
+        "Natural cork",
+        "Paper egg cartons"
+      ],
+      "trash": [
+        "Plastic bags and film",
+        "Styrofoam",
+        "Candy wrappers, chip bags, snack pouches",
+        "Fast food wrappers",
+        "Disposable coffee cups (lined)",
+        "Receipts (thermal paper)",
+        "Diapers, toothbrushes, razors",
+        "Wax paper, frozen food boxes",
+        "Broken ceramics, mirrors",
+        "Coffee pods / K-Cups",
+        "Pens, markers, tape, rubber bands"
+      ]
+    },
+    "notAccepted": {
+      "recycle": [
+        "Plastic bags, film, and flexible wrappers",
+        "Styrofoam / polystyrene",
+        "Food-soiled paper",
+        "Ceramics, pottery, mirrors",
+        "Window glass and mirrors",
+        "Candy wrappers, chip bags, snack pouches",
+        "Hangers (any type)",
+        "Straws, plastic utensils",
+        "Diapers",
+        "Paper towels and tissues"
+      ],
+      "compost": [
+        "Meat and dairy (in most municipal programs)",
+        "Pet waste",
+        "Treated or painted wood",
+        "Glossy or coated paper",
+        "Thermal receipts (contain BPA)"
+      ]
+    },
+    "tips": [
+      "When in doubt, throw it out — contamination hurts recycling",
+      "Rinse containers but they don't need to be spotless",
+      "Check your local municipality's specific rules",
+      "Never bag recyclables in plastic bags",
+      "Flatten cardboard and cereal boxes to save space",
+      "Keep recyclables loose in the bin",
+      "Leave bottle caps ON their bottles — don't toss them loose",
+      "Books in good condition? Donate before recycling",
+      "Candy wrappers look metallic but are NOT aluminum — they go in trash"
+    ]
+  }
+}

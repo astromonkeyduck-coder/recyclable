@@ -17,9 +17,35 @@ export async function scanImage(imageBase64: string): Promise<ScanOutput> {
           role: "system",
           content: `You are an advanced waste item identification system with OCR and product recognition capabilities.
 
-When given an image, you must:
+IMPORTANT — NON-WASTE ITEM DETECTION:
+If the image shows something that is clearly NOT a waste/disposal item, you MUST set "isNotWaste": true and provide a "funnyResponse" that is witty, short, and genuinely funny. Be creative and different each time. Examples:
 
-1. READ ALL VISIBLE TEXT — brand names, product titles, book titles, labels, ingredients lists, recycling symbols, warning labels, everything. This is critical for identification.
+- Person/selfie → "That's a whole human! Definitely not recyclable. Last time we checked, people belong outside the bin."
+- Dog/cat/pet → "That's a good boy/girl, not garbage! Please do not recycle your pets. They have feelings."
+- Car → "That's a car. While technically it IS made of recyclable materials... maybe just drive it instead?"
+- Food that's still good → "That looks delicious! Eat it first, THEN we'll talk about the packaging."
+- A tree/plant outdoors → "That's a living tree! It's already doing the recycling — turning CO2 into oxygen. Leave it alone!"
+- Landscape/scenery → "Beautiful view! But we can't recycle a sunset. Try pointing at an actual item."
+- Baby/child → "Adorable! But babies are non-recyclable, non-compostable, and definitely not trash. Keep that one."
+- Money → "That's money! Don't throw that away. If you don't want it, I'll take it."
+- Computer screen showing this app → "Very meta. You're scanning the scanner. We need to go deeper."
+
+Be genuinely funny and warm, not mean. Keep it to 1-2 sentences max.
+
+For NON-WASTE items, return:
+{
+  "labels": [],
+  "guessedItemName": "",
+  "visionConfidence": 0.95,
+  "notes": [],
+  "isNotWaste": true,
+  "funnyResponse": "your funny line here",
+  "productDescription": "what the image actually shows"
+}
+
+FOR ACTUAL WASTE ITEMS — follow these rules:
+
+1. READ ALL VISIBLE TEXT — brand names, product titles, book titles, labels, ingredients lists, recycling symbols, warning labels, everything.
 
 2. IDENTIFY THE SPECIFIC PRODUCT — not just "a book" but "a paperback copy of The Great Gatsby" or not just "a wrapper" but "a Snickers candy bar wrapper". Be as specific as the text and visual cues allow.
 
@@ -36,12 +62,7 @@ When given an image, you must:
    - "Coca-Cola can" → "aluminum can"
    - "Tropicana carton" → "juice carton"
 
-EXAMPLES of good identification:
-- Image of a Doritos bag → textFound: "Doritos Nacho Cheese", guessedItemName: "chip bag", materialComposition: "metallized plastic film", labels: ["chip bag", "snack bag", "flexible plastic packaging", "food wrapper"]
-- Image of a hardcover book → textFound: "To Kill a Mockingbird by Harper Lee", guessedItemName: "hardcover book", materialComposition: "paper pages, cardboard cover, cloth binding", labels: ["book", "hardcover book", "paper"]
-- Image of a Starbucks cup → textFound: "Starbucks", guessedItemName: "disposable coffee cup", materialComposition: "paper with plastic lining", labels: ["coffee cup", "paper cup", "disposable cup", "lined paper cup"]
-
-Return STRICT JSON:
+For WASTE items, return:
 {
   "labels": ["disposal-relevant label 1", "label 2", "label 3"],
   "guessedItemName": "the best common waste disposal name for this item",
@@ -49,10 +70,11 @@ Return STRICT JSON:
   "notes": ["any helpful disposal context"],
   "textFound": "all readable text from the item (brand, title, labels) or empty string if none",
   "materialComposition": "what the item is physically made of",
-  "productDescription": "brief specific description like 'Snickers candy bar wrapper' or 'hardcover copy of 1984 by George Orwell'"
+  "productDescription": "brief specific description",
+  "isNotWaste": false
 }
 
-If you cannot identify the item or the image is too blurry, return guessedItemName as "" and visionConfidence as 0. But TRY HARD — even a partial read of text or a guess at material is better than nothing.`,
+If you cannot identify the item or the image is too blurry, return guessedItemName as "" and visionConfidence as 0.`,
         },
         {
           role: "user",
@@ -63,7 +85,7 @@ If you cannot identify the item or the image is too blurry, return guessedItemNa
             },
             {
               type: "text",
-              text: "Identify this item for waste disposal. Read any visible text, identify the product, and determine what material it's made of. Respond in JSON only.",
+              text: "Identify this item for waste disposal. If it's not a waste item, be funny about it. Respond in JSON only.",
             },
           ],
         },
