@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Recycle } from "lucide-react";
 import { LocationSelector } from "./location-selector";
 import { ThemeToggle } from "./theme-toggle";
+import { MusicControls } from "@/components/music/music-controls";
 
 export function Header() {
   return (
@@ -15,7 +16,9 @@ export function Header() {
           <span className="sm:hidden">ITR</span>
         </Link>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
+          <MusicControls />
+          <div className="hidden sm:block h-5 w-px bg-border mx-1" />
           <LocationSelector />
           <ThemeToggle />
         </div>

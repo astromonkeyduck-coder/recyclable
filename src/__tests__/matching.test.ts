@@ -94,7 +94,7 @@ describe("matchMaterial - Orlando Provider", () => {
   });
 
   it("returns low confidence for unknown items", () => {
-    const result = matchMaterial(orlando, "unicorn horn");
+    const result = matchMaterial(orlando, "xyzqqfoo");
     expect(result.confidence).toBeLessThan(0.4);
   });
 

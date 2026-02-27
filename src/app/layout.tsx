@@ -4,6 +4,7 @@ import "./globals.css";
 import { AppProviders } from "@/components/providers";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { FloatingVisualizer } from "@/components/music/floating-visualizer";
 import { getSiteUrl } from "@/lib/utils/site-url";
 import Script from "next/script";
 
@@ -59,7 +60,10 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/icons/icon-192.png",
+    icon: [
+      { url: "/icons/icon.svg", type: "image/svg+xml" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
     apple: "/icons/icon-192.png",
   },
   appleWebApp: {
@@ -89,6 +93,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          id="adsense"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5682687142632647"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <AppProviders>
           <div className="flex min-h-svh flex-col">
@@ -96,6 +109,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
+          <FloatingVisualizer />
         </AppProviders>
         <Script
           id="sw-register"

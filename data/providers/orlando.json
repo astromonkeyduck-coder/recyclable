@@ -375,40 +375,114 @@
       ]
     },
     {
-      "id": "food-waste",
-      "name": "Food waste",
-      "aliases": [
-        "food scraps",
-        "food leftovers",
-        "kitchen scraps",
-        "spoiled food",
-        "food residue"
-      ],
+      "id": "fruit",
+      "name": "Fruit / fruit scraps",
+      "aliases": ["fruit", "apple", "banana", "orange", "grapes", "grape", "strawberry", "strawberries", "blueberries", "watermelon", "peach", "pear", "mango", "pineapple", "lemon", "lime", "cherries", "avocado", "tomato", "banana peel", "orange peel", "apple core", "fruit scraps", "rotten fruit", "old fruit"],
       "category": "compost",
-      "instructions": [
-        "Orlando offers a free composting program — request a composter from the city",
-        "Alternatively, place in trash cart",
-        "Do NOT place in recycling cart"
-      ],
-      "notes": [
-        "Food waste is not accepted in Orlando's recycling",
-        "The City of Orlando provides free composters to residents upon request"
-      ],
-      "commonMistakes": [
-        "Never put food waste in the recycling cart"
-      ],
-      "tags": [
-        "organic",
-        "food",
-        "compost"
-      ],
-      "examples": [
-        "Banana peel",
-        "Apple core",
-        "Coffee grounds",
-        "Eggshells",
-        "Vegetable scraps"
-      ]
+      "instructions": ["Use your City of Orlando composter if you have one", "Otherwise place in trash cart", "Do NOT place in recycling cart"],
+      "notes": ["Request a free composter from the City of Orlando for fruit and food scraps", "Fruit breaks down quickly in composting"],
+      "commonMistakes": ["Don't put fruit in the recycling cart"],
+      "tags": ["organic", "food", "compost", "fruit"],
+      "examples": ["Banana peel", "Apple core", "Grape stems", "Watermelon rind", "Orange peel"]
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetables / vegetable scraps",
+      "aliases": ["vegetable", "vegetables", "veggie", "carrot", "broccoli", "celery", "lettuce", "spinach", "onion", "potato", "potato peel", "corn", "corn cob", "cucumber", "pepper", "mushroom", "zucchini", "squash", "cabbage", "salad", "old salad", "rotten vegetables", "vegetable scraps"],
+      "category": "compost",
+      "instructions": ["Use your City of Orlando composter", "Otherwise place in trash cart", "Do NOT place in recycling cart"],
+      "notes": ["All vegetables are compostable", "Request a free composter from Orlando"],
+      "commonMistakes": ["Don't put vegetables in recycling cart"],
+      "tags": ["organic", "food", "compost", "vegetable"],
+      "examples": ["Carrot peels", "Broccoli stems", "Wilted lettuce", "Onion skins", "Potato peels"]
+    },
+    {
+      "id": "meat-bones",
+      "name": "Meat and bones",
+      "aliases": ["meat", "chicken", "chicken bones", "beef", "steak", "pork", "ham", "turkey", "bacon", "hot dog", "hamburger", "fish", "salmon", "shrimp", "bones", "meat scraps", "raw meat", "cooked meat", "expired meat"],
+      "category": "trash",
+      "instructions": ["Place in trash cart — Orlando composters are not designed for meat", "Wrap in newspaper to contain odor", "Put out on collection day to avoid attracting animals"],
+      "notes": ["Meat attracts pests and creates odor — not suitable for Orlando's home composting program"],
+      "commonMistakes": ["Don't put in Orlando composter", "Don't put in recycling cart"],
+      "tags": ["organic", "food", "meat"],
+      "examples": ["Chicken bones", "Steak trimmings", "Fish scraps"]
+    },
+    {
+      "id": "dairy",
+      "name": "Dairy products",
+      "aliases": ["dairy", "milk", "cheese", "yogurt", "butter", "cream", "ice cream", "expired milk", "spoiled milk", "old cheese", "sour cream"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Pour small amounts of expired milk down the drain", "Rinse and recycle the container separately"],
+      "notes": ["The dairy goes in trash, but yogurt cups and milk jugs are recyclable after rinsing"],
+      "commonMistakes": ["Don't compost dairy in Orlando composters", "Don't forget to recycle the container"],
+      "tags": ["organic", "food", "dairy"],
+      "examples": ["Expired milk", "Moldy cheese", "Old yogurt"]
+    },
+    {
+      "id": "bread-grains",
+      "name": "Bread and grains",
+      "aliases": ["bread", "toast", "bagel", "muffin", "tortilla", "rice", "pasta", "noodles", "cereal food", "oatmeal", "stale bread", "moldy bread", "crackers", "pancake", "waffle"],
+      "category": "compost",
+      "instructions": ["Use your Orlando composter for bread and grains", "Otherwise place in trash cart"],
+      "notes": ["Bread composts well but may attract pests — bury under other compost material"],
+      "commonMistakes": ["Don't put in recycling cart"],
+      "tags": ["organic", "food", "compost", "grain"],
+      "examples": ["Stale bread", "Moldy bagel", "Leftover rice", "Old pasta"]
+    },
+    {
+      "id": "eggs-shells",
+      "name": "Eggs / eggshells",
+      "aliases": ["egg", "eggs", "eggshell", "eggshells", "egg shell", "egg shells", "cracked egg"],
+      "category": "compost",
+      "instructions": ["Crush eggshells and add to Orlando composter", "They add calcium to compost"],
+      "notes": ["Eggshells are excellent for composting"],
+      "commonMistakes": ["Crush shells for faster breakdown"],
+      "tags": ["organic", "food", "compost"],
+      "examples": ["Cracked eggshells", "Hard boiled egg shells"]
+    },
+    {
+      "id": "coffee-tea",
+      "name": "Coffee grounds / tea bags",
+      "aliases": ["coffee", "coffee grounds", "used coffee", "coffee filter", "tea", "tea bag", "tea bags", "tea leaves"],
+      "category": "compost",
+      "instructions": ["Coffee grounds and paper filters: add to Orlando composter", "Paper tea bags: compost (remove staple)", "Plastic mesh tea bags: trash"],
+      "notes": ["Coffee grounds add nitrogen to compost — great for Orlando gardens"],
+      "commonMistakes": ["Check that tea bags are paper, not plastic mesh"],
+      "tags": ["organic", "food", "compost", "beverage"],
+      "examples": ["Used coffee grounds", "Coffee filter with grounds", "Used tea bags"]
+    },
+    {
+      "id": "cooked-food",
+      "name": "Cooked food / leftovers",
+      "aliases": ["leftovers", "leftover food", "cooked food", "old food", "expired food", "pizza food", "old pizza", "french fries", "sandwich", "soup", "takeout leftovers", "uneaten food"],
+      "category": "compost",
+      "instructions": ["Use Orlando composter for most cooked food (no meat/dairy)", "Cooked food with meat/dairy: trash cart", "Scrape food off plates into compost or trash"],
+      "notes": ["Orlando composters accept most cooked food except meat and dairy"],
+      "commonMistakes": ["Don't put meat-heavy leftovers in the composter"],
+      "tags": ["organic", "food", "compost"],
+      "examples": ["Old pizza (the food)", "Leftover pasta", "Cold french fries"]
+    },
+    {
+      "id": "snacks-candy",
+      "name": "Snacks and candy (the food)",
+      "aliases": ["candy", "chocolate", "gum", "gummy bears", "chips food", "popcorn", "cookies", "cake", "donut", "pastry", "lollipop", "skittles food", "m&ms food", "nuts", "peanuts", "trail mix", "granola food"],
+      "category": "compost",
+      "instructions": ["The food itself: composter or trash", "The wrapper: trash (see candy wrapper / chip bag entries)", "Chewing gum: always trash"],
+      "notes": ["Separate food from wrapper — they have different disposal paths"],
+      "commonMistakes": ["Don't put wrappers in compost", "Gum is always trash"],
+      "tags": ["organic", "food", "compost", "snack"],
+      "examples": ["Stale chips", "Old cookies", "Expired candy"]
+    },
+    {
+      "id": "food-waste",
+      "name": "Food waste (general)",
+      "aliases": ["food scraps", "food leftovers", "kitchen scraps", "spoiled food", "food waste", "table scraps", "expired food", "rotten food", "old food", "food residue"],
+      "category": "compost",
+      "instructions": ["Orlando offers a free composting program — request a composter from the city", "Alternatively, place in trash cart", "Do NOT place in recycling cart"],
+      "notes": ["The City of Orlando provides free composters to residents upon request", "When in doubt about a specific food, it's almost certainly compostable"],
+      "commonMistakes": ["Never put food waste in the recycling cart"],
+      "tags": ["organic", "food", "compost"],
+      "examples": ["Banana peel", "Apple core", "Coffee grounds", "Eggshells", "Vegetable trimmings"]
     },
     {
       "id": "yard-waste",
@@ -1240,6 +1314,435 @@
         "Air pillows",
         "Packing peanuts"
       ]
+    },
+    {
+      "id": "books",
+      "name": "Book",
+      "aliases": ["book", "paperback", "hardcover", "textbook", "novel", "hardback", "softcover", "library book"],
+      "category": "recycle",
+      "instructions": ["Donate if in good condition — Orlando Public Library, Goodwill, and Little Free Libraries accept books", "If damaged, remove hardcover binding (trash it) and recycle paper pages", "Place in blue recycling cart"],
+      "notes": ["Donating is better than recycling — books can be reused many times", "Orlando has many Little Free Library locations for book sharing"],
+      "commonMistakes": ["Don't throw usable books in the trash — donate them first", "Glossy laminated hardcovers should be removed before recycling pages"],
+      "tags": ["paper", "book", "donation", "reuse"],
+      "examples": ["Paperback novel", "Hardcover textbook", "Children's book", "Cookbook"]
+    },
+    {
+      "id": "magazines",
+      "name": "Magazine",
+      "aliases": ["magazine", "catalog", "catalogue", "glossy magazine", "periodical", "brochure", "flyer"],
+      "category": "recycle",
+      "instructions": ["Place in blue recycling cart", "No need to remove staples", "Glossy coating is fine"],
+      "notes": ["Magazines are accepted in Orlando's curbside recycling program"],
+      "commonMistakes": ["Don't remove staples — recycling equipment handles them"],
+      "tags": ["paper", "magazine", "glossy"],
+      "examples": ["Time magazine", "National Geographic", "IKEA catalog", "Publix flyer"]
+    },
+    {
+      "id": "envelopes",
+      "name": "Envelopes and mail",
+      "aliases": ["envelope", "junk mail", "letter", "mail", "window envelope", "padded envelope", "mailer"],
+      "category": "recycle",
+      "instructions": ["Regular paper envelopes: place in blue recycling cart", "Window envelopes: recycle as-is", "Padded/bubble mailers: trash"],
+      "notes": ["Small plastic windows in envelopes are fine in Orlando's recycling"],
+      "commonMistakes": ["Padded bubble mailers cannot be recycled"],
+      "tags": ["paper", "mail", "office"],
+      "examples": ["Letter envelope", "Window envelope", "Junk mail"]
+    },
+    {
+      "id": "wrapping-paper",
+      "name": "Wrapping paper",
+      "aliases": ["wrapping paper", "gift wrap", "tissue paper", "gift bag", "christmas wrapping"],
+      "category": "trash",
+      "instructions": ["Metallic, glittery, or laminated wrapping paper: trash cart", "Plain paper wrapping (scrunch test — if it stays scrunched, it's recyclable): blue recycling cart", "Tissue paper: trash"],
+      "notes": ["Most wrapping paper has foil or glitter and goes in the trash"],
+      "commonMistakes": ["Don't assume all wrapping paper is recyclable"],
+      "tags": ["paper", "holiday", "gift"],
+      "examples": ["Birthday wrapping paper", "Christmas gift wrap", "Tissue paper"]
+    },
+    {
+      "id": "receipts",
+      "name": "Receipt",
+      "aliases": ["receipt", "register receipt", "thermal receipt", "store receipt", "ATM receipt"],
+      "category": "trash",
+      "instructions": ["Place in trash cart — do NOT recycle", "Most receipts are thermal paper coated with BPA"],
+      "notes": ["Thermal paper contaminates recycling with BPA chemicals"],
+      "commonMistakes": ["Don't put thermal receipts in recycling"],
+      "tags": ["paper", "thermal", "chemical"],
+      "examples": ["Publix receipt", "Walmart receipt", "CVS receipt"]
+    },
+    {
+      "id": "greeting-cards",
+      "name": "Greeting card",
+      "aliases": ["greeting card", "birthday card", "holiday card", "christmas card", "thank you card"],
+      "category": "recycle",
+      "instructions": ["Plain cards: blue recycling cart", "Cards with glitter, foil, or batteries (musical cards): trash cart"],
+      "notes": ["Musical cards contain batteries — remove and dispose at Orange County Hazardous Waste"],
+      "commonMistakes": ["Don't recycle cards with glitter"],
+      "tags": ["paper", "card", "holiday"],
+      "examples": ["Birthday card", "Christmas card", "Thank you card"]
+    },
+    {
+      "id": "candy-wrapper",
+      "name": "Candy wrapper",
+      "aliases": ["candy wrapper", "candy bar wrapper", "sweet wrapper", "chocolate wrapper", "snickers wrapper", "m&m bag", "skittles bag", "kit kat wrapper", "reeses wrapper"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Candy wrappers are mixed metallized plastic film — not recyclable", "Shake out crumbs first"],
+      "notes": ["Candy wrappers look like foil but are actually multi-layer plastic — not accepted in Orlando's recycling"],
+      "commonMistakes": ["Don't put in recycling — they look metallic but are not aluminum"],
+      "tags": ["plastic", "film", "food", "wrapper", "candy"],
+      "examples": ["Snickers wrapper", "M&M bag", "Skittles bag", "Kit Kat wrapper", "Hershey bar wrapper"]
+    },
+    {
+      "id": "chip-bag",
+      "name": "Chip bag",
+      "aliases": ["chip bag", "snack bag", "doritos bag", "lays bag", "cheetos bag", "potato chip bag"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Chip bags are metallized plastic film — not recyclable curbside in Orlando"],
+      "notes": ["The shiny interior is aluminum bonded to plastic — cannot be separated"],
+      "commonMistakes": ["Don't put in recycling — the metallic interior makes them non-recyclable"],
+      "tags": ["plastic", "film", "food", "snack", "wrapper"],
+      "examples": ["Doritos bag", "Lay's bag", "Cheetos bag", "Tostitos bag"]
+    },
+    {
+      "id": "fast-food-wrapper",
+      "name": "Fast food wrapper",
+      "aliases": ["fast food wrapper", "burger wrapper", "sandwich wrapper", "taco wrapper", "mcdonalds wrapper", "food wrapper"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Food-soiled paper is not recyclable"],
+      "notes": ["Fast food wrappers are wax-coated and food-contaminated"],
+      "commonMistakes": ["Don't put greasy food wrappers in recycling"],
+      "tags": ["paper", "food", "wrapper", "fast-food"],
+      "examples": ["McDonald's wrapper", "Chick-fil-A wrapper", "Subway wrap"]
+    },
+    {
+      "id": "plastic-clamshell",
+      "name": "Plastic clamshell container",
+      "aliases": ["clamshell", "berry container", "strawberry container", "salad container", "clear plastic container"],
+      "category": "recycle",
+      "instructions": ["Rinse off food residue", "Place in blue recycling cart"],
+      "notes": ["Clear #1 PET clamshells are accepted in Orlando recycling", "Black plastic clamshells are NOT recyclable"],
+      "commonMistakes": ["Black plastic clamshells go in trash"],
+      "tags": ["plastic", "container", "food", "packaging"],
+      "examples": ["Strawberry clamshell", "Publix salad container", "Bakery clamshell"]
+    },
+    {
+      "id": "egg-carton",
+      "name": "Egg carton",
+      "aliases": ["egg carton", "egg box", "egg container"],
+      "category": "recycle",
+      "instructions": ["Paper/cardboard egg cartons: blue recycling cart or composter", "Styrofoam egg cartons: trash cart", "Plastic egg cartons: blue recycling cart"],
+      "notes": ["Paper egg cartons are also great for Orlando's composting program"],
+      "commonMistakes": ["Don't put styrofoam egg cartons in recycling"],
+      "tags": ["paper", "plastic", "food", "container"],
+      "examples": ["Cardboard egg carton", "Styrofoam egg carton", "Publix eggs carton"]
+    },
+    {
+      "id": "cereal-box",
+      "name": "Cereal box",
+      "aliases": ["cereal box", "cracker box", "snack box", "food box", "pasta box"],
+      "category": "recycle",
+      "instructions": ["Flatten the box", "Remove and trash the inner plastic bag", "Place flattened box in blue recycling cart"],
+      "notes": ["Cereal boxes are accepted in Orlando's curbside recycling"],
+      "commonMistakes": ["Don't forget to remove the plastic liner bag — that goes in trash"],
+      "tags": ["paper", "cardboard", "food", "packaging"],
+      "examples": ["Cheerios box", "Ritz crackers box", "Pasta box"]
+    },
+    {
+      "id": "snack-pouch",
+      "name": "Snack pouch / drink pouch",
+      "aliases": ["snack pouch", "capri sun", "drink pouch", "juice pouch", "baby food pouch", "gogurt"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Pouches are multi-layer mixed materials — not recyclable in Orlando"],
+      "notes": ["Don't confuse with juice boxes/cartons — cartons are recyclable, pouches are not"],
+      "commonMistakes": ["Don't put in curbside recycling"],
+      "tags": ["plastic", "film", "food", "beverage", "wrapper"],
+      "examples": ["Capri Sun pouch", "GoGo squeeZ pouch", "Baby food pouch"]
+    },
+    {
+      "id": "coffee-pods",
+      "name": "Coffee pod / K-Cup",
+      "aliases": ["coffee pod", "k-cup", "keurig pod", "nespresso pod", "single-serve coffee"],
+      "category": "trash",
+      "instructions": ["Most coffee pods go in trash cart", "Nespresso aluminum pods: mail back via their free program"],
+      "notes": ["Mixed materials make these non-recyclable in Orlando's curbside program"],
+      "commonMistakes": ["Don't put whole pods in recycling"],
+      "tags": ["plastic", "metal", "food", "coffee"],
+      "examples": ["Keurig K-Cup", "Nespresso capsule"]
+    },
+    {
+      "id": "plastic-cups",
+      "name": "Plastic cups",
+      "aliases": ["plastic cup", "red solo cup", "solo cup", "party cup", "clear plastic cup", "iced coffee cup plastic"],
+      "category": "recycle",
+      "instructions": ["Rinse out liquid", "Clear #1 PET cups: blue recycling cart", "Red Solo cups (#6 polystyrene): trash cart"],
+      "notes": ["Clear iced coffee cups from Starbucks/Dunkin are usually recyclable in Orlando"],
+      "commonMistakes": ["Red Solo cups are NOT recyclable"],
+      "tags": ["plastic", "beverage", "container", "party"],
+      "examples": ["Starbucks iced coffee cup", "Clear party cup", "Red Solo cup (trash)"]
+    },
+    {
+      "id": "toothbrush",
+      "name": "Toothbrush",
+      "aliases": ["toothbrush", "electric toothbrush head", "manual toothbrush"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Mixed plastic and nylon — not curbside recyclable"],
+      "notes": ["Consider bamboo toothbrushes for a more sustainable option"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["plastic", "hygiene", "bathroom"],
+      "examples": ["Manual toothbrush", "Oral-B replacement head"]
+    },
+    {
+      "id": "toothpaste-tube",
+      "name": "Toothpaste tube",
+      "aliases": ["toothpaste tube", "toothpaste"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Multi-layer plastic with residue — not recyclable"],
+      "notes": ["Some newer tubes are recyclable #2 HDPE — check the label"],
+      "commonMistakes": ["Don't put in recycling unless specifically labeled recyclable"],
+      "tags": ["plastic", "hygiene", "bathroom"],
+      "examples": ["Crest toothpaste tube", "Colgate tube"]
+    },
+    {
+      "id": "deodorant",
+      "name": "Deodorant container",
+      "aliases": ["deodorant", "deodorant stick", "antiperspirant"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Mixed materials make these non-recyclable"],
+      "notes": ["The mix of plastic types and internal mechanism prevent recycling"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["plastic", "hygiene", "bathroom"],
+      "examples": ["Old Spice stick", "Dove deodorant"]
+    },
+    {
+      "id": "cosmetics",
+      "name": "Makeup / cosmetics",
+      "aliases": ["makeup", "cosmetics", "lipstick", "mascara", "foundation", "eyeshadow palette"],
+      "category": "trash",
+      "instructions": ["Most makeup containers go in trash cart", "Clean empty #1, #2, or #5 plastic containers can sometimes be recycled"],
+      "notes": ["Check if your brand offers a container return program"],
+      "commonMistakes": ["Small containers fall through sorting screens"],
+      "tags": ["plastic", "glass", "hygiene", "beauty"],
+      "examples": ["Lipstick tube", "Mascara wand", "Foundation bottle"]
+    },
+    {
+      "id": "ceramics",
+      "name": "Broken ceramics / dishes",
+      "aliases": ["ceramic", "broken dish", "broken plate", "broken mug", "pottery", "porcelain"],
+      "category": "trash",
+      "instructions": ["Wrap carefully for safety", "Place in trash cart", "Not recyclable — ceramics contaminate glass recycling"],
+      "notes": ["Donate intact dishes to Goodwill or Salvation Army in Orlando"],
+      "commonMistakes": ["Never put ceramics in glass recycling"],
+      "tags": ["glass", "household", "kitchen"],
+      "examples": ["Broken coffee mug", "Chipped plate", "Cracked bowl"]
+    },
+    {
+      "id": "mirrors",
+      "name": "Mirror",
+      "aliases": ["mirror", "broken mirror", "wall mirror"],
+      "category": "trash",
+      "instructions": ["Wrap in cardboard for safety", "Label as 'BROKEN GLASS'", "Place in trash cart"],
+      "notes": ["Metallic coating prevents recycling with regular glass"],
+      "commonMistakes": ["Never put mirrors in glass recycling"],
+      "tags": ["glass", "household"],
+      "examples": ["Bathroom mirror", "Broken wall mirror"]
+    },
+    {
+      "id": "cds-dvds",
+      "name": "CDs / DVDs",
+      "aliases": ["cd", "dvd", "blu-ray", "compact disc", "disc"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Donate working discs to Goodwill"],
+      "notes": ["Polycarbonate plastic — not recyclable curbside"],
+      "commonMistakes": ["Don't put in curbside recycling"],
+      "tags": ["plastic", "electronics", "media"],
+      "examples": ["Music CD", "Movie DVD", "Video game disc"]
+    },
+    {
+      "id": "ink-cartridges",
+      "name": "Ink / toner cartridges",
+      "aliases": ["ink cartridge", "toner cartridge", "printer cartridge", "printer ink"],
+      "category": "dropoff",
+      "instructions": ["Return to Staples or Office Depot in Orlando — they offer free recycling", "HP, Canon, and Epson have free mail-back programs"],
+      "notes": ["Some stores give rewards credit for returning cartridges"],
+      "commonMistakes": ["Don't throw in trash — the ink is chemical waste"],
+      "tags": ["plastic", "electronics", "office", "chemical"],
+      "examples": ["HP ink cartridge", "Canon toner"]
+    },
+    {
+      "id": "pens-markers",
+      "name": "Pens and markers",
+      "aliases": ["pen", "marker", "sharpie", "highlighter", "ballpoint pen", "crayon"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Too small and mixed-material for recycling"],
+      "notes": ["Crayola offers a ColorCycle program for used markers"],
+      "commonMistakes": ["Don't put in curbside recycling"],
+      "tags": ["plastic", "office", "school"],
+      "examples": ["Bic pen", "Sharpie marker", "Highlighter", "Crayon"]
+    },
+    {
+      "id": "smartphone",
+      "name": "Smartphone / phone",
+      "aliases": ["phone", "smartphone", "iphone", "android phone", "cell phone", "mobile phone", "old phone", "samsung phone"],
+      "category": "dropoff",
+      "instructions": ["Factory reset and delete personal data first", "Trade in at Verizon, T-Mobile, or AT&T stores in Orlando for credit", "Take to Best Buy for free e-waste recycling", "Donate working phones to charities"],
+      "notes": ["It's illegal to put phones in the trash in Florida"],
+      "commonMistakes": ["Don't throw in trash — phones contain lithium batteries", "Don't forget to wipe personal data"],
+      "tags": ["electronics", "e-waste", "battery"],
+      "examples": ["Old iPhone", "Broken Samsung Galaxy", "Old flip phone"]
+    },
+    {
+      "id": "laptop",
+      "name": "Laptop / computer",
+      "aliases": ["laptop", "computer", "desktop computer", "macbook", "chromebook", "PC"],
+      "category": "dropoff",
+      "instructions": ["Wipe the hard drive first", "Take to Best Buy or Staples in Orlando for free e-waste recycling", "Trade in at Apple or Dell for credit", "Donate working computers to schools"],
+      "notes": ["It's illegal to put e-waste in the trash in Florida"],
+      "commonMistakes": ["Don't put in trash", "Don't forget to remove personal data"],
+      "tags": ["electronics", "e-waste", "metal"],
+      "examples": ["Old MacBook", "Broken Chromebook", "Desktop tower"]
+    },
+    {
+      "id": "chargers-cables",
+      "name": "Chargers and cables",
+      "aliases": ["charger", "cable", "usb cable", "lightning cable", "power cord", "phone charger", "extension cord"],
+      "category": "dropoff",
+      "instructions": ["Take to Best Buy in Orlando — they accept cables for free", "Bundle cables neatly before dropping off", "Do NOT put in curbside recycling"],
+      "notes": ["Cables tangle in recycling machinery and cause shutdowns"],
+      "commonMistakes": ["Never put cables in curbside recycling"],
+      "tags": ["electronics", "e-waste", "metal", "copper"],
+      "examples": ["iPhone charger", "USB-C cable", "Old HDMI cable", "Extension cord"]
+    },
+    {
+      "id": "headphones",
+      "name": "Headphones / earbuds",
+      "aliases": ["headphones", "earbuds", "earphones", "airpods", "wireless earbuds", "bluetooth headphones"],
+      "category": "dropoff",
+      "instructions": ["Take to Best Buy for free e-waste recycling", "Wireless earbuds contain lithium batteries — do not put in trash"],
+      "notes": ["Wired headphones tangle in recycling machinery"],
+      "commonMistakes": ["Don't put in curbside recycling or trash"],
+      "tags": ["electronics", "e-waste", "battery"],
+      "examples": ["Old AirPods", "Wired earbuds", "Broken Bluetooth headphones"]
+    },
+    {
+      "id": "paper-bag",
+      "name": "Paper bag",
+      "aliases": ["paper bag", "brown paper bag", "lunch bag", "kraft bag", "grocery paper bag"],
+      "category": "recycle",
+      "instructions": ["Place in blue recycling cart", "Can be reused many times before recycling"],
+      "notes": ["Paper bags are specifically listed as recyclable in Orlando"],
+      "commonMistakes": ["Don't recycle bags heavily soiled with food or grease"],
+      "tags": ["paper", "bag", "packaging"],
+      "examples": ["Publix paper bag", "Brown lunch bag"]
+    },
+    {
+      "id": "straws",
+      "name": "Straw",
+      "aliases": ["straw", "plastic straw", "paper straw", "drinking straw"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Too small for recycling equipment"],
+      "notes": ["Straws fall through recycling sorting screens"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["plastic", "beverage"],
+      "examples": ["Plastic straw", "Paper straw"]
+    },
+    {
+      "id": "plastic-utensils",
+      "name": "Plastic utensils",
+      "aliases": ["plastic fork", "plastic knife", "plastic spoon", "disposable utensils", "plastic cutlery"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Too small and contaminated for recycling"],
+      "notes": ["Consider reusable utensils instead"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["plastic", "food", "dining"],
+      "examples": ["Plastic fork from takeout", "Disposable knife"]
+    },
+    {
+      "id": "bottle-caps",
+      "name": "Bottle caps",
+      "aliases": ["bottle cap", "plastic cap", "metal cap", "soda cap", "water bottle cap"],
+      "category": "recycle",
+      "instructions": ["Leave plastic caps ON plastic bottles — recycle together in blue cart", "Metal caps: collect in a steel can, crimp shut, recycle"],
+      "notes": ["Orlando wants caps left on their bottles"],
+      "commonMistakes": ["Don't toss loose caps in recycling — they fall through screens"],
+      "tags": ["plastic", "metal", "beverage"],
+      "examples": ["Water bottle cap", "Soda bottle cap"]
+    },
+    {
+      "id": "shoes",
+      "name": "Shoes",
+      "aliases": ["shoes", "sneakers", "running shoes", "boots", "sandals", "flip flops", "old shoes"],
+      "category": "dropoff",
+      "instructions": ["Donate wearable shoes to Goodwill or Salvation Army in Orlando", "Nike stores in Orlando accept old athletic shoes", "Textile recycling bins are located throughout Orlando"],
+      "notes": ["Shoes are one of the most commonly donated items"],
+      "commonMistakes": ["Don't put shoes in curbside recycling", "Tie pairs together when donating"],
+      "tags": ["textile", "clothing", "donation", "rubber"],
+      "examples": ["Old Nike sneakers", "Worn-out boots", "Broken flip flops"]
+    },
+    {
+      "id": "hangers",
+      "name": "Hangers",
+      "aliases": ["hanger", "clothes hanger", "wire hanger", "plastic hanger", "coat hanger"],
+      "category": "trash",
+      "instructions": ["Wire hangers: return to dry cleaners", "Plastic hangers: trash cart", "Never put any hanger in curbside recycling"],
+      "notes": ["Hangers jam recycling machinery due to their shape"],
+      "commonMistakes": ["Never put hangers in curbside recycling"],
+      "tags": ["plastic", "metal", "household", "clothing"],
+      "examples": ["Plastic store hanger", "Wire dry cleaning hanger"]
+    },
+    {
+      "id": "granola-bar-wrapper",
+      "name": "Granola bar wrapper",
+      "aliases": ["granola bar wrapper", "protein bar wrapper", "energy bar wrapper", "clif bar wrapper", "kind bar wrapper"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Multi-layer flexible plastic — not recyclable"],
+      "notes": ["Like candy wrappers and chip bags, these are mixed-material packaging"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["plastic", "film", "food", "wrapper", "snack"],
+      "examples": ["Clif Bar wrapper", "Nature Valley wrapper", "Kind bar wrapper"]
+    },
+    {
+      "id": "frozen-food-box",
+      "name": "Frozen food box",
+      "aliases": ["frozen food box", "frozen dinner box", "ice cream carton", "frozen pizza box"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Coated with moisture barrier that prevents recycling"],
+      "notes": ["The coating that prevents sogginess also prevents recycling"],
+      "commonMistakes": ["Don't assume these recycle like regular cardboard"],
+      "tags": ["paper", "cardboard", "food", "frozen"],
+      "examples": ["DiGiorno pizza box", "Hot Pockets box", "Ice cream carton"]
+    },
+    {
+      "id": "candles",
+      "name": "Candle",
+      "aliases": ["candle", "candle wax", "jar candle", "pillar candle", "tea light"],
+      "category": "trash",
+      "instructions": ["Wax and wick: trash cart", "Glass jar: clean out wax, then recycle the jar", "Metal tins: clean and recycle"],
+      "notes": ["Wax is not recyclable"],
+      "commonMistakes": ["Don't put wax in recycling", "Don't pour hot wax down the drain"],
+      "tags": ["wax", "glass", "household"],
+      "examples": ["Yankee Candle jar", "Bath & Body Works candle", "Tea light"]
+    },
+    {
+      "id": "cleaning-bottles",
+      "name": "Cleaning product bottle",
+      "aliases": ["cleaning bottle", "spray bottle", "windex bottle", "bleach bottle", "cleaning product", "detergent bottle"],
+      "category": "recycle",
+      "instructions": ["Empty completely", "Rinse briefly", "Place in blue recycling cart"],
+      "notes": ["Most cleaning bottles are #1 or #2 plastic — accepted in Orlando recycling"],
+      "commonMistakes": ["Don't recycle bottles that still have product in them"],
+      "tags": ["plastic", "container", "household", "cleaning"],
+      "examples": ["Windex bottle", "Clorox bleach bottle", "Dawn dish soap bottle"]
+    },
+    {
+      "id": "prescription-bottles",
+      "name": "Prescription bottle",
+      "aliases": ["prescription bottle", "pill bottle", "medicine bottle", "orange pill bottle"],
+      "category": "recycle",
+      "instructions": ["Remove the label (personal health info)", "Rinse out residue", "Place in blue recycling cart"],
+      "notes": ["#5 PP plastic — recyclable in Orlando"],
+      "commonMistakes": ["Don't forget to remove the label with your personal information"],
+      "tags": ["plastic", "medical", "container"],
+      "examples": ["Orange prescription bottle", "Vitamin bottle"]
     }
   ],
   "rulesSummary": {
@@ -1248,24 +1751,33 @@
         "Plastic bottles and containers (empty, clean, caps on)",
         "Glass bottles and jars (empty, clean, remove lids)",
         "Aluminum, steel and tin cans (empty, clean)",
-        "Cardboard (flattened)",
-        "Paper, newspapers, paper bags, junk mail, drink cartons",
+        "Cardboard, cereal boxes, paper boxes (flattened)",
+        "Paper, newspapers, magazines, books, mail, envelopes",
         "Empty aerosol cans",
-        "Milk and juice cartons"
+        "Milk and juice cartons",
+        "Plastic clamshells (berry containers, salad boxes)",
+        "Cleaning product and detergent bottles",
+        "Prescription bottles (remove label)",
+        "Paper bags"
       ],
       "compost": [
         "Food scraps (via city composter program)",
         "Yard waste (separate pickup)",
-        "Paper towels and napkins (in composter)"
+        "Paper towels, napkins, paper plates (in composter)",
+        "Paper egg cartons"
       ],
       "trash": [
         "Plastic bags and film",
         "Polystyrene foam (Styrofoam)",
         "Aluminum food pans",
+        "Candy wrappers, chip bags, snack pouches",
+        "Fast food wrappers",
         "Disposable coffee cups",
-        "Diapers",
-        "Wax paper / parchment paper",
-        "Bubble wrap and packing materials"
+        "Receipts (thermal paper)",
+        "Frozen food boxes",
+        "Diapers, toothbrushes, razors, deodorant",
+        "Pens, markers, tape, hangers",
+        "Wax paper, bubble wrap"
       ]
     },
     "notAccepted": {
@@ -1274,23 +1786,30 @@
         "Polystyrene foam cups and containers",
         "Aluminum food pans",
         "Food waste",
+        "Candy wrappers, chip bags, snack pouches",
         "Ceramics, window glass, mirrors",
+        "Hangers (any type)",
+        "Straws, plastic utensils",
         "Paper towels and tissues",
         "Wax-coated paper"
       ],
       "compost": [
         "Meat and dairy (in basic composters)",
         "Pet waste",
-        "Treated or painted wood"
+        "Treated or painted wood",
+        "Thermal receipts (contain BPA)"
       ]
     },
     "tips": [
       "Empty recyclables DIRECTLY into the cart — never use plastic bags",
       "Plastic bags harm recycling machinery",
       "Rinse containers — they don't need to be spotless",
-      "Flatten cardboard boxes",
+      "Flatten cardboard and cereal boxes",
       "When in doubt, put it in the trash — contamination hurts recycling",
       "Request a free composter from the City of Orlando",
+      "Leave bottle caps ON their bottles",
+      "Books in good condition? Donate to Orlando Public Library",
+      "Candy wrappers look metallic but are NOT aluminum — trash them",
       "Check your pickup schedule at orlando.gov"
     ]
   },

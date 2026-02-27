@@ -5,10 +5,18 @@ import { Recycle } from "lucide-react";
 import { SearchBar } from "@/components/search/search-bar";
 import { SearchChips } from "@/components/search/search-chips";
 import { ScanUploadButtons } from "@/components/scan/scan-button";
+import { EcoTree } from "@/components/common/eco-tree";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center px-4 pb-16">
+    <div className="relative flex flex-col items-center px-4 pb-16">
+      {/* Desktop tree - left side */}
+      <EcoTree className="fixed left-8 bottom-0 opacity-50 xl:left-16 xl:opacity-70 2xl:left-24" />
+      {/* Desktop tree - right side (mirrored, smaller) */}
+      <div className="hidden lg:block fixed right-8 bottom-0 opacity-30 xl:right-16 xl:opacity-50 2xl:right-24 select-none pointer-events-none" style={{ transform: "scaleX(-1)" }}>
+        <EcoTree />
+      </div>
+
       {/* Hero */}
       <motion.div
         className="flex flex-col items-center gap-4 pt-16 pb-10 text-center sm:pt-24"
