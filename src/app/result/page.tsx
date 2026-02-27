@@ -4,9 +4,19 @@ import { buildOgImageUrl } from "@/lib/utils/og-params";
 import { matchMaterial } from "@/lib/matching/engine";
 import { loadProvider } from "@/lib/providers/registry";
 import ResultClientPage from "./result-client";
+import type { DisposalCategory } from "@/lib/providers/types";
 
 type Props = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
+
+const CATEGORY_STATIC_FALLBACKS: Record<string, string> = {
+  recycle: "/og/recycle.png",
+  trash: "/og/trash.png",
+  compost: "/og/compost.png",
+  dropoff: "/og/dropoff.png",
+  hazardous: "/og/hazardous.png",
+  unknown: "/og/unknown.png",
 };
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
@@ -22,7 +32,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     };
   }
 
-  let category = "unknown";
+  let category: DisposalCategory = "unknown";
   let itemName = q;
   let providerName = "General guidance";
   let confidence = 0;
@@ -53,13 +63,15 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const categoryLabel = category.charAt(0).toUpperCase() + category.slice(1);
   const title = `${categoryLabel}: ${itemName}`;
 
-  const ogImageUrl = buildOgImageUrl(siteUrl, {
-    category: category as "recycle" | "trash" | "compost" | "dropoff" | "hazardous" | "unknown",
+  const dynamicOgUrl = buildOgImageUrl(siteUrl, {
+    category,
     item: itemName,
     loc: providerName,
     confidence,
     warning,
   });
+
+  const staticFallback = `${siteUrl}${CATEGORY_STATIC_FALLBACKS[category] ?? "/og/default.png"}`;
 
   const pageUrl = `${siteUrl}/result?q=${encodeURIComponent(q)}&provider=${encodeURIComponent(providerId)}`;
 
@@ -77,10 +89,18 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       type: "website",
       images: [
         {
-          url: ogImageUrl,
+          url: dynamicOgUrl,
           width: 1200,
           height: 630,
           alt: `${categoryLabel}: ${itemName}`,
+          type: "image/png",
+        },
+        {
+          url: staticFallback,
+          width: 1200,
+          height: 630,
+          alt: `${categoryLabel}: ${itemName}`,
+          type: "image/png",
         },
       ],
     },
@@ -88,7 +108,14 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       card: "summary_large_image",
       title,
       description,
-      images: [ogImageUrl],
+      images: [
+        {
+          url: dynamicOgUrl,
+          width: 1200,
+          height: 630,
+          alt: `${categoryLabel}: ${itemName}`,
+        },
+      ],
     },
   };
 }

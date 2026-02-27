@@ -5,6 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import { ResultCard } from "@/components/result/result-card";
+import { ScanContext } from "@/components/result/scan-context";
 import { ScanningAnimation } from "@/components/scan/scanning-animation";
 import { SearchBar } from "@/components/search/search-bar";
 import { Button } from "@/components/ui/button";
@@ -85,8 +86,21 @@ function ResultContent() {
     );
   }
 
+  const isScan = searchParams.get("scan") === "true";
+  const productDescription = searchParams.get("product");
+  const textFound = searchParams.get("textFound");
+  const materialComp = searchParams.get("material");
+
   return (
     <div className="flex flex-col items-center gap-6 px-4 py-8">
+      {isScan && (productDescription || textFound || materialComp) && (
+        <ScanContext
+          productDescription={productDescription}
+          textFound={textFound}
+          materialComposition={materialComp}
+        />
+      )}
+
       <ResultCard
         material={activeMaterial}
         confidence={confidence}

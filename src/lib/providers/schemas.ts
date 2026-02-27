@@ -75,6 +75,9 @@ export const ScanOutputSchema = z.object({
   guessedItemName: z.string(),
   visionConfidence: z.number().min(0).max(1),
   notes: z.array(z.string()),
+  textFound: z.string().optional(),
+  materialComposition: z.string().optional(),
+  productDescription: z.string().optional(),
 });
 
 export const ResolveOutputSchema = z.object({

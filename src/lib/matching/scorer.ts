@@ -45,7 +45,7 @@ export function scoreMaterial(material: Material, query: string): ScoredMatch {
     }
   }
 
-  // 4. Token overlap
+  // 4. Token overlap (require tokens >= 3 chars for substring matching)
   if (queryTokens.length > 0) {
     for (const name of allNames) {
       const nameTokens = tokenize(name);
@@ -53,10 +53,17 @@ export function scoreMaterial(material: Material, query: string): ScoredMatch {
 
       let matchedTokens = 0;
       for (const qt of queryTokens) {
-        if (nameTokens.some((nt) => nt === qt || nt.includes(qt) || qt.includes(nt))) {
-          matchedTokens++;
-        }
+        const isMatch = nameTokens.some((nt) => {
+          if (nt === qt) return true;
+          if (qt.length >= 3 && nt.length >= 3) {
+            return nt.includes(qt) || qt.includes(nt);
+          }
+          return false;
+        });
+        if (isMatch) matchedTokens++;
       }
+
+      if (matchedTokens === 0) continue;
 
       const overlap = matchedTokens / Math.max(queryTokens.length, nameTokens.length);
       const tokenScore = overlap * 0.85;
@@ -67,10 +74,12 @@ export function scoreMaterial(material: Material, query: string): ScoredMatch {
     }
   }
 
-  // 5. Tag match
+  // 5. Tag match (require tag >= 3 chars and meaningful overlap)
   if (material.tags) {
     for (const tag of material.tags) {
-      if (normalizedQuery.includes(tag.toLowerCase()) || tag.toLowerCase().includes(normalizedQuery)) {
+      const lTag = tag.toLowerCase();
+      if (lTag.length < 3) continue;
+      if (normalizedQuery.includes(lTag) || (lTag.length >= 4 && lTag.includes(normalizedQuery))) {
         const tagScore = 0.5;
         if (tagScore > bestScore) {
           bestScore = tagScore;

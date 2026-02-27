@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { useState, useCallback, useRef, lazy, Suspense } from "react";
 import { useRouter } from "next/navigation";
 import { useLocation } from "@/hooks/use-location";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { AnimatePresence, motion } from "framer-motion";
+import { AnalyzingOverlay } from "./analyzing-overlay";
 
 const CameraView = lazy(() =>
   import("./camera-view").then((m) => ({ default: m.CameraView }))
@@ -13,6 +14,7 @@ const CameraView = lazy(() =>
 
 export function ScanUploadButtons() {
   const [cameraOpen, setCameraOpen] = useState(false);
+  const [analyzing, setAnalyzing] = useState<string | null>(null);
   const [isUploading, setIsUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
@@ -20,6 +22,7 @@ export function ScanUploadButtons() {
 
   const processImage = useCallback(
     async (dataUrl: string) => {
+      setAnalyzing(dataUrl);
       setIsUploading(true);
       try {
         const res = await fetch("/api/scan", {
@@ -38,13 +41,28 @@ export function ScanUploadButtons() {
 
         const data = await res.json();
         const q = data.guessedItemName || data.labels?.[0] || "";
-        router.push(
-          `/result?q=${encodeURIComponent(q)}&provider=${providerId}&scan=true&labels=${encodeURIComponent(JSON.stringify(data.labels || []))}&confidence=${data.visionConfidence ?? 0}`
-        );
+        const params = new URLSearchParams({
+          q,
+          provider: providerId,
+          scan: "true",
+          labels: JSON.stringify(data.labels || []),
+          confidence: String(data.visionConfidence ?? 0),
+        });
+        if (data.productDescription) {
+          params.set("product", data.productDescription);
+        }
+        if (data.textFound) {
+          params.set("textFound", data.textFound);
+        }
+        if (data.materialComposition) {
+          params.set("material", data.materialComposition);
+        }
+        router.push(`/result?${params.toString()}`);
       } catch {
         router.push(`/result?q=&provider=${providerId}&error=Network+error`);
       } finally {
         setIsUploading(false);
+        setAnalyzing(null);
         setCameraOpen(false);
       }
     },
@@ -63,6 +81,7 @@ export function ScanUploadButtons() {
         }
       };
       reader.readAsDataURL(file);
+      if (fileInputRef.current) fileInputRef.current.value = "";
     },
     [processImage]
   );
@@ -97,31 +116,58 @@ export function ScanUploadButtons() {
           ref={fileInputRef}
           type="file"
           accept="image/*"
+          capture="environment"
           onChange={handleFileUpload}
           className="hidden"
           aria-label="Upload a photo"
         />
       </div>
 
-      <Dialog open={cameraOpen} onOpenChange={setCameraOpen}>
-        <DialogContent className="max-w-lg p-0 overflow-hidden">
-          <DialogTitle className="sr-only">Camera Scanner</DialogTitle>
-          <Suspense
-            fallback={
-              <div className="flex h-80 items-center justify-center">
-                <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
-              </div>
-            }
+      {/* Full-screen camera overlay */}
+      <AnimatePresence>
+        {cameraOpen && (
+          <motion.div
+            className="fixed inset-0 z-50 bg-black"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
           >
-            <CameraView
-              onCapture={(dataUrl) => {
-                processImage(dataUrl);
-              }}
-              onClose={() => setCameraOpen(false)}
-            />
-          </Suspense>
-        </DialogContent>
-      </Dialog>
+            <Suspense
+              fallback={
+                <div className="flex h-full items-center justify-center bg-black">
+                  <div className="flex flex-col items-center gap-4">
+                    <Loader2 className="h-8 w-8 animate-spin text-white/50" />
+                    <span className="text-sm text-white/50">Starting camera...</span>
+                  </div>
+                </div>
+              }
+            >
+              <CameraView
+                onCapture={(dataUrl) => {
+                  setCameraOpen(false);
+                  processImage(dataUrl);
+                }}
+                onClose={() => setCameraOpen(false)}
+              />
+            </Suspense>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Analyzing overlay */}
+      <AnimatePresence>
+        {analyzing && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <AnalyzingOverlay imageDataUrl={analyzing} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

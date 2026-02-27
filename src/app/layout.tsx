@@ -13,6 +13,7 @@ const inter = Inter({
 });
 
 const siteUrl = getSiteUrl();
+const ogImage = `${siteUrl}/og/default.png`;
 
 export const metadata: Metadata = {
   title: {
@@ -35,10 +36,11 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: `${siteUrl}/api/og?category=recycle&item=Is+this+recyclable%3F&loc=Your+area&confidence=0`,
+        url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Is this recyclable? - Instant waste disposal guidance",
+        alt: "Is this recyclable? - Know exactly how to dispose of anything.",
+        type: "image/png",
       },
     ],
   },
@@ -48,7 +50,12 @@ export const metadata: Metadata = {
     description:
       "Snap it, search it, sort it. Instant waste disposal guidance based on your local rules.",
     images: [
-      `${siteUrl}/api/og?category=recycle&item=Is+this+recyclable%3F&loc=Your+area&confidence=0`,
+      {
+        url: ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Is this recyclable? - Know exactly how to dispose of anything.",
+      },
     ],
   },
   icons: {
@@ -59,6 +66,9 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
     title: "Recyclable?",
+  },
+  other: {
+    "apple-mobile-web-app-title": "Recyclable?",
   },
 };
 

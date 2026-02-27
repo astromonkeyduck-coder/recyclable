@@ -5,8 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CategoryBadge } from "@/components/common/category-badge";
 import { ConfidenceMeter } from "./confidence-meter";
 import { ShareButton } from "./share-button";
-import { AlertTriangle, CheckCircle, Info, ListChecks } from "lucide-react";
-import type { Material, DisposalCategory } from "@/lib/providers/types";
+import { AlertTriangle, CheckCircle, Info, ListChecks, Sparkles } from "lucide-react";
+import type { Material } from "@/lib/providers/types";
 import { cn } from "@/lib/utils";
 import { CATEGORY_META } from "@/lib/utils/categories";
 
@@ -44,6 +44,12 @@ export function ResultCard({
         >
           <CategoryBadge category={material.category} size="xl" />
           <h2 className="text-xl font-bold text-center">{material.name}</h2>
+          {material.tags?.includes("ai-classified") && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-violet-100 dark:bg-violet-950 px-2.5 py-0.5 text-xs font-medium text-violet-700 dark:text-violet-300">
+              <Sparkles className="h-3 w-3" />
+              AI-assisted result
+            </span>
+          )}
           <ConfidenceMeter confidence={confidence} className="w-full max-w-xs" />
         </div>
 
