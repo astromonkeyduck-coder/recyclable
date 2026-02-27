@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Home, Search, ArrowLeft } from "lucide-react";
 
@@ -11,7 +11,18 @@ const ITEMS = [
   "📱", "🍕", "🧃", "🪫", "🧹", "🛍️", "🥡", "🧊", "🪣", "🧻",
 ];
 
-function FallingItem({ emoji, delay, x }: { emoji: string; delay: number; x: number }) {
+function FallingItem({
+  emoji,
+  delay,
+  x,
+  reduceMotion,
+}: {
+  emoji: string;
+  delay: number;
+  x: number;
+  reduceMotion?: boolean;
+}) {
+  if (reduceMotion) return null;
   return (
     <motion.span
       className="absolute text-2xl select-none pointer-events-none"
@@ -40,6 +51,7 @@ export default function NotFound() {
     Array<{ id: number; emoji: string; delay: number; x: number }>
   >([]);
   const initialized = useRef(false);
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
     if (initialized.current) return;
@@ -58,7 +70,13 @@ export default function NotFound() {
       {/* Background falling items */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden>
         {particles.map((p) => (
-          <FallingItem key={p.id} emoji={p.emoji} delay={p.delay} x={p.x} />
+          <FallingItem
+            key={p.id}
+            emoji={p.emoji}
+            delay={p.delay}
+            x={p.x}
+            reduceMotion={!!reduceMotion}
+          />
         ))}
       </div>
 
@@ -68,9 +86,9 @@ export default function NotFound() {
       {/* Content */}
       <motion.div
         className="relative z-10 flex flex-col items-center gap-6 text-center"
-        initial={{ opacity: 0, y: 30 }}
+        initial={reduceMotion ? false : { opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, type: "spring", stiffness: 120 }}
+        transition={{ duration: reduceMotion ? 0 : 0.6, type: "spring", stiffness: 120 }}
       >
         {/* Big 404 with animated recycle symbol */}
         <div className="flex items-center gap-3">
@@ -142,6 +160,7 @@ export default function NotFound() {
           <button
             onClick={() => history.back()}
             className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            aria-label="Go back to previous page"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Go back

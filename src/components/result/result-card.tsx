@@ -11,6 +11,7 @@ import {
   AlertTriangle,
   CheckCircle,
   ChevronDown,
+  Copy,
   Info,
   Lightbulb,
   ListChecks,
@@ -203,11 +204,36 @@ export function ResultCard({
           >
             {/* Instructions */}
             <motion.div variants={staggerItem} className="p-6">
-              <SectionHeader
-                icon={<ListChecks className="h-4 w-4" />}
-                title="What to do"
-                accentColor="border-primary"
-              />
+              <div className="flex items-center justify-between gap-2">
+                <SectionHeader
+                  icon={<ListChecks className="h-4 w-4" />}
+                  title="What to do"
+                  accentColor="border-primary"
+                />
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="xs"
+                  className="gap-1.5 shrink-0"
+                  onClick={() => {
+                    const label = CATEGORY_META[material.category].label;
+                    const text = [
+                      `${material.name} (${label})`,
+                      "",
+                      ...material.instructions.map((step, i) => `${i + 1}. ${step}`),
+                    ].join("\n");
+                    navigator.clipboard.writeText(text).then(
+                      () => toast.success("Copied to clipboard"),
+                      () => toast.error("Could not copy")
+                    );
+                    sfx.ding();
+                  }}
+                  aria-label="Copy disposal steps"
+                >
+                  <Copy className="h-3.5 w-3.5" />
+                  Copy steps
+                </Button>
+              </div>
               <div className="relative ml-3 mt-4">
                 <div className="absolute left-0 top-1 bottom-1 w-px bg-border" />
                 <ol className="space-y-4">

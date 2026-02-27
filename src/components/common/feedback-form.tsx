@@ -137,6 +137,10 @@ export function FeedbackForm({
             </div>
           </div>
 
+          <p className="text-xs text-muted-foreground">
+            Feedback is stored locally and not sent to a server.
+          </p>
+
           <div className="space-y-2">
             <label htmlFor="feedback-details" className="text-sm font-medium">
               Additional details (optional)
