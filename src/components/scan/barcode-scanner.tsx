@@ -1,12 +1,32 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { X } from "lucide-react";
+import { X, Loader2 } from "lucide-react";
 
 type BarcodeScannerProps = {
   onScan: (barcode: string) => void;
   onClose: () => void;
 };
+
+const BARCODE_FORMATS = [
+  0,  // QR_CODE
+  1,  // AZTEC
+  2,  // CODABAR
+  3,  // CODE_39
+  4,  // CODE_93
+  5,  // CODE_128
+  6,  // DATA_MATRIX
+  7,  // MAXICODE
+  8,  // ITF
+  9,  // EAN_13
+  10, // EAN_8
+  11, // PDF_417
+  12, // RSS_14
+  13, // RSS_EXPANDED
+  14, // UPC_A
+  15, // UPC_E
+  16, // UPC_EAN_EXTENSION
+];
 
 export function BarcodeScanner({ onScan, onClose }: BarcodeScannerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -28,30 +48,45 @@ export function BarcodeScanner({ onScan, onClose }: BarcodeScannerProps) {
         if (stopped) return;
 
         const id = "barcode-reader";
-        el.innerHTML = `<div id="${id}" style="width:100%;min-height:300px"></div>`;
+        el.innerHTML = `<div id="${id}" style="width:100%;height:100%"></div>`;
         const readerEl = document.getElementById(id);
         if (!readerEl) return;
 
-        scanner = new Html5Qrcode(id);
+        scanner = new Html5Qrcode(id, {
+          formatsToSupport: BARCODE_FORMATS,
+          verbose: false,
+        });
+
         await scanner.start(
           { facingMode: "environment" },
-          { fps: 10, qrbox: { width: 250, height: 150 } },
+          {
+            fps: 15,
+            qrbox: (viewfinderWidth: number, viewfinderHeight: number) => ({
+              width: Math.floor(viewfinderWidth * 0.8),
+              height: Math.floor(viewfinderHeight * 0.35),
+            }),
+            aspectRatio: 16 / 9,
+          },
           (decodedText: string) => {
             if (stopped) return;
             stopped = true;
+            if (navigator.vibrate) navigator.vibrate(100);
             scanner?.stop().catch(() => {});
             onScanRef.current(decodedText);
           },
-          () => {}
+          () => {},
         );
+        if (!stopped) setLoading(false);
       } catch (e) {
         if (!stopped) {
+          const msg = e instanceof Error ? e.message : "Could not start camera";
           setError(
-            e instanceof Error ? e.message : "Could not start camera"
+            msg.includes("NotAllowedError") || msg.includes("Permission")
+              ? "Camera permission denied. Allow camera access in your browser settings and try again."
+              : msg,
           );
+          setLoading(false);
         }
-      } finally {
-        if (!stopped) setLoading(false);
       }
     };
 
@@ -82,19 +117,20 @@ export function BarcodeScanner({ onScan, onClose }: BarcodeScannerProps) {
           <X className="h-5 w-5" />
         </button>
       </div>
-      <div ref={containerRef} className="flex-1 min-h-0 relative">
-        {loading && (
-          <div className="absolute inset-0 flex items-center justify-center text-white/70">
-            Starting camera...
+      <div ref={containerRef} className="flex-1 min-h-0 relative overflow-hidden">
+        {loading && !error && (
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 text-white/70">
+            <Loader2 className="h-6 w-6 animate-spin" />
+            <span className="text-sm">Starting camera...</span>
           </div>
         )}
         {error && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-6 text-center">
-            <p className="text-white/80">{error}</p>
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 p-6 text-center">
+            <p className="text-sm text-white/80">{error}</p>
             <button
               type="button"
               onClick={handleClose}
-              className="rounded-full bg-white/10 px-6 py-2.5 text-sm font-medium text-white"
+              className="rounded-full bg-white/10 px-6 py-2.5 text-sm font-medium text-white backdrop-blur-sm hover:bg-white/20"
             >
               Close
             </button>
@@ -102,7 +138,7 @@ export function BarcodeScanner({ onScan, onClose }: BarcodeScannerProps) {
         )}
       </div>
       <p className="p-4 text-center text-sm text-white/60">
-        Point your camera at a product barcode (UPC / EAN)
+        Point your camera at a product barcode (UPC / EAN / QR)
       </p>
     </div>
   );
