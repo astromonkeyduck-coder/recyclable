@@ -79,7 +79,7 @@ export function Footer() {
               by{" "}
               <span className="font-medium text-foreground/70">Richard</span>
               <span className="hidden sm:inline text-muted-foreground/40">
-                — developer, designer & AP Enviro nerd
+                — developer, designer & AP Enviro enthusiast
               </span>
             </span>
           </div>
