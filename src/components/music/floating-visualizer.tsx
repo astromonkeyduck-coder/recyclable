@@ -11,15 +11,13 @@ export function FloatingVisualizer() {
     <AnimatePresence>
       {isPlaying && (
         <motion.div
-          className="pointer-events-none w-full overflow-hidden"
+          className="pointer-events-none h-full w-full"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 0.5 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="h-10 w-full" style={{ opacity: 0.35 }}>
-            <AudioVisualizer barCount={64} />
-          </div>
+          <AudioVisualizer barCount={64} />
         </motion.div>
       )}
     </AnimatePresence>

@@ -42,20 +42,22 @@ export function Footer() {
   const { cityName } = useLocation();
 
   return (
-    <footer className="relative border-t bg-gradient-to-b from-muted/30 to-muted/60 overflow-hidden">
-      {/* Audio visualizer sits on top edge of footer */}
-      <div className="absolute -top-10 left-0 right-0 z-10">
-        <FloatingVisualizer />
-      </div>
-
-      {/* Trees on left and right, sitting on the footer */}
+    <div className="relative">
+      {/* Trees standing ON TOP of the footer — bottom-full anchors their base to the footer's top edge */}
       <EcoTree
-        className="absolute left-4 bottom-0 opacity-40 xl:left-12 xl:opacity-60 2xl:left-20"
+        showBird
+        className="absolute left-8 bottom-full opacity-50 xl:left-16 xl:opacity-70 2xl:left-24"
       />
-      <div className="hidden lg:block absolute right-4 bottom-0 opacity-25 xl:right-12 xl:opacity-40 2xl:right-20 select-none pointer-events-none -scale-x-100">
+      <div className="hidden lg:block absolute right-8 bottom-full opacity-30 xl:right-16 xl:opacity-50 2xl:right-24 select-none pointer-events-none -scale-x-100">
         <EcoTree />
       </div>
 
+      {/* Audio visualizer — bars grow upward from the footer's top edge */}
+      <div className="absolute bottom-full left-0 right-0 h-16 pointer-events-none z-10">
+        <FloatingVisualizer />
+      </div>
+
+      <footer className="relative border-t bg-gradient-to-b from-muted/30 to-muted/60">
       <div className="relative z-20 mx-auto max-w-3xl px-4 pt-10 pb-6">
         {/* Main grid */}
         <div className="grid gap-10 sm:grid-cols-3 sm:gap-8">
@@ -140,6 +142,7 @@ export function Footer() {
           </Link>
         </div>
       </div>
-    </footer>
+      </footer>
+    </div>
   );
 }

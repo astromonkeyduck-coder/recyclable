@@ -58,7 +58,7 @@ export function AudioVisualizer({ barCount = 32, className = "" }: AudioVisualiz
 
         const barHeight = Math.max(2, value * maxBarHeight);
         const x = i * (barWidth + gap);
-        const y = (height - barHeight) / 2;
+        const y = height - barHeight;
 
         const hue = 142 + (i / barCount) * 40;
         const saturation = 60 + value * 30;
