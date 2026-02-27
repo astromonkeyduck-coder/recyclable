@@ -6,7 +6,6 @@ import { Recycle, MapPin, X, Bookmark } from "lucide-react";
 import { SearchBar } from "@/components/search/search-bar";
 import { SearchChips } from "@/components/search/search-chips";
 import { ScanUploadButtons } from "@/components/scan/scan-button";
-import { EcoTree } from "@/components/common/eco-tree";
 import { SeasonalTipBanner } from "@/components/common/seasonal-tip-banner";
 import { useSearchHistory } from "@/hooks/use-search-history";
 import { useLocation } from "@/hooks/use-location";
@@ -14,6 +13,7 @@ import { useBookmarks } from "@/hooks/use-bookmarks";
 import { useProviderList } from "@/hooks/use-provider";
 import { useSfx } from "@/components/sfx/sfx-context";
 import { CATEGORY_META } from "@/lib/utils/categories";
+import { CategoryIcon } from "@/components/common/category-icon";
 import { Suspense, useEffect, useState } from "react";
 
 function HomeContent() {
@@ -38,14 +38,6 @@ function HomeContent() {
 
   return (
     <div className="relative flex flex-col items-center px-4 pb-16">
-      <EcoTree
-        showBird
-        className="fixed left-8 bottom-0 opacity-50 xl:left-16 xl:opacity-70 2xl:left-24"
-      />
-      <div className="hidden lg:block fixed right-8 bottom-0 opacity-30 xl:right-16 xl:opacity-50 2xl:right-24 select-none pointer-events-none -scale-x-100">
-        <EcoTree />
-      </div>
-
       {/* Hero */}
       <motion.div
         className="flex flex-col items-center gap-4 pt-16 pb-10 text-center sm:pt-24"
@@ -58,7 +50,7 @@ function HomeContent() {
           animate={{ scale: 1, rotate: 0 }}
           transition={{ type: "spring", stiffness: 200, damping: 15 }}
         >
-          <Recycle className="h-14 w-14 text-green-600 sm:h-16 sm:w-16" />
+          <Recycle className="h-18 w-18 text-green-600 sm:h-20 sm:w-20" />
         </motion.div>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
           Is this recyclable?
@@ -137,7 +129,7 @@ function HomeContent() {
                   className="inline-flex items-center gap-1.5 rounded-full border bg-muted/50 px-3 py-1.5 text-xs font-medium text-muted-foreground hover:border-foreground/30 hover:text-foreground active:scale-95 focus-visible:ring-2 focus-visible:ring-ring"
                   role="listitem"
                 >
-                  <span>{meta.icon}</span>
+                  <CategoryIcon category={b.category} size="xs" bare />
                   {b.query}
                 </motion.button>
               );
@@ -181,7 +173,7 @@ function HomeContent() {
               return (
                 <div
                   key={`${entry.query}-${i}`}
-                  className="group relative inline-flex"
+                  className="group relative inline-flex focus-within:z-10"
                   role="listitem"
                 >
                   <button
@@ -194,7 +186,7 @@ function HomeContent() {
                     }}
                     className="inline-flex items-center gap-1.5 rounded-full border bg-muted/50 pl-3 pr-7 py-1.5 text-xs font-medium text-muted-foreground hover:border-foreground/30 hover:text-foreground active:scale-95 focus-visible:ring-2 focus-visible:ring-ring"
                   >
-                    {meta && <span className="text-[10px]">{meta.icon}</span>}
+                    {meta && <CategoryIcon category={entry.category!} size="xs" bare />}
                     {entry.query}
                   </button>
                   <button
@@ -203,7 +195,7 @@ function HomeContent() {
                       sfx.tap();
                       removeFromHistory(entry.query);
                     }}
-                    className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full p-0.5 text-muted-foreground/50 opacity-0 transition-opacity hover:text-foreground group-hover:opacity-100 focus-visible:opacity-100"
+                    className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full p-0.5 text-muted-foreground/50 opacity-0 transition-opacity hover:text-foreground group-hover:opacity-100 group-focus-within:opacity-100 focus-visible:opacity-100 focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-full"
                     aria-label={`Remove ${entry.query}`}
                   >
                     <X className="h-3 w-3" />

@@ -5,10 +5,11 @@ import { useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { AnimatePresence, motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
-import { Search, X, Loader2 } from "lucide-react";
+import { Search, X, Loader2, Camera } from "lucide-react";
 import { useLocation } from "@/hooks/use-location";
 import { cn } from "@/lib/utils";
 import { CATEGORY_META } from "@/lib/utils/categories";
+import { CategoryIcon } from "@/components/common/category-icon";
 import type { DisposalCategory } from "@/lib/providers/types";
 import { useSfx } from "@/components/sfx/sfx-context";
 
@@ -17,6 +18,11 @@ type SearchResult = {
   name: string;
   category: DisposalCategory;
   score: number;
+};
+
+type SearchResponse = {
+  results: SearchResult[];
+  suggestions: string[];
 };
 
 type SearchBarProps = {
@@ -54,21 +60,26 @@ export function SearchBar({ autoFocus = false, onSearch, defaultValue = "" }: Se
     return () => cancelAnimationFrame(t);
   }, [autoFocus]);
 
-  const { data: results, isFetching } = useQuery<SearchResult[]>({
+  const { data, isFetching, isFetched } = useQuery<SearchResponse>({
     queryKey: ["search", providerId, debouncedQuery],
     queryFn: async () => {
       const res = await fetch(
         `/api/search?q=${encodeURIComponent(debouncedQuery)}&provider=${providerId}`
       );
-      if (!res.ok) return [];
-      return res.json();
+      if (!res.ok) return { results: [], suggestions: [] };
+      const json = await res.json();
+      if (Array.isArray(json)) return { results: json, suggestions: [] };
+      return { results: json.results ?? [], suggestions: json.suggestions ?? [] };
     },
     enabled: debouncedQuery.trim().length >= 2,
     staleTime: 60_000,
   });
 
+  const results = data?.results;
+  const suggestions = data?.suggestions ?? [];
   const showDropdown = isOpen && query.trim().length >= 2;
   const hasResults = !!results?.length;
+  const showEmpty = showDropdown && !hasResults && !isFetching && isFetched;
 
   useEffect(() => {
     setHighlightIndex(-1);
@@ -212,7 +223,7 @@ export function SearchBar({ autoFocus = false, onSearch, defaultValue = "" }: Se
       </div>
 
       <AnimatePresence>
-        {showDropdown && (hasResults || isFetching) && (
+        {showDropdown && (hasResults || isFetching || showEmpty) && (
           <motion.ul
             id="search-listbox"
             className="absolute z-50 mt-1 w-full overflow-hidden rounded-lg border bg-popover shadow-lg"
@@ -233,6 +244,48 @@ export function SearchBar({ autoFocus = false, onSearch, defaultValue = "" }: Se
                 ))}
               </li>
             )}
+            {showEmpty && (
+              <li className="px-4 py-5 text-center">
+                <p className="text-sm text-muted-foreground">
+                  No results for &ldquo;<span className="font-medium text-foreground">{query.trim()}</span>&rdquo;
+                </p>
+                {suggestions.length > 0 ? (
+                  <div className="mt-3">
+                    <p className="text-xs text-muted-foreground mb-2">Did you mean?</p>
+                    <div className="flex flex-wrap justify-center gap-1.5">
+                      {suggestions.map((s) => (
+                        <button
+                          key={s}
+                          type="button"
+                          className="rounded-full border bg-accent/50 px-3 py-1 text-xs font-medium text-foreground hover:bg-accent transition-colors"
+                          onClick={() => {
+                            setQuery(s);
+                            setIsOpen(true);
+                          }}
+                        >
+                          {s}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <p className="mt-1.5 text-xs text-muted-foreground">
+                    Try a different term or{" "}
+                    <button
+                      type="button"
+                      className="inline-flex items-center gap-1 font-medium text-primary hover:underline"
+                      onClick={() => {
+                        setIsOpen(false);
+                        router.push("/?openCamera=true");
+                      }}
+                    >
+                      <Camera className="h-3 w-3" />
+                      scan the item
+                    </button>
+                  </p>
+                )}
+              </li>
+            )}
             {results?.map((r, i) => {
               const meta = CATEGORY_META[r.category];
               const isHighlighted = i === highlightIndex;
@@ -249,7 +302,7 @@ export function SearchBar({ autoFocus = false, onSearch, defaultValue = "" }: Se
                     role="option"
                     aria-selected={isHighlighted}
                   >
-                    <span className={cn("text-sm", meta.textColor)}>{meta.icon}</span>
+                    <CategoryIcon category={r.category} size="xs" bare />
                     <span className="flex-1 text-sm font-medium">{r.name}</span>
                     <span
                       className={cn(

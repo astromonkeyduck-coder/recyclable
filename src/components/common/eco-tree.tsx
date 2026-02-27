@@ -120,7 +120,7 @@ export function EcoTree({ className = "", showBird = false }: EcoTreeProps) {
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        {/* Whole tree sway — pivots from trunk base */}
+        {/* Whole tree sway, pivots from trunk base */}
         <motion.g
           style={{ originX: "100px", originY: "400px" }}
           animate={{ rotate: [0, 0.8, 0, -0.6, 0, 0.5, 0, -0.8, 0] }}

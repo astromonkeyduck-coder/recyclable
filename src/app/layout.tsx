@@ -4,10 +4,10 @@ import "./globals.css";
 import { AppProviders } from "@/components/providers";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { FloatingVisualizer } from "@/components/music/floating-visualizer";
 import { InstallPrompt } from "@/components/common/install-prompt";
 import { OfflineIndicator } from "@/components/common/offline-indicator";
 import { getSiteUrl } from "@/lib/utils/site-url";
+import { PageTransition } from "@/components/common/page-transition";
 import Script from "next/script";
 
 const inter = Inter({
@@ -136,10 +136,11 @@ export default function RootLayout({
           <div className="flex min-h-svh flex-col">
             <Header />
             <OfflineIndicator />
-            <main id="main-content" className="flex-1">{children}</main>
+            <main id="main-content" className="flex-1">
+              <PageTransition>{children}</PageTransition>
+            </main>
             <Footer />
           </div>
-          <FloatingVisualizer />
           <InstallPrompt />
         </AppProviders>
         <Script

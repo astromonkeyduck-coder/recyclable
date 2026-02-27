@@ -1,13 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Recycle, Leaf, Camera, Search, Github } from "lucide-react";
+import { Recycle, Leaf, Camera, Search } from "lucide-react";
 import { useLocation } from "@/hooks/use-location";
+import { FloatingVisualizer } from "@/components/music/floating-visualizer";
+import { EcoTree } from "@/components/common/eco-tree";
 
 const NAV_LINKS = [
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
   { href: "/rules", label: "Rules" },
+  { href: "/facilities", label: "Facilities" },
   { href: "/providers", label: "Providers" },
 ];
 
@@ -39,8 +42,21 @@ export function Footer() {
   const { cityName } = useLocation();
 
   return (
-    <footer className="border-t bg-gradient-to-b from-muted/30 to-muted/60">
-      <div className="mx-auto max-w-3xl px-4 pt-10 pb-6">
+    <footer className="relative border-t bg-gradient-to-b from-muted/30 to-muted/60 overflow-hidden">
+      {/* Audio visualizer sits on top edge of footer */}
+      <div className="absolute -top-10 left-0 right-0 z-10">
+        <FloatingVisualizer />
+      </div>
+
+      {/* Trees on left and right, sitting on the footer */}
+      <EcoTree
+        className="absolute left-4 bottom-0 opacity-40 xl:left-12 xl:opacity-60 2xl:left-20"
+      />
+      <div className="hidden lg:block absolute right-4 bottom-0 opacity-25 xl:right-12 xl:opacity-40 2xl:right-20 select-none pointer-events-none -scale-x-100">
+        <EcoTree />
+      </div>
+
+      <div className="relative z-20 mx-auto max-w-3xl px-4 pt-10 pb-6">
         {/* Main grid */}
         <div className="grid gap-10 sm:grid-cols-3 sm:gap-8">
           {/* Branding column */}
@@ -55,8 +71,14 @@ export function Footer() {
               Snap it, search it, sort it. Stop guessing and start disposing
               like a pro with {cityName ? `${cityName}'s` : "your city's"} local rules.
             </p>
-            <span className="text-xs text-muted-foreground/60">
-              Made by Richard, an AP Enviro lover
+            <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground/60">
+              Built with
+              <span className="inline-block animate-pulse text-green-500" aria-hidden>♻</span>
+              by{" "}
+              <span className="font-medium text-foreground/70">Richard</span>
+              <span className="hidden sm:inline text-muted-foreground/40">
+                — developer, designer & AP Enviro nerd
+              </span>
             </span>
           </div>
 
@@ -113,21 +135,9 @@ export function Footer() {
           <span>
             &copy; {new Date().getFullYear()} isthisrecyclable.com
           </span>
-          <div className="flex items-center gap-4">
-            <Link href="/privacy" className={linkClass}>
-              Privacy
-            </Link>
-            <a
-              href="https://github.com/astromonkeyduck-coder/recyclable"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex items-center gap-1.5 ${linkClass}`}
-              aria-label="GitHub repository"
-            >
-              <Github className="h-3.5 w-3.5" />
-              GitHub
-            </a>
-          </div>
+          <Link href="/privacy" className={linkClass}>
+            Privacy
+          </Link>
         </div>
       </div>
     </footer>

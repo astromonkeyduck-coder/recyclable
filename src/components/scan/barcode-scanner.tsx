@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { X } from "lucide-react";
 
 type BarcodeScannerProps = {
@@ -10,44 +10,64 @@ type BarcodeScannerProps = {
 
 export function BarcodeScanner({ onScan, onClose }: BarcodeScannerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const onScanRef = useRef(onScan);
+  onScanRef.current = onScan;
+
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let scanner: import("html5-qrcode").Html5Qrcode | null = null;
+    let stopped = false;
     const el = containerRef.current;
     if (!el) return;
 
     const init = async () => {
       try {
         const { Html5Qrcode } = await import("html5-qrcode");
+        if (stopped) return;
+
         const id = "barcode-reader";
-        el.innerHTML = `<div id="${id}" class="w-full h-full min-h-[200px]"></div>`;
+        el.innerHTML = `<div id="${id}" style="width:100%;min-height:300px"></div>`;
         const readerEl = document.getElementById(id);
         if (!readerEl) return;
 
         scanner = new Html5Qrcode(id);
         await scanner.start(
           { facingMode: "environment" },
-          { fps: 10 },
+          { fps: 10, qrbox: { width: 250, height: 150 } },
           (decodedText: string) => {
+            if (stopped) return;
+            stopped = true;
             scanner?.stop().catch(() => {});
-            onScan(decodedText);
+            onScanRef.current(decodedText);
           },
           () => {}
         );
       } catch (e) {
-        setError(e instanceof Error ? e.message : "Could not start camera");
+        if (!stopped) {
+          setError(
+            e instanceof Error ? e.message : "Could not start camera"
+          );
+        }
       } finally {
-        setLoading(false);
+        if (!stopped) setLoading(false);
       }
     };
 
     init();
     return () => {
-      scanner?.stop().catch(() => {}).finally(() => scanner?.clear());
+      stopped = true;
+      scanner
+        ?.stop()
+        .catch(() => {})
+        .finally(() => scanner?.clear());
     };
-  }, [onScan]);
+  }, []);
+
+  const handleClose = useCallback(() => {
+    onClose();
+  }, [onClose]);
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col bg-black">
@@ -55,7 +75,7 @@ export function BarcodeScanner({ onScan, onClose }: BarcodeScannerProps) {
         <h2 className="text-lg font-semibold text-white">Scan barcode</h2>
         <button
           type="button"
-          onClick={onClose}
+          onClick={handleClose}
           className="rounded-full p-2 text-white/80 hover:bg-white/10 hover:text-white"
           aria-label="Close"
         >
@@ -73,7 +93,7 @@ export function BarcodeScanner({ onScan, onClose }: BarcodeScannerProps) {
             <p className="text-white/80">{error}</p>
             <button
               type="button"
-              onClick={onClose}
+              onClick={handleClose}
               className="rounded-full bg-white/10 px-6 py-2.5 text-sm font-medium text-white"
             >
               Close

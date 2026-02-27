@@ -15,6 +15,7 @@ import { Flag } from "lucide-react";
 import { toast } from "sonner";
 import type { DisposalCategory } from "@/lib/providers/types";
 import { CATEGORY_META } from "@/lib/utils/categories";
+import { CategoryIcon } from "./category-icon";
 
 type FeedbackFormProps = {
   itemName: string;
@@ -99,8 +100,8 @@ export function FeedbackForm({
             </p>
             <p>
               <span className="text-muted-foreground">Shown as:</span>{" "}
-              <span>
-                {CATEGORY_META[category].icon}{" "}
+              <span className="inline-flex items-center gap-1.5">
+                <CategoryIcon category={category} size="xs" bare />
                 {CATEGORY_META[category].label}
               </span>
             </p>
@@ -128,7 +129,7 @@ export function FeedbackForm({
                         : "bg-muted/50 text-muted-foreground hover:bg-muted"
                     }`}
                   >
-                    <span>{meta.icon}</span>
+                    <CategoryIcon category={cat} size="xs" bare />
                     {meta.label}
                   </button>
                 );

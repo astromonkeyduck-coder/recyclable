@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { loadProvider } from "@/lib/providers/registry";
 import { getSiteUrl } from "@/lib/utils/site-url";
 import { CATEGORY_META } from "@/lib/utils/categories";
+import { CategoryIcon } from "@/components/common/category-icon";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, ListChecks, AlertTriangle, Info, MapPin } from "lucide-react";
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!material) return { title: "Item not found" };
 
   const meta = CATEGORY_META[material.category];
-  const title = `${material.name} — ${meta.label} | Is this recyclable?`;
+  const title = `${material.name}: ${meta.label} | Is this recyclable?`;
   const description =
     material.instructions[0] ?? `How to dispose of ${material.name}. ${meta.description}`;
 
@@ -64,9 +65,7 @@ export default async function ItemPage({ params }: Props) {
       <div
         className={`rounded-t-xl ${meta.bgColor} flex flex-col items-center gap-3 px-4 py-8`}
       >
-        <span className="text-3xl" aria-hidden>
-          {meta.icon}
-        </span>
+        <CategoryIcon category={material.category} size="xl" />
         <span
           className={`rounded-full px-3 py-1 text-sm font-semibold ${meta.bgColor} ${meta.textColor} border border-current/20`}
         >

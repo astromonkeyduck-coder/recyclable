@@ -5,7 +5,8 @@ type CategoryMeta = {
   color: string;
   bgColor: string;
   textColor: string;
-  icon: string;
+  /** Emoji string, only for clipboard/share text, never rendered in UI. */
+  emoji: string;
   description: string;
 };
 
@@ -15,7 +16,7 @@ export const CATEGORY_META: Record<DisposalCategory, CategoryMeta> = {
     color: "#3B82F6",
     bgColor: "bg-blue-100 dark:bg-blue-950",
     textColor: "text-blue-700 dark:text-blue-300",
-    icon: "♻️",
+    emoji: "♻️",
     description: "This item can be recycled",
   },
   trash: {
@@ -23,7 +24,7 @@ export const CATEGORY_META: Record<DisposalCategory, CategoryMeta> = {
     color: "#6B7280",
     bgColor: "bg-gray-100 dark:bg-gray-800",
     textColor: "text-gray-700 dark:text-gray-300",
-    icon: "🗑️",
+    emoji: "🗑️",
     description: "This item goes in the trash",
   },
   compost: {
@@ -31,7 +32,7 @@ export const CATEGORY_META: Record<DisposalCategory, CategoryMeta> = {
     color: "#22C55E",
     bgColor: "bg-green-100 dark:bg-green-950",
     textColor: "text-green-700 dark:text-green-300",
-    icon: "🌱",
+    emoji: "🌱",
     description: "This item can be composted",
   },
   dropoff: {
@@ -39,7 +40,7 @@ export const CATEGORY_META: Record<DisposalCategory, CategoryMeta> = {
     color: "#F97316",
     bgColor: "bg-orange-100 dark:bg-orange-950",
     textColor: "text-orange-700 dark:text-orange-300",
-    icon: "📍",
+    emoji: "📍",
     description: "Take this item to a drop-off location",
   },
   hazardous: {
@@ -47,7 +48,7 @@ export const CATEGORY_META: Record<DisposalCategory, CategoryMeta> = {
     color: "#EF4444",
     bgColor: "bg-red-100 dark:bg-red-950",
     textColor: "text-red-700 dark:text-red-300",
-    icon: "⚠️",
+    emoji: "⚠️",
     description: "This item requires special hazardous waste disposal",
   },
   unknown: {
@@ -55,7 +56,7 @@ export const CATEGORY_META: Record<DisposalCategory, CategoryMeta> = {
     color: "#EAB308",
     bgColor: "bg-yellow-100 dark:bg-yellow-950",
     textColor: "text-yellow-700 dark:text-yellow-300",
-    icon: "❓",
+    emoji: "❓",
     description: "We're not sure how to dispose of this item",
   },
 };

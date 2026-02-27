@@ -19,7 +19,7 @@ export function OfflineIndicator() {
         >
           <div className="flex items-center justify-center gap-2 bg-amber-100 px-4 py-1.5 text-xs font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-200">
             <WifiOff className="h-3.5 w-3.5" />
-            You&apos;re offline &mdash; text search still works
+            You&apos;re offline, but text search still works
           </div>
         </motion.div>
       )}

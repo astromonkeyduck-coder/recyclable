@@ -51,7 +51,7 @@ export function matchMaterial(provider: Provider, query: string): MatchResult {
   const confidence = computeConfidence(best, scored);
 
   if (confidence < 0.5) {
-    rationale.push("Low confidence — consider refining your search");
+    rationale.push("Low confidence. Consider refining your search.");
   }
 
   return {
@@ -71,7 +71,7 @@ function computeConfidence(best: ScoredMatch, allScored: ScoredMatch[]): number 
     if (gap > 0.3) {
       confidence = Math.min(1, confidence + 0.1);
     } else if (gap < 0.05 && best.score < 0.8) {
-      // Ambiguous — reduce confidence
+      // Ambiguous: reduce confidence
       confidence = Math.max(0, confidence - 0.15);
     }
   }

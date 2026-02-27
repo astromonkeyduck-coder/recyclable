@@ -80,7 +80,7 @@ export default function ProvidersPage() {
                 your jurisdiction.
               </li>
               <li>
-                The app will auto-discover it on next build — no code changes needed.
+                The app will auto-discover it on next build. No code changes needed.
               </li>
               <li>
                 See{" "}

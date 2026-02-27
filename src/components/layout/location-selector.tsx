@@ -11,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
-import { MapPin, ChevronDown, Check } from "lucide-react";
+import { MapPin, ChevronDown, Check, LocateFixed } from "lucide-react";
 import { useSfx } from "@/components/sfx/sfx-context";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,10 +19,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const NUDGE_KEY = "itr-location-nudge-seen";
 
 export function LocationSelector() {
-  const { providerId, setProviderId, isLoaded } = useLocation();
+  const { providerId, setProviderId, isLoaded, detectLocation } = useLocation();
   const { data: providers, isLoading } = useProviderList();
   const sfx = useSfx();
   const [showNudge, setShowNudge] = useState(false);
+  const [detecting, setDetecting] = useState(false);
 
   useEffect(() => {
     if (!isLoaded) return;
@@ -81,7 +82,7 @@ export function LocationSelector() {
               key={p.id}
               onClick={() => {
                 sfx.pop();
-                setProviderId(p.id);
+                setProviderId(p.id, p.displayName);
                 dismissNudge();
               }}
               className="gap-2"
@@ -92,6 +93,20 @@ export function LocationSelector() {
               {p.displayName}
             </DropdownMenuItem>
           ))}
+          <DropdownMenuSeparator />
+          <DropdownMenuItem
+            onClick={async () => {
+              sfx.tap();
+              setDetecting(true);
+              dismissNudge();
+              await detectLocation();
+              setDetecting(false);
+            }}
+            className="gap-2"
+          >
+            <LocateFixed className="h-3.5 w-3.5" />
+            {detecting ? "Detecting..." : "Detect my location"}
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem disabled className="text-xs text-muted-foreground">
             More cities coming soon

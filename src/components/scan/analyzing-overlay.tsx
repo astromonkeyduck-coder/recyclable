@@ -52,7 +52,7 @@ export function AnalyzingOverlay({ imageDataUrl, phase: externalPhase }: Analyzi
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-black">
-      {/* Blurred background — single layer, no animation clutter */}
+      {/* Blurred background */}
       <div
         className="absolute inset-[-10%] blur-3xl opacity-25 scale-110"
         style={{
@@ -63,14 +63,14 @@ export function AnalyzingOverlay({ imageDataUrl, phase: externalPhase }: Analyzi
       />
       <div className="absolute inset-0 bg-black/70" />
 
-      {/* Content — single column, clean spacing */}
+      {/* Content */}
       <motion.div
         className="relative z-10 flex flex-col items-center w-full max-w-xs px-6"
         initial={{ opacity: 0, scale: 0.96 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
-        {/* Photo — the single hero focal point */}
+        {/* Photo */}
         <motion.div
           className="relative mb-10"
           initial={{ y: 30, opacity: 0 }}
@@ -136,7 +136,7 @@ export function AnalyzingOverlay({ imageDataUrl, phase: externalPhase }: Analyzi
           </div>
         </motion.div>
 
-        {/* Phase text — big, confident, minimal */}
+        {/* Phase text */}
         <motion.div
           className="flex flex-col items-center gap-2 mb-8"
           initial={{ y: 20, opacity: 0 }}
@@ -169,7 +169,7 @@ export function AnalyzingOverlay({ imageDataUrl, phase: externalPhase }: Analyzi
           </AnimatePresence>
         </motion.div>
 
-        {/* Progress bar — the DoorDash/Apple-style track */}
+        {/* Progress bar */}
         <motion.div
           className="w-full mb-6"
           initial={{ y: 10, opacity: 0 }}
@@ -197,7 +197,7 @@ export function AnalyzingOverlay({ imageDataUrl, phase: externalPhase }: Analyzi
           </div>
         </motion.div>
 
-        {/* Steps — clean horizontal row */}
+        {/* Steps */}
         <motion.div
           className="flex items-center justify-between w-full"
           initial={{ y: 10, opacity: 0 }}
@@ -260,7 +260,7 @@ export function AnalyzingOverlay({ imageDataUrl, phase: externalPhase }: Analyzi
           })}
         </motion.div>
 
-        {/* Elapsed time — subtle, bottom */}
+        {/* Elapsed time */}
         <motion.div
           className="mt-8 flex flex-col items-center gap-1"
           initial={{ opacity: 0 }}

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Globe } from "lucide-react";
 import { CATEGORY_META } from "@/lib/utils/categories";
+import { CategoryIcon } from "@/components/common/category-icon";
 import { cn } from "@/lib/utils";
 import type { DisposalCategory } from "@/lib/providers/types";
 
@@ -116,7 +117,7 @@ export function ProviderComparison({
                         : "bg-muted/50"
                     )}
                   >
-                    <span>{meta.icon}</span>
+                    <CategoryIcon category={c.category} size="xs" bare />
                     {c.providerName}: {meta.label}
                   </span>
                 );

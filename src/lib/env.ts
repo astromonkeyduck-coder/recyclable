@@ -29,7 +29,7 @@ function validateEnv() {
   }
 
   if (!server.data.OPENAI_API_KEY) {
-    console.warn("OPENAI_API_KEY not set — photo scanning will be disabled, text search still works");
+    console.warn("OPENAI_API_KEY not set: photo scanning will be disabled, text search still works");
   }
 
   return { server: server.data, client: client.data };

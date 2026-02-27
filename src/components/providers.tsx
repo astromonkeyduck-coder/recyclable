@@ -2,6 +2,7 @@
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "next-themes";
+import { MotionConfig } from "framer-motion";
 import { useState, type ReactNode } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { MusicProvider } from "@/components/music/music-context";
@@ -23,12 +24,14 @@ export function AppProviders({ children }: { children: ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-        <MusicProvider>
-          <SfxProvider>
-            {children}
-            <Toaster position="bottom-center" />
-          </SfxProvider>
-        </MusicProvider>
+        <MotionConfig reducedMotion="user">
+          <MusicProvider>
+            <SfxProvider>
+              {children}
+              <Toaster position="bottom-center" />
+            </SfxProvider>
+          </MusicProvider>
+        </MotionConfig>
       </ThemeProvider>
     </QueryClientProvider>
   );

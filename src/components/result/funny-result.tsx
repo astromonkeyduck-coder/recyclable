@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { RotateCcw, Search } from "lucide-react";
+import { Laugh, RotateCcw, Search } from "lucide-react";
 import Link from "next/link";
 
 type FunnyResultProps = {
@@ -23,12 +23,12 @@ export function FunnyResult({ message, productDescription }: FunnyResultProps) {
         <Card className="overflow-hidden">
           <div className="flex flex-col items-center gap-4 py-10 px-6 bg-gradient-to-b from-violet-100 to-pink-50 dark:from-violet-950/40 dark:to-pink-950/20">
             <motion.div
-              className="text-7xl"
+              className="flex h-20 w-20 items-center justify-center rounded-full bg-violet-200/60 dark:bg-violet-800/30 shadow-inner"
               initial={{ scale: 0, rotate: -20 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ type: "spring", stiffness: 200, damping: 12, delay: 0.15 }}
             >
-              😂
+              <Laugh className="h-10 w-10 text-violet-600 dark:text-violet-400" strokeWidth={1.75} />
             </motion.div>
             <motion.div
               className="inline-flex items-center gap-1.5 rounded-full bg-violet-200/60 dark:bg-violet-800/30 px-4 py-1.5 text-sm font-semibold text-violet-700 dark:text-violet-300"

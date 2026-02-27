@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { CATEGORY_META } from "@/lib/utils/categories";
+import { CategoryIcon } from "@/components/common/category-icon";
 import type { DisposalCategory } from "@/lib/providers/types";
 import { useSfx } from "@/components/sfx/sfx-context";
 
@@ -72,7 +73,7 @@ export function RelatedItems({
               }}
               className="inline-flex items-center gap-1.5 rounded-full border bg-muted/50 px-3 py-1.5 text-xs font-medium text-muted-foreground hover:border-foreground/30 hover:text-foreground active:scale-95 focus-visible:ring-2 focus-visible:ring-ring"
             >
-              <span>{meta.icon}</span>
+              <CategoryIcon category={item.category} size="xs" bare />
               {item.name}
             </button>
           );

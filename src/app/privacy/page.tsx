@@ -67,8 +67,8 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-base font-semibold text-foreground">Contact</h2>
           <p>
-            If you have questions about this privacy policy, please open an issue on our
-            GitHub repository.
+            If you have questions about this privacy policy, please reach out to us at
+            isthisrecyclable.com.
           </p>
         </section>
       </div>

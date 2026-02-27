@@ -4,7 +4,7 @@ import { getSiteUrl } from "@/lib/utils/site-url";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Frequently asked questions about Is this recyclable? — how it works, privacy, accuracy, and adding your city.",
+    "Frequently asked questions about Is this recyclable? How it works, privacy, accuracy, and adding your city.",
   alternates: { canonical: `${getSiteUrl()}/faq` },
 };
 
@@ -35,11 +35,39 @@ const faqs = [
   },
   {
     q: "What's the difference between 'General Guidance' and a city provider?",
-    a: "General Guidance gives conservative US best-practice advice. City-specific providers (like Orlando, FL) use official local rules that may differ — for example, some cities accept items that others don't.",
+    a: "General Guidance gives conservative US best-practice advice. City-specific providers (like Orlando, FL) use official local rules that may differ. For example, some cities accept items that others don't.",
   },
   {
     q: "Can I use this for my business?",
     a: "The focus is residential waste disposal. Commercial and industrial waste often has different rules. Contact your local waste management provider for business-specific guidance.",
+  },
+  {
+    q: "Why do recycling rules vary by city?",
+    a: "Each municipality contracts with different recycling processors who accept different materials based on their equipment and local markets. What's recyclable in one city may not be in another — that's exactly why we built city-specific providers.",
+  },
+  {
+    q: "How often is the data updated?",
+    a: "Provider data is updated whenever a city changes its recycling program rules. We pull from official municipal waste management sources. If you notice outdated info, use the feedback button on any result card to let us know.",
+  },
+  {
+    q: "Can I report incorrect information?",
+    a: "Absolutely. Every result card has a flag icon you can tap to report an issue. Include what you think the correct disposal method is and we'll review it.",
+  },
+  {
+    q: "What about electronics and e-waste?",
+    a: "Electronics (phones, laptops, TVs, cables) should never go in curbside bins. We'll tell you it needs a drop-off and link you to nearby e-waste collection points via Google Maps.",
+  },
+  {
+    q: "What disposal categories do you support?",
+    a: "Six categories: Recycle (curbside blue bin), Trash (landfill), Compost (food/yard waste), Drop-off (special collection sites), Hazardous (chemicals, batteries, paint), and Not Sure (when we can't make a confident determination).",
+  },
+  {
+    q: "Do you support countries outside the US?",
+    a: "Currently we focus on US municipalities, but the system is designed to be international. If you want to contribute rules for your country or region, the provider format supports it.",
+  },
+  {
+    q: "How does the barcode scanner work?",
+    a: "Point your camera at a product barcode and we'll look up the product via the Open Food Facts database, then match its packaging material against your local disposal rules.",
   },
 ];
 

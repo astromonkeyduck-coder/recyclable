@@ -71,7 +71,7 @@
     ]
   },
   "source": {
-    "name": "City of Chicago — Streets & Sanitation",
+    "name": "City of Chicago. Streets & Sanitation",
     "url": "https://www.chicago.gov/city/en/depts/streets/provdrs/streets_san/supp_info/recycling.html",
     "generatedAt": "2026-02-27",
     "notes": "Placeholder based on general US guidance. Replace with official Chicago extraction when available.",
@@ -131,7 +131,7 @@
         "Place in recycling bin"
       ],
       "notes": [
-        "Check the number on the bottom — #1, #2, and #5 are most commonly accepted"
+        "Check the number on the bottom; #1, #2, and #5 are most commonly accepted"
       ],
       "commonMistakes": [
         "Black plastic is often not recyclable",
@@ -206,7 +206,7 @@
       ],
       "commonMistakes": [
         "Don't include cans with food residue",
-        "Aluminum foil is often accepted too — check locally"
+        "Aluminum foil is often accepted too; check locally"
       ],
       "tags": [
         "metal",
@@ -238,7 +238,7 @@
         "Place in recycling bin"
       ],
       "notes": [
-        "Use a magnet to test — steel cans are magnetic, aluminum is not"
+        "Use a magnet to test; steel cans are magnetic, aluminum is not"
       ],
       "commonMistakes": [
         "Don't include cans with food still in them"
@@ -278,7 +278,7 @@
         "Some programs separate glass by color; check locally"
       ],
       "commonMistakes": [
-        "Don't include broken glass — wrap and trash it",
+        "Don't include broken glass; wrap and trash it",
         "Window glass, mirrors, and ceramics are NOT recyclable in curbside bins"
       ],
       "tags": [
@@ -412,7 +412,7 @@
       ],
       "commonMistakes": [
         "Don't include the wax paper liner",
-        "A few grease spots are usually OK — a soaking box is not"
+        "A few grease spots are usually OK; a soaking box is not"
       ],
       "tags": [
         "paper",
@@ -445,7 +445,7 @@
         "Expanded polystyrene (EPS) is not accepted in most curbside programs"
       ],
       "commonMistakes": [
-        "Don't put Styrofoam in recycling — it contaminates the stream",
+        "Don't put Styrofoam in recycling; it contaminates the stream",
         "Packing peanuts can sometimes be returned to shipping stores"
       ],
       "tags": [
@@ -509,12 +509,12 @@
         "Never put in recycling"
       ],
       "notes": [
-        "Fruit is one of the best items for composting — it breaks down quickly",
+        "Fruit is one of the best items for composting; it breaks down quickly",
         "Citrus peels are fine in municipal composting but may slow home composting"
       ],
       "commonMistakes": [
         "Don't put fruit in recycling",
-        "Don't throw fruit on the ground outdoors — it attracts pests"
+        "Don't throw fruit on the ground outdoors; it attracts pests"
       ],
       "tags": [
         "organic",
@@ -644,17 +644,17 @@
       ],
       "category": "trash",
       "instructions": [
-        "Place in trash — most curbside composting does NOT accept meat",
+        "Place in trash; most curbside composting does NOT accept meat",
         "Wrap in newspaper or a bag to contain odor",
         "Put out on collection day to avoid attracting animals"
       ],
       "notes": [
         "Meat attracts pests and creates odor in compost bins",
-        "Some industrial composting facilities accept meat — check locally",
+        "Some industrial composting facilities accept meat; check locally",
         "Never pour meat grease down the drain"
       ],
       "commonMistakes": [
-        "Don't put in home compost bins — it attracts rats and creates odor",
+        "Don't put in home compost bins; it attracts rats and creates odor",
         "Don't put in recycling",
         "Don't pour grease down the drain"
       ],
@@ -694,7 +694,7 @@
       ],
       "category": "trash",
       "instructions": [
-        "Place in trash — most composting programs don't accept dairy",
+        "Place in trash; most composting programs don't accept dairy",
         "Pour expired milk down the drain (small amounts are fine)",
         "Container goes in recycling after rinsing"
       ],
@@ -703,7 +703,7 @@
         "Yogurt cups (#5 plastic) are recyclable after rinsing"
       ],
       "commonMistakes": [
-        "Don't compost dairy in home bins — it attracts pests",
+        "Don't compost dairy in home bins; it attracts pests",
         "Don't forget to recycle the container separately"
       ],
       "tags": [
@@ -750,7 +750,7 @@
       ],
       "category": "compost",
       "instructions": [
-        "Compost if available — bread and grains break down well",
+        "Compost if available; bread and grains break down well",
         "If no composting, place in trash",
         "Stale bread can also be left out for birds (in appropriate areas)"
       ],
@@ -793,7 +793,7 @@
       ],
       "category": "compost",
       "instructions": [
-        "Eggshells: crush and add to compost — they add calcium",
+        "Eggshells: crush and add to compost; they add calcium",
         "Raw or cooked eggs: compost if available, otherwise trash",
         "Never put in recycling"
       ],
@@ -840,8 +840,8 @@
         "If no composting, place in trash"
       ],
       "notes": [
-        "Coffee grounds are excellent for compost — they add nitrogen",
-        "Some tea bags contain plastic mesh — those go in trash"
+        "Coffee grounds are excellent for compost; they add nitrogen",
+        "Some tea bags contain plastic mesh; those go in trash"
       ],
       "commonMistakes": [
         "Check that tea bags are paper, not plastic mesh",
@@ -891,15 +891,15 @@
         "Compost bin if your program accepts cooked food",
         "Many curbside programs accept all food waste including cooked food",
         "If no composting, place in trash",
-        "Scrape into compost/trash — don't put the plate in"
+        "Scrape into compost/trash; don't put the plate in"
       ],
       "notes": [
-        "Check if your local program accepts cooked food — many do",
+        "Check if your local program accepts cooked food; many do",
         "Wrap in newspaper to reduce odor if trashing"
       ],
       "commonMistakes": [
         "Don't put in recycling",
-        "The container/plate is separate from the food — dispose of each correctly"
+        "The container/plate is separate from the food; dispose of each correctly"
       ],
       "tags": [
         "organic",
@@ -962,10 +962,10 @@
       ],
       "notes": [
         "The snack food is organic and compostable, but the wrapper almost never is",
-        "Gum is trash — it doesn't break down"
+        "Gum is trash; it doesn't break down"
       ],
       "commonMistakes": [
-        "Don't put wrappers in compost — only the food",
+        "Don't put wrappers in compost; only the food",
         "Chewing gum goes in trash, not compost"
       ],
       "tags": [
@@ -1017,10 +1017,10 @@
         "Plastic bottles: rinse and recycle"
       ],
       "notes": [
-        "Separate the container from the contents — they have different disposal paths"
+        "Separate the container from the contents; they have different disposal paths"
       ],
       "commonMistakes": [
-        "Don't recycle bottles with sauce still in them — rinse first",
+        "Don't recycle bottles with sauce still in them; rinse first",
         "Squeeze packets are trash, not recycling"
       ],
       "tags": [
@@ -1069,16 +1069,16 @@
       ],
       "category": "compost",
       "instructions": [
-        "Pour leftover liquid down the drain — small amounts are fine",
+        "Pour leftover liquid down the drain; small amounts are fine",
         "The container goes in recycling (can, bottle, or carton)",
         "Don't pour sugary drinks on the ground outside"
       ],
       "notes": [
-        "The liquid itself is fine to drain — focus on recycling the container"
+        "The liquid itself is fine to drain; focus on recycling the container"
       ],
       "commonMistakes": [
-        "Don't recycle containers with liquid still in them — empty first",
-        "Don't pour large amounts of milk or juice outside — use the drain"
+        "Don't recycle containers with liquid still in them; empty first",
+        "Don't pour large amounts of milk or juice outside; use the drain"
       ],
       "tags": [
         "beverage",
@@ -1156,7 +1156,7 @@
         "Can also be home composted"
       ],
       "notes": [
-        "Check local rules — some areas ban yard waste from trash"
+        "Check local rules; some areas ban yard waste from trash"
       ],
       "commonMistakes": [
         "Don't bag yard waste in plastic bags unless specified",
@@ -1238,7 +1238,7 @@
       ],
       "commonMistakes": [
         "Don't put electronics in curbside recycling",
-        "Don't throw in trash — contains toxic materials"
+        "Don't throw in trash; contains toxic materials"
       ],
       "tags": [
         "electronics",
@@ -1267,7 +1267,7 @@
       ],
       "category": "dropoff",
       "instructions": [
-        "CFL and fluorescent bulbs contain mercury — take to a hazardous waste drop-off",
+        "CFL and fluorescent bulbs contain mercury; take to a hazardous waste drop-off",
         "LED bulbs can go to e-waste recycling",
         "Incandescent bulbs go in the trash (wrap to prevent breakage)"
       ],
@@ -1276,7 +1276,7 @@
       ],
       "commonMistakes": [
         "Don't put CFL or fluorescent bulbs in regular trash",
-        "Don't break them — mercury vapor is hazardous"
+        "Don't break them; mercury vapor is hazardous"
       ],
       "tags": [
         "hazardous",
@@ -1513,10 +1513,10 @@
         "Place in recycling bin"
       ],
       "notes": [
-        "Most curbside programs now accept cartons — check locally"
+        "Most curbside programs now accept cartons; check locally"
       ],
       "commonMistakes": [
-        "Don't flatten cartons — 3D shape helps sorting machines identify them"
+        "Don't flatten cartons; 3D shape helps sorting machines identify them"
       ],
       "tags": [
         "paper",
@@ -1584,7 +1584,7 @@
         "Some areas have cooking oil recycling programs"
       ],
       "notes": [
-        "Never pour oil or grease down the drain — it causes sewer blockages"
+        "Never pour oil or grease down the drain; it causes sewer blockages"
       ],
       "commonMistakes": [
         "Don't pour down the sink",
@@ -1621,7 +1621,7 @@
       ],
       "commonMistakes": [
         "Don't put in recycling",
-        "Some specialty services offer diaper composting — check locally"
+        "Some specialty services offer diaper composting; check locally"
       ],
       "tags": [
         "hygiene",
@@ -1647,7 +1647,7 @@
       "instructions": [
         "Most paper coffee cups are NOT recyclable due to plastic lining",
         "Place in trash",
-        "Plastic lids are often recyclable — check locally"
+        "Plastic lids are often recyclable; check locally"
       ],
       "notes": [
         "Consider using a reusable cup to reduce waste"
@@ -1812,7 +1812,7 @@
         "Some retailers offer take-back when delivering a new mattress"
       ],
       "notes": [
-        "Mattresses are recyclable — steel springs, foam, and fabric can all be recovered"
+        "Mattresses are recyclable; steel springs, foam, and fabric can all be recovered"
       ],
       "commonMistakes": [
         "Don't leave on the curb without scheduling pickup",
@@ -1874,7 +1874,7 @@
       ],
       "category": "hazardous",
       "instructions": [
-        "Contains mercury — handle with care",
+        "Contains mercury; handle with care",
         "Take to a hazardous waste facility or participating retailer",
         "Home Depot and Lowe's accept fluorescent tubes"
       ],
@@ -1910,7 +1910,7 @@
         "Not recyclable due to wax or silicone coating"
       ],
       "notes": [
-        "Uncoated parchment paper may be compostable — check locally"
+        "Uncoated parchment paper may be compostable; check locally"
       ],
       "commonMistakes": [
         "Don't put in recycling",
@@ -1944,7 +1944,7 @@
       ],
       "category": "recycle",
       "instructions": [
-        "Donate if in good condition — libraries, thrift stores, and Little Free Libraries accept books",
+        "Donate if in good condition; libraries, thrift stores, and Little Free Libraries accept books",
         "If damaged or unusable, remove the cover from hardcovers (trash the cover if it has a glossy laminate)",
         "Recycle the paper pages in your recycling bin"
       ],
@@ -1953,7 +1953,7 @@
         "Hardcover bindings with glue and fabric may need to be removed before recycling the pages"
       ],
       "commonMistakes": [
-        "Don't throw usable books in the trash — donate them first",
+        "Don't throw usable books in the trash; donate them first",
         "Glossy laminated covers on hardcovers are not recyclable"
       ],
       "tags": [
@@ -1987,13 +1987,13 @@
       "instructions": [
         "Place directly in recycling bin",
         "No need to remove staples or subscription cards",
-        "Glossy coating is fine — modern recycling handles it"
+        "Glossy coating is fine; modern recycling handles it"
       ],
       "notes": [
         "Magazines and catalogs are accepted in virtually all curbside programs"
       ],
       "commonMistakes": [
-        "Don't remove the staples — recycling equipment handles them",
+        "Don't remove the staples; recycling equipment handles them",
         "Magazines with heavy plastic wrapping: remove the plastic wrap first (trash it)"
       ],
       "tags": [
@@ -2023,7 +2023,7 @@
       "category": "recycle",
       "instructions": [
         "Regular paper envelopes: place in recycling",
-        "Window envelopes: recycle as-is — the small plastic window is OK",
+        "Window envelopes: recycle as-is; the small plastic window is OK",
         "Padded/bubble mailers: trash (mixed materials)"
       ],
       "notes": [
@@ -2059,7 +2059,7 @@
       "instructions": [
         "Plain paper wrapping (no glitter, foil, or lamination): recycle",
         "Metallic, glittery, or laminated wrapping paper: trash",
-        "Do the scrunch test — if it stays scrunched, it's paper (recycle). If it springs back, it's metallic (trash)",
+        "Do the scrunch test; if it stays scrunched, it's paper (recycle). If it springs back, it's metallic (trash)",
         "Tissue paper: compost or trash (fibers too short to recycle)"
       ],
       "notes": [
@@ -2141,15 +2141,15 @@
       ]
     },
     "tips": [
-      "When in doubt, throw it out — contamination hurts recycling",
+      "When in doubt, throw it out; contamination hurts recycling",
       "Rinse containers but they don't need to be spotless",
       "Check your local municipality's specific rules",
       "Never bag recyclables in plastic bags",
       "Flatten cardboard and cereal boxes to save space",
       "Keep recyclables loose in the bin",
-      "Leave bottle caps ON their bottles — don't toss them loose",
+      "Leave bottle caps ON their bottles; don't toss them loose",
       "Books in good condition? Donate before recycling",
-      "Candy wrappers look metallic but are NOT aluminum — they go in trash"
+      "Candy wrappers look metallic but are NOT aluminum; they go in trash"
     ]
   }
 }

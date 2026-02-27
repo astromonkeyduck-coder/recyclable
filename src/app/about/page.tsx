@@ -1,5 +1,6 @@
 import { Recycle, Camera, Search, MapPin, Shield, Zap } from "lucide-react";
 import type { Metadata } from "next";
+import { AnimatedStats } from "./animated-stats";
 
 export const metadata: Metadata = {
   title: "About",
@@ -22,7 +23,7 @@ const features = [
     icon: MapPin,
     title: "Local Rules",
     description:
-      "Get disposal instructions specific to your city or region — not generic advice.",
+      "Get disposal instructions specific to your city or region, not generic advice.",
   },
   {
     icon: Shield,
@@ -47,13 +48,33 @@ const features = [
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
+      {/* Mission */}
       <h1 className="text-2xl font-bold mb-2">About</h1>
-      <p className="text-muted-foreground mb-8 max-w-xl">
+      <p className="text-lg text-muted-foreground max-w-xl mb-2">
+        Recycling shouldn&apos;t require a PhD.
+      </p>
+      <p className="text-muted-foreground max-w-xl mb-8">
         <strong>Is this recyclable?</strong> helps you figure out the right way
-        to dispose of any item — recycle, trash, compost, or drop-off — based on
-        your local jurisdiction&apos;s rules.
+        to dispose of any item (recycle, trash, compost, or drop-off) based on
+        your local jurisdiction&apos;s rules. No sign-up, no data collection, just
+        answers in seconds.
       </p>
 
+      {/* Animated stats */}
+      <AnimatedStats />
+
+      {/* Impact callout */}
+      <div className="rounded-xl border bg-muted/30 p-5 mb-12">
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          <span className="font-semibold text-foreground">Why it matters:</span>{" "}
+          The average American generates 4.4 lbs of trash every single day.
+          Contaminated recycling (tossing the wrong item in the bin) costs
+          municipalities millions and sends recyclable material to landfills. We
+          built this tool so you never have to guess again.
+        </p>
+      </div>
+
+      {/* Features */}
       <div className="grid gap-6 sm:grid-cols-2 mb-12">
         {features.map((f) => (
           <div key={f.title} className="flex gap-3">
@@ -75,15 +96,15 @@ export default function AboutPage() {
         <ol className="space-y-3 text-sm text-muted-foreground">
           <li className="flex gap-3">
             <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold">1</span>
-            <span><strong>Identify</strong> — Scan a photo, upload an image, or type the item name.</span>
+            <span><strong>Identify:</strong> Scan a photo, upload an image, or type the item name.</span>
           </li>
           <li className="flex gap-3">
             <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold">2</span>
-            <span><strong>Match</strong> — We match your item against your local jurisdiction&apos;s rules database.</span>
+            <span><strong>Match:</strong> We match your item against your local jurisdiction&apos;s rules database.</span>
           </li>
           <li className="flex gap-3">
             <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold">3</span>
-            <span><strong>Dispose</strong> — Get clear instructions: recycle, trash, compost, drop-off, or hazardous.</span>
+            <span><strong>Dispose:</strong> Get clear instructions for recycle, trash, compost, drop-off, or hazardous.</span>
           </li>
         </ol>
       </section>

@@ -33,12 +33,21 @@ export function ShareButton({ itemName, category, providerName }: ShareButtonPro
   const handleShare = useCallback(async () => {
     const meta = CATEGORY_META[category];
     const shareUrl = buildShareUrl(itemName, providerId);
-    const text = `${meta.icon} ${itemName} → ${meta.label}\n\nAccording to ${providerName} rules.`;
+    const actionMap: Record<string, string> = {
+      recycle: "is recyclable",
+      trash: "goes in the trash",
+      compost: "is compostable",
+      dropoff: "needs a drop-off location",
+      hazardous: "requires hazardous waste disposal",
+      unknown: "has unclear disposal rules",
+    };
+    const action = actionMap[category] ?? `should be: ${meta.label}`;
+    const text = `${meta.emoji} ${itemName} ${action}!\n\nFind out how to dispose of anything at isthisrecyclable.com`;
 
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({
-          title: `${meta.label}: ${itemName} | Is this recyclable?`,
+          title: `${itemName} ${action} | Is this recyclable?`,
           text,
           url: shareUrl,
         });
