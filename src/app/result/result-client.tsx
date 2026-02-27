@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import type { Material } from "@/lib/providers/types";
+import { CATEGORY_META } from "@/lib/utils/categories";
 import { useSfx } from "@/components/sfx/sfx-context";
 import { useSearchHistory } from "@/hooks/use-search-history";
 import { useEcoStats } from "@/hooks/use-eco-stats";
@@ -273,8 +274,20 @@ function ResultContent() {
   const textFound = searchParams.get("textFound");
   const materialComp = searchParams.get("material");
 
+  const categoryLabel = CATEGORY_META[activeMaterial.category]?.label ?? activeMaterial.category;
+  const liveAnnouncement = `${activeMaterial.name}: ${categoryLabel}.`;
+
   return (
     <div ref={containerRef} className="flex flex-col items-center gap-6 px-4 py-8">
+      {/* Screen reader announcement when result loads or category changes */}
+      <div
+        aria-live="polite"
+        aria-atomic
+        className="sr-only"
+        role="status"
+      >
+        {liveAnnouncement}
+      </div>
       {/* Pull-to-refresh indicator */}
       {pulling && (
         <motion.div

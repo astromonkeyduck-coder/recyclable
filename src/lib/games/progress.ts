@@ -125,6 +125,30 @@ export function suggestDifficulty(modeId: string): DifficultyLabel {
   return "easy";
 }
 
+export type PlayerRank = {
+  label: string;
+  icon: string;
+  minGames: number;
+};
+
+const RANKS: PlayerRank[] = [
+  { label: "Legend", icon: "👑", minGames: 100 },
+  { label: "Master", icon: "💎", minGames: 50 },
+  { label: "Expert", icon: "🏆", minGames: 25 },
+  { label: "Sorter", icon: "🌿", minGames: 10 },
+  { label: "Rookie", icon: "🌱", minGames: 0 },
+];
+
+export function getPlayerRank(totalGames: number): PlayerRank {
+  return RANKS.find((r) => totalGames >= r.minGames) ?? RANKS[RANKS.length - 1];
+}
+
+export function getNextRank(totalGames: number): PlayerRank | null {
+  const current = getPlayerRank(totalGames);
+  const idx = RANKS.indexOf(current);
+  return idx > 0 ? RANKS[idx - 1] : null;
+}
+
 export function getDailyChallengeSeed(): number {
   const today = getToday();
   let hash = 0;

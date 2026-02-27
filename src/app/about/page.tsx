@@ -1,10 +1,48 @@
 import { Recycle, Camera, Search, MapPin, Shield, Zap } from "lucide-react";
 import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/utils/site-url";
+import { buildOgImageUrl } from "@/lib/utils/og-params";
 import { AnimatedStats } from "./animated-stats";
+
+const siteUrl = getSiteUrl();
+const ogImageUrl = buildOgImageUrl(siteUrl, { variant: "about" });
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Is this recyclable? and how it helps you dispose of waste correctly.",
+  description:
+    "Learn about Is this recyclable? and how it helps you dispose of waste correctly using local rules, AI scanning, and smart search.",
+  alternates: { canonical: `${siteUrl}/about` },
+  openGraph: {
+    title: "About | Is this recyclable?",
+    description:
+      "The mission behind instant waste disposal guidance. Snap a photo, search an item, get local rules.",
+    url: `${siteUrl}/about`,
+    siteName: "isthisrecyclable.com",
+    type: "website",
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: "About isthisrecyclable.com",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About | Is this recyclable?",
+    description:
+      "The mission behind instant waste disposal guidance. Snap a photo, search an item, get local rules.",
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: "About isthisrecyclable.com",
+      },
+    ],
+  },
 };
 
 const features = [

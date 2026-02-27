@@ -1,0 +1,1680 @@
+{
+  "id": "jacksonville",
+  "displayName": "Jacksonville, FL",
+  "coverage": {
+    "country": "US",
+    "region": "FL",
+    "city": "Jacksonville",
+    "zips": [
+      "32099", "32201", "32202", "32204", "32205", "32206", "32207", "32208",
+      "32209", "32210", "32211", "32212", "32216", "32217", "32218", "32219",
+      "32220", "32221", "32222", "32223", "32224", "32225", "32226", "32227",
+      "32228", "32233", "32234", "32244", "32246", "32250", "32254", "32256",
+      "32257", "32258", "32266", "32277"
+    ],
+    "aliases": [
+      "jacksonville florida",
+      "jacksonville fl",
+      "jax",
+      "duval county"
+    ]
+  },
+  "source": {
+    "name": "City of Jacksonville Public Works - Solid Waste",
+    "url": "https://www.jacksonville.gov/departments/public-works/solid-waste/recycling/service-standards",
+    "generatedAt": "2026-02-27",
+    "notes": "Based on official City of Jacksonville recycling service standards. Uses yellow-lid recycling cart. Plastics #1-3, #5, #7 only. Lids must be removed from bottles.",
+    "license": "Public government data"
+  },
+  "materials": [
+    {
+      "id": "plastic-water-soda-bottles",
+      "name": "Plastic water and soda bottles (#1 PET)",
+      "aliases": [
+        "water bottle", "soda bottle", "pop bottle", "plastic bottle",
+        "PET bottle", "PETE bottle", "beverage bottle", "sports drink bottle",
+        "juice bottle plastic", "sparkling water bottle"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse the bottle",
+        "Remove the lid and discard it in trash",
+        "Place bottle loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "#1 PET/PETE plastic is the most commonly recycled plastic",
+        "Jacksonville requires lids be removed from all bottles"
+      ],
+      "commonMistakes": [
+        "Don't leave the lid on — Jacksonville requires lids removed",
+        "Don't crush bottles; leave them intact for sorting",
+        "Don't bag recyclables in plastic bags"
+      ],
+      "tags": ["plastic", "bottle", "#1", "PET", "beverage"],
+      "examples": ["Dasani water bottle", "Coca-Cola bottle", "Gatorade bottle"]
+    },
+    {
+      "id": "plastic-detergent-bottles",
+      "name": "Plastic detergent and cleaning bottles (#2 HDPE)",
+      "aliases": [
+        "detergent bottle", "laundry detergent", "bleach bottle",
+        "cleaning bottle", "shampoo bottle", "conditioner bottle",
+        "HDPE bottle", "milk jug", "plastic jug", "soap bottle"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse thoroughly",
+        "Remove the lid and discard in trash",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "#2 HDPE plastic — commonly found in detergent, shampoo, and milk jugs",
+        "One of the most valuable recycled plastics"
+      ],
+      "commonMistakes": [
+        "Don't leave lids on",
+        "Don't include bottles with significant residue",
+        "Don't bag recyclables"
+      ],
+      "tags": ["plastic", "bottle", "#2", "HDPE", "cleaning"],
+      "examples": ["Tide detergent bottle", "Clorox bleach bottle", "Milk jug", "Shampoo bottle"]
+    },
+    {
+      "id": "plastic-3-containers",
+      "name": "Plastic containers (#3 PVC/V)",
+      "aliases": [
+        "PVC container", "vinyl plastic", "#3 plastic",
+        "clear plastic packaging", "blister pack rigid"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and clean the container",
+        "Remove any lids",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "#3 PVC is accepted in Jacksonville but is less common in consumer packaging",
+        "Look for the #3 recycling symbol on the bottom"
+      ],
+      "commonMistakes": [
+        "Don't confuse PVC pipes (construction waste) with PVC containers",
+        "Don't include flexible PVC film or wraps"
+      ],
+      "tags": ["plastic", "container", "#3", "PVC"],
+      "examples": ["Rigid clear food packaging with #3 symbol"]
+    },
+    {
+      "id": "plastic-5-containers",
+      "name": "Plastic containers (#5 PP)",
+      "aliases": [
+        "polypropylene", "#5 plastic", "yogurt cup", "butter tub",
+        "margarine tub", "hummus container", "cottage cheese container",
+        "sour cream tub", "deli container", "PP container"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse the container",
+        "Remove any lids",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "#5 PP is accepted in Jacksonville — commonly found in food tubs and deli containers",
+        "Microwave-safe containers are often #5 PP"
+      ],
+      "commonMistakes": [
+        "Don't include containers still containing food residue",
+        "Don't include lids — they go in the trash in Jacksonville"
+      ],
+      "tags": ["plastic", "container", "#5", "PP", "food"],
+      "examples": ["Chobani yogurt cup", "Country Crock tub", "Deli counter container"]
+    },
+    {
+      "id": "plastic-7-containers",
+      "name": "Plastic containers (#7 Other)",
+      "aliases": [
+        "#7 plastic", "other plastic", "mixed plastic",
+        "five-gallon water jug", "large water bottle plastic"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Remove lids",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "#7 is a catch-all for other plastics; Jacksonville accepts it",
+        "Less commonly recycled elsewhere, but accepted here"
+      ],
+      "commonMistakes": [
+        "Don't assume all #7 plastics are biodegradable (PLA is also #7)",
+        "Don't include heavily contaminated items"
+      ],
+      "tags": ["plastic", "container", "#7", "other"],
+      "examples": ["5-gallon water jug", "Some baby bottles", "Nylon containers"]
+    },
+    {
+      "id": "glass-bottles-jars",
+      "name": "Glass bottles and jars",
+      "aliases": [
+        "glass bottle", "glass jar", "wine bottle", "beer bottle",
+        "liquor bottle", "sauce jar", "pasta sauce jar", "pickle jar",
+        "jam jar", "mason jar", "salsa jar", "olive oil bottle glass"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Remove metal lids (recycle lids separately with metal cans)",
+        "Place glass loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Jacksonville accepts green, brown, and clear glass",
+        "Labels can stay on — they burn off during processing"
+      ],
+      "commonMistakes": [
+        "Don't include broken glass — wrap and place in trash for safety",
+        "Don't include window glass, mirrors, or ceramics",
+        "Don't include drinking glasses or Pyrex — they have different melting points"
+      ],
+      "tags": ["glass", "bottle", "jar", "recyclable"],
+      "examples": ["Wine bottle", "Beer bottle", "Ragu sauce jar", "Pickle jar"]
+    },
+    {
+      "id": "aluminum-cans",
+      "name": "Aluminum cans",
+      "aliases": [
+        "aluminum can", "soda can", "beer can", "pop can",
+        "beverage can", "sparkling water can", "energy drink can",
+        "seltzer can", "canned drink"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Leave the tab on",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Aluminum is infinitely recyclable and highly valuable",
+        "A recycled can is back on shelves in as little as 60 days"
+      ],
+      "commonMistakes": [
+        "Don't crush cans — Jacksonville sorting equipment works better with intact cans",
+        "Don't include aluminum foil or foil pans (these go in trash in Jacksonville)"
+      ],
+      "tags": ["metal", "aluminum", "can", "beverage"],
+      "examples": ["Coca-Cola can", "Bud Light can", "LaCroix can", "Red Bull can"]
+    },
+    {
+      "id": "steel-tin-cans",
+      "name": "Steel and tin cans",
+      "aliases": [
+        "tin can", "steel can", "food can", "soup can", "vegetable can",
+        "bean can", "tuna can", "pet food can", "canned food",
+        "tomato paste can", "condensed milk can"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse the can",
+        "Labels can stay on",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Use a magnet to check — steel and tin are magnetic, aluminum is not",
+        "Accepted in Jacksonville recycling"
+      ],
+      "commonMistakes": [
+        "Don't include cans with food residue",
+        "Don't include aerosol cans — check specific instructions"
+      ],
+      "tags": ["metal", "steel", "tin", "can", "food"],
+      "examples": ["Campbell's soup can", "Del Monte vegetable can", "Tuna can"]
+    },
+    {
+      "id": "newspapers-inserts",
+      "name": "Newspapers and inserts",
+      "aliases": [
+        "newspaper", "news paper", "daily paper", "sunday paper",
+        "newspaper inserts", "newspaper ads", "newspaper flyers",
+        "Times-Union", "Florida Times-Union"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Keep dry",
+        "Place loose in yellow-lid recycling cart",
+        "Inserts and ads can stay inside the newspaper"
+      ],
+      "notes": [
+        "Newspaper is one of the most successfully recycled materials",
+        "Glossy inserts are accepted along with the paper"
+      ],
+      "commonMistakes": [
+        "Don't recycle wet or moldy newspaper — it goes in trash",
+        "Don't bag newspapers in plastic bags"
+      ],
+      "tags": ["paper", "newspaper", "print"],
+      "examples": ["Florida Times-Union", "Sunday newspaper with coupons", "Weekly inserts"]
+    },
+    {
+      "id": "magazines-catalogs",
+      "name": "Magazines, catalogs, and phone books",
+      "aliases": [
+        "magazine", "catalog", "catalogue", "phone book", "phonebook",
+        "yellow pages", "directory", "glossy magazine", "brochure",
+        "weekly circular", "coupon book"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Keep dry",
+        "Place loose in yellow-lid recycling cart",
+        "No need to remove staples or subscription cards"
+      ],
+      "notes": [
+        "Glossy paper is accepted in Jacksonville recycling",
+        "Phone books are specifically listed as accepted"
+      ],
+      "commonMistakes": [
+        "Don't bag in plastic bags",
+        "Don't include wet or soiled magazines"
+      ],
+      "tags": ["paper", "magazine", "catalog", "glossy"],
+      "examples": ["People magazine", "IKEA catalog", "AT&T phone book", "Coupon circular"]
+    },
+    {
+      "id": "cardboard-boxes",
+      "name": "Cardboard boxes",
+      "aliases": [
+        "cardboard", "corrugated cardboard", "shipping box", "moving box",
+        "amazon box", "delivery box", "brown box", "OCC",
+        "packing box", "carton"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten all boxes",
+        "Remove packing materials (bubble wrap, styrofoam, air pillows)",
+        "Keep dry",
+        "Place loose in yellow-lid recycling cart or beside it if too large"
+      ],
+      "notes": [
+        "Corrugated cardboard is highly recyclable",
+        "Flatten to save space in the cart"
+      ],
+      "commonMistakes": [
+        "Don't include cardboard soaked with grease or food",
+        "Don't leave packing materials inside",
+        "Don't include wax-coated cardboard"
+      ],
+      "tags": ["paper", "cardboard", "box", "shipping"],
+      "examples": ["Amazon shipping box", "Appliance box", "Moving box"]
+    },
+    {
+      "id": "paper-mail-envelopes",
+      "name": "Paper, mail, and envelopes",
+      "aliases": [
+        "paper", "office paper", "printer paper", "junk mail",
+        "envelope", "letter", "mail", "notebook paper",
+        "copy paper", "bills", "statements"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Keep dry",
+        "Shredded paper should be placed in a paper bag before recycling",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Envelopes with plastic windows are accepted",
+        "Staples and paper clips are OK — they're removed during processing"
+      ],
+      "commonMistakes": [
+        "Don't include wet or soiled paper",
+        "Don't include paper towels, napkins, or tissues",
+        "Don't include wax-coated or laminated paper"
+      ],
+      "tags": ["paper", "mail", "office"],
+      "examples": ["Junk mail", "Office paper", "Envelopes", "Bank statements"]
+    },
+    {
+      "id": "cereal-paper-boxes",
+      "name": "Cereal and paper boxes (paperboard)",
+      "aliases": [
+        "cereal box", "cracker box", "pasta box", "tissue box",
+        "shoe box", "paperboard", "food box", "snack box",
+        "tea box", "toothpaste box"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten the box",
+        "Remove any plastic liners or bags inside",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Thin paperboard/chipboard is recyclable in Jacksonville",
+        "Remove the plastic liner bag (it goes in the trash)"
+      ],
+      "commonMistakes": [
+        "Don't include the inner plastic bag",
+        "Don't include boxes soiled with food"
+      ],
+      "tags": ["paper", "paperboard", "box", "food"],
+      "examples": ["Cheerios box", "Ritz cracker box", "Barilla pasta box", "Kleenex box"]
+    },
+    {
+      "id": "paper-bags",
+      "name": "Paper bags",
+      "aliases": [
+        "paper bag", "brown bag", "grocery bag paper", "lunch bag",
+        "kraft bag", "shopping bag paper"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten and place in yellow-lid recycling cart",
+        "Can be used to contain shredded paper for recycling"
+      ],
+      "notes": [
+        "Paper bags are recyclable and also useful for containing loose paper recyclables"
+      ],
+      "commonMistakes": [
+        "Don't include paper bags contaminated with grease or food"
+      ],
+      "tags": ["paper", "bag"],
+      "examples": ["Publix paper bag", "Brown lunch bag", "Gift bag (no glitter)"]
+    },
+    {
+      "id": "aerosol-cans",
+      "name": "Empty aerosol cans",
+      "aliases": [
+        "aerosol can", "spray can", "aerosol", "hairspray can",
+        "spray paint can empty", "air freshener can", "cooking spray can"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Must be completely empty",
+        "Do not puncture or crush",
+        "Remove plastic cap and discard in trash",
+        "Place can loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Only completely empty aerosol cans are accepted",
+        "The can itself is recyclable metal"
+      ],
+      "commonMistakes": [
+        "Don't recycle aerosol cans that still have contents — they're hazardous",
+        "Don't puncture cans"
+      ],
+      "tags": ["metal", "aerosol", "spray"],
+      "examples": ["Empty hairspray can", "Empty cooking spray can", "Empty air freshener"]
+    },
+    {
+      "id": "milk-juice-cartons",
+      "name": "Milk and juice cartons",
+      "aliases": [
+        "milk carton", "juice carton", "juice box", "Tetra Pak",
+        "carton", "shelf-stable carton", "oat milk carton",
+        "almond milk carton", "broth carton"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Replace cap if it has one",
+        "Place loose in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Both refrigerated (gable-top) and shelf-stable (aseptic) cartons are accepted",
+        "These are made from layers of paper, plastic, and sometimes aluminum"
+      ],
+      "commonMistakes": [
+        "Don't flatten cartons — the 3D shape helps sorting machines identify them",
+        "Don't include juice pouches (like Capri Sun) — those go in trash"
+      ],
+      "tags": ["paper", "carton", "beverage", "composite"],
+      "examples": ["Horizon milk carton", "Tropicana juice carton", "Oatly carton"]
+    },
+    {
+      "id": "aluminum-foil",
+      "name": "Aluminum foil and foil pans",
+      "aliases": [
+        "aluminum foil", "tin foil", "foil", "foil pan",
+        "foil tray", "pie tin", "turkey pan foil"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Foil is often too contaminated with food to recycle in Jacksonville"
+      ],
+      "notes": [
+        "While aluminum foil is technically recyclable, Jacksonville does not accept it in curbside recycling due to food contamination"
+      ],
+      "commonMistakes": [
+        "Don't put foil or foil pans in the recycling cart"
+      ],
+      "tags": ["metal", "aluminum", "foil", "kitchen"],
+      "examples": ["Used aluminum foil", "Disposable foil baking pan", "Foil pie tin"]
+    },
+    {
+      "id": "plastic-bags-film",
+      "name": "Plastic bags, wraps, and film",
+      "aliases": [
+        "plastic bag", "grocery bag", "trash bag", "ziplock bag",
+        "sandwich bag", "plastic wrap", "cling wrap", "saran wrap",
+        "shrink wrap", "produce bag", "newspaper bag", "dry cleaning bag",
+        "plastic film", "bread bag"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Many grocery stores accept clean plastic bags for recycling (Publix, Walmart)",
+        "Never place plastic bags in the recycling cart"
+      ],
+      "notes": [
+        "Plastic bags are the #1 contaminant in Jacksonville's recycling stream",
+        "They tangle in sorting machinery and shut down the recycling facility"
+      ],
+      "commonMistakes": [
+        "NEVER bag recyclables in plastic bags — put items loose in the cart",
+        "Don't put any plastic film, wrap, or bags in the yellow-lid cart"
+      ],
+      "tags": ["plastic", "bag", "film", "contaminant"],
+      "examples": ["Publix grocery bag", "Ziploc bag", "Newspaper delivery bag", "Bread bag"]
+    },
+    {
+      "id": "styrofoam",
+      "name": "Styrofoam / polystyrene foam",
+      "aliases": [
+        "styrofoam", "polystyrene", "foam", "EPS", "foam cup",
+        "foam plate", "foam container", "takeout container foam",
+        "packing peanuts", "foam packing", "foam tray", "meat tray foam",
+        "#6 foam"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Break into smaller pieces if needed to fit",
+        "Not recyclable in Jacksonville"
+      ],
+      "notes": [
+        "Expanded polystyrene foam is not accepted in Jacksonville recycling",
+        "This includes food containers, cups, plates, and packing materials"
+      ],
+      "commonMistakes": [
+        "Don't put any styrofoam in the recycling cart",
+        "Don't confuse rigid plastic containers with foam"
+      ],
+      "tags": ["plastic", "foam", "styrofoam", "polystyrene"],
+      "examples": ["Styrofoam takeout container", "Foam coffee cup", "Foam packing peanuts", "Foam meat tray"]
+    },
+    {
+      "id": "diapers",
+      "name": "Diapers and hygiene products",
+      "aliases": [
+        "diaper", "diapers", "nappy", "pull-ups", "adult diaper",
+        "sanitary pad", "tampon", "feminine hygiene", "incontinence product"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Roll up and secure with tabs",
+        "Place in trash cart",
+        "Double-bag if needed to contain odor"
+      ],
+      "notes": [
+        "Diapers contain mixed materials and human waste — they are never recyclable",
+        "Specifically listed as not accepted in Jacksonville recycling"
+      ],
+      "commonMistakes": [
+        "Never put diapers in the recycling cart"
+      ],
+      "tags": ["hygiene", "personal", "waste"],
+      "examples": ["Used baby diaper", "Adult incontinence product", "Feminine hygiene product"]
+    },
+    {
+      "id": "soiled-wet-paper",
+      "name": "Soiled or wet paper",
+      "aliases": [
+        "wet paper", "soiled paper", "greasy paper", "food-stained paper",
+        "oily paper", "wet cardboard", "greasy cardboard",
+        "pizza box greasy", "contaminated paper"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Paper contaminated with food, grease, or liquids cannot be recycled"
+      ],
+      "notes": [
+        "Grease and food residue ruin paper fibers during the recycling process",
+        "Even a small amount of grease can contaminate an entire batch"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy pizza boxes — tear off the clean top and recycle that",
+        "Don't recycle paper plates or napkins used with food"
+      ],
+      "tags": ["paper", "contaminated", "soiled"],
+      "examples": ["Greasy pizza box", "Paper plate with food", "Wet newspaper", "Oil-stained cardboard"]
+    },
+    {
+      "id": "candy-wrappers-chip-bags",
+      "name": "Candy wrappers, chip bags, and snack pouches",
+      "aliases": [
+        "candy wrapper", "chip bag", "snack bag", "foil wrapper",
+        "granola bar wrapper", "energy bar wrapper", "popcorn bag",
+        "snack pouch", "fruit snack pouch", "Capri Sun pouch"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "These are made from mixed materials that cannot be separated for recycling"
+      ],
+      "notes": [
+        "Despite their metallic appearance, these are not aluminum",
+        "They are made from layers of plastic and metal film bonded together"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling — the metallic look is deceiving",
+        "Don't mistake chip bags for recyclable aluminum"
+      ],
+      "tags": ["plastic", "wrapper", "film", "snack"],
+      "examples": ["Lay's chip bag", "Snickers wrapper", "Kind bar wrapper", "Capri Sun pouch"]
+    },
+    {
+      "id": "clothing-textiles",
+      "name": "Clothing and textiles",
+      "aliases": [
+        "clothing", "clothes", "shirt", "pants", "jeans", "dress",
+        "shoes", "textiles", "fabric", "curtains", "towels",
+        "bedsheets", "linens", "rags"
+      ],
+      "category": "trash",
+      "instructions": [
+        "If wearable, donate to Goodwill, Salvation Army, or local thrift stores",
+        "If not wearable, place in trash cart",
+        "Never place in recycling cart"
+      ],
+      "notes": [
+        "Jacksonville does not accept textiles in curbside recycling",
+        "Consider donating wearable items to extend their life"
+      ],
+      "commonMistakes": [
+        "Don't put clothing in the recycling cart",
+        "Don't assume torn items can't be donated — textile recyclers accept them"
+      ],
+      "tags": ["textile", "clothing", "fabric", "donation"],
+      "examples": ["Old t-shirt", "Worn-out jeans", "Stained towels", "Old curtains"]
+    },
+    {
+      "id": "tools-hardware",
+      "name": "Tools and hardware",
+      "aliases": [
+        "tools", "hammer", "screwdriver", "wrench", "pliers",
+        "drill", "saw", "hardware", "nails", "screws", "bolts"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place small tools and hardware in trash cart",
+        "Large power tools: schedule a bulk pickup with Jacksonville Public Works",
+        "Call (904) 630-CITY (2489) for bulk pickup"
+      ],
+      "notes": [
+        "Tools are specifically listed as not accepted in Jacksonville recycling",
+        "Metal tools can sometimes be donated or taken to scrap metal recyclers"
+      ],
+      "commonMistakes": [
+        "Don't put tools in the recycling cart",
+        "Don't put power tools with batteries in the trash — remove battery first"
+      ],
+      "tags": ["metal", "tools", "hardware"],
+      "examples": ["Old hammer", "Broken screwdriver", "Rusty nails", "Bent wrench"]
+    },
+    {
+      "id": "toys",
+      "name": "Toys",
+      "aliases": [
+        "toy", "toys", "action figure", "stuffed animal", "doll",
+        "board game", "puzzle", "Lego", "plastic toy", "kids toy"
+      ],
+      "category": "trash",
+      "instructions": [
+        "If in good condition, donate to Goodwill or Toys for Tots",
+        "If broken, place in trash cart",
+        "Remove batteries before disposing"
+      ],
+      "notes": [
+        "Toys are specifically listed as not accepted in Jacksonville recycling",
+        "They are made of mixed materials that cannot be sorted"
+      ],
+      "commonMistakes": [
+        "Don't put toys in the recycling cart",
+        "Don't forget to remove batteries from electronic toys"
+      ],
+      "tags": ["plastic", "mixed", "children", "donation"],
+      "examples": ["Broken action figure", "Old board game", "Worn stuffed animal"]
+    },
+    {
+      "id": "construction-waste",
+      "name": "Construction and demolition waste",
+      "aliases": [
+        "construction waste", "demolition waste", "lumber", "drywall",
+        "plywood", "concrete", "bricks", "roofing", "tile",
+        "renovation debris", "building materials"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Not accepted in curbside carts",
+        "Small amounts: schedule a bulk pickup at (904) 630-CITY (2489)",
+        "Large amounts: hire a private hauler or take to Trail Ridge Landfill"
+      ],
+      "notes": [
+        "Construction waste is specifically prohibited from Jacksonville recycling",
+        "C&D waste requires special disposal"
+      ],
+      "commonMistakes": [
+        "Don't place in recycling or regular trash carts",
+        "Don't put in yard waste"
+      ],
+      "tags": ["construction", "demolition", "debris"],
+      "examples": ["Drywall scraps", "Old lumber", "Broken tiles", "Concrete pieces"]
+    },
+    {
+      "id": "plastic-utensils-straws",
+      "name": "Plastic utensils and straws",
+      "aliases": [
+        "plastic fork", "plastic knife", "plastic spoon", "plastic utensils",
+        "disposable utensils", "straw", "plastic straw", "stirrer",
+        "coffee stirrer", "spork"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Too small and lightweight to be captured by recycling sorting equipment"
+      ],
+      "notes": [
+        "Even though made of recyclable plastic types, utensils and straws are too small for sorting machinery"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling — they fall through sorting screens",
+        "Consider switching to reusable utensils"
+      ],
+      "tags": ["plastic", "utensils", "disposable"],
+      "examples": ["Plastic fork", "Drinking straw", "Coffee stirrer", "Disposable spork"]
+    },
+    {
+      "id": "bubble-wrap",
+      "name": "Bubble wrap and air pillows",
+      "aliases": [
+        "bubble wrap", "air pillow", "air cushion", "packing air",
+        "Amazon air pillow", "inflatable packaging"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Deflate air pillows",
+        "Place in trash cart",
+        "Some grocery stores accept clean bubble wrap with plastic bag recycling"
+      ],
+      "notes": [
+        "Bubble wrap is plastic film and is not accepted in Jacksonville curbside recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling cart — it's a type of plastic film"
+      ],
+      "tags": ["plastic", "film", "packing"],
+      "examples": ["Bubble wrap from a package", "Amazon air pillows", "Inflatable packaging"]
+    },
+    {
+      "id": "wax-paper",
+      "name": "Wax paper and parchment paper",
+      "aliases": [
+        "wax paper", "waxed paper", "parchment paper", "baking paper",
+        "freezer paper", "butcher paper waxed"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "The wax coating prevents paper recycling"
+      ],
+      "notes": [
+        "Wax-coated paper cannot be recycled because the wax contaminates the paper pulp"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling — the wax coating is not removable during processing"
+      ],
+      "tags": ["paper", "wax", "kitchen"],
+      "examples": ["Wax paper from baking", "Parchment paper", "Waxed butcher paper"]
+    },
+    {
+      "id": "disposable-coffee-cups",
+      "name": "Disposable coffee cups",
+      "aliases": [
+        "coffee cup", "paper cup", "Starbucks cup", "Dunkin cup",
+        "hot cup", "to-go cup", "disposable cup paper"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "The plastic lining inside makes them non-recyclable",
+        "Plastic lid goes in trash too"
+      ],
+      "notes": [
+        "Paper coffee cups have a thin polyethylene lining that prevents recycling",
+        "The cardboard sleeve can be recycled separately"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling — the plastic lining contaminates paper recycling",
+        "The cardboard sleeve IS recyclable — separate it"
+      ],
+      "tags": ["paper", "cup", "lined", "beverage"],
+      "examples": ["Starbucks hot cup", "Dunkin' Donuts cup", "Gas station coffee cup"]
+    },
+    {
+      "id": "receipts-thermal",
+      "name": "Receipts (thermal paper)",
+      "aliases": [
+        "receipt", "receipts", "thermal paper", "register receipt",
+        "ATM receipt", "credit card receipt", "store receipt"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Thermal paper contains BPA and is not recyclable"
+      ],
+      "notes": [
+        "Most receipts use thermal paper which contains BPA/BPS chemicals",
+        "These chemicals contaminate recycled paper products"
+      ],
+      "commonMistakes": [
+        "Don't recycle receipts — they contaminate paper recycling",
+        "If receipt is clearly not thermal (laser-printed), it can be recycled"
+      ],
+      "tags": ["paper", "thermal", "chemical"],
+      "examples": ["Grocery store receipt", "ATM receipt", "Gas station receipt"]
+    },
+    {
+      "id": "mirrors-window-glass",
+      "name": "Mirrors, window glass, and ceramics",
+      "aliases": [
+        "mirror", "window glass", "window pane", "picture frame glass",
+        "ceramic", "pottery", "porcelain", "china", "drinking glass",
+        "Pyrex", "glass dish", "crystal", "light bulb glass"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully in newspaper or cardboard for safety",
+        "Place in trash cart",
+        "Label 'broken glass' if sharp"
+      ],
+      "notes": [
+        "Window glass, mirrors, and ceramics have different chemical compositions than bottle glass",
+        "They melt at different temperatures and contaminate glass recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling — only bottle and jar glass is recyclable",
+        "Don't confuse drinking glasses with glass bottles"
+      ],
+      "tags": ["glass", "ceramic", "non-recyclable"],
+      "examples": ["Broken mirror", "Old window pane", "Broken coffee mug", "Pyrex dish"]
+    },
+    {
+      "id": "hangers",
+      "name": "Hangers",
+      "aliases": [
+        "hanger", "coat hanger", "wire hanger", "plastic hanger",
+        "clothes hanger", "wooden hanger", "velvet hanger"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Wire hangers can be returned to dry cleaners for reuse",
+        "Donate good hangers to thrift stores"
+      ],
+      "notes": [
+        "Hangers tangle in recycling machinery regardless of material"
+      ],
+      "commonMistakes": [
+        "Don't put any type of hanger in the recycling cart"
+      ],
+      "tags": ["mixed", "household", "closet"],
+      "examples": ["Wire hanger", "Plastic hanger", "Wooden hanger"]
+    },
+    {
+      "id": "pens-markers-tape",
+      "name": "Pens, markers, and tape",
+      "aliases": [
+        "pen", "marker", "Sharpie", "highlighter", "tape", "scotch tape",
+        "masking tape", "duct tape", "packing tape", "crayon"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Too small and made of mixed materials to recycle"
+      ],
+      "notes": [
+        "These items are made of multiple bonded materials that can't be separated"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Crayola and Terracycle offer mail-back programs for markers"
+      ],
+      "tags": ["office", "mixed", "small"],
+      "examples": ["Dried-out pen", "Old Sharpie", "Used roll of tape"]
+    },
+    {
+      "id": "fast-food-wrappers",
+      "name": "Fast food wrappers and containers",
+      "aliases": [
+        "fast food wrapper", "burger wrapper", "sandwich wrapper",
+        "foil-lined wrapper", "french fry container", "chicken box",
+        "fast food bag greasy", "taco wrapper"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Grease and food residue make these non-recyclable"
+      ],
+      "notes": [
+        "Most fast food packaging is contaminated with food and grease",
+        "Even if the paper looks clean, the lining is often non-recyclable"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy food packaging"
+      ],
+      "tags": ["paper", "food", "contaminated"],
+      "examples": ["McDonald's burger wrapper", "Taco Bell wrapper", "Greasy paper bag"]
+    },
+    {
+      "id": "plastic-lids-caps",
+      "name": "Plastic lids and bottle caps",
+      "aliases": [
+        "bottle cap", "plastic lid", "screw cap", "bottle top",
+        "soda cap", "water bottle cap", "jar lid plastic"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Remove from bottles and place in trash cart",
+        "Jacksonville specifically requires lids removed from recyclable bottles"
+      ],
+      "notes": [
+        "Lids are too small for sorting equipment and are often a different plastic type than the bottle",
+        "This is a Jacksonville-specific rule — some cities allow caps on"
+      ],
+      "commonMistakes": [
+        "Don't leave lids on bottles in Jacksonville recycling",
+        "Don't toss loose lids in recycling — they fall through screens"
+      ],
+      "tags": ["plastic", "lid", "cap", "small"],
+      "examples": ["Water bottle cap", "Soda bottle cap", "Detergent bottle cap"]
+    },
+    {
+      "id": "paper-towels-napkins",
+      "name": "Paper towels, napkins, and tissues",
+      "aliases": [
+        "paper towel", "napkin", "tissue", "Kleenex", "facial tissue",
+        "paper napkin", "kitchen towel paper"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Paper fibers are too short and contaminated to recycle"
+      ],
+      "notes": [
+        "Used paper towels and napkins have absorbed moisture and often food/grease",
+        "Even unused ones have fibers too short for recycling"
+      ],
+      "commonMistakes": [
+        "Don't recycle used paper towels or tissues",
+        "Don't compost if contaminated with cleaning chemicals"
+      ],
+      "tags": ["paper", "hygiene", "disposable"],
+      "examples": ["Used paper towel", "Dinner napkin", "Kleenex tissue"]
+    },
+    {
+      "id": "rubber-items",
+      "name": "Rubber items",
+      "aliases": [
+        "rubber", "rubber band", "rubber gloves", "garden hose",
+        "rubber mat", "flip flops", "rubber ball"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Rubber is not recyclable in Jacksonville's curbside program"
+      ],
+      "notes": [
+        "Rubber tangles in recycling machinery similar to plastic bags"
+      ],
+      "commonMistakes": [
+        "Don't put rubber items in recycling",
+        "Garden hoses are especially problematic — they wrap around machinery"
+      ],
+      "tags": ["rubber", "household"],
+      "examples": ["Old garden hose", "Worn flip flops", "Rubber gloves"]
+    },
+    {
+      "id": "medical-waste",
+      "name": "Medical waste",
+      "aliases": [
+        "medical waste", "bandages", "gauze", "wound dressing",
+        "surgical gloves", "face mask disposable", "medical tubing"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart (non-sharp items)",
+        "Sharps (needles, lancets) must be placed in approved sharps container",
+        "Never place loose sharps in trash or recycling"
+      ],
+      "notes": [
+        "Medical waste is specifically prohibited from Jacksonville recycling",
+        "For sharps disposal, see the sharps/needles entry"
+      ],
+      "commonMistakes": [
+        "Never put medical waste in recycling",
+        "Never put loose sharps in any curbside cart"
+      ],
+      "tags": ["medical", "hygiene", "waste"],
+      "examples": ["Used bandages", "Disposable face masks", "Medical gloves"]
+    },
+    {
+      "id": "pizza-boxes",
+      "name": "Pizza boxes",
+      "aliases": [
+        "pizza box", "pizza carton", "delivery pizza box"
+      ],
+      "category": "trash",
+      "instructions": [
+        "If heavily soiled with grease: place in trash",
+        "If the top half is clean: tear it off and recycle the clean portion",
+        "Greasy bottom always goes in trash"
+      ],
+      "notes": [
+        "Grease saturates cardboard fibers making them non-recyclable",
+        "The clean lid can often be separated and recycled"
+      ],
+      "commonMistakes": [
+        "Don't recycle the greasy parts — tear off and recycle only the clean portions"
+      ],
+      "tags": ["paper", "cardboard", "food", "contaminated"],
+      "examples": ["Domino's pizza box", "Papa John's pizza box"]
+    },
+    {
+      "id": "juice-pouches",
+      "name": "Juice pouches and drink pouches",
+      "aliases": [
+        "juice pouch", "Capri Sun", "drink pouch", "Kool-Aid Jammer",
+        "squeezable pouch", "baby food pouch"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Made of layers of plastic and metal that cannot be separated"
+      ],
+      "notes": [
+        "Pouches are made of flexible multi-layer packaging that is not recyclable"
+      ],
+      "commonMistakes": [
+        "Don't recycle pouches — they are not the same as cartons"
+      ],
+      "tags": ["plastic", "pouch", "beverage", "multi-layer"],
+      "examples": ["Capri Sun pouch", "GoGo Squeeze pouch", "Honest Kids pouch"]
+    },
+    {
+      "id": "yard-waste",
+      "name": "Yard waste",
+      "aliases": [
+        "grass clippings", "leaves", "branches", "lawn clippings",
+        "garden waste", "hedge trimmings", "tree trimmings",
+        "palm fronds", "weeds", "plant waste"
+      ],
+      "category": "compost",
+      "instructions": [
+        "Jacksonville provides separate yard waste collection",
+        "Place in designated yard waste containers or bags",
+        "Branches must be cut to 4 feet or less and bundled",
+        "Do NOT place in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Yard waste is specifically prohibited from the recycling cart",
+        "Jacksonville has regular yard waste pickup — check your schedule"
+      ],
+      "commonMistakes": [
+        "Don't put yard waste in the recycling cart",
+        "Don't use plastic bags for yard waste — use paper bags or containers"
+      ],
+      "tags": ["organic", "yard", "garden", "compost"],
+      "examples": ["Grass clippings", "Fallen leaves", "Small branches", "Palm fronds"]
+    },
+    {
+      "id": "food-scraps-general",
+      "name": "Food scraps (general)",
+      "aliases": [
+        "food scraps", "food waste", "kitchen scraps", "table scraps",
+        "leftover food", "spoiled food", "expired food", "rotten food"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Bag food waste to contain odor and prevent pests",
+        "Jacksonville does not have a curbside composting program"
+      ],
+      "notes": [
+        "Food scraps are not accepted in Jacksonville recycling",
+        "Consider home composting to reduce landfill waste"
+      ],
+      "commonMistakes": [
+        "Never put food waste in the recycling cart"
+      ],
+      "tags": ["organic", "food", "waste"],
+      "examples": ["Banana peel", "Apple core", "Leftover dinner", "Expired food"]
+    },
+    {
+      "id": "fruit-vegetable-scraps",
+      "name": "Fruit and vegetable scraps",
+      "aliases": [
+        "fruit scraps", "vegetable scraps", "banana peel", "apple core",
+        "potato peel", "onion skin", "carrot top", "lettuce",
+        "melon rind", "corn cob", "orange peel"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Ideal for home composting if you have a compost bin",
+        "Not accepted in recycling"
+      ],
+      "notes": [
+        "Jacksonville does not offer curbside composting",
+        "Fruit and vegetable scraps are excellent for backyard composting"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling cart"
+      ],
+      "tags": ["organic", "food", "compost-at-home"],
+      "examples": ["Banana peel", "Apple core", "Potato peels", "Wilted lettuce"]
+    },
+    {
+      "id": "coffee-grounds-tea",
+      "name": "Coffee grounds and tea bags",
+      "aliases": [
+        "coffee grounds", "coffee filter", "tea bag", "tea bags",
+        "used coffee", "tea leaves", "K-cup"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Great for home composting if you have a bin",
+        "K-cups: trash (some brands offer recyclable pods)"
+      ],
+      "notes": [
+        "No curbside composting in Jacksonville, but coffee grounds are excellent for garden compost"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Check if your K-cup brand is recyclable — most are not"
+      ],
+      "tags": ["organic", "food", "beverage", "compost-at-home"],
+      "examples": ["Used coffee grounds", "Paper coffee filter", "Used tea bags"]
+    },
+    {
+      "id": "eggshells",
+      "name": "Eggshells",
+      "aliases": [
+        "eggshell", "egg shell", "egg shells", "cracked egg"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Excellent for home composting — crush before adding to compost bin"
+      ],
+      "notes": [
+        "No curbside composting in Jacksonville",
+        "Eggshells add calcium to garden soil"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["organic", "food", "compost-at-home"],
+      "examples": ["Cracked eggshells", "Hard boiled egg shells"]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": [
+        "battery", "batteries", "AA battery", "AAA battery",
+        "9V battery", "C battery", "D battery", "lithium battery",
+        "rechargeable battery", "button battery", "car battery"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Do NOT place in trash or recycling carts",
+        "Take to a household hazardous waste collection event",
+        "Many retailers accept batteries: Home Depot, Lowe's, Best Buy",
+        "Car batteries: return to auto parts store"
+      ],
+      "notes": [
+        "Batteries are specifically listed as not accepted in Jacksonville recycling",
+        "Lithium batteries are a fire hazard in trash and recycling trucks"
+      ],
+      "commonMistakes": [
+        "NEVER put lithium batteries in trash — they cause fires",
+        "Don't put any batteries in the recycling cart"
+      ],
+      "tags": ["hazardous", "battery", "electronics"],
+      "examples": ["AA Duracell battery", "iPhone battery", "Car battery", "9V battery"]
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "aliases": [
+        "paint", "latex paint", "oil paint", "spray paint",
+        "primer", "stain", "wood stain", "paint can"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Latex paint: dry out small amounts with kitty litter, then trash the solid",
+        "Oil-based paint: take to household hazardous waste event",
+        "Never pour paint down drains",
+        "Check Jacksonville's HHW collection schedule"
+      ],
+      "notes": [
+        "Oil-based paint is hazardous waste",
+        "Dried latex paint in small quantities can go in regular trash"
+      ],
+      "commonMistakes": [
+        "Never pour paint down the drain or onto the ground",
+        "Don't put liquid paint cans in the trash"
+      ],
+      "tags": ["hazardous", "chemical", "household"],
+      "examples": ["Half-used paint can", "Old spray paint", "Wood stain"]
+    },
+    {
+      "id": "motor-oil-antifreeze",
+      "name": "Motor oil and antifreeze",
+      "aliases": [
+        "motor oil", "engine oil", "used oil", "antifreeze",
+        "coolant", "transmission fluid", "brake fluid"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Never pour down drains or on the ground",
+        "Many auto parts stores accept used motor oil (AutoZone, O'Reilly)",
+        "Take to household hazardous waste collection"
+      ],
+      "notes": [
+        "One gallon of used oil can contaminate one million gallons of water",
+        "Used motor oil is re-refined into new oil"
+      ],
+      "commonMistakes": [
+        "Never pour down storm drains — Jacksonville waterways flow to the St. Johns River",
+        "Don't mix motor oil with other fluids"
+      ],
+      "tags": ["hazardous", "automotive", "chemical"],
+      "examples": ["Used motor oil", "Old antifreeze", "Brake fluid"]
+    },
+    {
+      "id": "pesticides-chemicals",
+      "name": "Pesticides, herbicides, and household chemicals",
+      "aliases": [
+        "pesticide", "herbicide", "insecticide", "weed killer",
+        "Roundup", "bug spray", "rat poison", "pool chemicals",
+        "household chemicals", "ammonia", "acid"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Never pour down drains or into storm drains",
+        "Take to Jacksonville household hazardous waste collection",
+        "Keep in original containers with labels intact"
+      ],
+      "notes": [
+        "Pesticides and chemicals are serious environmental hazards",
+        "Jacksonville periodically holds HHW collection events — check jacksonville.gov"
+      ],
+      "commonMistakes": [
+        "Never pour chemicals down the drain",
+        "Don't mix different chemicals together"
+      ],
+      "tags": ["hazardous", "chemical", "poison"],
+      "examples": ["Old Roundup", "Pool chlorine", "Ant poison", "Drain cleaner"]
+    },
+    {
+      "id": "propane-tanks",
+      "name": "Propane tanks and compressed gas",
+      "aliases": [
+        "propane tank", "propane", "compressed gas", "gas cylinder",
+        "camping propane", "grill propane", "helium tank"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Do not place in trash or recycling",
+        "Small camping cylinders: take to HHW collection",
+        "Large grill tanks: exchange at hardware stores or take to propane dealer"
+      ],
+      "notes": [
+        "Pressurized containers can explode in compactor trucks",
+        "Many home improvement stores offer tank exchange programs"
+      ],
+      "commonMistakes": [
+        "NEVER place in trash or recycling — explosion risk",
+        "Don't puncture or attempt to empty tanks yourself"
+      ],
+      "tags": ["hazardous", "pressurized", "flammable"],
+      "examples": ["Grill propane tank", "Camping propane cylinder", "Old helium tank"]
+    },
+    {
+      "id": "fluorescent-bulbs-cfls",
+      "name": "Fluorescent bulbs and CFLs",
+      "aliases": [
+        "fluorescent bulb", "CFL", "compact fluorescent",
+        "fluorescent tube", "tube light", "CFL bulb"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Do not place in trash or recycling",
+        "Take to Home Depot or Lowe's for free recycling",
+        "Or bring to Jacksonville HHW collection event"
+      ],
+      "notes": [
+        "Fluorescent bulbs contain mercury and must be handled carefully",
+        "If broken, ventilate the area and follow EPA cleanup guidelines"
+      ],
+      "commonMistakes": [
+        "Don't put in trash — mercury is hazardous",
+        "Don't break bulbs — mercury vapor is released"
+      ],
+      "tags": ["hazardous", "mercury", "lighting"],
+      "examples": ["CFL spiral bulb", "4-foot fluorescent tube", "Circular fluorescent"]
+    },
+    {
+      "id": "medications",
+      "name": "Medications and pharmaceuticals",
+      "aliases": [
+        "medication", "medicine", "pills", "prescription drugs",
+        "over the counter medicine", "OTC drugs", "expired medication",
+        "vitamins"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Take to a DEA-authorized pharmacy drop-off location",
+        "Jacksonville Sheriff's Office has medication take-back boxes",
+        "Do not flush medications down the toilet",
+        "Do not put in trash or recycling"
+      ],
+      "notes": [
+        "Flushing medications contaminates water supplies",
+        "Jacksonville has several permanent medication drop-off sites"
+      ],
+      "commonMistakes": [
+        "Don't flush medications",
+        "Don't put in regular trash where they could be accessed by others"
+      ],
+      "tags": ["hazardous", "pharmaceutical", "medical"],
+      "examples": ["Expired Tylenol", "Old prescription medications", "Unused vitamins"]
+    },
+    {
+      "id": "electronics-ewaste",
+      "name": "Electronics / e-waste (small)",
+      "aliases": [
+        "electronics", "e-waste", "cell phone", "tablet", "iPad",
+        "phone charger", "cables", "headphones", "toaster",
+        "blender", "small appliance", "game console"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Do not place in trash or recycling carts",
+        "Take to an e-waste recycling facility",
+        "Best Buy accepts most small electronics for free",
+        "Call (904) 630-CITY for e-waste collection information"
+      ],
+      "notes": [
+        "Electronics are specifically prohibited from Jacksonville recycling",
+        "E-waste contains both hazardous materials and valuable recoverable metals"
+      ],
+      "commonMistakes": [
+        "Don't put electronics in the recycling cart",
+        "Remove batteries before dropping off"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff"],
+      "examples": ["Old cell phone", "Broken toaster", "Tangled cables", "Old game console"]
+    },
+    {
+      "id": "televisions-monitors",
+      "name": "Televisions and monitors",
+      "aliases": [
+        "TV", "television", "monitor", "flat screen", "LCD TV",
+        "LED TV", "CRT TV", "computer monitor", "screen"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Do not place in trash or recycling carts",
+        "Best Buy accepts TVs up to 32 inches for free",
+        "Larger TVs: contact a certified e-waste recycler",
+        "Call (904) 630-CITY for disposal options"
+      ],
+      "notes": [
+        "CRT TVs and monitors contain lead",
+        "LCD screens contain mercury backlights"
+      ],
+      "commonMistakes": [
+        "Don't leave TVs at the curb without scheduling pickup",
+        "Don't break screens — they may contain hazardous materials"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff", "hazardous"],
+      "examples": ["Old flat screen TV", "CRT television", "Computer monitor"]
+    },
+    {
+      "id": "computers-laptops",
+      "name": "Computers and laptops",
+      "aliases": [
+        "computer", "laptop", "desktop", "PC", "Mac", "Chromebook",
+        "keyboard", "mouse", "printer", "scanner"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Wipe personal data before recycling",
+        "Best Buy and Staples accept computers for recycling",
+        "Some nonprofits accept working computers (Goodwill, etc.)",
+        "Call (904) 630-CITY for e-waste disposal options"
+      ],
+      "notes": [
+        "Erase hard drives or remove them before recycling for privacy",
+        "Working computers can be donated for reuse"
+      ],
+      "commonMistakes": [
+        "Don't put in curbside carts",
+        "Don't forget to wipe personal data before recycling or donating"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff", "data"],
+      "examples": ["Old desktop computer", "Broken laptop", "Old printer"]
+    },
+    {
+      "id": "tires",
+      "name": "Tires",
+      "aliases": [
+        "tire", "tires", "car tire", "bicycle tire", "truck tire",
+        "flat tire", "used tire"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Not accepted in curbside carts",
+        "Take to a tire retailer — most accept old tires when you buy new ones",
+        "Jacksonville occasionally holds tire amnesty collection events"
+      ],
+      "notes": [
+        "Tires are banned from Florida landfills",
+        "Illegally dumped tires collect rainwater and breed mosquitoes"
+      ],
+      "commonMistakes": [
+        "Don't leave tires at the curb",
+        "Don't illegally dump tires — it's a code violation in Jacksonville"
+      ],
+      "tags": ["rubber", "automotive", "dropoff"],
+      "examples": ["Worn car tire", "Old bicycle tire", "Flat spare tire"]
+    },
+    {
+      "id": "large-appliances",
+      "name": "Large appliances",
+      "aliases": [
+        "appliance", "refrigerator", "fridge", "washer", "dryer",
+        "dishwasher", "oven", "stove", "water heater",
+        "air conditioner", "AC unit"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a bulk pickup with Jacksonville Public Works: (904) 630-CITY (2489)",
+        "Some appliance retailers offer haul-away when delivering new units",
+        "Scrap metal recyclers may accept large appliances"
+      ],
+      "notes": [
+        "Appliances with refrigerants (fridges, AC units) require special handling",
+        "Jacksonville offers scheduled bulk pickup for residents"
+      ],
+      "commonMistakes": [
+        "Don't leave at curb without scheduling pickup",
+        "Don't try to remove refrigerant yourself — it requires certification"
+      ],
+      "tags": ["appliance", "metal", "bulk", "dropoff"],
+      "examples": ["Old refrigerator", "Broken washer", "Old water heater"]
+    },
+    {
+      "id": "mattresses-furniture",
+      "name": "Mattresses and large furniture",
+      "aliases": [
+        "mattress", "box spring", "couch", "sofa", "loveseat",
+        "recliner", "desk", "table", "dresser", "bookshelf",
+        "bed frame", "futon"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a bulk pickup with Jacksonville Public Works: (904) 630-CITY (2489)",
+        "If in good condition, donate to Goodwill, Salvation Army, or Habitat ReStore",
+        "Not accepted in regular curbside carts"
+      ],
+      "notes": [
+        "Jacksonville provides bulk pickup for large items — call to schedule",
+        "Usable furniture has great donation value"
+      ],
+      "commonMistakes": [
+        "Don't leave at curb without scheduling a bulk pickup",
+        "Don't put in yard waste area"
+      ],
+      "tags": ["furniture", "bulk", "donation", "dropoff"],
+      "examples": ["Old mattress", "Worn-out couch", "Broken desk", "Old dresser"]
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking oil and grease",
+      "aliases": [
+        "cooking oil", "vegetable oil", "grease", "fryer oil",
+        "bacon grease", "frying oil", "canola oil used",
+        "olive oil used", "lard"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Small amounts: absorb with paper towels and place in trash",
+        "Large amounts: store in sealed container and take to a recycling center",
+        "Never pour down drains — it causes sewer blockages"
+      ],
+      "notes": [
+        "Cooking oil can be recycled into biodiesel",
+        "Pouring grease down drains is the leading cause of sewer backups"
+      ],
+      "commonMistakes": [
+        "NEVER pour cooking oil or grease down the drain",
+        "Don't put liquid oil in the recycling cart"
+      ],
+      "tags": ["organic", "oil", "kitchen", "dropoff"],
+      "examples": ["Used fryer oil", "Bacon grease", "Old cooking oil"]
+    },
+    {
+      "id": "sharps-needles",
+      "name": "Sharps and needles",
+      "aliases": [
+        "needle", "syringe", "lancet", "sharps", "insulin needle",
+        "diabetic lancet", "pen needle", "EpiPen"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Place in an FDA-cleared sharps container or heavy-duty plastic container",
+        "When full, seal the container and take to an approved drop-off site",
+        "Jacksonville Fire and Rescue stations accept sealed sharps containers",
+        "Never place loose sharps in trash or recycling"
+      ],
+      "notes": [
+        "Loose needles endanger sanitation workers",
+        "Use a thick plastic laundry detergent bottle if you don't have a sharps container"
+      ],
+      "commonMistakes": [
+        "NEVER put loose needles in trash or recycling",
+        "Don't overfill sharps containers — seal when 3/4 full"
+      ],
+      "tags": ["hazardous", "medical", "sharps"],
+      "examples": ["Used insulin syringe", "Diabetic lancet", "Used EpiPen"]
+    },
+    {
+      "id": "light-bulbs-incandescent-led",
+      "name": "Incandescent and LED light bulbs",
+      "aliases": [
+        "light bulb", "LED bulb", "incandescent bulb", "bulb",
+        "lamp bulb", "Edison bulb"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap in paper or place in original packaging",
+        "Place in trash cart",
+        "Incandescent and LED bulbs do not contain mercury"
+      ],
+      "notes": [
+        "Unlike CFLs, incandescent and LED bulbs are not hazardous",
+        "They are not recyclable through curbside programs due to their mixed materials"
+      ],
+      "commonMistakes": [
+        "Don't confuse with CFL bulbs — CFLs contain mercury and need special handling",
+        "Don't put in recycling"
+      ],
+      "tags": ["household", "lighting", "glass"],
+      "examples": ["Burnt-out LED bulb", "Old incandescent bulb"]
+    },
+    {
+      "id": "shredded-paper",
+      "name": "Shredded paper",
+      "aliases": [
+        "shredded paper", "paper shreds", "shredded documents"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place shredded paper inside a paper bag",
+        "Staple or fold the bag closed",
+        "Place the bag in yellow-lid recycling cart"
+      ],
+      "notes": [
+        "Loose shredded paper blows away and jams machinery",
+        "Containing it in a paper bag keeps it together through processing"
+      ],
+      "commonMistakes": [
+        "Don't put loose shredded paper in the cart — it must be bagged in a paper bag",
+        "Don't use a plastic bag to contain shredded paper"
+      ],
+      "tags": ["paper", "office", "recyclable"],
+      "examples": ["Shredded bank statements", "Shredded junk mail"]
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "aliases": [
+        "book", "textbook", "paperback", "hardcover", "novel",
+        "reference book", "children's book"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Donate books in good condition to Jacksonville Public Library or thrift stores",
+        "Damaged books: remove hardcovers and recycle the paper pages",
+        "Hardcovers go in trash"
+      ],
+      "notes": [
+        "Paper pages are recyclable; hardcovers have mixed materials (glue, fabric, cardboard)",
+        "Donation is always preferred over recycling"
+      ],
+      "commonMistakes": [
+        "Don't throw away books that could be donated",
+        "Hardcovers should be removed before recycling the pages"
+      ],
+      "tags": ["paper", "donation", "recyclable"],
+      "examples": ["Old textbook", "Worn paperback novel", "Children's book"]
+    }
+  ],
+  "rulesSummary": {
+    "accepted": {
+      "recycle": [
+        "Plastics #1, #2, #3, #5, #7 — bottles and containers only, lids removed",
+        "Glass bottles and jars (green, brown, clear)",
+        "Aluminum and steel/tin cans",
+        "Newspapers, inserts, magazines, catalogs, phone books",
+        "Cardboard boxes (flattened)",
+        "Paper, mail, envelopes",
+        "Cereal boxes and paperboard (flatten, remove liners)",
+        "Paper bags",
+        "Empty aerosol cans",
+        "Milk and juice cartons",
+        "Shredded paper (in a paper bag)",
+        "Books (pages; donate if possible)"
+      ],
+      "compost": [
+        "Yard waste (separate collection — grass, leaves, branches)"
+      ],
+      "trash": [
+        "Plastic bags, wraps, and film",
+        "Styrofoam / polystyrene foam",
+        "Diapers and hygiene products",
+        "Soiled, greasy, or wet paper",
+        "Candy wrappers, chip bags, snack pouches",
+        "Clothing and textiles",
+        "Disposable coffee cups",
+        "Plastic utensils and straws",
+        "Food scraps and food waste",
+        "Paper towels, napkins, tissues",
+        "Pizza boxes (greasy portions)",
+        "Aluminum foil and foil pans",
+        "Plastic lids and bottle caps"
+      ]
+    },
+    "notAccepted": {
+      "recycle": [
+        "Plastic bags — they jam sorting machinery",
+        "Styrofoam cups, plates, containers, packing peanuts",
+        "Food scraps or food-contaminated items",
+        "Electronics and batteries",
+        "Yard waste",
+        "Diapers and hygiene products",
+        "Soiled or wet paper",
+        "Clothing and textiles",
+        "Tools, toys, and household items",
+        "Construction and demolition waste",
+        "Medical waste",
+        "Mirrors, window glass, ceramics, drinking glasses",
+        "Plastic lids and bottle caps (remove from bottles)"
+      ]
+    },
+    "tips": [
+      "Empty. Clean. Dry. — the three rules for Jacksonville recycling",
+      "All recyclables must be placed LOOSE in the yellow-lid cart — never bagged",
+      "Remove lids from all bottles before recycling (Jacksonville-specific rule)",
+      "Flatten cardboard boxes to save space in your cart",
+      "When in doubt, throw it out — contamination hurts the entire recycling stream",
+      "Plastic bags are the #1 contaminant — bring them to Publix or Walmart instead",
+      "Rinse food containers — they don't need to be spotless, just reasonably clean",
+      "Greasy pizza box? Tear off the clean top to recycle, trash the greasy bottom",
+      "Schedule bulk pickups for large items: (904) 630-CITY (2489)",
+      "Check jacksonville.gov for household hazardous waste collection events"
+    ]
+  },
+  "locations": [
+    {
+      "name": "Jacksonville Household Hazardous Waste Collection",
+      "phone": "(904) 630-2489",
+      "url": "https://www.jacksonville.gov/departments/public-works/solid-waste",
+      "accepts": [
+        "Batteries",
+        "Paint (latex and oil-based)",
+        "Motor oil and antifreeze",
+        "Pesticides and chemicals",
+        "Fluorescent bulbs and CFLs",
+        "Propane tanks",
+        "Electronics"
+      ],
+      "notes": "Periodic collection events — check jacksonville.gov for schedule"
+    },
+    {
+      "name": "Trail Ridge Landfill",
+      "address": "4600 Trail Ridge Road, Jacksonville, FL 32234",
+      "phone": "(904) 387-8847",
+      "accepts": [
+        "Household waste",
+        "Construction debris",
+        "Yard waste",
+        "Bulk items"
+      ],
+      "hours": "Monday-Saturday 6am-5:30pm"
+    },
+    {
+      "name": "Jacksonville Public Works - Solid Waste Division",
+      "phone": "(904) 630-2489",
+      "url": "https://www.jacksonville.gov/departments/public-works/solid-waste",
+      "accepts": [
+        "Bulk item pickup scheduling",
+        "Recycling cart issues",
+        "Yard waste collection"
+      ],
+      "notes": "Call (904) 630-CITY (2489) for all solid waste services"
+    }
+  ]
+}

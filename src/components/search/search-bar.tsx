@@ -136,6 +136,9 @@ export function SearchBar({ autoFocus = false, onSearch, defaultValue = "" }: Se
           if (highlightIndex >= 0 && results![highlightIndex]) {
             const r = results![highlightIndex];
             handleSelect(r.materialId, r.name);
+          } else if (results!.length > 0) {
+            const first = results![0];
+            handleSelect(first.materialId, first.name);
           } else {
             handleSubmit();
           }
@@ -228,6 +231,7 @@ export function SearchBar({ autoFocus = false, onSearch, defaultValue = "" }: Se
             id="search-listbox"
             className="absolute z-50 mt-1 w-full overflow-hidden rounded-lg border bg-popover shadow-lg"
             role="listbox"
+            aria-label="Search results"
             initial={{ opacity: 0, y: -4, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -4, scale: 0.98 }}

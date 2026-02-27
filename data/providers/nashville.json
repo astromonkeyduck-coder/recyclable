@@ -1,0 +1,958 @@
+{
+  "id": "nashville",
+  "displayName": "Nashville, TN",
+  "coverage": {
+    "country": "US",
+    "region": "TN",
+    "city": "Nashville",
+    "zips": [
+      "37201","37203","37204","37205","37206","37207","37208","37209",
+      "37210","37211","37212","37213","37214","37215","37216","37217",
+      "37218","37219","37220","37221","37228","37232"
+    ],
+    "aliases": [
+      "nashville tennessee",
+      "nashville tn",
+      "music city",
+      "davidson county"
+    ]
+  },
+  "source": {
+    "name": "Metro Nashville Public Works - Waste Services",
+    "url": "https://nashville.gov/departments/waste-services/trash-and-recycling-services/recycle-right",
+    "generatedAt": "2026-02-27",
+    "notes": "Based on official Nashville Waste Services Recycle Right guidelines. NO glass in curbside recycling — glass must go to drop-off locations. Bi-weekly collection.",
+    "license": "Public government data"
+  },
+  "materials": [
+    {
+      "id": "plastic-bottles",
+      "name": "Plastic bottles",
+      "aliases": ["plastic bottle","water bottle","soda bottle","pop bottle","beverage bottle","sports drink bottle","juice bottle"],
+      "category": "recycle",
+      "instructions": ["Empty, clean, and dry","Caps can stay on or be removed","Place loose in recycling bin by 6 AM on collection day with arrow toward street"],
+      "notes": ["Nashville accepts plastic beverage bottles curbside","Bi-weekly collection; check your schedule"],
+      "commonMistakes": ["Don't include bottles with liquid still inside","Don't bag recyclables in plastic bags"],
+      "tags": ["plastic","bottle","beverage","recyclable"],
+      "examples": ["Water bottle","Soda bottle","Gatorade bottle","Juice bottle"]
+    },
+    {
+      "id": "plastic-jugs",
+      "name": "Plastic jugs",
+      "aliases": ["milk jug","juice jug","laundry detergent jug","plastic jug","fabric softener jug","bleach jug"],
+      "category": "recycle",
+      "instructions": ["Empty, rinse, and dry","Replace cap or leave off","Place loose in recycling bin"],
+      "notes": ["Includes milk, juice, laundry, and bath product jugs"],
+      "commonMistakes": ["Don't include jugs that held motor oil or chemicals","Don't crush; leave in original shape for sorting"],
+      "tags": ["plastic","jug","container","recyclable"],
+      "examples": ["Milk jug","Laundry detergent jug","Juice jug","Bleach jug"]
+    },
+    {
+      "id": "plastic-jars",
+      "name": "Plastic jars and food containers",
+      "aliases": ["plastic jar","peanut butter jar","plastic food container","plastic food jar","mayonnaise jar plastic"],
+      "category": "recycle",
+      "instructions": ["Empty, rinse clean, and dry","Place loose in recycling bin"],
+      "notes": ["Nashville accepts rigid plastic jars for food items"],
+      "commonMistakes": ["Don't include containers with food residue","Don't include plastic takeout containers or cups — those are trash in Nashville"],
+      "tags": ["plastic","jar","food","recyclable"],
+      "examples": ["Peanut butter jar","Mayonnaise jar","Applesauce jar"]
+    },
+    {
+      "id": "kitchen-bottles",
+      "name": "Kitchen and bath plastic bottles",
+      "aliases": ["dish soap bottle","hand soap bottle","shampoo bottle","conditioner bottle","body wash bottle","lotion bottle"],
+      "category": "recycle",
+      "instructions": ["Empty and rinse","Place loose in recycling bin"],
+      "notes": ["Kitchen and bathroom plastic bottles are accepted"],
+      "commonMistakes": ["Don't include tubes (toothpaste, lotion tubes) — those are trash"],
+      "tags": ["plastic","bottle","kitchen","bath","recyclable"],
+      "examples": ["Dish soap bottle","Shampoo bottle","Hand soap bottle","Body wash bottle"]
+    },
+    {
+      "id": "aluminum-cans",
+      "name": "Aluminum cans",
+      "aliases": ["soda can","beer can","aluminum can","beverage can","pop can","sparkling water can","seltzer can"],
+      "category": "recycle",
+      "instructions": ["Empty and rinse","Place loose in recycling bin"],
+      "notes": ["Aluminum is infinitely recyclable","No need to crush cans"],
+      "commonMistakes": ["Don't include cans with food or liquid inside","Don't include aluminum foil pans or trays — Nashville doesn't list those as accepted"],
+      "tags": ["metal","aluminum","can","beverage","recyclable"],
+      "examples": ["Soda can","Beer can","Seltzer can","Energy drink can"]
+    },
+    {
+      "id": "steel-food-cans",
+      "name": "Steel and tin food cans",
+      "aliases": ["tin can","steel can","soup can","food can","tuna can","bean can","vegetable can","canned food"],
+      "category": "recycle",
+      "instructions": ["Empty, rinse, and dry","Labels can stay on","Place loose in recycling bin"],
+      "notes": ["Food and beverage cans are accepted in Nashville recycling"],
+      "commonMistakes": ["Don't include cans with food residue","Don't include aerosol cans unless specifically listed"],
+      "tags": ["metal","steel","tin","can","food","recyclable"],
+      "examples": ["Soup can","Tuna can","Bean can","Tomato sauce can"]
+    },
+    {
+      "id": "cardboard",
+      "name": "Corrugated cardboard",
+      "aliases": ["cardboard","cardboard box","shipping box","amazon box","corrugated box","moving box"],
+      "category": "recycle",
+      "instructions": ["Flatten all boxes","Remove packing materials (tape is OK)","Place in or beside recycling bin"],
+      "notes": ["Must be clean, empty, and dry","Nashville requires flattening"],
+      "commonMistakes": ["Don't include wet or food-soiled cardboard","Don't include wax-coated cardboard"],
+      "tags": ["paper","cardboard","packaging","recyclable"],
+      "examples": ["Amazon box","Shoe box","Shipping box","Moving box"]
+    },
+    {
+      "id": "paper-newspaper",
+      "name": "Paper and newspapers",
+      "aliases": ["newspaper","paper","newsprint","daily paper","office paper","printer paper","copy paper","loose leaf paper"],
+      "category": "recycle",
+      "instructions": ["Place loose in recycling bin","Do not bag in plastic"],
+      "notes": ["Clean, dry paper is accepted"],
+      "commonMistakes": ["Don't include shredded paper loose — it's too small to sort","Don't include wet or food-soiled paper"],
+      "tags": ["paper","newspaper","office","recyclable"],
+      "examples": ["Newspaper","Office paper","Printer paper","Notebook paper"]
+    },
+    {
+      "id": "magazines-catalogs",
+      "name": "Magazines and catalogs",
+      "aliases": ["magazine","catalog","catalogue","glossy paper","periodical","brochure"],
+      "category": "recycle",
+      "instructions": ["Place loose in recycling bin","Staples and bindings are OK"],
+      "notes": ["Glossy paper is accepted in Nashville recycling"],
+      "commonMistakes": ["Don't include magazines in plastic bags"],
+      "tags": ["paper","magazine","catalog","recyclable"],
+      "examples": ["Magazine","Catalog","Brochure","Pamphlet"]
+    },
+    {
+      "id": "mail",
+      "name": "Mail and envelopes",
+      "aliases": ["mail","junk mail","envelope","letter","direct mail","flyer","circular"],
+      "category": "recycle",
+      "instructions": ["Place loose in recycling bin","Window envelopes are OK"],
+      "notes": ["Junk mail and regular mail accepted"],
+      "commonMistakes": ["Don't include padded/bubble mailers — those are trash"],
+      "tags": ["paper","mail","envelope","recyclable"],
+      "examples": ["Junk mail","Letter envelope","Flyer","Circular"]
+    },
+    {
+      "id": "food-beverage-cartons",
+      "name": "Food and beverage cartons",
+      "aliases": ["milk carton","juice carton","juice box","broth carton","soup carton","tetra pak","aseptic carton","shelf-stable carton"],
+      "category": "recycle",
+      "instructions": ["Empty and rinse","Replace cap if it has one","Place loose in recycling bin"],
+      "notes": ["Nashville accepts cartons including shelf-stable (Tetra Pak) types"],
+      "commonMistakes": ["Don't include cartons with liquid still inside","Don't flatten — leave in shape for sorting"],
+      "tags": ["paper","carton","beverage","food","recyclable"],
+      "examples": ["Milk carton","Juice box","Broth carton","Coconut water carton"]
+    },
+    {
+      "id": "cereal-boxes",
+      "name": "Cereal and food boxes",
+      "aliases": ["cereal box","cracker box","pasta box","food box","snack box","granola bar box"],
+      "category": "recycle",
+      "instructions": ["Remove inner plastic bag/liner and trash it","Flatten the box","Place loose in recycling bin"],
+      "notes": ["Paperboard boxes from kitchen/pantry items are accepted"],
+      "commonMistakes": ["Don't include the plastic liner — that's trash","Don't include frozen food boxes — those have wax/plastic coating"],
+      "tags": ["paper","paperboard","box","food","recyclable"],
+      "examples": ["Cereal box","Cracker box","Pasta box","Granola bar box"]
+    },
+    {
+      "id": "tissue-boxes",
+      "name": "Tissue boxes",
+      "aliases": ["tissue box","kleenex box","facial tissue box"],
+      "category": "recycle",
+      "instructions": ["Remove the plastic film from the opening","Flatten and place in recycling bin"],
+      "notes": ["The cardboard box is recyclable; the tissues themselves are trash"],
+      "commonMistakes": ["Don't include used tissues — those are trash","Remove the plastic opening film"],
+      "tags": ["paper","paperboard","box","recyclable"],
+      "examples": ["Kleenex box","Store-brand tissue box"]
+    },
+    {
+      "id": "toilet-paper-rolls",
+      "name": "Toilet paper and paper towel rolls",
+      "aliases": ["toilet paper roll","paper towel roll","cardboard tube","TP roll","empty roll"],
+      "category": "recycle",
+      "instructions": ["Place empty cardboard tubes in recycling bin"],
+      "notes": ["Nashville specifically lists these as accepted"],
+      "commonMistakes": ["Only the cardboard tube is recyclable, not the paper towel itself"],
+      "tags": ["paper","cardboard","tube","recyclable"],
+      "examples": ["Toilet paper tube","Paper towel tube","Wrapping paper tube"]
+    },
+    {
+      "id": "glass-bottles",
+      "name": "Glass bottles",
+      "aliases": ["glass bottle","wine bottle","beer bottle","liquor bottle","glass beverage bottle","glass soda bottle"],
+      "category": "dropoff",
+      "instructions": ["DO NOT put in curbside recycling bin","Take to a Nashville glass drop-off site or Convenience Center","Empty and rinse before drop-off"],
+      "notes": ["IMPORTANT: Nashville does NOT accept glass in curbside recycling","Glass must go to designated drop-off locations","This is one of Nashville's most important rules"],
+      "commonMistakes": ["Don't put glass in your curbside recycling bin — it contaminates other materials","Don't put broken glass in recycling; wrap and trash"],
+      "tags": ["glass","bottle","dropoff"],
+      "examples": ["Wine bottle","Beer bottle","Liquor bottle","Olive oil bottle"]
+    },
+    {
+      "id": "glass-jars",
+      "name": "Glass jars",
+      "aliases": ["glass jar","mason jar","sauce jar","jam jar","pickle jar","salsa jar","glass food container"],
+      "category": "dropoff",
+      "instructions": ["DO NOT put in curbside recycling bin","Take to a Nashville glass drop-off site or Convenience Center","Empty, rinse, and remove metal lids"],
+      "notes": ["Nashville does NOT accept glass curbside — all glass goes to drop-off","Metal lids can be recycled separately in curbside bin"],
+      "commonMistakes": ["Don't put glass jars in your recycling bin","Don't put broken glass in recycling"],
+      "tags": ["glass","jar","dropoff"],
+      "examples": ["Pasta sauce jar","Jam jar","Pickle jar","Salsa jar"]
+    },
+    {
+      "id": "plastic-bags",
+      "name": "Plastic bags and wrap",
+      "aliases": ["plastic bag","grocery bag","shopping bag","produce bag","plastic film","cling wrap","saran wrap","zip lock bag"],
+      "category": "trash",
+      "instructions": ["Place in trash","Or return to grocery store drop-off bins","Never put in recycling bin"],
+      "notes": ["Plastic bags jam recycling machinery","Many Nashville grocery stores have bag collection bins"],
+      "commonMistakes": ["Never bag recyclables in plastic bags","Don't put any plastic film in curbside recycling"],
+      "tags": ["plastic","bag","film","trash"],
+      "examples": ["Grocery bag","Produce bag","Bread bag","Dry cleaning bag"]
+    },
+    {
+      "id": "bubble-wrap",
+      "name": "Bubble wrap",
+      "aliases": ["bubble wrap","air pillows","bubble mailer","packing bubbles"],
+      "category": "trash",
+      "instructions": ["Place in trash","Or take to store drop-off with other plastic film"],
+      "notes": ["Not accepted in Nashville curbside recycling"],
+      "commonMistakes": ["Don't put in recycling bin"],
+      "tags": ["plastic","film","packaging","trash"],
+      "examples": ["Bubble wrap","Amazon air pillows","Padded mailer"]
+    },
+    {
+      "id": "plastic-wrap",
+      "name": "Plastic wrap and film",
+      "aliases": ["plastic wrap","shrink wrap","stretch wrap","pallet wrap","plastic sheeting","cling film"],
+      "category": "trash",
+      "instructions": ["Place in trash","Do not put in recycling bin"],
+      "notes": ["All plastic film and wrap is excluded from Nashville curbside recycling"],
+      "commonMistakes": ["Don't put in recycling — it tangles in machinery"],
+      "tags": ["plastic","film","wrap","trash"],
+      "examples": ["Food cling wrap","Shrink wrap from packages","Plastic furniture wrap"]
+    },
+    {
+      "id": "styrofoam",
+      "name": "Styrofoam and polystyrene",
+      "aliases": ["styrofoam","polystyrene","foam","foam cup","foam container","packing peanuts","foam tray","meat tray foam"],
+      "category": "trash",
+      "instructions": ["Place in trash","Not recyclable in Nashville"],
+      "notes": ["Styrofoam is explicitly excluded from Nashville recycling"],
+      "commonMistakes": ["Don't put in recycling bin","Don't confuse with rigid plastic containers"],
+      "tags": ["plastic","foam","styrofoam","trash"],
+      "examples": ["Foam takeout container","Foam cup","Packing peanuts","Foam meat tray"]
+    },
+    {
+      "id": "plastic-takeout-containers",
+      "name": "Plastic takeout containers",
+      "aliases": ["takeout container","to-go container","plastic clamshell","deli container","salad container","berry container"],
+      "category": "trash",
+      "instructions": ["Place in trash","Not accepted in Nashville curbside recycling"],
+      "notes": ["Nashville specifically excludes plastic takeout containers from recycling","Use the Waste Wizard app if unsure about a specific container"],
+      "commonMistakes": ["Don't put in recycling even if they have a recycling symbol","The recycling number doesn't mean it's accepted curbside"],
+      "tags": ["plastic","container","takeout","trash"],
+      "examples": ["Plastic clamshell","Deli container","Salad container","Berry container"]
+    },
+    {
+      "id": "plastic-cups",
+      "name": "Plastic cups",
+      "aliases": ["plastic cup","solo cup","red cup","party cup","clear plastic cup","cold drink cup"],
+      "category": "trash",
+      "instructions": ["Place in trash","Not accepted in Nashville recycling"],
+      "notes": ["Nashville excludes plastic cups from curbside recycling"],
+      "commonMistakes": ["Don't put in recycling even if marked recyclable"],
+      "tags": ["plastic","cup","trash"],
+      "examples": ["Solo cup","Clear plastic cup","Iced coffee cup","Smoothie cup"]
+    },
+    {
+      "id": "plastic-tubs",
+      "name": "Plastic tubs (yogurt, butter, etc.)",
+      "aliases": ["yogurt tub","butter tub","sour cream tub","cottage cheese tub","cool whip tub","margarine tub","hummus tub"],
+      "category": "trash",
+      "instructions": ["Place in trash","Nashville does not accept plastic tubs in curbside recycling"],
+      "notes": ["Differs from some other cities that accept tubs","Nashville only accepts plastic bottles, jars, and jugs"],
+      "commonMistakes": ["Don't put in recycling — Nashville only accepts bottles, jars, and jugs"],
+      "tags": ["plastic","tub","container","trash"],
+      "examples": ["Yogurt tub","Butter tub","Sour cream container","Cool Whip tub"]
+    },
+    {
+      "id": "food-waste",
+      "name": "Food waste and scraps",
+      "aliases": ["food scraps","food waste","leftovers","spoiled food","table scraps","plate scrapings"],
+      "category": "trash",
+      "instructions": ["Bag and place in trash","Nashville does not have curbside composting"],
+      "notes": ["No municipal composting program; consider home composting","Use the Waste Wizard app for specific items"],
+      "commonMistakes": ["Don't put food in recycling bin — it contaminates recyclables","Never pour liquids in recycling bin"],
+      "tags": ["organic","food","trash"],
+      "examples": ["Leftovers","Spoiled food","Plate scrapings"]
+    },
+    {
+      "id": "fruit",
+      "name": "Fruit and fruit scraps",
+      "aliases": ["fruit","apple","banana","orange","grapes","strawberry","watermelon","peach","mango","avocado","lemon","fruit peel"],
+      "category": "trash",
+      "instructions": ["Place in trash","Consider home composting"],
+      "notes": ["Nashville has no curbside composting program"],
+      "commonMistakes": ["Don't put in recycling bin"],
+      "tags": ["organic","food","fruit","trash"],
+      "examples": ["Banana peel","Apple core","Orange rind","Avocado skin"]
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetables and vegetable scraps",
+      "aliases": ["vegetable","vegetables","carrot","broccoli","lettuce","onion","potato","corn","celery","pepper"],
+      "category": "trash",
+      "instructions": ["Place in trash","Consider home composting"],
+      "notes": ["No curbside composting in Nashville"],
+      "commonMistakes": ["Don't put in recycling bin"],
+      "tags": ["organic","food","vegetable","trash"],
+      "examples": ["Potato peels","Carrot tops","Wilted lettuce","Corn cobs"]
+    },
+    {
+      "id": "meat-bones",
+      "name": "Meat and bones",
+      "aliases": ["meat","chicken","beef","pork","fish","bones","steak","bacon","turkey","ham","ribs"],
+      "category": "trash",
+      "instructions": ["Bag securely and place in trash"],
+      "notes": ["Not accepted in recycling or any curbside program"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["organic","food","meat","trash"],
+      "examples": ["Chicken bones","Steak trimmings","Fish scraps"]
+    },
+    {
+      "id": "dairy",
+      "name": "Dairy products",
+      "aliases": ["dairy","milk","cheese","yogurt","butter","cream","sour cream","ice cream"],
+      "category": "trash",
+      "instructions": ["Place in trash","Rinse and recycle the container separately if it qualifies"],
+      "notes": ["The dairy product itself goes in trash; recycle qualifying containers"],
+      "commonMistakes": ["Don't pour milk down the recycling bin","Rinse containers before recycling"],
+      "tags": ["organic","food","dairy","trash"],
+      "examples": ["Expired milk","Old cheese","Spoiled yogurt"]
+    },
+    {
+      "id": "bread-baked-goods",
+      "name": "Bread and baked goods",
+      "aliases": ["bread","bagel","muffin","cake","cookies","pastry","baked goods","stale bread","rolls","buns"],
+      "category": "trash",
+      "instructions": ["Place in trash","Consider home composting for plain bread"],
+      "notes": ["No curbside composting in Nashville"],
+      "commonMistakes": ["Don't put in recycling bin"],
+      "tags": ["organic","food","bread","trash"],
+      "examples": ["Stale bread","Old bagels","Leftover cake","Moldy muffin"]
+    },
+    {
+      "id": "coffee-grounds",
+      "name": "Coffee grounds and tea bags",
+      "aliases": ["coffee grounds","tea bag","used coffee","coffee filter","tea leaves"],
+      "category": "trash",
+      "instructions": ["Place in trash","Great for home composting if you have a bin"],
+      "notes": ["Nashville has no curbside composting program"],
+      "commonMistakes": ["Don't put in recycling bin"],
+      "tags": ["organic","food","coffee","trash"],
+      "examples": ["Used coffee grounds","Used tea bag","Coffee filter with grounds"]
+    },
+    {
+      "id": "egg-shells",
+      "name": "Egg shells",
+      "aliases": ["egg shell","eggshell","egg shells","broken egg"],
+      "category": "trash",
+      "instructions": ["Place in trash","Great for home composting"],
+      "notes": ["No curbside composting in Nashville"],
+      "commonMistakes": ["Don't put in recycling bin"],
+      "tags": ["organic","food","trash"],
+      "examples": ["Crushed egg shells","Broken egg shells"]
+    },
+    {
+      "id": "yard-waste",
+      "name": "Yard waste",
+      "aliases": ["yard waste","grass clippings","leaves","branches","garden waste","lawn clippings","hedge trimmings","weeds"],
+      "category": "trash",
+      "instructions": ["Nashville collects yard waste separately — check Metro schedule","Do NOT put in recycling bin","Use paper yard waste bags or your green cart if provided"],
+      "notes": ["Yard waste is explicitly excluded from recycling","Nashville has seasonal yard waste collection"],
+      "commonMistakes": ["Don't put in recycling bin","Don't bag yard waste in plastic bags"],
+      "tags": ["organic","yard","garden","trash"],
+      "examples": ["Grass clippings","Fallen leaves","Small branches","Weeds"]
+    },
+    {
+      "id": "clothing-textiles",
+      "name": "Clothing and textiles",
+      "aliases": ["clothes","clothing","old clothes","textiles","fabric","linens","sheets","towels","curtains","rags"],
+      "category": "dropoff",
+      "instructions": ["Do NOT put in recycling bin","Donate to Goodwill, Salvation Army, or textile collection bins","Worn-out textiles: place in trash"],
+      "notes": ["Nashville explicitly excludes clothing and linens from recycling","Donation is preferred"],
+      "commonMistakes": ["Don't put in curbside recycling","Donate usable items"],
+      "tags": ["textile","clothing","fabric","dropoff"],
+      "examples": ["Old t-shirt","Worn jeans","Old sheets","Towels"]
+    },
+    {
+      "id": "electronics",
+      "name": "Electronics and e-waste",
+      "aliases": ["electronics","e-waste","computer","laptop","TV","television","printer","monitor","tablet","keyboard"],
+      "category": "dropoff",
+      "instructions": ["Do NOT put in recycling bin or trash","Take to a Nashville Convenience Center or e-waste collection event","Best Buy also accepts many electronics"],
+      "notes": ["Nashville excludes electronics from curbside recycling","Wipe personal data before disposal"],
+      "commonMistakes": ["Don't put in recycling bin — wires and electronics jam machinery","Don't put in trash — they contain hazardous materials"],
+      "tags": ["electronics","e-waste","dropoff"],
+      "examples": ["Old laptop","Broken TV","Printer","Old monitor"]
+    },
+    {
+      "id": "hoses",
+      "name": "Hoses",
+      "aliases": ["garden hose","hose","water hose","rubber hose"],
+      "category": "trash",
+      "instructions": ["Place in trash","Do NOT put in recycling bin"],
+      "notes": ["Nashville specifically bans hoses from recycling — they tangle in machinery"],
+      "commonMistakes": ["Don't put in recycling; it's a 'tangler'"],
+      "tags": ["rubber","tangler","trash"],
+      "examples": ["Garden hose","Water hose"]
+    },
+    {
+      "id": "wires-chains",
+      "name": "Wires, chains, and cords",
+      "aliases": ["wire","chain","cord","extension cord","cable","string lights","rope","christmas lights"],
+      "category": "trash",
+      "instructions": ["Place in trash or take to scrap metal recycler","Do NOT put in curbside recycling bin"],
+      "notes": ["Nashville specifically excludes wires and chains from recycling","They wrap around machinery and cause shutdowns"],
+      "commonMistakes": ["Don't put in recycling bin","Take large amounts of scrap metal to a metal recycler"],
+      "tags": ["metal","wire","chain","tangler","trash"],
+      "examples": ["Extension cord","Old Christmas lights","Chain","Wire hangers"]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": ["battery","AA battery","AAA battery","lithium battery","rechargeable battery","9V battery","D battery","car battery"],
+      "category": "hazardous",
+      "instructions": ["Do NOT put in trash or recycling","Take to a Nashville Convenience Center or hazardous waste collection event","Tape terminals of lithium and 9V batteries to prevent fires"],
+      "notes": ["Batteries can cause fires in garbage trucks and recycling facilities"],
+      "commonMistakes": ["Never put in trash or recycling","Tape terminals before disposal"],
+      "tags": ["hazardous","battery","electronics"],
+      "examples": ["AA batteries","Rechargeable battery","Lithium battery","Car battery"]
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "aliases": ["paint","latex paint","oil paint","house paint","paint can","spray paint","stain","varnish"],
+      "category": "hazardous",
+      "instructions": ["Take to Metro Nashville hazardous waste collection or Convenience Center","Latex paint: can dry out with kitty litter, then trash the solid","Oil-based paint: must go to hazardous waste"],
+      "notes": ["Never pour paint down drains"],
+      "commonMistakes": ["Don't put liquid paint in trash","Don't pour down drain or storm drain"],
+      "tags": ["hazardous","chemical","paint"],
+      "examples": ["Leftover house paint","Spray paint can","Wood stain"]
+    },
+    {
+      "id": "motor-oil",
+      "name": "Motor oil",
+      "aliases": ["motor oil","engine oil","used oil","automotive oil","transmission fluid"],
+      "category": "hazardous",
+      "instructions": ["Take to an auto parts store or hazardous waste collection","Most AutoZone and O'Reilly locations accept used oil"],
+      "notes": ["Never pour down drains or into storm drains"],
+      "commonMistakes": ["Don't pour on the ground or down the drain","Don't put in trash"],
+      "tags": ["hazardous","automotive","oil"],
+      "examples": ["Used engine oil","Transmission fluid"]
+    },
+    {
+      "id": "pizza-box",
+      "name": "Pizza box",
+      "aliases": ["pizza box","pizza cardboard"],
+      "category": "recycle",
+      "instructions": ["If clean and grease-free: flatten and recycle","If heavily soiled with grease: place in trash","Tear off clean portions and recycle those; trash the greasy parts"],
+      "notes": ["Only clean cardboard is recyclable in Nashville","Food contamination ruins recycling batches"],
+      "commonMistakes": ["Don't recycle a greasy pizza box — grease contaminates paper recycling"],
+      "tags": ["paper","cardboard","food","recyclable"],
+      "examples": ["Clean pizza box top","Lightly used pizza box"]
+    },
+    {
+      "id": "coffee-cups",
+      "name": "Disposable coffee cups",
+      "aliases": ["coffee cup","paper cup","starbucks cup","to-go cup","hot cup","disposable cup"],
+      "category": "trash",
+      "instructions": ["Place in trash","Plastic-lined cups are not recyclable in Nashville"],
+      "notes": ["The plastic lining makes these non-recyclable despite being paper","Plastic lids are also trash"],
+      "commonMistakes": ["Don't put in recycling — the plastic lining can't be separated"],
+      "tags": ["paper","plastic","cup","beverage","trash"],
+      "examples": ["Starbucks cup","Dunkin' cup","Gas station coffee cup"]
+    },
+    {
+      "id": "coffee-pods",
+      "name": "Coffee pods and K-Cups",
+      "aliases": ["k-cup","coffee pod","keurig pod","nespresso pod","single-serve coffee"],
+      "category": "trash",
+      "instructions": ["Place in trash","Too small and multi-material to recycle curbside"],
+      "notes": ["Some brands offer mail-back recycling programs","Check the Waste Wizard app for specific brands"],
+      "commonMistakes": ["Don't put in recycling — they contain mixed materials (plastic, foil, coffee grounds)"],
+      "tags": ["plastic","aluminum","food","trash"],
+      "examples": ["Keurig K-Cup","Nespresso pod","Store-brand coffee pod"]
+    },
+    {
+      "id": "straws-utensils",
+      "name": "Plastic straws and utensils",
+      "aliases": ["plastic straw","straw","plastic fork","plastic knife","plastic spoon","plastic utensils","plastic cutlery","spork"],
+      "category": "trash",
+      "instructions": ["Place in trash","Not recyclable in Nashville"],
+      "notes": ["Too small for sorting machinery"],
+      "commonMistakes": ["Don't put in recycling even if marked recyclable"],
+      "tags": ["plastic","utensil","straw","trash"],
+      "examples": ["Plastic straw","Plastic fork","Plastic spoon","Spork"]
+    },
+    {
+      "id": "candy-wrapper",
+      "name": "Candy wrappers",
+      "aliases": ["candy wrapper","candy bar wrapper","chocolate wrapper","snickers wrapper","wrapper"],
+      "category": "trash",
+      "instructions": ["Place in trash","Metallized film is not recyclable"],
+      "notes": ["Looks metallic but is actually layered plastic — not aluminum"],
+      "commonMistakes": ["Don't put in recycling — the metallic appearance is deceiving"],
+      "tags": ["plastic","film","wrapper","trash"],
+      "examples": ["Snickers wrapper","Kit Kat wrapper","Skittles bag"]
+    },
+    {
+      "id": "chip-bag",
+      "name": "Chip bags and snack pouches",
+      "aliases": ["chip bag","potato chip bag","doritos bag","snack pouch","snack bag","granola bar wrapper"],
+      "category": "trash",
+      "instructions": ["Place in trash","Metallized film is not recyclable"],
+      "notes": ["The metallic interior cannot be separated for recycling"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["plastic","film","snack","wrapper","trash"],
+      "examples": ["Doritos bag","Lay's bag","Cheetos bag","Granola bar wrapper"]
+    },
+    {
+      "id": "aluminum-foil",
+      "name": "Aluminum foil",
+      "aliases": ["aluminum foil","tin foil","foil","Reynolds wrap"],
+      "category": "recycle",
+      "instructions": ["Clean off all food residue","Ball up into a fist-sized ball","Place in recycling bin"],
+      "notes": ["Must be clean; heavily soiled foil goes in trash"],
+      "commonMistakes": ["Don't recycle foil with food baked on","Small pieces get lost — ball them together"],
+      "tags": ["metal","aluminum","foil","recyclable"],
+      "examples": ["Clean aluminum foil","Foil baking sheet (clean)"]
+    },
+    {
+      "id": "aerosol-cans",
+      "name": "Aerosol cans",
+      "aliases": ["aerosol can","spray can","hairspray can","deodorant can","cooking spray can","spray paint can"],
+      "category": "recycle",
+      "instructions": ["Must be completely empty","Do not puncture or crush","Place in recycling bin"],
+      "notes": ["Only empty aerosol cans are accepted","Non-empty aerosol cans are hazardous waste"],
+      "commonMistakes": ["Don't recycle if still pressurized or not empty","Don't puncture the can"],
+      "tags": ["metal","container","aerosol","recyclable"],
+      "examples": ["Empty hairspray can","Empty cooking spray can","Empty deodorant spray"]
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "aliases": ["book","paperback","hardcover","textbook","novel","phone book"],
+      "category": "recycle",
+      "instructions": ["Donate if in good condition — Nashville Public Library, Goodwill","If damaged, place in recycling bin"],
+      "notes": ["Donating is always better than recycling","Remove hardcover book covers if thick/laminated"],
+      "commonMistakes": ["Don't throw usable books in trash"],
+      "tags": ["paper","book","recyclable"],
+      "examples": ["Paperback novel","Textbook","Phone book"]
+    },
+    {
+      "id": "shredded-paper",
+      "name": "Shredded paper",
+      "aliases": ["shredded paper","paper shreds","cross-cut paper"],
+      "category": "trash",
+      "instructions": ["Place in trash","Too small for recycling machinery to sort"],
+      "notes": ["Shredded paper falls through screens and contaminates recycling"],
+      "commonMistakes": ["Don't put loose shredded paper in recycling","Some recyclers accept it in a sealed paper bag — not Nashville curbside"],
+      "tags": ["paper","shredded","trash"],
+      "examples": ["Cross-cut shredded documents","Strip-cut shredded paper"]
+    },
+    {
+      "id": "wrapping-paper",
+      "name": "Wrapping paper",
+      "aliases": ["wrapping paper","gift wrap","tissue paper","gift bag"],
+      "category": "recycle",
+      "instructions": ["Plain paper wrapping: recycle","Metallic, glittery, or plastic-coated wrapping: trash","Paper gift bags without glitter: recycle","Tissue paper: trash"],
+      "notes": ["Do the scrunch test: if it stays scrunched, it's paper and recyclable"],
+      "commonMistakes": ["Don't recycle metallic or glitter wrapping paper","Remove tape and bows"],
+      "tags": ["paper","gift","recyclable"],
+      "examples": ["Plain wrapping paper","Paper gift bag"]
+    },
+    {
+      "id": "greeting-cards",
+      "name": "Greeting cards",
+      "aliases": ["greeting card","birthday card","holiday card","thank you card","postcard"],
+      "category": "recycle",
+      "instructions": ["Plain paper cards: recycle","Cards with glitter, metallic, or electronic parts: trash","Remove any plastic or metallic additions"],
+      "notes": ["Simple paper greeting cards are recyclable"],
+      "commonMistakes": ["Don't recycle musical/electronic greeting cards","Don't recycle heavily glittered cards"],
+      "tags": ["paper","card","recyclable"],
+      "examples": ["Birthday card","Holiday card","Thank you card"]
+    },
+    {
+      "id": "propane-tanks",
+      "name": "Propane tanks",
+      "aliases": ["propane tank","propane cylinder","camping propane","gas canister","butane canister"],
+      "category": "hazardous",
+      "instructions": ["Take to Metro Nashville hazardous waste collection or Convenience Center","Do not puncture, crush, or put in trash","Many propane retailers accept returns"],
+      "notes": ["Pressurized containers are dangerous in trash or recycling"],
+      "commonMistakes": ["Never put in trash or recycling — explosion risk"],
+      "tags": ["hazardous","pressurized","propane"],
+      "examples": ["BBQ propane tank","Camping propane canister","Coleman fuel canister"]
+    },
+    {
+      "id": "light-bulbs",
+      "name": "Light bulbs",
+      "aliases": ["light bulb","CFL","fluorescent bulb","LED bulb","incandescent bulb","halogen bulb"],
+      "category": "hazardous",
+      "instructions": ["CFL and fluorescent: take to Home Depot, Lowe's, or hazardous waste event","LED and incandescent: wrap and place in trash","Never put any bulbs in recycling bin"],
+      "notes": ["CFL and fluorescent bulbs contain mercury"],
+      "commonMistakes": ["Don't put in recycling bin","Don't break CFL bulbs — mercury vapor is harmful"],
+      "tags": ["hazardous","lighting","bulb"],
+      "examples": ["CFL bulb","Fluorescent tube","LED bulb","Incandescent bulb"]
+    },
+    {
+      "id": "medications",
+      "name": "Medications",
+      "aliases": ["medicine","pills","prescription drugs","expired medicine","over-the-counter medicine","vitamins"],
+      "category": "dropoff",
+      "instructions": ["Take to a pharmacy drug take-back kiosk","Nashville police stations often have drug drop boxes","Do not flush medications"],
+      "notes": ["Flushing medications contaminates water supply"],
+      "commonMistakes": ["Don't flush down toilet","Don't put in trash without deactivating"],
+      "tags": ["pharmaceutical","dropoff"],
+      "examples": ["Expired pills","Old prescriptions","Unused antibiotics"]
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking oil and grease",
+      "aliases": ["cooking oil","grease","frying oil","vegetable oil","used oil","bacon grease"],
+      "category": "hazardous",
+      "instructions": ["Collect in a sealed container","Take to hazardous waste collection or a restaurant grease recycler","Small amounts: absorb with paper towels and trash"],
+      "notes": ["Never pour cooking oil down the drain — it causes sewer blockages"],
+      "commonMistakes": ["Don't pour down sink or storm drain"],
+      "tags": ["organic","oil","hazardous"],
+      "examples": ["Used frying oil","Bacon grease","Old vegetable oil"]
+    },
+    {
+      "id": "diapers",
+      "name": "Diapers",
+      "aliases": ["diaper","disposable diaper","baby diaper","adult diaper","pull-up"],
+      "category": "trash",
+      "instructions": ["Bag and place in trash"],
+      "notes": ["Not recyclable or compostable"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["hygiene","trash"],
+      "examples": ["Disposable baby diaper","Adult diaper"]
+    },
+    {
+      "id": "receipts",
+      "name": "Receipts",
+      "aliases": ["receipt","store receipt","thermal receipt","register receipt","ATM receipt"],
+      "category": "trash",
+      "instructions": ["Place in trash","Thermal paper contains BPA and cannot be recycled"],
+      "notes": ["Most receipts are thermal paper, which contaminates paper recycling"],
+      "commonMistakes": ["Don't put in recycling — BPA contaminates the paper stream"],
+      "tags": ["paper","thermal","trash"],
+      "examples": ["Store receipt","ATM receipt","Gas station receipt"]
+    },
+    {
+      "id": "paper-towels",
+      "name": "Paper towels and napkins",
+      "aliases": ["paper towel","napkin","paper napkin","tissue","facial tissue","kleenex"],
+      "category": "trash",
+      "instructions": ["Place in trash","Not recyclable due to food contamination and fiber breakdown"],
+      "notes": ["Consider home composting for unbleached paper towels"],
+      "commonMistakes": ["Don't put in recycling bin"],
+      "tags": ["paper","hygiene","trash"],
+      "examples": ["Used paper towel","Dinner napkin","Facial tissue"]
+    },
+    {
+      "id": "paper-plates",
+      "name": "Paper plates and bowls",
+      "aliases": ["paper plate","paper bowl","disposable plate","party plate"],
+      "category": "trash",
+      "instructions": ["Place in trash","Food contamination makes them non-recyclable"],
+      "notes": ["Even unused paper plates often have coatings that prevent recycling"],
+      "commonMistakes": ["Don't put in recycling even if unused — most have plastic/wax coatings"],
+      "tags": ["paper","food","disposable","trash"],
+      "examples": ["Used paper plate","Disposable party plate","Paper bowl"]
+    },
+    {
+      "id": "fast-food-wrapper",
+      "name": "Fast food wrappers",
+      "aliases": ["fast food wrapper","burger wrapper","sandwich wrapper","food wrapper","taco wrapper"],
+      "category": "trash",
+      "instructions": ["Place in trash","Food-soiled paper is not recyclable in Nashville"],
+      "notes": ["Grease and food residue make these non-recyclable"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["paper","food","wrapper","trash"],
+      "examples": ["Burger wrapper","Taco wrapper","Sub sandwich wrapper"]
+    },
+    {
+      "id": "frozen-food-box",
+      "name": "Frozen food boxes",
+      "aliases": ["frozen food box","frozen dinner box","ice cream box","popsicle box","frozen pizza box"],
+      "category": "trash",
+      "instructions": ["Place in trash","Coated with plastic/wax to resist moisture"],
+      "notes": ["Unlike regular paperboard, frozen food boxes have coatings that prevent recycling"],
+      "commonMistakes": ["Don't put in recycling — they look like cereal boxes but have different coatings"],
+      "tags": ["paper","food","frozen","trash"],
+      "examples": ["Frozen dinner box","Ice cream carton","Frozen pizza box"]
+    },
+    {
+      "id": "egg-carton-paper",
+      "name": "Paper egg cartons",
+      "aliases": ["egg carton","paper egg carton","molded pulp egg carton"],
+      "category": "recycle",
+      "instructions": ["Clean paper/pulp egg cartons: recycle","Remove any remaining egg residue"],
+      "notes": ["Only paper/pulp cartons; not foam or plastic"],
+      "commonMistakes": ["Don't recycle styrofoam egg cartons — those are trash"],
+      "tags": ["paper","container","food","recyclable"],
+      "examples": ["Paper pulp egg carton","Molded fiber egg carton"]
+    },
+    {
+      "id": "egg-carton-foam",
+      "name": "Styrofoam egg cartons",
+      "aliases": ["foam egg carton","styrofoam egg carton","polystyrene egg carton"],
+      "category": "trash",
+      "instructions": ["Place in trash","Styrofoam is not recyclable in Nashville"],
+      "notes": ["Foam cartons are not accepted in any Nashville recycling program"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["plastic","foam","container","trash"],
+      "examples": ["Styrofoam egg carton"]
+    },
+    {
+      "id": "tires",
+      "name": "Tires",
+      "aliases": ["tire","car tire","bicycle tire","truck tire"],
+      "category": "dropoff",
+      "instructions": ["Take to a tire retailer or Nashville Convenience Center","Most tire shops accept old tires when you buy new ones"],
+      "notes": ["Illegal to dump tires"],
+      "commonMistakes": ["Don't put in trash or recycling","Don't dump on the curb"],
+      "tags": ["automotive","rubber","dropoff"],
+      "examples": ["Car tire","Bicycle tire"]
+    },
+    {
+      "id": "smartphone",
+      "name": "Smartphone and cell phone",
+      "aliases": ["phone","smartphone","cell phone","iphone","android phone","old phone","mobile phone"],
+      "category": "dropoff",
+      "instructions": ["Factory reset and remove personal data","Take to Best Buy, Staples, or a carrier store for recycling","Or take to a Nashville Convenience Center"],
+      "notes": ["Contains valuable recoverable materials","Never put in trash due to battery fire risk"],
+      "commonMistakes": ["Don't put in trash — lithium batteries are a fire hazard","Don't forget to wipe personal data"],
+      "tags": ["electronics","e-waste","phone","dropoff"],
+      "examples": ["Old iPhone","Broken Android phone","Flip phone"]
+    },
+    {
+      "id": "sharps",
+      "name": "Needles and sharps",
+      "aliases": ["needle","syringe","sharps","lancet","insulin needle","diabetic needle"],
+      "category": "hazardous",
+      "instructions": ["Place in a puncture-proof sharps container","Take to a pharmacy or Metro Nashville hazardous waste event","Never put loose in trash or recycling"],
+      "notes": ["Loose sharps are a serious safety hazard for waste workers"],
+      "commonMistakes": ["Never put loose needles in trash","Never put in recycling"],
+      "tags": ["medical","hazardous","sharps"],
+      "examples": ["Insulin needle","Lancet","Syringe"]
+    },
+    {
+      "id": "milk-carton",
+      "name": "Milk carton (refrigerated)",
+      "aliases": ["milk carton","half gallon carton","pint carton","cream carton","school milk carton"],
+      "category": "recycle",
+      "instructions": ["Empty and rinse","Place in recycling bin"],
+      "notes": ["Both gable-top and aseptic cartons are accepted"],
+      "commonMistakes": ["Don't include with liquid still inside"],
+      "tags": ["paper","carton","beverage","recyclable"],
+      "examples": ["Half-gallon milk carton","Pint cream carton","School milk carton"]
+    },
+    {
+      "id": "large-items",
+      "name": "Large/bulky items",
+      "aliases": ["furniture","couch","sofa","mattress","desk","table","large item","bulky item","bulk waste"],
+      "category": "dropoff",
+      "instructions": ["Schedule a bulky item pickup with Metro Nashville: 615-862-8750","Or take to a Nashville Convenience Center","Donate if in usable condition"],
+      "notes": ["Nashville offers scheduled bulky item collection","Some items may have a fee"],
+      "commonMistakes": ["Don't leave at curb without scheduling a pickup"],
+      "tags": ["furniture","bulk","dropoff"],
+      "examples": ["Old couch","Mattress","Broken desk","Bookshelf"]
+    },
+    {
+      "id": "window-glass-mirrors",
+      "name": "Window glass, mirrors, and ceramics",
+      "aliases": ["window glass","mirror","ceramic","pyrex","plate","drinking glass","crystal","china","pottery"],
+      "category": "trash",
+      "instructions": ["Wrap carefully in newspaper or cardboard","Place in trash","Not recyclable — different glass composition than bottles"],
+      "notes": ["Window glass, mirrors, and ceramics melt at different temperatures than bottle glass","They contaminate glass recycling — do NOT take to glass drop-off sites"],
+      "commonMistakes": ["Don't put in recycling or glass drop-off","Don't confuse with bottle glass"],
+      "tags": ["glass","ceramic","trash"],
+      "examples": ["Broken mirror","Window pane","Ceramic plate","Drinking glass","Pyrex dish"]
+    },
+    {
+      "id": "toothpaste-tubes",
+      "name": "Toothpaste and squeezable tubes",
+      "aliases": ["toothpaste tube","lotion tube","ointment tube","cream tube","squeeze tube"],
+      "category": "trash",
+      "instructions": ["Place in trash","Multi-material tubes are not recyclable curbside"],
+      "notes": ["Made of mixed plastic and aluminum layers that can't be separated"],
+      "commonMistakes": ["Don't put in recycling even though they feel like plastic"],
+      "tags": ["plastic","tube","hygiene","trash"],
+      "examples": ["Toothpaste tube","Hand cream tube","Ointment tube","Sunscreen tube"]
+    },
+    {
+      "id": "pots-pans",
+      "name": "Pots, pans, and metal cookware",
+      "aliases": ["pot","pan","frying pan","skillet","baking pan","cookie sheet","metal cookware","cast iron"],
+      "category": "dropoff",
+      "instructions": ["Take to a scrap metal recycler or Nashville Convenience Center","Do NOT put in curbside recycling bin"],
+      "notes": ["Too large and heavy for curbside sorting machinery","Scrap metal recyclers often pay for metal cookware"],
+      "commonMistakes": ["Don't put in curbside recycling bin","Don't put in trash if in usable condition — donate"],
+      "tags": ["metal","cookware","dropoff"],
+      "examples": ["Old frying pan","Worn-out pot","Dented cookie sheet","Rusty baking pan"]
+    },
+    {
+      "id": "cleaning-wipes",
+      "name": "Cleaning wipes and disinfecting wipes",
+      "aliases": ["cleaning wipe","disinfecting wipe","Clorox wipe","Lysol wipe","baby wipe","wet wipe"],
+      "category": "trash",
+      "instructions": ["Place in trash","Never flush wipes — even 'flushable' ones"],
+      "notes": ["Wipes do not break down and clog sewer systems"],
+      "commonMistakes": ["Don't put in recycling","Don't flush — they cause sewer blockages"],
+      "tags": ["hygiene","wipe","trash"],
+      "examples": ["Clorox wipe","Lysol wipe","Baby wipe","Makeup remover wipe"]
+    },
+    {
+      "id": "dryer-sheets",
+      "name": "Dryer sheets and fabric softener sheets",
+      "aliases": ["dryer sheet","fabric softener sheet","bounce sheet"],
+      "category": "trash",
+      "instructions": ["Place in trash"],
+      "notes": ["Coated with chemicals; not recyclable or compostable"],
+      "commonMistakes": ["Don't put in recycling"],
+      "tags": ["laundry","trash"],
+      "examples": ["Used dryer sheet","Bounce sheet"]
+    },
+    {
+      "id": "pesticides-chemicals",
+      "name": "Pesticides and household chemicals",
+      "aliases": ["pesticide","herbicide","insecticide","household chemical","pool chemicals","antifreeze","solvent","thinner"],
+      "category": "hazardous",
+      "instructions": ["Take to Metro Nashville hazardous waste collection or Convenience Center","Keep in original labeled container if possible","Never pour down drains or storm drains"],
+      "notes": ["Check nashville.gov for hazardous waste event schedules"],
+      "commonMistakes": ["Don't put in trash or recycling","Don't pour down any drain"],
+      "tags": ["hazardous","chemical","poison"],
+      "examples": ["Weed killer","Ant spray","Pool chlorine","Paint thinner","Antifreeze"]
+    },
+    {
+      "id": "appliances",
+      "name": "Small appliances",
+      "aliases": ["appliance","toaster","blender","microwave","coffee maker","hair dryer","iron","vacuum"],
+      "category": "dropoff",
+      "instructions": ["Take to a Nashville Convenience Center","Or donate if in working condition — Goodwill, Habitat ReStore","Schedule bulky item pickup for large appliances: 615-862-8750"],
+      "notes": ["Do not put in curbside recycling or trash"],
+      "commonMistakes": ["Don't put in recycling bin","Don't put in trash — take to Convenience Center"],
+      "tags": ["electronics","appliance","dropoff"],
+      "examples": ["Broken toaster","Old blender","Dead microwave","Old coffee maker"]
+    },
+    {
+      "id": "cardboard-drink-holder",
+      "name": "Cardboard drink carriers and holders",
+      "aliases": ["drink carrier","cup holder","cardboard cup carrier","coffee carrier","beer carrier"],
+      "category": "recycle",
+      "instructions": ["If clean and dry: place in recycling bin","If food-soiled: place in trash"],
+      "notes": ["Made from paperboard, same as cereal boxes"],
+      "commonMistakes": ["Don't recycle if wet or food-contaminated"],
+      "tags": ["paper","paperboard","recyclable"],
+      "examples": ["Coffee drink carrier","Beer six-pack holder","Fast food drink carrier"]
+    }
+  ],
+  "rulesSummary": {
+    "accepted": {
+      "recycle": [
+        "Paper, newspapers, magazines, mail",
+        "Food and beverage cartons (milk, juice, broth)",
+        "Corrugated cardboard (flattened)",
+        "Toilet paper and paper towel rolls",
+        "Cereal boxes, tissue boxes (paperboard)",
+        "Aluminum and steel food/beverage cans",
+        "Plastic bottles, jars, and jugs (beverage, kitchen, laundry, bath)",
+        "Empty aerosol cans",
+        "Clean aluminum foil",
+        "Paper egg cartons"
+      ],
+      "trash": [
+        "Plastic bags, wrap, bubble wrap, film",
+        "Styrofoam and polystyrene",
+        "Plastic takeout containers, cups, and tubs",
+        "Food waste and food scraps (no curbside composting)",
+        "Paper towels, napkins, tissues",
+        "Coffee cups (plastic-lined)",
+        "Candy wrappers, chip bags, snack pouches",
+        "Frozen food boxes",
+        "Diapers",
+        "Receipts (thermal paper)",
+        "Shredded paper",
+        "Hoses, wires, chains"
+      ]
+    },
+    "notAccepted": {
+      "recycle": [
+        "GLASS — Nashville does NOT accept glass curbside; take to drop-off sites",
+        "Plastic bags, wrap, and film — they jam machinery",
+        "Styrofoam cups and containers",
+        "Plastic takeout containers, cups, and tubs",
+        "Food waste or liquids",
+        "Hoses, wires, chains, electronics (tanglers)",
+        "Yard waste, clothing, linens",
+        "Shredded paper"
+      ]
+    },
+    "tips": [
+      "NO GLASS in curbside recycling — take glass bottles and jars to Nashville drop-off sites or Convenience Centers",
+      "Place bin out by 6 AM with arrow pointing toward the street",
+      "Recycling is collected bi-weekly; check your schedule at nashville.gov",
+      "Items must be loose, clean, empty, and dry",
+      "Flatten all cardboard",
+      "Caps can stay on plastic bottles or be removed",
+      "No loose caps in the bin",
+      "When in doubt, use the Nashville Waste Wizard app",
+      "Plastic bags contaminate recycling — never bag recyclables",
+      "Only bottles, jars, and jugs for plastic — no tubs, cups, or takeout containers"
+    ]
+  },
+  "locations": [
+    {
+      "name": "Nashville Glass Recycling Drop-off Sites",
+      "address": "Multiple locations — check nashville.gov for nearest site",
+      "url": "https://nashville.gov/departments/waste-services/trash-and-recycling-services/recycle-right",
+      "accepts": ["Glass bottles","Glass jars"],
+      "notes": "Nashville has multiple glass-only drop-off sites throughout the city. Glass is NOT accepted in curbside recycling."
+    },
+    {
+      "name": "East Nashville Convenience Center",
+      "address": "943 Doctor Richard G Adams Dr, Nashville, TN 37207",
+      "phone": "615-862-8750",
+      "accepts": ["Bulk items","Yard waste","Electronics","Tires","Glass recycling","Hazardous waste"],
+      "hours": "Check nashville.gov for current hours",
+      "notes": "Full-service drop-off for items not accepted curbside"
+    },
+    {
+      "name": "Omohundro Convenience Center",
+      "address": "1019 Omohundro Pl, Nashville, TN 37210",
+      "phone": "615-862-8750",
+      "accepts": ["Bulk items","Yard waste","Electronics","Tires","Glass recycling","Hazardous waste"],
+      "hours": "Check nashville.gov for current hours",
+      "notes": "Full-service drop-off for items not accepted curbside"
+    },
+    {
+      "name": "Anderson Convenience Center",
+      "address": "461 Stewarts Ferry Pike, Nashville, TN 37214",
+      "phone": "615-862-8750",
+      "accepts": ["Bulk items","Yard waste","Electronics","Tires","Glass recycling"],
+      "hours": "Check nashville.gov for current hours"
+    },
+    {
+      "name": "Metro Nashville Household Hazardous Waste",
+      "phone": "615-862-8750",
+      "url": "https://nashville.gov/departments/waste-services",
+      "accepts": ["Batteries","Paint","Motor oil","Pesticides","Propane tanks","Fluorescent bulbs","Electronics","Sharps","Chemicals"],
+      "notes": "Check nashville.gov for collection event dates and Convenience Center drop-off options"
+    }
+  ]
+}

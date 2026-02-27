@@ -1,0 +1,1484 @@
+{
+  "id": "columbus",
+  "displayName": "Columbus, OH",
+  "coverage": {
+    "country": "US",
+    "region": "OH",
+    "city": "Columbus",
+    "zips": [
+      "43085", "43201", "43202", "43203", "43204", "43205", "43206", "43207",
+      "43209", "43210", "43211", "43212", "43213", "43214", "43215", "43217",
+      "43219", "43220", "43221", "43222", "43223", "43224", "43227", "43228",
+      "43229", "43230", "43231", "43232", "43235"
+    ],
+    "aliases": [
+      "columbus ohio",
+      "columbus oh",
+      "cbus",
+      "franklin county"
+    ]
+  },
+  "source": {
+    "name": "City of Columbus Department of Public Service",
+    "url": "https://www.columbus.gov/Services/Trash-Recycling-Bulk-Collection/Recycling",
+    "generatedAt": "2026-02-27",
+    "notes": "Based on official City of Columbus recycling guidelines and SWACO (Solid Waste Authority of Central Ohio) resources. 99% recycling recovery rate at Rumpke facility.",
+    "license": "Public government data"
+  },
+  "materials": [
+    {
+      "id": "cardboard",
+      "name": "Cardboard and corrugated boxes",
+      "aliases": [
+        "cardboard", "corrugated cardboard", "shipping box", "moving box",
+        "amazon box", "delivery box", "brown box", "OCC", "packing box"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten all boxes",
+        "Remove packing materials (bubble wrap, styrofoam, air pillows)",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Cardboard is one of the most valuable recyclables",
+        "Columbus achieves 99% recovery rate through Rumpke"
+      ],
+      "commonMistakes": [
+        "Don't include cardboard soaked with grease or food",
+        "Don't leave packing materials inside boxes",
+        "Don't include wax-coated cardboard"
+      ],
+      "tags": ["paper", "cardboard", "box", "shipping"],
+      "examples": ["Amazon shipping box", "Appliance box", "Moving box"]
+    },
+    {
+      "id": "paper-office",
+      "name": "Paper (office, printer, notebook)",
+      "aliases": [
+        "paper", "office paper", "printer paper", "notebook paper",
+        "copy paper", "lined paper", "computer paper", "white paper"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place loose in blue recycling cart",
+        "Shredded paper: place inside a paper bag, then in cart"
+      ],
+      "notes": [
+        "Staples and paper clips are OK — removed during processing",
+        "Envelopes with plastic windows are accepted"
+      ],
+      "commonMistakes": [
+        "Don't include wet or soiled paper",
+        "Don't include paper towels or tissues"
+      ],
+      "tags": ["paper", "office", "recyclable"],
+      "examples": ["Printer paper", "Notebook paper", "Scrap paper"]
+    },
+    {
+      "id": "newspapers-magazines",
+      "name": "Newspapers, magazines, and catalogs",
+      "aliases": [
+        "newspaper", "magazine", "catalog", "catalogue", "circular",
+        "flyer", "junk mail", "mailer", "coupon book", "Columbus Dispatch"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place loose in blue recycling cart",
+        "Glossy paper is accepted",
+        "No need to remove staples"
+      ],
+      "notes": [
+        "All types of printed paper are accepted in Columbus recycling",
+        "Inserts and advertising circulars are included"
+      ],
+      "commonMistakes": [
+        "Don't bag in plastic bags",
+        "Don't include wet or moldy paper"
+      ],
+      "tags": ["paper", "newspaper", "magazine", "print"],
+      "examples": ["Columbus Dispatch", "Time magazine", "IKEA catalog", "Weekly flyer"]
+    },
+    {
+      "id": "mail-envelopes",
+      "name": "Mail, envelopes, and junk mail",
+      "aliases": [
+        "mail", "junk mail", "envelope", "letter", "bills",
+        "statements", "greeting card", "postcard"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place in blue recycling cart",
+        "Window envelopes are accepted — no need to remove plastic windows"
+      ],
+      "notes": [
+        "Greeting cards without glitter or metallic decorations are recyclable"
+      ],
+      "commonMistakes": [
+        "Don't include greeting cards with glitter — the glitter contaminates recycling",
+        "Don't include padded/bubble mailers — those go in trash"
+      ],
+      "tags": ["paper", "mail", "office"],
+      "examples": ["Junk mail", "Utility bills", "Birthday card (no glitter)", "Window envelope"]
+    },
+    {
+      "id": "cereal-paperboard-boxes",
+      "name": "Cereal boxes and paperboard",
+      "aliases": [
+        "cereal box", "cracker box", "pasta box", "tissue box",
+        "shoe box", "paperboard", "food box", "snack box",
+        "tea box", "toothpaste box"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten the box",
+        "Remove plastic liners",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Thin paperboard/chipboard is recyclable in Columbus",
+        "Part of the general paper category"
+      ],
+      "commonMistakes": [
+        "Don't include the inner plastic bag/liner",
+        "Don't include boxes heavily soiled with food"
+      ],
+      "tags": ["paper", "paperboard", "box", "food"],
+      "examples": ["Cheerios box", "Ritz cracker box", "Tissue box", "Shoe box"]
+    },
+    {
+      "id": "carton-containers",
+      "name": "Carton containers (milk, juice, broth)",
+      "aliases": [
+        "milk carton", "juice carton", "juice box", "Tetra Pak",
+        "broth carton", "soup carton", "oat milk carton",
+        "almond milk carton", "cream carton", "shelf-stable carton"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Replace cap if it has one",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Both refrigerated (gable-top) and shelf-stable (aseptic/Tetra Pak) cartons are accepted",
+        "Columbus specifically lists carton containers as accepted"
+      ],
+      "commonMistakes": [
+        "Don't flatten cartons — the 3D shape helps sorting machines identify them",
+        "Don't confuse with juice pouches (Capri Sun) — those go in trash"
+      ],
+      "tags": ["paper", "carton", "beverage", "composite"],
+      "examples": ["Horizon milk carton", "Tropicana juice carton", "Pacific broth carton"]
+    },
+    {
+      "id": "glass-bottles-jars",
+      "name": "Glass bottles and jars",
+      "aliases": [
+        "glass bottle", "glass jar", "wine bottle", "beer bottle",
+        "liquor bottle", "sauce jar", "pasta sauce jar", "pickle jar",
+        "jam jar", "salsa jar", "olive oil bottle glass"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Remove metal lids (recycle lids with metal cans)",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "All colors of glass are accepted in Columbus",
+        "Labels can stay on"
+      ],
+      "commonMistakes": [
+        "Don't include broken glass — wrap and place in trash",
+        "Don't include window glass, mirrors, ceramics, or drinking glasses",
+        "Don't include Pyrex or heat-resistant glass"
+      ],
+      "tags": ["glass", "bottle", "jar", "recyclable"],
+      "examples": ["Wine bottle", "Beer bottle", "Pasta sauce jar", "Pickle jar"]
+    },
+    {
+      "id": "metal-cans",
+      "name": "Metal cans (aluminum, steel, tin)",
+      "aliases": [
+        "aluminum can", "steel can", "tin can", "soda can", "beer can",
+        "food can", "soup can", "vegetable can", "tuna can",
+        "pet food can", "canned food"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Labels can stay on",
+        "Place loose in blue recycling cart"
+      ],
+      "notes": [
+        "Columbus accepts both aluminum and steel/tin cans",
+        "Aluminum is infinitely recyclable"
+      ],
+      "commonMistakes": [
+        "Don't include cans with food residue",
+        "Don't crush cans — leave intact for sorting"
+      ],
+      "tags": ["metal", "aluminum", "steel", "can"],
+      "examples": ["Coca-Cola can", "Campbell's soup can", "Tuna can", "Beer can"]
+    },
+    {
+      "id": "metal-cups-containers",
+      "name": "Metal cups and containers",
+      "aliases": [
+        "metal cup", "metal container", "cookie tin", "popcorn tin",
+        "metal box", "metal canister", "coffee can metal"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and clean",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Columbus specifically lists metal cups as accepted recyclables"
+      ],
+      "commonMistakes": [
+        "Don't include small metal items like paper clips or staples loose — they fall through screens"
+      ],
+      "tags": ["metal", "container", "recyclable"],
+      "examples": ["Holiday cookie tin", "Metal coffee canister", "Popcorn tin"]
+    },
+    {
+      "id": "plastic-bottles",
+      "name": "Plastic bottles",
+      "aliases": [
+        "plastic bottle", "water bottle", "soda bottle", "pop bottle",
+        "juice bottle", "sports drink bottle", "shampoo bottle",
+        "detergent bottle", "cleaning bottle"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Replace cap",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Columbus accepts all plastic bottles",
+        "No need to sort by resin number"
+      ],
+      "commonMistakes": [
+        "Don't include bottles with significant residue",
+        "Don't bag recyclables in plastic bags"
+      ],
+      "tags": ["plastic", "bottle", "beverage", "recyclable"],
+      "examples": ["Dasani water bottle", "Tide detergent bottle", "Shampoo bottle"]
+    },
+    {
+      "id": "plastic-containers",
+      "name": "Plastic containers (tubs, clamshells)",
+      "aliases": [
+        "plastic container", "yogurt cup", "butter tub", "deli container",
+        "plastic tub", "berry container", "clamshell container",
+        "takeout container plastic", "salad container plastic",
+        "hummus container", "sour cream tub"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Columbus accepts rigid plastic containers of all types",
+        "Processed at Rumpke with 99% recovery rate"
+      ],
+      "commonMistakes": [
+        "Don't include containers with food residue",
+        "Don't include flexible plastic bags or film"
+      ],
+      "tags": ["plastic", "container", "food", "recyclable"],
+      "examples": ["Yogurt cup", "Strawberry clamshell", "Deli meat container", "Butter tub"]
+    },
+    {
+      "id": "aerosol-cans",
+      "name": "Empty aerosol cans",
+      "aliases": [
+        "aerosol can", "spray can", "hairspray can", "cooking spray can",
+        "air freshener can", "deodorant spray can"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Must be completely empty",
+        "Do not puncture",
+        "Remove plastic cap",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Only completely empty aerosol cans are safe for recycling",
+        "The metal can itself is recyclable"
+      ],
+      "commonMistakes": [
+        "Don't recycle cans that still have contents — they're hazardous",
+        "Don't puncture cans"
+      ],
+      "tags": ["metal", "aerosol", "spray"],
+      "examples": ["Empty hairspray can", "Empty cooking spray can"]
+    },
+    {
+      "id": "paper-bags",
+      "name": "Paper bags",
+      "aliases": [
+        "paper bag", "brown bag", "grocery bag paper", "lunch bag",
+        "kraft bag", "shopping bag paper"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten and place in blue recycling cart",
+        "Can be used to contain shredded paper"
+      ],
+      "notes": [
+        "Paper bags are recyclable and compostable"
+      ],
+      "commonMistakes": [
+        "Don't include paper bags contaminated with grease or food"
+      ],
+      "tags": ["paper", "bag", "recyclable"],
+      "examples": ["Kroger paper bag", "Brown lunch bag"]
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "aliases": [
+        "book", "textbook", "paperback", "hardcover", "novel",
+        "phone book", "reference book"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Donate books in good condition to Columbus Metropolitan Library or thrift stores",
+        "Damaged books: remove hardcovers and recycle the paper pages",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Books can be dropped off at SWACO for recycling",
+        "Donation is always preferred over recycling"
+      ],
+      "commonMistakes": [
+        "Don't throw away books that could be donated"
+      ],
+      "tags": ["paper", "donation", "recyclable"],
+      "examples": ["Old textbook", "Worn paperback", "Phone book"]
+    },
+    {
+      "id": "aluminum-foil-clean",
+      "name": "Clean aluminum foil",
+      "aliases": [
+        "aluminum foil", "tin foil", "foil", "foil ball"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Must be clean and free of food residue",
+        "Ball up small pieces into a larger ball (golf-ball size minimum)",
+        "Place in blue recycling cart"
+      ],
+      "notes": [
+        "Only clean aluminum foil is recyclable — food-contaminated foil goes in trash"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy or food-covered foil",
+        "Don't put small scraps loose — ball them up"
+      ],
+      "tags": ["metal", "aluminum", "foil", "kitchen"],
+      "examples": ["Clean baking foil balled up", "Clean foil from packaging"]
+    },
+    {
+      "id": "plastic-bags-film",
+      "name": "Plastic bags, wraps, and film",
+      "aliases": [
+        "plastic bag", "grocery bag", "trash bag", "ziplock bag",
+        "sandwich bag", "plastic wrap", "cling wrap", "saran wrap",
+        "shrink wrap", "produce bag", "bread bag", "dry cleaning bag"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Many Kroger and Walmart stores accept clean plastic bags for recycling",
+        "Never place in the blue recycling cart"
+      ],
+      "notes": [
+        "Plastic bags are the #1 contaminant in Columbus recycling",
+        "They tangle in sorting machinery at the Rumpke facility"
+      ],
+      "commonMistakes": [
+        "NEVER bag recyclables in plastic bags",
+        "Don't put any plastic film in the blue cart"
+      ],
+      "tags": ["plastic", "bag", "film", "contaminant"],
+      "examples": ["Kroger grocery bag", "Ziploc bag", "Bread bag", "Produce bag"]
+    },
+    {
+      "id": "styrofoam",
+      "name": "Styrofoam / polystyrene foam",
+      "aliases": [
+        "styrofoam", "polystyrene", "foam", "EPS", "foam cup",
+        "foam plate", "foam container", "foam tray", "meat tray foam",
+        "#6 foam", "packing peanuts foam"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Do NOT place in blue recycling cart",
+        "Place in trash cart for curbside disposal",
+        "Styrofoam packing (clean, white block EPS) can be taken to SWACO Recycling Center"
+      ],
+      "notes": [
+        "Curbside: styrofoam goes in trash",
+        "Exception: SWACO Recycling Center at 2566 Jackson Pike accepts clean expanded polystyrene packaging"
+      ],
+      "commonMistakes": [
+        "Don't put styrofoam in the blue recycling cart",
+        "Don't include food-contaminated styrofoam at SWACO — only clean packing foam"
+      ],
+      "tags": ["plastic", "foam", "styrofoam", "polystyrene"],
+      "examples": ["Styrofoam takeout container", "Foam coffee cup", "Packing peanuts"]
+    },
+    {
+      "id": "food-waste",
+      "name": "Food waste and scraps",
+      "aliases": [
+        "food waste", "food scraps", "kitchen scraps", "leftover food",
+        "spoiled food", "expired food", "table scraps", "plate scrapings"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Bag food waste to contain odor",
+        "Columbus does not have curbside composting"
+      ],
+      "notes": [
+        "Food waste is not accepted in Columbus recycling",
+        "Consider home composting for fruit/vegetable scraps"
+      ],
+      "commonMistakes": [
+        "Never put food waste in the recycling cart"
+      ],
+      "tags": ["organic", "food", "waste"],
+      "examples": ["Banana peel", "Leftover dinner", "Expired food", "Apple core"]
+    },
+    {
+      "id": "yard-waste",
+      "name": "Yard waste",
+      "aliases": [
+        "grass clippings", "leaves", "branches", "lawn clippings",
+        "garden waste", "hedge trimmings", "tree trimmings", "weeds"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Columbus provides separate yard waste collection seasonally",
+        "Place in approved yard waste bags or containers",
+        "Branches must be bundled (4 feet max length)",
+        "Do not place in recycling cart"
+      ],
+      "notes": [
+        "Yard waste has a separate seasonal collection schedule in Columbus",
+        "Check columbus.gov for your pickup dates"
+      ],
+      "commonMistakes": [
+        "Don't put yard waste in the recycling cart",
+        "Don't use plastic bags for yard waste"
+      ],
+      "tags": ["organic", "yard", "garden", "seasonal"],
+      "examples": ["Grass clippings", "Fallen leaves", "Small branches", "Garden weeds"]
+    },
+    {
+      "id": "diapers",
+      "name": "Diapers and hygiene products",
+      "aliases": [
+        "diaper", "nappy", "pull-ups", "adult diaper",
+        "sanitary pad", "tampon", "feminine hygiene"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Roll up and secure with tabs",
+        "Place in trash cart"
+      ],
+      "notes": [
+        "Diapers contain mixed materials and human waste — never recyclable"
+      ],
+      "commonMistakes": [
+        "Never put diapers in the recycling cart"
+      ],
+      "tags": ["hygiene", "personal", "waste"],
+      "examples": ["Used baby diaper", "Adult incontinence product"]
+    },
+    {
+      "id": "soiled-paper",
+      "name": "Soiled or wet paper and cardboard",
+      "aliases": [
+        "greasy paper", "wet paper", "soiled paper", "greasy cardboard",
+        "food-stained paper", "pizza box greasy", "oily paper"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Grease and food residue ruin paper recycling"
+      ],
+      "notes": [
+        "Even a small amount of grease can contaminate a batch of recycled paper"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy pizza boxes — tear off the clean top if possible",
+        "Don't recycle paper plates or napkins with food"
+      ],
+      "tags": ["paper", "contaminated", "soiled"],
+      "examples": ["Greasy pizza box bottom", "Paper plate with food", "Oil-stained cardboard"]
+    },
+    {
+      "id": "candy-wrappers-chip-bags",
+      "name": "Candy wrappers, chip bags, and snack pouches",
+      "aliases": [
+        "candy wrapper", "chip bag", "snack bag", "foil wrapper",
+        "granola bar wrapper", "popcorn bag", "snack pouch"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Made of multi-layer film that cannot be recycled"
+      ],
+      "notes": [
+        "Despite metallic appearance, these are not recyclable aluminum"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling — the metallic sheen is plastic film, not metal"
+      ],
+      "tags": ["plastic", "wrapper", "film", "snack"],
+      "examples": ["Lay's chip bag", "Snickers wrapper", "Kind bar wrapper"]
+    },
+    {
+      "id": "disposable-coffee-cups",
+      "name": "Disposable coffee cups",
+      "aliases": [
+        "coffee cup", "paper cup", "Starbucks cup", "hot cup",
+        "to-go cup", "disposable cup"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "The plastic polyethylene lining prevents recycling",
+        "Cardboard sleeve can be recycled separately"
+      ],
+      "notes": [
+        "The plastic liner inside paper cups makes them non-recyclable"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "The cardboard sleeve IS recyclable — remove it"
+      ],
+      "tags": ["paper", "cup", "lined", "beverage"],
+      "examples": ["Starbucks hot cup", "Tim Hortons cup", "Gas station coffee cup"]
+    },
+    {
+      "id": "plastic-utensils-straws",
+      "name": "Plastic utensils and straws",
+      "aliases": [
+        "plastic fork", "plastic knife", "plastic spoon", "straw",
+        "plastic straw", "stirrer", "coffee stirrer", "spork"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Too small for sorting equipment"
+      ],
+      "notes": [
+        "Even though made of recyclable plastics, utensils are too small for machinery"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling — they fall through sorting screens"
+      ],
+      "tags": ["plastic", "utensils", "disposable", "small"],
+      "examples": ["Plastic fork", "Drinking straw", "Coffee stirrer"]
+    },
+    {
+      "id": "bubble-wrap-air-pillows",
+      "name": "Bubble wrap and air pillows",
+      "aliases": [
+        "bubble wrap", "air pillow", "air cushion", "packing air",
+        "inflatable packaging"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Deflate air pillows",
+        "Place in trash cart",
+        "Some stores accept with plastic bag recycling"
+      ],
+      "notes": [
+        "Bubble wrap is plastic film — not accepted in Columbus curbside recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling cart"
+      ],
+      "tags": ["plastic", "film", "packing"],
+      "examples": ["Bubble wrap sheet", "Amazon air pillows"]
+    },
+    {
+      "id": "paper-towels-napkins",
+      "name": "Paper towels, napkins, and tissues",
+      "aliases": [
+        "paper towel", "napkin", "tissue", "Kleenex",
+        "facial tissue", "paper napkin"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Paper fibers too short and contaminated to recycle"
+      ],
+      "notes": [
+        "Even unused paper towels have fibers too degraded for recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["paper", "hygiene", "disposable"],
+      "examples": ["Used paper towel", "Dinner napkin", "Kleenex tissue"]
+    },
+    {
+      "id": "receipts-thermal",
+      "name": "Receipts (thermal paper)",
+      "aliases": [
+        "receipt", "thermal paper", "register receipt", "store receipt",
+        "ATM receipt"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Thermal paper contains BPA/BPS — not recyclable"
+      ],
+      "notes": [
+        "Thermal paper chemicals contaminate recycled paper"
+      ],
+      "commonMistakes": [
+        "Don't recycle receipts"
+      ],
+      "tags": ["paper", "thermal", "chemical"],
+      "examples": ["Grocery receipt", "ATM receipt", "Gas station receipt"]
+    },
+    {
+      "id": "mirrors-window-glass",
+      "name": "Mirrors, window glass, and ceramics",
+      "aliases": [
+        "mirror", "window glass", "ceramic", "pottery", "porcelain",
+        "drinking glass", "Pyrex", "crystal"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully for safety",
+        "Place in trash cart",
+        "These have different melting points than bottle glass"
+      ],
+      "notes": [
+        "Only bottle and jar glass is recyclable — not window glass, mirrors, or ceramics"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Don't confuse drinking glasses with glass bottles"
+      ],
+      "tags": ["glass", "ceramic", "non-recyclable"],
+      "examples": ["Broken mirror", "Old window pane", "Broken coffee mug", "Pyrex dish"]
+    },
+    {
+      "id": "hangers",
+      "name": "Hangers",
+      "aliases": [
+        "hanger", "coat hanger", "wire hanger", "plastic hanger",
+        "clothes hanger"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Return wire hangers to dry cleaners for reuse"
+      ],
+      "notes": [
+        "Hangers tangle in recycling machinery"
+      ],
+      "commonMistakes": [
+        "Don't put any type of hanger in the recycling cart"
+      ],
+      "tags": ["mixed", "household", "closet"],
+      "examples": ["Wire hanger", "Plastic hanger", "Wooden hanger"]
+    },
+    {
+      "id": "wax-paper",
+      "name": "Wax paper and parchment paper",
+      "aliases": [
+        "wax paper", "waxed paper", "parchment paper", "baking paper",
+        "freezer paper"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Wax coating prevents recycling"
+      ],
+      "notes": [
+        "Wax-coated paper cannot be processed at paper recycling mills"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["paper", "wax", "kitchen"],
+      "examples": ["Wax paper from baking", "Parchment paper", "Freezer paper"]
+    },
+    {
+      "id": "pizza-boxes",
+      "name": "Pizza boxes",
+      "aliases": [
+        "pizza box", "pizza carton", "delivery pizza box"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Greasy portions go in trash",
+        "If the top is clean, tear it off and recycle it",
+        "Greasy bottom always goes in trash"
+      ],
+      "notes": [
+        "Grease-saturated cardboard cannot be recycled"
+      ],
+      "commonMistakes": [
+        "Don't recycle the greasy parts"
+      ],
+      "tags": ["paper", "cardboard", "food", "contaminated"],
+      "examples": ["Donatos pizza box", "Domino's pizza box"]
+    },
+    {
+      "id": "juice-pouches",
+      "name": "Juice pouches and drink pouches",
+      "aliases": [
+        "juice pouch", "Capri Sun", "drink pouch", "Kool-Aid Jammer",
+        "squeezable pouch", "baby food pouch"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Multi-layer packaging cannot be recycled"
+      ],
+      "notes": [
+        "Pouches are made of fused plastic and metal layers"
+      ],
+      "commonMistakes": [
+        "Don't confuse with recyclable cartons"
+      ],
+      "tags": ["plastic", "pouch", "multi-layer"],
+      "examples": ["Capri Sun pouch", "GoGo Squeeze pouch"]
+    },
+    {
+      "id": "clothing-textiles",
+      "name": "Clothing and textiles",
+      "aliases": [
+        "clothing", "clothes", "shirt", "pants", "jeans",
+        "shoes", "textiles", "fabric", "towels", "bedsheets"
+      ],
+      "category": "trash",
+      "instructions": [
+        "If wearable, donate to Goodwill, Salvation Army, or SWACO Recycling Center",
+        "If not wearable, place in trash cart",
+        "SWACO accepts clothing for recycling"
+      ],
+      "notes": [
+        "SWACO Recycling Convenience Center accepts clothing and books",
+        "Donation extends the useful life of textiles"
+      ],
+      "commonMistakes": [
+        "Don't put clothing in the blue recycling cart",
+        "Don't throw away wearable items — donate them"
+      ],
+      "tags": ["textile", "clothing", "donation"],
+      "examples": ["Old t-shirt", "Worn jeans", "Stained towels"]
+    },
+    {
+      "id": "fast-food-wrappers",
+      "name": "Fast food wrappers and containers",
+      "aliases": [
+        "fast food wrapper", "burger wrapper", "sandwich wrapper",
+        "french fry container", "fast food bag"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Grease contamination makes these non-recyclable"
+      ],
+      "notes": [
+        "Most fast food packaging is contaminated with food and grease"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy food packaging"
+      ],
+      "tags": ["paper", "food", "contaminated"],
+      "examples": ["Wendy's burger wrapper", "McDonald's fry container"]
+    },
+    {
+      "id": "light-bulbs-incandescent-led",
+      "name": "Incandescent and LED light bulbs",
+      "aliases": [
+        "light bulb", "LED bulb", "incandescent bulb", "bulb"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap in paper or original packaging",
+        "Place in trash cart"
+      ],
+      "notes": [
+        "Incandescent and LED bulbs are not hazardous (unlike CFLs)"
+      ],
+      "commonMistakes": [
+        "Don't confuse with CFL bulbs — CFLs go to SWACO"
+      ],
+      "tags": ["household", "lighting"],
+      "examples": ["Burnt-out LED bulb", "Old incandescent bulb"]
+    },
+    {
+      "id": "rubber-items",
+      "name": "Rubber items",
+      "aliases": [
+        "rubber", "rubber band", "garden hose", "rubber gloves",
+        "rubber mat", "flip flops"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Garden hoses: cut into 3-foot sections"
+      ],
+      "notes": [
+        "Rubber tangles in recycling machinery"
+      ],
+      "commonMistakes": [
+        "Don't put rubber in recycling — especially hoses"
+      ],
+      "tags": ["rubber", "household"],
+      "examples": ["Old garden hose", "Worn flip flops", "Rubber gloves"]
+    },
+    {
+      "id": "pens-markers",
+      "name": "Pens, markers, and tape",
+      "aliases": [
+        "pen", "marker", "Sharpie", "highlighter", "tape",
+        "duct tape", "packing tape"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Mixed materials cannot be separated"
+      ],
+      "notes": [
+        "Too small and made of bonded materials"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["office", "mixed", "small"],
+      "examples": ["Dried-out pen", "Old Sharpie", "Used tape roll"]
+    },
+    {
+      "id": "appliances-small",
+      "name": "Small appliances",
+      "aliases": [
+        "toaster", "blender", "microwave", "coffee maker",
+        "iron", "hair dryer", "small appliance", "fan"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to SWACO Recycling Convenience Center at 2566 Jackson Pike",
+        "Or schedule bulk pickup with Columbus Public Service",
+        "Do not place in recycling cart"
+      ],
+      "notes": [
+        "SWACO accepts appliances for recycling",
+        "Small appliances contain recoverable metals"
+      ],
+      "commonMistakes": [
+        "Don't put in curbside carts",
+        "Remove batteries if applicable"
+      ],
+      "tags": ["appliance", "electronics", "dropoff"],
+      "examples": ["Broken toaster", "Old coffee maker", "Dead hair dryer"]
+    },
+    {
+      "id": "large-appliances",
+      "name": "Large appliances",
+      "aliases": [
+        "refrigerator", "fridge", "washer", "dryer", "dishwasher",
+        "oven", "stove", "water heater", "air conditioner"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a bulk pickup with Columbus Public Service: 311",
+        "Or take to SWACO Recycling Convenience Center",
+        "Appliance retailers often offer haul-away with delivery"
+      ],
+      "notes": [
+        "Appliances with refrigerants require special handling",
+        "SWACO accepts appliances at the Jackson Pike location"
+      ],
+      "commonMistakes": [
+        "Don't leave at curb without scheduling",
+        "Don't attempt to remove refrigerant yourself"
+      ],
+      "tags": ["appliance", "metal", "bulk", "dropoff"],
+      "examples": ["Old refrigerator", "Broken washer", "Old water heater"]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": [
+        "battery", "AA battery", "AAA battery", "9V battery",
+        "lithium battery", "rechargeable battery", "button battery",
+        "car battery"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to SWACO Recycling Convenience Center at 2566 Jackson Pike",
+        "Home Depot, Lowe's, and Best Buy also accept batteries",
+        "Car batteries: return to auto parts store",
+        "Do not place in trash or recycling"
+      ],
+      "notes": [
+        "SWACO specifically accepts batteries",
+        "Lithium batteries are a fire hazard in trash trucks"
+      ],
+      "commonMistakes": [
+        "NEVER put lithium batteries in trash — fire risk",
+        "Don't put any batteries in the recycling cart"
+      ],
+      "tags": ["hazardous", "battery", "electronics", "dropoff"],
+      "examples": ["AA Duracell battery", "Phone battery", "Car battery"]
+    },
+    {
+      "id": "electronics-ewaste",
+      "name": "Electronics / e-waste",
+      "aliases": [
+        "electronics", "e-waste", "cell phone", "tablet",
+        "phone charger", "cables", "headphones", "game console"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to SWACO Recycling Convenience Center at 2566 Jackson Pike",
+        "TVs and monitors may have a fee at SWACO",
+        "Best Buy accepts most small electronics for free"
+      ],
+      "notes": [
+        "SWACO specifically lists electronics and TVs as accepted items",
+        "Fees may apply for TVs at SWACO"
+      ],
+      "commonMistakes": [
+        "Don't put electronics in curbside carts",
+        "Remove personal data from devices before recycling"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff"],
+      "examples": ["Old cell phone", "Tangled cables", "Broken tablet"]
+    },
+    {
+      "id": "televisions-monitors",
+      "name": "Televisions and monitors",
+      "aliases": [
+        "TV", "television", "monitor", "flat screen", "CRT TV",
+        "LCD TV", "LED TV", "computer monitor"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to SWACO Recycling Convenience Center at 2566 Jackson Pike",
+        "Fees may apply for TV recycling",
+        "Best Buy accepts TVs up to 32 inches for free"
+      ],
+      "notes": [
+        "SWACO charges fees for TV/monitor recycling",
+        "CRT TVs contain lead and require special handling"
+      ],
+      "commonMistakes": [
+        "Don't put in curbside carts",
+        "Don't break screens — may contain hazardous materials"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff", "hazardous"],
+      "examples": ["Old flat screen TV", "CRT television", "Computer monitor"]
+    },
+    {
+      "id": "computers-laptops",
+      "name": "Computers and laptops",
+      "aliases": [
+        "computer", "laptop", "desktop", "PC", "Mac",
+        "keyboard", "mouse", "printer"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Wipe personal data before recycling",
+        "Take to SWACO Recycling Convenience Center",
+        "Best Buy and Staples accept computers"
+      ],
+      "notes": [
+        "Erase hard drives before recycling for privacy"
+      ],
+      "commonMistakes": [
+        "Don't forget to wipe personal data"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff", "data"],
+      "examples": ["Old desktop", "Broken laptop", "Old printer"]
+    },
+    {
+      "id": "fluorescent-bulbs-cfls",
+      "name": "Fluorescent bulbs and CFLs",
+      "aliases": [
+        "fluorescent bulb", "CFL", "compact fluorescent",
+        "fluorescent tube", "tube light"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to SWACO Recycling Convenience Center at 2566 Jackson Pike",
+        "Home Depot and Lowe's also accept CFLs",
+        "Handle carefully — contains mercury"
+      ],
+      "notes": [
+        "SWACO specifically lists fluorescent bulbs and CFLs as accepted",
+        "Mercury makes these hazardous — do not put in trash"
+      ],
+      "commonMistakes": [
+        "Don't put in trash — mercury is hazardous",
+        "Don't break bulbs — mercury vapor is released"
+      ],
+      "tags": ["hazardous", "mercury", "lighting", "dropoff"],
+      "examples": ["CFL spiral bulb", "4-foot fluorescent tube"]
+    },
+    {
+      "id": "paint",
+      "name": "Paint (latex and oil-based)",
+      "aliases": [
+        "paint", "latex paint", "oil paint", "spray paint",
+        "primer", "stain", "paint can"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to SWACO Recycling Convenience Center at 2566 Jackson Pike",
+        "SWACO accepts both latex and oil-based paint",
+        "Keep in original containers with labels"
+      ],
+      "notes": [
+        "SWACO specifically lists latex and oil-based paint as accepted",
+        "Dried latex paint (small amounts with kitty litter) can go in regular trash"
+      ],
+      "commonMistakes": [
+        "Never pour paint down drains",
+        "Don't put liquid paint in regular trash"
+      ],
+      "tags": ["hazardous", "chemical", "household", "dropoff"],
+      "examples": ["Half-used paint can", "Old spray paint", "Wood stain"]
+    },
+    {
+      "id": "motor-oil-antifreeze",
+      "name": "Motor oil and antifreeze",
+      "aliases": [
+        "motor oil", "engine oil", "used oil", "antifreeze",
+        "coolant", "transmission fluid"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to SWACO Recycling Convenience Center at 2566 Jackson Pike",
+        "Auto parts stores (AutoZone, O'Reilly) also accept used motor oil",
+        "Never pour down drains"
+      ],
+      "notes": [
+        "SWACO specifically accepts motor oil and antifreeze"
+      ],
+      "commonMistakes": [
+        "Never pour down drains or on the ground",
+        "Don't mix motor oil with other fluids"
+      ],
+      "tags": ["hazardous", "automotive", "chemical", "dropoff"],
+      "examples": ["Used motor oil", "Old antifreeze"]
+    },
+    {
+      "id": "tires",
+      "name": "Tires",
+      "aliases": [
+        "tire", "tires", "car tire", "bicycle tire", "truck tire"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to SWACO Recycling Convenience Center at 2566 Jackson Pike",
+        "Fees may apply",
+        "Tire retailers accept old tires when buying new ones"
+      ],
+      "notes": [
+        "SWACO specifically lists tires as accepted (fees may apply)",
+        "Tires are banned from Ohio landfills"
+      ],
+      "commonMistakes": [
+        "Don't leave tires at the curb",
+        "Don't illegally dump tires"
+      ],
+      "tags": ["rubber", "automotive", "dropoff"],
+      "examples": ["Worn car tire", "Old bicycle tire"]
+    },
+    {
+      "id": "styrofoam-packaging-clean",
+      "name": "Clean styrofoam packaging (SWACO only)",
+      "aliases": [
+        "styrofoam packaging", "EPS packaging", "foam packaging blocks",
+        "TV packing foam", "appliance foam packaging"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take clean, white expanded polystyrene packaging to SWACO Recycling Center",
+        "Must be clean — no food contamination",
+        "Address: 2566 Jackson Pike"
+      ],
+      "notes": [
+        "SWACO is one of the few places that accepts clean EPS packaging for recycling",
+        "This is for packing foam only — not food containers"
+      ],
+      "commonMistakes": [
+        "Don't bring food-contaminated styrofoam — only clean packing foam",
+        "Don't put styrofoam in curbside recycling"
+      ],
+      "tags": ["plastic", "foam", "packaging", "dropoff"],
+      "examples": ["TV box foam inserts", "Computer box foam blocks", "Appliance packaging foam"]
+    },
+    {
+      "id": "medications",
+      "name": "Medications and pharmaceuticals",
+      "aliases": [
+        "medication", "medicine", "pills", "prescription drugs",
+        "expired medication", "vitamins", "OTC drugs"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Take to a pharmacy medication take-back program",
+        "Columbus Police Division has medication drop-off boxes",
+        "Do not flush medications",
+        "Do not place in trash or recycling"
+      ],
+      "notes": [
+        "Flushing medications contaminates water supplies",
+        "CVS and Walgreens locations may have take-back programs"
+      ],
+      "commonMistakes": [
+        "Don't flush medications",
+        "Don't put in regular trash where they could be accessed"
+      ],
+      "tags": ["hazardous", "pharmaceutical", "medical"],
+      "examples": ["Expired Tylenol", "Old prescription meds", "Unused vitamins"]
+    },
+    {
+      "id": "pesticides-chemicals",
+      "name": "Pesticides, herbicides, and household chemicals",
+      "aliases": [
+        "pesticide", "herbicide", "insecticide", "weed killer",
+        "bug spray", "pool chemicals", "household chemicals"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Do not pour down drains",
+        "Take to SWACO or household hazardous waste collection events",
+        "Keep in original containers"
+      ],
+      "notes": [
+        "Check Columbus and Franklin County for HHW collection events"
+      ],
+      "commonMistakes": [
+        "Never pour chemicals down drains",
+        "Don't mix different chemicals"
+      ],
+      "tags": ["hazardous", "chemical", "poison"],
+      "examples": ["Old Roundup", "Pool chlorine", "Ant poison"]
+    },
+    {
+      "id": "propane-tanks",
+      "name": "Propane tanks and compressed gas",
+      "aliases": [
+        "propane tank", "propane", "compressed gas", "helium tank",
+        "camping propane"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Do not place in trash or recycling",
+        "Large grill tanks: exchange at hardware stores",
+        "Small camping cylinders: take to HHW collection"
+      ],
+      "notes": [
+        "Pressurized containers can explode in compactor trucks"
+      ],
+      "commonMistakes": [
+        "NEVER place in trash or recycling — explosion risk"
+      ],
+      "tags": ["hazardous", "pressurized", "flammable"],
+      "examples": ["Grill propane tank", "Camping propane cylinder"]
+    },
+    {
+      "id": "sharps-needles",
+      "name": "Sharps and needles",
+      "aliases": [
+        "needle", "syringe", "lancet", "sharps", "insulin needle",
+        "pen needle"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Place in an FDA-cleared sharps container",
+        "When full, take to an approved drop-off site",
+        "Never place loose sharps in trash or recycling"
+      ],
+      "notes": [
+        "Loose needles endanger sanitation workers and the public"
+      ],
+      "commonMistakes": [
+        "NEVER put loose needles in trash or recycling",
+        "Don't overfill sharps containers"
+      ],
+      "tags": ["hazardous", "medical", "sharps"],
+      "examples": ["Used insulin syringe", "Diabetic lancet"]
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking oil and grease",
+      "aliases": [
+        "cooking oil", "vegetable oil", "grease", "fryer oil",
+        "bacon grease", "frying oil"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Small amounts: absorb with paper towels and trash",
+        "Large amounts: store in sealed container and take to a recycling center",
+        "Never pour down drains"
+      ],
+      "notes": [
+        "Cooking oil causes sewer blockages — never pour down drains"
+      ],
+      "commonMistakes": [
+        "NEVER pour cooking oil down the drain",
+        "Don't put liquid oil in recycling"
+      ],
+      "tags": ["organic", "oil", "kitchen", "dropoff"],
+      "examples": ["Used fryer oil", "Bacon grease"]
+    },
+    {
+      "id": "mattresses-furniture",
+      "name": "Mattresses and large furniture",
+      "aliases": [
+        "mattress", "couch", "sofa", "desk", "table",
+        "dresser", "bed frame", "bookshelf"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a bulk pickup by calling 311",
+        "Donate usable items to Goodwill, Habitat ReStore, or Salvation Army",
+        "Take to City of Columbus Waste and Reuse Convenience Center at 2100 Alum Creek Drive"
+      ],
+      "notes": [
+        "Columbus offers bulk pickup and a Waste and Reuse Convenience Center",
+        "Donation gives furniture a second life"
+      ],
+      "commonMistakes": [
+        "Don't leave at curb without scheduling"
+      ],
+      "tags": ["furniture", "bulk", "donation", "dropoff"],
+      "examples": ["Old mattress", "Worn-out couch", "Broken desk"]
+    },
+    {
+      "id": "plastic-lids-caps",
+      "name": "Plastic lids and bottle caps",
+      "aliases": [
+        "bottle cap", "plastic lid", "screw cap", "bottle top"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Leave caps ON plastic bottles when recycling in Columbus",
+        "Loose lids without bottles go in trash"
+      ],
+      "notes": [
+        "Columbus allows caps to stay on bottles",
+        "Loose caps fall through sorting screens and should be trashed"
+      ],
+      "commonMistakes": [
+        "Don't toss loose lids in recycling — they must be on a bottle"
+      ],
+      "tags": ["plastic", "lid", "cap"],
+      "examples": ["Water bottle with cap on", "Soda bottle with cap on"]
+    },
+    {
+      "id": "shredded-paper",
+      "name": "Shredded paper",
+      "aliases": [
+        "shredded paper", "paper shreds", "shredded documents"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place in a paper bag and staple or fold closed",
+        "Place the bag in blue recycling cart"
+      ],
+      "notes": [
+        "Loose shredded paper jams machinery and blows away"
+      ],
+      "commonMistakes": [
+        "Don't put loose shredded paper in the cart",
+        "Don't use a plastic bag"
+      ],
+      "tags": ["paper", "office", "recyclable"],
+      "examples": ["Shredded bank statements", "Shredded junk mail"]
+    },
+    {
+      "id": "fruit-vegetable-scraps",
+      "name": "Fruit and vegetable scraps",
+      "aliases": [
+        "fruit scraps", "vegetable scraps", "banana peel", "apple core",
+        "potato peel", "onion skin", "carrot top", "melon rind"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Great for home composting if you have a bin"
+      ],
+      "notes": [
+        "Columbus does not offer curbside composting"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling cart"
+      ],
+      "tags": ["organic", "food", "compost-at-home"],
+      "examples": ["Banana peel", "Apple core", "Potato peels"]
+    },
+    {
+      "id": "coffee-grounds-tea",
+      "name": "Coffee grounds and tea bags",
+      "aliases": [
+        "coffee grounds", "coffee filter", "tea bag", "tea leaves",
+        "K-cup"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Good for home composting"
+      ],
+      "notes": [
+        "No curbside composting in Columbus"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["organic", "food", "beverage", "compost-at-home"],
+      "examples": ["Used coffee grounds", "Paper coffee filter", "Used tea bags"]
+    },
+    {
+      "id": "meat-bones",
+      "name": "Meat and bones",
+      "aliases": [
+        "meat", "chicken", "chicken bones", "beef", "pork",
+        "fish", "bones", "meat scraps"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap in newspaper to contain odor",
+        "Place in trash cart",
+        "Put out on collection day to minimize pest attraction"
+      ],
+      "notes": [
+        "Meat attracts pests — wrap securely"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Don't home compost meat — it attracts rodents"
+      ],
+      "tags": ["organic", "food", "meat"],
+      "examples": ["Chicken bones", "Steak trimmings", "Fish scraps"]
+    }
+  ],
+  "rulesSummary": {
+    "accepted": {
+      "recycle": [
+        "Cardboard and corrugated boxes (flattened)",
+        "Paper — office, newspaper, magazines, catalogs, mail, envelopes",
+        "Cereal boxes and paperboard (flatten, remove liners)",
+        "Carton containers — milk, juice, broth (refrigerated and shelf-stable)",
+        "Glass bottles and jars (all colors)",
+        "Metal cans — aluminum, steel, tin",
+        "Metal cups and containers",
+        "Plastic bottles — all types",
+        "Plastic containers — tubs, clamshells, deli containers",
+        "Empty aerosol cans",
+        "Paper bags",
+        "Books and phone books",
+        "Clean aluminum foil (balled up)",
+        "Shredded paper (in a paper bag)",
+        "Plastic caps left on bottles"
+      ],
+      "trash": [
+        "Plastic bags, wraps, and film",
+        "Styrofoam (curbside — see SWACO for clean packaging foam)",
+        "Food waste and scraps",
+        "Soiled or greasy paper/cardboard",
+        "Candy wrappers, chip bags, snack pouches",
+        "Disposable coffee cups",
+        "Plastic utensils and straws",
+        "Paper towels, napkins, tissues",
+        "Mirrors, window glass, ceramics",
+        "Hangers (all types)",
+        "Diapers and hygiene products"
+      ]
+    },
+    "notAccepted": {
+      "recycle": [
+        "Plastic bags — they jam Rumpke sorting machinery",
+        "Styrofoam cups, plates, containers",
+        "Food waste or food-contaminated items",
+        "Yard waste",
+        "Clothing and textiles",
+        "Mirrors, window glass, ceramics, drinking glasses",
+        "Hangers (any type)",
+        "Diapers and hygiene products",
+        "Electronics and batteries"
+      ]
+    },
+    "tips": [
+      "All recyclables go loose in the blue cart — never bagged",
+      "Rinse containers — they don't need to be spotless",
+      "Flatten cardboard to save space",
+      "Leave caps on plastic bottles in Columbus",
+      "When in doubt, throw it out — contamination hurts recycling",
+      "Plastic bags are the #1 contaminant — take them to Kroger or Walmart instead",
+      "Columbus achieves a 99% recycling recovery rate through Rumpke",
+      "SWACO Recycling Center (2566 Jackson Pike) accepts many items not taken curbside",
+      "City Waste and Reuse Center at 2100 Alum Creek Drive for furniture and bulk items",
+      "Call 311 for bulk pickup scheduling and recycling questions"
+    ]
+  },
+  "locations": [
+    {
+      "name": "SWACO Recycling Convenience Center",
+      "address": "2566 Jackson Pike, Columbus, OH 43223",
+      "url": "https://www.swaco.org",
+      "accepts": [
+        "Appliances",
+        "Batteries",
+        "Books",
+        "Clothing",
+        "Electronics and TVs (fees may apply)",
+        "Fluorescent bulbs and CFLs",
+        "Paint (latex and oil-based)",
+        "Styrofoam packaging (clean, white EPS only)",
+        "Tires (fees may apply)",
+        "Motor oil and antifreeze"
+      ],
+      "hours": "Tuesday-Saturday 8am-4pm",
+      "notes": "Operated by the Solid Waste Authority of Central Ohio (SWACO). Fees may apply for TVs and tires."
+    },
+    {
+      "name": "City of Columbus Waste and Reuse Convenience Center",
+      "address": "2100 Alum Creek Drive, Columbus, OH 43207",
+      "phone": "311",
+      "url": "https://www.columbus.gov/Services/Trash-Recycling-Bulk-Collection",
+      "accepts": [
+        "Bulk items",
+        "Furniture",
+        "Mattresses",
+        "Yard waste",
+        "Household waste"
+      ],
+      "hours": "Check columbus.gov for current hours"
+    },
+    {
+      "name": "Columbus Public Service - Refuse Collection",
+      "phone": "311",
+      "url": "https://www.columbus.gov/Services/Trash-Recycling-Bulk-Collection",
+      "accepts": [
+        "Bulk item pickup scheduling",
+        "Recycling cart issues",
+        "Yard waste collection"
+      ],
+      "notes": "Call 311 for all refuse and recycling services"
+    }
+  ]
+}

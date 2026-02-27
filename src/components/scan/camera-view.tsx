@@ -2,7 +2,7 @@
 
 import { useCamera } from "@/hooks/use-camera";
 import type { CameraError } from "@/hooks/use-camera";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Zap, SwitchCamera, Upload, RotateCcw, Settings } from "lucide-react";
 import { useSfx } from "@/components/sfx/sfx-context";
@@ -150,11 +150,16 @@ export function CameraView({ onCapture, onClose }: CameraViewProps) {
   const [countdown, setCountdown] = useState<number | null>(null);
   const [showTimerHint, setShowTimerHint] = useState(false);
   const sfx = useSfx();
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     startCamera();
     return () => stopCamera();
   }, [startCamera, stopCamera]);
+
+  useEffect(() => {
+    if (!error) closeButtonRef.current?.focus();
+  }, [error]);
 
   useEffect(() => {
     if (!isActive) return;
@@ -290,6 +295,7 @@ export function CameraView({ onCapture, onClose }: CameraViewProps) {
       <div className="relative z-20 flex items-center justify-between px-6 py-5 bg-gradient-to-t from-black via-black/95 to-transparent">
         {/* Close button */}
         <button
+          ref={closeButtonRef}
           onClick={() => {
             sfx.tap();
             onClose();

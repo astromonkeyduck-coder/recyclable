@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { loadProvider } from "@/lib/providers/registry";
 import { getSiteUrl } from "@/lib/utils/site-url";
+import { buildOgImageUrl } from "@/lib/utils/og-params";
 import { CATEGORY_META } from "@/lib/utils/categories";
 import { CategoryIcon } from "@/components/common/category-icon";
 import { Button } from "@/components/ui/button";
@@ -34,6 +35,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const siteUrl = getSiteUrl();
   const pageUrl = `${siteUrl}/item/${slug}`;
+  const ogImageUrl = buildOgImageUrl(siteUrl, {
+    category: material.category,
+    item: material.name,
+    loc: "General US guidance",
+    confidence: 100,
+  });
 
   return {
     title,
@@ -45,6 +52,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: pageUrl,
       siteName: "isthisrecyclable.com",
       type: "article",
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${material.name}: ${meta.label}`,
+          type: "image/png",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${material.name}: ${meta.label}`,
+        },
+      ],
     },
   };
 }

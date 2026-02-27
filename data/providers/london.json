@@ -1,0 +1,1262 @@
+{
+  "id": "london",
+  "displayName": "London, UK",
+  "coverage": {
+    "country": "GB",
+    "region": "England",
+    "city": "London",
+    "zips": [
+      "E1","E2","E3","E4","E5","E6","E7","E8","E9","E10","E11","E12","E13","E14","E15","E16","E17","E18",
+      "EC1","EC2","EC3","EC4",
+      "N1","N2","N3","N4","N5","N6","N7","N8","N9","N10","N11","N12","N13","N14","N15","N16","N17","N18","N19","N20","N21","N22",
+      "NW1","NW2","NW3","NW4","NW5","NW6","NW7","NW8","NW9","NW10","NW11",
+      "SE1","SE2","SE3","SE4","SE5","SE6","SE7","SE8","SE9","SE10","SE11","SE12","SE13","SE14","SE15","SE16","SE17","SE18","SE19","SE20","SE21","SE22","SE23","SE24","SE25","SE26","SE27","SE28",
+      "SW1","SW2","SW3","SW4","SW5","SW6","SW7","SW8","SW9","SW10","SW11","SW12","SW13","SW14","SW15","SW16","SW17","SW18","SW19","SW20",
+      "W1","W2","W3","W4","W5","W6","W7","W8","W9","W10","W11","W12","W13","W14",
+      "WC1","WC2"
+    ],
+    "aliases": [
+      "london uk",
+      "london england",
+      "greater london",
+      "the city"
+    ]
+  },
+  "source": {
+    "name": "London Recycles / London Borough Councils",
+    "url": "https://londonrecycles.co.uk/",
+    "generatedAt": "2026-02-27",
+    "notes": "Based on London Recycles and typical London borough recycling guidelines. Services vary slightly by borough. Food waste goes in grey food caddy. Aerosol cans NOT accepted in recycling in most boroughs."
+  },
+  "materials": [
+    {
+      "id": "glass-bottles",
+      "name": "Glass bottles",
+      "aliases": ["glass bottle", "wine bottle", "beer bottle", "spirit bottle", "glass drink bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out the bottle",
+        "Remove metal lids (recycle lids separately)",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "All colours of glass bottles are accepted",
+        "Labels can be left on"
+      ],
+      "commonMistakes": [
+        "Don't include broken glass or drinking glasses",
+        "Don't include window glass or mirrors",
+        "Don't include perfume or nail varnish bottles"
+      ],
+      "tags": ["glass", "bottle", "recyclable"],
+      "examples": ["Wine bottle", "Beer bottle", "Olive oil bottle", "Gin bottle"]
+    },
+    {
+      "id": "glass-jars",
+      "name": "Glass jars",
+      "aliases": ["glass jar", "jam jar", "sauce jar", "pickle jar", "preserves jar", "baby food jar"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out the jar",
+        "Remove metal lids (recycle lids separately)",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "All colours of glass jars are accepted"
+      ],
+      "commonMistakes": [
+        "Don't include Pyrex or heat-resistant glass",
+        "Don't include ceramics or crockery"
+      ],
+      "tags": ["glass", "jar", "recyclable"],
+      "examples": ["Jam jar", "Pasta sauce jar", "Pickle jar", "Honey jar"]
+    },
+    {
+      "id": "newspapers",
+      "name": "Newspapers",
+      "aliases": ["newspaper", "daily paper", "news paper", "broadsheet", "tabloid"],
+      "category": "recycle",
+      "instructions": [
+        "Keep dry and unshredded",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Do not shred — shredded paper is not accepted in the recycling bin"
+      ],
+      "commonMistakes": [
+        "Don't shred newspapers before recycling",
+        "Don't include if soaked or heavily soiled"
+      ],
+      "tags": ["paper", "newspaper", "recyclable"],
+      "examples": ["The Times", "Metro", "Evening Standard"]
+    },
+    {
+      "id": "magazines-catalogues",
+      "name": "Magazines and catalogues",
+      "aliases": ["magazine", "catalogue", "catalog", "brochure", "glossy magazine", "comic"],
+      "category": "recycle",
+      "instructions": [
+        "Remove any plastic wrapping",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Glossy paper is fine to recycle"
+      ],
+      "commonMistakes": [
+        "Don't include the plastic wrapper — put that in general waste"
+      ],
+      "tags": ["paper", "magazine", "recyclable"],
+      "examples": ["Magazine", "Mail-order catalogue", "Comic book", "Brochure"]
+    },
+    {
+      "id": "cardboard-boxes",
+      "name": "Cardboard boxes",
+      "aliases": ["cardboard box", "delivery box", "parcel box", "amazon box", "shipping box", "moving box"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten the box",
+        "Remove any polystyrene or bubble wrap",
+        "Place in recycling bin or beside it if too large"
+      ],
+      "notes": [
+        "Flatten to save space in the bin"
+      ],
+      "commonMistakes": [
+        "Don't include boxes soiled with food or grease",
+        "Don't include polystyrene packing inside"
+      ],
+      "tags": ["cardboard", "box", "recyclable"],
+      "examples": ["Delivery box", "Moving box", "Parcel box"]
+    },
+    {
+      "id": "cardboard-packaging",
+      "name": "Cardboard packaging",
+      "aliases": ["card packaging", "cardboard sleeve", "cardboard wrapper", "card insert"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten where possible",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Includes multipacks sleeves, biscuit box inserts, etc."
+      ],
+      "commonMistakes": [
+        "Don't include wax-coated card",
+        "Don't include grease-soaked card"
+      ],
+      "tags": ["cardboard", "packaging", "recyclable"],
+      "examples": ["Toothpaste box", "Biscuit box", "Multipack sleeve"]
+    },
+    {
+      "id": "plastic-bottles",
+      "name": "Plastic bottles",
+      "aliases": ["plastic bottle", "water bottle", "fizzy drink bottle", "squash bottle", "pop bottle", "plastic drink bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Squash the bottle to save space",
+        "Keep the lid on",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Lids should stay on the bottle",
+        "No need to remove labels"
+      ],
+      "commonMistakes": [
+        "Don't include plastic bags or film",
+        "Don't include bottles that contained chemicals or motor oil"
+      ],
+      "tags": ["plastic", "bottle", "recyclable"],
+      "examples": ["Water bottle", "Squash bottle", "Fizzy drink bottle", "Juice bottle"]
+    },
+    {
+      "id": "plastic-milk-bottles",
+      "name": "Plastic milk bottles",
+      "aliases": ["milk bottle", "plastic milk container", "milk jug", "pint of milk bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Squash and replace the lid",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "One of the most commonly recycled items in the UK"
+      ],
+      "commonMistakes": [
+        "Don't leave milk residue — give it a quick rinse"
+      ],
+      "tags": ["plastic", "milk", "bottle", "recyclable"],
+      "examples": ["2-pint milk bottle", "4-pint milk bottle", "1-litre milk bottle"]
+    },
+    {
+      "id": "plastic-pots-tubs-trays",
+      "name": "Plastic pots, tubs, and trays",
+      "aliases": ["plastic pot", "plastic tub", "plastic tray", "yoghurt pot", "margarine tub", "fruit punnet", "mushroom tray", "ready meal tray"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse and scrape out food residue",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Most London boroughs accept pots, tubs and trays",
+        "Check with your borough if unsure about black plastic trays"
+      ],
+      "commonMistakes": [
+        "Don't include polystyrene trays",
+        "Don't include heavily food-soiled trays"
+      ],
+      "tags": ["plastic", "pot", "tub", "tray", "recyclable"],
+      "examples": ["Yoghurt pot", "Margarine tub", "Fruit punnet", "Ready meal tray"]
+    },
+    {
+      "id": "plastic-containers",
+      "name": "Plastic food containers",
+      "aliases": ["plastic container", "takeaway container", "deli container", "salad container", "plastic food box"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse and scrape out food",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Rigid plastic containers are accepted"
+      ],
+      "commonMistakes": [
+        "Don't include polystyrene containers",
+        "Don't include film lids — peel those off and bin them"
+      ],
+      "tags": ["plastic", "container", "recyclable"],
+      "examples": ["Salad box", "Deli counter container", "Hummus pot"]
+    },
+    {
+      "id": "food-drink-cartons",
+      "name": "Food and drink cartons (Tetra Paks)",
+      "aliases": ["tetra pak", "tetrapak", "juice carton", "milk carton", "soup carton", "long-life carton", "carton"],
+      "category": "recycle",
+      "instructions": [
+        "Squash the carton",
+        "Keep the lid on",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Includes Tetra Pak and similar layered cartons",
+        "Most London boroughs now accept these"
+      ],
+      "commonMistakes": [
+        "Don't worry about rinsing — just empty them"
+      ],
+      "tags": ["carton", "tetra pak", "recyclable"],
+      "examples": ["Juice carton", "Oat milk carton", "Soup carton", "Chopped tomatoes carton"]
+    },
+    {
+      "id": "aluminium-cans",
+      "name": "Aluminium cans",
+      "aliases": ["aluminium can", "aluminum can", "drink can", "beer can", "coke can", "fizzy drink can", "energy drink can"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Squash if possible",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Aluminium is infinitely recyclable"
+      ],
+      "commonMistakes": [
+        "Don't confuse with aerosol cans — aerosols are NOT accepted in most London boroughs"
+      ],
+      "tags": ["aluminium", "can", "metal", "recyclable"],
+      "examples": ["Coke can", "Beer can", "Energy drink can", "Sparkling water can"]
+    },
+    {
+      "id": "steel-tins",
+      "name": "Steel tins and cans",
+      "aliases": ["tin can", "steel can", "food tin", "baked beans tin", "soup tin", "tin of tomatoes", "pet food tin"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Use a magnet to check — steel is magnetic, aluminium is not",
+        "Labels can be left on"
+      ],
+      "commonMistakes": [
+        "Don't include paint tins or chemical tins"
+      ],
+      "tags": ["steel", "tin", "can", "metal", "recyclable"],
+      "examples": ["Baked beans tin", "Soup tin", "Tinned tomatoes", "Pet food tin"]
+    },
+    {
+      "id": "envelopes",
+      "name": "Envelopes",
+      "aliases": ["envelope", "letter envelope", "windowed envelope", "manila envelope", "brown envelope"],
+      "category": "recycle",
+      "instructions": [
+        "Place in recycling bin",
+        "Plastic windows are fine — no need to remove them"
+      ],
+      "notes": [
+        "Windowed envelopes are accepted"
+      ],
+      "commonMistakes": [
+        "Don't include padded or bubble-lined envelopes — those go in general waste"
+      ],
+      "tags": ["paper", "envelope", "recyclable"],
+      "examples": ["Letter envelope", "Brown envelope", "Windowed envelope"]
+    },
+    {
+      "id": "greeting-cards",
+      "name": "Greeting cards",
+      "aliases": ["greeting card", "birthday card", "christmas card", "get well card", "thank you card"],
+      "category": "recycle",
+      "instructions": [
+        "Remove any glitter, ribbons, or embellishments",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Plain cards are fine; glittery parts must be removed or card goes in general waste"
+      ],
+      "commonMistakes": [
+        "Don't recycle cards with glitter still attached",
+        "Don't include musical cards with batteries"
+      ],
+      "tags": ["paper", "card", "recyclable"],
+      "examples": ["Birthday card", "Christmas card", "Thank you card"]
+    },
+    {
+      "id": "cereal-boxes",
+      "name": "Cereal boxes",
+      "aliases": ["cereal box", "breakfast cereal box", "cereal packet"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten the box",
+        "Remove the inner plastic bag and put it in general waste",
+        "Place flattened box in recycling bin"
+      ],
+      "notes": [
+        "The inner plastic liner is not recyclable at kerbside"
+      ],
+      "commonMistakes": [
+        "Don't include the inner plastic bag"
+      ],
+      "tags": ["cardboard", "cereal", "recyclable"],
+      "examples": ["Weetabix box", "Cornflakes box", "Muesli box"]
+    },
+    {
+      "id": "toilet-kitchen-roll-tubes",
+      "name": "Toilet and kitchen roll tubes",
+      "aliases": ["toilet roll tube", "kitchen roll tube", "loo roll tube", "cardboard tube", "paper towel tube"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten and place in recycling bin"
+      ],
+      "notes": [
+        "Cardboard tubes are easily recycled"
+      ],
+      "commonMistakes": [
+        "Don't confuse with paper towels themselves — paper towels go in general waste"
+      ],
+      "tags": ["cardboard", "tube", "recyclable"],
+      "examples": ["Loo roll tube", "Kitchen roll tube", "Wrapping paper tube"]
+    },
+    {
+      "id": "egg-boxes-cardboard",
+      "name": "Cardboard egg boxes",
+      "aliases": ["egg box", "egg carton", "egg tray", "half-dozen egg box"],
+      "category": "recycle",
+      "instructions": [
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Cardboard egg boxes only — not polystyrene or plastic ones"
+      ],
+      "commonMistakes": [
+        "Don't include polystyrene egg boxes — those go in general waste"
+      ],
+      "tags": ["cardboard", "egg box", "recyclable"],
+      "examples": ["6-egg cardboard box", "12-egg cardboard box"]
+    },
+    {
+      "id": "cleaning-product-bottles",
+      "name": "Cleaning product bottles",
+      "aliases": ["cleaning bottle", "washing up liquid bottle", "bleach bottle", "spray bottle", "detergent bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Empty the bottle fully",
+        "Rinse if possible",
+        "Keep the lid on",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Trigger spray nozzles can be left on"
+      ],
+      "commonMistakes": [
+        "Don't include bottles that are still partly full"
+      ],
+      "tags": ["plastic", "bottle", "cleaning", "recyclable"],
+      "examples": ["Washing up liquid bottle", "Bleach bottle", "Surface cleaner spray"]
+    },
+    {
+      "id": "writing-printing-paper",
+      "name": "Writing and printing paper",
+      "aliases": ["printer paper", "writing paper", "A4 paper", "office paper", "copier paper", "lined paper", "notepad paper"],
+      "category": "recycle",
+      "instructions": [
+        "Keep dry and unshredded",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Staples are fine — they are removed during processing"
+      ],
+      "commonMistakes": [
+        "Don't shred paper — shredded paper is not accepted"
+      ],
+      "tags": ["paper", "office", "recyclable"],
+      "examples": ["Printer paper", "Notepad pages", "Old letters"]
+    },
+    {
+      "id": "wrapping-paper",
+      "name": "Wrapping paper (non-metallic)",
+      "aliases": ["gift wrap", "christmas wrapping", "birthday wrapping", "wrapping paper"],
+      "category": "recycle",
+      "instructions": [
+        "Scrunch test: if it stays scrunched, it can be recycled",
+        "Remove all tape, ribbons, and bows",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Metallic or glittery wrapping paper cannot be recycled"
+      ],
+      "commonMistakes": [
+        "Don't recycle foil or glittery wrapping paper — that goes in general waste",
+        "Don't include ribbons or bows"
+      ],
+      "tags": ["paper", "wrapping", "recyclable"],
+      "examples": ["Plain wrapping paper", "Patterned (non-foil) wrapping paper"]
+    },
+    {
+      "id": "paper-bags",
+      "name": "Paper bags",
+      "aliases": ["paper bag", "brown paper bag", "paper carrier bag", "paper shopping bag"],
+      "category": "recycle",
+      "instructions": [
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Remove any plastic handles if present"
+      ],
+      "commonMistakes": [
+        "Don't include wax-coated or grease-soaked paper bags"
+      ],
+      "tags": ["paper", "bag", "recyclable"],
+      "examples": ["Brown paper bag", "Paper shopping bag"]
+    },
+    {
+      "id": "phone-books-directories",
+      "name": "Phone books and directories",
+      "aliases": ["phone book", "yellow pages", "directory", "telephone directory"],
+      "category": "recycle",
+      "instructions": [
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Can be recycled whole — no need to tear pages out"
+      ],
+      "commonMistakes": [],
+      "tags": ["paper", "book", "recyclable"],
+      "examples": ["Yellow Pages", "Thomson Local", "Phone directory"]
+    },
+    {
+      "id": "biscuit-tins",
+      "name": "Biscuit and sweet tins",
+      "aliases": ["biscuit tin", "sweet tin", "quality street tin", "chocolate tin", "metal tin container"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Metal tins used for biscuits, chocolates, and sweets are recyclable"
+      ],
+      "commonMistakes": [
+        "Don't include the plastic tray insert — put that in general waste"
+      ],
+      "tags": ["metal", "tin", "recyclable"],
+      "examples": ["Quality Street tin", "Biscuit tin", "Chocolate selection tin"]
+    },
+    {
+      "id": "yoghurt-pots",
+      "name": "Yoghurt pots",
+      "aliases": ["yoghurt pot", "yogurt pot", "yoghurt container", "fromage frais pot"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Peel off the foil lid and recycle separately",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Most London boroughs accept yoghurt pots"
+      ],
+      "commonMistakes": [
+        "Don't leave food residue inside"
+      ],
+      "tags": ["plastic", "pot", "dairy", "recyclable"],
+      "examples": ["Single yoghurt pot", "Muller Corner", "Fromage frais pot"]
+    },
+    {
+      "id": "margarine-tubs",
+      "name": "Margarine and butter tubs",
+      "aliases": ["margarine tub", "butter tub", "spread tub", "flora tub"],
+      "category": "recycle",
+      "instructions": [
+        "Scrape out and rinse",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Plastic tubs from spreads are recyclable"
+      ],
+      "commonMistakes": [
+        "Don't leave a thick layer of residue"
+      ],
+      "tags": ["plastic", "tub", "recyclable"],
+      "examples": ["Flora tub", "Lurpak tub", "Country Life tub"]
+    },
+    {
+      "id": "ready-meal-trays",
+      "name": "Plastic ready meal trays",
+      "aliases": ["ready meal tray", "microwave meal tray", "plastic food tray", "meal tray"],
+      "category": "recycle",
+      "instructions": [
+        "Scrape out food and rinse",
+        "Remove film lid and put in general waste",
+        "Place tray in recycling bin"
+      ],
+      "notes": [
+        "Check with your borough about black plastic trays — some do not accept them"
+      ],
+      "commonMistakes": [
+        "Don't include the plastic film lid",
+        "Don't include polystyrene trays"
+      ],
+      "tags": ["plastic", "tray", "recyclable"],
+      "examples": ["Microwave meal tray", "Supermarket ready meal tray"]
+    },
+    {
+      "id": "drink-cans",
+      "name": "Drink cans",
+      "aliases": ["drink can", "pop can", "beer can", "lager can", "soda can", "soft drink can"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Squash if possible",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "Both aluminium and steel drink cans are accepted"
+      ],
+      "commonMistakes": [
+        "Don't confuse with aerosol cans"
+      ],
+      "tags": ["metal", "can", "drink", "recyclable"],
+      "examples": ["Lager can", "Cola can", "Tonic water can"]
+    },
+    {
+      "id": "food-tins",
+      "name": "Food tins",
+      "aliases": ["food tin", "tin of beans", "soup tin", "tinned food", "canned food", "tin of tuna"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in recycling bin"
+      ],
+      "notes": [
+        "No need to remove labels"
+      ],
+      "commonMistakes": [
+        "Don't include paint or chemical tins"
+      ],
+      "tags": ["metal", "tin", "food", "recyclable"],
+      "examples": ["Baked beans tin", "Soup tin", "Tuna tin", "Tinned sweetcorn"]
+    },
+    {
+      "id": "food-scraps",
+      "name": "Food scraps and leftovers",
+      "aliases": ["food waste", "leftovers", "plate scrapings", "food scraps", "uneaten food"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy",
+        "Use a caddy liner (compostable or newspaper)"
+      ],
+      "notes": [
+        "All cooked and uncooked food is accepted in the food caddy",
+        "Collected weekly in most boroughs"
+      ],
+      "commonMistakes": [
+        "Don't put food waste in the recycling bin",
+        "Don't use plastic bags as caddy liners"
+      ],
+      "tags": ["food", "organic", "compost"],
+      "examples": ["Plate scrapings", "Leftover meals", "Uneaten food"]
+    },
+    {
+      "id": "tea-bags",
+      "name": "Tea bags",
+      "aliases": ["tea bag", "teabag", "used tea bag"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy"
+      ],
+      "notes": [
+        "Most tea bags contain a small amount of plastic, but they are accepted in food waste"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["food", "tea", "compost"],
+      "examples": ["Used PG Tips bag", "Yorkshire Tea bag"]
+    },
+    {
+      "id": "coffee-grounds",
+      "name": "Coffee grounds and filters",
+      "aliases": ["coffee grounds", "coffee filter", "used coffee", "ground coffee"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy",
+        "Paper filters can go in too"
+      ],
+      "notes": [
+        "Do not include coffee pods — those go in general waste unless specialist recycling"
+      ],
+      "commonMistakes": [
+        "Don't include coffee pods (Nespresso, Dolce Gusto, etc.)"
+      ],
+      "tags": ["food", "coffee", "compost"],
+      "examples": ["Used coffee grounds", "Paper coffee filter"]
+    },
+    {
+      "id": "fruit-vegetable-peelings",
+      "name": "Fruit and vegetable peelings",
+      "aliases": ["peelings", "fruit peel", "veg peelings", "potato peelings", "carrot peelings", "banana skin"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy"
+      ],
+      "notes": [
+        "All fruit and vegetable waste including peelings, cores, and tops"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["food", "fruit", "vegetable", "compost"],
+      "examples": ["Potato peelings", "Banana skin", "Apple core", "Carrot tops"]
+    },
+    {
+      "id": "eggshells",
+      "name": "Eggshells",
+      "aliases": ["eggshell", "egg shell", "egg shells"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy"
+      ],
+      "notes": [
+        "Crush them to save space if you like"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["food", "egg", "compost"],
+      "examples": ["Hen egg shells", "Duck egg shells"]
+    },
+    {
+      "id": "bread-pastries",
+      "name": "Stale bread and pastries",
+      "aliases": ["bread", "stale bread", "pastries", "cake", "mouldy bread", "rolls", "croissant"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy"
+      ],
+      "notes": [
+        "Mouldy bread is fine — it all gets composted"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin",
+        "Don't include packaging"
+      ],
+      "tags": ["food", "bread", "compost"],
+      "examples": ["Stale bread", "Mouldy rolls", "Old croissants", "Leftover cake"]
+    },
+    {
+      "id": "meat-fish-bones",
+      "name": "Meat, fish, and bones",
+      "aliases": ["meat", "fish", "bones", "chicken bones", "fish bones", "raw meat", "cooked meat"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy",
+        "Wrap in newspaper if preferred"
+      ],
+      "notes": [
+        "Both raw and cooked meat/fish accepted in food waste caddy",
+        "Bones are accepted"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin or general waste if food caddy is available"
+      ],
+      "tags": ["food", "meat", "fish", "compost"],
+      "examples": ["Chicken carcass", "Fish skin and bones", "Leftover roast"]
+    },
+    {
+      "id": "dairy-products",
+      "name": "Dairy products",
+      "aliases": ["cheese", "old cheese", "gone-off milk", "yoghurt", "sour cream", "expired dairy"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy"
+      ],
+      "notes": [
+        "Small amounts of dairy are fine in the food caddy"
+      ],
+      "commonMistakes": [
+        "Don't pour liquids directly in — use a caddy liner"
+      ],
+      "tags": ["food", "dairy", "compost"],
+      "examples": ["Old cheese", "Expired yoghurt", "Gone-off milk (small amount)"]
+    },
+    {
+      "id": "rice-pasta-noodles",
+      "name": "Cooked rice, pasta, and noodles",
+      "aliases": ["rice", "pasta", "noodles", "cooked rice", "cooked pasta", "leftover rice"],
+      "category": "compost",
+      "instructions": [
+        "Place in grey food waste caddy"
+      ],
+      "notes": [
+        "All cooked starchy foods accepted"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["food", "starch", "compost"],
+      "examples": ["Leftover rice", "Cooked pasta", "Noodles"]
+    },
+    {
+      "id": "plastic-bags-wrappers",
+      "name": "Plastic bags and wrappers",
+      "aliases": ["plastic bag", "carrier bag", "plastic wrapper", "cling film", "food wrapper", "plastic film", "shrink wrap"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Some supermarkets have carrier bag collection points for soft plastics",
+        "NOT accepted in kerbside recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin — plastic bags jam sorting machinery"
+      ],
+      "tags": ["plastic", "bag", "film", "general waste"],
+      "examples": ["Carrier bags", "Bread bags", "Cling film", "Crisp multipack wrapper"]
+    },
+    {
+      "id": "polystyrene",
+      "name": "Polystyrene and styrofoam",
+      "aliases": ["polystyrene", "styrofoam", "expanded polystyrene", "EPS", "packing peanuts", "polystyrene tray"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin",
+        "Break up large pieces to fit"
+      ],
+      "notes": [
+        "Not recyclable at kerbside in any London borough"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["polystyrene", "packaging", "general waste"],
+      "examples": ["Takeaway boxes", "Packing peanuts", "Meat trays (polystyrene)"]
+    },
+    {
+      "id": "nappies",
+      "name": "Nappies and sanitary products",
+      "aliases": ["nappy", "diaper", "sanitary towel", "sanitary pad", "tampon", "incontinence pad", "pull-up"],
+      "category": "trash",
+      "instructions": [
+        "Wrap securely",
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Never place in the recycling bin"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin",
+        "Don't put in the food waste caddy"
+      ],
+      "tags": ["hygiene", "nappy", "general waste"],
+      "examples": ["Disposable nappies", "Sanitary towels", "Tampons"]
+    },
+    {
+      "id": "shredded-paper",
+      "name": "Shredded paper",
+      "aliases": ["shredded paper", "paper shreddings", "cross-cut paper"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Shredded paper fibres are too short to recycle and jam machinery",
+        "Can be home-composted if you have a composter"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin — it jams sorting equipment"
+      ],
+      "tags": ["paper", "shredded", "general waste"],
+      "examples": ["Cross-cut shredded documents", "Strip-cut paper"]
+    },
+    {
+      "id": "food-soiled-packaging",
+      "name": "Food-soiled packaging",
+      "aliases": ["greasy pizza box", "dirty cardboard", "soiled paper", "food-stained packaging", "greasy paper"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Grease and food contaminate paper recycling",
+        "Tear off the clean parts and recycle those"
+      ],
+      "commonMistakes": [
+        "Don't put greasy pizza boxes in recycling — tear off and recycle the clean lid if possible"
+      ],
+      "tags": ["paper", "soiled", "general waste"],
+      "examples": ["Greasy pizza box", "Chip paper", "Soiled takeaway packaging"]
+    },
+    {
+      "id": "paper-towels-tissues",
+      "name": "Paper towels and tissues",
+      "aliases": ["paper towel", "kitchen roll", "tissue", "kitchen paper", "paper napkin"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Paper fibres are too degraded and contaminated to recycle",
+        "Can be home-composted if uncontaminated"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["paper", "tissue", "general waste"],
+      "examples": ["Used kitchen roll", "Tissues", "Paper napkins"]
+    },
+    {
+      "id": "cling-film",
+      "name": "Cling film",
+      "aliases": ["cling film", "plastic wrap", "food wrap", "saran wrap"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Not recyclable at kerbside"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["plastic", "film", "general waste"],
+      "examples": ["Used cling film", "Food wrap"]
+    },
+    {
+      "id": "crisp-packets-sweet-wrappers",
+      "name": "Crisp packets and sweet wrappers",
+      "aliases": ["crisp packet", "sweet wrapper", "chocolate wrapper", "snack wrapper", "multipack wrapper", "biscuit wrapper"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "These are made of mixed materials (plastic and metallic film) and cannot be recycled at kerbside",
+        "Some specialist schemes (e.g., Terracycle) accept these"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin — they look metallic but are not aluminium"
+      ],
+      "tags": ["wrapper", "snack", "general waste"],
+      "examples": ["Walkers crisp packet", "Chocolate bar wrapper", "Biscuit wrapper"]
+    },
+    {
+      "id": "bubble-wrap",
+      "name": "Bubble wrap",
+      "aliases": ["bubble wrap", "bubblewrap", "air cushion packaging"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin",
+        "Or take to a supermarket carrier bag collection point"
+      ],
+      "notes": [
+        "Not accepted in kerbside recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["plastic", "packaging", "general waste"],
+      "examples": ["Parcel bubble wrap", "Protective bubble wrap"]
+    },
+    {
+      "id": "broken-crockery-ceramics",
+      "name": "Broken crockery and ceramics",
+      "aliases": ["broken plate", "broken mug", "broken bowl", "crockery", "ceramics", "broken china", "terracotta pot"],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully in newspaper",
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Ceramics contaminate glass recycling — never mix them"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin — they ruin glass recycling"
+      ],
+      "tags": ["ceramic", "crockery", "general waste"],
+      "examples": ["Broken plate", "Chipped mug", "Cracked bowl", "Broken terracotta pot"]
+    },
+    {
+      "id": "drinking-glasses-pyrex",
+      "name": "Drinking glasses and Pyrex",
+      "aliases": ["drinking glass", "wine glass", "pint glass", "pyrex", "heat resistant glass", "tumbler"],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully",
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Drinking glasses and Pyrex have different melting points to bottle glass and contaminate recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin — different type of glass to bottles/jars"
+      ],
+      "tags": ["glass", "drinkware", "general waste"],
+      "examples": ["Broken wine glass", "Pint glass", "Pyrex dish"]
+    },
+    {
+      "id": "mirrors-window-glass",
+      "name": "Mirrors and window glass",
+      "aliases": ["mirror", "window glass", "picture frame glass", "sheet glass"],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully in newspaper or cardboard",
+        "Place in general waste bin or take to household waste recycling centre"
+      ],
+      "notes": [
+        "Different composition to bottle/jar glass"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["glass", "mirror", "general waste"],
+      "examples": ["Broken mirror", "Window pane", "Picture frame glass"]
+    },
+    {
+      "id": "wet-wipes",
+      "name": "Wet wipes",
+      "aliases": ["wet wipe", "baby wipe", "face wipe", "cleaning wipe", "antibacterial wipe"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin",
+        "Never flush"
+      ],
+      "notes": [
+        "Most wet wipes contain plastic and are not recyclable or compostable"
+      ],
+      "commonMistakes": [
+        "Don't flush wet wipes — they cause sewer blockages",
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["wipe", "hygiene", "general waste"],
+      "examples": ["Baby wipes", "Face wipes", "Antibacterial wipes"]
+    },
+    {
+      "id": "cotton-wool-buds",
+      "name": "Cotton wool and cotton buds",
+      "aliases": ["cotton wool", "cotton bud", "cotton pad", "cotton ball", "Q-tip"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Even if the stick is paper, used cotton buds go in general waste"
+      ],
+      "commonMistakes": [
+        "Don't flush cotton buds",
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["cotton", "hygiene", "general waste"],
+      "examples": ["Cotton wool pads", "Cotton buds", "Cotton balls"]
+    },
+    {
+      "id": "compostable-packaging",
+      "name": "Compostable and biodegradable packaging",
+      "aliases": ["compostable packaging", "biodegradable bag", "PLA plastic", "compostable cup", "biodegradable packaging"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Compostable packaging is NOT accepted in recycling or food waste",
+        "It requires industrial composting facilities not available via kerbside collection"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin — it contaminates plastic recycling",
+        "Don't put in the food waste caddy"
+      ],
+      "tags": ["compostable", "packaging", "general waste"],
+      "examples": ["PLA cups", "Compostable carrier bags", "Biodegradable food containers"]
+    },
+    {
+      "id": "foil",
+      "name": "Aluminium foil",
+      "aliases": ["tin foil", "aluminium foil", "aluminum foil", "kitchen foil", "foil"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Most London boroughs do NOT accept foil in kerbside recycling",
+        "Check with your specific borough"
+      ],
+      "commonMistakes": [
+        "Don't assume foil is always recyclable — in London it usually isn't at kerbside"
+      ],
+      "tags": ["foil", "aluminium", "general waste"],
+      "examples": ["Kitchen foil", "Foil takeaway containers", "Foil pie cases"]
+    },
+    {
+      "id": "aerosol-cans",
+      "name": "Aerosol cans",
+      "aliases": ["aerosol", "spray can", "deodorant can", "hairspray can", "air freshener can"],
+      "category": "trash",
+      "instructions": [
+        "Place in general waste bin"
+      ],
+      "notes": [
+        "Most London boroughs do NOT accept aerosols in kerbside recycling",
+        "Check with your specific borough — some are now accepting them"
+      ],
+      "commonMistakes": [
+        "Don't assume aerosols are recyclable — check your borough",
+        "Never puncture aerosol cans"
+      ],
+      "tags": ["aerosol", "metal", "general waste"],
+      "examples": ["Deodorant spray", "Hairspray", "Air freshener", "Furniture polish"]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": ["battery", "AA battery", "AAA battery", "9V battery", "button battery", "rechargeable battery"],
+      "category": "hazardous",
+      "instructions": [
+        "Take to a battery collection point at supermarkets or council buildings",
+        "Never put in any household bin"
+      ],
+      "notes": [
+        "Batteries can cause fires in bin lorries and at recycling centres",
+        "Most supermarkets and shops have free battery collection points"
+      ],
+      "commonMistakes": [
+        "Never put batteries in household bins — fire risk",
+        "Don't throw away rechargeable batteries — recycle them"
+      ],
+      "tags": ["battery", "hazardous", "drop-off"],
+      "examples": ["AA batteries", "Phone battery", "Button cell battery", "9V battery"]
+    },
+    {
+      "id": "electronics-electricals",
+      "name": "Electronics and electricals",
+      "aliases": ["electricals", "electronics", "small appliances", "WEEE", "broken electronics", "electrical items", "toaster", "kettle", "iron"],
+      "category": "dropoff",
+      "instructions": [
+        "Take to a household waste recycling centre (HWRC)",
+        "Or use retailer take-back schemes",
+        "Some boroughs offer kerbside collection for small electricals"
+      ],
+      "notes": [
+        "Under WEEE regulations, retailers must accept old items when you buy replacements",
+        "Never put in household bins"
+      ],
+      "commonMistakes": [
+        "Don't put in any household bin",
+        "Don't put in the recycling bin"
+      ],
+      "tags": ["electronics", "electrical", "WEEE", "drop-off"],
+      "examples": ["Broken toaster", "Old kettle", "Hair dryer", "Phone charger"]
+    },
+    {
+      "id": "vapes-e-cigarettes",
+      "name": "Vapes and e-cigarettes",
+      "aliases": ["vape", "e-cigarette", "disposable vape", "vape pen", "e-cig"],
+      "category": "hazardous",
+      "instructions": [
+        "Take to a vape recycling point or household waste recycling centre",
+        "Never put in any household bin"
+      ],
+      "notes": [
+        "Vapes contain lithium batteries and are a serious fire risk in bins and bin lorries",
+        "Many shops now have vape collection points"
+      ],
+      "commonMistakes": [
+        "Never put vapes in any household bin — fire risk",
+        "Don't throw disposable vapes in the rubbish"
+      ],
+      "tags": ["vape", "battery", "hazardous"],
+      "examples": ["Disposable vape", "Refillable vape pen", "E-cigarette"]
+    },
+    {
+      "id": "paint-varnish",
+      "name": "Paint and varnish",
+      "aliases": ["paint", "varnish", "wood stain", "paint tin", "emulsion paint", "gloss paint"],
+      "category": "hazardous",
+      "instructions": [
+        "Take to household waste recycling centre (HWRC)",
+        "Or donate usable paint to Community RePaint schemes"
+      ],
+      "notes": [
+        "Never pour paint down the drain",
+        "Dried-out paint tins (fully empty) can sometimes go in general waste"
+      ],
+      "commonMistakes": [
+        "Don't put in any household bin",
+        "Don't pour down drains or toilets"
+      ],
+      "tags": ["paint", "chemical", "hazardous"],
+      "examples": ["Leftover emulsion paint", "Gloss paint", "Wood varnish"]
+    },
+    {
+      "id": "light-bulbs",
+      "name": "Light bulbs",
+      "aliases": ["light bulb", "lightbulb", "LED bulb", "CFL bulb", "energy saving bulb", "fluorescent tube", "halogen bulb"],
+      "category": "dropoff",
+      "instructions": [
+        "CFL and fluorescent: take to household waste recycling centre",
+        "LED bulbs: take to HWRC or electricals recycling point",
+        "Old-style incandescent and halogen bulbs: general waste bin"
+      ],
+      "notes": [
+        "CFL bulbs contain mercury and must not go in household bins"
+      ],
+      "commonMistakes": [
+        "Don't put CFL or fluorescent bulbs in the recycling bin",
+        "Don't put any light bulb in the glass recycling"
+      ],
+      "tags": ["bulb", "electrical", "drop-off"],
+      "examples": ["Energy saving CFL bulb", "LED bulb", "Fluorescent tube"]
+    },
+    {
+      "id": "textiles-clothes",
+      "name": "Textiles and clothes",
+      "aliases": ["clothes", "clothing", "textiles", "fabric", "shoes", "old clothes", "rags"],
+      "category": "dropoff",
+      "instructions": [
+        "Donate to charity shops if in good condition",
+        "Use textile banks or kerbside collection",
+        "Damaged textiles can go to household waste recycling centre"
+      ],
+      "notes": [
+        "Do NOT put in the recycling bin",
+        "Even damaged clothes can be recycled — don't bin them"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bin — they jam machinery",
+        "Don't put good clothes in general waste — donate or recycle"
+      ],
+      "tags": ["textile", "clothes", "charity", "drop-off"],
+      "examples": ["Old T-shirts", "Worn-out jeans", "Odd socks", "Old shoes"]
+    }
+  ],
+  "rulesSummary": {
+    "accepted": {
+      "recycle": [
+        "Glass bottles and jars (remove metal lids)",
+        "Paper, newspapers, magazines, catalogues (unshredded)",
+        "Flattened cardboard and cardboard packaging",
+        "Plastic bottles (squash, keep lids on)",
+        "Plastic pots, tubs, trays, and containers",
+        "Food and drink cartons / Tetra Paks (squash, keep lids on)",
+        "Aluminium and steel tins and cans",
+        "Envelopes (windowed OK), greeting cards (no glitter)"
+      ],
+      "compost": [
+        "All food waste in grey food waste caddy",
+        "Tea bags, coffee grounds and filters",
+        "Fruit and vegetable peelings, eggshells",
+        "Meat, fish, bones, dairy",
+        "Bread, pastries, rice, pasta, noodles",
+        "Plate scrapings and leftovers"
+      ],
+      "trash": [
+        "Plastic bags, wrappers, cling film, bubble wrap",
+        "Polystyrene and styrofoam",
+        "Nappies and sanitary products",
+        "Shredded paper",
+        "Paper towels, tissues, kitchen roll",
+        "Crisp packets and sweet wrappers",
+        "Broken crockery, ceramics, drinking glasses"
+      ]
+    },
+    "notAccepted": {
+      "recycle": [
+        "Plastic bags and film — they jam sorting machinery",
+        "Polystyrene and styrofoam",
+        "Shredded paper",
+        "Food waste — use the grey food waste caddy",
+        "Garden waste",
+        "Food-soiled packaging",
+        "Foil (most boroughs)",
+        "Aerosol cans (most boroughs)",
+        "Nappies and sanitary products",
+        "Electronics, batteries, vapes — fire risk",
+        "Compostable/biodegradable packaging",
+        "Textiles and clothes — use charity shops or textile banks"
+      ],
+      "compost": [
+        "Plastic bags (even compostable ones)",
+        "Packaging of any kind",
+        "Pet waste or cat litter",
+        "Nappies"
+      ]
+    },
+    "tips": [
+      "If in doubt, leave it out!",
+      "Squash plastic bottles and cartons — keep lids on",
+      "Rinse containers; they don't need to be spotless",
+      "Flatten cardboard boxes to save space",
+      "Remove metal lids from glass bottles and jars",
+      "Never bag your recycling — empty items loose into the bin",
+      "Shredded paper cannot be recycled — put in general waste",
+      "Vapes and batteries cause fires in bin lorries — take to collection points",
+      "Supermarkets accept carrier bags and soft plastics",
+      "Services vary by borough — check your council's website"
+    ]
+  },
+  "locations": [
+    {
+      "name": "London Borough Household Waste Recycling Centres (HWRCs)",
+      "url": "https://londonrecycles.co.uk/",
+      "accepts": [
+        "Electricals and electronics",
+        "Batteries",
+        "Paint and chemicals",
+        "Textiles",
+        "Bulky items",
+        "Garden waste"
+      ],
+      "notes": "Each borough operates its own HWRC. Check your council website for locations and booking requirements."
+    },
+    {
+      "name": "Supermarket Soft Plastics Collection",
+      "url": "https://londonrecycles.co.uk/",
+      "accepts": [
+        "Carrier bags",
+        "Bread bags",
+        "Crisp packets (selected stores)",
+        "Plastic film and wrappers"
+      ],
+      "notes": "Most major supermarkets (Tesco, Sainsbury's, Co-op, Waitrose) have front-of-store collection points for soft plastics."
+    }
+  ]
+}

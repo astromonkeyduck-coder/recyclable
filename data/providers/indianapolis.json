@@ -1,0 +1,1480 @@
+{
+  "id": "indianapolis",
+  "displayName": "Indianapolis, IN",
+  "coverage": {
+    "country": "US",
+    "region": "IN",
+    "city": "Indianapolis",
+    "zips": [
+      "46201", "46202", "46203", "46204", "46205", "46206", "46208", "46214",
+      "46216", "46217", "46218", "46219", "46220", "46221", "46222", "46224",
+      "46225", "46226", "46227", "46228", "46229", "46231", "46234", "46235",
+      "46236", "46237", "46239", "46240", "46241", "46250", "46254", "46256",
+      "46259", "46260", "46268", "46278"
+    ],
+    "aliases": [
+      "indianapolis indiana",
+      "indianapolis in",
+      "indy",
+      "naptown",
+      "circle city",
+      "marion county"
+    ]
+  },
+  "source": {
+    "name": "City of Indianapolis Department of Public Works",
+    "url": "https://www.indy.gov/activity/recycling",
+    "generatedAt": "2026-02-27",
+    "notes": "Based on City of Indianapolis recycling guidelines. Curbside recycling is currently subscription-based and varies by waste district. Universal curbside service planned for 2028.",
+    "license": "Public government data"
+  },
+  "materials": [
+    {
+      "id": "newspapers",
+      "name": "Newspapers",
+      "aliases": [
+        "newspaper", "news paper", "daily paper", "sunday paper",
+        "newspaper inserts", "Indianapolis Star"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place loose in recycling cart (if you have curbside service)",
+        "Keep dry",
+        "Inserts and ads can stay inside"
+      ],
+      "notes": [
+        "Indianapolis curbside recycling is subscription-based — check if your district has service",
+        "Universal curbside recycling is planned for 2028"
+      ],
+      "commonMistakes": [
+        "Don't recycle wet or moldy newspapers",
+        "Don't bag in plastic bags"
+      ],
+      "tags": ["paper", "newspaper", "print"],
+      "examples": ["Indianapolis Star", "Sunday paper with coupons"]
+    },
+    {
+      "id": "magazines-catalogs",
+      "name": "Magazines, catalogs, and brochures",
+      "aliases": [
+        "magazine", "catalog", "catalogue", "brochure", "pamphlet",
+        "glossy magazine", "circular", "coupon book"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place in recycling cart",
+        "Glossy paper is accepted",
+        "No need to remove staples or subscription cards"
+      ],
+      "notes": [
+        "All printed glossy paper is accepted where recycling service is available"
+      ],
+      "commonMistakes": [
+        "Don't bag in plastic bags",
+        "Don't include wet or soiled magazines"
+      ],
+      "tags": ["paper", "magazine", "catalog", "glossy"],
+      "examples": ["People magazine", "IKEA catalog", "Church brochure"]
+    },
+    {
+      "id": "junk-mail-envelopes",
+      "name": "Junk mail and envelopes",
+      "aliases": [
+        "junk mail", "mail", "envelope", "letter", "bills",
+        "statements", "flyer", "mailer", "window envelope"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place in recycling cart",
+        "Window envelopes are accepted — no need to remove the plastic window"
+      ],
+      "notes": [
+        "Staples and paper clips are removed during processing"
+      ],
+      "commonMistakes": [
+        "Don't include padded/bubble mailers — those go in trash"
+      ],
+      "tags": ["paper", "mail", "office"],
+      "examples": ["Junk mail", "Utility bills", "Credit card offers", "Window envelopes"]
+    },
+    {
+      "id": "cardboard-boxes",
+      "name": "Cardboard boxes",
+      "aliases": [
+        "cardboard", "corrugated cardboard", "shipping box", "moving box",
+        "amazon box", "delivery box", "brown box", "packing box"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten all boxes",
+        "Remove packing materials inside",
+        "Place in or next to recycling cart"
+      ],
+      "notes": [
+        "Cardboard is highly valuable for recycling",
+        "Flatten to save space in your cart"
+      ],
+      "commonMistakes": [
+        "Don't include cardboard soaked with grease or food",
+        "Don't leave packing materials inside",
+        "Don't include wax-coated cardboard"
+      ],
+      "tags": ["paper", "cardboard", "box", "shipping"],
+      "examples": ["Amazon shipping box", "Appliance box", "Moving box"]
+    },
+    {
+      "id": "milk-cartons",
+      "name": "Milk cartons and frozen food boxes",
+      "aliases": [
+        "milk carton", "juice carton", "frozen food box", "ice cream carton",
+        "frozen dinner box", "Tetra Pak", "shelf-stable carton"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Flatten frozen food boxes",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "Both refrigerated and shelf-stable cartons are accepted in Indianapolis recycling",
+        "Frozen food boxes are a specific accepted item"
+      ],
+      "commonMistakes": [
+        "Don't include juice pouches (Capri Sun) — those go in trash"
+      ],
+      "tags": ["paper", "carton", "composite"],
+      "examples": ["Horizon milk carton", "Stouffer's frozen dinner box", "Ice cream carton"]
+    },
+    {
+      "id": "plastic-bottles-jugs-1",
+      "name": "Plastic bottles and jugs (#1 PET)",
+      "aliases": [
+        "water bottle", "soda bottle", "pop bottle", "plastic bottle",
+        "PET bottle", "beverage bottle", "sports drink bottle"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Keep lids on or discard — both are acceptable",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "#1 PET is one of the most commonly recycled plastics",
+        "Indianapolis accepts #1 plastics in curbside recycling"
+      ],
+      "commonMistakes": [
+        "Don't include bottles with significant residue",
+        "Don't bag recyclables in plastic bags"
+      ],
+      "tags": ["plastic", "bottle", "#1", "PET", "beverage"],
+      "examples": ["Dasani water bottle", "Coca-Cola bottle", "Gatorade bottle"]
+    },
+    {
+      "id": "plastic-bottles-jugs-2",
+      "name": "Plastic bottles and jugs (#2 HDPE)",
+      "aliases": [
+        "detergent bottle", "milk jug", "shampoo bottle", "bleach bottle",
+        "HDPE bottle", "plastic jug", "laundry bottle"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Keep lids on or discard",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "#2 HDPE is one of the most valuable recycled plastics",
+        "Commonly found in detergent, milk, and shampoo containers"
+      ],
+      "commonMistakes": [
+        "Don't include bottles with significant residue",
+        "Don't bag recyclables"
+      ],
+      "tags": ["plastic", "bottle", "#2", "HDPE"],
+      "examples": ["Tide detergent bottle", "Clorox bottle", "Milk jug", "Shampoo bottle"]
+    },
+    {
+      "id": "plastic-containers-5",
+      "name": "Plastic containers (#5 PP)",
+      "aliases": [
+        "yogurt cup", "butter tub", "margarine tub", "hummus container",
+        "cottage cheese container", "deli container", "PP container",
+        "#5 plastic", "polypropylene"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "#5 PP is accepted in Indianapolis curbside recycling",
+        "Commonly found in food tubs and deli containers"
+      ],
+      "commonMistakes": [
+        "Don't include containers with food residue"
+      ],
+      "tags": ["plastic", "container", "#5", "PP", "food"],
+      "examples": ["Chobani yogurt cup", "Country Crock tub", "Deli counter container"]
+    },
+    {
+      "id": "metal-aluminum-cans",
+      "name": "Aluminum cans",
+      "aliases": [
+        "aluminum can", "soda can", "beer can", "pop can",
+        "beverage can", "seltzer can", "energy drink can"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Leave the tab on — aluminum tabs stay on",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "Aluminum is infinitely recyclable",
+        "Indianapolis specifically notes that aluminum tabs should stay on cans"
+      ],
+      "commonMistakes": [
+        "Don't remove the tab — it stays on the can",
+        "Don't crush cans — leave intact for sorting"
+      ],
+      "tags": ["metal", "aluminum", "can", "beverage"],
+      "examples": ["Coca-Cola can", "Bud Light can", "LaCroix can"]
+    },
+    {
+      "id": "food-cans",
+      "name": "Food cans (steel/tin)",
+      "aliases": [
+        "food can", "soup can", "vegetable can", "bean can",
+        "tuna can", "pet food can", "tin can", "steel can"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Labels can stay on",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "Steel and tin cans are accepted in Indianapolis recycling"
+      ],
+      "commonMistakes": [
+        "Don't include cans with food residue"
+      ],
+      "tags": ["metal", "steel", "tin", "can", "food"],
+      "examples": ["Campbell's soup can", "Del Monte vegetable can", "Tuna can"]
+    },
+    {
+      "id": "scrap-metal",
+      "name": "Scrap metal",
+      "aliases": [
+        "scrap metal", "metal scrap", "aluminum scrap", "copper wire",
+        "metal pieces", "sheet metal small"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Small pieces: place in recycling cart",
+        "Large pieces: take to a scrap metal recycler",
+        "Separate ferrous (magnetic) from non-ferrous for best value at scrap yards"
+      ],
+      "notes": [
+        "Indianapolis lists scrap metal as an accepted recyclable",
+        "Scrap metal recyclers pay for large quantities"
+      ],
+      "commonMistakes": [
+        "Don't include items with mixed materials (e.g., metal with attached plastic)",
+        "Don't include sharp metal without wrapping for safety"
+      ],
+      "tags": ["metal", "scrap", "recyclable"],
+      "examples": ["Metal shelf bracket", "Old pot or pan", "Metal hinges"]
+    },
+    {
+      "id": "glass-bottles-jars",
+      "name": "Glass bottles and jars",
+      "aliases": [
+        "glass bottle", "glass jar", "wine bottle", "beer bottle",
+        "liquor bottle", "sauce jar", "pickle jar", "jam jar"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Remove metal lids",
+        "Place in recycling cart",
+        "Note: glass acceptance varies by location in Indianapolis"
+      ],
+      "notes": [
+        "Glass recycling varies by waste district and provider in Indianapolis",
+        "Check with your specific recycling provider about glass acceptance"
+      ],
+      "commonMistakes": [
+        "Don't include broken glass — wrap and place in trash",
+        "Don't include window glass, mirrors, or ceramics",
+        "Confirm your provider accepts glass — not all do in Indianapolis"
+      ],
+      "tags": ["glass", "bottle", "jar"],
+      "examples": ["Wine bottle", "Beer bottle", "Pasta sauce jar", "Pickle jar"]
+    },
+    {
+      "id": "cereal-paperboard-boxes",
+      "name": "Cereal boxes and paperboard",
+      "aliases": [
+        "cereal box", "cracker box", "pasta box", "tissue box",
+        "shoe box", "paperboard", "food box", "tea box"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten the box",
+        "Remove plastic liners or bags inside",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "Thin paperboard is recyclable",
+        "Paper pieces must be larger than a credit card to be captured by sorting equipment"
+      ],
+      "commonMistakes": [
+        "Don't include the inner plastic bag/liner",
+        "Don't include boxes heavily soiled with food"
+      ],
+      "tags": ["paper", "paperboard", "box", "food"],
+      "examples": ["Cheerios box", "Ritz cracker box", "Tissue box", "Shoe box"]
+    },
+    {
+      "id": "paper-office",
+      "name": "Paper (office, printer, notebook)",
+      "aliases": [
+        "paper", "office paper", "printer paper", "notebook paper",
+        "copy paper", "white paper", "colored paper"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place in recycling cart",
+        "Paper must be larger than a credit card",
+        "Shredded paper: bag in a paper bag"
+      ],
+      "notes": [
+        "Indianapolis specifies paper pieces must be larger than a credit card for effective sorting"
+      ],
+      "commonMistakes": [
+        "Don't include tiny paper scraps — they fall through screens",
+        "Don't include wet or soiled paper"
+      ],
+      "tags": ["paper", "office", "recyclable"],
+      "examples": ["Printer paper", "Notebook paper", "Scrap paper"]
+    },
+    {
+      "id": "paper-bags",
+      "name": "Paper bags",
+      "aliases": [
+        "paper bag", "brown bag", "grocery bag paper", "lunch bag",
+        "kraft bag"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Flatten and place in recycling cart",
+        "Can be used to contain shredded paper"
+      ],
+      "notes": [
+        "Paper bags are recyclable"
+      ],
+      "commonMistakes": [
+        "Don't include bags contaminated with grease or food"
+      ],
+      "tags": ["paper", "bag", "recyclable"],
+      "examples": ["Kroger paper bag", "Brown lunch bag"]
+    },
+    {
+      "id": "aerosol-cans",
+      "name": "Empty aerosol cans",
+      "aliases": [
+        "aerosol can", "spray can", "hairspray can", "cooking spray can",
+        "air freshener can"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Must be completely empty",
+        "Remove plastic cap",
+        "Do not puncture",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "Only completely empty aerosol cans are accepted"
+      ],
+      "commonMistakes": [
+        "Don't recycle aerosol cans with remaining contents",
+        "Don't puncture cans"
+      ],
+      "tags": ["metal", "aerosol", "spray"],
+      "examples": ["Empty hairspray can", "Empty cooking spray can"]
+    },
+    {
+      "id": "aluminum-foil-clean",
+      "name": "Clean aluminum foil",
+      "aliases": [
+        "aluminum foil", "tin foil", "foil"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Must be clean — no food residue",
+        "Ball up small pieces to at least golf-ball size",
+        "Place in recycling cart"
+      ],
+      "notes": [
+        "Only clean foil is recyclable — contaminated foil goes in trash"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy or food-covered foil",
+        "Don't put small scraps loose — ball them up"
+      ],
+      "tags": ["metal", "aluminum", "foil", "kitchen"],
+      "examples": ["Clean baking foil balled up"]
+    },
+    {
+      "id": "plastic-bags-film",
+      "name": "Plastic bags, wraps, and film",
+      "aliases": [
+        "plastic bag", "grocery bag", "trash bag", "ziplock bag",
+        "sandwich bag", "plastic wrap", "cling wrap", "saran wrap",
+        "produce bag", "bread bag", "dry cleaning bag"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Many Kroger and Meijer stores accept clean bags for recycling",
+        "Never place in recycling cart"
+      ],
+      "notes": [
+        "Plastic bags tangle in sorting machinery and shut down facilities",
+        "They are the #1 contaminant in recycling"
+      ],
+      "commonMistakes": [
+        "NEVER bag recyclables in plastic bags — put items loose in the cart",
+        "Don't put any plastic film in recycling"
+      ],
+      "tags": ["plastic", "bag", "film", "contaminant"],
+      "examples": ["Kroger grocery bag", "Ziploc bag", "Bread bag", "Produce bag"]
+    },
+    {
+      "id": "styrofoam",
+      "name": "Styrofoam / polystyrene foam",
+      "aliases": [
+        "styrofoam", "polystyrene", "foam", "EPS", "foam cup",
+        "foam plate", "foam container", "takeout container foam",
+        "packing peanuts", "meat tray foam", "#6 foam"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Not recyclable in Indianapolis curbside programs"
+      ],
+      "notes": [
+        "Expanded polystyrene foam is not accepted in recycling"
+      ],
+      "commonMistakes": [
+        "Don't put any styrofoam in the recycling cart"
+      ],
+      "tags": ["plastic", "foam", "styrofoam", "polystyrene"],
+      "examples": ["Styrofoam takeout container", "Foam coffee cup", "Packing peanuts"]
+    },
+    {
+      "id": "food-waste",
+      "name": "Food waste and scraps",
+      "aliases": [
+        "food waste", "food scraps", "kitchen scraps", "leftover food",
+        "spoiled food", "expired food", "table scraps", "plate scrapings"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Bag food waste to contain odor",
+        "Indianapolis does not offer curbside composting"
+      ],
+      "notes": [
+        "No curbside composting is available in Indianapolis",
+        "Consider home composting for fruit and vegetable scraps"
+      ],
+      "commonMistakes": [
+        "Never put food waste in recycling"
+      ],
+      "tags": ["organic", "food", "waste"],
+      "examples": ["Banana peel", "Leftover dinner", "Expired food", "Apple core"]
+    },
+    {
+      "id": "fruit-vegetable-scraps",
+      "name": "Fruit and vegetable scraps",
+      "aliases": [
+        "fruit scraps", "vegetable scraps", "banana peel", "apple core",
+        "potato peel", "onion skin", "carrot top", "melon rind"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Ideal for home composting"
+      ],
+      "notes": [
+        "No curbside composting in Indianapolis"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling cart"
+      ],
+      "tags": ["organic", "food", "compost-at-home"],
+      "examples": ["Banana peel", "Apple core", "Potato peels", "Wilted lettuce"]
+    },
+    {
+      "id": "coffee-grounds-tea",
+      "name": "Coffee grounds and tea bags",
+      "aliases": [
+        "coffee grounds", "coffee filter", "tea bag", "tea leaves", "K-cup"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Excellent for home composting"
+      ],
+      "notes": [
+        "No curbside composting in Indianapolis"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["organic", "food", "beverage", "compost-at-home"],
+      "examples": ["Used coffee grounds", "Paper coffee filter", "Used tea bags"]
+    },
+    {
+      "id": "meat-bones-dairy",
+      "name": "Meat, bones, and dairy waste",
+      "aliases": [
+        "meat", "chicken bones", "beef", "pork", "fish",
+        "bones", "dairy", "cheese", "expired milk"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap in newspaper to contain odor",
+        "Place in trash cart",
+        "Put out on collection day to minimize pest attraction"
+      ],
+      "notes": [
+        "Meat and dairy attract pests — wrap securely"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Don't home compost meat or dairy — attracts rodents"
+      ],
+      "tags": ["organic", "food", "meat", "dairy"],
+      "examples": ["Chicken bones", "Steak trimmings", "Expired cheese"]
+    },
+    {
+      "id": "diapers",
+      "name": "Diapers and hygiene products",
+      "aliases": [
+        "diaper", "nappy", "pull-ups", "adult diaper",
+        "sanitary pad", "tampon", "feminine hygiene"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Roll up and secure with tabs",
+        "Place in trash cart"
+      ],
+      "notes": [
+        "Diapers contain mixed materials and human waste — never recyclable"
+      ],
+      "commonMistakes": [
+        "Never put diapers in the recycling cart"
+      ],
+      "tags": ["hygiene", "personal", "waste"],
+      "examples": ["Used baby diaper", "Adult incontinence product"]
+    },
+    {
+      "id": "candy-wrappers-chip-bags",
+      "name": "Candy wrappers, chip bags, and snack pouches",
+      "aliases": [
+        "candy wrapper", "chip bag", "snack bag", "foil wrapper",
+        "granola bar wrapper", "energy bar wrapper", "snack pouch"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Multi-layer film packaging is not recyclable"
+      ],
+      "notes": [
+        "Despite the metallic appearance, these are multi-layer plastic film"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling — the metallic look is deceiving"
+      ],
+      "tags": ["plastic", "wrapper", "film", "snack"],
+      "examples": ["Lay's chip bag", "Snickers wrapper", "Kind bar wrapper"]
+    },
+    {
+      "id": "disposable-coffee-cups",
+      "name": "Disposable coffee cups",
+      "aliases": [
+        "coffee cup", "paper cup", "Starbucks cup", "hot cup",
+        "to-go cup", "disposable cup"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "The polyethylene lining prevents recycling",
+        "Cardboard sleeve can be recycled separately"
+      ],
+      "notes": [
+        "Paper cups have a plastic lining that makes them non-recyclable"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "The cardboard sleeve IS recyclable — separate it"
+      ],
+      "tags": ["paper", "cup", "lined", "beverage"],
+      "examples": ["Starbucks hot cup", "Dunkin' cup", "Gas station coffee cup"]
+    },
+    {
+      "id": "soiled-paper",
+      "name": "Soiled or wet paper and cardboard",
+      "aliases": [
+        "greasy paper", "wet paper", "soiled paper", "greasy cardboard",
+        "food-stained paper", "pizza box greasy"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Grease and food residue ruin paper recycling"
+      ],
+      "notes": [
+        "Even a small amount of grease can contaminate a batch of recycled paper"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy pizza boxes",
+        "Tear off the clean top to recycle if possible"
+      ],
+      "tags": ["paper", "contaminated", "soiled"],
+      "examples": ["Greasy pizza box", "Paper plate with food", "Oil-stained cardboard"]
+    },
+    {
+      "id": "plastic-utensils-straws",
+      "name": "Plastic utensils and straws",
+      "aliases": [
+        "plastic fork", "plastic knife", "plastic spoon", "straw",
+        "plastic straw", "stirrer", "spork"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Too small for sorting equipment"
+      ],
+      "notes": [
+        "Even though made of recyclable plastic types, these are too small for machinery"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["plastic", "utensils", "disposable", "small"],
+      "examples": ["Plastic fork", "Drinking straw", "Coffee stirrer"]
+    },
+    {
+      "id": "bubble-wrap-packing",
+      "name": "Bubble wrap, air pillows, and packing peanuts",
+      "aliases": [
+        "bubble wrap", "air pillow", "packing peanuts",
+        "inflatable packaging", "packing material"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Deflate air pillows",
+        "Place in trash cart",
+        "Some stores accept clean bubble wrap with plastic bag recycling"
+      ],
+      "notes": [
+        "Packing materials are not accepted in Indianapolis curbside recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling cart"
+      ],
+      "tags": ["plastic", "film", "packing"],
+      "examples": ["Bubble wrap sheet", "Amazon air pillows", "Styrofoam packing peanuts"]
+    },
+    {
+      "id": "paper-towels-napkins",
+      "name": "Paper towels, napkins, and tissues",
+      "aliases": [
+        "paper towel", "napkin", "tissue", "Kleenex", "facial tissue"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Paper fibers too short and contaminated to recycle"
+      ],
+      "notes": [
+        "Used paper towels absorb moisture and contaminants"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["paper", "hygiene", "disposable"],
+      "examples": ["Used paper towel", "Dinner napkin", "Kleenex tissue"]
+    },
+    {
+      "id": "receipts-thermal",
+      "name": "Receipts (thermal paper)",
+      "aliases": [
+        "receipt", "thermal paper", "register receipt", "store receipt"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Thermal paper contains BPA/BPS"
+      ],
+      "notes": [
+        "Thermal paper chemicals contaminate recycled paper products"
+      ],
+      "commonMistakes": [
+        "Don't recycle receipts"
+      ],
+      "tags": ["paper", "thermal", "chemical"],
+      "examples": ["Grocery receipt", "ATM receipt", "Gas station receipt"]
+    },
+    {
+      "id": "mirrors-window-glass-ceramics",
+      "name": "Mirrors, window glass, and ceramics",
+      "aliases": [
+        "mirror", "window glass", "ceramic", "pottery", "porcelain",
+        "drinking glass", "Pyrex", "crystal"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully for safety",
+        "Place in trash cart"
+      ],
+      "notes": [
+        "Different chemical composition than bottle glass — different melting points"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling",
+        "Don't confuse drinking glasses with recyclable glass bottles"
+      ],
+      "tags": ["glass", "ceramic", "non-recyclable"],
+      "examples": ["Broken mirror", "Old window pane", "Broken coffee mug"]
+    },
+    {
+      "id": "hangers",
+      "name": "Hangers",
+      "aliases": [
+        "hanger", "coat hanger", "wire hanger", "plastic hanger"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Return wire hangers to dry cleaners for reuse"
+      ],
+      "notes": [
+        "Hangers tangle in recycling machinery"
+      ],
+      "commonMistakes": [
+        "Don't put any type of hanger in recycling"
+      ],
+      "tags": ["mixed", "household"],
+      "examples": ["Wire hanger", "Plastic hanger"]
+    },
+    {
+      "id": "wax-paper-parchment",
+      "name": "Wax paper and parchment paper",
+      "aliases": [
+        "wax paper", "parchment paper", "baking paper", "freezer paper"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Wax coating prevents recycling"
+      ],
+      "notes": [
+        "Wax-coated paper cannot be processed at paper mills"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["paper", "wax", "kitchen"],
+      "examples": ["Wax paper", "Parchment paper"]
+    },
+    {
+      "id": "fast-food-wrappers",
+      "name": "Fast food wrappers and containers",
+      "aliases": [
+        "fast food wrapper", "burger wrapper", "french fry container",
+        "fast food bag"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Grease contamination makes these non-recyclable"
+      ],
+      "notes": [
+        "Most fast food packaging is contaminated with food and grease"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy food packaging"
+      ],
+      "tags": ["paper", "food", "contaminated"],
+      "examples": ["McDonald's wrapper", "Burger King fry box", "Greasy paper bag"]
+    },
+    {
+      "id": "clothing-textiles",
+      "name": "Clothing and textiles",
+      "aliases": [
+        "clothing", "clothes", "shirt", "pants", "jeans",
+        "shoes", "textiles", "fabric", "towels", "bedsheets"
+      ],
+      "category": "trash",
+      "instructions": [
+        "If wearable, donate to Goodwill, Salvation Army, or local thrift stores",
+        "If not wearable, place in trash cart"
+      ],
+      "notes": [
+        "Indianapolis does not accept textiles in curbside recycling",
+        "Donation is always preferred"
+      ],
+      "commonMistakes": [
+        "Don't put clothing in the recycling cart"
+      ],
+      "tags": ["textile", "clothing", "donation"],
+      "examples": ["Old t-shirt", "Worn jeans", "Stained towels"]
+    },
+    {
+      "id": "rubber-items",
+      "name": "Rubber items",
+      "aliases": [
+        "rubber", "garden hose", "rubber gloves", "rubber mat",
+        "flip flops"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Garden hoses: cut into short sections"
+      ],
+      "notes": [
+        "Rubber tangles in recycling machinery"
+      ],
+      "commonMistakes": [
+        "Don't put rubber in recycling — especially hoses"
+      ],
+      "tags": ["rubber", "household"],
+      "examples": ["Old garden hose", "Worn flip flops", "Rubber gloves"]
+    },
+    {
+      "id": "juice-pouches",
+      "name": "Juice pouches and drink pouches",
+      "aliases": [
+        "juice pouch", "Capri Sun", "drink pouch", "baby food pouch"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Multi-layer packaging cannot be recycled"
+      ],
+      "notes": [
+        "Pouches are fused layers of plastic and metal"
+      ],
+      "commonMistakes": [
+        "Don't confuse with recyclable cartons"
+      ],
+      "tags": ["plastic", "pouch", "multi-layer"],
+      "examples": ["Capri Sun pouch", "GoGo Squeeze pouch"]
+    },
+    {
+      "id": "pizza-boxes",
+      "name": "Pizza boxes",
+      "aliases": [
+        "pizza box", "pizza carton"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Greasy portions go in trash",
+        "Clean top: tear off and recycle",
+        "Greasy bottom always goes in trash"
+      ],
+      "notes": [
+        "Grease-saturated cardboard fibers cannot be recycled"
+      ],
+      "commonMistakes": [
+        "Don't recycle greasy parts"
+      ],
+      "tags": ["paper", "cardboard", "food", "contaminated"],
+      "examples": ["Papa John's pizza box", "Domino's pizza box"]
+    },
+    {
+      "id": "light-bulbs-incandescent-led",
+      "name": "Incandescent and LED light bulbs",
+      "aliases": [
+        "light bulb", "LED bulb", "incandescent bulb", "bulb"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Wrap in paper or original packaging",
+        "Place in trash cart"
+      ],
+      "notes": [
+        "Incandescent and LED bulbs are not hazardous (unlike CFLs)"
+      ],
+      "commonMistakes": [
+        "Don't confuse with CFL bulbs — CFLs contain mercury"
+      ],
+      "tags": ["household", "lighting"],
+      "examples": ["Burnt-out LED bulb", "Old incandescent bulb"]
+    },
+    {
+      "id": "pens-markers",
+      "name": "Pens, markers, and tape",
+      "aliases": [
+        "pen", "marker", "Sharpie", "highlighter", "tape", "duct tape"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart",
+        "Mixed materials cannot be separated"
+      ],
+      "notes": [
+        "Too small and made of bonded materials for recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling"
+      ],
+      "tags": ["office", "mixed", "small"],
+      "examples": ["Dried-out pen", "Old Sharpie"]
+    },
+    {
+      "id": "yard-waste",
+      "name": "Yard waste",
+      "aliases": [
+        "grass clippings", "leaves", "branches", "lawn clippings",
+        "garden waste", "hedge trimmings", "tree trimmings"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Indianapolis offers seasonal curbside yard waste collection",
+        "Place in approved paper bags or containers during collection season",
+        "Outside collection season: bag and place in trash",
+        "Branches must be bundled (4 feet max)"
+      ],
+      "notes": [
+        "Yard waste collection is seasonal — check indy.gov for dates",
+        "Not accepted in recycling carts"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling cart",
+        "Don't use plastic bags for yard waste during collection season"
+      ],
+      "tags": ["organic", "yard", "garden", "seasonal"],
+      "examples": ["Grass clippings", "Fallen leaves", "Small branches"]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": [
+        "battery", "AA battery", "AAA battery", "9V battery",
+        "lithium battery", "rechargeable battery", "button battery",
+        "car battery"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Do not place in trash or recycling",
+        "Take to a household hazardous waste collection event",
+        "Home Depot, Lowe's, and Best Buy accept batteries",
+        "Car batteries: return to auto parts store"
+      ],
+      "notes": [
+        "Lithium batteries cause fires in trash trucks and recycling facilities",
+        "Indianapolis has periodic HHW collection events"
+      ],
+      "commonMistakes": [
+        "NEVER put lithium batteries in trash — fire risk",
+        "Don't put any batteries in the recycling cart"
+      ],
+      "tags": ["hazardous", "battery", "electronics"],
+      "examples": ["AA Duracell battery", "Phone battery", "Car battery"]
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "aliases": [
+        "paint", "latex paint", "oil paint", "spray paint",
+        "primer", "stain", "paint can"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Latex paint: dry out with kitty litter, then trash the solid",
+        "Oil-based paint: take to HHW collection",
+        "Never pour paint down drains",
+        "Check indy.gov for ToxDrop locations and events"
+      ],
+      "notes": [
+        "Indianapolis runs ToxDrop events for household hazardous waste",
+        "Dried latex paint can go in regular trash"
+      ],
+      "commonMistakes": [
+        "Never pour paint down drains",
+        "Don't put liquid paint in trash"
+      ],
+      "tags": ["hazardous", "chemical", "household"],
+      "examples": ["Half-used paint can", "Old spray paint", "Wood stain"]
+    },
+    {
+      "id": "motor-oil-antifreeze",
+      "name": "Motor oil and antifreeze",
+      "aliases": [
+        "motor oil", "engine oil", "used oil", "antifreeze",
+        "coolant", "transmission fluid"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Take to auto parts stores (AutoZone, O'Reilly) for recycling",
+        "Or bring to a ToxDrop event",
+        "Never pour down drains or on the ground"
+      ],
+      "notes": [
+        "Used motor oil is re-refined into new oil"
+      ],
+      "commonMistakes": [
+        "Never pour down drains or storm drains",
+        "Don't mix motor oil with other fluids"
+      ],
+      "tags": ["hazardous", "automotive", "chemical"],
+      "examples": ["Used motor oil", "Old antifreeze"]
+    },
+    {
+      "id": "pesticides-chemicals",
+      "name": "Pesticides, herbicides, and household chemicals",
+      "aliases": [
+        "pesticide", "herbicide", "insecticide", "weed killer",
+        "bug spray", "pool chemicals", "household chemicals"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Take to Indianapolis ToxDrop event or permanent location",
+        "Keep in original containers with labels",
+        "Never pour down drains or storm drains"
+      ],
+      "notes": [
+        "Indianapolis ToxDrop is the primary disposal path for hazardous materials"
+      ],
+      "commonMistakes": [
+        "Never pour chemicals down drains",
+        "Don't mix different chemicals"
+      ],
+      "tags": ["hazardous", "chemical", "poison"],
+      "examples": ["Old Roundup", "Pool chlorine", "Ant poison", "Drain cleaner"]
+    },
+    {
+      "id": "fluorescent-bulbs-cfls",
+      "name": "Fluorescent bulbs and CFLs",
+      "aliases": [
+        "fluorescent bulb", "CFL", "compact fluorescent",
+        "fluorescent tube", "tube light"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Take to Home Depot or Lowe's for free CFL recycling",
+        "Or bring to a ToxDrop event",
+        "Handle carefully — contains mercury"
+      ],
+      "notes": [
+        "Mercury makes fluorescent bulbs hazardous waste",
+        "If broken, ventilate area and follow EPA cleanup guidelines"
+      ],
+      "commonMistakes": [
+        "Don't put in trash — mercury is hazardous",
+        "Don't break bulbs"
+      ],
+      "tags": ["hazardous", "mercury", "lighting"],
+      "examples": ["CFL spiral bulb", "4-foot fluorescent tube"]
+    },
+    {
+      "id": "propane-tanks",
+      "name": "Propane tanks and compressed gas",
+      "aliases": [
+        "propane tank", "propane", "compressed gas", "helium tank",
+        "camping propane"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Do not place in trash or recycling",
+        "Large tanks: exchange at hardware stores",
+        "Small cylinders: bring to ToxDrop"
+      ],
+      "notes": [
+        "Pressurized containers can explode in compactor trucks"
+      ],
+      "commonMistakes": [
+        "NEVER place in trash or recycling — explosion risk"
+      ],
+      "tags": ["hazardous", "pressurized", "flammable"],
+      "examples": ["Grill propane tank", "Camping propane cylinder"]
+    },
+    {
+      "id": "medications",
+      "name": "Medications and pharmaceuticals",
+      "aliases": [
+        "medication", "medicine", "pills", "prescription drugs",
+        "expired medication", "vitamins"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Take to a pharmacy drug take-back program",
+        "Indianapolis Metropolitan Police has medication drop-off boxes",
+        "Do not flush medications",
+        "Do not place in trash"
+      ],
+      "notes": [
+        "Flushing medications contaminates Indianapolis water supply"
+      ],
+      "commonMistakes": [
+        "Don't flush medications",
+        "Don't put in regular trash"
+      ],
+      "tags": ["hazardous", "pharmaceutical", "medical"],
+      "examples": ["Expired Tylenol", "Old prescription meds"]
+    },
+    {
+      "id": "sharps-needles",
+      "name": "Sharps and needles",
+      "aliases": [
+        "needle", "syringe", "lancet", "sharps", "insulin needle"
+      ],
+      "category": "hazardous",
+      "instructions": [
+        "Place in an FDA-cleared sharps container",
+        "When full, take to an approved drop-off location",
+        "Never place loose sharps in trash or recycling"
+      ],
+      "notes": [
+        "Loose needles endanger sanitation workers"
+      ],
+      "commonMistakes": [
+        "NEVER put loose needles in trash or recycling"
+      ],
+      "tags": ["hazardous", "medical", "sharps"],
+      "examples": ["Used insulin syringe", "Diabetic lancet"]
+    },
+    {
+      "id": "electronics-ewaste",
+      "name": "Electronics / e-waste",
+      "aliases": [
+        "electronics", "e-waste", "cell phone", "tablet",
+        "phone charger", "cables", "headphones", "game console",
+        "toaster", "blender"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Do not place in trash or recycling carts",
+        "Best Buy accepts most small electronics for free",
+        "Check indy.gov for e-waste recycling locations"
+      ],
+      "notes": [
+        "E-waste contains both hazardous materials and valuable metals"
+      ],
+      "commonMistakes": [
+        "Don't put electronics in curbside carts",
+        "Remove batteries before recycling"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff"],
+      "examples": ["Old cell phone", "Broken toaster", "Tangled cables"]
+    },
+    {
+      "id": "televisions-monitors",
+      "name": "Televisions and monitors",
+      "aliases": [
+        "TV", "television", "monitor", "flat screen", "CRT TV",
+        "LCD TV", "computer monitor"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Do not place in trash or recycling",
+        "Best Buy accepts TVs up to 32 inches for free",
+        "Contact Indianapolis DPW for large item disposal options"
+      ],
+      "notes": [
+        "CRT TVs contain lead; LCD screens may contain mercury"
+      ],
+      "commonMistakes": [
+        "Don't leave TVs at the curb",
+        "Don't break screens"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff"],
+      "examples": ["Old flat screen TV", "CRT television", "Computer monitor"]
+    },
+    {
+      "id": "computers-laptops",
+      "name": "Computers and laptops",
+      "aliases": [
+        "computer", "laptop", "desktop", "PC", "Mac",
+        "keyboard", "printer"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Wipe personal data before recycling",
+        "Best Buy and Staples accept computers",
+        "Some nonprofits accept working computers"
+      ],
+      "notes": [
+        "Erase hard drives for privacy before recycling"
+      ],
+      "commonMistakes": [
+        "Don't forget to wipe personal data"
+      ],
+      "tags": ["electronics", "e-waste", "dropoff", "data"],
+      "examples": ["Old desktop", "Broken laptop", "Old printer"]
+    },
+    {
+      "id": "tires",
+      "name": "Tires",
+      "aliases": [
+        "tire", "tires", "car tire", "bicycle tire"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Take to a tire retailer — most accept old tires with new purchase",
+        "Check Indianapolis DPW for tire disposal options"
+      ],
+      "notes": [
+        "Tires are banned from Indiana landfills",
+        "Illegally dumped tires breed mosquitoes"
+      ],
+      "commonMistakes": [
+        "Don't leave tires at the curb",
+        "Don't illegally dump tires"
+      ],
+      "tags": ["rubber", "automotive", "dropoff"],
+      "examples": ["Worn car tire", "Old bicycle tire"]
+    },
+    {
+      "id": "large-appliances",
+      "name": "Large appliances",
+      "aliases": [
+        "refrigerator", "fridge", "washer", "dryer", "dishwasher",
+        "oven", "stove", "water heater", "air conditioner"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a heavy trash pickup with Indianapolis DPW",
+        "Appliance retailers often offer haul-away with delivery",
+        "Scrap metal recyclers may accept large appliances"
+      ],
+      "notes": [
+        "Appliances with refrigerants require special handling",
+        "Indianapolis offers heavy trash pickup for residents"
+      ],
+      "commonMistakes": [
+        "Don't leave at curb without scheduling",
+        "Don't remove refrigerant yourself"
+      ],
+      "tags": ["appliance", "metal", "bulk", "dropoff"],
+      "examples": ["Old refrigerator", "Broken washer", "Old water heater"]
+    },
+    {
+      "id": "mattresses-furniture",
+      "name": "Mattresses and large furniture",
+      "aliases": [
+        "mattress", "couch", "sofa", "desk", "table",
+        "dresser", "bed frame", "bookshelf"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Schedule a heavy trash pickup with Indianapolis DPW",
+        "Donate usable items to Goodwill, Habitat ReStore, or Salvation Army"
+      ],
+      "notes": [
+        "Indianapolis offers heavy trash pickup — check indy.gov for schedule and rules"
+      ],
+      "commonMistakes": [
+        "Don't leave at curb without scheduling"
+      ],
+      "tags": ["furniture", "bulk", "donation", "dropoff"],
+      "examples": ["Old mattress", "Worn-out couch", "Broken desk"]
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking oil and grease",
+      "aliases": [
+        "cooking oil", "vegetable oil", "grease", "fryer oil",
+        "bacon grease"
+      ],
+      "category": "dropoff",
+      "instructions": [
+        "Small amounts: absorb with paper towels and trash",
+        "Large amounts: store in sealed container and take to recycling center",
+        "Never pour down drains"
+      ],
+      "notes": [
+        "Cooking oil causes sewer blockages and can be recycled into biodiesel"
+      ],
+      "commonMistakes": [
+        "NEVER pour cooking oil down the drain"
+      ],
+      "tags": ["organic", "oil", "kitchen", "dropoff"],
+      "examples": ["Used fryer oil", "Bacon grease"]
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "aliases": [
+        "book", "textbook", "paperback", "hardcover", "novel"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Donate books in good condition to Indianapolis Public Library or thrift stores",
+        "Damaged books: remove hardcovers and recycle the paper pages",
+        "Place pages in recycling cart"
+      ],
+      "notes": [
+        "Paper pages are recyclable; hardcovers have mixed materials",
+        "Donation is always preferred"
+      ],
+      "commonMistakes": [
+        "Don't throw away books that could be donated"
+      ],
+      "tags": ["paper", "donation", "recyclable"],
+      "examples": ["Old textbook", "Worn paperback novel"]
+    },
+    {
+      "id": "shredded-paper",
+      "name": "Shredded paper",
+      "aliases": [
+        "shredded paper", "paper shreds", "shredded documents"
+      ],
+      "category": "recycle",
+      "instructions": [
+        "Place in a paper bag and fold or staple closed",
+        "Place the bag in recycling cart"
+      ],
+      "notes": [
+        "Loose shredded paper jams machinery and blows away"
+      ],
+      "commonMistakes": [
+        "Don't put loose shredded paper in the cart",
+        "Don't use a plastic bag"
+      ],
+      "tags": ["paper", "office", "recyclable"],
+      "examples": ["Shredded bank statements", "Shredded junk mail"]
+    },
+    {
+      "id": "medical-waste",
+      "name": "Medical waste (non-sharp)",
+      "aliases": [
+        "medical waste", "bandages", "gauze", "wound dressing",
+        "surgical gloves", "face mask"
+      ],
+      "category": "trash",
+      "instructions": [
+        "Place in trash cart (non-sharp items)",
+        "Sharps require special handling — see sharps entry"
+      ],
+      "notes": [
+        "Non-sharp medical waste goes in regular trash"
+      ],
+      "commonMistakes": [
+        "Never put loose sharps in trash",
+        "Never put medical waste in recycling"
+      ],
+      "tags": ["medical", "hygiene", "waste"],
+      "examples": ["Used bandages", "Disposable face masks", "Medical gloves"]
+    }
+  ],
+  "rulesSummary": {
+    "accepted": {
+      "recycle": [
+        "Newspapers, magazines, junk mail, envelopes, brochures",
+        "Cardboard boxes (flattened)",
+        "Milk cartons and frozen food boxes",
+        "Plastic bottles and jugs (#1, #2, #5)",
+        "Plastic containers (#1, #2, #5)",
+        "Aluminum cans (leave tab on)",
+        "Food cans (steel/tin)",
+        "Scrap metal",
+        "Glass bottles and jars (varies by location)",
+        "Cereal boxes and paperboard (flatten, remove liners)",
+        "Office paper, notebook paper (larger than credit card)",
+        "Paper bags",
+        "Empty aerosol cans",
+        "Clean aluminum foil (balled up)",
+        "Books (donate if possible, or recycle pages)",
+        "Shredded paper (in a paper bag)"
+      ],
+      "trash": [
+        "Plastic bags, wraps, and film",
+        "Styrofoam / polystyrene foam",
+        "Food waste and scraps (no curbside composting)",
+        "Soiled or greasy paper/cardboard",
+        "Candy wrappers, chip bags, snack pouches",
+        "Disposable coffee cups",
+        "Plastic utensils and straws",
+        "Paper towels, napkins, tissues",
+        "Diapers and hygiene products",
+        "Mirrors, window glass, ceramics",
+        "Yard waste (seasonal collection or trash)"
+      ]
+    },
+    "notAccepted": {
+      "recycle": [
+        "Plastic bags — they jam sorting machinery",
+        "Styrofoam cups, plates, containers",
+        "Food waste or food-contaminated items",
+        "Yard waste",
+        "Clothing and textiles",
+        "Mirrors, window glass, ceramics, drinking glasses",
+        "Hangers (any type)",
+        "Electronics and batteries",
+        "Paper smaller than a credit card"
+      ]
+    },
+    "tips": [
+      "Recycling is currently subscription-based in Indianapolis — check with your waste district",
+      "Universal curbside recycling is planned for 2028",
+      "Empty, rinse, and dry all recyclables before placing in the cart",
+      "Keep lids on or discard — both are acceptable in Indianapolis",
+      "Flatten cardboard boxes to save space",
+      "Aluminum tabs stay on the cans",
+      "Paper pieces must be larger than a credit card",
+      "Never bag recyclables in plastic bags — place items loose in the cart",
+      "Plastic bags are the #1 contaminant — take to Kroger or Meijer for recycling",
+      "When in doubt, throw it out — contamination hurts the recycling stream",
+      "Check indy.gov/activity/recycling for your waste district's specific rules",
+      "Indianapolis ToxDrop events handle hazardous waste — check schedule at indy.gov"
+    ]
+  },
+  "locations": [
+    {
+      "name": "Indianapolis ToxDrop - Permanent Location",
+      "address": "2243 S. Belmont Avenue, Indianapolis, IN 46221",
+      "phone": "(317) 327-2100",
+      "url": "https://www.indy.gov/activity/toxdrop",
+      "accepts": [
+        "Batteries",
+        "Paint (latex and oil-based)",
+        "Motor oil and antifreeze",
+        "Pesticides and chemicals",
+        "Fluorescent bulbs and CFLs",
+        "Propane tanks (small)",
+        "Household cleaners"
+      ],
+      "hours": "Check indy.gov for current hours and seasonal ToxDrop events",
+      "notes": "Indianapolis DPW operates ToxDrop for household hazardous waste. Multiple seasonal events throughout the year at various locations."
+    },
+    {
+      "name": "Indianapolis Department of Public Works",
+      "phone": "(317) 327-4622",
+      "url": "https://www.indy.gov/agency/department-of-public-works",
+      "accepts": [
+        "Heavy trash pickup scheduling",
+        "Recycling cart issues",
+        "Yard waste collection (seasonal)"
+      ],
+      "notes": "Call for heavy trash pickup scheduling and recycling questions"
+    },
+    {
+      "name": "South Side Landfill (Citizens Transfer Station)",
+      "address": "2502 S. Harding Street, Indianapolis, IN 46221",
+      "accepts": [
+        "Household waste",
+        "Bulky items",
+        "Construction debris"
+      ],
+      "hours": "Monday-Friday 7am-3pm, Saturday 7am-11am",
+      "notes": "Fees apply. Operated by the City of Indianapolis."
+    }
+  ]
+}

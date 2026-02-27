@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { InstallPrompt } from "@/components/common/install-prompt";
 import { OfflineIndicator } from "@/components/common/offline-indicator";
 import { getSiteUrl } from "@/lib/utils/site-url";
+import { buildOgImageUrl } from "@/lib/utils/og-params";
 import { PageTransition } from "@/components/common/page-transition";
 import Script from "next/script";
 
@@ -16,7 +17,8 @@ const inter = Inter({
 });
 
 const siteUrl = getSiteUrl();
-const ogImage = `${siteUrl}/og/default.png`;
+const dynamicOg = buildOgImageUrl(siteUrl, { variant: "homepage" });
+const staticOg = `${siteUrl}/og/default.png`;
 
 export const metadata: Metadata = {
   title: {
@@ -39,10 +41,17 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: ogImage,
+        url: dynamicOg,
         width: 1200,
         height: 630,
-        alt: "Is this recyclable? - Know exactly how to dispose of anything.",
+        alt: "Is this recyclable? — Snap it, search it, sort it.",
+        type: "image/png",
+      },
+      {
+        url: staticOg,
+        width: 1200,
+        height: 630,
+        alt: "Is this recyclable? — Snap it, search it, sort it.",
         type: "image/png",
       },
     ],
@@ -54,10 +63,10 @@ export const metadata: Metadata = {
       "Snap it, search it, sort it. Instant waste disposal guidance based on your local rules.",
     images: [
       {
-        url: ogImage,
+        url: dynamicOg,
         width: 1200,
         height: 630,
-        alt: "Is this recyclable? - Know exactly how to dispose of anything.",
+        alt: "Is this recyclable? — Snap it, search it, sort it.",
       },
     ],
   },

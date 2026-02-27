@@ -1,8 +1,46 @@
 import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/utils/site-url";
+import { buildOgImageUrl } from "@/lib/utils/og-params";
+
+const siteUrl = getSiteUrl();
+const ogImageUrl = buildOgImageUrl(siteUrl, { variant: "privacy" });
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for Is this recyclable?",
+  description:
+    "Privacy policy for Is this recyclable? No photos stored, no accounts, no tracking.",
+  alternates: { canonical: `${siteUrl}/privacy` },
+  openGraph: {
+    title: "Privacy Policy | Is this recyclable?",
+    description:
+      "No photos stored. No accounts. No tracking. Period. Read our privacy policy.",
+    url: `${siteUrl}/privacy`,
+    siteName: "isthisrecyclable.com",
+    type: "website",
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: "Privacy Policy — isthisrecyclable.com",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Is this recyclable?",
+    description:
+      "No photos stored. No accounts. No tracking. Period. Read our privacy policy.",
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: "Privacy Policy — isthisrecyclable.com",
+      },
+    ],
+  },
 };
 
 export default function PrivacyPage() {

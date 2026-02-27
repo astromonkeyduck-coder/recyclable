@@ -12,6 +12,8 @@ import { BarcodeScanner } from "./barcode-scanner";
 import { MultiItemPicker } from "./multi-item-picker";
 import { useSfx } from "@/components/sfx/sfx-context";
 import { toast } from "sonner";
+import { takeNativePhoto, pickNativePhoto } from "@/lib/capacitor/camera";
+import { isNativeApp } from "@/lib/capacitor";
 
 export type AnalysisPhase = "uploading" | "scanning" | "matching" | "finalizing";
 
@@ -41,6 +43,9 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
   const [isUploading, setIsUploading] = useState(false);
   const [pendingScan, setPendingScan] = useState<PendingScanData | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const scanTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const uploadTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const barcodeTriggerRef = useRef<HTMLButtonElement | null>(null);
   const router = useRouter();
   const { providerId } = useLocation();
   const sfx = useSfx();
@@ -152,24 +157,40 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
   const handleBarcodeScan = useCallback(
     async (barcode: string) => {
       setBarcodeOpen(false);
+
+      toast.info(`Looking up barcode: ${barcode}...`);
+
       try {
         const res = await fetch(
           `/api/barcode?upc=${encodeURIComponent(barcode)}`
         );
-        const data = await res.json();
+
+        let data: { found?: boolean; productName?: string; packaging?: string } = {};
+        try {
+          data = await res.json();
+        } catch {
+          data = {};
+        }
+
         if (data.found && data.productName) {
+          const q = data.packaging
+            ? `${data.productName} (${data.packaging})`
+            : data.productName;
+          toast.success(`Found: ${data.productName}`);
           router.push(
-            `/result?q=${encodeURIComponent(data.productName)}&provider=${providerId}&barcode=1`
+            `/result?q=${encodeURIComponent(q)}&provider=${providerId}&barcode=1`
           );
         } else {
-          toast.error("Product not found. Try searching by name.");
+          toast.info("Product not in database. Searching by barcode number...");
           router.push(
-            `/result?q=${encodeURIComponent(barcode)}&provider=${providerId}`
+            `/result?q=${encodeURIComponent(barcode)}&provider=${providerId}&barcode=1`
           );
         }
       } catch {
-        toast.error("Lookup failed. Try searching by name.");
-        router.push(`/result?q=&provider=${providerId}`);
+        toast.info("Couldn't look up barcode online. Searching by number...");
+        router.push(
+          `/result?q=${encodeURIComponent(barcode)}&provider=${providerId}&barcode=1`
+        );
       }
     },
     [providerId, router]
@@ -197,8 +218,14 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
       <div className="flex gap-3">
         <Button
           size="lg"
-          onClick={() => {
+          onClick={async (e) => {
             sfx.click();
+            if (isNativeApp()) {
+              const dataUrl = await takeNativePhoto();
+              if (dataUrl) setPreview(dataUrl);
+              return;
+            }
+            scanTriggerRef.current = e.currentTarget as HTMLButtonElement;
             setCameraOpen(true);
           }}
           disabled={isUploading}
@@ -214,8 +241,14 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
         <Button
           size="lg"
           variant="outline"
-          onClick={() => {
+          onClick={async (e) => {
             sfx.click();
+            if (isNativeApp()) {
+              const dataUrl = await pickNativePhoto();
+              if (dataUrl) setPreview(dataUrl);
+              return;
+            }
+            uploadTriggerRef.current = e.currentTarget as HTMLButtonElement;
             fileInputRef.current?.click();
           }}
           disabled={isUploading}
@@ -227,8 +260,9 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
         <Button
           size="lg"
           variant="outline"
-          onClick={() => {
+          onClick={(e) => {
             sfx.click();
+            barcodeTriggerRef.current = e.currentTarget as HTMLButtonElement;
             setBarcodeOpen(true);
           }}
           disabled={isUploading}
@@ -258,7 +292,10 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
               setPreview(null);
               setCameraOpen(true);
             }}
-            onCancel={() => setPreview(null)}
+            onCancel={() => {
+              setPreview(null);
+              uploadTriggerRef.current?.focus();
+            }}
           />
         )}
       </AnimatePresence>
@@ -290,7 +327,10 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
                   setCameraOpen(false);
                   setPreview(dataUrl);
                 }}
-                onClose={() => setCameraOpen(false)}
+                onClose={() => {
+                  setCameraOpen(false);
+                  scanTriggerRef.current?.focus();
+                }}
               />
             </Suspense>
           </motion.div>
@@ -302,7 +342,10 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
         {barcodeOpen && (
           <BarcodeScanner
             onScan={handleBarcodeScan}
-            onClose={() => setBarcodeOpen(false)}
+            onClose={() => {
+              setBarcodeOpen(false);
+              barcodeTriggerRef.current?.focus();
+            }}
           />
         )}
       </AnimatePresence>

@@ -4,8 +4,9 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import type { DisposalCategory } from "@/lib/providers/types";
+import type { OgVariant } from "@/lib/utils/og-params";
 
-const SAMPLES: Array<{
+const RESULT_SAMPLES: Array<{
   label: string;
   category: DisposalCategory;
   item: string;
@@ -58,13 +59,6 @@ const SAMPLES: Array<{
     confidence: 12,
   },
   {
-    label: "Homepage Card",
-    category: "recycle",
-    item: "Is this recyclable?",
-    loc: "Your area",
-    confidence: 0,
-  },
-  {
     label: "Long Item Name",
     category: "recycle",
     item: "Corrugated Cardboard Shipping Box",
@@ -73,19 +67,32 @@ const SAMPLES: Array<{
   },
 ];
 
+const PAGE_VARIANT_SAMPLES: Array<{
+  label: string;
+  variant: OgVariant;
+}> = [
+  { label: "Homepage", variant: "homepage" },
+  { label: "About", variant: "about" },
+  { label: "FAQ", variant: "faq" },
+  { label: "Games", variant: "games" },
+  { label: "Facilities", variant: "facilities" },
+  { label: "Privacy", variant: "privacy" },
+];
+
 function buildOgUrl(params: {
-  category: string;
-  item: string;
-  loc: string;
-  confidence: number;
+  variant?: string;
+  category?: string;
+  item?: string;
+  loc?: string;
+  confidence?: number;
   warning?: string;
 }): string {
-  const sp = new URLSearchParams({
-    category: params.category,
-    item: params.item,
-    loc: params.loc,
-    confidence: String(params.confidence),
-  });
+  const sp = new URLSearchParams();
+  if (params.variant && params.variant !== "result") sp.set("variant", params.variant);
+  if (params.category) sp.set("category", params.category);
+  if (params.item) sp.set("item", params.item);
+  if (params.loc) sp.set("loc", params.loc);
+  if (params.confidence != null) sp.set("confidence", String(params.confidence));
   if (params.warning) sp.set("warning", params.warning);
   return `/api/og?${sp.toString()}`;
 }
@@ -96,13 +103,15 @@ export default function DebugOgPage() {
   const [customLoc, setCustomLoc] = useState("Orlando, FL");
   const [customConfidence, setCustomConfidence] = useState(85);
   const [customWarning, setCustomWarning] = useState("");
+  const [customVariant, setCustomVariant] = useState<string>("result");
 
   const customUrl = buildOgUrl({
-    category: customCategory,
-    item: customItem,
-    loc: customLoc,
-    confidence: customConfidence,
-    warning: customWarning || undefined,
+    variant: customVariant,
+    category: customVariant === "result" ? customCategory : undefined,
+    item: customVariant === "result" ? customItem : undefined,
+    loc: customVariant === "result" ? customLoc : undefined,
+    confidence: customVariant === "result" ? customConfidence : undefined,
+    warning: customVariant === "result" ? customWarning || undefined : undefined,
   });
 
   return (
@@ -118,43 +127,59 @@ export default function DebugOgPage() {
         <h2 className="text-lg font-semibold mb-4">Custom OG Card Builder</h2>
         <div className="grid gap-4 sm:grid-cols-2 mb-4">
           <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">Item Name</label>
-            <Input value={customItem} onChange={(e) => setCustomItem(e.target.value)} />
-          </div>
-          <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">Category</label>
+            <label className="text-xs font-medium text-muted-foreground mb-1 block">Variant</label>
             <select
               className="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-sm"
-              value={customCategory}
-              onChange={(e) => setCustomCategory(e.target.value as DisposalCategory)}
+              value={customVariant}
+              onChange={(e) => setCustomVariant(e.target.value)}
             >
-              {["recycle", "trash", "compost", "dropoff", "hazardous", "unknown"].map((c) => (
-                <option key={c} value={c}>{c}</option>
+              {["result", "homepage", "about", "faq", "games", "facilities", "privacy"].map((v) => (
+                <option key={v} value={v}>{v}</option>
               ))}
             </select>
           </div>
-          <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">Location</label>
-            <Input value={customLoc} onChange={(e) => setCustomLoc(e.target.value)} />
-          </div>
-          <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">Confidence (%)</label>
-            <Input
-              type="number"
-              min={0}
-              max={100}
-              value={customConfidence}
-              onChange={(e) => setCustomConfidence(Number(e.target.value))}
-            />
-          </div>
-          <div className="sm:col-span-2">
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">Warning (optional)</label>
-            <Input
-              value={customWarning}
-              onChange={(e) => setCustomWarning(e.target.value)}
-              placeholder="e.g. Can cause fires in garbage trucks"
-            />
-          </div>
+          {customVariant === "result" && (
+            <>
+              <div>
+                <label className="text-xs font-medium text-muted-foreground mb-1 block">Category</label>
+                <select
+                  className="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-sm"
+                  value={customCategory}
+                  onChange={(e) => setCustomCategory(e.target.value as DisposalCategory)}
+                >
+                  {["recycle", "trash", "compost", "dropoff", "hazardous", "unknown"].map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className="text-xs font-medium text-muted-foreground mb-1 block">Item Name</label>
+                <Input value={customItem} onChange={(e) => setCustomItem(e.target.value)} />
+              </div>
+              <div>
+                <label className="text-xs font-medium text-muted-foreground mb-1 block">Location</label>
+                <Input value={customLoc} onChange={(e) => setCustomLoc(e.target.value)} />
+              </div>
+              <div>
+                <label className="text-xs font-medium text-muted-foreground mb-1 block">Confidence (%)</label>
+                <Input
+                  type="number"
+                  min={0}
+                  max={100}
+                  value={customConfidence}
+                  onChange={(e) => setCustomConfidence(Number(e.target.value))}
+                />
+              </div>
+              <div>
+                <label className="text-xs font-medium text-muted-foreground mb-1 block">Warning (optional)</label>
+                <Input
+                  value={customWarning}
+                  onChange={(e) => setCustomWarning(e.target.value)}
+                  placeholder="e.g. Can cause fires in garbage trucks"
+                />
+              </div>
+            </>
+          )}
         </div>
 
         <div className="rounded-lg border overflow-hidden mb-3">
@@ -183,10 +208,39 @@ export default function DebugOgPage() {
         </div>
       </section>
 
-      {/* Sample grid */}
-      <h2 className="text-lg font-semibold mb-4">Sample Cards</h2>
+      {/* Page variant cards */}
+      <h2 className="text-lg font-semibold mb-4">Page Variants</h2>
+      <div className="grid gap-6 sm:grid-cols-2 mb-12">
+        {PAGE_VARIANT_SAMPLES.map((sample) => {
+          const url = buildOgUrl({ variant: sample.variant });
+          return (
+            <div key={sample.label} className="space-y-2">
+              <div className="flex items-center gap-2">
+                <Badge variant="outline" className="text-xs">{sample.variant}</Badge>
+                <span className="text-sm font-medium">{sample.label}</span>
+              </div>
+              <div className="rounded-lg border overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={url}
+                  alt={sample.label}
+                  className="w-full"
+                  loading="lazy"
+                  style={{ aspectRatio: "1200/630" }}
+                />
+              </div>
+              <code className="block rounded bg-muted px-2 py-1 text-[10px] font-mono text-muted-foreground break-all">
+                {url}
+              </code>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Result sample cards */}
+      <h2 className="text-lg font-semibold mb-4">Result Cards (Category Variants)</h2>
       <div className="grid gap-6 sm:grid-cols-2">
-        {SAMPLES.map((sample) => {
+        {RESULT_SAMPLES.map((sample) => {
           const url = buildOgUrl(sample);
           return (
             <div key={sample.label} className="space-y-2">

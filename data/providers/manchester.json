@@ -1,0 +1,1228 @@
+{
+  "id": "manchester",
+  "displayName": "Manchester, UK",
+  "coverage": {
+    "country": "GB",
+    "region": "England",
+    "city": "Manchester",
+    "zips": [
+      "M1","M2","M3","M4","M5","M6","M7","M8","M9","M11","M12","M13","M14","M15","M16","M18","M19","M20","M21","M22","M23","M40"
+    ],
+    "aliases": [
+      "manchester uk",
+      "manchester england",
+      "manc",
+      "greater manchester"
+    ]
+  },
+  "source": {
+    "name": "Manchester City Council",
+    "url": "https://www.manchester.gov.uk/info/200084/bins_rubbish_and_recycling/6026/see_which_recycling_bin_to_use",
+    "generatedAt": "2026-02-27",
+    "notes": "Based on official Manchester City Council bin guidelines. Multi-bin system: blue (paper/card), brown (mixed recycling), green (food/garden), grey (general waste). Tetra Paks go in blue bin."
+  },
+  "materials": [
+    {
+      "id": "newspapers",
+      "name": "Newspapers",
+      "aliases": ["newspaper", "daily paper", "broadsheet", "tabloid"],
+      "category": "recycle",
+      "instructions": [
+        "Place in blue bin (paper and card)"
+      ],
+      "notes": [
+        "Blue bin is for paper and card ONLY"
+      ],
+      "commonMistakes": [
+        "Don't put in the brown bin — brown is for plastics, cans, and glass",
+        "Don't include if wet or heavily soiled"
+      ],
+      "tags": ["paper", "newspaper", "blue bin"],
+      "examples": ["Manchester Evening News", "The Guardian", "Metro"]
+    },
+    {
+      "id": "magazines-catalogues",
+      "name": "Magazines and catalogues",
+      "aliases": ["magazine", "catalogue", "catalog", "brochure", "glossy magazine", "comic"],
+      "category": "recycle",
+      "instructions": [
+        "Remove any plastic wrapping",
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Glossy paper is fine in the blue bin"
+      ],
+      "commonMistakes": [
+        "Don't put the plastic wrapper in the blue bin — put it in the grey bin"
+      ],
+      "tags": ["paper", "magazine", "blue bin"],
+      "examples": ["Magazine", "Argos catalogue", "Comic book"]
+    },
+    {
+      "id": "envelopes",
+      "name": "Envelopes",
+      "aliases": ["envelope", "letter envelope", "windowed envelope", "manila envelope", "brown envelope"],
+      "category": "recycle",
+      "instructions": [
+        "Place in blue bin",
+        "Plastic windows are fine"
+      ],
+      "notes": [
+        "Windowed envelopes are accepted"
+      ],
+      "commonMistakes": [
+        "Don't include padded or bubble-lined envelopes — those go in grey bin"
+      ],
+      "tags": ["paper", "envelope", "blue bin"],
+      "examples": ["Letter envelope", "Brown envelope", "Windowed envelope"]
+    },
+    {
+      "id": "junk-mail-leaflets",
+      "name": "Junk mail and leaflets",
+      "aliases": ["junk mail", "leaflet", "flyer", "takeaway menu", "promotional mail"],
+      "category": "recycle",
+      "instructions": [
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Includes glossy and non-glossy leaflets"
+      ],
+      "commonMistakes": [
+        "Don't include if heavily laminated"
+      ],
+      "tags": ["paper", "mail", "blue bin"],
+      "examples": ["Pizza menus", "Estate agent leaflets", "Promotional flyers"]
+    },
+    {
+      "id": "cardboard-boxes",
+      "name": "Cardboard boxes",
+      "aliases": ["cardboard box", "delivery box", "parcel box", "amazon box", "shipping box"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten the box",
+        "Place in blue bin or beside it if too large"
+      ],
+      "notes": [
+        "Large boxes can be left next to the blue bin on collection day"
+      ],
+      "commonMistakes": [
+        "Don't include boxes soiled with food or grease",
+        "Don't leave packing materials inside"
+      ],
+      "tags": ["cardboard", "box", "blue bin"],
+      "examples": ["Amazon box", "Shoe box", "Moving box"]
+    },
+    {
+      "id": "cereal-boxes",
+      "name": "Cereal boxes",
+      "aliases": ["cereal box", "breakfast cereal box", "cereal packet"],
+      "category": "recycle",
+      "instructions": [
+        "Remove the inner plastic bag (grey bin)",
+        "Flatten the box",
+        "Place in blue bin"
+      ],
+      "notes": [
+        "The inner plastic liner goes in the grey bin"
+      ],
+      "commonMistakes": [
+        "Don't include the inner plastic bag"
+      ],
+      "tags": ["cardboard", "cereal", "blue bin"],
+      "examples": ["Weetabix box", "Cornflakes box", "Porridge oats box"]
+    },
+    {
+      "id": "egg-trays",
+      "name": "Cardboard egg trays",
+      "aliases": ["egg tray", "egg box", "egg carton"],
+      "category": "recycle",
+      "instructions": [
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Cardboard egg trays only — not plastic or polystyrene"
+      ],
+      "commonMistakes": [
+        "Don't include plastic or polystyrene egg boxes — those go in grey bin"
+      ],
+      "tags": ["cardboard", "egg box", "blue bin"],
+      "examples": ["6-egg cardboard tray", "12-egg cardboard tray"]
+    },
+    {
+      "id": "toilet-kitchen-roll-tubes",
+      "name": "Toilet and kitchen roll tubes",
+      "aliases": ["toilet roll tube", "kitchen roll tube", "loo roll tube", "cardboard tube"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten and place in blue bin"
+      ],
+      "notes": [
+        "Cardboard tubes are easily recycled"
+      ],
+      "commonMistakes": [
+        "Don't include paper towels — those go in green bin or grey bin"
+      ],
+      "tags": ["cardboard", "tube", "blue bin"],
+      "examples": ["Loo roll tube", "Kitchen roll tube"]
+    },
+    {
+      "id": "food-drink-cartons",
+      "name": "Food and drink cartons (Tetra Paks)",
+      "aliases": ["tetra pak", "tetrapak", "juice carton", "milk carton", "soup carton", "long-life carton"],
+      "category": "recycle",
+      "instructions": [
+        "Squash the carton",
+        "Place in blue bin (paper and card)"
+      ],
+      "notes": [
+        "In Manchester, Tetra Paks go in the BLUE bin with paper and card",
+        "This is different from many other councils"
+      ],
+      "commonMistakes": [
+        "Don't put in the brown bin — they go in the blue bin in Manchester"
+      ],
+      "tags": ["carton", "tetra pak", "blue bin"],
+      "examples": ["Orange juice carton", "Oat milk carton", "Soup carton"]
+    },
+    {
+      "id": "greeting-cards",
+      "name": "Greeting cards",
+      "aliases": ["greeting card", "birthday card", "christmas card", "thank you card"],
+      "category": "recycle",
+      "instructions": [
+        "Remove glitter, ribbons, or embellishments",
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Cards with glitter must have glittery parts removed or go in grey bin"
+      ],
+      "commonMistakes": [
+        "Don't include glittery cards without removing glitter",
+        "Don't include musical cards with batteries"
+      ],
+      "tags": ["paper", "card", "blue bin"],
+      "examples": ["Birthday card", "Christmas card", "Thank you card"]
+    },
+    {
+      "id": "cardboard-takeaway-boxes",
+      "name": "Clean cardboard takeaway boxes",
+      "aliases": ["takeaway box", "chippy box", "cardboard food box", "burger box"],
+      "category": "recycle",
+      "instructions": [
+        "Only if clean and not grease-soaked",
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Must be clean — greasy boxes go in the grey bin"
+      ],
+      "commonMistakes": [
+        "Don't include greasy or food-soiled boxes — those go in grey bin"
+      ],
+      "tags": ["cardboard", "takeaway", "blue bin"],
+      "examples": ["Clean pizza box", "Clean chip box", "Clean burger box"]
+    },
+    {
+      "id": "writing-printing-paper",
+      "name": "Writing and printing paper",
+      "aliases": ["printer paper", "writing paper", "A4 paper", "office paper", "notepad"],
+      "category": "recycle",
+      "instructions": [
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Staples are fine — removed during processing"
+      ],
+      "commonMistakes": [
+        "Don't put shredded paper in the blue bin — use green bin or grey bin"
+      ],
+      "tags": ["paper", "office", "blue bin"],
+      "examples": ["Printer paper", "Notepad pages", "Old letters"]
+    },
+    {
+      "id": "wrapping-paper",
+      "name": "Wrapping paper (non-metallic)",
+      "aliases": ["gift wrap", "wrapping paper", "christmas wrapping", "birthday wrapping"],
+      "category": "recycle",
+      "instructions": [
+        "Scrunch test: if it stays scrunched, it can be recycled",
+        "Remove tape and ribbons",
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Foil or glittery wrapping paper goes in the grey bin"
+      ],
+      "commonMistakes": [
+        "Don't include metallic or glittery wrapping paper"
+      ],
+      "tags": ["paper", "wrapping", "blue bin"],
+      "examples": ["Plain wrapping paper", "Patterned (non-foil) wrapping paper"]
+    },
+    {
+      "id": "phone-books",
+      "name": "Phone books and directories",
+      "aliases": ["phone book", "yellow pages", "directory", "telephone directory"],
+      "category": "recycle",
+      "instructions": [
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Can go in whole"
+      ],
+      "commonMistakes": [],
+      "tags": ["paper", "book", "blue bin"],
+      "examples": ["Yellow Pages", "Phone directory"]
+    },
+    {
+      "id": "paper-bags",
+      "name": "Paper bags",
+      "aliases": ["paper bag", "brown paper bag", "paper carrier bag"],
+      "category": "recycle",
+      "instructions": [
+        "Place in blue bin"
+      ],
+      "notes": [
+        "Remove any plastic handles"
+      ],
+      "commonMistakes": [
+        "Don't include wax-coated paper bags"
+      ],
+      "tags": ["paper", "bag", "blue bin"],
+      "examples": ["Brown paper bag", "Paper shopping bag"]
+    },
+    {
+      "id": "shoeboxes",
+      "name": "Shoeboxes",
+      "aliases": ["shoe box", "shoebox"],
+      "category": "recycle",
+      "instructions": [
+        "Flatten and place in blue bin"
+      ],
+      "notes": [
+        "Remove any tissue paper or plastic inserts"
+      ],
+      "commonMistakes": [
+        "Don't include plastic or foam inserts"
+      ],
+      "tags": ["cardboard", "box", "blue bin"],
+      "examples": ["Trainer box", "Boot box"]
+    },
+    {
+      "id": "plastic-bottles",
+      "name": "Plastic bottles",
+      "aliases": ["plastic bottle", "water bottle", "fizzy drink bottle", "squash bottle", "pop bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Squash the bottle",
+        "Replace the lid",
+        "Place in brown bin (mixed recycling)"
+      ],
+      "notes": [
+        "Brown bin is for plastics, cans, and glass"
+      ],
+      "commonMistakes": [
+        "Don't put in the blue bin — that's paper/card only"
+      ],
+      "tags": ["plastic", "bottle", "brown bin"],
+      "examples": ["Water bottle", "Pop bottle", "Juice bottle"]
+    },
+    {
+      "id": "plastic-pots-tubs-trays",
+      "name": "Plastic pots, tubs, and trays",
+      "aliases": ["plastic pot", "plastic tub", "plastic tray", "yoghurt pot", "margarine tub", "fruit punnet"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse and scrape out food",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Most plastic pots, tubs, and trays accepted"
+      ],
+      "commonMistakes": [
+        "Don't include polystyrene trays",
+        "Don't include black plastic trays"
+      ],
+      "tags": ["plastic", "pot", "tub", "tray", "brown bin"],
+      "examples": ["Yoghurt pot", "Margarine tub", "Fruit punnet", "Mushroom tray"]
+    },
+    {
+      "id": "glass-bottles",
+      "name": "Glass bottles",
+      "aliases": ["glass bottle", "wine bottle", "beer bottle", "spirit bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "All colours of glass accepted in the brown bin"
+      ],
+      "commonMistakes": [
+        "Don't include broken glass, window glass, or drinking glasses"
+      ],
+      "tags": ["glass", "bottle", "brown bin"],
+      "examples": ["Wine bottle", "Beer bottle", "Olive oil bottle"]
+    },
+    {
+      "id": "glass-jars",
+      "name": "Glass jars",
+      "aliases": ["glass jar", "jam jar", "sauce jar", "pickle jar"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Remove metal lids (recycle lids in brown bin too)",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "All colours of glass jars accepted"
+      ],
+      "commonMistakes": [
+        "Don't include Pyrex or ceramics"
+      ],
+      "tags": ["glass", "jar", "brown bin"],
+      "examples": ["Jam jar", "Pasta sauce jar", "Pickle jar"]
+    },
+    {
+      "id": "aluminium-cans",
+      "name": "Aluminium cans",
+      "aliases": ["aluminium can", "aluminum can", "drink can", "beer can", "coke can"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Squash if possible",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Aluminium is infinitely recyclable"
+      ],
+      "commonMistakes": [
+        "Don't put in the blue bin"
+      ],
+      "tags": ["aluminium", "can", "metal", "brown bin"],
+      "examples": ["Coke can", "Beer can", "Energy drink can"]
+    },
+    {
+      "id": "steel-tins",
+      "name": "Steel tins and cans",
+      "aliases": ["tin can", "steel can", "food tin", "baked beans tin", "soup tin", "pet food tin"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Labels can be left on"
+      ],
+      "commonMistakes": [
+        "Don't include paint tins"
+      ],
+      "tags": ["steel", "tin", "can", "brown bin"],
+      "examples": ["Baked beans tin", "Soup tin", "Pet food tin"]
+    },
+    {
+      "id": "foil",
+      "name": "Aluminium foil",
+      "aliases": ["tin foil", "aluminium foil", "kitchen foil", "foil"],
+      "category": "recycle",
+      "instructions": [
+        "Clean off food residue",
+        "Scrunch into a ball",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Manchester accepts foil in the brown bin — scrunch it into a ball so it doesn't blow away"
+      ],
+      "commonMistakes": [
+        "Don't include heavily food-soiled foil"
+      ],
+      "tags": ["foil", "aluminium", "brown bin"],
+      "examples": ["Kitchen foil", "Clean foil takeaway trays"]
+    },
+    {
+      "id": "aerosol-cans",
+      "name": "Aerosol cans",
+      "aliases": ["aerosol", "spray can", "deodorant can", "hairspray can"],
+      "category": "recycle",
+      "instructions": [
+        "Make sure they are empty",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Manchester accepts aerosols in the brown bin"
+      ],
+      "commonMistakes": [
+        "Don't include cans that still have contents",
+        "Don't puncture aerosols"
+      ],
+      "tags": ["aerosol", "metal", "brown bin"],
+      "examples": ["Deodorant spray", "Hairspray", "Air freshener"]
+    },
+    {
+      "id": "plastic-milk-bottles",
+      "name": "Plastic milk bottles",
+      "aliases": ["milk bottle", "plastic milk container", "pint of milk bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Squash and replace lid",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "One of the most commonly recycled items"
+      ],
+      "commonMistakes": [
+        "Don't put in the blue bin — brown bin only"
+      ],
+      "tags": ["plastic", "milk", "bottle", "brown bin"],
+      "examples": ["2-pint milk bottle", "4-pint milk bottle"]
+    },
+    {
+      "id": "cleaning-product-bottles",
+      "name": "Cleaning product bottles",
+      "aliases": ["cleaning bottle", "washing up liquid bottle", "bleach bottle", "spray bottle"],
+      "category": "recycle",
+      "instructions": [
+        "Empty fully",
+        "Rinse if possible",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Trigger sprays can be left on"
+      ],
+      "commonMistakes": [
+        "Don't include partly full bottles"
+      ],
+      "tags": ["plastic", "bottle", "cleaning", "brown bin"],
+      "examples": ["Washing up liquid bottle", "Bleach bottle", "Surface cleaner"]
+    },
+    {
+      "id": "yoghurt-pots",
+      "name": "Yoghurt pots",
+      "aliases": ["yoghurt pot", "yogurt pot", "yoghurt container"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Foil lids can also go in the brown bin"
+      ],
+      "commonMistakes": [
+        "Don't leave food residue"
+      ],
+      "tags": ["plastic", "pot", "dairy", "brown bin"],
+      "examples": ["Single yoghurt pot", "Muller Corner"]
+    },
+    {
+      "id": "margarine-tubs",
+      "name": "Margarine and spread tubs",
+      "aliases": ["margarine tub", "butter tub", "spread tub"],
+      "category": "recycle",
+      "instructions": [
+        "Scrape out and rinse",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Plastic tubs from spreads are recyclable"
+      ],
+      "commonMistakes": [
+        "Don't leave residue"
+      ],
+      "tags": ["plastic", "tub", "brown bin"],
+      "examples": ["Flora tub", "Utterly Butterly tub"]
+    },
+    {
+      "id": "drink-cans",
+      "name": "Drink cans",
+      "aliases": ["drink can", "pop can", "lager can", "soda can"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Squash",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Both aluminium and steel drink cans accepted"
+      ],
+      "commonMistakes": [
+        "Don't put in the blue bin"
+      ],
+      "tags": ["metal", "can", "drink", "brown bin"],
+      "examples": ["Lager can", "Cola can", "Tonic can"]
+    },
+    {
+      "id": "biscuit-tins",
+      "name": "Biscuit and sweet tins",
+      "aliases": ["biscuit tin", "sweet tin", "quality street tin", "chocolate tin"],
+      "category": "recycle",
+      "instructions": [
+        "Empty and rinse",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Metal tins are recyclable"
+      ],
+      "commonMistakes": [
+        "Don't include plastic tray inserts"
+      ],
+      "tags": ["metal", "tin", "brown bin"],
+      "examples": ["Quality Street tin", "Biscuit tin"]
+    },
+    {
+      "id": "food-tins",
+      "name": "Food tins",
+      "aliases": ["food tin", "tin of beans", "tinned food", "canned food"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Labels can stay on"
+      ],
+      "commonMistakes": [
+        "Don't include paint or chemical tins"
+      ],
+      "tags": ["metal", "tin", "food", "brown bin"],
+      "examples": ["Baked beans tin", "Tinned tomatoes", "Tuna tin"]
+    },
+    {
+      "id": "plastic-containers",
+      "name": "Plastic food containers",
+      "aliases": ["plastic container", "takeaway container", "deli container"],
+      "category": "recycle",
+      "instructions": [
+        "Rinse out",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Rigid plastic food containers accepted"
+      ],
+      "commonMistakes": [
+        "Don't include polystyrene containers"
+      ],
+      "tags": ["plastic", "container", "brown bin"],
+      "examples": ["Hummus pot", "Salad box", "Deli container"]
+    },
+    {
+      "id": "foil-trays",
+      "name": "Foil trays",
+      "aliases": ["foil tray", "foil container", "aluminium tray", "takeaway foil tray"],
+      "category": "recycle",
+      "instructions": [
+        "Clean off food residue",
+        "Place in brown bin"
+      ],
+      "notes": [
+        "Must be clean — greasy foil trays go in the grey bin"
+      ],
+      "commonMistakes": [
+        "Don't include if heavily soiled with food"
+      ],
+      "tags": ["foil", "tray", "brown bin"],
+      "examples": ["Takeaway foil tray", "Foil pie case", "Foil roasting tray"]
+    },
+    {
+      "id": "food-scraps",
+      "name": "Food scraps and leftovers",
+      "aliases": ["food waste", "leftovers", "plate scrapings", "food scraps"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin (food and garden waste)"
+      ],
+      "notes": [
+        "All cooked and uncooked food accepted",
+        "Green bin is collected fortnightly in most areas"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bins"
+      ],
+      "tags": ["food", "organic", "green bin"],
+      "examples": ["Plate scrapings", "Leftover meals"]
+    },
+    {
+      "id": "tea-bags",
+      "name": "Tea bags",
+      "aliases": ["tea bag", "teabag", "used tea bag"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin"
+      ],
+      "notes": [
+        "Accepted in Manchester's green bin"
+      ],
+      "commonMistakes": [
+        "Don't put in the recycling bins"
+      ],
+      "tags": ["food", "tea", "green bin"],
+      "examples": ["Used PG Tips bag", "Yorkshire Tea bag"]
+    },
+    {
+      "id": "coffee-grounds",
+      "name": "Coffee grounds and filters",
+      "aliases": ["coffee grounds", "coffee filter", "used coffee"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin"
+      ],
+      "notes": [
+        "Paper filters can go in too"
+      ],
+      "commonMistakes": [
+        "Don't include coffee pods"
+      ],
+      "tags": ["food", "coffee", "green bin"],
+      "examples": ["Used coffee grounds", "Paper coffee filter"]
+    },
+    {
+      "id": "fruit-vegetable-peelings",
+      "name": "Fruit and vegetable peelings",
+      "aliases": ["peelings", "fruit peel", "veg peelings", "potato peelings", "banana skin"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin"
+      ],
+      "notes": [
+        "All fruit and veg waste accepted"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling bins"
+      ],
+      "tags": ["food", "fruit", "vegetable", "green bin"],
+      "examples": ["Potato peelings", "Banana skin", "Apple core"]
+    },
+    {
+      "id": "eggshells",
+      "name": "Eggshells",
+      "aliases": ["eggshell", "egg shell"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin"
+      ],
+      "notes": [
+        "Crush to save space"
+      ],
+      "commonMistakes": [],
+      "tags": ["food", "egg", "green bin"],
+      "examples": ["Hen egg shells"]
+    },
+    {
+      "id": "grass-cuttings",
+      "name": "Grass cuttings",
+      "aliases": ["grass clippings", "lawn cuttings", "mown grass", "grass"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin"
+      ],
+      "notes": [
+        "Green bin accepts both food and garden waste"
+      ],
+      "commonMistakes": [
+        "Don't include soil or stones"
+      ],
+      "tags": ["garden", "grass", "green bin"],
+      "examples": ["Lawn clippings", "Mown grass"]
+    },
+    {
+      "id": "hedge-trimmings",
+      "name": "Hedge trimmings and prunings",
+      "aliases": ["hedge trimmings", "prunings", "bush cuttings", "branch trimmings"],
+      "category": "compost",
+      "instructions": [
+        "Cut to fit in green bin",
+        "Place in green bin"
+      ],
+      "notes": [
+        "Woody branches should be cut into small pieces"
+      ],
+      "commonMistakes": [
+        "Don't include large branches that don't fit"
+      ],
+      "tags": ["garden", "hedge", "green bin"],
+      "examples": ["Privet trimmings", "Rose prunings", "Small branches"]
+    },
+    {
+      "id": "flowers-plants",
+      "name": "Dead flowers and plants",
+      "aliases": ["dead flowers", "dead plants", "wilted flowers", "house plant"],
+      "category": "compost",
+      "instructions": [
+        "Remove from pots",
+        "Place in green bin"
+      ],
+      "notes": [
+        "Remove any pots, wire, or plastic before putting in green bin"
+      ],
+      "commonMistakes": [
+        "Don't include plastic pots or oasis foam"
+      ],
+      "tags": ["garden", "flowers", "green bin"],
+      "examples": ["Dead bouquet", "Wilted house plant", "Dead bedding plants"]
+    },
+    {
+      "id": "leaves",
+      "name": "Leaves",
+      "aliases": ["fallen leaves", "autumn leaves", "dead leaves", "leaf litter"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin"
+      ],
+      "notes": [
+        "Great for composting"
+      ],
+      "commonMistakes": [],
+      "tags": ["garden", "leaves", "green bin"],
+      "examples": ["Autumn leaves", "Raked leaves"]
+    },
+    {
+      "id": "bread-pastries",
+      "name": "Stale bread and pastries",
+      "aliases": ["bread", "stale bread", "pastries", "cake", "mouldy bread"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin"
+      ],
+      "notes": [
+        "All bakery products accepted"
+      ],
+      "commonMistakes": [
+        "Don't include packaging"
+      ],
+      "tags": ["food", "bread", "green bin"],
+      "examples": ["Stale bread", "Old pastries", "Mouldy cake"]
+    },
+    {
+      "id": "meat-fish-bones",
+      "name": "Meat, fish, and bones",
+      "aliases": ["meat", "fish", "bones", "chicken bones", "raw meat", "cooked meat"],
+      "category": "compost",
+      "instructions": [
+        "Wrap in newspaper if preferred",
+        "Place in green bin"
+      ],
+      "notes": [
+        "Both raw and cooked accepted"
+      ],
+      "commonMistakes": [
+        "Don't put in recycling bins"
+      ],
+      "tags": ["food", "meat", "fish", "green bin"],
+      "examples": ["Chicken bones", "Fish skin", "Leftover roast"]
+    },
+    {
+      "id": "dairy-products",
+      "name": "Dairy products",
+      "aliases": ["cheese", "old cheese", "yoghurt", "expired dairy"],
+      "category": "compost",
+      "instructions": [
+        "Place in green bin"
+      ],
+      "notes": [
+        "Small amounts of dairy are fine"
+      ],
+      "commonMistakes": [
+        "Don't pour liquids directly in"
+      ],
+      "tags": ["food", "dairy", "green bin"],
+      "examples": ["Old cheese", "Expired yoghurt"]
+    },
+    {
+      "id": "plastic-bags-wrappers",
+      "name": "Plastic bags and wrappers",
+      "aliases": ["plastic bag", "carrier bag", "plastic wrapper", "cling film", "food wrapper"],
+      "category": "trash",
+      "instructions": [
+        "Place in grey bin (general waste)"
+      ],
+      "notes": [
+        "Some supermarkets have soft plastic collection points"
+      ],
+      "commonMistakes": [
+        "Don't put in the blue or brown bin"
+      ],
+      "tags": ["plastic", "bag", "film", "grey bin"],
+      "examples": ["Carrier bags", "Bread bags", "Cling film"]
+    },
+    {
+      "id": "polystyrene",
+      "name": "Polystyrene and styrofoam",
+      "aliases": ["polystyrene", "styrofoam", "expanded polystyrene", "packing peanuts"],
+      "category": "trash",
+      "instructions": [
+        "Break up large pieces",
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Not recyclable at kerbside"
+      ],
+      "commonMistakes": [
+        "Don't put in any recycling bin"
+      ],
+      "tags": ["polystyrene", "packaging", "grey bin"],
+      "examples": ["Takeaway boxes", "Packing peanuts", "Polystyrene trays"]
+    },
+    {
+      "id": "nappies",
+      "name": "Nappies and sanitary products",
+      "aliases": ["nappy", "diaper", "sanitary towel", "tampon", "incontinence pad"],
+      "category": "trash",
+      "instructions": [
+        "Wrap securely",
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Never place in recycling or green bins"
+      ],
+      "commonMistakes": [
+        "Don't put in any recycling bin or the green bin"
+      ],
+      "tags": ["hygiene", "nappy", "grey bin"],
+      "examples": ["Disposable nappies", "Sanitary towels"]
+    },
+    {
+      "id": "cling-film",
+      "name": "Cling film and plastic wrap",
+      "aliases": ["cling film", "plastic wrap", "food wrap", "saran wrap"],
+      "category": "trash",
+      "instructions": [
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Not recyclable at kerbside"
+      ],
+      "commonMistakes": [
+        "Don't put in any recycling bin"
+      ],
+      "tags": ["plastic", "film", "grey bin"],
+      "examples": ["Used cling film", "Sandwich wrap"]
+    },
+    {
+      "id": "crisp-packets-sweet-wrappers",
+      "name": "Crisp packets and sweet wrappers",
+      "aliases": ["crisp packet", "sweet wrapper", "chocolate wrapper", "snack wrapper"],
+      "category": "trash",
+      "instructions": [
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Made of mixed materials — not recyclable at kerbside"
+      ],
+      "commonMistakes": [
+        "Don't put in any recycling bin — they look metallic but aren't aluminium"
+      ],
+      "tags": ["wrapper", "snack", "grey bin"],
+      "examples": ["Walkers crisp packet", "Mars bar wrapper"]
+    },
+    {
+      "id": "bubble-wrap",
+      "name": "Bubble wrap",
+      "aliases": ["bubble wrap", "bubblewrap", "air cushion packaging"],
+      "category": "trash",
+      "instructions": [
+        "Place in grey bin",
+        "Or take to supermarket soft plastics point"
+      ],
+      "notes": [
+        "Not accepted in kerbside recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the brown or blue bin"
+      ],
+      "tags": ["plastic", "packaging", "grey bin"],
+      "examples": ["Parcel bubble wrap"]
+    },
+    {
+      "id": "broken-crockery-ceramics",
+      "name": "Broken crockery and ceramics",
+      "aliases": ["broken plate", "broken mug", "crockery", "ceramics", "broken china"],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully",
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Ceramics contaminate glass recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the brown bin with glass"
+      ],
+      "tags": ["ceramic", "crockery", "grey bin"],
+      "examples": ["Broken plate", "Chipped mug", "Cracked bowl"]
+    },
+    {
+      "id": "drinking-glasses-pyrex",
+      "name": "Drinking glasses and Pyrex",
+      "aliases": ["drinking glass", "wine glass", "pint glass", "pyrex"],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully",
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Different melting point to bottle glass — contaminates recycling"
+      ],
+      "commonMistakes": [
+        "Don't put in the brown bin"
+      ],
+      "tags": ["glass", "drinkware", "grey bin"],
+      "examples": ["Broken wine glass", "Pint glass", "Pyrex dish"]
+    },
+    {
+      "id": "wet-wipes",
+      "name": "Wet wipes",
+      "aliases": ["wet wipe", "baby wipe", "face wipe", "cleaning wipe"],
+      "category": "trash",
+      "instructions": [
+        "Place in grey bin",
+        "Never flush"
+      ],
+      "notes": [
+        "Most wet wipes contain plastic"
+      ],
+      "commonMistakes": [
+        "Don't flush — they cause sewer blockages"
+      ],
+      "tags": ["wipe", "hygiene", "grey bin"],
+      "examples": ["Baby wipes", "Face wipes"]
+    },
+    {
+      "id": "tissues-paper-towels",
+      "name": "Tissues and paper towels",
+      "aliases": ["tissue", "paper towel", "kitchen roll", "paper napkin"],
+      "category": "trash",
+      "instructions": [
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Too degraded and contaminated to recycle"
+      ],
+      "commonMistakes": [
+        "Don't put in the blue bin"
+      ],
+      "tags": ["paper", "tissue", "grey bin"],
+      "examples": ["Used tissues", "Kitchen roll", "Paper napkins"]
+    },
+    {
+      "id": "food-soiled-packaging",
+      "name": "Food-soiled packaging",
+      "aliases": ["greasy pizza box", "dirty cardboard", "soiled paper", "greasy paper"],
+      "category": "trash",
+      "instructions": [
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Grease contaminates paper and card recycling",
+        "Tear off clean parts and recycle those in the blue bin"
+      ],
+      "commonMistakes": [
+        "Don't put in the blue bin"
+      ],
+      "tags": ["paper", "soiled", "grey bin"],
+      "examples": ["Greasy pizza box", "Soiled takeaway boxes"]
+    },
+    {
+      "id": "cotton-wool-buds",
+      "name": "Cotton wool and cotton buds",
+      "aliases": ["cotton wool", "cotton bud", "cotton pad"],
+      "category": "trash",
+      "instructions": [
+        "Place in grey bin"
+      ],
+      "notes": [
+        "Not recyclable"
+      ],
+      "commonMistakes": [
+        "Don't flush cotton buds"
+      ],
+      "tags": ["cotton", "hygiene", "grey bin"],
+      "examples": ["Cotton wool pads", "Cotton buds"]
+    },
+    {
+      "id": "mirrors",
+      "name": "Mirrors",
+      "aliases": ["mirror", "looking glass", "wall mirror"],
+      "category": "trash",
+      "instructions": [
+        "Wrap carefully",
+        "Place in grey bin or take to HWRC if large"
+      ],
+      "notes": [
+        "Different composition to bottle glass"
+      ],
+      "commonMistakes": [
+        "Don't put in the brown bin"
+      ],
+      "tags": ["glass", "mirror", "grey bin"],
+      "examples": ["Small mirror", "Bathroom mirror"]
+    },
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "aliases": ["battery", "AA battery", "AAA battery", "button battery", "rechargeable battery"],
+      "category": "hazardous",
+      "instructions": [
+        "Take to a battery collection point at supermarkets or council buildings",
+        "Never put in any household bin"
+      ],
+      "notes": [
+        "Batteries cause fires in bin lorries"
+      ],
+      "commonMistakes": [
+        "Never put in household bins — fire risk"
+      ],
+      "tags": ["battery", "hazardous", "drop-off"],
+      "examples": ["AA batteries", "Phone battery", "Button cell"]
+    },
+    {
+      "id": "electronics-electricals",
+      "name": "Electronics and electricals",
+      "aliases": ["electricals", "electronics", "small appliances", "WEEE", "broken electronics"],
+      "category": "dropoff",
+      "instructions": [
+        "Take to household waste recycling centre (HWRC)",
+        "Or use retailer take-back schemes"
+      ],
+      "notes": [
+        "Under WEEE regulations, retailers must accept old items"
+      ],
+      "commonMistakes": [
+        "Don't put in any household bin"
+      ],
+      "tags": ["electronics", "electrical", "drop-off"],
+      "examples": ["Broken toaster", "Old kettle", "Hair dryer"]
+    },
+    {
+      "id": "paint-varnish",
+      "name": "Paint and varnish",
+      "aliases": ["paint", "varnish", "wood stain", "paint tin"],
+      "category": "hazardous",
+      "instructions": [
+        "Take to household waste recycling centre (HWRC)"
+      ],
+      "notes": [
+        "Never pour down drains"
+      ],
+      "commonMistakes": [
+        "Don't put in any bin",
+        "Don't pour down drains"
+      ],
+      "tags": ["paint", "chemical", "hazardous"],
+      "examples": ["Leftover paint", "Wood varnish"]
+    },
+    {
+      "id": "light-bulbs",
+      "name": "Light bulbs",
+      "aliases": ["light bulb", "lightbulb", "LED bulb", "CFL bulb", "fluorescent tube"],
+      "category": "dropoff",
+      "instructions": [
+        "CFL and fluorescent: take to HWRC",
+        "Incandescent and halogen: grey bin"
+      ],
+      "notes": [
+        "CFL bulbs contain mercury"
+      ],
+      "commonMistakes": [
+        "Don't put CFL or LED bulbs in any bin",
+        "Don't put in the brown bin with glass"
+      ],
+      "tags": ["bulb", "electrical", "drop-off"],
+      "examples": ["Energy saving bulb", "LED bulb", "Fluorescent tube"]
+    },
+    {
+      "id": "textiles-clothes",
+      "name": "Textiles and clothes",
+      "aliases": ["clothes", "clothing", "textiles", "fabric", "shoes", "old clothes"],
+      "category": "dropoff",
+      "instructions": [
+        "Donate to charity shops if in good condition",
+        "Use textile banks or take to HWRC"
+      ],
+      "notes": [
+        "Even damaged textiles can be recycled"
+      ],
+      "commonMistakes": [
+        "Don't put in any bin — donate or use textile banks",
+        "Don't throw good clothes in the grey bin"
+      ],
+      "tags": ["textile", "clothes", "charity", "drop-off"],
+      "examples": ["Old T-shirts", "Worn-out jeans", "Old shoes"]
+    }
+  ],
+  "rulesSummary": {
+    "accepted": {
+      "recycle": [
+        "Blue bin: newspapers, magazines, cardboard, envelopes, junk mail, cereal boxes, Tetra Paks, greeting cards",
+        "Brown bin: plastic bottles/pots/tubs/trays, glass bottles/jars, aluminium and steel cans/tins, foil, aerosols",
+        "Paper and card ONLY in the blue bin — everything else recycled in the brown bin"
+      ],
+      "compost": [
+        "Green bin: all food waste (cooked and uncooked)",
+        "Green bin: garden waste (grass, hedge trimmings, leaves, flowers)",
+        "Tea bags, coffee grounds, eggshells",
+        "Meat, fish, bones, dairy, bread"
+      ],
+      "trash": [
+        "Grey bin: plastic bags, wrappers, cling film",
+        "Grey bin: polystyrene, crisp packets, bubble wrap",
+        "Grey bin: nappies, wet wipes, tissues",
+        "Grey bin: broken crockery, drinking glasses, mirrors"
+      ]
+    },
+    "notAccepted": {
+      "recycle": [
+        "Plastic bags, wrappers, cling film — jam sorting machinery",
+        "Polystyrene and styrofoam",
+        "Textiles and clothes — use charity shops or textile banks",
+        "Electronics, batteries — fire risk",
+        "Ceramics, window glass, drinking glasses",
+        "Food waste — use the green bin"
+      ],
+      "compost": [
+        "Plastic bags (even compostable ones)",
+        "Packaging of any kind",
+        "Pet waste or cat litter",
+        "Nappies"
+      ]
+    },
+    "tips": [
+      "Manchester uses a FOUR bin system: blue (paper/card), brown (mixed recycling), green (food/garden), grey (general waste)",
+      "Tetra Paks go in the BLUE bin in Manchester — not the brown bin",
+      "Flatten cardboard to save space in the blue bin",
+      "Rinse containers before putting in the brown bin",
+      "Scrunch foil into a ball before putting in the brown bin",
+      "Never bag your recycling — empty items loose into the bin",
+      "Check your collection schedule at manchester.gov.uk",
+      "Batteries and vapes cause fires — take to collection points"
+    ]
+  },
+  "locations": [
+    {
+      "name": "Longley Lane Household Waste Recycling Centre",
+      "address": "Longley Lane, Sharston, Manchester M22 4RQ",
+      "url": "https://www.manchester.gov.uk/info/200084/bins_rubbish_and_recycling",
+      "accepts": [
+        "Electricals and electronics",
+        "Batteries",
+        "Paint and chemicals",
+        "Textiles",
+        "Bulky items",
+        "Garden waste",
+        "Scrap metal"
+      ],
+      "hours": "Wednesday-Sunday 8am-4pm (winter), 8am-6pm (summer)"
+    },
+    {
+      "name": "Reliance Street Household Waste Recycling Centre",
+      "address": "Reliance Street, Newton Heath, Manchester M40 3EJ",
+      "url": "https://www.manchester.gov.uk/info/200084/bins_rubbish_and_recycling",
+      "accepts": [
+        "Electricals and electronics",
+        "Batteries",
+        "Paint and chemicals",
+        "Textiles",
+        "Bulky items",
+        "Garden waste"
+      ],
+      "hours": "Wednesday-Sunday 8am-4pm (winter), 8am-6pm (summer)"
+    }
+  ]
+}

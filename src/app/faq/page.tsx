@@ -1,11 +1,46 @@
 import type { Metadata } from "next";
 import { getSiteUrl } from "@/lib/utils/site-url";
+import { buildOgImageUrl } from "@/lib/utils/og-params";
+
+const siteUrl = getSiteUrl();
+const ogImageUrl = buildOgImageUrl(siteUrl, { variant: "faq" });
 
 export const metadata: Metadata = {
   title: "FAQ",
   description:
     "Frequently asked questions about Is this recyclable? How it works, privacy, accuracy, and adding your city.",
-  alternates: { canonical: `${getSiteUrl()}/faq` },
+  alternates: { canonical: `${siteUrl}/faq` },
+  openGraph: {
+    title: "FAQ | Is this recyclable?",
+    description:
+      "Answers to common questions about recycling, how the app works, privacy, accuracy, and adding your city.",
+    url: `${siteUrl}/faq`,
+    siteName: "isthisrecyclable.com",
+    type: "website",
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: "Frequently Asked Questions — isthisrecyclable.com",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ | Is this recyclable?",
+    description:
+      "Answers to common questions about recycling, how the app works, privacy, accuracy, and adding your city.",
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: "Frequently Asked Questions — isthisrecyclable.com",
+      },
+    ],
+  },
 };
 
 const faqs = [

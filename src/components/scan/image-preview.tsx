@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Check, RotateCcw, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,11 @@ export function ImagePreview({
   onRetake,
   onCancel,
 }: ImagePreviewProps) {
+  const cancelButtonRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    cancelButtonRef.current?.focus();
+  }, []);
+
   return (
     <motion.div
       className="fixed inset-0 z-50 flex flex-col bg-black"
@@ -33,6 +39,7 @@ export function ImagePreview({
         />
 
         <button
+          ref={cancelButtonRef}
           onClick={onCancel}
           className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm text-white hover:bg-black/70"
           aria-label="Cancel"

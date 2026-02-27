@@ -90,6 +90,8 @@ export function InstallPrompt() {
   return (
     <AnimatePresence>
       <motion.div
+        role="dialog"
+        aria-label="Add to home screen"
         className="fixed bottom-4 left-4 right-4 z-40 mx-auto max-w-lg rounded-xl border bg-background/95 p-5 shadow-lg backdrop-blur sm:left-auto sm:right-4"
         initial={{ opacity: 0, y: 20, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -133,6 +135,7 @@ export function InstallPrompt() {
               type="button"
               onClick={handleDismiss}
               className="text-xs text-muted-foreground hover:text-foreground px-2 py-1"
+              aria-label="Dismiss install prompt"
             >
               Not now
             </button>
