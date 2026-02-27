@@ -1,0 +1,61 @@
+import type { DisposalCategory } from "@/lib/providers/types";
+
+type CategoryMeta = {
+  label: string;
+  color: string;
+  bgColor: string;
+  textColor: string;
+  icon: string;
+  description: string;
+};
+
+export const CATEGORY_META: Record<DisposalCategory, CategoryMeta> = {
+  recycle: {
+    label: "Recycle",
+    color: "#3B82F6",
+    bgColor: "bg-blue-100 dark:bg-blue-950",
+    textColor: "text-blue-700 dark:text-blue-300",
+    icon: "♻️",
+    description: "This item can be recycled",
+  },
+  trash: {
+    label: "Trash",
+    color: "#6B7280",
+    bgColor: "bg-gray-100 dark:bg-gray-800",
+    textColor: "text-gray-700 dark:text-gray-300",
+    icon: "🗑️",
+    description: "This item goes in the trash",
+  },
+  compost: {
+    label: "Compost",
+    color: "#22C55E",
+    bgColor: "bg-green-100 dark:bg-green-950",
+    textColor: "text-green-700 dark:text-green-300",
+    icon: "🌱",
+    description: "This item can be composted",
+  },
+  dropoff: {
+    label: "Drop-off",
+    color: "#F97316",
+    bgColor: "bg-orange-100 dark:bg-orange-950",
+    textColor: "text-orange-700 dark:text-orange-300",
+    icon: "📍",
+    description: "Take this item to a drop-off location",
+  },
+  hazardous: {
+    label: "Hazardous",
+    color: "#EF4444",
+    bgColor: "bg-red-100 dark:bg-red-950",
+    textColor: "text-red-700 dark:text-red-300",
+    icon: "⚠️",
+    description: "This item requires special hazardous waste disposal",
+  },
+  unknown: {
+    label: "Not Sure",
+    color: "#EAB308",
+    bgColor: "bg-yellow-100 dark:bg-yellow-950",
+    textColor: "text-yellow-700 dark:text-yellow-300",
+    icon: "❓",
+    description: "We're not sure how to dispose of this item",
+  },
+};

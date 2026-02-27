@@ -1,0 +1,92 @@
+import { Recycle, Camera, Search, MapPin, Shield, Zap } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Learn about Is this recyclable? and how it helps you dispose of waste correctly.",
+};
+
+const features = [
+  {
+    icon: Camera,
+    title: "Camera Scanning",
+    description: "Snap a photo of any item and get instant disposal guidance powered by AI vision.",
+  },
+  {
+    icon: Search,
+    title: "Smart Search",
+    description:
+      "Type any item name and find matches instantly with fuzzy search and synonym support.",
+  },
+  {
+    icon: MapPin,
+    title: "Local Rules",
+    description:
+      "Get disposal instructions specific to your city or region — not generic advice.",
+  },
+  {
+    icon: Shield,
+    title: "Privacy First",
+    description:
+      "We don't store your photos. No account needed. No tracking. Just answers.",
+  },
+  {
+    icon: Zap,
+    title: "Fast & Offline",
+    description:
+      "Text search works offline with cached data. Installable as a PWA on your phone.",
+  },
+  {
+    icon: Recycle,
+    title: "Open Data",
+    description:
+      "Provider data is open JSON. Anyone can contribute rules for their city.",
+  },
+];
+
+export default function AboutPage() {
+  return (
+    <div className="mx-auto max-w-3xl px-4 py-8">
+      <h1 className="text-2xl font-bold mb-2">About</h1>
+      <p className="text-muted-foreground mb-8 max-w-xl">
+        <strong>Is this recyclable?</strong> helps you figure out the right way
+        to dispose of any item — recycle, trash, compost, or drop-off — based on
+        your local jurisdiction&apos;s rules.
+      </p>
+
+      <div className="grid gap-6 sm:grid-cols-2 mb-12">
+        {features.map((f) => (
+          <div key={f.title} className="flex gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+              <f.icon className="h-5 w-5 text-primary" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-sm">{f.title}</h3>
+              <p className="text-sm text-muted-foreground mt-0.5">
+                {f.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <section className="space-y-3">
+        <h2 className="text-lg font-semibold">How it works</h2>
+        <ol className="space-y-3 text-sm text-muted-foreground">
+          <li className="flex gap-3">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold">1</span>
+            <span><strong>Identify</strong> — Scan a photo, upload an image, or type the item name.</span>
+          </li>
+          <li className="flex gap-3">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold">2</span>
+            <span><strong>Match</strong> — We match your item against your local jurisdiction&apos;s rules database.</span>
+          </li>
+          <li className="flex gap-3">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold">3</span>
+            <span><strong>Dispose</strong> — Get clear instructions: recycle, trash, compost, drop-off, or hazardous.</span>
+          </li>
+        </ol>
+      </section>
+    </div>
+  );
+}

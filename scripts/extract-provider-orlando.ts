@@ -1,0 +1,1167 @@
+/**
+ * Extraction script for Orlando, FL waste disposal provider.
+ *
+ * Parses the saved "What Goes Where - City of Orlando.html" and supplements
+ * with well-documented Orlando recycling rules to produce a complete
+ * provider JSON validated by our Zod schema.
+ *
+ * Run: npx tsx scripts/extract-provider-orlando.ts
+ */
+import * as cheerio from "cheerio";
+import fs from "fs";
+import path from "path";
+import { z } from "zod";
+
+// Inline the schema here so the script is self-contained and can run without
+// Next.js path aliases. We re-validate against the canonical schema shape.
+const DisposalCategorySchema = z.enum([
+  "recycle",
+  "trash",
+  "compost",
+  "dropoff",
+  "hazardous",
+  "unknown",
+]);
+
+const MaterialSchema = z.object({
+  id: z.string().min(1),
+  name: z.string().min(1),
+  aliases: z.array(z.string()),
+  category: DisposalCategorySchema,
+  instructions: z.array(z.string()),
+  notes: z.array(z.string()),
+  commonMistakes: z.array(z.string()),
+  tags: z.array(z.string()).optional(),
+  examples: z.array(z.string()).optional(),
+});
+
+const DropoffLocationSchema = z.object({
+  name: z.string().min(1),
+  address: z.string().optional(),
+  phone: z.string().optional(),
+  url: z.string().optional(),
+  accepts: z.array(z.string()),
+  hours: z.string().optional(),
+  notes: z.string().optional(),
+});
+
+const ProviderSchema = z.object({
+  id: z.string().min(1),
+  displayName: z.string().min(1),
+  coverage: z.object({
+    country: z.string().min(1),
+    region: z.string().optional(),
+    city: z.string().optional(),
+    zips: z.array(z.string()).optional(),
+    aliases: z.array(z.string()).optional(),
+  }),
+  source: z.object({
+    name: z.string().min(1),
+    url: z.string().optional(),
+    generatedAt: z.string().min(1),
+    notes: z.string().optional(),
+    license: z.string().optional(),
+  }),
+  materials: z.array(MaterialSchema).min(1),
+  rulesSummary: z.object({
+    accepted: z.object({
+      recycle: z.array(z.string()),
+      compost: z.array(z.string()).optional(),
+      trash: z.array(z.string()).optional(),
+    }),
+    notAccepted: z.object({
+      recycle: z.array(z.string()),
+      compost: z.array(z.string()).optional(),
+    }),
+    tips: z.array(z.string()),
+  }),
+  locations: z.array(DropoffLocationSchema).optional(),
+});
+
+// ---------------------------------------------------------------------------
+// Parse HTML for structured content
+// ---------------------------------------------------------------------------
+const htmlPath = path.join(
+  process.cwd(),
+  "What Goes Where - City of Orlando.html"
+);
+
+if (!fs.existsSync(htmlPath)) {
+  console.error(`HTML file not found at ${htmlPath}`);
+  process.exit(1);
+}
+
+const html = fs.readFileSync(htmlPath, "utf-8");
+const $ = cheerio.load(html);
+
+// Extract recyclables section text for validation
+const recyclablesPanel = $("#panel-1-2").text();
+console.log(
+  "Extracted recyclables panel:",
+  recyclablesPanel.substring(0, 200),
+  "..."
+);
+
+// Extract featured search items from the wizard
+const featuredItems: string[] = [];
+$(".img-caption").each((_, el) => {
+  const text = $(el).text().trim();
+  if (text) featuredItems.push(text);
+});
+console.log("Featured items from HTML:", featuredItems);
+
+// ---------------------------------------------------------------------------
+// Build Orlando provider from HTML content + documented city rules
+// ---------------------------------------------------------------------------
+type Material = z.infer<typeof MaterialSchema>;
+
+const materials: Material[] = [
+  // === RECYCLABLES (from HTML lines 1219-1237) ===
+  {
+    id: "plastic-bottles-containers",
+    name: "Plastic bottles and containers",
+    aliases: [
+      "plastic bottle",
+      "water bottle",
+      "soda bottle",
+      "plastic container",
+      "shampoo bottle",
+      "detergent bottle",
+      "plastic jug",
+      "milk jug",
+    ],
+    category: "recycle",
+    instructions: [
+      "Empty and clean the container",
+      "Replace caps — caps stay on",
+      "Place in blue recycling cart",
+    ],
+    notes: [
+      "Orlando accepts all rigid plastic bottles and containers",
+      "No need to remove labels",
+    ],
+    commonMistakes: [
+      "Don't include plastic bags or film",
+      "Don't include styrofoam containers",
+      "Don't include containers with food residue",
+    ],
+    tags: ["plastic", "bottle", "container", "recyclable"],
+    examples: [
+      "Water bottle",
+      "Soda bottle",
+      "Shampoo bottle",
+      "Laundry detergent jug",
+    ],
+  },
+  {
+    id: "glass-bottles-jars",
+    name: "Glass bottles and jars",
+    aliases: [
+      "glass bottle",
+      "glass jar",
+      "wine bottle",
+      "beer bottle",
+      "sauce jar",
+      "mason jar",
+    ],
+    category: "recycle",
+    instructions: [
+      "Empty and clean",
+      "Remove metal lids (recycle them separately)",
+      "Place in blue recycling cart",
+    ],
+    notes: ["All colors of glass are accepted in Orlando"],
+    commonMistakes: [
+      "Don't include broken glass — wrap it and place in trash",
+      "Don't include window glass, mirrors, or ceramics",
+      "Don't include drinking glasses or Pyrex",
+    ],
+    tags: ["glass", "bottle", "jar", "recyclable"],
+    examples: ["Wine bottle", "Beer bottle", "Pasta sauce jar", "Jam jar"],
+  },
+  {
+    id: "aluminum-steel-cans",
+    name: "Aluminum, steel and tin cans",
+    aliases: [
+      "aluminum can",
+      "soda can",
+      "beer can",
+      "tin can",
+      "steel can",
+      "soup can",
+      "food can",
+      "pop can",
+      "beverage can",
+    ],
+    category: "recycle",
+    instructions: [
+      "Empty and clean",
+      "Place in blue recycling cart",
+    ],
+    notes: [
+      "Both aluminum and steel/tin cans are accepted",
+      "Labels can stay on",
+    ],
+    commonMistakes: [
+      "Don't include aluminum food pans (not accepted in Orlando)",
+      "Don't include cans with food residue",
+    ],
+    tags: ["metal", "aluminum", "steel", "tin", "can", "recyclable"],
+    examples: ["Soda can", "Beer can", "Soup can", "Tuna can", "Bean can"],
+  },
+  {
+    id: "cardboard",
+    name: "Cardboard",
+    aliases: [
+      "corrugated cardboard",
+      "cardboard box",
+      "shipping box",
+      "amazon box",
+      "cereal box",
+      "shoe box",
+      "moving box",
+    ],
+    category: "recycle",
+    instructions: [
+      "Flatten all boxes",
+      "Remove packing materials (styrofoam, bubble wrap)",
+      "Place in or beside blue recycling cart",
+    ],
+    notes: ["Flattened boxes save space in the cart and truck"],
+    commonMistakes: [
+      "Don't include cardboard soaked with grease",
+      "Remove all styrofoam and plastic inserts",
+    ],
+    tags: ["paper", "cardboard", "box", "recyclable"],
+    examples: [
+      "Amazon box",
+      "Cereal box",
+      "Pizza box (clean portions)",
+      "Shoe box",
+    ],
+  },
+  {
+    id: "paper-newspaper",
+    name: "Paper and newspapers",
+    aliases: [
+      "newspaper",
+      "paper",
+      "office paper",
+      "junk mail",
+      "paper bag",
+      "magazine",
+      "mail",
+      "newsprint",
+      "printer paper",
+      "notebook paper",
+      "drink carton",
+    ],
+    category: "recycle",
+    instructions: [
+      "Place loose in blue recycling cart",
+      "Do NOT bag paper in plastic bags",
+    ],
+    notes: [
+      "Includes newspapers, paper bags, junk mail, sheets of paper and drink cartons",
+      "Shredded paper should go in a paper bag",
+    ],
+    commonMistakes: [
+      "Don't bag recyclables in plastic bags",
+      "Don't include paper towels or tissues",
+      "Don't include wax-coated paper",
+    ],
+    tags: ["paper", "newspaper", "mail", "recyclable"],
+    examples: [
+      "Daily newspaper",
+      "Junk mail",
+      "Paper bag",
+      "Magazine",
+      "Juice carton",
+    ],
+  },
+
+  // === NOT ACCEPTED IN RECYCLING (from HTML "Do not include" list) ===
+  {
+    id: "plastic-bags",
+    name: "Plastic bags",
+    aliases: [
+      "grocery bag",
+      "shopping bag",
+      "plastic film",
+      "produce bag",
+      "bread bag",
+      "zip-lock bag",
+      "trash bag",
+    ],
+    category: "trash",
+    instructions: [
+      "Do NOT place in recycling cart",
+      "Many grocery stores (Publix, Walmart) have drop-off bins for plastic bag recycling",
+      "Otherwise place in trash cart",
+      "Empty recyclables directly into the cart — never bag them",
+    ],
+    notes: [
+      "Plastic bags harm recycling machinery — they are the #1 contaminant in Orlando's recycling",
+      "Orlando specifically warns: empty the recycling directly into the cart",
+    ],
+    commonMistakes: [
+      "Never bag your recyclables in plastic bags",
+      "Don't put any plastic film in curbside recycling",
+    ],
+    tags: ["plastic", "bag", "film", "not-recyclable"],
+    examples: [
+      "Publix bag",
+      "Walmart bag",
+      "Produce bag",
+      "Newspaper sleeve",
+      "Dry cleaning bag",
+    ],
+  },
+  {
+    id: "styrofoam",
+    name: "Polystyrene foam (Styrofoam)",
+    aliases: [
+      "styrofoam",
+      "polystyrene",
+      "foam cup",
+      "foam container",
+      "packing peanuts",
+      "foam tray",
+      "foam plate",
+      "EPS",
+    ],
+    category: "trash",
+    instructions: [
+      "Place in trash cart",
+      "Not accepted in Orlando recycling",
+    ],
+    notes: [
+      "Polystyrene foam cups and containers are specifically listed as not accepted in Orlando's recycling program",
+    ],
+    commonMistakes: [
+      "Don't put styrofoam in the recycling cart",
+      "Packing peanuts can sometimes be returned to shipping stores",
+    ],
+    tags: ["plastic", "foam", "polystyrene", "not-recyclable"],
+    examples: [
+      "Styrofoam coffee cup",
+      "Foam takeout container",
+      "Meat tray",
+      "Packing peanuts",
+    ],
+  },
+  {
+    id: "aluminum-food-pans",
+    name: "Aluminum food pans",
+    aliases: [
+      "aluminum pan",
+      "foil pan",
+      "aluminum tray",
+      "disposable baking pan",
+      "pie pan",
+      "roasting pan disposable",
+    ],
+    category: "trash",
+    instructions: [
+      "Not accepted in Orlando recycling",
+      "Place in trash cart",
+    ],
+    notes: [
+      "Unlike aluminum cans, aluminum food pans are not accepted in Orlando's recycling program",
+    ],
+    commonMistakes: [
+      "Don't confuse with aluminum cans — pans are not accepted",
+    ],
+    tags: ["metal", "aluminum", "pan", "not-recyclable"],
+    examples: [
+      "Disposable foil roasting pan",
+      "Aluminum pie pan",
+      "Foil takeout container",
+    ],
+  },
+  {
+    id: "food-waste",
+    name: "Food waste",
+    aliases: [
+      "food scraps",
+      "food leftovers",
+      "kitchen scraps",
+      "spoiled food",
+      "food residue",
+    ],
+    category: "compost",
+    instructions: [
+      "Orlando offers a free composting program — request a composter from the city",
+      "Alternatively, place in trash cart",
+      "Do NOT place in recycling cart",
+    ],
+    notes: [
+      "Food waste is not accepted in Orlando's recycling",
+      "The City of Orlando provides free composters to residents upon request",
+    ],
+    commonMistakes: [
+      "Never put food waste in the recycling cart",
+    ],
+    tags: ["organic", "food", "compost"],
+    examples: [
+      "Banana peel",
+      "Apple core",
+      "Coffee grounds",
+      "Eggshells",
+      "Vegetable scraps",
+    ],
+  },
+
+  // === COMPOSTABLE ITEMS (Orlando composting program) ===
+  {
+    id: "yard-waste",
+    name: "Yard waste",
+    aliases: [
+      "grass clippings",
+      "leaves",
+      "branches",
+      "lawn clippings",
+      "garden waste",
+      "hedge trimmings",
+      "tree trimmings",
+    ],
+    category: "compost",
+    instructions: [
+      "Orlando provides separate yard waste pickup",
+      "Place in yard waste containers or paper yard waste bags",
+      "Check your pickup schedule on orlando.gov",
+    ],
+    notes: [
+      "Orlando has a dedicated yard waste collection program",
+      "Yard waste is collected on a separate schedule from trash and recycling",
+    ],
+    commonMistakes: [
+      "Don't bag yard waste in plastic bags",
+      "Don't mix yard waste with trash or recycling",
+    ],
+    tags: ["organic", "yard", "garden", "compost"],
+    examples: [
+      "Grass clippings",
+      "Fallen leaves",
+      "Small branches",
+      "Palm fronds",
+    ],
+  },
+
+  // === HAZARDOUS / SPECIAL (from featured searches + known Orlando rules) ===
+  {
+    id: "gas-gasoline",
+    name: "Gas / Gasoline",
+    aliases: ["gasoline", "gas", "petrol", "fuel", "gas can"],
+    category: "hazardous",
+    instructions: [
+      "Never place in trash or recycling",
+      "Take to Orange County Hazardous Waste facility",
+      "Can also be taken to community collection events",
+    ],
+    notes: [
+      "Gasoline is a flammable hazardous material",
+      "Featured item on Orlando's What Goes Where page",
+    ],
+    commonMistakes: [
+      "Never pour gasoline down drains or on the ground",
+      "Don't put in any curbside cart",
+    ],
+    tags: ["hazardous", "fuel", "flammable"],
+    examples: ["Old gasoline", "Gas/fuel containers"],
+  },
+  {
+    id: "television",
+    name: "Television / TV",
+    aliases: [
+      "TV",
+      "television",
+      "flat screen",
+      "monitor",
+      "CRT",
+      "LCD TV",
+      "LED TV",
+    ],
+    category: "dropoff",
+    instructions: [
+      "Do not place in trash or recycling",
+      "Take to an electronics recycling drop-off location",
+      "Best Buy accepts TVs up to 32 inches for free recycling",
+      "Orange County has e-waste collection events",
+    ],
+    notes: [
+      "TVs contain hazardous materials and valuable metals",
+      "Featured item on Orlando's What Goes Where page",
+    ],
+    commonMistakes: [
+      "Don't put in curbside trash or recycling",
+      "CRT TVs especially contain lead",
+    ],
+    tags: ["electronics", "e-waste", "hazardous"],
+    examples: ["Old flat screen TV", "CRT television", "Computer monitor"],
+  },
+  {
+    id: "sharps",
+    name: "Sharps / Needles",
+    aliases: [
+      "needle",
+      "syringe",
+      "lancet",
+      "sharps",
+      "insulin needle",
+      "medical needle",
+    ],
+    category: "hazardous",
+    instructions: [
+      "Place in an FDA-cleared sharps disposal container",
+      "When full, take to an approved collection site",
+      "Orlando Fire Stations accept sharps containers",
+      "CVS and Walgreens may also accept them",
+    ],
+    notes: [
+      "Featured item on Orlando's What Goes Where page",
+      "Improper disposal puts sanitation workers at serious risk",
+    ],
+    commonMistakes: [
+      "Never place loose sharps in trash or recycling",
+      "Don't flush needles down the toilet",
+    ],
+    tags: ["medical", "hazardous", "sharps"],
+    examples: ["Insulin needles", "Lancets", "Syringes"],
+  },
+  {
+    id: "paint-latex",
+    name: "Paint - latex (full or partially full)",
+    aliases: [
+      "latex paint",
+      "house paint",
+      "wall paint",
+      "acrylic paint",
+      "water-based paint",
+    ],
+    category: "hazardous",
+    instructions: [
+      "If liquid: take to Orange County hazardous waste facility",
+      "To dry out: remove lid, add kitty litter or sawdust, let dry completely",
+      "Dried latex paint cans can go in trash",
+      "Many communities hold paint swap events",
+    ],
+    notes: [
+      "Featured item on Orlando's What Goes Where page",
+      "Liquid paint should never go in regular trash",
+    ],
+    commonMistakes: [
+      "Don't pour paint down the drain",
+      "Don't put liquid paint in trash or recycling",
+    ],
+    tags: ["hazardous", "household", "chemical", "paint"],
+    examples: [
+      "Half-full paint can",
+      "Old house paint",
+      "Latex wall paint",
+    ],
+  },
+  {
+    id: "paint-oil-based",
+    name: "Paint - oil-based",
+    aliases: ["oil paint", "oil-based paint", "stain", "varnish", "lacquer"],
+    category: "hazardous",
+    instructions: [
+      "Always take to Orange County hazardous waste facility",
+      "Oil-based paint cannot be dried out and trashed",
+      "Never pour down drains",
+    ],
+    notes: ["Oil-based paints and stains are more toxic than latex"],
+    commonMistakes: [
+      "Don't try to dry out oil-based paint and put in trash",
+      "Don't mix with latex paint",
+    ],
+    tags: ["hazardous", "household", "chemical", "paint"],
+    examples: ["Oil-based stain", "Varnish", "Lacquer"],
+  },
+  {
+    id: "batteries",
+    name: "Batteries",
+    aliases: [
+      "battery",
+      "AA battery",
+      "AAA battery",
+      "lithium battery",
+      "rechargeable battery",
+      "car battery",
+      "9V battery",
+    ],
+    category: "hazardous",
+    instructions: [
+      "Do not place in trash or recycling",
+      "Take to Orange County Hazardous Waste facility",
+      "Many hardware stores (Home Depot, Lowe's) accept batteries",
+      "Tape terminals of lithium and 9V batteries before transport",
+    ],
+    notes: [
+      "Batteries can cause fires in garbage trucks and recycling facilities",
+    ],
+    commonMistakes: [
+      "Don't throw batteries in the trash",
+      "Don't put in curbside recycling",
+    ],
+    tags: ["hazardous", "electronics", "battery"],
+    examples: [
+      "AA batteries",
+      "Rechargeable laptop battery",
+      "Car battery",
+      "Button cell battery",
+    ],
+  },
+  {
+    id: "electronics",
+    name: "Electronics / E-waste",
+    aliases: [
+      "e-waste",
+      "computer",
+      "laptop",
+      "phone",
+      "old phone",
+      "tablet",
+      "printer",
+      "keyboard",
+      "cables",
+    ],
+    category: "dropoff",
+    instructions: [
+      "Take to an e-waste recycling center",
+      "Best Buy offers free e-waste drop-off",
+      "Orange County holds periodic e-waste collection events",
+      "Delete personal data before disposal",
+    ],
+    notes: ["It is illegal to put e-waste in the trash in Florida"],
+    commonMistakes: [
+      "Don't put in curbside trash or recycling",
+      "Don't forget to wipe personal data",
+    ],
+    tags: ["electronics", "e-waste", "metal"],
+    examples: [
+      "Old laptop",
+      "Broken phone",
+      "Printer",
+      "Cables",
+      "Keyboard",
+    ],
+  },
+  {
+    id: "cooking-oil",
+    name: "Cooking oil / grease",
+    aliases: [
+      "cooking oil",
+      "vegetable oil",
+      "grease",
+      "frying oil",
+      "used cooking oil",
+    ],
+    category: "dropoff",
+    instructions: [
+      "Orlando has a cooking oil / grease recycling program",
+      "Collect in a sealed container and take to a drop-off location",
+      "Contact Kimberlie Schionning at 407.246.2657 for grease program info",
+      "Never pour down drains",
+    ],
+    notes: [
+      "Orlando has a dedicated grease program — see orlando.gov for details",
+    ],
+    commonMistakes: [
+      "Don't pour oil or grease down the drain",
+      "Don't put liquid oil in trash",
+    ],
+    tags: ["organic", "food", "oil", "grease"],
+    examples: ["Used frying oil", "Bacon grease", "Olive oil"],
+  },
+  {
+    id: "large-items",
+    name: "Large / bulk items",
+    aliases: [
+      "furniture",
+      "couch",
+      "sofa",
+      "mattress",
+      "large item",
+      "bulk item",
+      "appliance",
+    ],
+    category: "dropoff",
+    instructions: [
+      "Schedule a bulk pickup through orlando.gov or call 407.246.2314",
+      "Place at curb on your scheduled pickup day",
+      "Do not place more than 2 weeks before pickup",
+    ],
+    notes: [
+      "Orlando offers bulk / large item pickup service for residents",
+    ],
+    commonMistakes: [
+      "Don't leave large items at the curb without scheduling",
+      "Don't block sidewalks or storm drains",
+    ],
+    tags: ["bulk", "furniture", "household"],
+    examples: ["Old couch", "Broken dresser", "Mattress", "Water heater"],
+  },
+  {
+    id: "medications",
+    name: "Medications",
+    aliases: [
+      "medicine",
+      "pills",
+      "prescription drugs",
+      "expired medicine",
+      "pharmaceuticals",
+      "over-the-counter medicine",
+    ],
+    category: "dropoff",
+    instructions: [
+      "Take to a pharmacy drug take-back program",
+      "Orlando police stations often have drug take-back boxes",
+      "CVS and Walgreens participate in take-back programs",
+      "If no drop-off: mix with coffee grounds, seal in container, and trash",
+    ],
+    notes: [
+      "Don't flush medications unless the label specifically says to",
+    ],
+    commonMistakes: [
+      "Don't flush medications down the toilet",
+      "Don't throw in regular trash without making them unusable",
+    ],
+    tags: ["pharmaceutical", "household", "hazardous"],
+    examples: [
+      "Expired prescription",
+      "Old Tylenol",
+      "Unused antibiotics",
+    ],
+  },
+  {
+    id: "pizza-box",
+    name: "Pizza box",
+    aliases: ["pizza box", "pizza carton"],
+    category: "recycle",
+    instructions: [
+      "Remove leftover food and liners",
+      "If heavily greased: tear off the greasy bottom, trash it, and recycle the clean top",
+      "Lightly soiled pizza boxes are generally accepted",
+    ],
+    notes: [
+      "Modern recycling can handle some grease — a few spots are OK",
+    ],
+    commonMistakes: [
+      "Don't include the wax paper liner",
+      "A completely saturated box should go in trash or compost",
+    ],
+    tags: ["paper", "cardboard", "food"],
+    examples: ["Pizza delivery box"],
+  },
+  {
+    id: "light-bulbs",
+    name: "Light bulbs",
+    aliases: [
+      "light bulb",
+      "lightbulb",
+      "CFL",
+      "fluorescent bulb",
+      "LED bulb",
+      "incandescent bulb",
+    ],
+    category: "hazardous",
+    instructions: [
+      "CFL and fluorescent bulbs contain mercury — take to hazardous waste",
+      "LED bulbs: take to e-waste recycling",
+      "Incandescent bulbs: wrap and place in trash",
+      "Home Depot and Lowe's accept CFL bulbs",
+    ],
+    notes: ["Handle fluorescent bulbs carefully to avoid breakage"],
+    commonMistakes: [
+      "Don't put CFL bulbs in regular trash",
+      "Don't break fluorescent tubes",
+    ],
+    tags: ["hazardous", "household", "lighting"],
+    examples: ["CFL spiral bulb", "Fluorescent tube", "LED bulb"],
+  },
+  {
+    id: "paper-towels",
+    name: "Paper towels and napkins",
+    aliases: [
+      "paper towel",
+      "napkin",
+      "tissue",
+      "kleenex",
+      "paper napkin",
+    ],
+    category: "compost",
+    instructions: [
+      "Add to your City of Orlando composter if you have one",
+      "Otherwise place in trash",
+      "Never place in recycling",
+    ],
+    notes: [
+      "Paper towels cannot be recycled — the fibers are too short and contaminated",
+    ],
+    commonMistakes: ["Don't put in recycling bin"],
+    tags: ["paper", "compost", "kitchen"],
+    examples: ["Used paper towel", "Napkin", "Facial tissue"],
+  },
+  {
+    id: "clothing-textiles",
+    name: "Clothing and textiles",
+    aliases: [
+      "clothes",
+      "old clothes",
+      "shoes",
+      "textiles",
+      "fabric",
+      "sneakers",
+    ],
+    category: "dropoff",
+    instructions: [
+      "Donate wearable clothing to Goodwill, Salvation Army, or local thrift stores",
+      "Textile recycling bins are located throughout Orlando",
+      "Unwearable textiles can go in textile recycling bins",
+    ],
+    notes: [
+      "Keep textiles out of the landfill — even torn items can be recycled into rags or insulation",
+    ],
+    commonMistakes: [
+      "Don't put clothing in curbside recycling",
+      "Wet or moldy clothing should be trashed",
+    ],
+    tags: ["textile", "clothing", "donation"],
+    examples: ["Old t-shirt", "Worn jeans", "Old sneakers"],
+  },
+  {
+    id: "tires",
+    name: "Tires",
+    aliases: ["tire", "car tire", "bicycle tire", "rubber tire"],
+    category: "dropoff",
+    instructions: [
+      "Take to a tire retailer or auto shop",
+      "Orange County has tire collection at the landfill",
+      "Many tire shops accept old tires when you buy new ones",
+    ],
+    notes: ["Tire dumping is illegal in Florida"],
+    commonMistakes: [
+      "Don't put in curbside trash",
+      "Don't dump illegally",
+    ],
+    tags: ["automotive", "rubber"],
+    examples: ["Car tire", "Truck tire", "Bicycle tire"],
+  },
+  {
+    id: "motor-oil",
+    name: "Motor oil",
+    aliases: [
+      "used oil",
+      "engine oil",
+      "automotive oil",
+      "car oil",
+      "transmission fluid",
+    ],
+    category: "hazardous",
+    instructions: [
+      "Collect in a sealed container",
+      "Take to AutoZone, O'Reilly, or other auto parts stores",
+      "Or take to Orange County Hazardous Waste facility",
+    ],
+    notes: ["Most auto parts stores in Orlando accept used motor oil for free"],
+    commonMistakes: [
+      "Don't pour down drains",
+      "Don't mix with other fluids",
+    ],
+    tags: ["hazardous", "automotive", "oil"],
+    examples: ["Used engine oil", "Transmission fluid"],
+  },
+  {
+    id: "aerosol-cans",
+    name: "Aerosol cans",
+    aliases: [
+      "aerosol",
+      "spray can",
+      "hairspray",
+      "air freshener can",
+      "WD-40 can",
+    ],
+    category: "recycle",
+    instructions: [
+      "Must be completely empty",
+      "Remove plastic cap",
+      "Place empty can in recycling cart",
+      "Non-empty aerosols are hazardous waste",
+    ],
+    notes: [
+      "Only completely empty aerosol cans go in recycling",
+    ],
+    commonMistakes: [
+      "Don't recycle if still pressurized",
+      "Never puncture aerosol cans",
+    ],
+    tags: ["metal", "container", "household"],
+    examples: ["Empty hairspray can", "Empty cooking spray can"],
+  },
+  {
+    id: "milk-carton",
+    name: "Milk and juice cartons",
+    aliases: [
+      "milk carton",
+      "juice carton",
+      "juice box",
+      "tetra pak",
+      "drink carton",
+      "aseptic carton",
+    ],
+    category: "recycle",
+    instructions: [
+      "Empty and rinse",
+      "Replace cap",
+      "Place in recycling cart",
+    ],
+    notes: [
+      "Drink cartons are specifically listed as recyclable in Orlando",
+    ],
+    commonMistakes: [
+      "Don't flatten — 3D shape helps sorting machines",
+    ],
+    tags: ["paper", "carton", "beverage"],
+    examples: ["Milk carton", "OJ carton", "Juice box", "Broth carton"],
+  },
+  {
+    id: "coffee-cups",
+    name: "Disposable coffee cups",
+    aliases: [
+      "coffee cup",
+      "paper cup",
+      "hot cup",
+      "to-go cup",
+      "starbucks cup",
+    ],
+    category: "trash",
+    instructions: [
+      "Most paper coffee cups have plastic lining and are NOT recyclable",
+      "Place in trash cart",
+      "Plastic lids may be recyclable — check locally",
+    ],
+    notes: ["Bring a reusable cup to reduce waste"],
+    commonMistakes: [
+      "Don't put lined paper cups in recycling",
+    ],
+    tags: ["paper", "food", "beverage", "not-recyclable"],
+    examples: ["Starbucks cup", "Dunkin cup"],
+  },
+  {
+    id: "diapers",
+    name: "Diapers",
+    aliases: [
+      "diaper",
+      "disposable diaper",
+      "baby diaper",
+      "adult diaper",
+    ],
+    category: "trash",
+    instructions: [
+      "Wrap tightly",
+      "Place in trash cart",
+    ],
+    notes: ["Not recyclable or compostable"],
+    commonMistakes: ["Don't put in recycling"],
+    tags: ["hygiene", "household"],
+    examples: ["Disposable baby diaper", "Adult incontinence product"],
+  },
+  {
+    id: "propane-tanks",
+    name: "Propane tanks",
+    aliases: [
+      "propane tank",
+      "propane cylinder",
+      "camping propane",
+      "gas canister",
+    ],
+    category: "hazardous",
+    instructions: [
+      "Never place in trash or recycling",
+      "Take to Orange County Hazardous Waste facility",
+      "Large tanks can be exchanged at hardware stores",
+    ],
+    notes: [
+      "Pressurized containers are a fire and explosion risk",
+    ],
+    commonMistakes: [
+      "Never puncture",
+      "Don't put in any curbside cart",
+    ],
+    tags: ["hazardous", "pressurized", "fuel"],
+    examples: ["Small camping propane canister", "BBQ propane tank"],
+  },
+  {
+    id: "wax-paper",
+    name: "Wax paper / parchment paper",
+    aliases: [
+      "wax paper",
+      "parchment paper",
+      "baking paper",
+      "waxed paper",
+    ],
+    category: "trash",
+    instructions: [
+      "Place in trash cart",
+      "Not recyclable due to wax/silicone coating",
+    ],
+    notes: ["Uncoated parchment may be compostable"],
+    commonMistakes: ["Don't confuse with regular paper"],
+    tags: ["paper", "kitchen"],
+    examples: ["Wax paper", "Parchment paper"],
+  },
+  {
+    id: "bubble-wrap",
+    name: "Bubble wrap and packing materials",
+    aliases: [
+      "bubble wrap",
+      "air pillows",
+      "packing material",
+      "packing foam",
+      "packing peanuts",
+    ],
+    category: "trash",
+    instructions: [
+      "Place in trash cart",
+      "Or drop off plastic film at grocery store collection bins",
+      "Packing peanuts can be returned to UPS Store",
+    ],
+    notes: ["Plastic film jams recycling machinery"],
+    commonMistakes: ["Don't put in curbside recycling"],
+    tags: ["plastic", "film", "packaging"],
+    examples: ["Bubble wrap", "Air pillows", "Packing peanuts"],
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Assemble the provider
+// ---------------------------------------------------------------------------
+const provider = {
+  id: "orlando",
+  displayName: "Orlando, FL",
+  coverage: {
+    country: "US",
+    region: "FL",
+    city: "Orlando",
+    zips: [
+      "32801", "32802", "32803", "32804", "32805", "32806", "32807",
+      "32808", "32809", "32810", "32811", "32812", "32814", "32816",
+      "32817", "32818", "32819", "32820", "32821", "32822", "32824",
+      "32825", "32826", "32827", "32828", "32829", "32830", "32831",
+      "32832", "32833", "32834", "32835", "32836", "32837", "32839",
+    ],
+    aliases: [
+      "city beautiful",
+      "orlando fl",
+      "orlando florida",
+      "orange county fl",
+    ],
+  },
+  source: {
+    name: "City of Orlando — What Goes Where",
+    url: "https://www.orlando.gov/Trash-Recycling/What-Goes-Where",
+    generatedAt: new Date().toISOString().split("T")[0],
+    notes:
+      "Extracted from the official City of Orlando What Goes Where page. " +
+      "Supplemented with publicly documented Orlando recycling rules.",
+    license: "Public government data",
+  },
+  materials,
+  rulesSummary: {
+    accepted: {
+      recycle: [
+        "Plastic bottles and containers (empty, clean, caps on)",
+        "Glass bottles and jars (empty, clean, remove lids)",
+        "Aluminum, steel and tin cans (empty, clean)",
+        "Cardboard (flattened)",
+        "Paper, newspapers, paper bags, junk mail, drink cartons",
+        "Empty aerosol cans",
+        "Milk and juice cartons",
+      ],
+      compost: [
+        "Food scraps (via city composter program)",
+        "Yard waste (separate pickup)",
+        "Paper towels and napkins (in composter)",
+      ],
+      trash: [
+        "Plastic bags and film",
+        "Polystyrene foam (Styrofoam)",
+        "Aluminum food pans",
+        "Disposable coffee cups",
+        "Diapers",
+        "Wax paper / parchment paper",
+        "Bubble wrap and packing materials",
+      ],
+    },
+    notAccepted: {
+      recycle: [
+        "Plastic bags and film — they jam machinery",
+        "Polystyrene foam cups and containers",
+        "Aluminum food pans",
+        "Food waste",
+        "Ceramics, window glass, mirrors",
+        "Paper towels and tissues",
+        "Wax-coated paper",
+      ],
+      compost: [
+        "Meat and dairy (in basic composters)",
+        "Pet waste",
+        "Treated or painted wood",
+      ],
+    },
+    tips: [
+      "Empty recyclables DIRECTLY into the cart — never use plastic bags",
+      "Plastic bags harm recycling machinery",
+      "Rinse containers — they don't need to be spotless",
+      "Flatten cardboard boxes",
+      "When in doubt, put it in the trash — contamination hurts recycling",
+      "Request a free composter from the City of Orlando",
+      "Check your pickup schedule at orlando.gov",
+    ],
+  },
+  locations: [
+    {
+      name: "Orange County Hazardous Waste Drop-off",
+      address: "5901 Young Pine Road, Orlando, FL 32829",
+      phone: "407-836-6601",
+      url: "https://www.ocfl.net/EnvironmentWater/HazardousWaste.aspx",
+      accepts: [
+        "Batteries",
+        "Paint",
+        "Motor oil",
+        "Pesticides",
+        "Propane tanks",
+        "Fluorescent bulbs",
+        "Electronics",
+      ],
+      hours: "Tuesday-Saturday 8am-5pm",
+    },
+    {
+      name: "City of Orlando Solid Waste Division",
+      address: "1028 Woods Avenue, Orlando, FL 32805",
+      phone: "407-246-2314",
+      url: "https://www.orlando.gov/Trash-Recycling",
+      accepts: ["Bulk items (by appointment)", "Yard waste"],
+      notes: "Call to schedule bulk pickups",
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Validate and write
+// ---------------------------------------------------------------------------
+const validated = ProviderSchema.parse(provider);
+
+const outDir = path.join(process.cwd(), "data", "providers");
+if (!fs.existsSync(outDir)) {
+  fs.mkdirSync(outDir, { recursive: true });
+}
+
+const outPath = path.join(outDir, "orlando.json");
+fs.writeFileSync(outPath, JSON.stringify(validated, null, 2));
+
+console.log(`\n✅ Orlando provider written to ${outPath}`);
+console.log(`   ${validated.materials.length} materials`);
+console.log(`   ${validated.locations?.length ?? 0} locations`);

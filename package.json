@@ -1,12 +1,18 @@
 {
-  "name": "isthisrecyclable-tmp",
+  "name": "isthisrecyclable",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "extract:orlando": "tsx scripts/extract-provider-orlando.ts",
+    "generate:og": "tsx scripts/generate-og-fallbacks.ts"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.90.21",
