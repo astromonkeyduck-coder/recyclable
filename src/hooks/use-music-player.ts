@@ -3,8 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const PLAYLIST = [
-  // Preview song — use copy_DA4EDF1E-A35E-446C-8664-319220648E68.m4a in public/audio (convert from .MOV for browser playback)
-  { src: "/audio/copy_DA4EDF1E-A35E-446C-8664-319220648E68.m4a", title: "Preview" },
+  { src: "/audio/isthisredcyaudio.m4a", title: "Preview" },
   { src: "/audio/niceindie.wav", title: "Golden Hour" },
   { src: "/audio/firstsongrec.wav", title: "Curbside Dreams" },
   { src: "/audio/recycleee.wav", title: "Second Life" },
