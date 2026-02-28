@@ -16,6 +16,7 @@ import type { GameModeData, GameSession, AnswerRecord, DifficultyLabel, Question
 import { cn } from "@/lib/utils";
 import { ConfettiBurst } from "@/components/games/confetti";
 import { CountdownRing } from "@/components/games/countdown-ring";
+import { useVoice } from "@/components/voice/voice-context";
 
 const CORRECT_MESSAGES = ["Correct!", "Nice one!", "Nailed it!", "Right on!", "Yes!"];
 const WRONG_MESSAGES = ["Not quite!", "Oops!", "So close!", "Wrong one!", "Nope!"];
@@ -51,6 +52,7 @@ function GamePlayContent() {
     },
   });
 
+  const { playVoice } = useVoice();
   const [session, setSession] = useState<GameSession | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "wrong" | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -113,8 +115,10 @@ function GamePlayContent() {
         } else {
           setFeedbackMessage(pickRandom(CORRECT_MESSAGES));
         }
+        playVoice("correct_answer", { streakCount: newStreak });
       } else {
         setFeedbackMessage(pickRandom(WRONG_MESSAGES));
+        playVoice("incorrect_answer");
       }
 
       setTimeout(() => {
@@ -149,7 +153,7 @@ function GamePlayContent() {
         questionStartRef.current = Date.now();
       }, lastFunFact || currentQuestion.funFact ? 2800 : 1500);
     },
-    [session, currentQuestion, feedback, modeId, router, lastFunFact]
+    [session, currentQuestion, feedback, modeId, router, lastFunFact, playVoice]
   );
 
   // Timer for speed-sort

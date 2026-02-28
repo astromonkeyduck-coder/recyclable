@@ -27,6 +27,7 @@ import Link from "next/link";
 import type { Material } from "@/lib/providers/types";
 import { CATEGORY_META } from "@/lib/utils/categories";
 import { useSfx } from "@/components/sfx/sfx-context";
+import { useVoice } from "@/components/voice/voice-context";
 import { useSearchHistory } from "@/hooks/use-search-history";
 import { useEcoStats } from "@/hooks/use-eco-stats";
 
@@ -175,6 +176,7 @@ function ResultContent() {
   const activeMaterial = selectedMaterial ?? data?.best;
   const confidence = data?.confidence ?? 0;
   const sfx = useSfx();
+  const { playVoice } = useVoice();
   const playedRef = useRef(false);
 
   const loggedRef = useRef(false);
@@ -206,10 +208,11 @@ function ResultContent() {
         if (cat === "recycle" || cat === "compost") sfx.success();
         else if (cat === "hazardous" || cat === "dropoff") sfx.warning();
         else sfx.reveal();
+        playVoice("scan_result", { category: activeMaterial.category });
       }
       playedRef.current = true;
     }
-  }, [isLoading, data, errorMsg, activeMaterial, sfx]);
+  }, [isLoading, data, errorMsg, activeMaterial, sfx, playVoice]);
 
   const { containerRef, pulling, pullDistance } = usePullToRefresh(() =>
     refetch()

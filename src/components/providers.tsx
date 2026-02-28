@@ -7,6 +7,8 @@ import { useState, type ReactNode } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { MusicProvider } from "@/components/music/music-context";
 import { SfxProvider } from "@/components/sfx/sfx-context";
+import { VoiceProvider } from "@/components/voice/voice-context";
+import { VoiceCaptionFixed } from "@/components/voice/voice-caption";
 
 export function AppProviders({ children }: { children: ReactNode }) {
   const [queryClient] = useState(
@@ -27,8 +29,11 @@ export function AppProviders({ children }: { children: ReactNode }) {
         <MotionConfig reducedMotion="user">
           <MusicProvider>
             <SfxProvider>
-              {children}
-              <Toaster position="bottom-center" />
+              <VoiceProvider>
+                {children}
+                <VoiceCaptionFixed />
+                <Toaster position="bottom-center" />
+              </VoiceProvider>
             </SfxProvider>
           </MusicProvider>
         </MotionConfig>

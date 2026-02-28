@@ -17,6 +17,7 @@ import { calculateFinalScore, SCORING } from "@/lib/games/scoring";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { ConfettiBurst } from "@/components/games/confetti";
+import { useVoice } from "@/components/voice/voice-context";
 
 type GradeTier = {
   grade: string;
@@ -47,6 +48,7 @@ function ResultsContent() {
   const searchParams = useSearchParams();
   const modeId = params.mode as string;
   const modeMeta = GAME_MODES_META.find((m) => m.id === modeId);
+  const { playVoice } = useVoice();
 
   const score = parseInt(searchParams.get("score") ?? "0", 10);
   const correct = parseInt(searchParams.get("correct") ?? "0", 10);
@@ -106,11 +108,13 @@ function ResultsContent() {
 
     recordGameResult(result);
 
+    playVoice("lesson_complete", { accuracy });
+
     if (accuracy >= 70) {
       setTimeout(() => setShowConfetti(true), 300);
       setTimeout(() => setShowConfetti(false), 400);
     }
-  }, [modeId, score, correct, total, streak, difficulty, accuracy, modeMeta, answers, saved]);
+  }, [modeId, score, correct, total, streak, difficulty, accuracy, modeMeta, answers, saved, playVoice]);
 
   // Animate score counting up
   useEffect(() => {

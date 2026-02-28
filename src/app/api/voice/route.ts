@@ -1,0 +1,105 @@
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+import { generateVoiceLine } from "@/lib/voice/reactions";
+
+/** Two voices used 50/50 for variety. Mark + second premade. */
+const VOICE_IDS = ["UgBBYS2sOqTuMpoF3BR0", "DLsHlh26Ugcm6ELvS0qi"] as const;
+
+function pickVoiceId(): string {
+  return VOICE_IDS[Math.random() < 0.5 ? 0 : 1];
+}
+
+const MAX_CACHE_ENTRIES = 50;
+
+const VoiceRequestSchema = z.object({
+  eventType: z.enum(["scan_result", "correct_answer", "incorrect_answer", "lesson_complete"]),
+  category: z.enum(["recycle", "trash", "compost", "dropoff", "hazardous", "unknown"]).optional(),
+  streakCount: z.number().optional(),
+  confidence: z.number().optional(),
+  accuracy: z.number().optional(),
+});
+
+const cache = new Map<string, ArrayBuffer>();
+const cacheOrder: string[] = [];
+
+function getCached(key: string): ArrayBuffer | undefined {
+  return cache.get(key);
+}
+
+function setCache(key: string, buffer: ArrayBuffer) {
+  if (cacheOrder.length >= MAX_CACHE_ENTRIES) {
+    const oldest = cacheOrder.shift();
+    if (oldest) cache.delete(oldest);
+  }
+  cache.set(key, buffer);
+  cacheOrder.push(key);
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const parsed = VoiceRequestSchema.parse(body);
+
+    const apiKey = process.env.ELEVENLABS_KEY;
+    if (!apiKey) {
+      return new NextResponse(null, { status: 503 });
+    }
+
+    const text = generateVoiceLine({
+      eventType: parsed.eventType,
+      category: parsed.category,
+      streakCount: parsed.streakCount,
+      confidence: parsed.confidence,
+      accuracy: parsed.accuracy,
+    });
+
+    const voiceId = process.env.ELEVENLABS_VOICE_ID ?? pickVoiceId();
+    const cacheKey = `${voiceId}:${text}`;
+    const cached = getCached(cacheKey);
+    if (cached) {
+      return new NextResponse(cached, {
+        headers: { "Content-Type": "audio/mpeg" },
+      });
+    }
+
+    const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "xi-api-key": apiKey,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text,
+        model_id: "eleven_multilingual_v2",
+        voice_settings: {
+          stability: 0.4,
+          similarity_boost: 0.7,
+          style: 0.6,
+          use_speaker_boost: true,
+        },
+      }),
+    });
+
+    if (!response.ok) {
+      console.error("ElevenLabs TTS error:", response.status, await response.text());
+      return new NextResponse(null, { status: 503 });
+    }
+
+    const buffer = await response.arrayBuffer();
+    setCache(cacheKey, buffer);
+
+    return new NextResponse(buffer, {
+      headers: { "Content-Type": "audio/mpeg" },
+    });
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return NextResponse.json(
+        { error: "Invalid request", details: error.issues },
+        { status: 400 }
+      );
+    }
+    console.error("Voice API error:", error);
+    return new NextResponse(null, { status: 500 });
+  }
+}
