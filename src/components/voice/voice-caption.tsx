@@ -36,9 +36,9 @@ export function VoiceCaptionFixed() {
           <motion.div
             key={caption}
             className="flex items-center gap-2.5 bg-background/95 dark:bg-background/90 backdrop-blur-md rounded-full py-2.5 px-4 border shadow-lg max-w-sm"
-            initial={reduced ? false : { opacity: 0, y: 10, scale: 0.96 }}
+            initial={reduced ? undefined : { opacity: 0, y: 10, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={reduced ? false : { opacity: 0, y: 6, scale: 0.98 }}
+            exit={reduced ? undefined : { opacity: 0, y: 6, scale: 0.98 }}
             transition={{
               duration: 0.25,
               ease: [0.25, 0.46, 0.45, 0.94],
