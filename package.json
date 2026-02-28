@@ -13,6 +13,7 @@
     "test:e2e": "playwright test",
     "extract:orlando": "tsx scripts/extract-provider-orlando.ts",
     "generate:og": "tsx scripts/generate-og-fallbacks.ts",
+    "convert:preview-audio": "./scripts/convert-preview-audio.sh",
     "cap:sync": "npx cap sync",
     "cap:ios": "npx cap open ios",
     "cap:android": "npx cap open android",

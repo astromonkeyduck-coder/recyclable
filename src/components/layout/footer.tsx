@@ -5,6 +5,7 @@ import { Recycle, Leaf, Camera, Search } from "lucide-react";
 import { useLocation } from "@/hooks/use-location";
 import { FloatingVisualizer } from "@/components/music/floating-visualizer";
 import { EcoTree } from "@/components/common/eco-tree";
+import { ShareSiteButton } from "@/components/common/share-site-button";
 
 const NAV_LINKS = [
   { href: "/about", label: "About" },
@@ -118,6 +119,7 @@ export function Footer() {
                   {link.label}
                 </Link>
               ))}
+              <ShareSiteButton variant="link" className={linkClass} />
             </nav>
           </div>
         </div>

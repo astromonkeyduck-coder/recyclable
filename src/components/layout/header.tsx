@@ -6,6 +6,7 @@ import { Recycle, Settings } from "lucide-react";
 import { LocationSelector } from "./location-selector";
 import { ThemeToggle } from "./theme-toggle";
 import { MusicControls } from "@/components/music/music-controls";
+import { ShareSiteButton } from "@/components/common/share-site-button";
 import { SettingsSheet } from "./settings-sheet";
 import { Button } from "@/components/ui/button";
 
@@ -25,6 +26,7 @@ export function Header() {
           </Link>
 
           <div className="flex items-center gap-1.5">
+            <ShareSiteButton />
             <MusicControls />
             <div className="hidden sm:block h-5 w-px bg-border mx-1" />
             <LocationSelector />

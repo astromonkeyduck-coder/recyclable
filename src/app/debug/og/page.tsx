@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import type { DisposalCategory } from "@/lib/providers/types";
 import type { OgVariant } from "@/lib/utils/og-params";
+import { OgCardAnimated } from "@/components/debug/og-card-animated";
 
 const RESULT_SAMPLES: Array<{
   label: string;
@@ -114,6 +115,15 @@ export default function DebugOgPage() {
     warning: customVariant === "result" ? customWarning || undefined : undefined,
   });
 
+  const animatedParams = {
+    variant: customVariant,
+    category: customCategory,
+    item: customVariant === "result" ? customItem : "Is this recyclable?",
+    loc: customVariant === "result" ? customLoc : "",
+    confidence: customVariant === "result" ? customConfidence : 0,
+    warning: customVariant === "result" ? customWarning : "",
+  };
+
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
       <h1 className="text-2xl font-bold mb-1">OG Image Debug</h1>
@@ -121,6 +131,21 @@ export default function DebugOgPage() {
         Preview how share cards look across platforms. Each image is 1200x630 and dynamically
         generated.
       </p>
+
+      {/* Live animated preview — same card with motion */}
+      <section className="mb-12 rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-6">
+        <h2 className="text-lg font-semibold mb-1 flex items-center gap-2">
+          <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+          Live animated preview
+        </h2>
+        <p className="text-muted-foreground text-sm mb-4">
+          Same design as the share image, but with motion. When links are shared, most apps show a
+          static image; here you can see the animated version.
+        </p>
+        <div className="max-w-3xl rounded-xl overflow-hidden border border-white/10 shadow-2xl">
+          <OgCardAnimated params={animatedParams} />
+        </div>
+      </section>
 
       {/* Custom builder */}
       <section className="mb-12 rounded-lg border p-6">
