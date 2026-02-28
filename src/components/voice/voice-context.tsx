@@ -24,6 +24,8 @@ type VoiceContextValue = {
   enabled: boolean;
   setEnabled: (value: boolean) => void;
   playVoice: (eventType: VoiceEventType, params?: VoiceLineParams) => void;
+  /** Speak custom text (e.g. funny line during scan). Does not affect result-voice cooldown. */
+  playCustomLine: (text: string) => void;
   caption: string | null;
   reducedMotion: boolean;
 };
@@ -38,9 +40,10 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
-      setEnabledState(stored === "true");
+      // Default to true (automatic): only off when user explicitly set "false"
+      setEnabledState(stored !== "false");
     } catch {
-      setEnabledState(false);
+      setEnabledState(true);
     }
   }, []);
 
@@ -62,7 +65,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const { playVoice } = useVoicePlayer({
+  const { playVoice, playCustomLine } = useVoicePlayer({
     enabled,
     reducedMotion,
     onCaption: setCaption,
@@ -72,6 +75,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
     enabled,
     setEnabled,
     playVoice,
+    playCustomLine,
     caption,
     reducedMotion,
   };

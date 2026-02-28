@@ -10,6 +10,58 @@ const CAPTION_CLEAR_MS = 2500;
 
 type PlayParams = Omit<VoiceLineParams, "eventType"> & { eventType: VoiceEventType };
 
+async function fetchAndPlayText(options: {
+  text: string;
+  audioRef: React.MutableRefObject<HTMLAudioElement | null>;
+  currentUrlRef: React.MutableRefObject<string | null>;
+  onCaption: (text: string | null) => void;
+  clearCaption: () => void;
+  captionTimeoutRef: React.MutableRefObject<ReturnType<typeof setTimeout> | null>;
+}): Promise<void> {
+  const { text, audioRef, currentUrlRef, onCaption, clearCaption, captionTimeoutRef } = options;
+  onCaption(text);
+  try {
+    const res = await fetch("/api/voice", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text }),
+    });
+    if (!res.ok) return;
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    if (currentUrlRef.current) {
+      URL.revokeObjectURL(currentUrlRef.current);
+      currentUrlRef.current = null;
+    }
+    currentUrlRef.current = url;
+    if (!audioRef.current) {
+      audioRef.current = new Audio();
+      audioRef.current.volume = VOLUME;
+    }
+    const audio = audioRef.current;
+    audio.pause();
+    audio.src = url;
+    audio.onended = () => {
+      if (currentUrlRef.current === url) {
+        URL.revokeObjectURL(url);
+        currentUrlRef.current = null;
+      }
+      if (captionTimeoutRef.current) clearTimeout(captionTimeoutRef.current);
+      captionTimeoutRef.current = setTimeout(clearCaption, CAPTION_CLEAR_MS);
+    };
+    audio.onerror = () => {
+      if (currentUrlRef.current === url) {
+        URL.revokeObjectURL(url);
+        currentUrlRef.current = null;
+      }
+      clearCaption();
+    };
+    await audio.play();
+  } catch {
+    clearCaption();
+  }
+}
+
 export function useVoicePlayer(options: {
   enabled: boolean;
   reducedMotion: boolean;
@@ -28,6 +80,24 @@ export function useVoicePlayer(options: {
     }
     onCaption(null);
   }, [onCaption]);
+
+  /** Speak custom text (e.g. scan funny line). Does not affect cooldown so result voice can play after. */
+  const playCustomLine = useCallback(
+    async (text: string) => {
+      if (!enabled || reducedMotion || typeof window === "undefined") return;
+      const t = text.trim();
+      if (!t) return;
+      await fetchAndPlayText({
+        text: t,
+        audioRef,
+        currentUrlRef,
+        onCaption,
+        clearCaption,
+        captionTimeoutRef,
+      });
+    },
+    [enabled, reducedMotion, onCaption, clearCaption]
+  );
 
   const playVoice = useCallback(
     async (eventType: VoiceEventType, params: Omit<PlayParams, "eventType"> = {}) => {
@@ -99,5 +169,5 @@ export function useVoicePlayer(options: {
     [enabled, reducedMotion, onCaption, clearCaption]
   );
 
-  return { playVoice };
+  return { playVoice, playCustomLine };
 }

@@ -11,6 +11,7 @@ import { ImagePreview } from "./image-preview";
 import { BarcodeScanner } from "./barcode-scanner";
 import { MultiItemPicker } from "./multi-item-picker";
 import { useSfx } from "@/components/sfx/sfx-context";
+import { useVoice } from "@/components/voice/voice-context";
 import { toast } from "sonner";
 import { takeNativePhoto, pickNativePhoto } from "@/lib/capacitor/camera";
 import { isNativeApp } from "@/lib/capacitor";
@@ -49,6 +50,7 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
   const router = useRouter();
   const { providerId } = useLocation();
   const sfx = useSfx();
+  const { playCustomLine } = useVoice();
 
   const navigateToResult = useCallback(
     (q: string, scanData: PendingScanData) => {
@@ -81,6 +83,18 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
       setIsUploading(true);
       try {
         setPhase("scanning");
+        // Fire quick funny line as soon as possible — voice plays while full scan runs
+        fetch("/api/scan-quick", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ image: dataUrl }),
+        })
+          .then((r) => r.json())
+          .then((d) => {
+            if (d?.line?.trim()) playCustomLine(d.line.trim());
+          })
+          .catch(() => {});
+
         const res = await fetch("/api/scan", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -151,7 +165,7 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
         setCameraOpen(false);
       }
     },
-    [providerId, router]
+    [providerId, router, navigateToResult, playCustomLine]
   );
 
   const handleBarcodeScan = useCallback(

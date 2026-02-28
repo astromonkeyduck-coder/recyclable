@@ -26,8 +26,8 @@ export function Header() {
           </Link>
 
           <div className="flex items-center gap-1.5">
-            <ShareSiteButton />
             <MusicControls />
+            <ShareSiteButton />
             <div className="hidden sm:block h-5 w-px bg-border mx-1" />
             <LocationSelector />
             <Button

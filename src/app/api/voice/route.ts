@@ -12,7 +12,9 @@ function pickVoiceId(): string {
 const MAX_CACHE_ENTRIES = 50;
 
 const VoiceRequestSchema = z.object({
-  eventType: z.enum(["scan_result", "correct_answer", "incorrect_answer", "lesson_complete"]),
+  /** When set, speak this exact text (for scan funny line). Takes precedence over eventType. */
+  text: z.string().max(200).optional(),
+  eventType: z.enum(["scan_result", "correct_answer", "incorrect_answer", "lesson_complete"]).optional(),
   category: z.enum(["recycle", "trash", "compost", "dropoff", "hazardous", "unknown"]).optional(),
   streakCount: z.number().optional(),
   confidence: z.number().optional(),
@@ -45,8 +47,8 @@ export async function POST(req: NextRequest) {
       return new NextResponse(null, { status: 503 });
     }
 
-    const text = generateVoiceLine({
-      eventType: parsed.eventType,
+    const text = parsed.text ?? generateVoiceLine({
+      eventType: parsed.eventType ?? "scan_result",
       category: parsed.category,
       streakCount: parsed.streakCount,
       confidence: parsed.confidence,
