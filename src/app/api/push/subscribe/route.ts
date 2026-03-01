@@ -24,6 +24,7 @@ export async function POST(request: NextRequest) {
     addSubscription({
       ...parsed.data,
       expirationTime: parsed.data.expirationTime ?? null,
+      createdAt: Date.now(),
     });
     return NextResponse.json({ ok: true });
   } catch (e) {

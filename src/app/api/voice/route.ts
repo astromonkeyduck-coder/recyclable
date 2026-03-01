@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
     }
 
     const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
-    const body: Record<string, unknown> = {
+    const payload: Record<string, unknown> = {
       text,
       model_id: modelId,
       voice_settings: {
@@ -83,15 +83,15 @@ export async function POST(req: NextRequest) {
         "xi-api-key": apiKey,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(body),
+      body: JSON.stringify(payload),
     });
 
     if (!response.ok && hasAudioTags) {
       const textStripped = text.replace(/\s*\[[^\]]*\]\s*/g, " ").replace(/\s+/g, " ").trim();
       if (textStripped) {
-        body.text = textStripped;
-        body.model_id = "eleven_multilingual_v2";
-        (body.voice_settings as Record<string, number>) = {
+        payload.text = textStripped;
+        payload.model_id = "eleven_multilingual_v2";
+        (payload.voice_settings as Record<string, number | boolean>) = {
           stability: 0.4,
           similarity_boost: 0.7,
           style: 0.6,
@@ -105,7 +105,7 @@ export async function POST(req: NextRequest) {
         response = await fetch(url, {
           method: "POST",
           headers: { "xi-api-key": apiKey, "Content-Type": "application/json" },
-          body: JSON.stringify(body),
+          body: JSON.stringify(payload),
         });
         if (response.ok) {
           const buffer = await response.arrayBuffer();
