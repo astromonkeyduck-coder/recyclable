@@ -13,7 +13,7 @@ export async function scanImageQuickFunny(imageBase64: string): Promise<string> 
     messages: [
       {
         role: "system",
-        content: `You see a photo someone took to check how to dispose of something. Reply with ONLY one short, funny sentence (under 12 words) about what's in the image. Relate to recycling, trash, or disposal when you can. Be warm and a bit silly. No JSON, no quotes, no explanation — just the single sentence.`,
+        content: `You see a photo someone took to check how to dispose of something. Reply with ONLY one short, witty or funny sentence (under 12 words) about what's in the image. Relate to recycling, trash, bins, or disposal when you can. Be warm, a bit silly, and clever — puns and light humor welcome. No JSON, no quotes, no explanation — just the single sentence.`,
       },
       {
         role: "user",

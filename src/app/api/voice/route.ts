@@ -56,7 +56,9 @@ export async function POST(req: NextRequest) {
     });
 
     const voiceId = process.env.ELEVENLABS_VOICE_ID ?? pickVoiceId();
-    const cacheKey = `${voiceId}:${text}`;
+    const hasAudioTags = text.includes("[");
+    const modelId = hasAudioTags ? "eleven_v3" : "eleven_multilingual_v2";
+    const cacheKey = `${voiceId}:${modelId}:${text}`;
     const cached = getCached(cacheKey);
     if (cached) {
       return new NextResponse(cached, {
@@ -65,23 +67,53 @@ export async function POST(req: NextRequest) {
     }
 
     const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
-    const response = await fetch(url, {
+    const body: Record<string, unknown> = {
+      text,
+      model_id: modelId,
+      voice_settings: {
+        stability: hasAudioTags ? 0.35 : 0.4,
+        similarity_boost: 0.7,
+        style: hasAudioTags ? 0.75 : 0.6,
+        use_speaker_boost: true,
+      },
+    };
+    let response = await fetch(url, {
       method: "POST",
       headers: {
         "xi-api-key": apiKey,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        text,
-        model_id: "eleven_multilingual_v2",
-        voice_settings: {
+      body: JSON.stringify(body),
+    });
+
+    if (!response.ok && hasAudioTags) {
+      const textStripped = text.replace(/\s*\[[^\]]*\]\s*/g, " ").replace(/\s+/g, " ").trim();
+      if (textStripped) {
+        body.text = textStripped;
+        body.model_id = "eleven_multilingual_v2";
+        (body.voice_settings as Record<string, number>) = {
           stability: 0.4,
           similarity_boost: 0.7,
           style: 0.6,
           use_speaker_boost: true,
-        },
-      }),
-    });
+        };
+        const fallbackKey = `${voiceId}:eleven_multilingual_v2:${textStripped}`;
+        const cachedFallback = getCached(fallbackKey);
+        if (cachedFallback) {
+          return new NextResponse(cachedFallback, { headers: { "Content-Type": "audio/mpeg" } });
+        }
+        response = await fetch(url, {
+          method: "POST",
+          headers: { "xi-api-key": apiKey, "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        if (response.ok) {
+          const buffer = await response.arrayBuffer();
+          setCache(fallbackKey, buffer);
+          return new NextResponse(buffer, { headers: { "Content-Type": "audio/mpeg" } });
+        }
+      }
+    }
 
     if (!response.ok) {
       console.error("ElevenLabs TTS error:", response.status, await response.text());

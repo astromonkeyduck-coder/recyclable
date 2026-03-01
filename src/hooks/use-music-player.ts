@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+// Main site playlist — preview song is only for the preview card (e.g. /debug/og or share preview), not here
 const PLAYLIST = [
-  { src: "/audio/isthisredcyaudio.m4a", title: "Preview" },
   { src: "/audio/niceindie.wav", title: "Golden Hour" },
   { src: "/audio/firstsongrec.wav", title: "Curbside Dreams" },
   { src: "/audio/recycleee.wav", title: "Second Life" },
@@ -20,11 +20,14 @@ export type MusicPlayerState = {
   next: () => void;
 };
 
+const AUTOPLAY_EVENTS = ["click", "touchstart", "keydown"] as const;
+
 export function useMusicPlayer(): MusicPlayerState {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const analyserRef = useRef<AnalyserNode | null>(null);
   const sourceRef = useRef<MediaElementAudioSourceNode | null>(null);
   const ctxRef = useRef<AudioContext | null>(null);
+  const autoplayAttemptedRef = useRef(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [currentTrack, setCurrentTrack] = useState(0);
@@ -123,6 +126,30 @@ export function useMusicPlayer(): MusicPlayerState {
       }
     }
   }, [isPlaying, currentTrack]);
+
+  // Autoplay on first user interaction (browsers block unmuted audio until then)
+  useEffect(() => {
+    const tryAutoplay = () => {
+      if (autoplayAttemptedRef.current) return;
+      autoplayAttemptedRef.current = true;
+      AUTOPLAY_EVENTS.forEach((ev) => document.removeEventListener(ev, tryAutoplay));
+      const audio = getAudio();
+      if (audio.paused) {
+        audio
+          .play()
+          .then(() => {
+            setIsPlaying(true);
+            connectVisualizer();
+          })
+          .catch(() => {});
+      }
+    };
+    AUTOPLAY_EVENTS.forEach((ev) =>
+      document.addEventListener(ev, tryAutoplay, { passive: true })
+    );
+    return () =>
+      AUTOPLAY_EVENTS.forEach((ev) => document.removeEventListener(ev, tryAutoplay));
+  }, [getAudio, connectVisualizer]);
 
   useEffect(() => {
     return () => {

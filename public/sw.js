@@ -97,3 +97,34 @@ self.addEventListener("fetch", (event) => {
     caches.match(request).then((cached) => cached || fetch(request))
   );
 });
+
+// ——— Web Push: show reminder on lock screen / notification tray ———
+self.addEventListener("push", (event) => {
+  const data = event.data?.json() ?? {};
+  const title = data.title || "Is this recyclable?";
+  const options = {
+    body: data.body || "Tap to check how to dispose of something.",
+    icon: "/icons/icon-192.png",
+    badge: "/icons/icon-192.png",
+    tag: data.tag || "reminder",
+    data: { url: data.url || "/", ...data },
+    requireInteraction: false,
+  };
+  event.waitUntil(self.registration.showNotification(title, options));
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url = event.notification.data?.url || "/";
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((clientList) => {
+      if (clientList.length > 0) {
+        const client = clientList[0];
+        client.navigate(url);
+        client.focus();
+      } else if (self.clients.openWindow) {
+        self.clients.openWindow(url);
+      }
+    })
+  );
+});

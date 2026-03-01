@@ -152,3 +152,9 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Embed page: hide site header/footer when used as player card (e.g. in shared link iframe) */
+body.embed-mode [data-site-header],
+body.embed-mode [data-site-footer] {
+  display: none !important;
+}

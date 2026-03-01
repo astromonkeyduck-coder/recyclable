@@ -7,9 +7,9 @@ import type { AnalysisPhase } from "./scan-button";
 
 const PHASES: Array<{ text: string; sub: string }> = [
   { text: "Reading", sub: "Scanning text and labels" },
-  { text: "Identifying", sub: "Determining material type" },
+  { text: "Identifying", sub: "Asking the bins what this is" },
   { text: "Matching", sub: "Checking local disposal rules" },
-  { text: "Done", sub: "Preparing your result" },
+  { text: "Done", sub: "Almost there..." },
 ];
 
 const PHASE_INDEX: Record<AnalysisPhase, number> = {

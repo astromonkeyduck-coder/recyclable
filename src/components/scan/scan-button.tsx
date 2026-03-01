@@ -83,6 +83,15 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
       setIsUploading(true);
       try {
         setPhase("scanning");
+        // Say something nice and funny the moment scanning starts (before the personalized line from scan-quick)
+        const scanStartLines = [
+          "[excited] Ooh, I love this part! Let's see what you got!",
+          "[playfully] [laughs] Okay okay, hold still. The bins are watching.",
+          "[cheerfully] Scanning now! This is gonna be good.",
+          "[excited] Here we go! Consulting the waste gods.",
+          "[playfully] One sec. Asking the bins what this is. [laughs]",
+        ];
+        playCustomLine(scanStartLines[Math.floor(Math.random() * scanStartLines.length)]!);
         // Fire quick funny line as soon as possible — voice plays while full scan runs
         fetch("/api/scan-quick", {
           method: "POST",
@@ -91,7 +100,7 @@ export function ScanUploadButtons({ autoOpenCamera }: ScanUploadButtonsProps) {
         })
           .then((r) => r.json())
           .then((d) => {
-            if (d?.line?.trim()) playCustomLine(d.line.trim());
+            if (d?.line?.trim()) playCustomLine(`[playfully] ${d.line.trim()}`);
           })
           .catch(() => {});
 

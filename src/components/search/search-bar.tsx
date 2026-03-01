@@ -274,7 +274,7 @@ export function SearchBar({ autoFocus = false, onSearch, defaultValue = "" }: Se
                   </div>
                 ) : (
                   <p className="mt-1.5 text-xs text-muted-foreground">
-                    Try a different term or{" "}
+                    The bins don&apos;t know that one yet. Try a different term or{" "}
                     <button
                       type="button"
                       className="inline-flex items-center gap-1 font-medium text-primary hover:underline"

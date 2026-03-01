@@ -9,6 +9,7 @@ import { MusicProvider } from "@/components/music/music-context";
 import { SfxProvider } from "@/components/sfx/sfx-context";
 import { VoiceProvider } from "@/components/voice/voice-context";
 import { VoiceCaptionFixed } from "@/components/voice/voice-caption";
+import { WelcomeOnFirstTouch } from "@/components/common/welcome-on-first-touch";
 
 export function AppProviders({ children }: { children: ReactNode }) {
   const [queryClient] = useState(
@@ -31,6 +32,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
             <SfxProvider>
               <VoiceProvider>
                 {children}
+                <WelcomeOnFirstTouch />
                 <VoiceCaptionFixed />
                 <Toaster position="bottom-center" />
               </VoiceProvider>

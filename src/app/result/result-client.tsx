@@ -427,6 +427,12 @@ function ErrorState({
       : errorType === "image"
         ? "Couldn't read the image"
         : "Something went wrong";
+  const subline =
+    errorType === "network"
+      ? "The bins need the internet to help. Connect and try again."
+      : errorType === "image"
+        ? "Even the AI is squinting. Try better light or a clearer shot."
+        : undefined;
 
   return (
     <motion.div
@@ -437,7 +443,9 @@ function ErrorState({
       <Icon className="h-12 w-12 text-muted-foreground" />
       <div>
         <h2 className="text-lg font-semibold">{heading}</h2>
-        <p className="text-sm text-muted-foreground mt-1">{message}</p>
+        <p className="text-sm text-muted-foreground mt-1">
+          {subline ?? message}
+        </p>
       </div>
       <div className="w-full max-w-md">
         <SearchBar autoFocus defaultValue={query} />
@@ -493,8 +501,8 @@ function UnknownState({
           Not sure about &ldquo;{query}&rdquo;
         </h2>
         <p className="text-sm text-muted-foreground mt-2 max-w-md">
-          We couldn&apos;t confidently identify this item. Try a more specific
-          search term, or choose from the closest matches below.
+          We couldn&apos;t confidently identify this item — the bins are shrugging.
+          Try a more specific search term, or choose from the closest matches below.
         </p>
       </div>
 

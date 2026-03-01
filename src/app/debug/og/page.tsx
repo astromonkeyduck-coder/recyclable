@@ -1,11 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Play, Pause, Music } from "lucide-react";
 import type { DisposalCategory } from "@/lib/providers/types";
 import type { OgVariant } from "@/lib/utils/og-params";
 import { OgCardAnimated } from "@/components/debug/og-card-animated";
+
+const PREVIEW_SONG_SRC = "/audio/isthisredcyaudio.m4a";
 
 const RESULT_SAMPLES: Array<{
   label: string;
@@ -80,6 +84,41 @@ const PAGE_VARIANT_SAMPLES: Array<{
   { label: "Privacy", variant: "privacy" },
 ];
 
+function PreviewCardAudio() {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [playing, setPlaying] = useState(false);
+
+  const toggle = () => {
+    const el = audioRef.current;
+    if (!el) return;
+    if (playing) {
+      el.pause();
+      setPlaying(false);
+    } else {
+      el.play().catch(() => {});
+      setPlaying(true);
+    }
+  };
+
+  return (
+    <div className="mt-4 flex items-center gap-3 rounded-lg border border-emerald-500/20 bg-emerald-500/10 px-4 py-3">
+      <audio
+        ref={audioRef}
+        src={PREVIEW_SONG_SRC}
+        onEnded={() => setPlaying(false)}
+        onPause={() => setPlaying(false)}
+        onPlay={() => setPlaying(true)}
+      />
+      <Music className="h-5 w-5 text-emerald-600" />
+      <span className="text-sm font-medium text-foreground/90">Preview song</span>
+      <Button variant="outline" size="sm" onClick={toggle} className="gap-1.5">
+        {playing ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+        {playing ? "Pause" : "Play"}
+      </Button>
+    </div>
+  );
+}
+
 function buildOgUrl(params: {
   variant?: string;
   category?: string;
@@ -132,7 +171,7 @@ export default function DebugOgPage() {
         generated.
       </p>
 
-      {/* Live animated preview — same card with motion */}
+      {/* Live animated preview — same card with motion + preview song */}
       <section className="mb-12 rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-6">
         <h2 className="text-lg font-semibold mb-1 flex items-center gap-2">
           <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -145,6 +184,7 @@ export default function DebugOgPage() {
         <div className="max-w-3xl rounded-xl overflow-hidden border border-white/10 shadow-2xl">
           <OgCardAnimated params={animatedParams} />
         </div>
+        <PreviewCardAudio />
       </section>
 
       {/* Custom builder */}

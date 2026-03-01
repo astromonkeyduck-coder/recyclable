@@ -18,9 +18,35 @@ import { ConfettiBurst } from "@/components/games/confetti";
 import { CountdownRing } from "@/components/games/countdown-ring";
 import { useVoice } from "@/components/voice/voice-context";
 
-const CORRECT_MESSAGES = ["Correct!", "Nice one!", "Nailed it!", "Right on!", "Yes!"];
-const WRONG_MESSAGES = ["Not quite!", "Oops!", "So close!", "Wrong one!", "Nope!"];
-const STREAK_MESSAGES = ["On fire!", "Unstoppable!", "Streak master!", "Keep going!"];
+const CORRECT_MESSAGES = [
+  "Correct!",
+  "Nice one!",
+  "Nailed it!",
+  "Right on!",
+  "Yes!",
+  "The bins approve.",
+  "You know your stuff.",
+  "Bingo.",
+];
+const WRONG_MESSAGES = [
+  "Not quite!",
+  "Oops!",
+  "So close!",
+  "Wrong bin!",
+  "Nope!",
+  "The bin disagrees.",
+  "Other bin. So close though.",
+  "Nice try. Wrong container.",
+];
+const STREAK_MESSAGES = [
+  "On fire!",
+  "Unstoppable!",
+  "Streak master!",
+  "Keep going!",
+  "The bins are impressed.",
+  "You're on a roll.",
+  "Legendary.",
+];
 
 function pickRandom<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];

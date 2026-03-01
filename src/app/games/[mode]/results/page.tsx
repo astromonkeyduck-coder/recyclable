@@ -28,11 +28,11 @@ type GradeTier = {
 };
 
 const GRADE_TIERS: GradeTier[] = [
-  { grade: "S", label: "Perfect", message: "Flawless! You're a recycling legend.", color: "text-purple-600 dark:text-purple-400", bgColor: "bg-purple-100 dark:bg-purple-900/20" },
-  { grade: "A", label: "Excellent", message: "Impressive knowledge! Almost perfect.", color: "text-blue-600 dark:text-blue-400", bgColor: "bg-blue-100 dark:bg-blue-900/20" },
-  { grade: "B", label: "Great", message: "Solid work! You know your stuff.", color: "text-green-600 dark:text-green-400", bgColor: "bg-green-100 dark:bg-green-900/20" },
-  { grade: "C", label: "Good", message: "Good effort! Room to grow.", color: "text-yellow-600 dark:text-yellow-400", bgColor: "bg-yellow-100 dark:bg-yellow-900/20" },
-  { grade: "D", label: "Learning", message: "Keep learning! Every game makes you smarter.", color: "text-orange-600 dark:text-orange-400", bgColor: "bg-orange-100 dark:bg-orange-900/20" },
+  { grade: "S", label: "Perfect", message: "Flawless! The bins bow to you.", color: "text-purple-600 dark:text-purple-400", bgColor: "bg-purple-100 dark:bg-purple-900/20" },
+  { grade: "A", label: "Excellent", message: "Almost perfect. Your recycling IQ is showing.", color: "text-blue-600 dark:text-blue-400", bgColor: "bg-blue-100 dark:bg-blue-900/20" },
+  { grade: "B", label: "Great", message: "Solid work! You and the bins are friends.", color: "text-green-600 dark:text-green-400", bgColor: "bg-green-100 dark:bg-green-900/20" },
+  { grade: "C", label: "Good", message: "Good effort! The bins believe in you.", color: "text-yellow-600 dark:text-yellow-400", bgColor: "bg-yellow-100 dark:bg-yellow-900/20" },
+  { grade: "D", label: "Learning", message: "Every wrong answer is the bin teaching you something.", color: "text-orange-600 dark:text-orange-400", bgColor: "bg-orange-100 dark:bg-orange-900/20" },
 ];
 
 function getGrade(accuracy: number): GradeTier {

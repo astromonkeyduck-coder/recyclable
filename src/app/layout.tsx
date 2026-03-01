@@ -19,6 +19,8 @@ const inter = Inter({
 const siteUrl = getSiteUrl();
 const dynamicOg = buildOgImageUrl(siteUrl, { variant: "homepage" });
 const staticOg = `${siteUrl}/og/default.png`;
+const embedPlayerUrl = `${siteUrl}/embed`;
+const previewSongUrl = `${siteUrl}/audio/isthisredcyaudio.m4a`;
 
 export const metadata: Metadata = {
   title: {
@@ -57,7 +59,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "player",
     title: "Is this recyclable?",
     description:
       "Snap it, search it, sort it. Instant waste disposal guidance based on your local rules.",
@@ -70,6 +72,14 @@ export const metadata: Metadata = {
       },
     ],
   },
+  other: {
+    "apple-mobile-web-app-title": "Recyclable?",
+    "twitter:player": embedPlayerUrl,
+    "twitter:player:width": "600",
+    "twitter:player:height": "400",
+    "twitter:player:stream": previewSongUrl,
+    "twitter:player:stream:content_type": "audio/mp4",
+  },
   icons: {
     icon: [
       { url: "/icons/icon.svg", type: "image/svg+xml" },
@@ -81,9 +91,6 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
     title: "Recyclable?",
-  },
-  other: {
-    "apple-mobile-web-app-title": "Recyclable?",
   },
 };
 
@@ -143,12 +150,16 @@ export default function RootLayout({
         </a>
         <AppProviders>
           <div className="flex min-h-svh flex-col">
-            <Header />
+            <div data-site-header className="contents">
+              <Header />
+            </div>
             <OfflineIndicator />
             <main id="main-content" className="flex-1">
               <PageTransition>{children}</PageTransition>
             </main>
-            <Footer />
+            <div data-site-footer className="contents">
+              <Footer />
+            </div>
           </div>
           <InstallPrompt />
         </AppProviders>

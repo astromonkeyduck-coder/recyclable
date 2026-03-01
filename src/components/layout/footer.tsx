@@ -6,6 +6,7 @@ import { useLocation } from "@/hooks/use-location";
 import { FloatingVisualizer } from "@/components/music/floating-visualizer";
 import { EcoTree } from "@/components/common/eco-tree";
 import { ShareSiteButton } from "@/components/common/share-site-button";
+import { PushReminderOptIn } from "@/components/common/push-reminder-opt-in";
 
 const NAV_LINKS = [
   { href: "/about", label: "About" },
@@ -120,6 +121,7 @@ export function Footer() {
                 </Link>
               ))}
               <ShareSiteButton variant="link" className={linkClass} />
+              <PushReminderOptIn />
             </nav>
           </div>
         </div>
