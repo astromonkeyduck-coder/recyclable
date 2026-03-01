@@ -73,6 +73,7 @@ export const metadata: Metadata = {
     ],
   },
   other: {
+    "google-adsense-account": "ca-pub-5682687142632647",
     "apple-mobile-web-app-title": "Recyclable?",
     "twitter:player": embedPlayerUrl,
     "twitter:player:width": "600",
