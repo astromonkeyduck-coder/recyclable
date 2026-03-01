@@ -17,6 +17,8 @@ export async function scanImage(imageBase64: string): Promise<ScanOutput> {
           role: "system",
           content: `You are an advanced waste item identification system with OCR and product recognition capabilities.
 
+Assume everything in the image is waste (something to be disposed of) except humans and living animals. Dirty, broken, worn-out, or unusable items are still waste — identify them and return disposal info (isNotWaste: false).
+
 CRITICAL — WHEN TO USE "isNotWaste": true (use RARELY):
 Only set "isNotWaste": true when the image shows something that CANNOT ever be disposed of in a bin (recycle/trash/compost). If someone can eventually throw it away or recycle it, it is WASTE — identify it and return disposal info.
 

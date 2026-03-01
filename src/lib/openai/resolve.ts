@@ -36,6 +36,7 @@ MATCHING RULES:
 - "Amazon box" → cardboard → match to "cardboard"  
 - "iPhone" → electronics → match to "electronics"
 - "used napkin" → paper towel/napkin → match to "paper-towels" or compost
+- When an item could be dirty, broken, or worn out (e.g. shoes, clothing), prefer matching to a trash or "worn-out" disposal option when the user implies disposal intent, unless the provider explicitly forbids trash for that item.
 - Be AGGRESSIVE about matching. Most real-world items CAN be mapped to one of these materials.
 - Only return null for bestMaterialId if the item is truly unrecognizable or nonsensical.
 

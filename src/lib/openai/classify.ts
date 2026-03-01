@@ -53,6 +53,7 @@ RULES:
 - A "wine bottle" is a glass bottle → RECYCLE
 - Apply this same reasoning to ANY item the user asks about.
 - If the item could reasonably fit into one of the rules, classify it confidently.
+- When an item could be dirty, broken, or worn out (e.g. shoes, clothing), prefer trash or a "worn-out" disposal option when the user implies disposal intent, unless the provider explicitly forbids trash for that item.
 - Only use "unknown" if the item is truly ambiguous or nonsensical.
 - Be specific to ${provider.displayName} rules when possible.
 

@@ -1155,6 +1155,24 @@
       "examples": ["Old sneakers", "Worn-out boots", "Broken flip flops"]
     },
     {
+      "id": "clothing-damaged-trash",
+      "name": "Damaged or worn-out clothing / textiles",
+      "aliases": ["dirty clothes", "torn shirt", "worn out clothing", "rags", "stained clothing", "unwearable clothes", "damaged textiles", "torn clothes"],
+      "category": "trash",
+      "instructions": [
+        "Place in trash (black bag), or place in CLEAR bag with other textiles for NYC textile pickup if you prefer",
+        "Donate or use clear-bag textile pickup if still usable"
+      ],
+      "notes": [
+        "NYC accepts textiles in any condition in clear bags; if you cannot or prefer not to, trash is fine"
+      ],
+      "commonMistakes": [
+        "Don't put in blue or green recycling bins"
+      ],
+      "tags": ["textile", "clothing", "trash"],
+      "examples": ["Torn t-shirt", "Stained rags", "Unwearable jeans"]
+    },
+    {
       "id": "electronics",
       "name": "Electronics (e-waste)",
       "aliases": ["electronics", "e-waste", "computer", "laptop", "phone", "cell phone", "tablet", "TV", "television", "monitor", "printer", "keyboard", "mouse", "charger", "cable", "cords"],

@@ -1672,11 +1672,33 @@
       "name": "Shoes",
       "aliases": ["shoes", "sneakers", "running shoes", "boots", "sandals", "flip flops", "old shoes"],
       "category": "dropoff",
-      "instructions": ["Donate wearable shoes to Goodwill or Salvation Army in Orlando", "Nike stores in Orlando accept old athletic shoes", "Textile recycling bins are located throughout Orlando"],
-      "notes": ["Shoes are one of the most commonly donated items"],
-      "commonMistakes": ["Don't put shoes in curbside recycling", "Tie pairs together when donating"],
+      "instructions": ["Donate wearable shoes to Goodwill or Salvation Army in Orlando", "Nike stores in Orlando accept old athletic shoes", "Worn-out or broken shoes: place in trash", "Textile recycling bins for intact worn shoes if available"],
+      "notes": ["Shoes can go in the trash if not donatable — they are not accepted in curbside recycling"],
+      "commonMistakes": ["Don't put shoes in curbside recycling", "Shoes can go in trash when worn out or broken"],
       "tags": ["textile", "clothing", "donation", "rubber"],
       "examples": ["Old Nike sneakers", "Worn-out boots", "Broken flip flops"]
+    },
+    {
+      "id": "shoes-worn-out-trash",
+      "name": "Worn-out or damaged shoes",
+      "aliases": ["worn out shoes", "broken shoes", "damaged shoes", "shoes to throw away", "unwearable shoes"],
+      "category": "trash",
+      "instructions": ["Place in trash", "Donate or use textile recycling if still usable"],
+      "notes": ["Non-donatable shoes go in regular trash in Orlando"],
+      "commonMistakes": ["Don't put in curbside recycling"],
+      "tags": ["textile", "shoes", "trash"],
+      "examples": ["Broken flip flops", "Sole-less sneakers", "Unwearable boots"]
+    },
+    {
+      "id": "clothing-damaged-trash",
+      "name": "Damaged or worn-out clothing / textiles",
+      "aliases": ["dirty clothes", "torn shirt", "worn out clothing", "rags", "stained clothing", "unwearable clothes", "damaged textiles", "torn clothes"],
+      "category": "trash",
+      "instructions": ["Place in trash cart", "Donate or use textile recycling if still usable"],
+      "notes": ["Non-donatable clothing goes in regular trash in Orlando"],
+      "commonMistakes": ["Don't put in curbside recycling"],
+      "tags": ["textile", "clothing", "trash"],
+      "examples": ["Torn t-shirt", "Stained rags", "Unwearable jeans"]
     },
     {
       "id": "hangers",
