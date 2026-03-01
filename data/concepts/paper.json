@@ -1,0 +1,314 @@
+[
+  {
+    "id": "paper_sheet",
+    "name": "Plain paper / printer paper",
+    "aliases": ["paper", "piece of paper", "printer paper", "copy paper", "office paper", "notebook paper", "lined paper", "construction paper", "plain paper", "white paper", "sheet of paper", "loose paper", "writing paper", "copy paper", "typing paper", "computer paper", "bond paper", "filler paper"],
+    "examples": ["Printer paper", "Notebook paper", "Loose leaf", "Construction paper"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "likelyForms": ["scrap"], "commonContaminants": ["clean"] }
+  },
+  {
+    "id": "receipt_thermal",
+    "name": "Receipt (thermal paper)",
+    "aliases": ["receipt", "receipts", "store receipt", "thermal receipt", "cash register receipt", "sales receipt", "shopping receipt", "thermal paper", "bpa receipt", "bpa coated paper", "receipt paper"],
+    "examples": ["Grocery receipt", "CVS receipt", "Gas station receipt"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["thermal"] }
+  },
+  {
+    "id": "photo_paper_glossy",
+    "name": "Glossy photo paper",
+    "aliases": ["photo paper", "glossy photo", "glossy paper", "photo print", "printed photo", "photograph paper", "glossy print", "photo paper glossy", "glossy photo paper", "glossy coated paper", "picture paper"],
+    "examples": ["Glossy photo print", "Inkjet photo paper"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["coated", "laminated"] }
+  },
+  {
+    "id": "laminated_paper",
+    "name": "Laminated paper",
+    "aliases": ["laminated paper", "laminated sheet", "plastic laminated", "laminated card", "laminated document", "plastic coated paper", "laminated poster", "laminated photo"],
+    "examples": ["Laminated ID", "Laminated menu", "Laminated schedule"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper", "plastic"], "mixedMaterial": true, "commonContaminants": ["laminated"] }
+  },
+  {
+    "id": "greeting_card_plain",
+    "name": "Greeting card (plain paper)",
+    "aliases": ["greeting card", "greeting card plain", "plain card", "paper card", "card stock card", "birthday card plain", "holiday card plain", "no glitter card", "paper greeting card"],
+    "examples": ["Plain birthday card", "Paper holiday card"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "greeting_card_glitter",
+    "name": "Greeting card (glitter / foil / battery)",
+    "aliases": ["greeting card glitter", "glitter card", "foil card", "metallic card", "musical card", "battery card", "greeting card with glitter", "sparkle card", "shiny card", "glittery greeting card"],
+    "examples": ["Musical birthday card", "Glitter holiday card"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "mixedMaterial": true }
+  },
+  {
+    "id": "paper_towel_clean",
+    "name": "Paper towel (clean / unused)",
+    "aliases": ["paper towel clean", "clean paper towel", "unused paper towel", "fresh paper towel", "paper towels unused", "clean napkin", "unused napkin", "paper napkin clean"],
+    "examples": ["Unused paper towel", "Clean napkin"],
+    "defaultCategory": "compost",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["clean"] }
+  },
+  {
+    "id": "paper_towel_used",
+    "name": "Paper towel / napkin (used / food-soiled)",
+    "aliases": ["paper towel used", "used paper towel", "dirty paper towel", "food soiled paper towel", "used napkin", "dirty napkin", "paper napkin used", "soiled napkin", "paper towel napkin", "napkin used"],
+    "examples": ["Used paper towel", "Dirty napkin", "Food-soiled napkin"],
+    "defaultCategory": "compost",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["food-soiled"] }
+  },
+  {
+    "id": "pizza_box_clean",
+    "name": "Pizza box (clean or lightly soiled)",
+    "aliases": ["pizza box clean", "clean pizza box", "pizza box top", "pizza box lightly soiled", "pizza carton clean", "cardboard pizza box clean"],
+    "examples": ["Clean pizza box top", "Lightly soiled pizza box"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["clean"] }
+  },
+  {
+    "id": "pizza_box_greasy",
+    "name": "Pizza box (heavily greased)",
+    "aliases": ["pizza box greasy", "greasy pizza box", "oily pizza box", "soaked pizza box", "pizza box bottom", "grease stained cardboard", "food stained pizza box"],
+    "examples": ["Greasy pizza box bottom", "Oil-soaked pizza box"],
+    "defaultCategory": "compost",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["greasy", "food-soiled"] }
+  },
+  {
+    "id": "newspaper",
+    "name": "Newspaper",
+    "aliases": ["newspaper", "newspapers", "newsprint", "daily paper", "daily newspaper", "news paper", "newsprint paper", "tabloid", "news section"],
+    "examples": ["Daily newspaper", "Newsprint", "Sunday paper"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "magazine",
+    "name": "Magazine",
+    "aliases": ["magazine", "magazines", "glossy magazine", "periodical", "mag", "catalog", "catalogue", "magazine subscription", "news magazine"],
+    "examples": ["Time magazine", "Catalogs", "Glossy magazine"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "cardboard",
+    "name": "Cardboard",
+    "aliases": ["cardboard", "corrugated cardboard", "shipping box", "moving box", "cardboard box", "amazon box", "delivery box", "brown box", "corrugated box", "cardboard sheet", "box cardboard"],
+    "examples": ["Amazon box", "Shipping box", "Moving box"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "likelyForms": ["box"] }
+  },
+  {
+    "id": "paperboard",
+    "name": "Paperboard / paper board",
+    "aliases": ["paperboard", "paper board", "chipboard", "cardboard thin", "thin cardboard", "cereal box material", "shoe box material", "paperboard box"],
+    "examples": ["Cereal box material", "Shoe box"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "likelyForms": ["box"] }
+  },
+  {
+    "id": "cereal_box",
+    "name": "Cereal box",
+    "aliases": ["cereal box", "cereal boxes", "cracker box", "food box", "pasta box", "dry goods box", "oatmeal box", "breakfast cereal box", "cardboard food box"],
+    "examples": ["Cheerios box", "Pasta box", "Cracker box"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "likelyForms": ["box"] }
+  },
+  {
+    "id": "frozen_food_box",
+    "name": "Frozen food box",
+    "aliases": ["frozen food box", "frozen food boxes", "frozen dinner box", "ice cream box", "frozen vegetable box", "frozen pizza box", "moisture resistant box", "wax coated box", "plastic coated food box"],
+    "examples": ["Frozen pizza box", "Frozen vegetable box"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["coated"] }
+  },
+  {
+    "id": "wax_paper",
+    "name": "Wax paper",
+    "aliases": ["wax paper", "waxed paper", "wax coated paper", "butcher paper wax", "wax paper sheet"],
+    "examples": ["Wax paper", "Waxed butcher paper"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["coated"] }
+  },
+  {
+    "id": "parchment_paper",
+    "name": "Parchment paper",
+    "aliases": ["parchment paper", "baking parchment", "baking paper", "silicone coated paper", "parchment baking sheet", "kitchen parchment"],
+    "examples": ["Baking parchment", "Parchment baking sheet"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["coated"] }
+  },
+  {
+    "id": "envelope_plain",
+    "name": "Envelope (plain, no window)",
+    "aliases": ["envelope", "envelope plain", "plain envelope", "letter envelope", "mail envelope", "no window envelope", "manila envelope", "envelopes plain"],
+    "examples": ["Plain letter envelope", "Manila envelope"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "envelope_window",
+    "name": "Envelope (with plastic window)",
+    "aliases": ["envelope window", "window envelope", "envelope with window", "bill envelope", "windowed envelope", "plastic window envelope", "mail envelope window"],
+    "examples": ["Bill envelope", "Window envelope"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "mixedMaterial": true }
+  },
+  {
+    "id": "folder_manila",
+    "name": "File folder (manila / plain)",
+    "aliases": ["file folder", "folder", "manila folder", "manila file folder", "plain folder", "office folder", "hanging folder", "file folder manila", "document folder"],
+    "examples": ["Manila folder", "File folder", "Hanging folder"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "folder_glossy",
+    "name": "Glossy / laminated folder",
+    "aliases": ["glossy folder", "laminated folder", "plastic folder", "presentation folder", "glossy file folder", "coated folder", "weird glossy folder"],
+    "examples": ["Glossy presentation folder", "Laminated folder"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["coated", "laminated"] }
+  },
+  {
+    "id": "notebook",
+    "name": "Notebook (bound)",
+    "aliases": ["notebook", "notebooks", "bound notebook", "composition notebook", "writing notebook", "journal", "notepad bound", "spiral bound notebook", "notebook paper"],
+    "examples": ["Composition notebook", "Bound journal"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "spiral_notebook",
+    "name": "Spiral notebook",
+    "aliases": ["spiral notebook", "spiral bound", "spiral notebook wire", "wire bound notebook", "spiral notebook remove wire", "college ruled notebook", "spiral pad"],
+    "examples": ["Spiral-bound notebook", "Wire-bound notebook"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "mixedMaterial": true }
+  },
+  {
+    "id": "index_card",
+    "name": "Index card",
+    "aliases": ["index card", "index cards", "flash card", "flashcard", "note card", "study card", "cue card", "index card stock"],
+    "examples": ["Index card", "Flashcard", "Note card"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "cardstock",
+    "name": "Cardstock",
+    "aliases": ["cardstock", "card stock", "heavy paper", "thick paper", "craft cardstock", "scrapbook paper plain", "card stock paper"],
+    "examples": ["Cardstock", "Heavy craft paper"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "poster_board",
+    "name": "Poster board",
+    "aliases": ["poster board", "posterboard", "foam board", "display board", "science fair board", "poster board cardboard", "display board paper"],
+    "examples": ["Poster board", "Science fair board"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "likelyForms": ["box"] }
+  },
+  {
+    "id": "wrapping_paper_plain",
+    "name": "Wrapping paper (plain, no glitter/foil)",
+    "aliases": ["wrapping paper", "wrapping paper plain", "gift wrap plain", "plain wrapping paper", "paper gift wrap", "no glitter wrap", "recyclable wrapping paper"],
+    "examples": ["Plain gift wrap", "Paper wrapping paper"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "wrapping_paper_metallic",
+    "name": "Wrapping paper (metallic / glitter / laminated)",
+    "aliases": ["wrapping paper metallic", "metallic wrapping paper", "glitter wrapping paper", "foil wrap", "laminated wrapping paper", "shiny wrapping paper", "glittery wrap", "metallic gift wrap"],
+    "examples": ["Foil wrapping paper", "Glitter gift wrap"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["coated"] }
+  },
+  {
+    "id": "sticker_sheet",
+    "name": "Sticker sheet / labels (paper)",
+    "aliases": ["sticker sheet", "sticker sheet paper", "paper stickers", "label sheet", "paper labels", "address labels paper", "sticker backing", "label backing paper"],
+    "examples": ["Sticker sheet backing", "Paper label sheet"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "sticky_notes",
+    "name": "Sticky notes",
+    "aliases": ["sticky note", "sticky notes", "post it", "post it note", "post-it", "adhesive note", "yellow sticky", "reminder note", "sticky pad"],
+    "examples": ["Post-it note", "Sticky note", "Yellow sticky"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "book_pages",
+    "name": "Book (paperback / pages)",
+    "aliases": ["book", "books", "paperback", "paperback book", "hardcover pages", "book pages", "novel", "textbook", "donate book", "recycle book", "old book", "damaged book"],
+    "examples": ["Paperback novel", "Old textbook", "Damaged book"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "paper_bag",
+    "name": "Paper bag",
+    "aliases": ["paper bag", "paper bags", "grocery paper bag", "kraft bag", "brown paper bag", "shopping bag paper", "paper sack", "lunch bag paper"],
+    "examples": ["Brown paper bag", "Grocery paper bag"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "likelyForms": ["bag"] }
+  },
+  {
+    "id": "paper_plate_clean",
+    "name": "Paper plate (clean)",
+    "aliases": ["paper plate clean", "clean paper plate", "unused paper plate", "paper plate unused", "paper plates clean"],
+    "examples": ["Unused paper plate"],
+    "defaultCategory": "compost",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["clean"] }
+  },
+  {
+    "id": "paper_plate_soiled",
+    "name": "Paper plate (food-soiled)",
+    "aliases": ["paper plate used", "used paper plate", "dirty paper plate", "food soiled paper plate", "paper plate food", "paper plate greasy"],
+    "examples": ["Used paper plate", "Greasy paper plate"],
+    "defaultCategory": "compost",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["food-soiled"] }
+  },
+  {
+    "id": "cardboard_tubes",
+    "name": "Cardboard tubes",
+    "aliases": ["cardboard tube", "cardboard tubes", "toilet paper roll", "toilet paper tube", "paper towel tube", "wrapping paper tube", "paper tube", "roll tube", "inner tube cardboard"],
+    "examples": ["Toilet paper roll", "Paper towel tube", "Wrapping paper tube"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "tissue_unused",
+    "name": "Tissue (unused)",
+    "aliases": ["tissue unused", "clean tissue", "facial tissue", "kleenex unused", "tissue box", "box of tissues"],
+    "examples": ["Unused Kleenex", "Clean tissue"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["clean"] }
+  },
+  {
+    "id": "tissue_used",
+    "name": "Tissue / toilet paper (used)",
+    "aliases": ["tissue used", "used tissue", "used kleenex", "dirty tissue", "toilet paper used", "used toilet paper", "soiled tissue", "blow nose tissue"],
+    "examples": ["Used tissue", "Used toilet paper"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["food-soiled"] }
+  },
+  {
+    "id": "junk_mail",
+    "name": "Junk mail / direct mail",
+    "aliases": ["junk mail", "junk mail paper", "direct mail", "flyer", "flyers", "circular", "advertisement mail", "promotional mail", "mail advertisement", "bulk mail"],
+    "examples": ["Junk mail", "Flyers", "Circulars"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  }
+]

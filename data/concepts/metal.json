@@ -1,0 +1,114 @@
+[
+  {
+    "id": "aluminum_cans",
+    "name": "Aluminum cans",
+    "aliases": ["aluminum can", "aluminum cans", "soda can", "beer can", "pop can", "beverage can", "aluminum beverage can", "empty can", "drink can", "metal can aluminum"],
+    "examples": ["Soda can", "Beer can", "Sparkling water can"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"], "likelyForms": ["can"] }
+  },
+  {
+    "id": "steel_cans",
+    "name": "Steel / tin cans",
+    "aliases": ["steel can", "tin can", "steel cans", "tin cans", "soup can", "food can", "canned goods", "metal can steel", "vegetable can", "tuna can", "bean can"],
+    "examples": ["Soup can", "Tuna can", "Tomato can"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"], "likelyForms": ["can"] }
+  },
+  {
+    "id": "aluminum_foil",
+    "name": "Aluminum foil",
+    "aliases": ["aluminum foil", "tin foil", "aluminum foil clean", "clean foil", "kitchen foil", "aluminum wrap", "foil wrap", "ball foil"],
+    "examples": ["Aluminum foil", "Tin foil"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "aluminum_tray",
+    "name": "Aluminum pie pan / food tray",
+    "aliases": ["aluminum tray", "pie pan", "aluminum pie pan", "foil tray", "takeout aluminum", "aluminum takeout", "food tray aluminum", "disposable aluminum pan", "foil food pan"],
+    "examples": ["Pie pan", "Aluminum takeout tray"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"], "likelyForms": ["container"] }
+  },
+  {
+    "id": "aerosol_cans",
+    "name": "Aerosol can",
+    "aliases": ["aerosol can", "aerosol cans", "spray can", "hairspray can", "spray paint can", "empty aerosol", "aerosol empty", "spray bottle metal", "pressurized can"],
+    "examples": ["Hairspray can", "Spray paint can"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"], "likelyForms": ["can"] }
+  },
+  {
+    "id": "keys",
+    "name": "Keys",
+    "aliases": ["keys", "key", "metal keys", "old keys", "key ring", "keychain metal", "house key", "car key metal", "keys scrap metal", "weird metal thing keys"],
+    "examples": ["Old keys", "Key ring", "Metal keys"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "binder_clips",
+    "name": "Binder clips",
+    "aliases": ["binder clip", "binder clips", "metal binder clip", "clip binder", "office clip", "bulldog clip", "metal clip", "paper clip large"],
+    "examples": ["Binder clip", "Bulldog clip"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "paper_clips",
+    "name": "Paper clips",
+    "aliases": ["paper clip", "paper clips", "metal paper clip", "office clip small", "steel paper clip", "paperclip", "paper clips metal"],
+    "examples": ["Paper clip", "Paperclips"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "staples",
+    "name": "Staples",
+    "aliases": ["staples", "staple", "metal staples", "office staples", "staple remover", "loose staples", "staples metal"],
+    "examples": ["Staples", "Loose staples"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "bottle_caps_metal",
+    "name": "Bottle cap (metal)",
+    "aliases": ["metal bottle cap", "bottle cap metal", "beer cap", "soda cap metal", "crown cap", "metal cap", "collect caps metal", "crimp in can"],
+    "examples": ["Beer bottle cap", "Metal soda cap"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "screws",
+    "name": "Screws",
+    "aliases": ["screw", "screws", "metal screw", "wood screw", "machine screw", "loose screws", "hardware screw", "screws nails"],
+    "examples": ["Wood screw", "Loose screws"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "nails",
+    "name": "Nails",
+    "aliases": ["nail", "nails", "metal nail", "wire nail", "loose nails", "hardware nails", "construction nails", "nails screws"],
+    "examples": ["Wire nail", "Loose nails"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "wire_hanger",
+    "name": "Wire hanger",
+    "aliases": ["wire hanger", "wire hangers", "metal hanger", "coat hanger", "dry cleaner hanger", "clothes hanger wire", "return dry cleaner"],
+    "examples": ["Wire coat hanger", "Metal hanger"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["metal"] }
+  },
+  {
+    "id": "random_metal",
+    "name": "Random metal item",
+    "aliases": ["weird metal thing", "random metal", "metal thing", "scrap metal", "unknown metal", "metal object", "piece of metal", "metal scrap", "misc metal"],
+    "examples": ["Random metal piece", "Scrap metal"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["metal"] }
+  }
+]

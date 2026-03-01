@@ -55,6 +55,9 @@ export function ShareButton({
       dropoff: "needs a drop-off location",
       hazardous: "requires hazardous waste disposal",
       unknown: "has unclear disposal rules",
+      donate: "can be donated",
+      "yard-waste": "is yard waste",
+      deposit: "has a deposit refund",
     };
     const action = actionMap[category] ?? `should be: ${meta.label}`;
     const text = `${meta.emoji} ${itemName} ${action}!\n\nFind out how to dispose of anything at isthisrecyclable.com`;

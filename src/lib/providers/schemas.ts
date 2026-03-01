@@ -7,6 +7,9 @@ export const DisposalCategorySchema = z.enum([
   "dropoff",
   "hazardous",
   "unknown",
+  "donate",
+  "yard-waste",
+  "deposit",
 ]);
 
 export const MaterialSchema = z.object({

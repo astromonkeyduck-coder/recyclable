@@ -1,0 +1,58 @@
+[
+  {
+    "id": "batteries",
+    "name": "Batteries",
+    "aliases": ["battery", "batteries", "aa battery", "aaa battery", "lithium battery", "rechargeable battery", "button battery", "cell battery", "dead battery", "used batteries", "alkaline battery", "battery recycling"],
+    "examples": ["AA battery", "Lithium battery", "Button cell"],
+    "defaultCategory": "hazardous",
+    "attributes": { "likelyMaterials": ["hazardous"] }
+  },
+  {
+    "id": "paint",
+    "name": "Paint",
+    "aliases": ["paint", "paint can", "latex paint", "oil paint", "house paint", "spray paint", "paint bucket", "leftover paint", "old paint", "dried paint"],
+    "examples": ["Latex paint", "Oil-based paint", "Spray paint"],
+    "defaultCategory": "hazardous",
+    "attributes": { "likelyMaterials": ["hazardous"] }
+  },
+  {
+    "id": "motor_oil",
+    "name": "Motor oil",
+    "aliases": ["motor oil", "engine oil", "used oil", "automotive oil", "car oil", "cooking oil large", "fry oil", "used motor oil"],
+    "examples": ["Used motor oil", "Engine oil"],
+    "defaultCategory": "hazardous",
+    "attributes": { "likelyMaterials": ["hazardous"] }
+  },
+  {
+    "id": "needles_sharps",
+    "name": "Needles / sharps",
+    "aliases": ["needle", "needles", "sharps", "syringe", "lancet", "insulin needle", "medical sharps", "hypodermic", "sharp container", "used needle"],
+    "examples": ["Insulin needle", "Syringe", "Lancet"],
+    "defaultCategory": "hazardous",
+    "attributes": { "likelyMaterials": ["hazardous"] }
+  },
+  {
+    "id": "propane_tank",
+    "name": "Propane tank",
+    "aliases": ["propane tank", "propane cylinder", "propane canister", "camping propane", "bbq propane", "gas cylinder", "propane bottle", "small propane"],
+    "examples": ["Propane tank", "Camping propane"],
+    "defaultCategory": "hazardous",
+    "attributes": { "likelyMaterials": ["hazardous"] }
+  },
+  {
+    "id": "fluorescent_tube",
+    "name": "Fluorescent tube",
+    "aliases": ["fluorescent tube", "fluorescent light", "fluorescent bulb long", "tube light", "strip light", "mercury tube", "florescent tube"],
+    "examples": ["Fluorescent tube", "Strip light"],
+    "defaultCategory": "hazardous",
+    "attributes": { "likelyMaterials": ["hazardous"] }
+  },
+  {
+    "id": "medications",
+    "name": "Medications",
+    "aliases": ["medication", "medications", "medicine", "pills", "prescription drugs", "expired medicine", "old pills", "drug take back", "unused medication", "pharmaceutical"],
+    "examples": ["Expired pills", "Old prescription", "Unused medication"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["hazardous"] }
+  }
+]

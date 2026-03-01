@@ -1,0 +1,290 @@
+[
+  {
+    "id": "plastic_bottle",
+    "name": "Plastic bottle",
+    "aliases": ["plastic bottle", "water bottle", "soda bottle", "juice bottle", "sports drink bottle", "plastic beverage bottle", "pet bottle", "hdpe bottle", "shampoo bottle", "detergent bottle", "beverage bottle", "drink bottle", "single use bottle"],
+    "examples": ["Water bottle", "Soda bottle", "Shampoo bottle"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["bottle"] }
+  },
+  {
+    "id": "plastic_container",
+    "name": "Plastic container (rigid)",
+    "aliases": ["plastic container", "plastic tub", "yogurt container", "deli container", "berry container", "takeout container plastic", "rigid plastic", "plastic tub container", "food container plastic", "clamshell plastic", "salad container"],
+    "examples": ["Yogurt tub", "Berry clamshell", "Deli container"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["container", "rigid"] }
+  },
+  {
+    "id": "plastic_bags",
+    "name": "Plastic bags / film",
+    "aliases": ["plastic bag", "plastic bags", "grocery bag", "shopping bag", "plastic film", "produce bag", "bread bag", "ziploc bag", "sandwich bag", "plastic bag film", "thin plastic", "plastic wrap bag"],
+    "examples": ["Grocery bag", "Produce bag", "Ziploc bag"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["bag", "film"] }
+  },
+  {
+    "id": "candy_wrapper",
+    "name": "Candy wrapper",
+    "aliases": ["candy wrapper", "candy wrappers", "chocolate wrapper", "snickers wrapper", "m and m bag", "candy bar wrapper", "chocolate bar wrapper", "metallized wrapper", "flexible plastic wrapper", "plastic bag of candy", "wrapper candy"],
+    "examples": ["Snickers wrapper", "M&M bag", "Candy bar wrapper"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["wrapper", "film"] }
+  },
+  {
+    "id": "chip_bag",
+    "name": "Chip bag",
+    "aliases": ["chip bag", "chip bags", "doritos bag", "lays bag", "potato chip bag", "snack bag", "crisps bag", "metallized chip bag", "chip wrapper", "snack chip bag"],
+    "examples": ["Doritos bag", "Lay's bag", "Chip bag"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["wrapper"], "mixedMaterial": true }
+  },
+  {
+    "id": "granola_bar_wrapper",
+    "name": "Granola bar / snack bar wrapper",
+    "aliases": ["granola bar wrapper", "granola wrapper", "snack bar wrapper", "protein bar wrapper", "energy bar wrapper", "clif bar wrapper", "wrapper granola", "flexible snack wrapper"],
+    "examples": ["Granola bar wrapper", "Protein bar wrapper"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["wrapper"], "mixedMaterial": true }
+  },
+  {
+    "id": "snack_pouch",
+    "name": "Snack pouch / drink pouch",
+    "aliases": ["snack pouch", "drink pouch", "capri sun", "juice pouch", "apple sauce pouch", "baby food pouch", "stand up pouch", "flexible pouch", "multi layer pouch", "drink pouch plastic"],
+    "examples": ["Capri Sun", "Juice pouch", "Applesauce pouch"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "plastic_clamshell",
+    "name": "Plastic clamshell container",
+    "aliases": ["clamshell", "plastic clamshell", "berry box", "berry container", "salad clamshell", "fruit clamshell", "takeout clamshell", "plastic clamshell container", "hinged plastic container", "berry clamshell"],
+    "examples": ["Berry container", "Salad clamshell"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["container", "rigid"] }
+  },
+  {
+    "id": "blister_pack",
+    "name": "Blister pack",
+    "aliases": ["blister pack", "blister packaging", "blister pack plastic", "bubble pack", "plastic blister", "pills blister", "battery blister", "toy blister pack", "carded packaging"],
+    "examples": ["Blister pack", "Carded packaging"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "plastic_utensils",
+    "name": "Plastic utensils",
+    "aliases": ["plastic utensils", "plastic fork", "plastic spoon", "plastic knife", "plastic cutlery", "disposable utensils", "plastic spork", "takeout utensils", "single use utensils"],
+    "examples": ["Plastic fork", "Plastic spoon", "Disposable cutlery"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["utensil"] }
+  },
+  {
+    "id": "straw",
+    "name": "Straw (plastic)",
+    "aliases": ["straw", "straws", "plastic straw", "drinking straw", "soda straw", "plastic straws", "single use straw", "bendy straw"],
+    "examples": ["Plastic straw", "Drinking straw"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "plastic_hanger",
+    "name": "Plastic hanger",
+    "aliases": ["plastic hanger", "plastic hangers", "clothes hanger plastic", "wardrobe hanger", "plastic coat hanger", "hanger plastic", "not wire hanger"],
+    "examples": ["Plastic clothes hanger"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "plastic_toy",
+    "name": "Plastic toy",
+    "aliases": ["plastic toy", "plastic toys", "toy plastic", "action figure", "plastic figurine", "kids toy", "broken toy", "plastic plaything", "toy plastic material"],
+    "examples": ["Action figure", "Plastic toy", "Broken toy"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "packing_peanut",
+    "name": "Packing peanut",
+    "aliases": ["packing peanut", "packing peanuts", "styrofoam peanut", "foam peanut", "packing foam", "peanuts packing", "styrofoam peanuts", "eps peanut"],
+    "examples": ["Packing peanuts", "Foam peanuts"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "bubble_wrap",
+    "name": "Bubble wrap",
+    "aliases": ["bubble wrap", "bubble wrap plastic", "air pillows", "packing bubbles", "plastic bubble wrap", "shipping bubbles", "inflatable packing", "bubble packaging"],
+    "examples": ["Bubble wrap", "Air pillows"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["film"] }
+  },
+  {
+    "id": "coffee_cup_lined",
+    "name": "Disposable coffee cup (lined)",
+    "aliases": ["coffee cup", "disposable coffee cup", "paper coffee cup", "to go cup", "starbucks cup", "paper cup lined", "plastic lined cup", "takeout coffee cup", "single use coffee cup"],
+    "examples": ["Starbucks cup", "To-go coffee cup"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper", "plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "fast_food_wrapper",
+    "name": "Fast food wrapper",
+    "aliases": ["fast food wrapper", "burger wrapper", "food wrapper", "greasy wrapper", "takeout wrapper", "burger wrap", "sandwich wrapper", "food soiled wrapper", "paper wrapper food"],
+    "examples": ["Burger wrapper", "Sandwich wrapper"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["paper"], "commonContaminants": ["food-soiled"] }
+  },
+  {
+    "id": "plastic_cups",
+    "name": "Plastic cup (rigid)",
+    "aliases": ["plastic cup", "plastic cups", "solo cup", "red cup", "plastic drink cup", "party cup", "rigid plastic cup", "disposable plastic cup", "clear plastic cup"],
+    "examples": ["Solo cup", "Plastic party cup"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["container"] }
+  },
+  {
+    "id": "cleaning_bottle",
+    "name": "Cleaning product bottle",
+    "aliases": ["cleaning bottle", "cleaning product bottle", "detergent bottle", "soap bottle", "bleach bottle", "spray bottle cleaning", "household cleaner bottle", "cleaning spray bottle", "empty cleaning bottle"],
+    "examples": ["Detergent bottle", "Spray cleaner bottle"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["bottle"] }
+  },
+  {
+    "id": "takeout_container_plastic",
+    "name": "Plastic takeout container",
+    "aliases": ["plastic takeout", "takeout container plastic", "to go container plastic", "restaurant takeout plastic", "plastic food container takeout", "clear takeout container", "deli container plastic"],
+    "examples": ["Plastic takeout container", "To-go container"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["container", "rigid"] }
+  },
+  {
+    "id": "prescription_bottle",
+    "name": "Prescription bottle",
+    "aliases": ["prescription bottle", "pill bottle", "medicine bottle", "rx bottle", "prescription vial", "plastic pill bottle", "medicine vial", "pharmacy bottle"],
+    "examples": ["Prescription pill bottle", "Medicine bottle"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["bottle"] }
+  },
+  {
+    "id": "ziploc_bags",
+    "name": "Ziploc / resealable bags",
+    "aliases": ["ziploc", "ziploc bag", "resealable bag", "sandwich bag", "freezer bag", "storage bag", "zip lock", "zip top bag", "plastic storage bag", "resealable plastic bag"],
+    "examples": ["Ziploc bag", "Freezer bag"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["bag", "film"] }
+  },
+  {
+    "id": "cling_wrap",
+    "name": "Cling wrap / plastic wrap",
+    "aliases": ["cling wrap", "plastic wrap", "saran wrap", "food wrap", "plastic film wrap", "kitchen wrap", "stretch wrap food", "plastic cling film"],
+    "examples": ["Saran wrap", "Plastic wrap"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["film"] }
+  },
+  {
+    "id": "toothbrush",
+    "name": "Toothbrush",
+    "aliases": ["toothbrush", "toothbrushes", "manual toothbrush", "plastic toothbrush", "electric toothbrush head", "tooth brush"],
+    "examples": ["Toothbrush", "Manual toothbrush"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "toothpaste_tube",
+    "name": "Toothpaste tube",
+    "aliases": ["toothpaste tube", "toothpaste tubes", "toothpaste packaging", "squeeze tube toothpaste", "plastic toothpaste tube", "empty toothpaste tube"],
+    "examples": ["Toothpaste tube"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "deodorant_container",
+    "name": "Deodorant container",
+    "aliases": ["deodorant", "deodorant container", "deodorant stick", "antiperspirant container", "empty deodorant", "plastic deodorant", "deodorant packaging"],
+    "examples": ["Deodorant stick", "Empty deodorant"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "razor",
+    "name": "Razor",
+    "aliases": ["razor", "razors", "disposable razor", "razor blade", "plastic razor", "shaving razor", "used razor", "safety razor"],
+    "examples": ["Disposable razor", "Razor blade"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic", "metal"], "mixedMaterial": true }
+  },
+  {
+    "id": "cosmetics",
+    "name": "Makeup / cosmetics container",
+    "aliases": ["makeup", "cosmetics", "makeup container", "cosmetic container", "lipstick", "mascara", "plastic makeup", "empty makeup", "cosmetics packaging", "makeup bottle"],
+    "examples": ["Empty lipstick", "Mascara tube", "Makeup container"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "coffee_pod",
+    "name": "Coffee pod / K-Cup",
+    "aliases": ["coffee pod", "k cup", "k-cup", "keurig pod", "nespresso pod", "single serve coffee", "coffee capsule", "used coffee pod", "plastic coffee pod"],
+    "examples": ["K-Cup", "Nespresso pod"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "milk_carton",
+    "name": "Milk / juice carton",
+    "aliases": ["milk carton", "juice carton", "juice box", "milk jug plastic", "carton milk", "tetra pak", "aseptic carton", "drink carton", "paper carton beverage"],
+    "examples": ["Milk carton", "Juice box", "Tetra Pak"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper", "plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "bottle_caps_plastic",
+    "name": "Bottle cap (plastic, on bottle)",
+    "aliases": ["bottle cap", "bottle caps", "plastic cap", "screw cap", "leave cap on bottle", "cap on bottle", "plastic bottle cap"],
+    "examples": ["Plastic bottle cap", "Screw cap"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "tupperware",
+    "name": "Tupperware / food storage container",
+    "aliases": ["tupperware", "food storage container", "plastic storage container", "leftover container", "meal prep container", "plastic food container", "reusable plastic container", "storage tub plastic"],
+    "examples": ["Tupperware", "Food storage container"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["container", "rigid"] }
+  },
+  {
+    "id": "styrofoam",
+    "name": "Styrofoam / polystyrene",
+    "aliases": ["styrofoam", "polystyrene", "foam cup", "foam container", "foam tray", "eps", "expanded polystyrene", "styrofoam cup", "foam takeout", "white foam", "meat tray foam"],
+    "examples": ["Foam cup", "Styrofoam container", "Meat tray"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "styrofoam_takeout",
+    "name": "Styrofoam takeout container",
+    "aliases": ["styrofoam takeout", "foam takeout container", "styrofoam food container", "foam clamshell", "polystyrene takeout", "white foam container", "foam to go box"],
+    "examples": ["Styrofoam takeout", "Foam food container"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["container"] }
+  },
+  {
+    "id": "plastic_film",
+    "name": "Plastic film (general)",
+    "aliases": ["plastic film", "plastic film wrap", "stretch film", "pallet wrap", "shrink wrap", "plastic sheeting", "thin plastic film", "flexible plastic", "plastic sheet thin"],
+    "examples": ["Shrink wrap", "Stretch film"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["film"] }
+  },
+  {
+    "id": "diapers",
+    "name": "Diapers",
+    "aliases": ["diaper", "diapers", "disposable diaper", "baby diaper", "nappy", "used diaper", "pull up diaper"],
+    "examples": ["Disposable diaper", "Baby diaper"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic", "organic"], "mixedMaterial": true }
+  }
+]

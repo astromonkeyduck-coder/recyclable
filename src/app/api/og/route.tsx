@@ -50,6 +50,24 @@ const CATEGORY_THEME: Record<
     label: "NOT SURE",
     icon: "❓",
   },
+  donate: {
+    accent: "#8B5CF6",
+    glow: "rgba(139,92,246,0.25)",
+    label: "DONATE",
+    icon: "❤️",
+  },
+  "yard-waste": {
+    accent: "#15803D",
+    glow: "rgba(21,128,61,0.25)",
+    label: "YARD WASTE",
+    icon: "🌿",
+  },
+  deposit: {
+    accent: "#0D9488",
+    glow: "rgba(13,148,136,0.25)",
+    label: "DEPOSIT / REFUND",
+    icon: "💰",
+  },
 };
 
 const PAGE_VARIANTS: Record<

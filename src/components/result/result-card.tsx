@@ -39,6 +39,10 @@ type ResultCardProps = {
   rationale?: string[];
   alternatives?: Array<{ material: Material; score: number }>;
   onSelectAlternative?: (material: Material) => void;
+  query?: string;
+  providerId?: string;
+  conceptId?: string;
+  materialId?: string;
 };
 
 const CATEGORY_TIPS: Record<string, string[]> = {
@@ -110,12 +114,16 @@ export function ResultCard({
   rationale,
   alternatives,
   onSelectAlternative,
+  query,
+  providerId,
+  conceptId,
+  materialId,
 }: ResultCardProps) {
   const [rationaleOpen, setRationaleOpen] = useState(true);
   const sfx = useSfx();
   const { isBookmarked, toggleBookmark } = useBookmarks();
   const searchParams = useSearchParams();
-  const providerId = searchParams.get("provider") ?? "general";
+  const effectiveProviderId = providerId ?? searchParams.get("provider") ?? "general";
   const saved = isBookmarked(material.name);
   const meta = CATEGORY_META[material.category];
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -438,6 +446,10 @@ export function ResultCard({
                   itemName={material.name}
                   category={material.category}
                   providerName={providerName}
+                  query={query}
+                  providerId={effectiveProviderId}
+                  conceptId={conceptId}
+                  materialId={materialId}
                 >
                   <button
                     className="inline-flex items-center justify-center h-8 w-8 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent focus-visible:ring-2 focus-visible:ring-ring"
@@ -457,7 +469,7 @@ export function ResultCard({
                       query: material.name,
                       category: material.category,
                       providerName,
-                      providerId,
+                      providerId: effectiveProviderId,
                     });
                     toast.success(saved ? "Removed from saved" : "Saved!");
                   }}

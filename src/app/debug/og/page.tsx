@@ -212,7 +212,7 @@ export default function DebugOgPage() {
                   value={customCategory}
                   onChange={(e) => setCustomCategory(e.target.value as DisposalCategory)}
                 >
-                  {["recycle", "trash", "compost", "dropoff", "hazardous", "unknown"].map((c) => (
+                  {["recycle", "trash", "compost", "donate", "yard-waste", "deposit", "dropoff", "hazardous", "unknown"].map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </select>

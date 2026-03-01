@@ -22,23 +22,43 @@ type FeedbackFormProps = {
   category: DisposalCategory;
   providerName: string;
   children: React.ReactNode;
+  query?: string;
+  providerId?: string;
+  conceptId?: string;
+  materialId?: string;
 };
 
 const CATEGORY_OPTIONS: DisposalCategory[] = [
   "recycle",
   "trash",
   "compost",
+  "donate",
+  "yard-waste",
+  "deposit",
   "dropoff",
   "hazardous",
+  "unknown",
 ];
 
 const FEEDBACK_KEY = "itr-feedback-log";
+
+const ENGINE_CATEGORIES = [
+  "recycle",
+  "compost",
+  "trash",
+  "dropoff",
+  "hazardous",
+] as const;
 
 export function FeedbackForm({
   itemName,
   category,
   providerName,
   children,
+  query,
+  providerId,
+  conceptId,
+  materialId,
 }: FeedbackFormProps) {
   const [open, setOpen] = useState(false);
   const [correctCategory, setCorrectCategory] = useState<
@@ -52,19 +72,43 @@ export function FeedbackForm({
     setSubmitting(true);
 
     try {
-      const feedback = {
+      const payload = {
+        providerId: providerId ?? "general",
+        query: query ?? itemName,
+        expectedCategory: correctCategory
+          ? (ENGINE_CATEGORIES.includes(correctCategory as (typeof ENGINE_CATEGORIES)[number])
+              ? correctCategory
+              : undefined)
+          : undefined,
+        reportedCategory: ENGINE_CATEGORIES.includes(category as (typeof ENGINE_CATEGORIES)[number])
+          ? category
+          : undefined,
+        conceptId,
+        materialId,
+        comment: details || undefined,
+      };
+
+      const res = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) {
+        throw new Error("Feedback request failed");
+      }
+
+      const existing = JSON.parse(
+        localStorage.getItem(FEEDBACK_KEY) || "[]"
+      );
+      existing.push({
         itemName,
         shownCategory: category,
         correctCategory: correctCategory || undefined,
         details,
         providerName,
         timestamp: Date.now(),
-      };
-
-      const existing = JSON.parse(
-        localStorage.getItem(FEEDBACK_KEY) || "[]"
-      );
-      existing.push(feedback);
+      });
       localStorage.setItem(FEEDBACK_KEY, JSON.stringify(existing.slice(-50)));
 
       toast.success("Thank you for your feedback!");

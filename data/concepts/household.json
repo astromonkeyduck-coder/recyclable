@@ -1,0 +1,154 @@
+[
+  {
+    "id": "ceramic_mug",
+    "name": "Ceramic mug / dish",
+    "aliases": ["ceramic mug", "ceramic cup", "coffee mug", "mug", "ceramic dish", "ceramic plate", "pottery", "clay mug", "ceramic decor", "ceramic decoration", "ceramic figurine", "ceramic bowl"],
+    "examples": ["Coffee mug", "Ceramic bowl", "Ceramic decoration"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["mixed"] }
+  },
+  {
+    "id": "broken_ceramic",
+    "name": "Broken ceramics / dishes",
+    "aliases": ["broken ceramic", "broken ceramics", "broken dish", "broken plate", "broken mug", "shattered ceramic", "ceramic pieces", "broken pottery", "chipped plate", "broken plate dish", "wrap broken ceramic"],
+    "examples": ["Broken plate", "Shattered mug", "Broken ceramic"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["mixed"], "likelyForms": ["broken"] }
+  },
+  {
+    "id": "ornament",
+    "name": "Ornament / decoration",
+    "aliases": ["ornament", "ornaments", "decoration", "decor", "holiday ornament", "christmas ornament", "figurine", "small figurine", "knick knack", "decoration figurine", "ceramic ornament", "plastic ornament"],
+    "examples": ["Christmas ornament", "Figurine", "Decorative ornament"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["mixed"] }
+  },
+  {
+    "id": "balloon_latex",
+    "name": "Balloon (latex)",
+    "aliases": ["balloon", "balloons", "latex balloon", "rubber balloon", "party balloon", "birthday balloon", "deflated balloon", "latex balloon only"],
+    "examples": ["Party balloon", "Latex balloon"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "balloon_foil",
+    "name": "Balloon (foil / Mylar)",
+    "aliases": ["foil balloon", "mylar balloon", "silver balloon", "metallic balloon", "foil balloons", "shiny balloon", "helium balloon foil"],
+    "examples": ["Foil balloon", "Mylar balloon"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["metal", "plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "rubber_band",
+    "name": "Rubber bands",
+    "aliases": ["rubber band", "rubber bands", "elastic band", "rubber band trash", "office rubber band"],
+    "examples": ["Rubber band", "Elastic band"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "sponge",
+    "name": "Sponge",
+    "aliases": ["sponge", "sponges", "kitchen sponge", "cleaning sponge", "cellulose sponge", "used sponge", "dirty sponge"],
+    "examples": ["Kitchen sponge", "Cleaning sponge"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "umbrella",
+    "name": "Umbrella",
+    "aliases": ["umbrella", "umbrellas", "broken umbrella", "old umbrella", "broken umbrella", "metal umbrella", "plastic umbrella", "umbrella frame"],
+    "examples": ["Broken umbrella", "Old umbrella"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["metal", "plastic", "textile"], "mixedMaterial": true }
+  },
+  {
+    "id": "candle",
+    "name": "Candle (wax)",
+    "aliases": ["candle", "candles", "candle wax", "used candle", "candle stub", "wax candle", "leftover candle", "candle remnants"],
+    "examples": ["Used candle", "Candle stub"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["organic"] }
+  },
+  {
+    "id": "cds_dvds",
+    "name": "CDs / DVDs",
+    "aliases": ["cd", "cds", "dvd", "dvds", "compact disc", "disc", "discs", "old cd", "broken cd", "cd dvd", "blu ray disc"],
+    "examples": ["CD", "DVD", "Old disc"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "pens_markers",
+    "name": "Pens and markers",
+    "aliases": ["pen", "pens", "marker", "markers", "ballpoint pen", "dry erase marker", "sharpie", "highlighters", "used pen", "empty marker", "pen marker"],
+    "examples": ["Pen", "Marker", "Highlighter"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  },
+  {
+    "id": "tape",
+    "name": "Tape",
+    "aliases": ["tape", "scotch tape", "packing tape", "duct tape", "masking tape", "adhesive tape", "plastic tape", "tape roll", "used tape"],
+    "examples": ["Scotch tape", "Packing tape", "Duct tape"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "pet_waste",
+    "name": "Pet waste",
+    "aliases": ["pet waste", "dog poop", "cat litter", "kitty litter", "dog waste", "pet feces", "used cat litter", "pet waste bag"],
+    "examples": ["Dog waste", "Cat litter", "Pet waste bag"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["organic"] }
+  },
+  {
+    "id": "cooking_oil",
+    "name": "Cooking oil / grease",
+    "aliases": ["cooking oil", "grease", "frying oil", "vegetable oil used", "bacon grease", "used oil", "cooking grease", "fat grease", "pour oil"],
+    "examples": ["Used frying oil", "Bacon grease"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["organic"] }
+  },
+  {
+    "id": "egg_carton_paper",
+    "name": "Egg carton (paper)",
+    "aliases": ["egg carton", "egg carton paper", "paper egg carton", "cardboard egg carton", "egg crate paper"],
+    "examples": ["Paper egg carton"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"] }
+  },
+  {
+    "id": "egg_carton_foam",
+    "name": "Egg carton (Styrofoam)",
+    "aliases": ["egg carton foam", "styrofoam egg carton", "foam egg carton", "plastic egg carton"],
+    "examples": ["Styrofoam egg carton"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "wine_cork",
+    "name": "Wine cork (natural)",
+    "aliases": ["wine cork", "cork", "natural cork", "wine corks", "cork natural", "bottle cork"],
+    "examples": ["Wine cork", "Natural cork"],
+    "defaultCategory": "compost",
+    "attributes": { "likelyMaterials": ["organic"] }
+  },
+  {
+    "id": "wine_cork_synthetic",
+    "name": "Wine cork (synthetic)",
+    "aliases": ["synthetic cork", "plastic cork", "fake cork", "synthetic wine cork", "plastic wine cork"],
+    "examples": ["Synthetic cork", "Plastic cork"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "school_supplies",
+    "name": "School / office supplies",
+    "aliases": ["school supplies", "office supplies", "notebook spiral", "binder", "binders", "spiral notebook", "notebook wire", "remove spiral", "recycle paper notebook", "binder recycle"],
+    "examples": ["Spiral notebook", "Binder", "Office supplies"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "mixedMaterial": true }
+  }
+]

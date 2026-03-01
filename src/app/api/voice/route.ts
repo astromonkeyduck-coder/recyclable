@@ -15,7 +15,7 @@ const VoiceRequestSchema = z.object({
   /** When set, speak this exact text (for scan funny line). Takes precedence over eventType. */
   text: z.string().max(200).optional(),
   eventType: z.enum(["scan_result", "correct_answer", "incorrect_answer", "lesson_complete"]).optional(),
-  category: z.enum(["recycle", "trash", "compost", "dropoff", "hazardous", "unknown"]).optional(),
+  category: z.enum(["recycle", "trash", "compost", "dropoff", "hazardous", "unknown", "donate", "yard-waste", "deposit"]).optional(),
   streakCount: z.number().optional(),
   confidence: z.number().optional(),
   accuracy: z.number().optional(),

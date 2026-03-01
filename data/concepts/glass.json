@@ -1,0 +1,58 @@
+[
+  {
+    "id": "glass_bottle",
+    "name": "Glass bottle",
+    "aliases": ["glass bottle", "glass bottles", "wine bottle", "beer bottle", "glass beverage bottle", "liquor bottle", "glass drink bottle", "empty glass bottle", "bottle glass"],
+    "examples": ["Wine bottle", "Beer bottle", "Glass soda bottle"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["glass"], "likelyForms": ["bottle"] }
+  },
+  {
+    "id": "glass_jar",
+    "name": "Glass jar",
+    "aliases": ["glass jar", "glass jars", "mason jar", "sauce jar", "pickle jar", "jam jar", "jelly jar", "glass container", "empty jar", "jar glass"],
+    "examples": ["Mason jar", "Pasta sauce jar", "Pickle jar"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["glass"], "likelyForms": ["container"] }
+  },
+  {
+    "id": "drinking_glass",
+    "name": "Drinking glass / tableware glass",
+    "aliases": ["drinking glass", "drinking glasses", "glass cup", "tumbler", "water glass", "table glass", "glassware", "not bottle", "cup glass", "glass drinking", "everyday glass"],
+    "examples": ["Drinking glass", "Tumbler", "Water glass"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["glass"] }
+  },
+  {
+    "id": "pyrex",
+    "name": "Pyrex / bakeware glass",
+    "aliases": ["pyrex", "pyrex dish", "bakeware glass", "glass bakeware", "borosilicate", "glass pan", "glass baking dish", "pyrex container", "oven safe glass"],
+    "examples": ["Pyrex dish", "Glass baking pan"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["glass"] }
+  },
+  {
+    "id": "mirror",
+    "name": "Mirror",
+    "aliases": ["mirror", "mirrors", "broken mirror", "glass mirror", "mirror glass", "wall mirror", "compact mirror", "mirror piece"],
+    "examples": ["Wall mirror", "Broken mirror"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["glass"], "likelyForms": ["broken"] }
+  },
+  {
+    "id": "broken_glass",
+    "name": "Broken glass",
+    "aliases": ["broken glass", "glass shards", "shattered glass", "glass pieces", "broken bottle", "broken jar", "glass break", "wrap broken glass"],
+    "examples": ["Broken glass", "Glass shards"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["glass"], "likelyForms": ["broken"] }
+  },
+  {
+    "id": "candle_jar",
+    "name": "Candle jar (glass)",
+    "aliases": ["candle jar", "candle glass", "empty candle jar", "glass candle holder", "candle container glass", "used candle jar", "clean candle jar"],
+    "examples": ["Empty candle jar", "Glass candle container"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["glass"], "likelyForms": ["container"] }
+  }
+]

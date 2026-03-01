@@ -16,7 +16,10 @@ export type VoiceLineCategory =
   | "compost"
   | "dropoff"
   | "hazardous"
-  | "unknown";
+  | "unknown"
+  | "donate"
+  | "yard-waste"
+  | "deposit";
 
 export type VoiceLineParams = {
   eventType: VoiceEventType;
@@ -66,6 +69,24 @@ const SCAN_LINES: Record<VoiceLineCategory, string[]> = {
     "[gently] Hmm. When in doubt, check locally.",
     "[resigned tone] My confidence is low on this one.",
     "[warmly] Could go either way. Check your area.",
+  ],
+  donate: [
+    "[warmly] Someone else can use that.",
+    "[cheerfully] Donate it. Good call.",
+    "[playfully] Second life at a thrift store.",
+    "[gently] Pass it on. Don't bin it.",
+  ],
+  "yard-waste": [
+    "[cheerfully] Yard waste. Green bin or yard pickup.",
+    "[warmly] Grass, leaves, or branches. Yard waste.",
+    "[playfully] Back to the earth. Yard waste.",
+    "[gently] That's yard waste. Separate from trash.",
+  ],
+  deposit: [
+    "[excited] That one has a refund!",
+    "[cheerfully] Return it for the deposit.",
+    "[warmly] Get your nickel back. Deposit.",
+    "[playfully] Don't trash it. Cash it in.",
   ],
 };
 

@@ -496,7 +496,7 @@
         "hedge trimmings",
         "tree trimmings"
       ],
-      "category": "compost",
+      "category": "yard-waste",
       "instructions": [
         "Orlando provides separate yard waste pickup",
         "Place in yard waste containers or paper yard waste bags",
@@ -1001,7 +1001,7 @@
         "fabric",
         "sneakers"
       ],
-      "category": "dropoff",
+      "category": "donate",
       "instructions": [
         "Donate wearable clothing to Goodwill, Salvation Army, or local thrift stores",
         "Textile recycling bins are located throughout Orlando",
@@ -1671,7 +1671,7 @@
       "id": "shoes",
       "name": "Shoes",
       "aliases": ["shoes", "sneakers", "running shoes", "boots", "sandals", "flip flops", "old shoes"],
-      "category": "dropoff",
+      "category": "donate",
       "instructions": ["Donate wearable shoes to Goodwill or Salvation Army in Orlando", "Nike stores in Orlando accept old athletic shoes", "Worn-out or broken shoes: place in trash", "Textile recycling bins for intact worn shoes if available"],
       "notes": ["Shoes can go in the trash if not donatable — they are not accepted in curbside recycling"],
       "commonMistakes": ["Don't put shoes in curbside recycling", "Shoes can go in trash when worn out or broken"],

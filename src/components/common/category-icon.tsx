@@ -5,6 +5,9 @@ import {
   MapPin,
   ShieldAlert,
   HelpCircle,
+  Heart,
+  TreeDeciduous,
+  CircleDollarSign,
   type LucideProps,
 } from "lucide-react";
 import type { DisposalCategory } from "@/lib/providers/types";
@@ -18,6 +21,9 @@ const ICON_MAP: Record<DisposalCategory, React.FC<LucideProps>> = {
   dropoff: MapPin,
   hazardous: ShieldAlert,
   unknown: HelpCircle,
+  donate: Heart,
+  "yard-waste": TreeDeciduous,
+  deposit: CircleDollarSign,
 };
 
 const CONTAINER_COLORS: Record<DisposalCategory, string> = {
@@ -33,6 +39,12 @@ const CONTAINER_COLORS: Record<DisposalCategory, string> = {
     "bg-red-100 text-red-600 shadow-red-200/50 dark:bg-red-950/60 dark:text-red-400 dark:shadow-red-900/30",
   unknown:
     "bg-yellow-100 text-yellow-600 shadow-yellow-200/50 dark:bg-yellow-950/60 dark:text-yellow-400 dark:shadow-yellow-900/30",
+  donate:
+    "bg-violet-100 text-violet-600 shadow-violet-200/50 dark:bg-violet-950/60 dark:text-violet-400 dark:shadow-violet-900/30",
+  "yard-waste":
+    "bg-emerald-100 text-emerald-600 shadow-emerald-200/50 dark:bg-emerald-950/60 dark:text-emerald-400 dark:shadow-emerald-900/30",
+  deposit:
+    "bg-teal-100 text-teal-600 shadow-teal-200/50 dark:bg-teal-950/60 dark:text-teal-400 dark:shadow-teal-900/30",
 };
 
 type Size = "xs" | "sm" | "md" | "lg" | "xl";

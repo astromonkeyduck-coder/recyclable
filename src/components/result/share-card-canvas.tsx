@@ -18,6 +18,9 @@ const GRADIENT_COLORS: Record<DisposalCategory, [string, string]> = {
   dropoff: ["#FED7AA", "#FDE68A"],
   hazardous: ["#FECACA", "#FECDD3"],
   unknown: ["#FEF3C7", "#FDE68A"],
+  donate: ["#EDE9FE", "#DDD6FE"],
+  "yard-waste": ["#D1FAE5", "#A7F3D0"],
+  deposit: ["#CCFBF1", "#99F6E4"],
 };
 
 const ICON_MAP: Record<DisposalCategory, string> = {
@@ -27,6 +30,9 @@ const ICON_MAP: Record<DisposalCategory, string> = {
   dropoff: "\uD83D\uDCCD",
   hazardous: "\u26A0\uFE0F",
   unknown: "\u2753",
+  donate: "\u2764\uFE0F",
+  "yard-waste": "\uD83C\uDF3F",
+  deposit: "\uD83D\uDCB0",
 };
 
 function roundRect(

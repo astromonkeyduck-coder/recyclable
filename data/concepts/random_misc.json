@@ -1,0 +1,19 @@
+[
+  {
+    "id": "random_paper",
+    "name": "Random piece of paper",
+    "aliases": ["random piece of paper", "piece of paper", "scrap paper", "scrap of paper", "loose paper", "unknown paper", "misc paper", "paper scrap", "bit of paper"],
+    "examples": ["Piece of paper", "Scrap paper"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "likelyForms": ["scrap"] }
+  },
+  {
+    "id": "plastic_bag_of_candy",
+    "name": "Plastic bag with contents (candy/wrapper)",
+    "aliases": ["plastic bag of candy", "bag of candy", "candy in bag", "wrapper in bag", "snack in bag"],
+    "examples": ["Plastic bag of candy"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "likelyForms": ["bag"] },
+    "followup": [{ "id": "bag_or_wrapper", "question": "Are you disposing of the bag or the candy wrapper inside?", "options": ["The bag", "The wrapper", "Both"] }]
+  }
+]

@@ -17,6 +17,9 @@ const CATEGORY_STATIC_FALLBACKS: Record<string, string> = {
   dropoff: "/og/dropoff.png",
   hazardous: "/og/hazardous.png",
   unknown: "/og/unknown.png",
+  donate: "/og/dropoff.png",
+  "yard-waste": "/og/compost.png",
+  deposit: "/og/recycle.png",
 };
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {

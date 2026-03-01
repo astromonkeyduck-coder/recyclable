@@ -4,7 +4,10 @@ export type DisposalCategory =
   | "compost"
   | "dropoff"
   | "hazardous"
-  | "unknown";
+  | "unknown"
+  | "donate"
+  | "yard-waste"
+  | "deposit";
 
 export type Material = {
   id: string;

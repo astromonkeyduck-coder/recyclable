@@ -1,0 +1,66 @@
+[
+  {
+    "id": "electronics_general",
+    "name": "Electronics / E-waste",
+    "aliases": ["electronics", "e-waste", "e-waste", "electronic waste", "electronic device", "electronic item", "old electronics", "broken electronics", "e waste"],
+    "examples": ["Old electronics", "E-waste"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["electronic"] }
+  },
+  {
+    "id": "smartphone",
+    "name": "Smartphone / phone",
+    "aliases": ["smartphone", "phone", "cell phone", "mobile phone", "iphone", "android phone", "old phone", "broken phone", "cellphone", "mobile device"],
+    "examples": ["iPhone", "Android phone", "Old cell phone"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["electronic"] }
+  },
+  {
+    "id": "laptop",
+    "name": "Laptop / computer",
+    "aliases": ["laptop", "laptops", "computer", "notebook computer", "pc", "macbook", "old laptop", "broken laptop", "desktop computer", "tower"],
+    "examples": ["Laptop", "Old computer", "MacBook"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["electronic"] }
+  },
+  {
+    "id": "chargers_cables",
+    "name": "Chargers and cables",
+    "aliases": ["charger", "chargers", "cable", "cables", "usb cable", "phone charger", "power cord", "extension cord", "charging cable", "wire cable", "cord", "cords", "electrical cord"],
+    "examples": ["Phone charger", "USB cable", "Power cord"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["electronic"] }
+  },
+  {
+    "id": "headphones",
+    "name": "Headphones / earbuds",
+    "aliases": ["headphones", "headphone", "earbuds", "earphones", "ear buds", "bluetooth headphones", "wired headphones", "broken headphones", "old earbuds"],
+    "examples": ["Headphones", "Earbuds", "Bluetooth headphones"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["electronic"] }
+  },
+  {
+    "id": "light_bulb_led",
+    "name": "LED light bulb",
+    "aliases": ["led bulb", "led light", "led light bulb", "led", "light bulb led", "led lamp"],
+    "examples": ["LED bulb", "LED light"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["electronic"] }
+  },
+  {
+    "id": "light_bulb_cfl",
+    "name": "CFL / fluorescent bulb",
+    "aliases": ["cfl", "cfl bulb", "fluorescent bulb", "compact fluorescent", "spiral bulb", "fluorescent light", "cfl light", "mercury bulb"],
+    "examples": ["CFL bulb", "Fluorescent bulb"],
+    "defaultCategory": "hazardous",
+    "attributes": { "likelyMaterials": ["hazardous"] }
+  },
+  {
+    "id": "ink_cartridge",
+    "name": "Ink / toner cartridge",
+    "aliases": ["ink cartridge", "toner cartridge", "printer cartridge", "ink jet cartridge", "laser toner", "empty cartridge", "used ink cartridge", "toner"],
+    "examples": ["Ink cartridge", "Toner cartridge"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["electronic"] }
+  }
+]

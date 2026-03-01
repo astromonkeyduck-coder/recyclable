@@ -1,0 +1,50 @@
+[
+  {
+    "id": "clothing_wearable",
+    "name": "Clothing (wearable / donate)",
+    "aliases": ["clothing", "clothes", "shirt", "pants", "dress", "wearable clothing", "donate clothes", "old clothes good", "gently used", "textiles wearable", "t shirt", "jeans", "sweater", "jacket wearable"],
+    "examples": ["Old t-shirt", "Wearable jeans", "Donate clothing"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["textile"] }
+  },
+  {
+    "id": "clothing_worn_out",
+    "name": "Damaged or worn-out clothing",
+    "aliases": ["worn out clothing", "damaged clothing", "ripped clothes", "stained clothing", "unwearable", "textile waste", "old rags", "torn clothes", "clothing damaged", "worn out textiles"],
+    "examples": ["Ripped shirt", "Stained clothing", "Worn-out clothes"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["textile"], "likelyForms": ["scrap"] }
+  },
+  {
+    "id": "shoes_wearable",
+    "name": "Shoes (wearable / donate)",
+    "aliases": ["shoes", "shoe", "wearable shoes", "donate shoes", "sneakers", "athletic shoes", "old shoes good", "gently worn shoes", "pair of shoes", "footwear donate"],
+    "examples": ["Wearable sneakers", "Donate shoes"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["textile"] }
+  },
+  {
+    "id": "shoes_worn_out",
+    "name": "Worn-out or damaged shoes",
+    "aliases": ["worn out shoes", "damaged shoes", "broken shoes", "single shoe", "unwearable shoes", "shoes trash", "worn shoes", "shoes damaged", "one shoe"],
+    "examples": ["Worn-out sneakers", "Broken shoe", "Single shoe"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["textile"], "likelyForms": ["scrap"] }
+  },
+  {
+    "id": "backpack_bag",
+    "name": "Backpack / bag",
+    "aliases": ["backpack", "backpacks", "bag", "bags", "purse", "tote bag", "messenger bag", "duffel bag", "gym bag", "laptop bag", "donate backpack", "worn backpack", "textile bag"],
+    "examples": ["Backpack", "Tote bag", "Duffel bag"],
+    "defaultCategory": "dropoff",
+    "attributes": { "likelyMaterials": ["textile"] }
+  },
+  {
+    "id": "fabric_scrap",
+    "name": "Fabric scrap",
+    "aliases": ["fabric scrap", "fabric scraps", "cloth scrap", "textile scrap", "leftover fabric", "scrap fabric", "rag", "rags", "old fabric", "material scrap"],
+    "examples": ["Fabric scrap", "Rag", "Leftover cloth"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["textile"], "likelyForms": ["scrap"] }
+  }
+]

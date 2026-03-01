@@ -6,42 +6,75 @@ import { aiResolve } from "@/lib/openai/resolve";
 import { aiClassify, classifyOutputToMaterial } from "@/lib/openai/classify";
 import { blendConfidence, CONFIDENCE_THRESHOLD } from "@/lib/utils/confidence";
 import type { MatchResult } from "@/lib/providers/types";
+import { classify } from "@/lib/classify/engine";
+import { materialFromClassification } from "@/lib/classify/provider-bridge";
 
 const ResolveRequestSchema = z.object({
   providerId: z.string().min(1),
   guessedItemName: z.string(),
   labels: z.array(z.string()),
   visionConfidence: z.number().min(0).max(1).optional(),
+  followupAnswer: z.string().optional(),
 });
 
 /**
- * Three-tier intelligence pipeline:
+ * Four-tier intelligence pipeline:
  *
- * TIER 1: Deterministic matching (instant, no API call)
- *   - Exact name/alias match, fuzzy search, trigrams
- *   - If confidence >= 0.7, return immediately
- *
+ * TIER 0: Ontology classification (concept engine) — 300+ concepts, deterministic
+ * TIER 1: Deterministic matching on provider materials
  * TIER 2: AI-assisted material matching (fast GPT call)
- *   - Asks GPT to map the item to one of the provider's known materials
- *   - "Snickers wrapper" → maps to "plastic-bags" material
- *   - If GPT finds a match, use that material's rules
- *
- * TIER 3: AI smart classify (reasoning from scratch)
- *   - When the item doesn't match ANY known material
- *   - Asks GPT to reason about the item using the provider's rules
- *   - Generates a full synthetic result with instructions
- *   - "Candy wrapper" → GPT reasons it's flexible plastic → TRASH
+ * TIER 3: AI smart classify (reason from scratch)
  */
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { providerId, guessedItemName, labels, visionConfidence } =
+    const { providerId, guessedItemName, labels, visionConfidence, followupAnswer } =
       ResolveRequestSchema.parse(body);
 
     const provider = await loadProvider(providerId);
     const hasAI = !!process.env.OPENAI_API_KEY;
 
-    // === TIER 1: Deterministic matching ===
+    // === TIER 0: Ontology classification (concept engine) ===
+    const conceptResult = await classify({
+      query: guessedItemName,
+      labels: labels?.length ? labels : undefined,
+      followupAnswer,
+    });
+    if (
+      conceptResult.confidence >= 0.7 &&
+      conceptResult.conceptId &&
+      conceptResult.conceptName
+    ) {
+      const material = materialFromClassification(
+        provider,
+        conceptResult,
+        guessedItemName
+      );
+      const finalConfidence = blendConfidence(
+        conceptResult.confidence,
+        visionConfidence
+      );
+      const response: Record<string, unknown> = {
+        best: material,
+        matches: conceptResult.topMatches.slice(0, 5).map((m) => ({
+          material,
+          score: m.score,
+        })),
+        confidence: finalConfidence,
+        rationale: [
+          ...conceptResult.why,
+          `Matched via concept: ${conceptResult.conceptId}`,
+        ],
+        providerName: provider.displayName,
+      };
+      if (conceptResult.followupQuestion) {
+        response.followupQuestion = conceptResult.followupQuestion;
+      }
+      response.conceptId = conceptResult.conceptId;
+      return NextResponse.json(response);
+    }
+
+    // === TIER 1: Deterministic matching on provider materials ===
     const queries = [guessedItemName, ...labels].filter(Boolean);
     let bestResult: MatchResult = matchMaterial(provider, queries[0] || "");
 

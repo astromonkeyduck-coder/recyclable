@@ -1,0 +1,26 @@
+[
+  {
+    "id": "shipping_box",
+    "name": "Shipping box",
+    "aliases": ["shipping box", "shipping boxes", "amazon box", "delivery box", "cardboard box", "packaging box", "mailing box", "moving box", "brown box", "cardboard shipping"],
+    "examples": ["Amazon box", "Shipping box", "Delivery box"],
+    "defaultCategory": "recycle",
+    "attributes": { "likelyMaterials": ["paper"], "likelyForms": ["box"] }
+  },
+  {
+    "id": "packaging_peanuts",
+    "name": "Packing peanuts",
+    "aliases": ["packing peanuts", "packing peanut", "foam peanuts", "styrofoam peanuts", "packaging peanuts", "return ups store"],
+    "examples": ["Packing peanuts"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"] }
+  },
+  {
+    "id": "packing_materials",
+    "name": "Packing materials (mixed)",
+    "aliases": ["packing materials", "packing material", "shipping materials", "packaging materials", "bubble wrap", "air pillows", "packing supplies"],
+    "examples": ["Packing materials", "Shipping supplies"],
+    "defaultCategory": "trash",
+    "attributes": { "likelyMaterials": ["plastic"], "mixedMaterial": true }
+  }
+]

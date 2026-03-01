@@ -752,7 +752,7 @@
       "id": "yard-waste",
       "name": "Yard waste (leaves, grass, branches)",
       "aliases": ["yard waste", "leaves", "grass clippings", "branches", "twigs", "garden waste", "lawn clippings", "brush"],
-      "category": "compost",
+      "category": "yard-waste",
       "instructions": [
         "Place in BROWN bin (organics/compost)",
         "Large branches: cut to 4-foot lengths, tie in bundles, place next to the brown bin"
@@ -1138,7 +1138,7 @@
       "id": "shoes",
       "name": "Shoes",
       "aliases": ["shoes", "sneakers", "running shoes", "boots", "sandals", "flip flops", "old shoes", "heels"],
-      "category": "dropoff",
+      "category": "donate",
       "instructions": [
         "Place in a CLEAR bag with other textiles and set out on recycling day",
         "Or donate wearable shoes to Goodwill, Housing Works, or Salvation Army",

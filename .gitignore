@@ -43,6 +43,9 @@ yarn-error.log*
 /playwright-report/
 /blob-report/
 
+# feedback (report-wrong submissions)
+/data/feedback/
+
 # vercel
 .vercel
 

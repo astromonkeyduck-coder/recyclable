@@ -59,7 +59,7 @@ RULES:
 
 Return STRICT JSON:
 {
-  "category": "recycle" | "trash" | "compost" | "dropoff" | "hazardous" | "unknown",
+  "category": "recycle" | "trash" | "compost" | "dropoff" | "hazardous" | "unknown" | "donate" | "yard-waste" | "deposit",
   "confidence": 0.0-1.0 (how sure you are),
   "itemName": "clean display name for the item",
   "instructions": ["step 1", "step 2", ...],

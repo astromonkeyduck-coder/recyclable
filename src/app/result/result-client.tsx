@@ -11,6 +11,7 @@ import { RelatedItems } from "@/components/result/related-items";
 import { ProviderComparison } from "@/components/result/provider-comparison";
 import { SearchBar } from "@/components/search/search-bar";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { CategoryBadge } from "@/components/common/category-badge";
 import {
@@ -31,12 +32,20 @@ import { useVoice } from "@/components/voice/voice-context";
 import { useSearchHistory } from "@/hooks/use-search-history";
 import { useEcoStats } from "@/hooks/use-eco-stats";
 
+type FollowupQuestion = {
+  id: string;
+  question: string;
+  options?: string[];
+};
+
 type ResolveResult = {
   best: Material | null;
   matches: Array<{ material: Material; score: number }>;
   confidence: number;
   rationale: string[];
   providerName: string;
+  followupQuestion?: FollowupQuestion;
+  conceptId?: string | null;
 };
 
 function usePullToRefresh(onRefresh: () => void) {
@@ -132,6 +141,7 @@ function ResultContent() {
   const [selectedMaterial, setSelectedMaterial] = useState<Material | null>(
     null
   );
+  const [followupAnswer, setFollowupAnswer] = useState<string | null>(null);
   const { addToHistory } = useSearchHistory();
   const { logLookup } = useEcoStats();
 
@@ -143,7 +153,7 @@ function ResultContent() {
     isFetching,
     isPlaceholderData,
   } = useQuery<ResolveResult>({
-    queryKey: ["resolve", providerId, q],
+    queryKey: ["resolve", providerId, q, followupAnswer ?? ""],
     queryFn: async () => {
       const labels = searchParams.get("labels");
       const scanConfidence = searchParams.get("confidence");
@@ -158,6 +168,7 @@ function ResultContent() {
           visionConfidence: scanConfidence
             ? parseFloat(scanConfidence)
             : undefined,
+          followupAnswer: followupAnswer ?? undefined,
         }),
       });
 
@@ -180,6 +191,10 @@ function ResultContent() {
   const playedRef = useRef(false);
 
   const loggedRef = useRef(false);
+
+  useEffect(() => {
+    setFollowupAnswer(null);
+  }, [q]);
 
   useEffect(() => {
     if (data?.best && q) {
@@ -335,7 +350,31 @@ function ResultContent() {
         rationale={data.rationale}
         alternatives={data.matches}
         onSelectAlternative={setSelectedMaterial}
+        query={q}
+        providerId={providerId}
+        conceptId={data.conceptId ?? undefined}
+        materialId={activeMaterial?.id}
       />
+
+      {data.followupQuestion && !followupAnswer && (
+        <Card className="w-full max-w-lg border-amber-500/50 bg-amber-500/5">
+          <CardContent className="pt-6">
+            <p className="font-medium text-sm mb-2">{data.followupQuestion.question}</p>
+            <div className="flex flex-wrap gap-2">
+              {data.followupQuestion.options?.map((option) => (
+                <Button
+                  key={option}
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setFollowupAnswer(option)}
+                >
+                  {option}
+                </Button>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       <ProviderComparison
         itemName={activeMaterial.name}
