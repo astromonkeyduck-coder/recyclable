@@ -4,11 +4,8 @@ import { useState, useEffect } from "react";
 import { Download, WifiOff, Zap, Smartphone, Share } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
-
-interface BeforeInstallPromptEvent extends Event {
-  prompt(): Promise<void>;
-  userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
-}
+import { useVoice } from "@/components/voice/voice-context";
+import { useInstall } from "@/components/install/install-context";
 
 const VISIT_COUNT_KEY = "itr-visit-count";
 const PROMPT_DISMISSED_KEY = "itr-install-dismissed";
@@ -29,22 +26,13 @@ function getMobileOS(): "ios" | "android" | null {
 }
 
 export function InstallPrompt() {
-  const [deferredPrompt, setDeferredPrompt] =
-    useState<BeforeInstallPromptEvent | null>(null);
+  const { caption } = useVoice();
+  const { canInstallNative, promptInstall, isStandalone } = useInstall();
   const [showBanner, setShowBanner] = useState(false);
-  const [isStandalone, setIsStandalone] = useState(false);
   const [mobileOS, setMobileOS] = useState<"ios" | "android" | null>(null);
 
   useEffect(() => {
-    const standalone =
-      window.matchMedia("(display-mode: standalone)").matches ||
-      (window.navigator as unknown as { standalone?: boolean }).standalone ===
-        true;
-    if (standalone) {
-      setIsStandalone(true);
-      return;
-    }
-
+    if (isStandalone) return;
     setMobileOS(getMobileOS());
 
     const dismissed =
@@ -55,28 +43,15 @@ export function InstallPrompt() {
     const count =
       parseInt(localStorage?.getItem(VISIT_COUNT_KEY) ?? "0", 10) + 1;
     localStorage?.setItem(VISIT_COUNT_KEY, String(count));
+  }, [isStandalone]);
 
-    const handleBeforeInstall = (e: BeforeInstallPromptEvent) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-      const currentCount = parseInt(
-        localStorage?.getItem(VISIT_COUNT_KEY) ?? "0",
-        10
-      );
-      if (currentCount >= MIN_VISITS_BEFORE_PROMPT) setShowBanner(true);
-    };
-
-    window.addEventListener(
-      "beforeinstallprompt",
-      handleBeforeInstall as EventListener
-    );
-
-    return () =>
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstall as EventListener
-      );
-  }, []);
+  // When the browser offers native install (Android/desktop), show banner after enough visits
+  useEffect(() => {
+    if (isStandalone || !canInstallNative) return;
+    if (localStorage?.getItem(PROMPT_DISMISSED_KEY) === "1") return;
+    const count = parseInt(localStorage?.getItem(VISIT_COUNT_KEY) ?? "0", 10);
+    if (count >= MIN_VISITS_BEFORE_PROMPT) setShowBanner(true);
+  }, [isStandalone, canInstallNative]);
 
   // On mobile (especially iOS), beforeinstallprompt never fires — show manual "Add to Home Screen" after enough visits
   useEffect(() => {
@@ -92,12 +67,8 @@ export function InstallPrompt() {
   }, [isStandalone, showBanner]);
 
   const handleInstall = async () => {
-    if (deferredPrompt) {
-      await deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === "accepted") setShowBanner(false);
-      setDeferredPrompt(null);
-    }
+    await promptInstall();
+    setShowBanner(false);
   };
 
   const handleDismiss = () => {
@@ -107,19 +78,21 @@ export function InstallPrompt() {
 
   const isMobile = mobileOS !== null;
   if (!showBanner || isStandalone) return null;
+  // Don't show while voice is playing so caption and install prompt don't overlap
+  if (caption != null) return null;
   // Desktop: only show if we have the native install prompt (beforeinstallprompt fired)
-  if (!isMobile && !deferredPrompt) return null;
+  if (!isMobile && !canInstallNative) return null;
   // Mobile: show either native prompt (Android) or manual instructions (iOS / Android without event)
-  if (isMobile && !deferredPrompt && !mobileOS) return null;
+  if (isMobile && !canInstallNative && !mobileOS) return null;
 
-  const showManualInstructions = isMobile && !deferredPrompt;
+  const showManualInstructions = isMobile && !canInstallNative;
 
   return (
     <AnimatePresence>
       <motion.div
         role="dialog"
         aria-label="Add to home screen"
-        className="fixed bottom-4 left-4 right-4 z-40 mx-auto max-w-lg rounded-xl border bg-background/95 p-5 shadow-lg backdrop-blur sm:left-auto sm:right-4"
+        className="fixed bottom-4 left-4 right-4 z-30 mx-auto max-w-lg rounded-xl border bg-background/95 p-5 shadow-lg backdrop-blur sm:left-auto sm:right-4"
         initial={{ opacity: 0, y: 20, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 20, scale: 0.95 }}

@@ -26,7 +26,10 @@ async function fetchAndPlayText(options: {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),
     });
-    if (!res.ok) return;
+    if (!res.ok) {
+      clearCaption();
+      return;
+    }
     const blob = await res.blob();
     const url = URL.createObjectURL(blob);
     if (currentUrlRef.current) {
@@ -127,7 +130,10 @@ export function useVoicePlayer(options: {
             }),
           });
 
-          if (!res.ok) return;
+          if (!res.ok) {
+            clearCaption();
+            return;
+          }
 
           const blob = await res.blob();
           const url = URL.createObjectURL(blob);

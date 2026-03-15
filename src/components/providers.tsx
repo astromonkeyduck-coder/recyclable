@@ -9,6 +9,7 @@ import { MusicProvider } from "@/components/music/music-context";
 import { SfxProvider } from "@/components/sfx/sfx-context";
 import { VoiceProvider } from "@/components/voice/voice-context";
 import { VoiceCaptionFixed } from "@/components/voice/voice-caption";
+import { InstallProvider } from "@/components/install/install-context";
 import { WelcomeOnFirstTouch } from "@/components/common/welcome-on-first-touch";
 
 export function AppProviders({ children }: { children: ReactNode }) {
@@ -28,16 +29,18 @@ export function AppProviders({ children }: { children: ReactNode }) {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         <MotionConfig reducedMotion="user">
-          <MusicProvider>
-            <SfxProvider>
-              <VoiceProvider>
-                {children}
-                <WelcomeOnFirstTouch />
-                <VoiceCaptionFixed />
-                <Toaster position="bottom-center" />
-              </VoiceProvider>
-            </SfxProvider>
-          </MusicProvider>
+          <InstallProvider>
+            <MusicProvider>
+              <SfxProvider>
+                <VoiceProvider>
+                  {children}
+                  <WelcomeOnFirstTouch />
+                  <VoiceCaptionFixed />
+                  <Toaster position="bottom-center" />
+                </VoiceProvider>
+              </SfxProvider>
+            </MusicProvider>
+          </InstallProvider>
         </MotionConfig>
       </ThemeProvider>
     </QueryClientProvider>
