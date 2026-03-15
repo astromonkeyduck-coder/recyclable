@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Download, WifiOff, Zap, Smartphone } from "lucide-react";
+import { Download, WifiOff, Zap, Smartphone, Share } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -20,11 +20,20 @@ const BENEFITS = [
   { icon: Smartphone, text: "Home screen shortcut" },
 ];
 
+function getMobileOS(): "ios" | "android" | null {
+  if (typeof navigator === "undefined") return null;
+  const ua = navigator.userAgent;
+  if (/iPhone|iPad|iPod/i.test(ua)) return "ios";
+  if (/Android/i.test(ua)) return "android";
+  return null;
+}
+
 export function InstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] =
     useState<BeforeInstallPromptEvent | null>(null);
   const [showBanner, setShowBanner] = useState(false);
   const [isStandalone, setIsStandalone] = useState(false);
+  const [mobileOS, setMobileOS] = useState<"ios" | "android" | null>(null);
 
   useEffect(() => {
     const standalone =
@@ -35,6 +44,8 @@ export function InstallPrompt() {
       setIsStandalone(true);
       return;
     }
+
+    setMobileOS(getMobileOS());
 
     const dismissed =
       typeof localStorage !== "undefined" &&
@@ -67,12 +78,26 @@ export function InstallPrompt() {
       );
   }, []);
 
+  // On mobile (especially iOS), beforeinstallprompt never fires — show manual "Add to Home Screen" after enough visits
+  useEffect(() => {
+    if (isStandalone || showBanner) return;
+    const os = getMobileOS();
+    if (!os) return;
+    const dismissed =
+      typeof localStorage !== "undefined" &&
+      localStorage.getItem(PROMPT_DISMISSED_KEY) === "1";
+    if (dismissed) return;
+    const count = parseInt(localStorage?.getItem(VISIT_COUNT_KEY) ?? "0", 10);
+    if (count >= MIN_VISITS_BEFORE_PROMPT) setShowBanner(true);
+  }, [isStandalone, showBanner]);
+
   const handleInstall = async () => {
-    if (!deferredPrompt) return;
-    await deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-    if (outcome === "accepted") setShowBanner(false);
-    setDeferredPrompt(null);
+    if (deferredPrompt) {
+      await deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === "accepted") setShowBanner(false);
+      setDeferredPrompt(null);
+    }
   };
 
   const handleDismiss = () => {
@@ -80,12 +105,14 @@ export function InstallPrompt() {
     localStorage?.setItem(PROMPT_DISMISSED_KEY, "1");
   };
 
-  if (!showBanner || isStandalone || !deferredPrompt) return null;
+  const isMobile = mobileOS !== null;
+  if (!showBanner || isStandalone) return null;
+  // Desktop: only show if we have the native install prompt (beforeinstallprompt fired)
+  if (!isMobile && !deferredPrompt) return null;
+  // Mobile: show either native prompt (Android) or manual instructions (iOS / Android without event)
+  if (isMobile && !deferredPrompt && !mobileOS) return null;
 
-  const isMobile =
-    typeof window !== "undefined" &&
-    /Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent);
-  if (!isMobile) return null;
+  const showManualInstructions = isMobile && !deferredPrompt;
 
   return (
     <AnimatePresence>
@@ -101,43 +128,69 @@ export function InstallPrompt() {
         <div className="flex flex-col gap-4">
           <div>
             <p className="text-sm font-semibold">
-              Add to Home Screen
+              {showManualInstructions ? "Install this app" : "Add to Home Screen"}
             </p>
             <p className="mt-1 text-xs text-muted-foreground">
-              Get the full app experience
+              {showManualInstructions
+                ? "Add a shortcut to your home screen for quick access"
+                : "Get the full app experience"}
             </p>
           </div>
 
-          <div className="flex flex-col gap-2">
-            {BENEFITS.map(({ icon: Icon, text }) => (
-              <div
-                key={text}
-                className="flex items-center gap-2.5 text-xs text-muted-foreground"
-              >
-                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 dark:bg-green-950">
-                  <Icon className="h-3 w-3 text-green-600 dark:text-green-400" />
+          {showManualInstructions ? (
+            <div className="rounded-lg bg-muted/60 p-3 text-xs text-muted-foreground">
+              {mobileOS === "ios" ? (
+                <>
+                  <p className="font-medium text-foreground mb-1.5 flex items-center gap-1.5">
+                    <Share className="h-3.5 w-3.5" />
+                    On iPhone / iPad
+                  </p>
+                  <p>Tap the <strong>Share</strong> button at the bottom of Safari (square with arrow), then scroll and tap <strong>“Add to Home Screen”</strong>.</p>
+                </>
+              ) : (
+                <>
+                  <p className="font-medium text-foreground mb-1.5 flex items-center gap-1.5">
+                    <Share className="h-3.5 w-3.5" />
+                    On Android
+                  </p>
+                  <p>Tap the <strong>menu</strong> (⋮) in the browser, then choose <strong>“Add to Home screen”</strong> or <strong>“Install app”</strong>.</p>
+                </>
+              )}
+            </div>
+          ) : (
+            <div className="flex flex-col gap-2">
+              {BENEFITS.map(({ icon: Icon, text }) => (
+                <div
+                  key={text}
+                  className="flex items-center gap-2.5 text-xs text-muted-foreground"
+                >
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 dark:bg-green-950">
+                    <Icon className="h-3 w-3 text-green-600 dark:text-green-400" />
+                  </div>
+                  {text}
                 </div>
-                {text}
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
 
           <div className="flex items-center gap-3">
-            <Button
-              size="sm"
-              className="gap-1.5 flex-1"
-              onClick={handleInstall}
-            >
-              <Download className="h-3.5 w-3.5" />
-              Install
-            </Button>
+            {!showManualInstructions && (
+              <Button
+                size="sm"
+                className="gap-1.5 flex-1"
+                onClick={handleInstall}
+              >
+                <Download className="h-3.5 w-3.5" />
+                Install
+              </Button>
+            )}
             <button
               type="button"
               onClick={handleDismiss}
-              className="text-xs text-muted-foreground hover:text-foreground px-2 py-1"
+              className={`text-xs text-muted-foreground hover:text-foreground px-2 py-1 ${showManualInstructions ? "flex-1 text-center" : ""}`}
               aria-label="Dismiss install prompt"
             >
-              Not now
+              {showManualInstructions ? "Got it" : "Not now"}
             </button>
           </div>
         </div>
