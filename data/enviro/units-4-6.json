@@ -1,0 +1,2107 @@
+[
+  {
+    "id": "unit4_plate_tectonics",
+    "unit": "Unit 4",
+    "topicNumber": "4.1",
+    "topicTitle": "Plate Tectonics",
+    "cedLearningObjective": "ERT-4.A",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cross_section", "map"],
+    "mustKnowConcept": "Earth's lithosphere is divided into tectonic plates that move due to convection currents in the mantle, creating earthquakes, volcanoes, and mountain ranges at plate boundaries.",
+    "diagramDescription": "Cross-section showing divergent, convergent, and transform plate boundaries with mantle convection cells driving plate movement.",
+    "specificExamples": [
+      "The Mid-Atlantic Ridge is a divergent boundary where the North American and Eurasian plates move apart at ~2.5 cm/year",
+      "The Cascadia Subduction Zone off the Pacific Northwest coast is a convergent boundary where the Juan de Fuca plate subducts beneath the North American plate",
+      "The San Andreas Fault in California is a transform boundary where the Pacific and North American plates slide past each other",
+      "The Himalayan mountain range formed from the collision of the Indian and Eurasian plates beginning ~50 million years ago"
+    ],
+    "causes": [
+      "Convection currents in the asthenosphere driven by radioactive decay and residual heat from Earth's formation",
+      "Ridge push from elevated mid-ocean ridges",
+      "Slab pull from subducting oceanic lithosphere"
+    ],
+    "effects": [
+      "Earthquakes along all three boundary types",
+      "Volcanic activity concentrated along convergent boundaries and hotspots",
+      "Formation of ocean basins at divergent boundaries",
+      "Mountain building (orogeny) at convergent continental-continental boundaries"
+    ],
+    "humanImpacts": [
+      "Geothermal energy availability near plate boundaries (e.g., Iceland, New Zealand)",
+      "Natural disaster risk for populations near active fault zones",
+      "Mineral and ore deposits concentrated at subduction zones"
+    ],
+    "solutions": [],
+    "graphConnection": {
+      "graphType": "map/scatter",
+      "xAxis": "Longitude",
+      "yAxis": "Latitude",
+      "trend": "Earthquake and volcano epicenters cluster along plate boundaries, forming the Ring of Fire around the Pacific Plate"
+    },
+    "frqUse": "Explain how tectonic processes create soil parent material and influence the distribution of geothermal energy resources.",
+    "mcqTrap": "Students confuse divergent boundaries (plates moving apart, creating new crust) with convergent boundaries (plates colliding, destroying crust through subduction).",
+    "commonMistake": "Assuming all plate boundaries produce volcanoes — transform boundaries like the San Andreas Fault produce earthquakes but not volcanic activity.",
+    "modelSentence": "Convection currents in the asthenosphere drive tectonic plate movement, producing earthquakes, volcanism, and mountain building at plate boundaries, which in turn influence the distribution of geothermal energy resources and soil parent material.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit4_soil_formation",
+    "unit": "Unit 4",
+    "topicNumber": "4.2",
+    "topicTitle": "Soil Formation and Erosion",
+    "cedLearningObjective": "ERT-4.B",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cross_section", "process_diagram"],
+    "mustKnowConcept": "Soil forms through physical and chemical weathering of parent rock material and accumulation of organic matter over hundreds to thousands of years, and is organized into distinct horizons (O, A, E, B, C, R).",
+    "diagramDescription": "Cross-section of soil profile showing O-horizon (organic litter), A-horizon (topsoil with humus), E-horizon (zone of leaching), B-horizon (subsoil with accumulated minerals), C-horizon (weathered parent material), and R-horizon (bedrock).",
+    "specificExamples": [
+      "The O-horizon in a temperate deciduous forest consists of decomposing leaf litter that contributes humus to the A-horizon below",
+      "Freeze-thaw cycles in alpine environments physically break apart granite into soil parent material over centuries",
+      "The Dust Bowl of the 1930s resulted from topsoil erosion after native prairie grasses were removed for farming on the Great Plains",
+      "Laterite soils in tropical rainforests have thin O- and A-horizons because rapid decomposition and heavy rainfall leach nutrients quickly"
+    ],
+    "causes": [
+      "Physical weathering: freeze-thaw, root growth, abrasion by wind and water",
+      "Chemical weathering: oxidation, hydrolysis, carbonation of parent rock",
+      "Biological activity: decomposition by fungi and bacteria, burrowing by earthworms"
+    ],
+    "effects": [
+      "Fertile topsoil (A-horizon) supports plant growth and agricultural productivity",
+      "Erosion removes topsoil 10–100x faster than it forms when land is mismanaged",
+      "Soil acts as a carbon sink storing ~2,500 Gt of carbon globally"
+    ],
+    "humanImpacts": [
+      "Deforestation and overgrazing accelerate erosion by removing vegetative cover",
+      "Tilling disrupts soil structure and exposes topsoil to wind and water erosion",
+      "Urbanization seals soil under impervious surfaces, eliminating its ecological functions"
+    ],
+    "solutions": [
+      "No-till farming preserves soil structure and reduces erosion",
+      "Contour plowing follows natural topographic contours to slow runoff",
+      "Terracing on steep slopes reduces slope length and water velocity",
+      "Cover crops protect soil between growing seasons and add organic matter"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Land use type (forest, grassland, cropland, bare soil)",
+      "yAxis": "Soil erosion rate (tons/hectare/year)",
+      "trend": "Erosion rates increase dramatically from forested land (<1 t/ha/yr) to bare soil (>50 t/ha/yr)"
+    },
+    "frqUse": "Describe how agricultural practices affect soil formation and erosion rates, and propose solutions to maintain soil health.",
+    "mcqTrap": "Students confuse the A-horizon (topsoil, mineral soil mixed with humus) with the O-horizon (purely organic surface litter layer).",
+    "commonMistake": "Thinking soil forms quickly — it takes 500–1,000 years to form one inch of topsoil, making it effectively nonrenewable on human timescales.",
+    "modelSentence": "Soil forms slowly through physical and chemical weathering of parent rock and accumulation of organic matter into distinct horizons, but human activities such as deforestation and conventional tillage can erode topsoil far faster than it forms, threatening agricultural productivity.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit4_soil_composition",
+    "unit": "Unit 4",
+    "topicNumber": "4.3",
+    "topicTitle": "Soil Composition and Properties",
+    "cedLearningObjective": "ERT-4.C",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "triangle_diagram"],
+    "mustKnowConcept": "Soil is composed of minerals (~45%), water (~25%), air (~25%), and organic matter (~5%), and its texture is determined by the relative proportions of sand, silt, and clay particles.",
+    "diagramDescription": "Soil texture triangle showing how percentages of sand, silt, and clay determine soil classification (sandy, loamy, clay, etc.), plus a comparison of particle size and water-holding capacity.",
+    "specificExamples": [
+      "Loam soil (roughly equal parts sand, silt, and clay) is ideal for agriculture because it balances drainage, water retention, and nutrient-holding capacity",
+      "Clay soils have high cation exchange capacity (CEC) and hold nutrients well but drain poorly, becoming waterlogged",
+      "Sandy soils in coastal areas drain rapidly and have low nutrient retention, requiring frequent fertilization for agriculture",
+      "The dark color of mollisol soils in the Great Plains indicates high organic matter content and fertility"
+    ],
+    "causes": [
+      "Parent material determines initial mineral composition",
+      "Climate influences weathering rate and organic matter accumulation",
+      "Organisms contribute organic matter and mix soil layers",
+      "Topography affects drainage, erosion, and deposition",
+      "Time allows soil development processes to progress"
+    ],
+    "effects": [
+      "Soil texture controls water infiltration, retention, and drainage rates",
+      "Cation exchange capacity determines nutrient availability to plants",
+      "Soil pH affects which nutrients are bioavailable (most nutrients available at pH 6.0–7.5)",
+      "Porosity and permeability influence groundwater recharge"
+    ],
+    "humanImpacts": [
+      "Excessive fertilizer application can lower soil pH and disrupt microbial communities",
+      "Compaction from heavy machinery reduces porosity and infiltration",
+      "Salinization from improper irrigation degrades soil structure"
+    ],
+    "solutions": [
+      "Adding organic matter (compost) improves soil structure in both sandy and clay soils",
+      "Liming acidic soils raises pH to optimal range for nutrient availability",
+      "Crop rotation maintains diverse nutrient demands and soil biology"
+    ],
+    "graphConnection": {
+      "graphType": "triangle diagram",
+      "xAxis": "% Sand",
+      "yAxis": "% Clay / % Silt",
+      "trend": "Soil classification (loam, sandy clay, silty clay, etc.) is determined by the intersection of sand, silt, and clay percentages on the texture triangle"
+    },
+    "frqUse": "Explain how soil composition affects agricultural productivity and water filtration capacity.",
+    "mcqTrap": "Students often think clay is the best soil for agriculture because it holds nutrients, forgetting that it also retains too much water and has poor aeration — loam is the ideal agricultural soil.",
+    "commonMistake": "Confusing soil texture (permanent, based on particle sizes) with soil structure (changeable, refers to how particles clump into aggregates).",
+    "modelSentence": "Soil composition — determined by the proportions of sand, silt, clay, organic matter, water, and air — controls water retention, nutrient availability, and drainage, making loam the most agriculturally productive soil type due to its balanced properties.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit4_atmosphere",
+    "unit": "Unit 4",
+    "topicNumber": "4.4",
+    "topicTitle": "Earth's Atmosphere",
+    "cedLearningObjective": "ERT-4.D",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cross_section", "layered_diagram"],
+    "mustKnowConcept": "Earth's atmosphere is composed primarily of nitrogen (78%) and oxygen (21%), organized into layers (troposphere, stratosphere, mesosphere, thermosphere) with distinct temperature profiles, and the troposphere contains all weather and most greenhouse gases.",
+    "diagramDescription": "Layered diagram of atmosphere showing troposphere (0–12 km, temperature decreases with altitude), stratosphere (12–50 km, contains ozone layer, temperature increases), mesosphere, and thermosphere with temperature profile curve.",
+    "specificExamples": [
+      "The troposphere extends ~12 km and contains 75% of atmospheric mass and virtually all water vapor and weather phenomena",
+      "The ozone layer in the stratosphere (15–35 km) absorbs 97–99% of incoming UV-B and UV-C radiation",
+      "Carbon dioxide at ~424 ppm (2024) is the most significant anthropogenic greenhouse gas by radiative forcing",
+      "Temperature inversions in the troposphere trap pollutants near the surface, worsening smog events like those in Los Angeles and Beijing"
+    ],
+    "causes": [
+      "Atmospheric composition was shaped by volcanic outgassing, photosynthesis, and biological processes over billions of years",
+      "Greenhouse gases (CO₂, CH₄, N₂O, H₂O) trap outgoing infrared radiation via the greenhouse effect",
+      "Solar radiation drives atmospheric circulation and weather patterns"
+    ],
+    "effects": [
+      "The natural greenhouse effect maintains Earth's average temperature at ~15°C rather than –18°C",
+      "Ozone layer protects life from harmful UV radiation",
+      "Atmospheric circulation redistributes heat from equator to poles"
+    ],
+    "humanImpacts": [
+      "Burning fossil fuels increases CO₂ and enhances the greenhouse effect",
+      "CFCs (chlorofluorocarbons) depleted stratospheric ozone before the Montreal Protocol",
+      "Particulate emissions create temperature inversions and respiratory health hazards"
+    ],
+    "solutions": [
+      "Montreal Protocol (1987) phased out CFCs, allowing ozone recovery",
+      "Reducing fossil fuel combustion decreases greenhouse gas emissions",
+      "Air quality regulations (Clean Air Act) limit criteria pollutant emissions"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Altitude (km)",
+      "yAxis": "Temperature (°C)",
+      "trend": "Temperature decreases through the troposphere, increases through the stratosphere (due to ozone absorbing UV), decreases through the mesosphere, then increases in the thermosphere"
+    },
+    "frqUse": "Describe the structure of Earth's atmosphere and explain how human activities have altered atmospheric composition.",
+    "mcqTrap": "Students confuse the troposphere (where weather occurs and temperature decreases with altitude) with the stratosphere (where ozone is located and temperature increases with altitude).",
+    "commonMistake": "Thinking the ozone layer is in the troposphere — it is in the stratosphere, and ground-level ozone is actually a harmful pollutant.",
+    "modelSentence": "Earth's atmosphere is layered by temperature profile, with the troposphere containing all weather and most greenhouse gases, while the stratospheric ozone layer absorbs UV radiation; human emissions of CO₂ and formerly CFCs have altered atmospheric composition with global consequences.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit4_global_wind_patterns",
+    "unit": "Unit 4",
+    "topicNumber": "4.5",
+    "topicTitle": "Global Wind Patterns",
+    "cedLearningObjective": "ERT-4.E",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["map", "circulation_diagram"],
+    "mustKnowConcept": "Unequal solar heating of Earth's surface creates three convection cells per hemisphere (Hadley, Ferrel, Polar) that, combined with the Coriolis effect, produce prevailing wind patterns including trade winds, westerlies, and polar easterlies.",
+    "diagramDescription": "Global circulation diagram showing three convection cells per hemisphere (Hadley 0–30°, Ferrel 30–60°, Polar 60–90°) with surface wind directions deflected by the Coriolis effect, and the ITCZ at the equator.",
+    "specificExamples": [
+      "The Hadley cell rises at the ITCZ (Intertropical Convergence Zone) near the equator, producing tropical rainforests, and descends at ~30° latitude, creating deserts like the Sahara and Sonoran",
+      "The Coriolis effect deflects winds to the right in the Northern Hemisphere and to the left in the Southern Hemisphere",
+      "Trade winds (NE in Northern Hemisphere, SE in Southern Hemisphere) historically powered sailing ships across the Atlantic",
+      "The Ferrel cell produces prevailing westerlies at 30–60° latitude, which is why weather systems in the U.S. generally move from west to east"
+    ],
+    "causes": [
+      "Differential heating: equator receives more direct solar radiation than poles",
+      "Convection cells form as warm air rises at the equator and sinks at the poles",
+      "The Coriolis effect from Earth's rotation deflects moving air masses"
+    ],
+    "effects": [
+      "Deserts form at ~30° N/S latitude where dry air descends in Hadley cells",
+      "Tropical rainforests occur near the equator where warm, moist air rises in the ITCZ",
+      "Prevailing winds drive ocean surface currents and influence precipitation patterns"
+    ],
+    "humanImpacts": [
+      "Wind patterns distribute air pollutants across continents and oceans",
+      "Wind farms are sited in areas with consistent prevailing winds",
+      "Agricultural regions depend on wind-driven precipitation patterns"
+    ],
+    "solutions": [],
+    "graphConnection": {
+      "graphType": "circulation diagram",
+      "xAxis": "Latitude (0° to 90°)",
+      "yAxis": "Altitude / Wind direction",
+      "trend": "Three distinct convection cells per hemisphere with alternating surface wind directions: easterly trade winds (0–30°), westerlies (30–60°), polar easterlies (60–90°)"
+    },
+    "frqUse": "Explain how global wind patterns influence the distribution of biomes and the transport of air pollutants.",
+    "mcqTrap": "Students confuse trade winds (blow from east to west toward the equator) with westerlies (blow from west to east at mid-latitudes) — remember winds are named for the direction they blow FROM.",
+    "commonMistake": "Forgetting that winds are named for the direction they come from — westerlies blow FROM the west (toward the east), not toward the west.",
+    "modelSentence": "Unequal solar heating creates Hadley, Ferrel, and Polar convection cells, and the Coriolis effect deflects surface winds to produce trade winds, westerlies, and polar easterlies, which in turn drive ocean currents and determine precipitation patterns that shape global biomes.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit4_watersheds",
+    "unit": "Unit 4",
+    "topicNumber": "4.6",
+    "topicTitle": "Watersheds",
+    "cedLearningObjective": "ERT-4.F",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["map", "cross_section"],
+    "mustKnowConcept": "A watershed is the area of land where all precipitation drains into a common body of water, separated from adjacent watersheds by ridgelines (drainage divides), and human activities within a watershed directly affect downstream water quality.",
+    "diagramDescription": "Topographic map showing a watershed boundary along ridgelines, with tributaries flowing into a main river, and labels showing how land uses (agriculture, urban, forest) within the watershed affect downstream water quality.",
+    "specificExamples": [
+      "The Chesapeake Bay watershed spans 64,000 square miles across six states, and agricultural runoff from Pennsylvania farms contributes to dead zones in the bay",
+      "The Mississippi River watershed drains 41% of the continental U.S. and carries fertilizer runoff that creates a hypoxic dead zone in the Gulf of Mexico",
+      "Impervious surfaces in urban watersheds increase stormwater runoff volume and velocity, causing flash flooding and erosion",
+      "Riparian buffer zones along streams filter sediment and nutrients from surface runoff before it reaches waterways"
+    ],
+    "causes": [
+      "Topography determines watershed boundaries along ridgelines",
+      "Precipitation and snowmelt provide water input to watersheds",
+      "Gravity drives surface water flow from higher to lower elevations"
+    ],
+    "effects": [
+      "All land uses within a watershed cumulatively affect downstream water quality",
+      "Wetlands within watersheds filter pollutants, reduce flooding, and recharge groundwater",
+      "Deforestation in a watershed increases runoff, erosion, and sedimentation downstream"
+    ],
+    "humanImpacts": [
+      "Agricultural runoff introduces excess nitrogen and phosphorus causing eutrophication",
+      "Urban development increases impervious surface cover, reducing infiltration and increasing runoff",
+      "Point source pollution from factories and wastewater treatment plants degrades downstream water"
+    ],
+    "solutions": [
+      "Riparian buffer zones filter runoff before it enters streams",
+      "Permeable pavement and rain gardens reduce urban stormwater runoff",
+      "Watershed management plans coordinate land use across the entire drainage area",
+      "Wetland restoration provides natural water filtration and flood control"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "% Impervious surface cover in watershed",
+      "yAxis": "Stream water quality index",
+      "trend": "Water quality declines sharply when impervious surface cover exceeds 10% of the watershed area"
+    },
+    "frqUse": "Describe how land use changes within a watershed affect downstream water quality and propose solutions to reduce nonpoint source pollution.",
+    "mcqTrap": "Students forget that nonpoint source pollution (agricultural runoff, urban stormwater) is harder to regulate than point source pollution (factory discharge pipes) because it comes from diffuse areas across the watershed.",
+    "commonMistake": "Thinking watershed boundaries follow political boundaries — watersheds are defined by topography, not state or county lines.",
+    "modelSentence": "A watershed encompasses all land draining to a common water body, so nonpoint source pollution from agriculture and impervious urban surfaces within the watershed cumulatively degrades downstream water quality, which can be mitigated by riparian buffers and watershed-scale management.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit4_solar_radiation_seasons",
+    "unit": "Unit 4",
+    "topicNumber": "4.7",
+    "topicTitle": "Solar Radiation and Earth's Seasons",
+    "cedLearningObjective": "ERT-4.G",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "low",
+    "visualType": ["diagram", "comparison"],
+    "mustKnowConcept": "Earth's 23.5° axial tilt causes seasonal variation in solar radiation intensity and day length, which drives temperature differences, growing seasons, and biome distribution across latitudes.",
+    "diagramDescription": "Diagram showing Earth at four orbital positions (solstices and equinoxes) with axial tilt causing different angles of solar incidence at various latitudes, illustrating why seasons are opposite in the Northern and Southern Hemispheres.",
+    "specificExamples": [
+      "During the June solstice, the Northern Hemisphere is tilted toward the sun, receiving more direct radiation and experiencing summer while the Southern Hemisphere has winter",
+      "The equator receives relatively consistent solar radiation year-round, supporting tropical rainforest biomes with no distinct seasons",
+      "At 60°N latitude (Anchorage, Alaska), summer days can exceed 19 hours of daylight while winter days have fewer than 6 hours",
+      "The angle of incidence affects energy per unit area: solar radiation at the equator strikes at ~90° (concentrated) vs. at the poles at a low angle (spread over a larger area)"
+    ],
+    "causes": [
+      "Earth's 23.5° axial tilt relative to its orbital plane",
+      "Earth's elliptical orbit around the sun (minor effect compared to tilt)",
+      "Angle of solar incidence varies with latitude and season"
+    ],
+    "effects": [
+      "Seasonal temperature variation increases with latitude",
+      "Growing seasons are shorter at higher latitudes",
+      "Solar energy potential varies by latitude and season"
+    ],
+    "humanImpacts": [
+      "Agricultural calendars and crop selection depend on seasonal solar radiation patterns",
+      "Solar energy installations must account for seasonal variation in sun angle and day length",
+      "Climate change is altering traditional growing seasons and shifting phenological events"
+    ],
+    "solutions": [],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Month of the year",
+      "yAxis": "Solar radiation intensity (W/m²)",
+      "trend": "Solar radiation at high latitudes shows extreme seasonal variation (high in summer, very low in winter), while equatorial regions remain relatively constant year-round"
+    },
+    "frqUse": "Explain how Earth's axial tilt creates seasonal variations in solar energy and how this affects biome distribution.",
+    "mcqTrap": "Students often think seasons are caused by Earth's distance from the sun (closer = summer), when in fact seasons are caused by the 23.5° axial tilt affecting the angle of solar incidence.",
+    "commonMistake": "Believing Earth is closer to the sun during Northern Hemisphere summer — Earth is actually closest to the sun (perihelion) in January during Northern Hemisphere winter.",
+    "modelSentence": "Earth's 23.5° axial tilt causes seasonal variation in the angle and duration of solar radiation at different latitudes, driving temperature differences that determine growing seasons, biome distribution, and the feasibility of solar energy generation.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit4_earth_geography_climate",
+    "unit": "Unit 4",
+    "topicNumber": "4.8",
+    "topicTitle": "Earth's Geography and Climate",
+    "cedLearningObjective": "ERT-4.H",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cross_section", "map"],
+    "mustKnowConcept": "Geographic features including latitude, altitude, ocean currents, and rain shadows interact to determine regional climates and biome distribution across Earth's surface.",
+    "diagramDescription": "Cross-section of a mountain range showing the rain shadow effect: moist air rises on the windward side, cools, condenses, and precipitates, then dry air descends on the leeward side creating arid conditions.",
+    "specificExamples": [
+      "The rain shadow east of the Cascade Range creates the arid climate of eastern Washington and Oregon, while the windward western slopes receive >200 cm of rain annually",
+      "The Gulf Stream carries warm water from the Gulf of Mexico northeast, giving Western Europe (e.g., London at 51°N) a milder climate than Labrador, Canada at the same latitude",
+      "Temperature decreases ~6.5°C per 1,000 m of elevation gain (environmental lapse rate), which is why Mount Kilimanjaro at the equator has glaciers at its summit",
+      "Coastal areas have moderate temperatures due to the high specific heat of water, while interior continental areas experience temperature extremes"
+    ],
+    "causes": [
+      "Latitude determines baseline solar radiation and temperature",
+      "Altitude decreases temperature via the environmental lapse rate",
+      "Ocean currents redistribute heat globally",
+      "Rain shadow effect creates arid conditions on leeward sides of mountains",
+      "Proximity to large water bodies moderates temperature through maritime effect"
+    ],
+    "effects": [
+      "Biome distribution follows patterns of temperature and precipitation determined by geography",
+      "Rain shadow deserts form on leeward sides of mountain ranges",
+      "Coastal upwelling zones are among the most productive marine ecosystems"
+    ],
+    "humanImpacts": [
+      "Agriculture and settlement patterns follow climate zones shaped by geography",
+      "Climate change is altering established geographic-climate relationships",
+      "Deforestation can alter local precipitation patterns through reduced evapotranspiration"
+    ],
+    "solutions": [],
+    "graphConnection": {
+      "graphType": "scatter plot",
+      "xAxis": "Mean annual temperature (°C)",
+      "yAxis": "Mean annual precipitation (cm)",
+      "trend": "Different biomes cluster in distinct temperature-precipitation zones on a Whittaker biome diagram"
+    },
+    "frqUse": "Explain how geographic factors such as the rain shadow effect and ocean currents influence regional climate and biome distribution.",
+    "mcqTrap": "Students confuse the windward side (wet, receives precipitation) with the leeward side (dry, rain shadow) of a mountain range.",
+    "commonMistake": "Assuming latitude alone determines climate — altitude, ocean currents, and proximity to water bodies significantly modify climate at any given latitude.",
+    "modelSentence": "Regional climates result from the interaction of latitude, altitude, ocean currents, the rain shadow effect, and proximity to water bodies, which together determine temperature and precipitation patterns that define biome distribution.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit4_el_nino_la_nina",
+    "unit": "Unit 4",
+    "topicNumber": "4.9",
+    "topicTitle": "El Niño and La Niña",
+    "cedLearningObjective": "ERT-4.I",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "map"],
+    "mustKnowConcept": "El Niño-Southern Oscillation (ENSO) is a periodic climate pattern in the tropical Pacific where weakened trade winds (El Niño) or strengthened trade winds (La Niña) alter global temperature and precipitation patterns.",
+    "diagramDescription": "Side-by-side comparison of normal conditions, El Niño, and La Niña showing trade wind strength, sea surface temperature anomalies, thermocline position, and upwelling patterns in the tropical Pacific Ocean.",
+    "specificExamples": [
+      "During El Niño, weakened trade winds allow warm water to spread eastward across the Pacific, suppressing upwelling off Peru and collapsing the anchovy fishery",
+      "The 1997–98 El Niño caused $35 billion in global damages including severe flooding in California and drought in Indonesia and Australia",
+      "La Niña strengthens trade winds, enhancing upwelling of cold, nutrient-rich water off South America and increasing Atlantic hurricane activity",
+      "El Niño typically brings wetter conditions to the southern U.S. and drier conditions to the Pacific Northwest and Southeast Asia"
+    ],
+    "causes": [
+      "Periodic weakening (El Niño) or strengthening (La Niña) of trade winds in the tropical Pacific",
+      "Changes in sea surface temperature distribution across the Pacific Ocean",
+      "Coupled ocean-atmosphere feedback loops amplify initial perturbations"
+    ],
+    "effects": [
+      "El Niño: warmer/wetter conditions in western Americas, drought in western Pacific/Australia",
+      "La Niña: cooler/drier conditions in western Americas, increased rainfall in western Pacific",
+      "Disrupted upwelling reduces marine productivity and fishery yields during El Niño",
+      "Global temperature anomalies: El Niño years tend to be warmer globally"
+    ],
+    "humanImpacts": [
+      "Fishery collapse in Peru during strong El Niño events",
+      "Agricultural disruption from altered precipitation patterns worldwide",
+      "Increased wildfire risk in drought-affected regions",
+      "Coral bleaching intensified during El Niño-driven ocean warming"
+    ],
+    "solutions": [
+      "ENSO monitoring and early warning systems allow preparation for extreme events",
+      "Diversified fisheries management accounts for ENSO-driven variability",
+      "Climate-resilient agricultural practices buffer against precipitation changes"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Year",
+      "yAxis": "Sea surface temperature anomaly (°C) in the Niño 3.4 region",
+      "trend": "Oscillating pattern with positive anomalies (El Niño) and negative anomalies (La Niña) recurring every 2–7 years"
+    },
+    "frqUse": "Describe the El Niño-Southern Oscillation and explain how it affects global weather patterns, marine ecosystems, and human activities.",
+    "mcqTrap": "Students reverse El Niño and La Niña effects — El Niño brings warm water eastward and reduces upwelling (bad for fisheries), while La Niña enhances upwelling (good for fisheries).",
+    "commonMistake": "Confusing ENSO with climate change — ENSO is a natural cyclical phenomenon, though climate change may affect its intensity and frequency.",
+    "modelSentence": "El Niño-Southern Oscillation is a natural climate cycle in which weakened trade winds (El Niño) shift warm water eastward in the Pacific, suppressing upwelling and disrupting global weather patterns, while strengthened trade winds during La Niña produce opposite effects.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_tragedy_commons",
+    "unit": "Unit 5",
+    "topicNumber": "5.1",
+    "topicTitle": "The Tragedy of the Commons",
+    "cedLearningObjective": "ERT-5.A",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "conceptual_diagram"],
+    "mustKnowConcept": "The tragedy of the commons occurs when individuals acting in self-interest overexploit shared resources, leading to resource depletion, because no single user bears the full cost of overuse.",
+    "diagramDescription": "Conceptual diagram showing a shared pasture where each herder adds additional cattle for personal profit, but collective overgrazing degrades the commons for all users.",
+    "specificExamples": [
+      "Overfishing of Atlantic cod off Newfoundland led to the 1992 cod moratorium after stocks collapsed to 1% of historical levels, devastating the fishing industry",
+      "The Aral Sea shrank to 10% of its original volume by 2007 because upstream irrigation diverted the Amu Darya and Syr Darya rivers for cotton farming",
+      "Overgrazing on the Sahel grasslands in sub-Saharan Africa contributed to desertification affecting millions of people",
+      "Carbon emissions represent a tragedy of the commons where individual nations benefit from fossil fuel use while the global atmosphere bears the cost"
+    ],
+    "causes": [
+      "Open access to shared resources with no regulation or ownership",
+      "Individual incentive to maximize personal gain from common resources",
+      "Externalized costs — each user gains benefits but the costs are shared by all"
+    ],
+    "effects": [
+      "Depletion or degradation of shared resources",
+      "Ecosystem collapse when exploitation exceeds regeneration capacity",
+      "Economic losses to all users when the resource is exhausted"
+    ],
+    "humanImpacts": [
+      "Overfishing depletes fish stocks below reproductive sustainability",
+      "Groundwater depletion from unregulated pumping lowers water tables",
+      "Air pollution from unregulated emissions harms public health"
+    ],
+    "solutions": [
+      "Government regulation: quotas, permits, and harvest limits (e.g., fishing quotas)",
+      "Privatization: assigning property rights creates incentive for sustainable management",
+      "Community management: local cooperative agreements (e.g., Maine lobster territories)",
+      "International treaties: agreements for transboundary resources (e.g., Paris Agreement)"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time (years)",
+      "yAxis": "Resource stock (e.g., fish population)",
+      "trend": "Resource declines slowly at first, then collapses rapidly once exploitation exceeds regeneration rate, illustrating a tipping point"
+    },
+    "frqUse": "Identify an example of the tragedy of the commons and explain how regulation or privatization could prevent resource depletion.",
+    "mcqTrap": "Students think the tragedy of the commons only applies to physical resources like fish or land, but it also applies to atmospheric pollution and climate change (shared atmosphere as a commons).",
+    "commonMistake": "Assuming all commons inevitably collapse — Nobel laureate Elinor Ostrom showed that community-managed commons can be sustainable through cooperative governance.",
+    "modelSentence": "The tragedy of the commons occurs when individuals overexploit shared resources for personal gain, as seen in the collapse of Atlantic cod fisheries, but can be prevented through regulation, privatization, or cooperative community management.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_clearcutting",
+    "unit": "Unit 5",
+    "topicNumber": "5.2",
+    "topicTitle": "Clearcutting",
+    "cedLearningObjective": "ERT-5.B",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "before_after"],
+    "mustKnowConcept": "Clearcutting removes all trees from an area at once, which is economically efficient but causes severe environmental damage including habitat destruction, soil erosion, and increased sedimentation in waterways.",
+    "diagramDescription": "Before-and-after comparison of a forested hillside: intact forest with canopy, understory, and root systems vs. clearcut area showing exposed soil, erosion channels, and sediment-laden runoff entering a stream.",
+    "specificExamples": [
+      "Clearcutting of Pacific Northwest old-growth forests destroyed habitat for the Northern Spotted Owl, leading to its listing under the Endangered Species Act in 1990",
+      "Brazil lost ~17% of Amazon rainforest since 1970, primarily through clearcutting for cattle ranching and soybean cultivation",
+      "Clearcutting on steep slopes in the Pacific Northwest increased landslide frequency by 3–5x compared to forested slopes",
+      "Selective cutting removes only mature or commercially valuable trees, maintaining forest structure and biodiversity compared to clearcutting"
+    ],
+    "causes": [
+      "Economic demand for timber and wood products",
+      "Land conversion for agriculture, cattle ranching, and development",
+      "Clearcutting is cheaper and faster than selective harvesting methods"
+    ],
+    "effects": [
+      "Complete habitat destruction for species dependent on forest cover",
+      "Soil erosion increases dramatically without tree root systems and canopy to intercept rainfall",
+      "Loss of carbon sink as stored biomass is removed and soil carbon is released",
+      "Increased stream sedimentation and water temperature from loss of riparian canopy"
+    ],
+    "humanImpacts": [
+      "Loss of ecosystem services: water filtration, carbon storage, flood control",
+      "Reduced biodiversity threatens ecosystem resilience",
+      "Indigenous communities lose access to forest resources and cultural sites"
+    ],
+    "solutions": [
+      "Selective cutting harvests individual trees, maintaining forest structure",
+      "Shelter-wood cutting removes trees in stages to allow natural regeneration",
+      "Strip cutting alternates harvested and unharvested strips to reduce erosion",
+      "FSC (Forest Stewardship Council) certification ensures sustainable forestry practices"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Harvesting method (clearcut, selective, shelter-wood)",
+      "yAxis": "Soil erosion rate (tons/hectare/year)",
+      "trend": "Clearcutting produces the highest erosion rates, while selective cutting has rates similar to undisturbed forest"
+    },
+    "frqUse": "Compare clearcutting to sustainable forestry alternatives and explain how each method affects biodiversity and soil erosion.",
+    "mcqTrap": "Students may think clearcutting has no benefits, but it can be appropriate for shade-intolerant pioneer species like lodgepole pine that regenerate best in full sunlight — the AP exam tests nuance.",
+    "commonMistake": "Confusing clearcutting with deforestation — clearcutting is a harvesting method that can include replanting, while deforestation is permanent forest removal for land conversion.",
+    "modelSentence": "Clearcutting removes all trees from an area for economic efficiency but causes severe habitat destruction, soil erosion, and carbon release; sustainable alternatives like selective cutting and shelter-wood harvesting maintain forest structure while still providing timber resources.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_green_revolution",
+    "unit": "Unit 5",
+    "topicNumber": "5.3",
+    "topicTitle": "The Green Revolution",
+    "cedLearningObjective": "ERT-5.C",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["timeline", "comparison"],
+    "mustKnowConcept": "The Green Revolution (1960s–70s) introduced high-yield crop varieties, synthetic fertilizers, pesticides, irrigation, and mechanization to dramatically increase food production, but also caused significant environmental degradation.",
+    "diagramDescription": "Timeline and comparison showing Green Revolution inputs (high-yield varieties, synthetic fertilizers, pesticides, irrigation, machinery) and their dual outcomes: increased food production/reduced famine alongside environmental costs (water pollution, soil degradation, biodiversity loss).",
+    "specificExamples": [
+      "Norman Borlaug developed semi-dwarf wheat varieties that doubled yields in India and Pakistan, preventing predicted famine in the 1960s–70s",
+      "Green Revolution rice varieties (IR8) increased yields in the Philippines from 1–2 tons/hectare to 6–10 tons/hectare",
+      "Global grain production tripled between 1950 and 2000 while farmland area increased only 10%, demonstrating intensification",
+      "Punjab, India became the 'breadbasket' of India through Green Revolution practices but now faces severe groundwater depletion and soil salinization"
+    ],
+    "causes": [
+      "Global population growth created demand for increased food production",
+      "Development of high-yield variety (HYV) crops through selective breeding",
+      "Haber-Bosch process enabled mass production of synthetic nitrogen fertilizers",
+      "Technological advances in irrigation and mechanized farming"
+    ],
+    "effects": [
+      "Dramatically increased crop yields and food supply in developing nations",
+      "Reduced famine and prevented predicted mass starvation",
+      "Created dependence on fossil fuel inputs (fertilizers, pesticides, machinery)",
+      "Increased water consumption for irrigation, depleting aquifers"
+    ],
+    "humanImpacts": [
+      "Eutrophication of waterways from nitrogen and phosphorus fertilizer runoff",
+      "Pesticide contamination of soil and groundwater",
+      "Loss of crop genetic diversity as traditional varieties were replaced by HYVs",
+      "Economic inequality: small farmers who couldn't afford inputs were displaced"
+    ],
+    "solutions": [
+      "Integrated pest management reduces chemical pesticide dependence",
+      "Precision agriculture applies inputs only where needed, reducing waste",
+      "Seed banks (e.g., Svalbard Global Seed Vault) preserve crop genetic diversity",
+      "Organic farming methods reduce synthetic input dependence"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Year (1960–2020)",
+      "yAxis": "Global grain yield (tons/hectare)",
+      "trend": "Grain yields increased steeply from the 1960s–1990s due to Green Revolution practices, then growth rate slowed as limits of intensification were approached"
+    },
+    "frqUse": "Describe the environmental trade-offs of the Green Revolution and propose sustainable alternatives to maintain food production.",
+    "mcqTrap": "Students focus only on negative impacts, but the AP exam may ask about the positive outcomes — the Green Revolution prevented widespread famine and is credited with saving over a billion lives.",
+    "commonMistake": "Confusing the Green Revolution (agricultural intensification) with the environmental movement — they are different 'green' concepts.",
+    "modelSentence": "The Green Revolution dramatically increased global food production through high-yield crop varieties, synthetic fertilizers, and irrigation, but created environmental trade-offs including water pollution, soil degradation, loss of genetic diversity, and fossil fuel dependence.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_agricultural_impacts",
+    "unit": "Unit 5",
+    "topicNumber": "5.4",
+    "topicTitle": "Impacts of Agricultural Practices",
+    "cedLearningObjective": "ERT-5.D",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["process_diagram", "comparison"],
+    "mustKnowConcept": "Modern agricultural practices including monoculture, tillage, fertilizer use, and livestock production cause soil degradation, water pollution, habitat loss, and greenhouse gas emissions.",
+    "diagramDescription": "Process diagram showing how agricultural inputs (fertilizers, pesticides, irrigation, tillage) flow through the environment causing soil erosion, nutrient runoff leading to eutrophication, pesticide bioaccumulation, and greenhouse gas emissions.",
+    "specificExamples": [
+      "The Gulf of Mexico dead zone (~6,000–8,000 sq mi annually) results from nitrogen and phosphorus fertilizer runoff carried by the Mississippi River",
+      "Monoculture corn farming in the U.S. Midwest depletes soil nutrients and increases vulnerability to pests like corn rootworm",
+      "Slash-and-burn agriculture in tropical regions releases stored carbon and destroys biodiversity-rich habitat",
+      "Concentrated animal feeding operations (CAFOs) produce large quantities of manure that contaminate groundwater with nitrates"
+    ],
+    "causes": [
+      "Monoculture depletes specific soil nutrients and reduces biodiversity",
+      "Synthetic fertilizers add excess nitrogen and phosphorus that run off into waterways",
+      "Tillage disrupts soil structure, kills beneficial organisms, and accelerates erosion",
+      "Livestock production generates methane (CH₄) and produces manure waste"
+    ],
+    "effects": [
+      "Eutrophication and hypoxic dead zones in coastal waters",
+      "Soil degradation: erosion, compaction, salinization, nutrient depletion",
+      "Biodiversity loss from habitat conversion and pesticide use",
+      "Agriculture contributes ~10–12% of global greenhouse gas emissions"
+    ],
+    "humanImpacts": [
+      "Nitrate contamination of drinking water from fertilizer and manure",
+      "Pesticide exposure linked to health effects in farmworkers",
+      "Topsoil loss threatens long-term food security",
+      "Aquifer depletion from irrigation (e.g., Ogallala Aquifer declining ~1 ft/year)"
+    ],
+    "solutions": [
+      "Crop rotation breaks pest cycles and maintains soil nutrient balance",
+      "Buffer strips along waterways filter agricultural runoff",
+      "Integrated pest management reduces chemical pesticide use",
+      "Conservation tillage and no-till practices reduce soil erosion"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Fertilizer application rate (kg N/hectare)",
+      "yAxis": "Crop yield (tons/hectare) and waterway nitrate concentration (mg/L)",
+      "trend": "Crop yield increases with fertilizer but plateaus, while nitrate runoff increases linearly, showing diminishing returns and increasing pollution"
+    },
+    "frqUse": "Describe the environmental impacts of conventional agriculture and explain how sustainable practices can mitigate them.",
+    "mcqTrap": "Students confuse point source pollution (factory discharge) with nonpoint source pollution (agricultural runoff) — agricultural pollution is predominantly nonpoint source and harder to regulate.",
+    "commonMistake": "Thinking organic farming has zero environmental impact — organic farming still causes soil erosion, habitat loss, and may require more land per unit of food produced.",
+    "modelSentence": "Conventional agricultural practices including monoculture, synthetic fertilizers, and tillage cause soil degradation, water pollution through eutrophication, habitat loss, and greenhouse gas emissions, but sustainable alternatives such as crop rotation, no-till farming, and buffer strips can significantly mitigate these impacts.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_irrigation_methods",
+    "unit": "Unit 5",
+    "topicNumber": "5.5",
+    "topicTitle": "Irrigation Methods",
+    "cedLearningObjective": "ERT-5.E",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "process_diagram"],
+    "mustKnowConcept": "Different irrigation methods — flood/furrow, spray/sprinkler, and drip/trickle — vary dramatically in water efficiency, with drip irrigation being the most efficient (~95%) and flood irrigation the least (~60%), and improper irrigation causes salinization and waterlogging.",
+    "diagramDescription": "Side-by-side comparison of three irrigation methods showing water delivery, efficiency percentages, and environmental impacts: flood irrigation (60% efficient, causes waterlogging/salinization), sprinkler (75% efficient, evaporation loss), drip (95% efficient, minimal waste).",
+    "specificExamples": [
+      "Drip irrigation delivers water directly to plant root zones at 90–95% efficiency and is widely used in Israel's arid agriculture",
+      "Flood irrigation in Pakistan's Indus Valley has caused widespread soil salinization, reducing crop yields on ~25% of irrigated land",
+      "Center-pivot sprinkler systems create circular crop patterns visible from satellites across the Great Plains, drawing from the Ogallala Aquifer",
+      "The Ogallala Aquifer, which supplies 30% of U.S. irrigation water, is being depleted 3–10x faster than its recharge rate"
+    ],
+    "causes": [
+      "Agriculture consumes ~70% of global freshwater withdrawals",
+      "Flood irrigation applies excessive water that saturates soil beyond plant needs",
+      "Salinization occurs when irrigation water evaporates, leaving dissolved salts behind in the soil"
+    ],
+    "effects": [
+      "Waterlogging: excess irrigation raises water table, saturating root zones and killing crops",
+      "Salinization: salt accumulation reduces soil fertility and crop yields",
+      "Aquifer depletion: irrigation withdrawals exceed recharge rates in many regions",
+      "Altered stream flows and wetland loss from water diversion for irrigation"
+    ],
+    "humanImpacts": [
+      "Salinization has rendered ~10% of global irrigated farmland unproductive",
+      "Competition for water between agriculture and urban/industrial users",
+      "Groundwater depletion threatens future food security in arid regions"
+    ],
+    "solutions": [
+      "Drip irrigation reduces water use by 30–60% compared to flood methods",
+      "Soil moisture sensors optimize irrigation timing and volume",
+      "Water pricing that reflects true scarcity encourages conservation",
+      "Treated wastewater reuse for irrigation reduces freshwater demand"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Irrigation method (flood, sprinkler, drip)",
+      "yAxis": "Water use efficiency (%)",
+      "trend": "Efficiency increases from flood (~60%) to sprinkler (~75%) to drip (~95%)"
+    },
+    "frqUse": "Compare irrigation methods in terms of water efficiency and explain how improper irrigation leads to salinization.",
+    "mcqTrap": "Students may select sprinkler irrigation as the most efficient because it seems modern, but drip/trickle irrigation is the most water-efficient method (~95%).",
+    "commonMistake": "Forgetting that salinization is caused by evaporation of irrigation water leaving salts behind, not by adding salt to the soil — it is a long-term process that renders soil infertile.",
+    "modelSentence": "Irrigation methods range from flood irrigation (~60% efficient) to drip irrigation (~95% efficient), and improper irrigation causes salinization and waterlogging that degrade soil fertility, making efficient methods like drip irrigation critical for sustainable agriculture in water-scarce regions.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_pest_control",
+    "unit": "Unit 5",
+    "topicNumber": "5.6",
+    "topicTitle": "Pest Control Methods",
+    "cedLearningObjective": "ERT-5.F",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "process_diagram"],
+    "mustKnowConcept": "Pest control methods include chemical pesticides (broad-spectrum and selective), biological control (natural predators/parasites), and genetic modification, each with distinct environmental trade-offs including bioaccumulation, pesticide resistance, and non-target species effects.",
+    "diagramDescription": "Comparison of pest control methods showing chemical pesticides (broad-spectrum vs. selective), biological control agents, and genetically modified crops with their respective advantages, disadvantages, and environmental impacts.",
+    "specificExamples": [
+      "DDT bioaccumulated through food chains, thinning eggshells of bald eagles and peregrine falcons, leading to its ban in the U.S. in 1972",
+      "The cane toad was introduced to Australia in 1935 as biological control for sugarcane beetles but became an invasive species devastating native wildlife",
+      "Bt corn is genetically modified to produce Bacillus thuringiensis toxin that kills corn borers but has raised concerns about resistance and effects on monarch butterflies",
+      "Over 500 insect species have developed resistance to at least one pesticide, requiring the 'pesticide treadmill' of increasing chemical application"
+    ],
+    "causes": [
+      "Crop losses from insects, weeds, and diseases can reach 30–40% without pest control",
+      "Broad-spectrum pesticides kill non-target beneficial insects including pollinators",
+      "Repeated pesticide use selects for resistant pest populations through natural selection"
+    ],
+    "effects": [
+      "Bioaccumulation: lipid-soluble pesticides concentrate in organisms and biomagnify through trophic levels",
+      "Pesticide resistance evolves through natural selection, reducing pesticide effectiveness over time",
+      "Biological control can become problematic if the control agent becomes invasive",
+      "Pollinator decline from neonicotinoid pesticides threatens crop pollination globally"
+    ],
+    "humanImpacts": [
+      "Farmworker exposure to organophosphate pesticides causes neurological health effects",
+      "Pesticide runoff contaminates drinking water sources",
+      "Loss of pollinator species (honeybees, native bees) threatens $15+ billion in U.S. crop value"
+    ],
+    "solutions": [
+      "Integrated pest management combines multiple control strategies to minimize chemical use",
+      "Biological control uses natural predators, parasites, or pathogens",
+      "Selective (narrow-spectrum) pesticides target specific pest species",
+      "Crop rotation disrupts pest life cycles without chemicals"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time (years of pesticide application)",
+      "yAxis": "Pest population / Pesticide-resistant individuals (%)",
+      "trend": "Pest populations initially crash after pesticide application but rebound with increasing proportions of resistant individuals over successive generations"
+    },
+    "frqUse": "Explain how bioaccumulation of pesticides affects organisms at higher trophic levels and describe how integrated pest management reduces pesticide dependence.",
+    "mcqTrap": "Students confuse bioaccumulation (buildup within one organism over its lifetime) with biomagnification (increasing concentration at higher trophic levels in a food chain).",
+    "commonMistake": "Thinking biological control is always safe and effective — introduced biological control agents can become invasive species, as the cane toad demonstrates.",
+    "modelSentence": "Chemical pesticides can bioaccumulate and biomagnify through food chains while selecting for resistant pest populations, making integrated approaches that combine biological control, selective pesticides, and crop rotation more sustainable than reliance on broad-spectrum chemical pesticides alone.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_meat_production",
+    "unit": "Unit 5",
+    "topicNumber": "5.7",
+    "topicTitle": "Meat Production Methods",
+    "cedLearningObjective": "ERT-5.G",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "flow_diagram"],
+    "mustKnowConcept": "Meat production, especially in concentrated animal feeding operations (CAFOs), is resource-intensive — requiring ~10 kg of grain to produce 1 kg of beef — and generates significant water pollution, greenhouse gases, and habitat destruction.",
+    "diagramDescription": "Flow diagram showing energy and resource inputs for meat production: feed crops require land, water, fertilizer, and pesticides; cattle convert feed to meat at ~10% efficiency (10:1 feed conversion ratio); outputs include methane emissions, manure waste, and water pollution.",
+    "specificExamples": [
+      "Producing 1 kg of beef requires approximately 15,000 liters of water compared to 1,800 liters for 1 kg of wheat",
+      "Livestock production occupies ~30% of Earth's ice-free land surface for grazing and feed crops",
+      "CAFOs confine thousands of cattle, hogs, or poultry in small areas, producing concentrated manure lagoons that can contaminate groundwater",
+      "Enteric fermentation in cattle produces methane (CH₄), a greenhouse gas ~80x more potent than CO₂ over 20 years, contributing ~14.5% of global GHG emissions from livestock"
+    ],
+    "causes": [
+      "Rising global demand for meat as developing nations increase incomes",
+      "Second law of thermodynamics: only ~10% of energy transfers between trophic levels, making meat production inherently inefficient",
+      "Industrialization of animal agriculture concentrates environmental impacts"
+    ],
+    "effects": [
+      "Deforestation for grazing and feed crop production (especially in the Amazon)",
+      "Methane and nitrous oxide emissions contribute significantly to climate change",
+      "Manure runoff causes eutrophication and groundwater contamination",
+      "Antibiotic overuse in livestock promotes antibiotic-resistant bacteria"
+    ],
+    "humanImpacts": [
+      "Antibiotic resistance from livestock prophylactic antibiotic use threatens human medicine",
+      "Water pollution from manure lagoons near CAFOs affects rural community health",
+      "Food security: grain used for livestock feed could alternatively feed humans directly"
+    ],
+    "solutions": [
+      "Reducing meat consumption, especially beef, lowers individual ecological footprint",
+      "Free-range and grass-fed systems reduce feed conversion waste and improve animal welfare",
+      "Manure digesters capture methane for energy production",
+      "Plant-based protein alternatives reduce resource intensity of protein production"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Protein source (beef, pork, chicken, plant protein)",
+      "yAxis": "Resource input (water in liters or land in m² per kg protein)",
+      "trend": "Resource requirements decrease dramatically from beef to pork to chicken to plant protein, reflecting trophic level efficiency"
+    },
+    "frqUse": "Explain how the second law of thermodynamics relates to the inefficiency of meat production and propose dietary or technological solutions.",
+    "mcqTrap": "Students may think chicken and beef have similar environmental footprints, but beef requires ~7x more resources per kg than chicken due to cattle's lower feed conversion efficiency and methane production.",
+    "commonMistake": "Forgetting that the 10% rule (energy transfer between trophic levels) explains why eating lower on the food chain is more resource-efficient.",
+    "modelSentence": "Meat production is inherently inefficient due to the second law of thermodynamics (~10% energy transfer between trophic levels), and CAFOs concentrate environmental impacts including methane emissions, water pollution from manure, and antibiotic resistance, making reduced meat consumption and improved production practices critical for sustainability.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_overfishing",
+    "unit": "Unit 5",
+    "topicNumber": "5.8",
+    "topicTitle": "Overfishing",
+    "cedLearningObjective": "ERT-5.H",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["line_graph", "comparison"],
+    "mustKnowConcept": "Overfishing occurs when fish are harvested faster than they can reproduce, leading to population collapse, and bycatch — the unintended capture of non-target species — exacerbates marine biodiversity loss.",
+    "diagramDescription": "Line graph showing the maximum sustainable yield (MSY) concept: fish harvest rate vs. population size, with overfishing occurring when harvest exceeds the reproduction rate, leading to population decline and potential collapse.",
+    "specificExamples": [
+      "Atlantic bluefin tuna populations declined by ~97% from pre-industrial levels due to commercial overfishing for sushi markets",
+      "The Northwest Atlantic cod fishery collapsed in 1992, putting 40,000 people out of work in Newfoundland, and stocks have not fully recovered 30+ years later",
+      "Bottom trawling destroys seafloor habitats, catching and killing coral, sponges, and non-target species as bycatch at rates sometimes exceeding 80% of total catch",
+      "Shark finning removes ~100 million sharks annually, disrupting marine food webs as apex predators are removed"
+    ],
+    "causes": [
+      "Industrial fishing technology (sonar, GPS, factory trawlers) increases catch efficiency beyond sustainable levels",
+      "Tragedy of the commons: open-ocean fisheries lack effective regulation",
+      "Government subsidies artificially support unprofitable fishing operations",
+      "Growing global demand for seafood protein"
+    ],
+    "effects": [
+      "Fish population collapse when harvest exceeds maximum sustainable yield",
+      "Trophic cascades: removing predator or prey species disrupts entire food webs",
+      "Bycatch kills dolphins, sea turtles, seabirds, and juvenile fish",
+      "Bottom trawling destroys benthic habitats that take decades to recover"
+    ],
+    "humanImpacts": [
+      "Loss of food security for 3 billion people who depend on fish as primary protein source",
+      "Economic collapse of fishing communities after stock depletion",
+      "Illegal, unreported, and unregulated (IUU) fishing accounts for ~20% of global catch"
+    ],
+    "solutions": [
+      "Catch limits and quotas based on maximum sustainable yield (MSY) science",
+      "Marine protected areas (MPAs) allow fish populations to recover",
+      "Individual transferable quotas (ITQs) create market incentives for sustainable harvesting",
+      "Turtle excluder devices (TEDs) and modified nets reduce bycatch",
+      "Consumer choice: MSC (Marine Stewardship Council) certified sustainable seafood"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Year (1950–present)",
+      "yAxis": "Global fish catch (million metric tons) / % of stocks overfished",
+      "trend": "Global fish catch plateaued around 1990 at ~90 million metric tons despite increasing effort, while the percentage of overfished stocks rose from 10% (1974) to ~35% (2020)"
+    },
+    "frqUse": "Describe the causes and consequences of overfishing and explain how marine protected areas and catch quotas can promote sustainable fisheries.",
+    "mcqTrap": "Students confuse maximum sustainable yield (the largest catch that can be taken indefinitely) with maximum economic yield — MSY is an ecological concept, not an economic one.",
+    "commonMistake": "Thinking that once fishing stops, populations bounce back quickly — many collapsed fisheries like Atlantic cod have failed to recover even after decades of moratorium.",
+    "modelSentence": "Overfishing occurs when harvest rates exceed the maximum sustainable yield of fish populations, leading to stock collapse and trophic cascades, while bycatch and habitat destruction from bottom trawling compound marine biodiversity loss; solutions include science-based catch quotas, marine protected areas, and bycatch reduction technology.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_mining_impacts",
+    "unit": "Unit 5",
+    "topicNumber": "5.9",
+    "topicTitle": "Impacts of Mining",
+    "cedLearningObjective": "ERT-5.I",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cross_section", "comparison"],
+    "mustKnowConcept": "Mining extracts nonrenewable mineral and fossil fuel resources through surface (strip, open-pit, mountaintop removal) and subsurface methods, causing habitat destruction, acid mine drainage, soil erosion, and water contamination.",
+    "diagramDescription": "Cross-section comparison of mining types: surface mining (strip mining, open-pit, mountaintop removal) showing landscape disruption and acid mine drainage, vs. subsurface mining with shaft systems showing land subsidence and groundwater contamination.",
+    "specificExamples": [
+      "Mountaintop removal mining in Appalachia has flattened >500 mountains and buried >2,000 miles of headwater streams with overburden",
+      "The Berkeley Pit in Butte, Montana is a former open-pit copper mine now filled with 40 billion gallons of acidic, metal-laden water (pH ~2.5)",
+      "Acid mine drainage occurs when sulfide minerals exposed by mining react with water and oxygen to form sulfuric acid, which leaches heavy metals into waterways",
+      "Gold mining uses cyanide heap leaching, which can contaminate groundwater with cyanide and heavy metals if containment systems fail"
+    ],
+    "causes": [
+      "Global demand for metals (copper, gold, iron, rare earth elements) and fossil fuels",
+      "Surface mining is cheaper for shallow deposits but destroys larger surface areas",
+      "Subsurface mining required for deep deposits but carries risks of collapse and ventilation hazards"
+    ],
+    "effects": [
+      "Habitat destruction: surface mining eliminates ecosystems across large areas",
+      "Acid mine drainage contaminates streams with sulfuric acid and dissolved heavy metals for decades or centuries",
+      "Soil erosion and sedimentation from disturbed overburden",
+      "Land subsidence above underground mines"
+    ],
+    "humanImpacts": [
+      "Heavy metal contamination (mercury, arsenic, lead) of drinking water near mining sites",
+      "Black lung disease (pneumoconiosis) in coal miners from chronic dust inhalation",
+      "Displacement of communities and loss of agricultural land"
+    ],
+    "solutions": [
+      "Reclamation laws require restoration of mined lands (SMCRA — Surface Mining Control and Reclamation Act, 1977)",
+      "Acid mine drainage treatment through neutralization and constructed wetlands",
+      "Reducing demand through recycling metals and transitioning away from fossil fuels",
+      "Phytoremediation uses plants to stabilize and extract contaminants from mine tailings"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Mining type (surface, subsurface, mountaintop removal)",
+      "yAxis": "Area of habitat disturbed (hectares per unit of resource extracted)",
+      "trend": "Surface mining and mountaintop removal disturb far more area per unit resource than subsurface mining, but subsurface mining has higher worker safety risks"
+    },
+    "frqUse": "Compare surface and subsurface mining methods in terms of environmental impact and describe the process and effects of acid mine drainage.",
+    "mcqTrap": "Students forget that acid mine drainage can persist for decades to centuries after mining ceases because exposed sulfide minerals continue reacting with water and oxygen.",
+    "commonMistake": "Assuming reclamation fully restores mined ecosystems — reclaimed mine sites rarely achieve pre-mining biodiversity or ecosystem function.",
+    "modelSentence": "Mining operations cause habitat destruction, acid mine drainage from exposed sulfide minerals, and heavy metal contamination of waterways; surface mining methods like mountaintop removal are particularly destructive, and the Surface Mining Control and Reclamation Act requires land restoration, though full ecosystem recovery is rarely achieved.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_urbanization",
+    "unit": "Unit 5",
+    "topicNumber": "5.10",
+    "topicTitle": "Urbanization",
+    "cedLearningObjective": "ERT-5.J",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "map"],
+    "mustKnowConcept": "Urbanization increases impervious surfaces, creates urban heat islands, fragments habitats, and increases resource consumption, but well-planned cities can be more resource-efficient per capita than sprawling suburbs due to shared infrastructure and public transit.",
+    "diagramDescription": "Comparison of urban sprawl vs. smart growth development showing differences in impervious surface cover, transportation patterns, energy use per capita, habitat fragmentation, and stormwater runoff.",
+    "specificExamples": [
+      "The urban heat island effect makes cities 1–3°C warmer than surrounding rural areas due to dark impervious surfaces absorbing solar radiation and waste heat from buildings and vehicles",
+      "Phoenix, Arizona sprawls across >500 square miles with low-density development, requiring automobile dependence and high per-capita energy use",
+      "Portland, Oregon implemented an urban growth boundary in 1979 that limits sprawl and promotes infill development, public transit, and mixed-use zoning",
+      "Over 55% of the global population lives in urban areas (2020), projected to reach 68% by 2050"
+    ],
+    "causes": [
+      "Rural-to-urban migration driven by economic opportunity and agricultural mechanization",
+      "Population growth concentrated in urban areas",
+      "Automobile-dependent planning encourages low-density suburban sprawl"
+    ],
+    "effects": [
+      "Impervious surfaces increase stormwater runoff and reduce groundwater recharge",
+      "Urban heat island effect raises temperatures, energy demand, and air pollution",
+      "Habitat fragmentation from roads, buildings, and infrastructure",
+      "Increased resource consumption: water, energy, food transported from distant sources"
+    ],
+    "humanImpacts": [
+      "Air quality degradation from vehicle emissions and industrial activity",
+      "Loss of agricultural land on urban periphery",
+      "Environmental justice: low-income communities often located near pollution sources"
+    ],
+    "solutions": [
+      "Smart growth: compact, walkable, mixed-use development reduces sprawl",
+      "Green infrastructure: green roofs, permeable pavement, urban forests reduce heat island and runoff",
+      "Public transportation reduces per-capita emissions compared to car-dependent suburbs",
+      "Urban growth boundaries prevent uncontrolled sprawl into agricultural and natural lands"
+    ],
+    "graphConnection": {
+      "graphType": "scatter plot",
+      "xAxis": "Urban population density (people/km²)",
+      "yAxis": "Per-capita transportation energy use (GJ/person/year)",
+      "trend": "Per-capita energy use for transportation decreases exponentially with increasing urban density (Newman-Kenworthy curve)"
+    },
+    "frqUse": "Compare the environmental impacts of urban sprawl to smart growth and explain how urban planning strategies can reduce a city's ecological footprint.",
+    "mcqTrap": "Students assume cities are always worse for the environment than rural areas, but dense cities have lower per-capita emissions than sprawling suburbs due to shared infrastructure and public transit.",
+    "commonMistake": "Equating urbanization with only negative environmental effects — compact urban design with public transit can actually reduce per-capita resource use compared to suburban sprawl.",
+    "modelSentence": "Urbanization increases impervious surfaces, creates heat islands, and fragments habitats, but smart growth strategies including compact development, public transit, and green infrastructure can make cities more resource-efficient per capita than car-dependent suburban sprawl.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_ecological_footprint",
+    "unit": "Unit 5",
+    "topicNumber": "5.11",
+    "topicTitle": "Ecological Footprints",
+    "cedLearningObjective": "ERT-5.K",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["bar_chart", "comparison"],
+    "mustKnowConcept": "An ecological footprint measures the amount of biologically productive land and water required to support a population's resource consumption and waste absorption, and humanity currently uses ~1.75 Earth's worth of resources annually (ecological overshoot).",
+    "diagramDescription": "Bar chart comparing ecological footprints per capita by country (USA ~8.1 gha, Germany ~4.7 gha, China ~3.7 gha, India ~1.2 gha) alongside Earth's biocapacity per person (~1.6 gha), showing which nations exceed their fair share.",
+    "specificExamples": [
+      "The average American's ecological footprint is ~8.1 global hectares (gha) per person, while Earth's biocapacity is only ~1.6 gha per person",
+      "If everyone lived like the average American, humanity would need ~5 Earths to sustain current consumption",
+      "Earth Overshoot Day — the date when humanity has used more resources than Earth can regenerate in a year — fell on August 2 in 2023, moving earlier each decade",
+      "Carbon emissions account for ~60% of the average ecological footprint in developed nations"
+    ],
+    "causes": [
+      "High consumption lifestyles in developed nations",
+      "Population growth increases total resource demand",
+      "Carbon footprint from fossil fuel use is the largest component of ecological footprint"
+    ],
+    "effects": [
+      "Ecological overshoot: humanity consumes resources faster than Earth can regenerate them",
+      "Resource depletion: fisheries, forests, and freshwater drawn down beyond sustainable levels",
+      "Waste accumulation exceeds ecosystem absorption capacity"
+    ],
+    "humanImpacts": [
+      "Inequitable distribution: wealthy nations consume disproportionate resources",
+      "Future generations face depleted resources and degraded ecosystems",
+      "Developing nations aspiring to developed-world lifestyles will intensify overshoot"
+    ],
+    "solutions": [
+      "Reducing consumption and waste in developed nations",
+      "Transitioning to renewable energy to shrink carbon footprint",
+      "Improving resource use efficiency through technology and design",
+      "Sustainable urban planning reduces per-capita footprint"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Country",
+      "yAxis": "Ecological footprint (global hectares per capita)",
+      "trend": "Developed nations have ecological footprints 3–5x above Earth's per-capita biocapacity (~1.6 gha), while many developing nations remain below it"
+    },
+    "frqUse": "Calculate and compare ecological footprints of different nations and explain what factors contribute to ecological overshoot.",
+    "mcqTrap": "Students confuse ecological footprint (total resource demand in global hectares) with carbon footprint (only greenhouse gas emissions) — carbon footprint is a subset of ecological footprint.",
+    "commonMistake": "Thinking ecological footprint is just about land use — it includes the land and water needed to produce food, absorb waste, and sequester CO₂ from fossil fuel burning.",
+    "modelSentence": "Ecological footprint measures the biologically productive land required to support a population's consumption and waste, and humanity is in ecological overshoot at ~1.75 Earths, driven primarily by the carbon footprint of fossil fuel use in developed nations.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_sustainability",
+    "unit": "Unit 5",
+    "topicNumber": "5.12",
+    "topicTitle": "Introduction to Sustainability",
+    "cedLearningObjective": "ERT-5.L",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["venn_diagram", "conceptual_diagram"],
+    "mustKnowConcept": "Sustainability means meeting present needs without compromising future generations' ability to meet their own needs, requiring integration of environmental, economic, and social considerations (the three pillars of sustainability).",
+    "diagramDescription": "Venn diagram showing the three pillars of sustainability: Environmental (ecosystem health), Economic (financial viability), and Social (equity and well-being), with true sustainability at the intersection of all three.",
+    "specificExamples": [
+      "Costa Rica generates >98% of its electricity from renewable sources (hydro, wind, geothermal, solar) while maintaining a growing ecotourism economy",
+      "The Brundtland Commission (1987) defined sustainability as 'meeting the needs of the present without compromising the ability of future generations to meet their own needs'",
+      "Cradle-to-cradle design eliminates waste by designing products whose materials can be fully recycled or composted at end of life",
+      "The UN Sustainable Development Goals (SDGs) include 17 interconnected goals addressing poverty, environment, health, and economic growth"
+    ],
+    "causes": [
+      "Recognition that infinite growth on a finite planet is impossible",
+      "Environmental degradation threatens long-term economic productivity",
+      "Growing awareness of intergenerational equity and environmental justice"
+    ],
+    "effects": [
+      "Sustainable practices maintain ecosystem services for future generations",
+      "Green economy creates jobs in renewable energy, organic agriculture, and conservation",
+      "Reduced resource depletion extends availability for future use"
+    ],
+    "humanImpacts": [
+      "Unsustainable resource extraction depletes natural capital",
+      "Environmental injustice: marginalized communities bear disproportionate environmental burdens",
+      "Short-term economic thinking often conflicts with long-term sustainability"
+    ],
+    "solutions": [
+      "Circular economy: redesign production to eliminate waste and keep materials in use",
+      "Full-cost accounting includes environmental externalities in market prices",
+      "Community-based natural resource management empowers local stewardship",
+      "Policy frameworks like the SDGs coordinate global sustainability efforts"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time (decades)",
+      "yAxis": "Resource availability / Quality of life",
+      "trend": "Unsustainable practices show short-term gains followed by decline, while sustainable practices show stable or gradually improving long-term trajectories"
+    },
+    "frqUse": "Define sustainability and explain how a specific practice (e.g., sustainable forestry, renewable energy) integrates environmental, economic, and social considerations.",
+    "mcqTrap": "Students think sustainability means zero resource use — it actually means using resources at rates that allow natural regeneration, balancing environmental, economic, and social needs.",
+    "commonMistake": "Equating sustainability only with environmental protection — true sustainability requires balancing environmental, economic, and social pillars simultaneously.",
+    "modelSentence": "Sustainability, as defined by the Brundtland Commission, means meeting present resource needs without compromising future generations' ability to meet theirs, requiring integration of environmental protection, economic viability, and social equity through practices like circular economy design and full-cost accounting.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_urban_runoff",
+    "unit": "Unit 5",
+    "topicNumber": "5.13",
+    "topicTitle": "Urban Runoff",
+    "cedLearningObjective": "ERT-5.M",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["process_diagram", "comparison"],
+    "mustKnowConcept": "Impervious surfaces in urban areas prevent infiltration and increase stormwater runoff volume and velocity, carrying pollutants (oil, heavy metals, nutrients, sediment, pathogens) into waterways as nonpoint source pollution.",
+    "diagramDescription": "Comparison of natural vs. urbanized landscapes showing infiltration rates, runoff volumes, and pollutant pathways: natural areas (10% runoff, 50% infiltration) vs. highly urbanized areas (55% runoff, 15% infiltration) with pollutant loading to receiving waters.",
+    "specificExamples": [
+      "In natural landscapes, ~50% of precipitation infiltrates the soil, but in urban areas with 75% impervious cover, only ~15% infiltrates while ~55% becomes surface runoff",
+      "Urban stormwater carries motor oil, brake pad dust (copper), tire wear particles (zinc), pet waste (bacteria), and lawn fertilizers into storm drains that discharge directly to streams",
+      "Combined sewer overflows (CSOs) in older cities like New York and Chicago discharge raw sewage mixed with stormwater into rivers during heavy rain events",
+      "Philadelphia's 'Green City, Clean Waters' plan uses rain gardens, green roofs, and permeable pavement to manage $2.4 billion in stormwater infrastructure needs"
+    ],
+    "causes": [
+      "Impervious surfaces (roads, parking lots, roofs) prevent natural infiltration",
+      "Storm drains convey untreated runoff directly to waterways",
+      "Urban land uses generate concentrated pollutant loads (vehicles, construction, industry)"
+    ],
+    "effects": [
+      "Increased flood frequency and severity from accelerated runoff",
+      "Stream bank erosion from higher-velocity concentrated flows",
+      "Water quality degradation: heavy metals, petroleum hydrocarbons, nutrients, pathogens",
+      "Reduced groundwater recharge threatens baseflow in streams and aquifer levels"
+    ],
+    "humanImpacts": [
+      "Degraded drinking water quality downstream of urban areas",
+      "Beach closures from pathogen-laden runoff after storms",
+      "Loss of aquatic habitat from sedimentation and thermal pollution"
+    ],
+    "solutions": [
+      "Green infrastructure: rain gardens, bioswales, and green roofs capture and filter runoff",
+      "Permeable pavement allows infiltration through parking lots and sidewalks",
+      "Detention and retention basins slow runoff and allow sediment to settle",
+      "Low Impact Development (LID) designs mimic natural hydrology in urban settings"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time after precipitation event (hours)",
+      "yAxis": "Stream discharge (m³/s)",
+      "trend": "Urbanized watersheds show a sharp, high peak in stream discharge (flashy hydrograph) shortly after rain, while forested watersheds show a gradual, lower peak with longer base flow"
+    },
+    "frqUse": "Compare the hydrograph of an urbanized watershed to a natural watershed and explain how green infrastructure reduces urban runoff impacts.",
+    "mcqTrap": "Students confuse storm drains (carry untreated runoff directly to waterways) with sanitary sewers (carry wastewater to treatment plants) — they are separate systems in most modern cities.",
+    "commonMistake": "Thinking storm drains lead to water treatment plants — in most cities, storm drains discharge directly to rivers and streams with no treatment.",
+    "modelSentence": "Urban impervious surfaces increase stormwater runoff volume and velocity while preventing infiltration, carrying nonpoint source pollutants like heavy metals, petroleum, and pathogens directly to waterways through storm drains; green infrastructure such as rain gardens and permeable pavement mimics natural hydrology to mitigate these impacts.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_integrated_pest_mgmt",
+    "unit": "Unit 5",
+    "topicNumber": "5.14",
+    "topicTitle": "Integrated Pest Management",
+    "cedLearningObjective": "ERT-5.N",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["pyramid", "process_diagram"],
+    "mustKnowConcept": "Integrated pest management (IPM) is a tiered approach that combines biological, cultural, mechanical, and chemical control methods to manage pests with minimal environmental impact, using chemical pesticides only as a last resort.",
+    "diagramDescription": "IPM pyramid showing the hierarchy of strategies: base layer = prevention and cultural practices (crop rotation, resistant varieties), second layer = biological control (natural predators, parasitoids), third layer = mechanical control (traps, hand removal), top layer = chemical control (targeted pesticides as last resort).",
+    "specificExamples": [
+      "Apple orchards use pheromone traps to monitor codling moth populations and spray only when pest numbers exceed economic thresholds, reducing pesticide use by 50–70%",
+      "Introducing ladybugs (Coccinellidae) as biological control agents reduces aphid populations in greenhouses without chemical pesticides",
+      "Rice paddies in Indonesia use the 'push-pull' strategy: intercropping with Desmodium repels stem borers (push) while Napier grass at field edges attracts them (pull)",
+      "Economic threshold: the pest population level at which the cost of damage exceeds the cost of control, determining when intervention is justified"
+    ],
+    "causes": [
+      "Recognition that chemical pesticides alone create resistance, kill beneficial insects, and contaminate ecosystems",
+      "Economic benefit: IPM reduces input costs while maintaining crop yields",
+      "Consumer demand for reduced pesticide residues in food"
+    ],
+    "effects": [
+      "Reduced pesticide use by 50–70% compared to calendar-based spraying",
+      "Preserved populations of beneficial insects (pollinators, natural predators)",
+      "Slower development of pesticide resistance in target pest populations",
+      "Improved water quality from reduced pesticide runoff"
+    ],
+    "humanImpacts": [
+      "Reduced farmworker pesticide exposure and associated health risks",
+      "Lower pesticide residues in food and drinking water",
+      "Maintained pollinator populations supporting $15+ billion in U.S. crop pollination"
+    ],
+    "solutions": [
+      "Monitoring and scouting to determine actual pest levels before treatment",
+      "Economic thresholds guide intervention decisions",
+      "Biological control: natural predators, parasitoids, and microbial agents",
+      "Cultural controls: crop rotation, resistant varieties, planting timing",
+      "Chemical control only as last resort, using selective rather than broad-spectrum pesticides"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time (growing seasons)",
+      "yAxis": "Pesticide application (kg/hectare) and crop yield (tons/hectare)",
+      "trend": "IPM adoption reduces pesticide application over time while maintaining or slightly increasing crop yields compared to conventional pest management"
+    },
+    "frqUse": "Describe the components of IPM and explain how this approach reduces environmental impacts compared to conventional pesticide-dependent agriculture.",
+    "mcqTrap": "Students think IPM eliminates all pesticide use — IPM still uses chemical pesticides when needed, but as a last resort after biological, cultural, and mechanical methods.",
+    "commonMistake": "Assuming IPM is the same as organic farming — IPM can include synthetic pesticides when necessary, while organic farming prohibits synthetic chemicals.",
+    "modelSentence": "Integrated pest management combines biological control, cultural practices, mechanical removal, and targeted chemical application as a last resort, reducing pesticide use by 50–70% while maintaining crop yields and preserving beneficial insect populations including pollinators.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_sustainable_agriculture",
+    "unit": "Unit 5",
+    "topicNumber": "5.15",
+    "topicTitle": "Sustainable Agriculture",
+    "cedLearningObjective": "ERT-5.O",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "process_diagram"],
+    "mustKnowConcept": "Sustainable agriculture practices — including crop rotation, no-till farming, contour plowing, perennial polyculture, and organic methods — maintain long-term soil fertility, minimize environmental impacts, and ensure food production for future generations.",
+    "diagramDescription": "Comparison of conventional vs. sustainable agricultural practices showing inputs, outputs, and environmental impacts: conventional (monoculture, synthetic inputs, high erosion) vs. sustainable (polyculture, biological inputs, soil conservation).",
+    "specificExamples": [
+      "No-till farming reduces soil erosion by 90% and increases soil organic matter by leaving crop residue on the field surface",
+      "The 'Three Sisters' polyculture (corn, beans, squash) used by Indigenous peoples provides nitrogen fixation, structural support, and ground cover in a complementary planting system",
+      "Contour plowing follows natural topographic contours rather than straight rows, reducing water runoff by up to 50% on sloped land",
+      "Cover crops like crimson clover and winter rye prevent erosion, fix nitrogen, suppress weeds, and add organic matter between cash crop growing seasons"
+    ],
+    "causes": [
+      "Recognition that conventional agriculture degrades soil and water resources over time",
+      "Soil erosion rates on conventional farmland exceed soil formation rates by 10–100x",
+      "Growing consumer demand for sustainably produced food"
+    ],
+    "effects": [
+      "Maintained or improved soil fertility over decades through organic matter accumulation",
+      "Reduced fertilizer and pesticide inputs lower production costs and pollution",
+      "Increased biodiversity on farmland supports ecosystem services like pollination and pest control",
+      "Improved water quality downstream from reduced runoff and nutrient loss"
+    ],
+    "humanImpacts": [
+      "Ensures long-term food production capacity for growing global population",
+      "Reduced agrochemical exposure improves farmworker and community health",
+      "Supports rural livelihoods through diversified income streams"
+    ],
+    "solutions": [
+      "Crop rotation with nitrogen-fixing legumes reduces fertilizer needs",
+      "No-till and conservation tillage preserve soil structure",
+      "Agroforestry integrates trees with crops for multiple benefits",
+      "Precision agriculture uses GPS and sensors to optimize input application",
+      "Composting and manure application build soil organic matter"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Years of practice",
+      "yAxis": "Soil organic matter (%) / Crop yield (tons/hectare)",
+      "trend": "Sustainable practices show initial yields comparable to or slightly below conventional, but soil organic matter and yields increase over time as soil health improves"
+    },
+    "frqUse": "Describe three sustainable agricultural practices and explain how they maintain soil fertility while reducing environmental impacts.",
+    "mcqTrap": "Students assume sustainable agriculture always produces lower yields — research shows that after a transition period, sustainable systems can match conventional yields while building soil health.",
+    "commonMistake": "Equating sustainable agriculture only with organic farming — sustainable agriculture encompasses many practices (no-till, precision ag, IPM) that may or may not be organic.",
+    "modelSentence": "Sustainable agriculture practices including no-till farming, crop rotation with legumes, cover cropping, and contour plowing maintain long-term soil fertility and reduce environmental impacts by minimizing erosion, building organic matter, and reducing dependence on synthetic fertilizers and pesticides.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_aquaculture",
+    "unit": "Unit 5",
+    "topicNumber": "5.16",
+    "topicTitle": "Aquaculture",
+    "cedLearningObjective": "ERT-5.P",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "process_diagram"],
+    "mustKnowConcept": "Aquaculture (fish farming) produces ~50% of global seafood and can reduce pressure on wild fish stocks, but poorly managed operations cause water pollution, disease spread to wild populations, habitat destruction, and require wild-caught fish for feed.",
+    "diagramDescription": "Comparison of open-net pen aquaculture (in coastal waters with waste discharge to environment) vs. recirculating aquaculture systems (RAS, on land with controlled waste treatment), showing environmental impacts of each.",
+    "specificExamples": [
+      "Norway's salmon farming industry produces ~1.4 million metric tons annually but faces issues with sea lice infestations spreading to wild salmon populations",
+      "Shrimp aquaculture in Southeast Asia has destroyed ~38% of mangrove forests in Thailand since 1961, eliminating coastal storm protection and nursery habitat",
+      "It takes 2–5 kg of wild-caught fish (processed into fishmeal) to produce 1 kg of farmed salmon, meaning salmon aquaculture can increase net fishing pressure",
+      "Tilapia and catfish are herbivorous/omnivorous species that require little or no fishmeal, making them more sustainable aquaculture choices than carnivorous salmon"
+    ],
+    "causes": [
+      "Growing global demand for seafood protein exceeds wild-catch capacity",
+      "Overfishing of wild stocks creates market incentive for aquaculture",
+      "Aquaculture is the fastest-growing food production sector globally"
+    ],
+    "effects": [
+      "Nutrient pollution: fish waste and uneaten feed cause eutrophication in surrounding waters",
+      "Disease and parasite transfer from farmed to wild fish populations",
+      "Genetic contamination when farmed fish escape and interbreed with wild populations",
+      "Mangrove and wetland habitat destruction for coastal aquaculture ponds"
+    ],
+    "humanImpacts": [
+      "Provides protein and livelihoods for millions in developing nations",
+      "Antibiotic use in aquaculture contributes to antimicrobial resistance",
+      "Displacement of traditional fishing communities by industrial aquaculture"
+    ],
+    "solutions": [
+      "Recirculating aquaculture systems (RAS) treat and reuse water, eliminating discharge",
+      "Farming herbivorous species (tilapia, carp) eliminates need for wild-caught fishmeal",
+      "Integrated multi-trophic aquaculture (IMTA) uses waste from one species to feed another (fish + seaweed + shellfish)",
+      "ASC (Aquaculture Stewardship Council) certification ensures sustainable practices"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Year (1990–present)",
+      "yAxis": "Global aquaculture production (million metric tons)",
+      "trend": "Aquaculture production has grown exponentially, surpassing wild-catch fisheries around 2013 and continuing to rise"
+    },
+    "frqUse": "Describe the environmental impacts of aquaculture and explain how sustainable practices like IMTA and RAS can mitigate them.",
+    "mcqTrap": "Students assume all aquaculture is sustainable because it reduces wild fishing — but carnivorous fish farms (salmon) actually consume more wild fish as feed than they produce, increasing net pressure on wild stocks.",
+    "commonMistake": "Thinking aquaculture is always better for the environment than wild fishing — open-net pen salmon farming can be more environmentally damaging per kg of fish than well-managed wild fisheries.",
+    "modelSentence": "Aquaculture produces ~50% of global seafood and can reduce wild fishing pressure, but open-net pen operations cause water pollution, disease spread, and genetic contamination; sustainable approaches including recirculating aquaculture systems and integrated multi-trophic aquaculture significantly reduce these environmental impacts.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit5_sustainable_forestry",
+    "unit": "Unit 5",
+    "topicNumber": "5.17",
+    "topicTitle": "Sustainable Forestry",
+    "cedLearningObjective": "ERT-5.Q",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "process_diagram"],
+    "mustKnowConcept": "Sustainable forestry practices — including selective cutting, shelter-wood cutting, seed-tree cutting, and prescribed burns — maintain forest biodiversity, ecosystem services, and long-term timber production while minimizing environmental damage.",
+    "diagramDescription": "Comparison of four forestry methods: clearcutting (all trees removed), selective cutting (individual mature trees harvested), shelter-wood cutting (trees removed in stages over 10–20 years), and seed-tree cutting (most trees removed but seed trees left for regeneration).",
+    "specificExamples": [
+      "FSC-certified forests must maintain biodiversity, protect waterways, limit chemical use, and respect indigenous peoples' rights",
+      "Prescribed burns in longleaf pine forests of the southeastern U.S. mimic natural fire cycles, maintaining understory biodiversity and reducing wildfire risk",
+      "Selective cutting in hardwood forests (e.g., Appalachian oak-hickory) harvests mature trees while preserving canopy structure and wildlife habitat",
+      "Certified sustainable forests grew from 17 million hectares in 2000 to ~500 million hectares by 2020 under FSC and PEFC programs"
+    ],
+    "causes": [
+      "Global timber demand of ~4 billion m³ annually requires managed production",
+      "Unsustainable logging rates led to development of certification systems",
+      "Recognition that forests provide ecosystem services (carbon storage, water filtration, biodiversity) beyond timber"
+    ],
+    "effects": [
+      "Selective cutting maintains continuous forest canopy cover and habitat",
+      "Prescribed burns reduce fuel loads and decrease catastrophic wildfire risk",
+      "Sustainable harvesting maintains long-term timber yields while preserving ecosystem services",
+      "Reforestation and afforestation increase carbon sequestration capacity"
+    ],
+    "humanImpacts": [
+      "Certified sustainable timber provides market premiums for forest owners",
+      "Protected forests provide recreation, watershed protection, and climate regulation",
+      "Community forestry programs empower local management of forest resources"
+    ],
+    "solutions": [
+      "FSC and PEFC certification systems verify sustainable forestry practices",
+      "Selective and shelter-wood cutting preserve forest structure",
+      "Prescribed burns maintain fire-adapted ecosystems",
+      "Reforestation of degraded lands restores forest ecosystem services",
+      "Reduced-impact logging minimizes damage to surrounding trees and soil"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Years after harvest",
+      "yAxis": "Biodiversity index / Standing timber volume",
+      "trend": "Selectively cut forests recover biodiversity and timber volume within 20–30 years, while clearcut areas take 80–100+ years to reach comparable biodiversity levels"
+    },
+    "frqUse": "Compare sustainable forestry methods to clearcutting and explain how certification programs promote long-term forest health.",
+    "mcqTrap": "Students think all fire is destructive — prescribed burns are an essential sustainable forestry tool that reduces wildfire risk and maintains fire-adapted ecosystems.",
+    "commonMistake": "Assuming tree plantations (monoculture tree farms) are sustainable forests — they lack the biodiversity and ecosystem services of natural or sustainably managed forests.",
+    "modelSentence": "Sustainable forestry practices including selective cutting, shelter-wood harvesting, and prescribed burns maintain forest biodiversity and ecosystem services while providing long-term timber production, and certification programs like FSC ensure adherence to environmental, social, and economic sustainability standards.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_renewable_nonrenewable",
+    "unit": "Unit 6",
+    "topicNumber": "6.1",
+    "topicTitle": "Renewable and Nonrenewable Resources",
+    "cedLearningObjective": "ENG-6.A",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "classification_chart"],
+    "mustKnowConcept": "Nonrenewable resources (fossil fuels, nuclear, minerals) exist in finite quantities and form over geological timescales, while renewable resources (solar, wind, hydro, geothermal, biomass) are replenished naturally on human timescales, though both types have environmental trade-offs.",
+    "diagramDescription": "Classification chart dividing energy resources into nonrenewable (coal, oil, natural gas, nuclear) and renewable (solar, wind, hydro, geothermal, biomass, tidal) with key characteristics: formation time, availability, environmental impacts, and current share of global energy.",
+    "specificExamples": [
+      "Fossil fuels (coal, oil, natural gas) formed over 300+ million years from ancient organic matter but supply ~80% of global energy",
+      "Solar and wind energy are intermittent — they require energy storage or backup generation for consistent supply",
+      "Uranium for nuclear power is technically nonrenewable but existing reserves could last thousands of years with breeder reactor technology",
+      "Geothermal energy in Iceland provides ~25% of electricity and ~90% of home heating from volcanic activity along the Mid-Atlantic Ridge"
+    ],
+    "causes": [
+      "Fossil fuels became dominant due to high energy density, existing infrastructure, and low historical cost",
+      "Renewables were historically more expensive but costs have dropped dramatically (solar PV costs fell ~90% from 2010–2023)",
+      "Energy security concerns drive diversification toward domestic renewable sources"
+    ],
+    "effects": [
+      "Nonrenewable resource extraction causes habitat destruction, water pollution, and GHG emissions",
+      "Renewable energy reduces GHG emissions but requires land, materials, and can affect wildlife",
+      "Energy transitions create economic disruption in fossil fuel-dependent communities"
+    ],
+    "humanImpacts": [
+      "Fossil fuel combustion produces ~75% of global greenhouse gas emissions",
+      "Air pollution from fossil fuels causes ~4.2 million premature deaths annually (WHO)",
+      "Mining for renewable energy materials (lithium, cobalt, rare earths) creates localized environmental damage"
+    ],
+    "solutions": [
+      "Transition to renewable energy sources to reduce GHG emissions and air pollution",
+      "Energy storage technologies (batteries, pumped hydro) address intermittency",
+      "Energy efficiency reduces total demand regardless of source",
+      "Just transition policies support workers in fossil fuel industries"
+    ],
+    "graphConnection": {
+      "graphType": "stacked area chart",
+      "xAxis": "Year (1800–present)",
+      "yAxis": "Global energy consumption by source (EJ)",
+      "trend": "Fossil fuels dominate but renewables are the fastest-growing segment; solar and wind have doubled capacity every 2–3 years since 2015"
+    },
+    "frqUse": "Compare renewable and nonrenewable energy sources in terms of environmental impacts, availability, and role in addressing climate change.",
+    "mcqTrap": "Students classify nuclear as renewable because it doesn't emit CO₂ during operation — uranium is a finite, mined resource making nuclear energy nonrenewable, despite being low-carbon.",
+    "commonMistake": "Thinking renewable means zero environmental impact — all energy sources have trade-offs (wind turbines affect birds, solar farms require land, hydroelectric dams alter ecosystems).",
+    "modelSentence": "Nonrenewable resources like fossil fuels provide ~80% of global energy but produce greenhouse gas emissions and are finite, while renewable resources like solar and wind are replenished naturally and produce minimal emissions, though both types involve environmental trade-offs that must be managed.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_global_energy_consumption",
+    "unit": "Unit 6",
+    "topicNumber": "6.2",
+    "topicTitle": "Global Energy Consumption",
+    "cedLearningObjective": "ENG-6.B",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["line_graph", "bar_chart"],
+    "mustKnowConcept": "Global energy consumption has increased dramatically with industrialization and population growth, with fossil fuels supplying ~80% of total energy; per-capita consumption varies widely between developed and developing nations.",
+    "diagramDescription": "Stacked area graph showing global energy consumption by source (coal, oil, natural gas, nuclear, hydro, renewables) from 1900 to present, with total increasing from ~20 EJ to ~580 EJ, plus a bar chart of per-capita consumption by country.",
+    "specificExamples": [
+      "The average American consumes ~300 million BTUs of energy per year, roughly 2x the European average and 10x the average in sub-Saharan Africa",
+      "China surpassed the U.S. as the world's largest total energy consumer around 2009, driven by rapid industrialization, though per-capita use remains lower",
+      "Oil provides ~31% of global energy, coal ~27%, and natural gas ~24%, with renewables (including hydro) at ~14% and nuclear at ~4% (2023 data)",
+      "Global energy demand is projected to increase 25–50% by 2050, driven primarily by population and economic growth in developing nations"
+    ],
+    "causes": [
+      "Population growth increases total energy demand",
+      "Industrialization and economic development raise per-capita energy consumption",
+      "Urban lifestyles require more energy for transportation, heating/cooling, and manufacturing"
+    ],
+    "effects": [
+      "Increased greenhouse gas emissions driving climate change",
+      "Air and water pollution from fossil fuel extraction and combustion",
+      "Resource depletion: conventional oil production may have peaked or will peak soon"
+    ],
+    "humanImpacts": [
+      "Energy poverty: ~770 million people globally lack access to electricity",
+      "Developed nations consume disproportionate share of global energy",
+      "Fossil fuel price volatility affects economies worldwide"
+    ],
+    "solutions": [
+      "Energy efficiency improvements reduce demand per unit of GDP",
+      "Electrification of transportation and heating enables renewable energy use",
+      "International cooperation on clean energy technology transfer to developing nations",
+      "Distributed renewable energy provides access in off-grid communities"
+    ],
+    "graphConnection": {
+      "graphType": "stacked area chart",
+      "xAxis": "Year (1900–present)",
+      "yAxis": "Global energy consumption (exajoules)",
+      "trend": "Total energy consumption increased ~10x during the 20th century, with fossil fuels dominating throughout; renewable share is small but rapidly growing"
+    },
+    "frqUse": "Analyze trends in global energy consumption and explain how economic development and population growth affect energy demand.",
+    "mcqTrap": "Students confuse total national energy consumption with per-capita consumption — China uses more total energy than the U.S., but American per-capita consumption is still much higher.",
+    "commonMistake": "Thinking renewable energy is already a major share of global energy — despite rapid growth, renewables (excluding hydro) provide only ~7% of primary energy globally.",
+    "modelSentence": "Global energy consumption has increased dramatically with industrialization, with fossil fuels providing ~80% of the ~580 EJ consumed annually, and per-capita consumption varying by a factor of 10 between developed and developing nations, highlighting both the challenge of energy transition and the inequity of energy access.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_fuel_types",
+    "unit": "Unit 6",
+    "topicNumber": "6.3",
+    "topicTitle": "Fuel Types and Uses",
+    "cedLearningObjective": "ENG-6.C",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "bar_chart"],
+    "mustKnowConcept": "Different fuel types — coal, petroleum, natural gas, nuclear, and renewables — have distinct energy densities, carbon emission factors, primary uses, and environmental impacts that determine their suitability for various applications.",
+    "diagramDescription": "Comparison chart showing fuel types with their energy density (MJ/kg), CO₂ emissions per unit energy (g CO₂/kWh), primary uses (electricity, transportation, heating, industrial), and major environmental impacts.",
+    "specificExamples": [
+      "Coal has the highest CO₂ emissions per unit energy (~820 g CO₂/kWh for electricity) and is primarily used for electricity generation and steel production",
+      "Petroleum has the highest energy density among fossil fuels (~46 MJ/kg) and dominates transportation (~92% of transport energy globally)",
+      "Natural gas emits ~50% less CO₂ than coal per kWh of electricity and is used for electricity, heating, and as industrial feedstock",
+      "Nuclear fuel (uranium-235) has extremely high energy density (~80,000,000 MJ/kg) but produces radioactive waste requiring storage for thousands of years"
+    ],
+    "causes": [
+      "Different energy densities and physical properties make fuels suitable for specific applications",
+      "Transportation infrastructure was built around liquid petroleum fuels",
+      "Electricity grids were designed around centralized coal and nuclear power plants"
+    ],
+    "effects": [
+      "Coal combustion produces the most CO₂, SO₂, particulate matter, and mercury per unit energy",
+      "Natural gas has lower emissions but methane leakage during extraction and transport offsets some climate benefit",
+      "Nuclear provides carbon-free electricity but creates long-lived radioactive waste"
+    ],
+    "humanImpacts": [
+      "Coal mining and combustion cause ~800,000 premature deaths annually from air pollution",
+      "Oil spills contaminate marine and coastal ecosystems (e.g., Deepwater Horizon, 2010: 4.9 million barrels)",
+      "Natural gas fracking contaminates groundwater in some communities"
+    ],
+    "solutions": [
+      "Fuel switching from coal to natural gas reduces CO₂ emissions ~50% per kWh",
+      "Electrification of transportation eliminates tailpipe emissions",
+      "Advanced nuclear designs aim to reduce waste volume and proliferation risk",
+      "Synthetic fuels from renewable electricity could replace petroleum in hard-to-electrify sectors"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Fuel type (coal, oil, natural gas, nuclear, solar, wind)",
+      "yAxis": "CO₂ emissions (g CO₂-eq/kWh, lifecycle)",
+      "trend": "Coal highest (~820), oil (~720), natural gas (~490), nuclear (~12), solar (~41), wind (~11) — orders of magnitude difference between fossil fuels and low-carbon sources"
+    },
+    "frqUse": "Compare the environmental impacts and energy densities of coal, natural gas, and nuclear fuel, and explain trade-offs of fuel switching.",
+    "mcqTrap": "Students may think natural gas is clean energy because it burns cleaner than coal — it still emits CO₂ (a fossil fuel) and methane leakage during extraction can offset climate benefits.",
+    "commonMistake": "Forgetting that energy density matters — nuclear fuel has millions of times more energy per kg than fossil fuels, which is why a single nuclear plant can replace many coal plants.",
+    "modelSentence": "Fuel types vary widely in energy density, carbon emissions, and environmental impacts: coal emits the most CO₂ per kWh (~820 g), natural gas emits roughly half that, while nuclear, solar, and wind produce minimal lifecycle emissions, making fuel choice critical for climate change mitigation.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_energy_distribution",
+    "unit": "Unit 6",
+    "topicNumber": "6.4",
+    "topicTitle": "Energy Distribution",
+    "cedLearningObjective": "ENG-6.D",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "low",
+    "visualType": ["map", "flow_diagram"],
+    "mustKnowConcept": "Energy distribution varies globally based on resource availability, economic development, and infrastructure, with developed nations consuming far more energy per capita while developing nations often rely on traditional biomass (wood, dung) for heating and cooking.",
+    "diagramDescription": "World map showing per-capita energy consumption by country (color-coded) alongside a Sankey/flow diagram showing how primary energy is converted, distributed, and lost at each stage from extraction to end use.",
+    "specificExamples": [
+      "The U.S. electric grid loses ~5% of generated electricity during transmission and distribution over ~160,000 miles of high-voltage lines",
+      "In sub-Saharan Africa, ~600 million people rely on wood and charcoal for cooking, contributing to deforestation and indoor air pollution",
+      "Middle Eastern nations like Saudi Arabia export ~70% of their petroleum production while importing most manufactured goods",
+      "Distributed solar (rooftop panels) bypasses transmission losses and grid infrastructure, particularly valuable in remote or developing regions"
+    ],
+    "causes": [
+      "Uneven distribution of fossil fuel reserves (oil concentrated in Middle East, Russia, Americas)",
+      "Historical infrastructure investments shaped current energy distribution networks",
+      "Economic capacity determines ability to develop energy infrastructure"
+    ],
+    "effects": [
+      "Energy poverty limits economic development and quality of life",
+      "Long transmission distances result in energy losses",
+      "Dependence on imported energy creates geopolitical vulnerability"
+    ],
+    "humanImpacts": [
+      "Indoor air pollution from biomass cooking causes ~3.2 million premature deaths annually (WHO)",
+      "Energy price spikes disproportionately affect low-income populations",
+      "Geopolitical conflicts often center on control of energy resources"
+    ],
+    "solutions": [
+      "Decentralized renewable energy systems improve energy access in remote areas",
+      "Smart grid technology reduces transmission losses and improves reliability",
+      "Microgrids provide resilient local power in areas with unreliable grid access",
+      "Improved cookstoves reduce biomass fuel consumption and indoor air pollution by 50–60%"
+    ],
+    "graphConnection": {
+      "graphType": "Sankey diagram",
+      "xAxis": "Energy flow stages (primary → conversion → transmission → end use)",
+      "yAxis": "Energy quantity (EJ)",
+      "trend": "Roughly 60–65% of primary energy is lost as waste heat during conversion and transmission, with only 35–40% reaching useful end use"
+    },
+    "frqUse": "Describe how energy distribution differs between developed and developing nations and explain the challenges of energy access.",
+    "mcqTrap": "Students overlook that ~60% of primary energy is lost as waste heat in conversion and transmission — energy efficiency improvements can have enormous impact by recovering some of these losses.",
+    "commonMistake": "Assuming all countries have similar energy infrastructure — many developing nations lack grid infrastructure entirely, making distributed renewables more practical than centralized power plants.",
+    "modelSentence": "Energy distribution varies dramatically worldwide, with developed nations using centralized grids that lose ~60% of primary energy as waste heat during conversion and transmission, while ~600 million people in sub-Saharan Africa lack electricity access, making decentralized renewable energy systems critical for equitable energy development.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_fossil_fuels",
+    "unit": "Unit 6",
+    "topicNumber": "6.5",
+    "topicTitle": "Fossil Fuels",
+    "cedLearningObjective": "ENG-6.E",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cross_section", "process_diagram"],
+    "mustKnowConcept": "Fossil fuels (coal, oil, natural gas) formed from ancient organic matter buried and transformed by heat and pressure over millions of years; their extraction and combustion release stored carbon as CO₂, driving climate change, air pollution, and ecosystem degradation.",
+    "diagramDescription": "Cross-section showing formation and extraction of fossil fuels: ancient organic matter buried in sedimentary layers, transformed by heat and pressure into coal (from terrestrial plants in swamps), oil and gas (from marine organisms), with extraction methods including drilling, mining, and hydraulic fracturing.",
+    "specificExamples": [
+      "Coal formed from terrestrial plant material in ancient swamps during the Carboniferous period (~360–300 million years ago) and is extracted through surface and underground mining",
+      "Hydraulic fracturing (fracking) injects high-pressure fluid to fracture shale rock and release trapped natural gas, raising concerns about groundwater contamination and induced seismicity",
+      "The Deepwater Horizon oil spill (2010) released 4.9 million barrels of oil into the Gulf of Mexico, devastating marine ecosystems and coastal communities",
+      "Burning coal releases mercury, sulfur dioxide (causing acid rain), nitrogen oxides, and particulate matter in addition to CO₂"
+    ],
+    "causes": [
+      "Ancient organic matter was buried, compressed, and heated over 300+ million years",
+      "Anaerobic conditions prevented complete decomposition, preserving carbon-rich material",
+      "Different source materials and conditions produced coal (terrestrial plants), oil (marine plankton), and gas (thermal cracking of oil)"
+    ],
+    "effects": [
+      "Combustion releases CO₂ that had been sequestered for millions of years, increasing atmospheric concentration from ~280 ppm (pre-industrial) to ~424 ppm (2024)",
+      "Coal combustion is the largest single source of CO₂ emissions globally",
+      "Oil extraction risks spills and habitat destruction; transportation accidents cause water contamination",
+      "Natural gas extraction through fracking may contaminate groundwater and induce earthquakes"
+    ],
+    "humanImpacts": [
+      "Air pollution from fossil fuel combustion causes respiratory disease and ~4.2 million premature deaths annually",
+      "Acid rain from SO₂ and NOx emissions damages forests, lakes, and infrastructure",
+      "Climate change from CO₂ emissions causes sea level rise, extreme weather, and ecosystem disruption"
+    ],
+    "solutions": [
+      "Transition to renewable energy sources reduces fossil fuel dependence",
+      "Carbon capture and storage (CCS) technology captures CO₂ from power plant emissions",
+      "Methane capture at wells and pipelines reduces fugitive emissions",
+      "Carbon pricing (cap-and-trade or carbon tax) internalizes externality costs"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Year (1750–present)",
+      "yAxis": "Atmospheric CO₂ concentration (ppm)",
+      "trend": "CO₂ increased from ~280 ppm pre-industrial to ~424 ppm in 2024, accelerating after 1950 with increased fossil fuel combustion (Keeling Curve)"
+    },
+    "frqUse": "Describe the formation and environmental impacts of fossil fuel use and explain how transitioning to alternative energy sources can mitigate these impacts.",
+    "mcqTrap": "Students often think natural gas is carbon-free because it burns cleaner than coal — natural gas combustion still produces CO₂, and methane leakage during extraction may negate its climate advantage over coal.",
+    "commonMistake": "Thinking oil and coal form from dinosaurs — oil formed primarily from marine microorganisms (phytoplankton, algae) and coal formed from terrestrial plant material in ancient swamps.",
+    "modelSentence": "Fossil fuels formed over hundreds of millions of years from ancient organic matter, and their combustion releases sequestered carbon as CO₂, increasing atmospheric concentrations from 280 to 424 ppm since the Industrial Revolution, driving climate change, acid rain, and air pollution that causes millions of premature deaths annually.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_nuclear_power",
+    "unit": "Unit 6",
+    "topicNumber": "6.6",
+    "topicTitle": "Nuclear Power",
+    "cedLearningObjective": "ENG-6.F",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["process_diagram", "comparison"],
+    "mustKnowConcept": "Nuclear power generates electricity through fission of uranium-235, producing no direct CO₂ emissions but creating radioactive waste that remains hazardous for thousands of years, with catastrophic accident risk a major concern.",
+    "diagramDescription": "Process diagram of a nuclear power plant showing fuel rods (uranium-235), controlled fission chain reaction in the reactor core, heat transfer to water/steam, turbine generator, cooling tower, and radioactive waste storage pathway.",
+    "specificExamples": [
+      "Nuclear fission of 1 kg of uranium-235 releases energy equivalent to burning ~2,700 metric tons of coal",
+      "The Chernobyl disaster (1986) released 400x more radiation than the Hiroshima bomb and rendered a 2,600 km² exclusion zone uninhabitable",
+      "The Fukushima Daiichi accident (2011) was triggered by a tsunami that overwhelmed backup cooling systems, causing three reactor meltdowns",
+      "The U.S. has no permanent high-level nuclear waste repository; ~90,000 metric tons of spent fuel are stored at reactor sites in temporary pools and dry casks",
+      "France generates ~70% of its electricity from nuclear power, giving it one of the lowest carbon intensities of any developed nation's grid"
+    ],
+    "causes": [
+      "Nuclear fission splits uranium-235 atoms, releasing enormous energy from the strong nuclear force",
+      "Chain reaction: each fission event releases neutrons that trigger additional fissions",
+      "Control rods absorb neutrons to regulate the reaction rate"
+    ],
+    "effects": [
+      "Produces large amounts of carbon-free electricity (lifecycle emissions ~12 g CO₂/kWh)",
+      "Generates high-level radioactive waste with half-lives of thousands to millions of years",
+      "Thermal pollution from cooling water discharge affects aquatic ecosystems",
+      "Risk of catastrophic accidents, though statistically rare"
+    ],
+    "humanImpacts": [
+      "Nuclear accidents can render large areas uninhabitable for decades (Chernobyl, Fukushima)",
+      "Uranium mining exposes workers and communities to radioactive dust and radon",
+      "Nuclear proliferation risk: enrichment technology can be used for weapons"
+    ],
+    "solutions": [
+      "Advanced reactor designs (Generation IV) incorporate passive safety systems",
+      "Deep geological repositories (e.g., Finland's Onkalo facility) for permanent waste storage",
+      "Small modular reactors (SMRs) reduce construction time and capital costs",
+      "Reprocessing spent fuel recovers usable uranium and plutonium, reducing waste volume"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Energy source",
+      "yAxis": "Deaths per TWh of electricity generated",
+      "trend": "Nuclear has the lowest death rate per TWh (~0.03) compared to coal (~24.6), oil (~18.4), and natural gas (~2.8), even including Chernobyl and Fukushima"
+    },
+    "frqUse": "Evaluate the advantages and disadvantages of nuclear power as an alternative to fossil fuels for electricity generation.",
+    "mcqTrap": "Students often overestimate nuclear accident risk relative to fossil fuel deaths — nuclear power causes far fewer deaths per unit of energy produced than any fossil fuel, even including major accidents.",
+    "commonMistake": "Confusing nuclear fission (splitting atoms, used in current reactors) with nuclear fusion (combining atoms, not yet commercially viable) — the AP exam tests fission.",
+    "modelSentence": "Nuclear fission of uranium-235 generates large amounts of carbon-free electricity with extremely high energy density, but produces radioactive waste hazardous for thousands of years and carries the risk of catastrophic accidents like Chernobyl and Fukushima, making waste storage and plant safety the primary challenges.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_biomass",
+    "unit": "Unit 6",
+    "topicNumber": "6.7",
+    "topicTitle": "Biomass and Biofuels",
+    "cedLearningObjective": "ENG-6.G",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["process_diagram", "comparison"],
+    "mustKnowConcept": "Biomass energy uses organic material (wood, crop waste, manure, algae) for heat and electricity, and biofuels (ethanol, biodiesel) are liquid fuels derived from crops; both are considered carbon-neutral in theory because CO₂ released during combustion was recently absorbed during growth, though net carbon balance depends on production methods.",
+    "diagramDescription": "Process diagram showing biomass energy pathways: direct combustion of wood/waste for heat and electricity, fermentation of corn/sugarcane into ethanol, transesterification of plant oils into biodiesel, and anaerobic digestion of manure into biogas (methane).",
+    "specificExamples": [
+      "Corn ethanol in the U.S. is blended into gasoline (E10 = 10% ethanol) but requires significant energy, fertilizer, and land inputs, yielding only ~1.3:1 energy return on investment",
+      "Brazilian sugarcane ethanol is more efficient (~8:1 energy return) because sugarcane has higher sugar content and bagasse (waste fiber) powers the distillation process",
+      "Anaerobic digesters on dairy farms capture methane from manure for electricity generation, reducing greenhouse gas emissions while producing energy",
+      "Wood burning for heating and cooking remains the primary energy source for ~2.4 billion people in developing nations, contributing to deforestation and indoor air pollution"
+    ],
+    "causes": [
+      "Biomass is available in every country, unlike fossil fuels concentrated in specific regions",
+      "Biofuels can substitute for petroleum in existing transportation infrastructure",
+      "Waste biomass (crop residues, manure, food waste) represents an otherwise unused energy source"
+    ],
+    "effects": [
+      "Theoretically carbon-neutral: CO₂ released during combustion was absorbed during plant growth",
+      "In practice, land clearing, fertilizer production, and processing can make biofuels net carbon-positive",
+      "Corn ethanol competes with food production for agricultural land and water",
+      "Burning biomass releases particulate matter, CO, and other air pollutants"
+    ],
+    "humanImpacts": [
+      "Food vs. fuel debate: dedicating cropland to biofuels raises food prices for the poorest populations",
+      "Indoor air pollution from biomass cooking causes ~3.2 million premature deaths annually in developing nations",
+      "Land use change for biofuel feedstock can increase net carbon emissions"
+    ],
+    "solutions": [
+      "Second-generation biofuels from cellulosic material (switchgrass, wood chips, agricultural waste) avoid food competition",
+      "Algae-based biofuels have high oil yields per acre without competing for agricultural land",
+      "Improved cookstoves reduce biomass consumption and indoor air pollution by 50–60%",
+      "Biogas from anaerobic digestion captures methane that would otherwise escape as a potent GHG"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Biofuel type (corn ethanol, sugarcane ethanol, cellulosic ethanol, biodiesel, algae)",
+      "yAxis": "Energy return on investment (EROI)",
+      "trend": "Sugarcane ethanol (~8:1) has much higher EROI than corn ethanol (~1.3:1); cellulosic and algae-based biofuels show potential for higher returns"
+    },
+    "frqUse": "Compare the environmental trade-offs of corn ethanol to sugarcane ethanol and explain the food vs. fuel debate.",
+    "mcqTrap": "Students assume biomass is always carbon-neutral — the net carbon balance depends on whether the biomass is replaced (regrown), and corn ethanol's energy inputs can make its lifecycle emissions nearly as high as gasoline.",
+    "commonMistake": "Thinking biofuels automatically solve the carbon problem — corn ethanol has an EROI of only ~1.3:1, meaning it takes almost as much energy to produce as it yields.",
+    "modelSentence": "Biomass energy and biofuels are theoretically carbon-neutral because combustion releases recently-fixed carbon, but corn ethanol's low energy return on investment (~1.3:1) and competition with food production limit its sustainability, while sugarcane ethanol and second-generation cellulosic biofuels offer more favorable energy and land-use balances.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_solar_energy",
+    "unit": "Unit 6",
+    "topicNumber": "6.8",
+    "topicTitle": "Solar Energy",
+    "cedLearningObjective": "ENG-6.H",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "process_diagram"],
+    "mustKnowConcept": "Solar energy converts sunlight to electricity via photovoltaic (PV) cells or concentrates solar thermal energy, producing no direct emissions during operation, but requires large land areas, has intermittency challenges, and involves environmental costs in panel manufacturing and disposal.",
+    "diagramDescription": "Comparison of two solar technologies: photovoltaic (PV) panels converting sunlight directly to electricity via the photovoltaic effect, and concentrated solar power (CSP) using mirrors to focus sunlight to heat fluid and drive a steam turbine.",
+    "specificExamples": [
+      "Solar PV costs dropped from ~$76/watt in 1977 to ~$0.20/watt in 2023, making it cost-competitive with fossil fuels in most markets",
+      "The Ivanpah Solar Electric Generating System in California's Mojave Desert uses 173,500 heliostats (mirrors) to concentrate sunlight onto three towers for a 392 MW concentrated solar power plant",
+      "Germany's Energiewende (energy transition) installed ~67 GW of solar capacity despite its relatively high latitude, demonstrating solar viability beyond the tropics",
+      "Solar panel manufacturing requires mining silicon, silver, and cadmium telluride, and panels have a 25–30 year lifespan after which recycling infrastructure is needed"
+    ],
+    "causes": [
+      "Solar radiation provides ~173,000 TW of energy to Earth's surface — far more than total human energy consumption (~18 TW)",
+      "Photovoltaic effect converts photons directly to electric current in semiconductor materials",
+      "Dramatic cost reductions driven by manufacturing scale and technology improvements"
+    ],
+    "effects": [
+      "Zero direct emissions during electricity generation",
+      "Intermittency: no generation at night, reduced output on cloudy days and at high latitudes in winter",
+      "Land use: utility-scale solar farms require 5–10 acres per MW of capacity",
+      "Lifecycle emissions (~41 g CO₂/kWh) primarily from manufacturing, far lower than fossil fuels"
+    ],
+    "humanImpacts": [
+      "Habitat disruption from large-scale solar installations in desert ecosystems",
+      "Mining of raw materials for panels (silicon, rare metals) causes localized environmental damage",
+      "End-of-life panel disposal creates electronic waste if not recycled",
+      "Reduced air pollution improves public health in regions transitioning from coal to solar"
+    ],
+    "solutions": [
+      "Battery storage (lithium-ion, flow batteries) addresses intermittency",
+      "Rooftop solar reduces land use impacts and transmission losses",
+      "Solar panel recycling programs recover valuable materials",
+      "Agrivoltaics: co-locating solar panels with agriculture provides dual land use"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Year (1977–present)",
+      "yAxis": "Solar PV module cost ($/watt)",
+      "trend": "Solar PV costs have followed Swanson's Law, declining ~20% for every doubling of cumulative installed capacity, dropping from $76/watt to ~$0.20/watt"
+    },
+    "frqUse": "Evaluate the advantages and disadvantages of solar energy and explain how energy storage technology addresses intermittency.",
+    "mcqTrap": "Students forget that solar panels have environmental costs in manufacturing (energy-intensive, uses toxic chemicals) and disposal — 'zero emissions' applies only to operation, not the full lifecycle.",
+    "commonMistake": "Thinking solar energy only works in sunny desert climates — Germany, one of the cloudiest developed nations, is among the world's top solar producers.",
+    "modelSentence": "Solar energy converts sunlight to electricity via photovoltaic cells with zero operational emissions and costs that have dropped 99.7% since 1977, but intermittency, land use requirements, and manufacturing/disposal impacts must be addressed through battery storage, rooftop deployment, and recycling programs.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_hydroelectric",
+    "unit": "Unit 6",
+    "topicNumber": "6.9",
+    "topicTitle": "Hydroelectric Power",
+    "cedLearningObjective": "ENG-6.I",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cross_section", "process_diagram"],
+    "mustKnowConcept": "Hydroelectric dams convert the kinetic energy of flowing water to electricity and provide flood control and water storage, but disrupt river ecosystems by blocking fish migration, altering sediment transport, and flooding large areas of terrestrial habitat.",
+    "diagramDescription": "Cross-section of a hydroelectric dam showing the reservoir, dam structure, penstock (pipe carrying water to turbine), turbine-generator, and downstream river, with labels showing flooded area, blocked fish passage, and altered sediment flow.",
+    "specificExamples": [
+      "China's Three Gorges Dam is the world's largest hydroelectric facility (22.5 GW capacity), displacing 1.3 million people and flooding 632 km² of land including archaeological sites",
+      "Salmon populations in the Pacific Northwest declined dramatically after dam construction blocked access to upstream spawning habitat; fish ladders recover only a fraction of historic runs",
+      "The Glen Canyon Dam on the Colorado River trapped sediment that previously nourished downstream beaches and riparian habitats in the Grand Canyon",
+      "Pumped-storage hydroelectric facilities (e.g., Bath County, Virginia) pump water uphill during low demand and release it through turbines during peak demand, acting as giant batteries"
+    ],
+    "causes": [
+      "Flowing water's gravitational potential energy is converted to kinetic energy driving turbines",
+      "Dams create height differential (hydraulic head) that increases energy generation potential",
+      "Reliable water supply from rivers and precipitation provides consistent generation capacity"
+    ],
+    "effects": [
+      "Produces carbon-free electricity with very low lifecycle emissions (~24 g CO₂/kWh)",
+      "Blocks fish migration routes, particularly anadromous species like salmon",
+      "Traps sediment behind the dam, starving downstream habitats of nutrients and causing coastal erosion",
+      "Reservoir flooding destroys terrestrial ecosystems and can displace large populations"
+    ],
+    "humanImpacts": [
+      "Population displacement: large dams have displaced an estimated 40–80 million people worldwide",
+      "Reservoir decomposition in tropical regions produces methane, partially offsetting carbon benefits",
+      "Dam failure risk poses catastrophic flood danger to downstream communities",
+      "Altered downstream flows affect agriculture, fisheries, and ecosystems"
+    ],
+    "solutions": [
+      "Fish ladders and fish elevators help migratory species bypass dams",
+      "Run-of-river hydroelectric systems minimize reservoir impacts by using natural river flow",
+      "Controlled flow releases mimic natural flood cycles to maintain downstream ecosystems",
+      "Dam removal where ecological costs exceed energy benefits (e.g., Elwha River dam removal in Washington restored salmon habitat)"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Country",
+      "yAxis": "Hydroelectric capacity (GW) or share of electricity (%)",
+      "trend": "China, Brazil, and Canada lead in total hydroelectric capacity, while Norway, Paraguay, and Ethiopia generate >80% of electricity from hydropower"
+    },
+    "frqUse": "Evaluate the environmental trade-offs of hydroelectric dams and explain how dam removal or run-of-river systems can mitigate ecological impacts.",
+    "mcqTrap": "Students assume hydroelectric is entirely clean — tropical reservoirs can produce significant methane from decomposing flooded vegetation, and sediment trapping causes downstream erosion.",
+    "commonMistake": "Thinking fish ladders fully solve the fish migration problem — they help, but passage rates are often only 5–20% effective for some species, and dams remain major barriers.",
+    "modelSentence": "Hydroelectric dams generate reliable, low-carbon electricity by harnessing water's gravitational potential energy, but disrupt river ecosystems by blocking fish migration, trapping sediment, and flooding terrestrial habitats; alternatives like run-of-river systems and dam removal can reduce ecological impacts while maintaining renewable energy production.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_geothermal",
+    "unit": "Unit 6",
+    "topicNumber": "6.10",
+    "topicTitle": "Geothermal Energy",
+    "cedLearningObjective": "ENG-6.J",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cross_section", "map"],
+    "mustKnowConcept": "Geothermal energy harnesses heat from Earth's interior for electricity generation and direct heating, providing reliable baseload power with minimal emissions, but is geographically limited to areas near tectonic plate boundaries or volcanic hotspots.",
+    "diagramDescription": "Cross-section showing a geothermal power plant: magma heats underground rock and water, hot water/steam rises through wells to the surface, drives a turbine generator, and cooled water is reinjected to maintain the reservoir.",
+    "specificExamples": [
+      "Iceland generates ~25% of its electricity and heats ~90% of homes using geothermal energy from its location on the Mid-Atlantic Ridge",
+      "The Geysers in northern California is the world's largest geothermal power complex (900 MW capacity), using steam from a volcanic hot spot",
+      "Ground-source heat pumps use stable subsurface temperatures (10–15°C) for heating and cooling buildings, available anywhere regardless of tectonic activity",
+      "Enhanced geothermal systems (EGS) inject water into hot dry rock to create artificial reservoirs, potentially expanding geothermal access beyond volcanic regions"
+    ],
+    "causes": [
+      "Radioactive decay in Earth's core and mantle generates continuous internal heat",
+      "Heat concentrates near tectonic plate boundaries and volcanic hotspots",
+      "Naturally occurring underground water reservoirs transport geothermal heat to accessible depths"
+    ],
+    "effects": [
+      "Provides reliable baseload power (available 24/7, unlike intermittent solar and wind)",
+      "Very low lifecycle emissions (~38 g CO₂/kWh)",
+      "Small land footprint compared to other energy sources",
+      "May release small amounts of hydrogen sulfide (H₂S) and CO₂ from underground reservoirs"
+    ],
+    "humanImpacts": [
+      "Geographically limited: most high-quality resources are in volcanic regions",
+      "Enhanced geothermal systems may induce minor seismicity from fluid injection",
+      "Local H₂S emissions can cause odor nuisance and health concerns near plants"
+    ],
+    "solutions": [
+      "Enhanced geothermal systems (EGS) expand geothermal access to non-volcanic areas",
+      "Ground-source heat pumps provide efficient heating/cooling universally",
+      "Binary cycle plants use lower-temperature resources by transferring heat to a secondary fluid with a lower boiling point",
+      "Closed-loop systems minimize water use and emission of subsurface gases"
+    ],
+    "graphConnection": {
+      "graphType": "map",
+      "xAxis": "Longitude",
+      "yAxis": "Latitude",
+      "trend": "Geothermal resources cluster along tectonic plate boundaries and volcanic hotspots, particularly around the Ring of Fire, East African Rift, and Mid-Atlantic Ridge"
+    },
+    "frqUse": "Explain why geothermal energy is limited to certain geographic locations and describe how enhanced geothermal systems could expand its availability.",
+    "mcqTrap": "Students confuse geothermal power plants (limited to volcanic/tectonic areas) with ground-source heat pumps (available anywhere) — both use Earth's heat but at very different scales and temperatures.",
+    "commonMistake": "Thinking geothermal energy is universally available at the same quality — high-enthalpy resources suitable for electricity generation are rare, while low-temperature resources for heat pumps are widespread.",
+    "modelSentence": "Geothermal energy harnesses Earth's internal heat to generate reliable, low-emission baseload electricity near tectonic plate boundaries, as seen in Iceland and California's Geysers complex, while ground-source heat pumps and enhanced geothermal systems could expand geothermal use beyond volcanically active regions.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_hydrogen_fuel_cells",
+    "unit": "Unit 6",
+    "topicNumber": "6.11",
+    "topicTitle": "Hydrogen Fuel Cells",
+    "cedLearningObjective": "ENG-6.K",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "low",
+    "visualType": ["process_diagram", "comparison"],
+    "mustKnowConcept": "Hydrogen fuel cells generate electricity by combining hydrogen and oxygen in an electrochemical reaction, producing only water as a byproduct, but hydrogen is an energy carrier (not a source) and its environmental benefit depends entirely on how the hydrogen is produced.",
+    "diagramDescription": "Process diagram of a proton exchange membrane (PEM) fuel cell: hydrogen gas enters the anode, splits into protons and electrons; protons pass through the membrane while electrons flow through an external circuit (generating electricity); oxygen combines with protons and electrons at the cathode to produce water.",
+    "specificExamples": [
+      "'Green hydrogen' is produced by electrolysis of water using renewable electricity and has near-zero lifecycle emissions",
+      "'Gray hydrogen' is produced from natural gas via steam methane reforming, which generates ~10 kg CO₂ per kg H₂ — currently ~95% of global hydrogen production",
+      "Toyota Mirai and Hyundai Nexo are commercially available hydrogen fuel cell vehicles with ~400-mile range and 5-minute refueling",
+      "NASA has used hydrogen fuel cells since the 1960s Gemini program, where fuel cells provided electricity and drinking water for astronauts"
+    ],
+    "causes": [
+      "Hydrogen has the highest energy content per unit mass of any fuel (~142 MJ/kg, 3x gasoline)",
+      "Fuel cells convert chemical energy directly to electricity at 40–60% efficiency, bypassing thermal cycle losses",
+      "Hydrogen can be produced from water using renewable electricity, creating a clean energy carrier"
+    ],
+    "effects": [
+      "Zero point-of-use emissions: only product is water (H₂ + O₂ → H₂O + electricity)",
+      "Overall environmental impact depends entirely on hydrogen production method",
+      "Hydrogen storage and transportation challenges: low volumetric density requires high-pressure tanks or cryogenic cooling",
+      "Infrastructure: hydrogen fueling stations are rare compared to gasoline stations or EV chargers"
+    ],
+    "humanImpacts": [
+      "Potential to decarbonize heavy transport (trucks, ships, aircraft) that are difficult to electrify with batteries",
+      "Green hydrogen production requires large amounts of renewable electricity and water",
+      "Hydrogen economy could reduce dependence on fossil fuel imports"
+    ],
+    "solutions": [
+      "Scale green hydrogen production using surplus renewable electricity during off-peak hours",
+      "Develop hydrogen pipeline infrastructure by repurposing existing natural gas pipelines",
+      "Use hydrogen for industrial processes (steel, ammonia production) that are hard to electrify",
+      "Combine with fuel cells for zero-emission heavy-duty transportation"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Hydrogen production method (gray, blue, green)",
+      "yAxis": "Lifecycle CO₂ emissions (kg CO₂ per kg H₂)",
+      "trend": "Gray hydrogen (steam methane reforming) produces ~10 kg CO₂/kg H₂; blue hydrogen (with CCS) ~2–5 kg; green hydrogen (renewable electrolysis) ~0–1 kg"
+    },
+    "frqUse": "Explain why hydrogen is considered an energy carrier rather than an energy source and compare the environmental impacts of different hydrogen production methods.",
+    "mcqTrap": "Students think hydrogen fuel cells are automatically clean energy — 95% of hydrogen is currently produced from natural gas (gray hydrogen), which generates significant CO₂ emissions; only green hydrogen from renewable electrolysis is truly low-carbon.",
+    "commonMistake": "Calling hydrogen a fuel 'source' — hydrogen is an energy carrier because it must be produced using another energy source; it does not exist in free molecular form naturally on Earth.",
+    "modelSentence": "Hydrogen fuel cells generate electricity by combining hydrogen and oxygen with water as the only byproduct, but hydrogen is an energy carrier whose environmental benefit depends on production method: gray hydrogen from natural gas produces ~10 kg CO₂ per kg H₂, while green hydrogen from renewable electrolysis produces near-zero emissions.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_wind_energy",
+    "unit": "Unit 6",
+    "topicNumber": "6.12",
+    "topicTitle": "Wind Energy",
+    "cedLearningObjective": "ENG-6.L",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["diagram", "map"],
+    "mustKnowConcept": "Wind turbines convert kinetic energy from moving air into electricity with no direct emissions during operation, and wind power has become one of the cheapest electricity sources globally, but intermittency, bird/bat mortality, and visual/noise impacts are ongoing challenges.",
+    "diagramDescription": "Diagram of a horizontal-axis wind turbine showing how wind turns the rotor blades, which spin a generator through a gearbox to produce electricity, with labels for typical turbine dimensions (80–120m hub height, 50–80m blade length) and optimal wind speed ranges.",
+    "specificExamples": [
+      "Denmark generates ~50% of its electricity from wind power, the highest share of any country",
+      "The Hornsea 2 offshore wind farm in the North Sea (UK) has a capacity of 1.3 GW, powering ~1.4 million homes",
+      "Wind turbine blade tips can reach speeds of 180 mph (290 km/h), and bird and bat mortality is estimated at 140,000–500,000 birds and 600,000+ bats per year in the U.S.",
+      "Onshore wind power costs declined ~70% from 2009 to 2023, reaching $30–50/MWh — cheaper than new coal or gas plants in most markets"
+    ],
+    "causes": [
+      "Wind is driven by unequal solar heating of Earth's surface and the Coriolis effect",
+      "Wind energy is proportional to the cube of wind speed (doubling wind speed = 8x the power)",
+      "Technology improvements have increased turbine capacity from ~50 kW in the 1980s to 15+ MW today"
+    ],
+    "effects": [
+      "Zero direct emissions during operation; lifecycle emissions ~11 g CO₂/kWh",
+      "Intermittency: wind output varies with weather and requires grid flexibility or storage",
+      "Bird and bat mortality, particularly for raptors and migratory species",
+      "Land use: turbines are spaced apart but land between them can be used for agriculture"
+    ],
+    "humanImpacts": [
+      "Visual impact and noise from turbines (infrasound) create local opposition (NIMBYism)",
+      "Offshore wind farms may affect marine ecosystems and commercial fishing routes",
+      "Fiberglass turbine blades are difficult to recycle at end of life (20–25 year lifespan)"
+    ],
+    "solutions": [
+      "Offshore wind farms access stronger, more consistent winds and reduce land-use conflicts",
+      "Bird-deterrent technologies (radar-activated shutdown, painted blades) reduce wildlife mortality",
+      "Grid-scale battery storage addresses intermittency",
+      "Blade recycling technologies being developed using thermoplastic resins",
+      "Community benefit agreements address local opposition through revenue sharing"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Year (2000–present)",
+      "yAxis": "Global installed wind capacity (GW) / Cost of wind energy ($/MWh)",
+      "trend": "Global wind capacity grew from ~17 GW (2000) to ~900 GW (2023) while costs declined ~70%, making wind one of the cheapest electricity sources"
+    },
+    "frqUse": "Evaluate the advantages and disadvantages of wind energy and explain how offshore wind and storage technology address its limitations.",
+    "mcqTrap": "Students overestimate bird mortality from wind turbines — domestic cats and building collisions each kill far more birds annually than wind turbines; however, turbines disproportionately affect raptors and rare species.",
+    "commonMistake": "Thinking wind turbines are inefficient because they don't spin all the time — the capacity factor of modern onshore wind is 25–45% and offshore is 40–55%, and energy output is what matters, not visual motion.",
+    "modelSentence": "Wind turbines convert kinetic energy from moving air into electricity with lifecycle emissions of only ~11 g CO₂/kWh and costs that have declined ~70% since 2009, but intermittency requires grid-scale storage, and bird/bat mortality can be mitigated through radar-activated shutdown systems and careful siting away from migratory corridors.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_energy_conservation",
+    "unit": "Unit 6",
+    "topicNumber": "6.13",
+    "topicTitle": "Energy Conservation",
+    "cedLearningObjective": "ENG-6.M",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "process_diagram"],
+    "mustKnowConcept": "Energy conservation reduces total energy consumption through behavioral changes and efficiency improvements, and is the most cost-effective strategy for reducing emissions — the cheapest and cleanest energy is the energy you don't use (negawatts).",
+    "diagramDescription": "Comparison of energy efficiency improvements across sectors: buildings (insulation, LED lighting, smart thermostats), transportation (fuel efficiency standards, public transit, EVs), and industry (cogeneration, waste heat recovery) with percentage energy savings for each.",
+    "specificExamples": [
+      "LED bulbs use ~75% less energy and last 25x longer than incandescent bulbs, saving ~$225 in electricity over their lifetime",
+      "CAFE (Corporate Average Fuel Economy) standards in the U.S. increased average fleet fuel economy from 27.5 mpg (2010) to 49 mpg (2026 target), reducing transportation emissions",
+      "Combined heat and power (CHP/cogeneration) systems capture waste heat from electricity generation for building heating, achieving 80% total efficiency vs. 33% for conventional power plants",
+      "ENERGY STAR-certified appliances use 10–50% less energy than standard models"
+    ],
+    "causes": [
+      "Buildings, transportation, and industry each consume roughly one-third of total energy",
+      "Most energy systems waste 60–70% of primary energy as heat",
+      "Behavioral and technological changes can dramatically reduce waste"
+    ],
+    "effects": [
+      "Reduced energy demand decreases fossil fuel consumption and emissions",
+      "Energy efficiency improvements are typically 2–3x cheaper than building new generation capacity",
+      "Lower energy bills improve economic well-being for households and businesses",
+      "Reduced peak demand decreases the need for expensive peaking power plants"
+    ],
+    "humanImpacts": [
+      "Energy poverty can be addressed by making existing energy use more efficient",
+      "Improved building insulation and efficient appliances reduce household energy costs by 20–40%",
+      "Mass transit reduces per-capita energy consumption for commuting by 50–75% vs. single-occupancy vehicles"
+    ],
+    "solutions": [
+      "Building codes requiring insulation, efficient windows, and HVAC standards",
+      "Vehicle fuel efficiency standards (CAFE in U.S., EU CO₂ regulations)",
+      "Cogeneration/CHP captures waste heat to improve overall system efficiency",
+      "Smart grid technology optimizes electricity distribution and reduces waste",
+      "Demand-side management programs incentivize off-peak energy use"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Conservation/efficiency measure",
+      "yAxis": "Cost per ton of CO₂ avoided ($/ton)",
+      "trend": "Energy efficiency measures like LED lighting and building insulation have negative costs (they save money), while new generation capacity has positive costs — making efficiency the cheapest 'source' of clean energy"
+    },
+    "frqUse": "Explain why energy conservation is considered the most cost-effective strategy for reducing greenhouse gas emissions and describe specific efficiency measures for buildings and transportation.",
+    "mcqTrap": "Students confuse energy conservation (using less energy through behavior change) with energy efficiency (getting the same service with less energy input) — the AP exam may distinguish between them.",
+    "commonMistake": "Overlooking energy conservation because it seems low-tech — efficiency improvements have historically reduced energy intensity of GDP by ~1% per year in developed nations without reducing quality of life.",
+    "modelSentence": "Energy conservation through efficiency improvements — such as LED lighting (75% energy savings), cogeneration systems (80% total efficiency), and fuel economy standards — is the most cost-effective strategy for reducing greenhouse gas emissions because it reduces demand at negative or low cost, often saving money while cutting pollution.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit6_renewable_tradeoffs",
+    "unit": "Unit 6",
+    "topicNumber": "6.14",
+    "topicTitle": "Renewable Energy Trade-offs",
+    "cedLearningObjective": "ENG-6.N",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "3.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "matrix"],
+    "mustKnowConcept": "Every renewable energy source involves environmental trade-offs — solar requires land and mining, wind kills birds and bats, hydroelectric disrupts rivers, biomass competes with food production, and geothermal is geographically limited — and understanding these trade-offs is essential for informed energy policy decisions.",
+    "diagramDescription": "Comparison matrix of renewable energy sources (solar, wind, hydro, geothermal, biomass) across multiple dimensions: land use, wildlife impacts, water use, material requirements, intermittency, lifecycle emissions, and geographic limitations.",
+    "specificExamples": [
+      "A utility-scale solar farm requires 5–10 acres per MW of capacity, potentially displacing desert ecosystems (e.g., desert tortoise habitat at Ivanpah, California)",
+      "The Altamont Pass wind farm in California killed an estimated 4,700 birds annually (including golden eagles) before repowering with fewer, larger, slower-spinning turbines reduced mortality by ~50%",
+      "Lithium mining for solar and wind energy storage batteries has caused water depletion and contamination in Chile's Atacama Desert",
+      "The Three Gorges Dam provides 22.5 GW of clean electricity but displaced 1.3 million people, blocked the Yangtze River's natural sediment flow, and is linked to increased seismic activity",
+      "Bioenergy crops in the U.S. (corn ethanol) occupy ~40% of the corn harvest, contributing to higher food prices globally"
+    ],
+    "causes": [
+      "All energy systems require materials, land, and infrastructure with environmental costs",
+      "Intermittent sources (solar, wind) require storage or backup, adding material and land demands",
+      "Scale of energy transition required (replacing ~80% fossil fuel supply) magnifies renewable trade-offs"
+    ],
+    "effects": [
+      "Land use conflicts between energy production, agriculture, and habitat conservation",
+      "Wildlife mortality from turbines, habitat loss from solar farms, and river disruption from dams",
+      "Mining impacts from lithium, cobalt, rare earth elements, copper, and silicon for renewable technologies",
+      "Electronic waste from decommissioned solar panels and turbine blades at end of life"
+    ],
+    "humanImpacts": [
+      "Environmental justice: renewable energy facilities and mining operations can disproportionately affect Indigenous and low-income communities",
+      "Community opposition (NIMBYism) can slow renewable energy deployment",
+      "Job displacement in fossil fuel industries requires just transition policies"
+    ],
+    "solutions": [
+      "Lifecycle assessment (LCA) evaluates total environmental impact from cradle to grave",
+      "Agrivoltaics and dual-use land strategies minimize land use conflicts",
+      "Material recycling and circular economy design reduce mining demand",
+      "Strategic siting using environmental impact assessments minimizes ecological harm",
+      "Diversified renewable portfolios reduce dependence on any single technology"
+    ],
+    "graphConnection": {
+      "graphType": "radar/spider chart",
+      "xAxis": "Impact categories (land use, emissions, water, wildlife, materials, intermittency)",
+      "yAxis": "Relative impact score (low to high)",
+      "trend": "Each renewable source has a distinct impact profile: solar = high land/materials, low water; wind = moderate land, wildlife impacts; hydro = high water/ecosystem disruption, low land; geothermal = low across most categories but geographically limited"
+    },
+    "frqUse": "Compare the environmental trade-offs of two renewable energy sources and evaluate which is more appropriate for a given geographic and ecological context.",
+    "mcqTrap": "Students assume all renewables are environmentally harmless — the AP exam specifically tests understanding that every energy source has trade-offs, and renewable does not mean zero impact.",
+    "commonMistake": "Treating all renewable energy as equivalent — solar, wind, hydro, geothermal, and biomass have very different environmental profiles and are suited to different geographic and economic contexts.",
+    "modelSentence": "Every renewable energy source involves environmental trade-offs — solar requires land and mining, wind affects birds and bats, hydroelectric disrupts river ecosystems, and biomass competes with food production — requiring lifecycle assessments and strategic siting to minimize ecological harm while transitioning away from fossil fuels.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  }
+]

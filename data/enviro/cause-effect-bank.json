@@ -1,0 +1,310 @@
+[
+  {
+    "id": "ce_fertilizer_eutrophication",
+    "unit": "Unit 8",
+    "topicNumber": "8.5",
+    "title": "Fertilizer Runoff → Eutrophication → Dead Zone",
+    "steps": [
+      {"label": "Fertilizer applied to crops", "type": "cause"},
+      {"label": "Nitrate/phosphate runoff enters waterway", "type": "mechanism"},
+      {"label": "Algal bloom covers surface", "type": "effect"},
+      {"label": "Sunlight blocked → aquatic plants die", "type": "effect"},
+      {"label": "Decomposers consume dissolved oxygen", "type": "mechanism"},
+      {"label": "Hypoxia — dissolved oxygen drops below 2 mg/L", "type": "consequence"},
+      {"label": "Fish kill → dead zone", "type": "consequence"},
+      {"label": "Buffer strips, reduce fertilizer, wetland restoration", "type": "solution"},
+      {"label": "Lower crop yield or added cost for farmers", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_fossil_fuel_climate",
+    "unit": "Unit 9",
+    "topicNumber": "9.4",
+    "title": "Fossil Fuel Combustion → Enhanced Greenhouse Effect → Climate Change",
+    "steps": [
+      {"label": "Combustion of coal, oil, natural gas", "type": "cause"},
+      {"label": "CO₂ released to atmosphere", "type": "mechanism"},
+      {"label": "CO₂ absorbs and re-emits infrared radiation", "type": "mechanism"},
+      {"label": "Enhanced greenhouse effect → global temperature rise", "type": "effect"},
+      {"label": "Sea level rise, ice melt, extreme weather, habitat shifts", "type": "consequence"},
+      {"label": "Positive feedback: permafrost thaw releases CH₄", "type": "consequence"},
+      {"label": "Renewable energy, carbon tax, efficiency standards, reforestation", "type": "solution"},
+      {"label": "Economic disruption, job losses in fossil fuel sector, higher energy costs short-term", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_cfc_ozone",
+    "unit": "Unit 9",
+    "topicNumber": "9.1",
+    "title": "CFCs → Ozone Depletion → Increased UV Radiation",
+    "steps": [
+      {"label": "CFCs released from aerosols, refrigerants, foam", "type": "cause"},
+      {"label": "CFCs rise to stratosphere", "type": "mechanism"},
+      {"label": "UV breaks CFC → chlorine radical (Cl·) released", "type": "mechanism"},
+      {"label": "Cl· catalyzes O₃ breakdown (one Cl· destroys ~100,000 O₃)", "type": "effect"},
+      {"label": "Ozone layer thins → increased UV-B reaches surface", "type": "consequence"},
+      {"label": "Skin cancer, cataracts, crop damage, phytoplankton decline", "type": "consequence"},
+      {"label": "Montreal Protocol (1987) — banned CFC production", "type": "solution"},
+      {"label": "Replacement HFCs are potent greenhouse gases", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_mining_water_pollution",
+    "unit": "Unit 5",
+    "topicNumber": "5.9",
+    "title": "Mining → Habitat Destruction → Water Pollution",
+    "steps": [
+      {"label": "Surface or subsurface mining operation", "type": "cause"},
+      {"label": "Overburden removed, sulfide minerals exposed", "type": "mechanism"},
+      {"label": "Acid mine drainage: sulfuric acid + heavy metals", "type": "effect"},
+      {"label": "Contaminated waterways, aquatic habitat destruction", "type": "consequence"},
+      {"label": "Soil erosion, tailings storage, habitat fragmentation", "type": "consequence"},
+      {"label": "Reclamation, water treatment, regulation (SMCRA)", "type": "solution"},
+      {"label": "Reclamation is expensive and may not restore original ecosystem", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_urbanization_runoff",
+    "unit": "Unit 5",
+    "topicNumber": "5.10",
+    "title": "Urbanization → Impervious Surfaces → Flooding/Pollution",
+    "steps": [
+      {"label": "Urban development: roads, parking lots, buildings", "type": "cause"},
+      {"label": "Impervious surfaces prevent infiltration", "type": "mechanism"},
+      {"label": "Rapid surface runoff during rainfall", "type": "effect"},
+      {"label": "Increased flooding, erosion, combined sewer overflows", "type": "consequence"},
+      {"label": "Oil, sediment, nutrients carried to waterways", "type": "consequence"},
+      {"label": "Urban heat island from reduced evapotranspiration", "type": "consequence"},
+      {"label": "Permeable pavement, green roofs, rain gardens, retention ponds", "type": "solution"},
+      {"label": "Higher construction costs, maintenance requirements", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_deforestation_carbon",
+    "unit": "Unit 1",
+    "topicNumber": "1.6",
+    "title": "Deforestation → Carbon Release → Enhanced Greenhouse Effect",
+    "steps": [
+      {"label": "Trees cleared for agriculture, logging, development", "type": "cause"},
+      {"label": "Stored carbon in biomass released as CO₂ (burning/decomposition)", "type": "mechanism"},
+      {"label": "Carbon sink removed — less CO₂ absorbed from atmosphere", "type": "effect"},
+      {"label": "Increased atmospheric CO₂ concentration", "type": "consequence"},
+      {"label": "Enhanced greenhouse effect → global warming", "type": "consequence"},
+      {"label": "Reforestation, sustainable forestry, REDD+ programs", "type": "solution"},
+      {"label": "Reduces agricultural land, economic costs for developing nations", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_acid_rain",
+    "unit": "Unit 7",
+    "topicNumber": "7.7",
+    "title": "Fossil Fuel Combustion → SO₂/NOₓ → Acid Rain",
+    "steps": [
+      {"label": "Coal-fired power plants and vehicle exhaust", "type": "cause"},
+      {"label": "SO₂ and NOₓ released into atmosphere", "type": "mechanism"},
+      {"label": "React with water → sulfuric acid (H₂SO₄) and nitric acid (HNO₃)", "type": "mechanism"},
+      {"label": "Acid precipitation (pH < 5.6)", "type": "effect"},
+      {"label": "Aquatic acidification → fish and amphibian decline", "type": "consequence"},
+      {"label": "Soil nutrient leaching (Ca²⁺, Mg²⁺) → forest decline", "type": "consequence"},
+      {"label": "Scrubbers, catalytic converters, Clean Air Act", "type": "solution"},
+      {"label": "Scrubbers produce waste sludge; catalytic converters require rare metals", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_smog_health",
+    "unit": "Unit 7",
+    "topicNumber": "7.2",
+    "title": "Vehicle Emissions → Photochemical Smog → Respiratory Illness",
+    "steps": [
+      {"label": "Vehicle exhaust releases NOₓ and VOCs", "type": "cause"},
+      {"label": "UV sunlight drives photochemical reactions", "type": "mechanism"},
+      {"label": "Ground-level ozone (O₃) and PANs formed", "type": "effect"},
+      {"label": "Respiratory problems: asthma, bronchitis, reduced lung function", "type": "consequence"},
+      {"label": "Crop damage, reduced visibility", "type": "consequence"},
+      {"label": "Catalytic converters, public transit, emission standards", "type": "solution"},
+      {"label": "Vehicle emission controls increase vehicle cost", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_biomagnification",
+    "unit": "Unit 8",
+    "topicNumber": "8.8",
+    "title": "Persistent Toxin → Bioaccumulation → Biomagnification",
+    "steps": [
+      {"label": "DDT, mercury, or PCBs released into environment", "type": "cause"},
+      {"label": "Toxin absorbed by organisms; stored in fatty tissues", "type": "mechanism"},
+      {"label": "Bioaccumulation: toxin concentration increases in individual over lifetime", "type": "effect"},
+      {"label": "Predator eats many contaminated prey → higher concentration", "type": "mechanism"},
+      {"label": "Biomagnification: top predators have highest toxin levels", "type": "consequence"},
+      {"label": "DDT → thin eggshells in bald eagles; mercury → neurological damage in humans from tuna", "type": "consequence"},
+      {"label": "Ban persistent chemicals, reduce point-source pollution, biomonitoring", "type": "solution"},
+      {"label": "Replacement chemicals may have unknown long-term effects", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_ocean_acidification",
+    "unit": "Unit 9",
+    "topicNumber": "9.7",
+    "title": "CO₂ Absorption → Ocean Acidification → Coral/Shell Decline",
+    "steps": [
+      {"label": "Atmospheric CO₂ increases from fossil fuel combustion", "type": "cause"},
+      {"label": "Ocean absorbs ~30% of atmospheric CO₂", "type": "mechanism"},
+      {"label": "CO₂ + H₂O → carbonic acid (H₂CO₃) → lower pH", "type": "mechanism"},
+      {"label": "Reduced carbonate ion (CO₃²⁻) availability", "type": "effect"},
+      {"label": "Shell-forming organisms (corals, mollusks) cannot build CaCO₃ structures", "type": "consequence"},
+      {"label": "Coral bleaching, reef collapse, marine food web disruption", "type": "consequence"},
+      {"label": "Reduce CO₂ emissions, marine protected areas, alkalinity enhancement research", "type": "solution"},
+      {"label": "Even with emission reductions, ocean pH recovery takes centuries", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_invasive_species",
+    "unit": "Unit 9",
+    "topicNumber": "9.8",
+    "title": "Species Introduction → Invasive Spread → Ecosystem Disruption",
+    "steps": [
+      {"label": "Non-native species introduced (intentionally or accidentally)", "type": "cause"},
+      {"label": "No natural predators, competitors, or diseases in new environment", "type": "mechanism"},
+      {"label": "Rapid population growth — often generalist species", "type": "effect"},
+      {"label": "Outcompetes native species for resources", "type": "consequence"},
+      {"label": "Native species decline, ecosystem structure altered", "type": "consequence"},
+      {"label": "Early detection, removal programs, trade regulations, biological control", "type": "solution"},
+      {"label": "Biological control agents may themselves become invasive", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_pesticide_resistance",
+    "unit": "Unit 5",
+    "topicNumber": "5.6",
+    "title": "Pesticide Use → Resistance → Pesticide Treadmill",
+    "steps": [
+      {"label": "Broad-spectrum pesticide applied to crops", "type": "cause"},
+      {"label": "Most pest individuals killed; resistant individuals survive", "type": "mechanism"},
+      {"label": "Resistant individuals reproduce → resistant population", "type": "effect"},
+      {"label": "Farmer applies more pesticide or stronger chemical", "type": "consequence"},
+      {"label": "Pesticide treadmill: escalating chemical use, ecosystem contamination", "type": "consequence"},
+      {"label": "Integrated Pest Management (IPM): biological control, crop rotation, targeted application", "type": "solution"},
+      {"label": "IPM is more labor-intensive and requires knowledge/monitoring", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_thermal_pollution",
+    "unit": "Unit 8",
+    "topicNumber": "8.6",
+    "title": "Power Plant Cooling Water → Thermal Pollution → Aquatic Stress",
+    "steps": [
+      {"label": "Power plant or industrial facility uses water for cooling", "type": "cause"},
+      {"label": "Heated water discharged into river or lake", "type": "mechanism"},
+      {"label": "Water temperature increases locally", "type": "effect"},
+      {"label": "Dissolved oxygen decreases (warmer water holds less O₂)", "type": "consequence"},
+      {"label": "Aquatic organisms stressed; cold-water species (trout) may die", "type": "consequence"},
+      {"label": "Cooling towers, cooling ponds, discharge regulations", "type": "solution"},
+      {"label": "Cooling towers are expensive and use water for evaporation", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_population_resource",
+    "unit": "Unit 3",
+    "topicNumber": "3.5",
+    "title": "Population Growth → Resource Depletion → Environmental Degradation",
+    "steps": [
+      {"label": "Human population grows exponentially", "type": "cause"},
+      {"label": "Increased demand for food, water, energy, land", "type": "mechanism"},
+      {"label": "Intensified agriculture, deforestation, fossil fuel extraction", "type": "effect"},
+      {"label": "Habitat loss, soil degradation, water pollution, climate change", "type": "consequence"},
+      {"label": "Reduced biodiversity, ecosystem service decline", "type": "consequence"},
+      {"label": "Family planning, education, sustainable development, efficiency improvements", "type": "solution"},
+      {"label": "Development programs require funding; cultural barriers to family planning", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_succession",
+    "unit": "Unit 2",
+    "topicNumber": "2.7",
+    "title": "Disturbance → Ecological Succession → Climax Community",
+    "steps": [
+      {"label": "Major disturbance (fire, volcano, glacier retreat, abandoned farmland)", "type": "cause"},
+      {"label": "Pioneer species colonize (lichens, mosses, grasses)", "type": "mechanism"},
+      {"label": "Soil builds up, conditions change, new species arrive", "type": "effect"},
+      {"label": "Species diversity and biomass increase over time", "type": "consequence"},
+      {"label": "Climax community established (mature forest in many biomes)", "type": "consequence"},
+      {"label": "Prescribed burns maintain some ecosystems in earlier stages", "type": "solution"},
+      {"label": "Succession takes decades to centuries; human disturbance resets it", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_dam_ecosystem",
+    "unit": "Unit 6",
+    "topicNumber": "6.9",
+    "title": "Dam Construction → Altered River Ecosystem",
+    "steps": [
+      {"label": "Hydroelectric dam built across river", "type": "cause"},
+      {"label": "River flow altered; reservoir created upstream", "type": "mechanism"},
+      {"label": "Fish migration blocked (salmon cannot reach spawning grounds)", "type": "effect"},
+      {"label": "Sediment trapped behind dam → downstream erosion", "type": "consequence"},
+      {"label": "Reservoir decomposition releases methane; communities displaced", "type": "consequence"},
+      {"label": "Fish ladders, run-of-river designs, dam removal in some cases", "type": "solution"},
+      {"label": "Fish ladders have limited effectiveness; dam removal is costly and disruptive", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_overgrazing",
+    "unit": "Unit 5",
+    "topicNumber": "5.4",
+    "title": "Overgrazing → Desertification",
+    "steps": [
+      {"label": "Livestock overgrazing on semi-arid grassland", "type": "cause"},
+      {"label": "Vegetation removed faster than it can regrow", "type": "mechanism"},
+      {"label": "Soil exposed to wind and water erosion", "type": "effect"},
+      {"label": "Topsoil lost; land becomes barren", "type": "consequence"},
+      {"label": "Desertification — productive land becomes desert-like", "type": "consequence"},
+      {"label": "Rotational grazing, reduced stocking rates, revegetation", "type": "solution"},
+      {"label": "Reduced herd size impacts ranchers' livelihoods", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_coral_bleaching",
+    "unit": "Unit 9",
+    "topicNumber": "9.6",
+    "title": "Ocean Warming → Coral Bleaching → Reef Collapse",
+    "steps": [
+      {"label": "Global temperatures increase from greenhouse gas emissions", "type": "cause"},
+      {"label": "Ocean absorbs heat; sea surface temperature rises", "type": "mechanism"},
+      {"label": "Coral expels symbiotic zooxanthellae algae (stress response)", "type": "effect"},
+      {"label": "Coral turns white (bleached) and loses food source", "type": "consequence"},
+      {"label": "Prolonged bleaching → coral death → reef ecosystem collapse", "type": "consequence"},
+      {"label": "Reduce emissions, marine protected areas, coral restoration, reduce local stressors", "type": "solution"},
+      {"label": "Even with protection, warming may outpace coral adaptation", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_salinization",
+    "unit": "Unit 5",
+    "topicNumber": "5.5",
+    "title": "Irrigation → Salinization → Crop Yield Decline",
+    "steps": [
+      {"label": "Flood or furrow irrigation in arid region", "type": "cause"},
+      {"label": "Water evaporates, dissolved salts left behind in soil", "type": "mechanism"},
+      {"label": "Salt concentration increases in topsoil", "type": "effect"},
+      {"label": "Osmotic stress on plants — roots cannot absorb water", "type": "consequence"},
+      {"label": "Crop yield decline, eventual land abandonment", "type": "consequence"},
+      {"label": "Drip irrigation (reduces evaporation), soil flushing, salt-tolerant crops", "type": "solution"},
+      {"label": "Drip irrigation has higher upfront cost; soil flushing uses more water", "type": "tradeoff"}
+    ]
+  },
+  {
+    "id": "ce_nuclear_waste",
+    "unit": "Unit 6",
+    "topicNumber": "6.6",
+    "title": "Nuclear Fission → Radioactive Waste → Long-term Storage Challenge",
+    "steps": [
+      {"label": "Uranium fuel undergoes nuclear fission in reactor", "type": "cause"},
+      {"label": "Fission produces heat (electricity) + radioactive byproducts", "type": "mechanism"},
+      {"label": "Spent fuel rods remain radioactive for thousands of years", "type": "effect"},
+      {"label": "Requires long-term secure storage (deep geologic repository)", "type": "consequence"},
+      {"label": "Risk of contamination from leaks, accidents, or natural disasters", "type": "consequence"},
+      {"label": "Dry cask storage, vitrification, proposed deep geologic repositories (Yucca Mountain)", "type": "solution"},
+      {"label": "No community wants a nuclear waste repository nearby (NIMBY); political stalemate", "type": "tradeoff"}
+    ]
+  }
+]

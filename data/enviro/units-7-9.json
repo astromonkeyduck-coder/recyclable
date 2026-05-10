@@ -1,0 +1,1511 @@
+[
+  {
+    "id": "unit7_air_pollution_intro",
+    "unit": "Unit 7",
+    "topicNumber": "7.1",
+    "topicTitle": "Introduction to Air Pollution",
+    "cedLearningObjective": "STB-4.A",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "cross_section"],
+    "mustKnowConcept": "Primary pollutants are emitted directly from a source, while secondary pollutants form through chemical reactions in the atmosphere.",
+    "diagramDescription": "A diagram showing primary pollutants (CO, SO₂, NO, particulates) emitted from sources like vehicles and factories, with arrows showing atmospheric reactions forming secondary pollutants (O₃, H₂SO₄, HNO₃).",
+    "specificExamples": [
+      "Carbon monoxide (CO) from incomplete combustion in automobile engines is a primary pollutant",
+      "Ground-level ozone (O₃) is a secondary pollutant formed when NOₓ and VOCs react in sunlight",
+      "Sulfuric acid (H₂SO₄) is a secondary pollutant formed when SO₂ reacts with water vapor",
+      "Particulate matter (PM2.5) from diesel exhaust can penetrate deep into lung alveoli"
+    ],
+    "causes": [
+      "Combustion of fossil fuels in vehicles and power plants",
+      "Industrial processes releasing VOCs and particulates",
+      "Agricultural activities producing ammonia and methane"
+    ],
+    "effects": [
+      "Respiratory diseases including asthma and bronchitis",
+      "Reduced visibility from particulate matter",
+      "Damage to crops and vegetation from ground-level ozone"
+    ],
+    "humanImpacts": [
+      "Increased rates of lung cancer in urban populations",
+      "Premature death estimated at 4.2 million annually by WHO",
+      "Economic losses from reduced agricultural yields"
+    ],
+    "solutions": [
+      "Catalytic converters on vehicles reduce CO, NOₓ, and hydrocarbon emissions",
+      "Electrostatic precipitators remove particulates from smokestack emissions",
+      "Transitioning to renewable energy sources eliminates combustion-based pollution"
+    ],
+    "graphConnection": {
+      "type": "bar_chart",
+      "description": "Comparison of criteria pollutant concentrations in urban vs. rural areas showing elevated NO₂ and PM2.5 in cities"
+    },
+    "frqUse": "Explain the difference between primary and secondary pollutants, providing one specific example of each and the chemical transformation involved.",
+    "mcqTrap": "Students confuse ground-level ozone (a harmful secondary pollutant) with stratospheric ozone (which protects against UV radiation).",
+    "commonMistake": "Classifying ozone as only harmful—stratospheric ozone is beneficial, while tropospheric ozone is a pollutant.",
+    "modelSentence": "Ground-level ozone is a secondary pollutant formed when nitrogen oxides and volatile organic compounds react in the presence of sunlight, causing respiratory irritation and crop damage.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit7_smog_formation",
+    "unit": "Unit 7",
+    "topicNumber": "7.2",
+    "topicTitle": "Photochemical Smog",
+    "cedLearningObjective": "STB-4.B",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "graph_simulator"],
+    "mustKnowConcept": "Photochemical smog forms when sunlight drives reactions between NOₓ and VOCs, producing ground-level ozone; it is worst in sunny cities with heavy traffic.",
+    "diagramDescription": "A time-series graph showing NOₓ peaking during morning rush hour, VOC concentrations rising mid-morning, and O₃ peaking in the early afternoon as photochemical reactions proceed.",
+    "specificExamples": [
+      "Los Angeles experiences severe photochemical smog due to sunny climate, heavy traffic, and surrounding mountains trapping air",
+      "Morning rush hour NOₓ emissions react with VOCs throughout the day, producing peak ozone around 2-3 PM",
+      "Beijing's smog events combine photochemical smog with industrial sulfurous smog creating hazardous air quality",
+      "Peroxyacetyl nitrate (PAN) is a secondary pollutant in photochemical smog that damages plant tissues"
+    ],
+    "causes": [
+      "Vehicle exhaust releasing NOₓ and VOCs during rush hours",
+      "Strong sunlight providing energy for photochemical reactions",
+      "Geographic features like valleys and basins trapping polluted air"
+    ],
+    "effects": [
+      "Decreased lung function and aggravated asthma",
+      "Reduced photosynthesis in plants due to ozone damage to stomata",
+      "Brownish haze reducing visibility in urban areas"
+    ],
+    "humanImpacts": [
+      "Children and elderly face increased emergency room visits on high-ozone days",
+      "Outdoor workers experience chronic respiratory damage",
+      "Crop yield reductions estimated at 5-15% in heavily polluted areas"
+    ],
+    "solutions": [
+      "Catalytic converters reduce NOₓ and VOC emissions from vehicles by 90%+",
+      "Vapor recovery nozzles at gas stations capture VOC emissions",
+      "Congestion pricing and public transit reduce peak-hour vehicle emissions"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Diurnal pattern showing NOₓ peaking at 8 AM, VOCs rising mid-morning, and O₃ peaking at 2 PM demonstrating the time-delayed photochemical reaction sequence"
+    },
+    "frqUse": "Describe the formation of photochemical smog including the role of sunlight, identify two contributing pollutants, and propose one strategy to reduce smog formation.",
+    "mcqTrap": "Students select ozone as a primary pollutant because it is present in smog—but O₃ is always a secondary pollutant formed by photochemical reactions.",
+    "commonMistake": "Confusing sulfurous (industrial/gray) smog with photochemical (brown) smog—sulfurous smog comes from burning coal and is worst in cold, humid conditions.",
+    "modelSentence": "Photochemical smog forms when nitrogen oxides from vehicle exhaust react with volatile organic compounds in the presence of ultraviolet radiation, producing ground-level ozone that peaks in afternoon hours.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit7_thermal_inversion",
+    "unit": "Unit 7",
+    "topicNumber": "7.3",
+    "topicTitle": "Thermal Inversion",
+    "cedLearningObjective": "STB-4.C",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cross_section", "cause_effect"],
+    "mustKnowConcept": "A thermal inversion occurs when a warm air layer traps cooler air near the surface, preventing vertical mixing and concentrating pollutants at ground level.",
+    "diagramDescription": "A cross-section showing normal atmospheric conditions (temperature decreasing with altitude, allowing convection) versus inversion conditions (warm air layer acting as a lid trapping cool polluted air below).",
+    "specificExamples": [
+      "The 1948 Donora, Pennsylvania smog event killed 20 people when a thermal inversion trapped industrial emissions for 5 days",
+      "The 1952 London Great Smog killed approximately 12,000 people when a thermal inversion trapped coal smoke for 4 days",
+      "Los Angeles basin inversions trap automobile exhaust between the Pacific marine layer and San Gabriel Mountains",
+      "Denver's winter brown cloud forms when temperature inversions trap pollutants against the Front Range"
+    ],
+    "causes": [
+      "Radiative cooling of the ground surface on clear nights creates a cool surface layer",
+      "Subsidence of warm air from high-pressure systems compresses and warms descending air",
+      "Geographic basins and valleys surrounded by mountains restrict horizontal air flow"
+    ],
+    "effects": [
+      "Dramatic increases in particulate and ozone concentrations at ground level",
+      "Acute respiratory distress in vulnerable populations",
+      "Extended smog episodes lasting days until weather pattern changes"
+    ],
+    "humanImpacts": [
+      "Hospital admissions spike during prolonged inversion events",
+      "Visibility drops below 100 meters during severe inversions",
+      "School and outdoor activity cancellations during air quality alerts"
+    ],
+    "solutions": [
+      "Air quality monitoring and alert systems warn vulnerable populations to stay indoors",
+      "Emissions reduction during inversion events (driving restrictions, industrial curtailment)",
+      "Long-term shift away from combustion sources reduces pollutant loading during inversions"
+    ],
+    "graphConnection": {
+      "type": "cross_section",
+      "description": "Temperature-altitude profile comparing normal lapse rate (temperature decreasing with height) versus inversion layer (temperature increasing with height at a specific altitude)"
+    },
+    "frqUse": "Draw and label a diagram of a thermal inversion, explain why it traps pollutants, and describe one historical event caused by a prolonged inversion.",
+    "mcqTrap": "Students think thermal inversions cause pollution—inversions only trap existing pollution by preventing vertical dispersion.",
+    "commonMistake": "Believing thermal inversions are permanent features; they are temporary meteorological events that break when weather patterns change.",
+    "modelSentence": "A thermal inversion traps pollutants near the ground surface by placing a layer of warm air above cooler surface air, preventing convective mixing and causing dangerous accumulations of smog.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit7_co2_particulates",
+    "unit": "Unit 7",
+    "topicNumber": "7.4",
+    "topicTitle": "Atmospheric CO₂ and Particulates",
+    "cedLearningObjective": "STB-4.D",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "4.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["graph_simulator", "cause_effect"],
+    "mustKnowConcept": "Atmospheric CO₂ has increased from ~280 ppm pre-industrial to over 420 ppm due to fossil fuel combustion and deforestation, while particulates affect respiratory health and climate.",
+    "diagramDescription": "The Keeling Curve graph showing steadily rising atmospheric CO₂ concentrations from 1958 to present, with annual oscillations from seasonal photosynthesis patterns in the Northern Hemisphere.",
+    "specificExamples": [
+      "The Keeling Curve measured at Mauna Loa Observatory shows CO₂ rising from 315 ppm (1958) to over 420 ppm (2024)",
+      "PM2.5 particles from diesel combustion penetrate bronchioles and alveoli causing cardiovascular disease",
+      "Black carbon (soot) from biomass burning absorbs solar radiation and accelerates glacial melting when deposited on ice",
+      "Annual CO₂ oscillations of ~6 ppm reflect Northern Hemisphere growing season photosynthesis uptake"
+    ],
+    "causes": [
+      "Fossil fuel combustion releases approximately 36 billion metric tons of CO₂ annually",
+      "Deforestation eliminates carbon sinks and releases stored carbon",
+      "Incomplete combustion and dust produce particulate matter of various sizes"
+    ],
+    "effects": [
+      "Enhanced greenhouse effect leading to global warming",
+      "PM2.5 exposure linked to 4+ million premature deaths annually",
+      "Particulates alter cloud formation and precipitation patterns"
+    ],
+    "humanImpacts": [
+      "Indoor cooking with biomass fuels exposes 3 billion people to dangerous particulate levels",
+      "Coal-fired power plants are the single largest stationary source of CO₂ and particulates",
+      "Vehicle emissions contribute both CO₂ and fine particulates in urban areas"
+    ],
+    "solutions": [
+      "Carbon capture and storage (CCS) technology sequesters CO₂ from power plant flue gases",
+      "Baghouse filters and electrostatic precipitators remove 99%+ of particulates from industrial emissions",
+      "Transition to electric vehicles eliminates tailpipe CO₂ and particulate emissions"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Keeling Curve showing monotonic rise in atmospheric CO₂ from 315 ppm to 420+ ppm with superimposed seasonal oscillation"
+    },
+    "frqUse": "Interpret the Keeling Curve graph, explain the cause of both the long-term trend and seasonal oscillation, and propose one method to reduce atmospheric CO₂.",
+    "mcqTrap": "Students attribute the seasonal oscillation in CO₂ to temperature changes rather than the correct answer: seasonal variation in photosynthesis by Northern Hemisphere vegetation.",
+    "commonMistake": "Thinking CO₂ is a criteria pollutant regulated by the Clean Air Act—it was not originally listed but was later classified as a pollutant by the EPA in 2009.",
+    "modelSentence": "The Keeling Curve demonstrates that atmospheric CO₂ has risen from 315 ppm in 1958 to over 420 ppm due primarily to fossil fuel combustion, with seasonal oscillations caused by Northern Hemisphere photosynthetic uptake.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit7_indoor_pollutants",
+    "unit": "Unit 7",
+    "topicNumber": "7.5",
+    "topicTitle": "Indoor Air Pollutants",
+    "cedLearningObjective": "STB-4.E",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "7.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cause_effect"],
+    "mustKnowConcept": "Indoor air pollution can be 2-5 times worse than outdoor air; key indoor pollutants include radon, carbon monoxide, asbestos, formaldehyde, and particulates from combustion.",
+    "diagramDescription": "A cross-section of a house showing sources of indoor air pollutants: radon seeping from basement soil, CO from gas appliances, formaldehyde off-gassing from furniture, asbestos from insulation, and mold from moisture.",
+    "specificExamples": [
+      "Radon-222 seeps into basements from uranium decay in underlying granite and is the second leading cause of lung cancer in the US",
+      "Carbon monoxide from malfunctioning gas furnaces causes ~400 deaths annually in the US",
+      "Formaldehyde off-gasses from pressed-wood furniture (plywood, particleboard) and causes respiratory irritation",
+      "Indoor biomass burning (wood, dung, crop residues) in developing nations kills ~3.8 million people annually according to WHO",
+      "Asbestos fibers from deteriorating insulation cause mesothelioma with a 20-50 year latency period"
+    ],
+    "causes": [
+      "Radioactive decay of uranium-238 in bedrock produces radon gas that enters buildings through foundation cracks",
+      "Incomplete combustion in gas stoves, furnaces, and kerosene heaters produces CO",
+      "Volatile organic compounds off-gas from building materials, paints, and cleaning products"
+    ],
+    "effects": [
+      "Radon exposure causes approximately 21,000 lung cancer deaths per year in the US",
+      "Sick building syndrome causes headaches, fatigue, and respiratory issues in sealed buildings",
+      "Chronic asbestos exposure leads to asbestosis and mesothelioma"
+    ],
+    "humanImpacts": [
+      "Women and children in developing nations bear disproportionate burden from cooking smoke exposure",
+      "Energy-efficient sealed buildings can concentrate indoor pollutants without proper ventilation",
+      "Lead paint in pre-1978 housing causes neurological damage in children"
+    ],
+    "solutions": [
+      "Sub-slab depressurization systems reduce indoor radon by 99%",
+      "Carbon monoxide detectors provide early warning of dangerous CO accumulation",
+      "HEPA filtration removes 99.97% of particles ≥0.3 micrometers",
+      "Improved cookstoves in developing nations reduce particulate exposure by 50-90%"
+    ],
+    "graphConnection": {},
+    "frqUse": "Identify three indoor air pollutants, their sources, health effects, and one mitigation strategy for each.",
+    "mcqTrap": "Students think radon comes from building materials—it actually seeps from natural radioactive decay of uranium in soil and bedrock beneath the building.",
+    "commonMistake": "Assuming indoor air is always cleaner than outdoor air; in reality, indoor concentrations of many pollutants are 2-5 times higher due to poor ventilation.",
+    "modelSentence": "Radon gas, produced by the natural radioactive decay of uranium in soil, seeps through foundation cracks into buildings and is the second leading cause of lung cancer because its alpha-emitting decay products damage lung tissue.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit7_air_pollution_reduction",
+    "unit": "Unit 7",
+    "topicNumber": "7.6",
+    "topicTitle": "Reduction of Air Pollutants",
+    "cedLearningObjective": "STB-4.F",
+    "bigIdea": "STB",
+    "sciencePractices": ["6.A", "7.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "solution_tradeoff"],
+    "mustKnowConcept": "The Clean Air Act (1970) established NAAQS for six criteria pollutants, and technologies like catalytic converters, scrubbers, and electrostatic precipitators reduce emissions.",
+    "diagramDescription": "A flowchart showing smokestack emission controls in sequence: electrostatic precipitator (removes particulates), scrubber (removes SO₂), and selective catalytic reduction (removes NOₓ), with percentage removal rates for each.",
+    "specificExamples": [
+      "The Clean Air Act (1970) regulates six criteria pollutants: CO, Pb, NO₂, O₃, PM, and SO₂",
+      "Wet scrubbers spray limestone slurry (CaCO₃) to absorb SO₂ from coal power plant flue gas, producing gypsum",
+      "Three-way catalytic converters simultaneously reduce CO, NOₓ, and hydrocarbons in automobile exhaust",
+      "Cap-and-trade programs under the 1990 Clean Air Act amendments reduced US SO₂ emissions by 90% from 1990 to 2020",
+      "Electrostatic precipitators use charged plates to remove 99%+ of fly ash from coal combustion"
+    ],
+    "causes": [
+      "Uncontrolled industrial emissions before regulation caused severe air quality crises",
+      "Growing scientific evidence linking air pollution to human health drove policy action",
+      "International agreements address transboundary pollution that crosses national borders"
+    ],
+    "effects": [
+      "US lead emissions decreased 99% after leaded gasoline was phased out",
+      "Acid rain declined significantly following SO₂ cap-and-trade implementation",
+      "US air quality improved despite GDP tripling since 1970"
+    ],
+    "humanImpacts": [
+      "Clean Air Act estimated to prevent 230,000 premature deaths annually by 2020",
+      "Economic benefits exceed costs by 30:1 ratio according to EPA analyses",
+      "Environmental justice concerns remain as polluting facilities disproportionately locate near minority communities"
+    ],
+    "solutions": [
+      "Scrubbers (flue gas desulfurization) remove 95%+ of SO₂ from power plant emissions",
+      "Electrostatic precipitators remove particulates using electrical charge",
+      "Selective catalytic reduction (SCR) converts NOₓ to N₂ and H₂O using ammonia catalyst",
+      "Market-based cap-and-trade creates economic incentives for pollution reduction"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Declining trend in US SO₂ emissions from 1990-2020 showing 90% reduction following cap-and-trade implementation under Clean Air Act amendments"
+    },
+    "frqUse": "Describe one command-and-control regulation and one market-based approach for reducing air pollution, comparing their advantages and limitations.",
+    "mcqTrap": "Students confuse the Clean Air Act (regulates air emissions) with the Clean Water Act (regulates water discharges)—know which law covers which medium.",
+    "commonMistake": "Thinking cap-and-trade sets a price on pollution; it actually sets a total emissions cap and lets the market determine the price through permit trading.",
+    "modelSentence": "The Clean Air Act's cap-and-trade program for SO₂ reduced acid rain precursor emissions by 90% by setting a declining total emissions cap and allowing power plants to buy and sell emission permits.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit7_acid_rain",
+    "unit": "Unit 7",
+    "topicNumber": "7.7",
+    "topicTitle": "Acid Rain",
+    "cedLearningObjective": "STB-4.G",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "pollution_pathway"],
+    "mustKnowConcept": "Acid deposition (pH < 5.6) forms when SO₂ and NOₓ react with water vapor to produce sulfuric and nitric acids, damaging aquatic ecosystems, forests, and structures.",
+    "diagramDescription": "A pollution pathway diagram showing SO₂ and NOₓ emissions from power plants and vehicles, atmospheric transformation to H₂SO₄ and HNO₃, transport by prevailing winds, and wet/dry deposition onto forests, lakes, and buildings.",
+    "specificExamples": [
+      "Coal-fired power plants in the Ohio River Valley produced SO₂ that fell as acid rain on Adirondack lakes in New York, lowering pH below 5.0",
+      "Normal rain has pH 5.6 due to dissolved CO₂ forming carbonic acid; acid rain has pH 4.2-4.4",
+      "Acid rain leaches aluminum from soil into waterways, which damages fish gill membranes causing suffocation",
+      "Marble and limestone buildings (CaCO₃) dissolve in acid rain: CaCO₃ + H₂SO₄ → CaSO₄ + H₂O + CO₂",
+      "Lakes in regions with granite bedrock lack carbonate buffering and are most vulnerable to acidification"
+    ],
+    "causes": [
+      "SO₂ from coal combustion reacts with water: SO₂ + H₂O → H₂SO₃ (then oxidized to H₂SO₄)",
+      "NOₓ from vehicle exhaust reacts with water: 2NO₂ + H₂O → HNO₃ + HNO₂",
+      "Prevailing winds transport precursor pollutants hundreds of kilometers from source"
+    ],
+    "effects": [
+      "Aquatic ecosystems crash when lake pH drops below 5.0 as fish reproduction fails",
+      "Forest decline occurs as acid rain leaches calcium and magnesium from soil and damages leaf cuticles",
+      "Infrastructure damage to marble statues, limestone buildings, and metal structures"
+    ],
+    "humanImpacts": [
+      "Drinking water contamination from mobilized heavy metals (aluminum, lead) in acidified watersheds",
+      "Economic losses from timber decline in acid-affected forests",
+      "Transboundary pollution creates international disputes (US emissions affecting Canadian lakes)"
+    ],
+    "solutions": [
+      "Liming (adding CaCO₃) to acidified lakes temporarily neutralizes acidity and restores pH",
+      "Flue gas desulfurization (scrubbers) removes SO₂ before emission",
+      "Cap-and-trade programs provide economic incentives to reduce SO₂ below mandated caps",
+      "Switching from high-sulfur to low-sulfur coal reduces SO₂ emissions at the source"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Graph showing inverse relationship between decreasing SO₂ emissions (1990-2020) and recovering lake pH in the Adirondacks"
+    },
+    "frqUse": "Trace the pathway of acid rain from emission source to ecological impact, including the chemical reactions involved and one remediation strategy.",
+    "mcqTrap": "Students select CO₂ as a cause of acid rain—while CO₂ makes rain slightly acidic (pH 5.6), acid rain specifically refers to pH below 5.6 caused by SO₂ and NOₓ.",
+    "commonMistake": "Thinking acid rain only falls near emission sources; prevailing winds can transport SO₂ and NOₓ hundreds of kilometers before deposition occurs.",
+    "modelSentence": "Acid deposition occurs when sulfur dioxide from coal combustion and nitrogen oxides from vehicle exhaust react with atmospheric water to form sulfuric and nitric acids, which lower the pH of precipitation below 5.6 and damage aquatic ecosystems by mobilizing toxic aluminum from soil.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit7_noise_pollution",
+    "unit": "Unit 7",
+    "topicNumber": "7.8",
+    "topicTitle": "Noise Pollution",
+    "cedLearningObjective": "STB-4.H",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "7.A"],
+    "examWeightRelevance": "low",
+    "visualType": ["cause_effect"],
+    "mustKnowConcept": "Noise pollution above 85 decibels causes hearing damage, and chronic noise exposure leads to stress, cardiovascular disease, and disruption of wildlife communication and behavior.",
+    "diagramDescription": "A decibel scale showing common noise sources from 0 dB (threshold of hearing) to 140 dB (jet engine), with damage thresholds marked at 85 dB (hearing damage with prolonged exposure) and 120 dB (pain threshold).",
+    "specificExamples": [
+      "Prolonged exposure above 85 dB (equivalent to heavy traffic) causes irreversible noise-induced hearing loss",
+      "Highway noise barriers (sound walls) reduce noise by 5-10 dB for nearby residents",
+      "Navy sonar at 235 dB causes whale strandings by disrupting echolocation and causing physical trauma",
+      "Urban noise from airports correlates with increased hypertension and cardiovascular disease in surrounding communities"
+    ],
+    "causes": [
+      "Transportation (vehicles, aircraft, trains) is the dominant urban noise source",
+      "Industrial machinery and construction equipment",
+      "Military activities including sonar and weapons testing"
+    ],
+    "effects": [
+      "Permanent hearing loss from chronic exposure above 85 dB",
+      "Elevated cortisol levels causing hypertension and cardiovascular disease",
+      "Wildlife behavioral changes including disrupted bird communication and whale navigation"
+    ],
+    "humanImpacts": [
+      "WHO estimates 1.6 million healthy life-years lost annually in Western Europe from traffic noise",
+      "Property values decrease 0.5-1% per decibel near airports",
+      "Nocturnal noise disrupts sleep architecture causing chronic health effects"
+    ],
+    "solutions": [
+      "Sound barriers along highways reduce residential noise exposure",
+      "Zoning regulations separate industrial and residential areas",
+      "Noise ordinances restrict construction hours and equipment decibel levels",
+      "Electric vehicles reduce urban traffic noise significantly"
+    ],
+    "graphConnection": {},
+    "frqUse": "Identify two sources of noise pollution, describe health effects on humans and wildlife, and propose one engineering and one legislative solution.",
+    "mcqTrap": "Students forget that the decibel scale is logarithmic—a 10 dB increase represents a 10-fold increase in sound intensity, not a doubling.",
+    "commonMistake": "Thinking noise pollution only affects hearing; chronic noise exposure also causes cardiovascular disease, sleep disruption, and impaired cognitive development in children.",
+    "modelSentence": "Noise pollution above 85 decibels from sources such as highway traffic and industrial machinery causes irreversible hearing loss with prolonged exposure and disrupts wildlife communication patterns, including whale echolocation impaired by naval sonar.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_pollution_sources",
+    "unit": "Unit 8",
+    "topicNumber": "8.1",
+    "topicTitle": "Sources of Pollution",
+    "cedLearningObjective": "STB-4.I",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "pollution_pathway"],
+    "mustKnowConcept": "Point-source pollution comes from a single identifiable source (factory pipe), while nonpoint-source pollution comes from diffuse sources over a wide area (agricultural runoff).",
+    "diagramDescription": "A watershed diagram showing point sources (factory discharge pipe, sewage treatment outfall) versus nonpoint sources (agricultural runoff from entire fields, urban stormwater from roads and parking lots) flowing into a river.",
+    "specificExamples": [
+      "A factory discharge pipe releasing effluent into a river is a point source regulated by NPDES permits under the Clean Water Act",
+      "Agricultural runoff carrying fertilizers and pesticides from thousands of acres is nonpoint-source pollution",
+      "Urban stormwater washing oil, heavy metals, and trash from roads into storm drains is nonpoint-source pollution",
+      "A municipal sewage treatment plant outfall is a point source with a measurable, regulated discharge"
+    ],
+    "causes": [
+      "Industrial facilities discharge process water containing chemicals and heavy metals",
+      "Agriculture applies excess fertilizers and pesticides that wash into waterways during rain events",
+      "Impervious urban surfaces prevent infiltration and generate contaminated stormwater runoff"
+    ],
+    "effects": [
+      "Eutrophication of receiving waters from excess nutrient loading",
+      "Contamination of drinking water sources with pathogens and chemicals",
+      "Habitat degradation from sedimentation and toxic pollutant accumulation"
+    ],
+    "humanImpacts": [
+      "Nonpoint-source pollution is the leading cause of water quality impairment in US waterways",
+      "Agricultural runoff creates the Gulf of Mexico dead zone (hypoxic area >6,000 square miles)",
+      "Combined sewer overflows discharge raw sewage during heavy rain events"
+    ],
+    "solutions": [
+      "Riparian buffer strips filter nonpoint-source runoff before it reaches waterways",
+      "NPDES permits set discharge limits and monitoring requirements for point sources",
+      "Constructed wetlands treat stormwater runoff through natural filtration processes",
+      "Best management practices (BMPs) reduce agricultural nutrient losses"
+    ],
+    "graphConnection": {
+      "type": "pie_chart",
+      "description": "Pie chart showing relative contributions of nonpoint sources (agriculture 48%, urban runoff 18%) versus point sources (industrial 12%, municipal 10%) to US water quality impairment"
+    },
+    "frqUse": "Compare and contrast point-source and nonpoint-source pollution with specific examples, and explain why nonpoint-source pollution is more difficult to regulate.",
+    "mcqTrap": "Students may classify a large farm's runoff as point-source because the farm is identifiable—but diffuse runoff from fields is nonpoint-source regardless of farm size.",
+    "commonMistake": "Thinking all pollution from a farm is nonpoint-source; a concentrated animal feeding operation (CAFO) discharge pipe is regulated as a point source.",
+    "modelSentence": "Nonpoint-source pollution, such as agricultural runoff carrying nitrogen and phosphorus from fields across an entire watershed, is more difficult to regulate than point-source pollution because it lacks a single identifiable discharge location.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_human_impacts_ecosystems",
+    "unit": "Unit 8",
+    "topicNumber": "8.2",
+    "topicTitle": "Human Impacts on Ecosystems",
+    "cedLearningObjective": "ERT-4.A",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cause_effect"],
+    "mustKnowConcept": "Human activities including agriculture, urbanization, and resource extraction disrupt ecosystem services by altering habitats, introducing pollutants, and fragmenting landscapes.",
+    "diagramDescription": "A before-and-after comparison showing a intact forested watershed providing ecosystem services (water filtration, habitat, carbon storage) versus the same area after development showing fragmentation, impervious surfaces, and degraded water quality.",
+    "specificExamples": [
+      "Mountaintop removal mining in Appalachia buries headwater streams and eliminates forest habitat permanently",
+      "Urbanization increases impervious surface cover, raising peak stormwater flows 2-5x and degrading stream habitat",
+      "Monoculture agriculture eliminates biodiversity and requires increasing pesticide and fertilizer inputs",
+      "Dam construction on the Columbia River blocked salmon migration, reducing populations by 90%+"
+    ],
+    "causes": [
+      "Conversion of natural land to agriculture eliminates native habitat",
+      "Urbanization replaces permeable soil with impervious surfaces",
+      "Resource extraction physically removes and degrades habitat"
+    ],
+    "effects": [
+      "Habitat fragmentation isolates populations, reducing genetic diversity",
+      "Loss of ecosystem services including water purification, pollination, and flood control",
+      "Altered hydrology from impervious surfaces increases erosion and flooding"
+    ],
+    "humanImpacts": [
+      "Global ecosystem services valued at $125+ trillion annually are being degraded",
+      "Over 75% of Earth's ice-free land has been significantly altered by human activity",
+      "Pollinator decline from habitat loss threatens one-third of global food production"
+    ],
+    "solutions": [
+      "Wildlife corridors connect fragmented habitats and allow gene flow between populations",
+      "Green infrastructure (rain gardens, permeable pavement) mimics natural hydrology in urban areas",
+      "Conservation easements permanently protect private land from development",
+      "Ecological restoration returns degraded land to functional ecosystem states"
+    ],
+    "graphConnection": {},
+    "frqUse": "Describe three ways human activities disrupt ecosystem services and propose specific mitigation strategies for each.",
+    "mcqTrap": "Students may underestimate the cascading effects of habitat fragmentation—even if total habitat area remains, isolated fragments lose species due to reduced genetic diversity and edge effects.",
+    "commonMistake": "Treating ecosystem impacts as reversible on human timescales; many impacts like species extinction and topsoil loss take centuries to millennia to recover.",
+    "modelSentence": "Habitat fragmentation from road construction isolates wildlife populations, reducing genetic diversity through decreased gene flow and increasing vulnerability to local extinction from stochastic events.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_endocrine_disruptors",
+    "unit": "Unit 8",
+    "topicNumber": "8.3",
+    "topicTitle": "Endocrine Disruptors",
+    "cedLearningObjective": "STB-4.J",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cause_effect"],
+    "mustKnowConcept": "Endocrine disruptors are chemicals that mimic or block natural hormones, interfering with development, reproduction, and metabolism even at extremely low concentrations.",
+    "diagramDescription": "A molecular diagram showing how an endocrine disruptor (e.g., BPA) mimics estrogen by fitting into the estrogen receptor, triggering cellular responses at inappropriate times or concentrations.",
+    "specificExamples": [
+      "Atrazine (herbicide) causes feminization of male frogs at concentrations as low as 0.1 ppb, well below EPA drinking water standards",
+      "Bisphenol A (BPA) in plastics and can linings mimics estrogen and is linked to early puberty and reproductive abnormalities",
+      "DDT metabolite DDE causes eggshell thinning in raptors by interfering with calcium metabolism regulated by estrogen",
+      "Phthalates in personal care products and PVC plastics act as anti-androgens affecting male reproductive development"
+    ],
+    "causes": [
+      "Industrial chemicals enter waterways through wastewater discharge",
+      "Pesticide application releases endocrine-active compounds into soil and groundwater",
+      "Plasticizers leach from packaging into food and water"
+    ],
+    "effects": [
+      "Reproductive abnormalities including intersex fish in contaminated waterways",
+      "Developmental delays and early puberty in exposed human populations",
+      "Population-level impacts as reproductive success declines"
+    ],
+    "humanImpacts": [
+      "Declining sperm counts in men correlate with increasing environmental endocrine disruptor exposure",
+      "Prenatal exposure linked to neurodevelopmental disorders in children",
+      "Low-dose effects challenge traditional toxicology assumption that 'the dose makes the poison'"
+    ],
+    "solutions": [
+      "Banning specific chemicals (DDT banned in US 1972, BPA removed from baby bottles)",
+      "Green chemistry approaches design safer molecular alternatives",
+      "Wastewater treatment with activated carbon adsorbs endocrine disruptors",
+      "Precautionary principle applies when evidence suggests harm at low doses"
+    ],
+    "graphConnection": {
+      "type": "dose_response",
+      "description": "Non-monotonic dose-response curve showing endocrine disruptor effects at very low doses that may not increase linearly with concentration"
+    },
+    "frqUse": "Explain how endocrine disruptors affect organisms differently from traditional toxic chemicals, with a specific example of ecological impact.",
+    "mcqTrap": "Students assume higher dose always means greater effect—endocrine disruptors can show non-monotonic dose-response curves with effects at very low doses.",
+    "commonMistake": "Confusing endocrine disruptors with acute toxins; endocrine disruptors cause harm through hormonal interference at extremely low concentrations rather than through direct cell damage.",
+    "modelSentence": "Atrazine, a widely used herbicide, functions as an endocrine disruptor by interfering with aromatase enzyme activity, causing feminization of male frogs at concentrations as low as 0.1 parts per billion in water.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_wetland_mangrove_impacts",
+    "unit": "Unit 8",
+    "topicNumber": "8.4",
+    "topicTitle": "Human Impacts on Wetlands and Mangroves",
+    "cedLearningObjective": "ERT-4.B",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cause_effect", "cross_section"],
+    "mustKnowConcept": "Wetlands and mangroves provide critical ecosystem services including water filtration, flood control, nursery habitat, and carbon sequestration, but over 50% have been lost to development.",
+    "diagramDescription": "A cross-section showing mangrove ecosystem services: roots stabilizing coastline, attenuating wave energy by 66% per km, filtering sediments, providing nursery habitat for juvenile fish, and sequestering carbon in anaerobic soils.",
+    "specificExamples": [
+      "The Florida Everglades lost 50% of original area to drainage for agriculture and urban development since the 1900s",
+      "Mangroves sequester carbon at 3-5x the rate of terrestrial forests in their anaerobic sediments (blue carbon)",
+      "Shrimp aquaculture has destroyed 38% of global mangrove forests, primarily in Southeast Asia",
+      "Louisiana loses a football field of coastal wetlands every 100 minutes due to channelization, subsidence, and sea level rise"
+    ],
+    "causes": [
+      "Draining wetlands for agriculture and urban development",
+      "Coastal development replacing mangroves with shrimp ponds and resorts",
+      "Upstream dam construction reduces sediment supply that sustains deltas and wetlands"
+    ],
+    "effects": [
+      "Loss of natural flood protection increases storm surge damage",
+      "Decline in fisheries as 75% of commercial fish species depend on estuarine nursery habitat",
+      "Reduced water quality as natural filtration capacity is eliminated"
+    ],
+    "humanImpacts": [
+      "Hurricane Katrina damage was amplified by decades of wetland loss in Louisiana's coastal buffer",
+      "Mangrove destruction in the Indian Ocean contributed to higher 2004 tsunami casualties in deforested areas",
+      "Lost water filtration services require costly engineered treatment systems to replace"
+    ],
+    "solutions": [
+      "Section 404 of the Clean Water Act requires permits for dredge-and-fill activities in wetlands",
+      "Mitigation banking requires developers to create or restore wetlands to compensate for losses",
+      "Everglades Restoration Project ($10.5 billion) aims to restore natural water flow",
+      "Mangrove replanting programs restore coastal protection and fisheries habitat"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Graph showing accelerating wetland loss in Louisiana from 1930 to present correlating with increased hurricane storm surge damage"
+    },
+    "frqUse": "Describe three ecosystem services provided by wetlands or mangroves and explain how loss of these ecosystems increases human vulnerability to natural disasters.",
+    "mcqTrap": "Students may not realize that mangroves are found in tropical saltwater environments while freshwater marshes are inland—both are wetlands but in very different biomes.",
+    "commonMistake": "Underestimating mangrove carbon storage; mangrove soils store 3-5 times more carbon per hectare than terrestrial forests because anaerobic conditions prevent decomposition.",
+    "modelSentence": "Mangrove forests provide coastal protection by attenuating wave energy up to 66% per kilometer of forest width, and their destruction for shrimp aquaculture leaves coastlines vulnerable to storm surge and tsunami damage.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_eutrophication",
+    "unit": "Unit 8",
+    "topicNumber": "8.5",
+    "topicTitle": "Eutrophication",
+    "cedLearningObjective": "STB-4.K",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "pollution_pathway"],
+    "mustKnowConcept": "Eutrophication occurs when excess nitrogen and phosphorus from fertilizers and sewage trigger algal blooms; when algae die, decomposition consumes dissolved oxygen creating hypoxic dead zones.",
+    "diagramDescription": "A sequential cause-effect diagram: fertilizer runoff → excess N and P in water → algal bloom → algae die → bacterial decomposition → dissolved oxygen depletion → fish kills and dead zone formation.",
+    "specificExamples": [
+      "The Gulf of Mexico dead zone (~6,000-8,000 square miles annually) is caused by nitrogen and phosphorus from Mississippi River agricultural runoff",
+      "Lake Erie's harmful algal blooms produce microcystin toxin, causing a 2014 drinking water ban for 500,000 Toledo residents",
+      "Phosphorus is typically the limiting nutrient in freshwater systems, so small additions cause large algal responses",
+      "Chesapeake Bay's hypoxic zone forms each summer as nutrient loading from agriculture drives oxygen depletion below 2 mg/L"
+    ],
+    "causes": [
+      "Agricultural fertilizer runoff delivers excess nitrogen and phosphorus to waterways",
+      "Sewage discharge (treated and untreated) adds nutrients directly to receiving waters",
+      "Atmospheric nitrogen deposition from fossil fuel combustion contributes to nutrient loading"
+    ],
+    "effects": [
+      "Algal blooms block sunlight from submerged aquatic vegetation",
+      "Decomposition of dead algae creates hypoxic zones (dissolved O₂ < 2 mg/L)",
+      "Fish kills and loss of benthic organisms in oxygen-depleted zones",
+      "Harmful algal blooms (HABs) produce toxins dangerous to humans and animals"
+    ],
+    "humanImpacts": [
+      "Over 400 coastal dead zones globally, affecting fisheries that feed billions",
+      "Drinking water contamination from algal toxins requires expensive treatment",
+      "Tourism and recreation losses from algae-covered waterways"
+    ],
+    "solutions": [
+      "Buffer strips and cover crops reduce nutrient runoff from agricultural fields by 50-85%",
+      "Tertiary wastewater treatment removes nitrogen and phosphorus before discharge",
+      "Phosphorus detergent bans reduced point-source loading to freshwater systems",
+      "Precision agriculture applies fertilizer at agronomic rates matching crop uptake"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Graph showing correlation between increasing nitrogen fertilizer use in the Mississippi watershed and expanding Gulf of Mexico dead zone area"
+    },
+    "frqUse": "Describe the step-by-step process of eutrophication from nutrient source to dead zone formation, and propose two strategies to reduce nutrient loading.",
+    "mcqTrap": "Students think algal blooms directly kill fish—the actual mechanism is that decomposing dead algae consume oxygen, creating hypoxic conditions that suffocate aquatic organisms.",
+    "commonMistake": "Confusing the limiting nutrient: phosphorus is typically limiting in freshwater, while nitrogen is typically limiting in saltwater/marine systems.",
+    "modelSentence": "Eutrophication occurs when excess phosphorus from agricultural runoff enters a lake, stimulating algal blooms whose subsequent decomposition by aerobic bacteria depletes dissolved oxygen below 2 mg/L, creating a hypoxic dead zone lethal to fish.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_thermal_pollution",
+    "unit": "Unit 8",
+    "topicNumber": "8.6",
+    "topicTitle": "Thermal Pollution",
+    "cedLearningObjective": "STB-4.L",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "low",
+    "visualType": ["cause_effect", "graph_simulator"],
+    "mustKnowConcept": "Thermal pollution occurs when heated water from power plants and industrial cooling is discharged into waterways, reducing dissolved oxygen capacity and stressing aquatic organisms.",
+    "diagramDescription": "A diagram showing a power plant drawing cool river water for condenser cooling and discharging heated water (10-15°C warmer) downstream, with a graph showing dissolved oxygen capacity decreasing as temperature increases.",
+    "specificExamples": [
+      "A coal power plant discharges cooling water 10-15°C above ambient river temperature, reducing dissolved oxygen solubility by 10-20%",
+      "Cold-water fish species like trout require dissolved oxygen above 6 mg/L and cannot survive in thermally polluted reaches",
+      "Nuclear power plants reject 2/3 of energy as waste heat, requiring massive cooling water withdrawals",
+      "Cooling towers evaporate water to dissipate heat without direct thermal discharge to waterways"
+    ],
+    "causes": [
+      "Power plant cooling systems discharge heated water directly into rivers and lakes",
+      "Industrial processes use water for cooling and return it at elevated temperatures",
+      "Removal of riparian vegetation exposes streams to solar heating"
+    ],
+    "effects": [
+      "Decreased dissolved oxygen solubility in warmer water (inverse relationship)",
+      "Increased metabolic rates in ectotherms while oxygen availability decreases",
+      "Shifts in species composition from cold-water to warm-water tolerant species",
+      "Thermal shock kills organisms when discharge temperature fluctuates rapidly"
+    ],
+    "humanImpacts": [
+      "Loss of cold-water fisheries (trout, salmon) downstream of power plant discharges",
+      "Algal proliferation in artificially warmed waters contributes to eutrophication",
+      "Water withdrawal for cooling can reduce river flows during drought conditions"
+    ],
+    "solutions": [
+      "Cooling towers transfer heat to atmosphere through evaporation rather than discharging to waterways",
+      "Cooling ponds allow thermal equilibration before water returns to natural systems",
+      "Cogeneration (combined heat and power) uses waste heat productively, reducing thermal waste",
+      "NPDES permits limit thermal discharge temperature differentials"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Inverse relationship graph showing dissolved oxygen capacity (mg/L) decreasing from ~14 mg/L at 0°C to ~7 mg/L at 35°C"
+    },
+    "frqUse": "Explain the relationship between water temperature and dissolved oxygen, describe how thermal pollution from a power plant affects downstream aquatic organisms, and propose a solution.",
+    "mcqTrap": "Students think thermal pollution adds chemicals to water—it only adds heat, but the resulting decreased dissolved oxygen is what harms aquatic life.",
+    "commonMistake": "Forgetting that warmer water holds less dissolved oxygen (inverse solubility relationship); students sometimes think warming just speeds up organisms without recognizing the oxygen limitation.",
+    "modelSentence": "Thermal pollution from power plant cooling water discharge raises stream temperature by 10-15°C, reducing dissolved oxygen solubility and creating conditions lethal to cold-water species like trout that require dissolved oxygen above 6 mg/L.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_persistent_organic_pollutants",
+    "unit": "Unit 8",
+    "topicNumber": "8.7",
+    "topicTitle": "Persistent Organic Pollutants",
+    "cedLearningObjective": "STB-4.M",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["pollution_pathway", "cause_effect"],
+    "mustKnowConcept": "Persistent organic pollutants (POPs) are synthetic chemicals that resist degradation, bioaccumulate in fatty tissues, and biomagnify through food chains, remaining toxic for decades.",
+    "diagramDescription": "A diagram showing POPs (DDT, PCBs) persisting in the environment, accumulating in organism fat tissue over a lifetime (bioaccumulation), and increasing in concentration at each trophic level (biomagnification).",
+    "specificExamples": [
+      "DDT has a half-life of 15+ years in soil and biomagnifies from 0.003 ppm in water to 25 ppm in fish-eating birds (8,300x)",
+      "PCBs (polychlorinated biphenyls) used in electrical transformers persist in sediments for decades and cause cancer and immune suppression",
+      "Dioxins produced by waste incineration and paper bleaching are among the most toxic synthetic compounds at parts-per-trillion concentrations",
+      "The Stockholm Convention (2001) targets elimination of 12 initial POPs (the 'dirty dozen') through international treaty"
+    ],
+    "causes": [
+      "Industrial production and use of synthetic chemicals that resist environmental degradation",
+      "Chlorinated pesticide application in agriculture",
+      "Combustion byproducts (dioxins) from waste incineration and industrial processes"
+    ],
+    "effects": [
+      "Bioaccumulation in fatty tissues leads to chronic exposure even from low environmental concentrations",
+      "Biomagnification concentrates POPs to toxic levels in top predators",
+      "Cancer, reproductive failure, immune suppression, and neurological damage in exposed organisms"
+    ],
+    "humanImpacts": [
+      "Indigenous Arctic peoples have highest body burdens of POPs due to biomagnification in marine food webs they depend on",
+      "DDT caused bald eagle eggshell thinning that nearly drove the species to extinction in the US",
+      "POPs cross the placenta and accumulate in breast milk, exposing infants"
+    ],
+    "solutions": [
+      "Stockholm Convention bans or restricts production and use of POPs internationally",
+      "Bioremediation using specialized bacteria can break down some POPs in contaminated soils",
+      "Dredging contaminated sediments (e.g., Hudson River PCB cleanup) physically removes POPs",
+      "Green chemistry designs biodegradable alternatives that do not persist"
+    ],
+    "graphConnection": {
+      "type": "bar_chart",
+      "description": "Trophic level bar chart showing DDT concentration increasing from 0.003 ppm in water to 0.04 ppm in zooplankton to 0.5 ppm in small fish to 2 ppm in large fish to 25 ppm in fish-eating birds"
+    },
+    "frqUse": "Explain why persistent organic pollutants are particularly dangerous to top predators, using a specific example with quantitative biomagnification data.",
+    "mcqTrap": "Students confuse POPs with heavy metals—both bioaccumulate, but POPs are specifically organic (carbon-based) synthetic chemicals, while mercury and lead are elements.",
+    "commonMistake": "Confusing bioaccumulation (buildup within one organism over its lifetime) with biomagnification (increasing concentration across trophic levels); they are related but distinct processes.",
+    "modelSentence": "DDT is a persistent organic pollutant that resists degradation for 15+ years, bioaccumulates in fatty tissue of individual organisms, and biomagnifies through food chains from 0.003 ppm in water to 25 ppm in fish-eating birds, causing reproductive failure through eggshell thinning.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_biomagnification",
+    "unit": "Unit 8",
+    "topicNumber": "8.8",
+    "topicTitle": "Bioaccumulation and Biomagnification",
+    "cedLearningObjective": "STB-4.N",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A", "4.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["pollution_pathway", "graph_simulator"],
+    "mustKnowConcept": "Bioaccumulation is the buildup of a substance in one organism over its lifetime; biomagnification is the increasing concentration of a substance at successively higher trophic levels in a food chain.",
+    "diagramDescription": "A food chain pyramid showing methylmercury concentrations increasing at each trophic level: water (0.001 ppm) → phytoplankton (0.01 ppm) → zooplankton (0.1 ppm) → small fish (1 ppm) → large fish (10 ppm) → osprey (100 ppm), with arrows showing both bioaccumulation within organisms and biomagnification across levels.",
+    "specificExamples": [
+      "Methylmercury from coal combustion biomagnifies from 0.001 ppm in water to 1+ ppm in tuna—a 1,000,000x concentration factor",
+      "DDT biomagnified in the Long Island Sound food web from 0.00005 ppm in water to 75 ppm in ring-billed gull tissue",
+      "FDA advises pregnant women to limit tuna consumption due to biomagnified methylmercury that causes fetal neurological damage",
+      "PCBs biomagnify in Great Lakes food webs, causing reproductive failure in mink and otter populations at top trophic levels"
+    ],
+    "causes": [
+      "Chemicals that are lipid-soluble and resistant to metabolic breakdown accumulate in fatty tissue",
+      "Organisms at higher trophic levels consume large quantities of contaminated prey over their lifetimes",
+      "Long biological half-lives prevent excretion, allowing continuous accumulation"
+    ],
+    "effects": [
+      "Top predators accumulate lethal or sublethal concentrations from non-toxic environmental levels",
+      "Reproductive failure in apex predators (raptors, marine mammals) from biomagnified contaminants",
+      "Human health advisories for consuming top-predator fish species"
+    ],
+    "humanImpacts": [
+      "Minamata disease in Japan (1956) killed and disabled thousands from biomagnified methylmercury in seafood",
+      "Commercial fisheries face consumption advisories reducing market value",
+      "Indigenous communities dependent on marine mammals face elevated contaminant exposure"
+    ],
+    "solutions": [
+      "Reducing mercury emissions from coal plants decreases environmental loading",
+      "Fish consumption advisories protect vulnerable populations (pregnant women, children)",
+      "Choosing lower trophic-level seafood (sardines, anchovies) reduces mercury intake",
+      "International Minamata Convention (2013) phases out mercury in products and processes"
+    ],
+    "graphConnection": {
+      "type": "bar_chart",
+      "description": "Logarithmic bar chart showing mercury concentration increasing by approximately 10x at each successive trophic level from producer to quaternary consumer"
+    },
+    "frqUse": "Distinguish between bioaccumulation and biomagnification, use a specific toxin and food chain to illustrate biomagnification quantitatively, and explain why top predators are most affected.",
+    "mcqTrap": "Students select 'bioaccumulation' when the question asks about increasing concentrations UP a food chain—that process is specifically biomagnification, not bioaccumulation.",
+    "commonMistake": "Using bioaccumulation and biomagnification interchangeably; bioaccumulation occurs within ONE organism over time, while biomagnification describes increasing concentrations ACROSS trophic levels.",
+    "modelSentence": "Biomagnification occurs when methylmercury, which is lipid-soluble and resistant to metabolic breakdown, increases in concentration at each trophic level—from 0.001 ppm in water to over 1 ppm in top-predator fish—because predators consume many contaminated prey organisms over their lifetimes.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_solid_waste",
+    "unit": "Unit 8",
+    "topicNumber": "8.9",
+    "topicTitle": "Solid Waste Disposal",
+    "cedLearningObjective": "STB-4.O",
+    "bigIdea": "STB",
+    "sciencePractices": ["6.A", "7.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cross_section", "solution_tradeoff"],
+    "mustKnowConcept": "Municipal solid waste is managed through landfills (most common in US), incineration (reduces volume by 90%), composting, and recycling, each with distinct environmental tradeoffs.",
+    "diagramDescription": "A cross-section of a sanitary landfill showing layers: compacted waste cells, daily soil cover, clay and synthetic liner system, leachate collection pipes, groundwater monitoring wells, methane collection system, and final cap.",
+    "specificExamples": [
+      "Sanitary landfills use clay and HDPE liners plus leachate collection systems to prevent groundwater contamination",
+      "US generates approximately 292 million tons of municipal solid waste annually (~4.9 lbs per person per day)",
+      "Waste-to-energy incineration reduces landfill volume by 90% but produces fly ash containing heavy metals requiring hazardous waste disposal",
+      "Fresh Kills Landfill in New York (closed 2001) was once the largest human-made structure, visible from space"
+    ],
+    "causes": [
+      "Consumer economy generates increasing per-capita waste volumes",
+      "Single-use packaging and planned obsolescence accelerate waste production",
+      "Limited recycling infrastructure and contamination reduce diversion rates"
+    ],
+    "effects": [
+      "Leachate from unlined landfills contaminates groundwater with heavy metals and organic compounds",
+      "Landfill methane (CH₄) is a potent greenhouse gas 80x stronger than CO₂ over 20 years",
+      "Incinerator emissions include dioxins, heavy metals, and acid gases without proper controls"
+    ],
+    "humanImpacts": [
+      "Landfills disproportionately sited near low-income and minority communities (environmental justice)",
+      "Ocean plastic pollution from mismanaged waste kills 100,000+ marine mammals annually",
+      "E-waste exports to developing nations expose workers to toxic metals during informal recycling"
+    ],
+    "solutions": [
+      "Sanitary landfill design with double liners, leachate collection, and methane capture",
+      "Waste-to-energy incineration with scrubbers and particulate controls",
+      "Source reduction (reducing waste generation) is the most effective waste management strategy",
+      "Extended producer responsibility (EPR) makes manufacturers responsible for end-of-life disposal"
+    ],
+    "graphConnection": {
+      "type": "pie_chart",
+      "description": "US MSW management breakdown: landfill 50%, recycling 24%, composting 9%, incineration 12%, other 5%"
+    },
+    "frqUse": "Compare landfilling and incineration as waste disposal methods, identify one environmental concern for each, and explain why source reduction is preferred.",
+    "mcqTrap": "Students think recycling is the best waste management option—source reduction (not creating waste in the first place) is actually at the top of the waste management hierarchy.",
+    "commonMistake": "Confusing sanitary landfills (engineered with liners and monitoring) with open dumps (no environmental controls); modern landfills have extensive groundwater protection systems.",
+    "modelSentence": "Sanitary landfills prevent groundwater contamination through double-lined systems with leachate collection, but still produce methane from anaerobic decomposition that must be captured to reduce greenhouse gas emissions.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_waste_reduction",
+    "unit": "Unit 8",
+    "topicNumber": "8.10",
+    "topicTitle": "Waste Reduction Methods",
+    "cedLearningObjective": "STB-4.P",
+    "bigIdea": "STB",
+    "sciencePractices": ["6.A", "7.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["solution_tradeoff"],
+    "mustKnowConcept": "The waste management hierarchy prioritizes (in order): reduce → reuse → recycle → recover energy → landfill; source reduction eliminates waste before it is created.",
+    "diagramDescription": "An inverted pyramid/triangle showing the waste management hierarchy from most preferred (top/widest: reduce) through reuse, recycle, energy recovery, to least preferred (bottom/narrowest: landfill disposal).",
+    "specificExamples": [
+      "Reduce: Manufacturers eliminating excess packaging (Amazon Frustration-Free Packaging reduced materials 25%)",
+      "Reuse: Refillable glass bottle systems in Germany achieve 98% return rates",
+      "Recycle: Aluminum recycling uses 95% less energy than producing from bauxite ore",
+      "Composting: San Francisco's mandatory composting program diverts 80% of waste from landfills",
+      "E-waste recycling recovers gold, platinum, and rare earth elements worth $57 billion annually from discarded electronics"
+    ],
+    "causes": [
+      "Linear 'take-make-dispose' economic model generates ever-increasing waste",
+      "Consumer demand for convenience drives single-use product design",
+      "Lack of infrastructure and economic incentives for circular material flows"
+    ],
+    "effects": [
+      "Recycling aluminum saves 95% of the energy needed for virgin production",
+      "Composting returns nutrients to soil and reduces landfill methane",
+      "Extended producer responsibility shifts end-of-life costs to manufacturers"
+    ],
+    "humanImpacts": [
+      "Pay-as-you-throw programs reduce household waste generation by 14-27%",
+      "Informal waste picking provides livelihoods for 15+ million people globally",
+      "China's 2018 National Sword policy (banning contaminated recyclable imports) disrupted global recycling markets"
+    ],
+    "solutions": [
+      "Product redesign for durability, repairability, and recyclability (circular economy)",
+      "Deposit-refund systems incentivize container return (10-cent bottle deposits achieve 80%+ return rates)",
+      "Industrial ecology connects waste streams from one process as inputs to another",
+      "Right-to-repair legislation extends product lifespans and reduces e-waste"
+    ],
+    "graphConnection": {
+      "type": "bar_chart",
+      "description": "Energy savings from recycling compared to virgin production: aluminum 95%, copper 85%, paper 60%, glass 30%, plastic 70%"
+    },
+    "frqUse": "Describe the waste management hierarchy, provide a specific example for each level, and explain why source reduction is the most effective strategy.",
+    "mcqTrap": "Students rank recycling as the top priority—the correct hierarchy places reduction first, then reuse, then recycling.",
+    "commonMistake": "Thinking all plastics are recyclable; only types 1 (PET) and 2 (HDPE) have robust recycling markets, and contamination renders many recyclables unprocessable.",
+    "modelSentence": "The waste management hierarchy prioritizes source reduction over recycling because preventing waste creation eliminates all downstream environmental impacts including collection, processing energy, and residual disposal.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_sewage_treatment",
+    "unit": "Unit 8",
+    "topicNumber": "8.11",
+    "topicTitle": "Sewage Treatment",
+    "cedLearningObjective": "STB-4.Q",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cross_section", "cause_effect"],
+    "mustKnowConcept": "Sewage treatment progresses through primary (physical settling), secondary (biological decomposition), and tertiary (chemical/advanced removal of nutrients and pathogens) stages.",
+    "diagramDescription": "A sequential flow diagram showing wastewater moving through: screening/grit removal → primary clarifier (settling solids) → aeration tank (bacteria decompose organics) → secondary clarifier → optional tertiary treatment (filtration, nutrient removal, disinfection) → discharge.",
+    "specificExamples": [
+      "Primary treatment uses settling tanks to remove 60% of suspended solids and 30-35% of BOD through physical sedimentation",
+      "Secondary treatment uses activated sludge (aerobic bacteria) to decompose 85-90% of organic matter (BOD)",
+      "Tertiary treatment removes nitrogen and phosphorus to prevent eutrophication of receiving waters",
+      "Chlorination or UV disinfection kills pathogens before treated effluent is discharged",
+      "Septic systems provide on-site primary and secondary treatment for rural homes using anaerobic decomposition"
+    ],
+    "causes": [
+      "Untreated sewage contains pathogens, organic matter, nutrients, and toxic substances",
+      "Growing urban populations generate increasing wastewater volumes requiring treatment",
+      "Aging infrastructure and combined sewer systems overflow during heavy rain"
+    ],
+    "effects": [
+      "Untreated sewage in waterways spreads waterborne diseases (cholera, typhoid, hepatitis)",
+      "High biological oxygen demand (BOD) from sewage depletes dissolved oxygen",
+      "Nutrient discharge (N, P) causes eutrophication in receiving waters"
+    ],
+    "humanImpacts": [
+      "2.4 billion people globally lack access to basic sanitation facilities",
+      "Waterborne diseases from untreated sewage kill 485,000+ annually (mostly children under 5)",
+      "Combined sewer overflows release billions of gallons of untreated sewage annually in US cities"
+    ],
+    "solutions": [
+      "Upgrading to tertiary treatment prevents eutrophication from nutrient discharge",
+      "Green infrastructure reduces combined sewer overflows by decreasing stormwater volume",
+      "Constructed wetlands provide low-cost secondary/tertiary treatment in developing regions",
+      "Biosolids from treatment can be applied as agricultural fertilizer after pathogen reduction"
+    ],
+    "graphConnection": {
+      "type": "bar_chart",
+      "description": "Bar chart showing BOD removal at each treatment stage: primary 30-35%, secondary 85-90%, tertiary 95-99%"
+    },
+    "frqUse": "Describe what occurs at each stage of sewage treatment (primary, secondary, tertiary), the pollutants removed at each stage, and why tertiary treatment is important for preventing eutrophication.",
+    "mcqTrap": "Students confuse primary treatment (physical settling only) with secondary treatment (biological decomposition)—primary removes solids but not dissolved organics.",
+    "commonMistake": "Thinking primary treatment adequately cleans wastewater; primary treatment only removes settleable solids, leaving dissolved organic matter and nutrients that require biological (secondary) and chemical (tertiary) treatment.",
+    "modelSentence": "Secondary sewage treatment uses aerobic bacteria in aeration tanks to decompose 85-90% of biological oxygen demand, while tertiary treatment further removes nitrogen and phosphorus through chemical precipitation to prevent eutrophication of receiving waters.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit8_ld50",
+    "unit": "Unit 8",
+    "topicNumber": "8.12",
+    "topicTitle": "Lethal Dose 50% (LD50) and Dose Response",
+    "cedLearningObjective": "STB-4.R",
+    "bigIdea": "STB",
+    "sciencePractices": ["2.A", "4.A", "5.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["graph_simulator"],
+    "mustKnowConcept": "LD50 is the dose that kills 50% of a test population; dose-response curves show the relationship between chemical concentration and biological effect, with thresholds varying by species.",
+    "diagramDescription": "A dose-response curve (sigmoid/S-shaped) plotting percentage of test organisms showing response (y-axis) against dose/concentration (x-axis, logarithmic), with LD50 marked at the 50% response point and NOAEL (no observed adverse effect level) at the threshold.",
+    "specificExamples": [
+      "Botulinum toxin LD50 is 0.001 mg/kg (extremely toxic), while table salt (NaCl) LD50 is 3,000 mg/kg (low toxicity)",
+      "The dose-response curve is typically sigmoid (S-shaped) when plotted on a log scale",
+      "NOAEL (No Observed Adverse Effect Level) determines safe exposure limits with safety factors applied",
+      "Caffeine LD50 in humans is approximately 150-200 mg/kg (~75-100 cups of coffee)",
+      "Species-specific LD50 values mean animal testing may not directly predict human toxicity"
+    ],
+    "causes": [
+      "Toxicity testing determines safe exposure levels for chemicals in the environment",
+      "Regulatory agencies use LD50 and dose-response data to set exposure standards",
+      "Individual variation in response creates the characteristic S-shaped dose-response curve"
+    ],
+    "effects": [
+      "Lower LD50 values indicate more toxic substances (less substance needed to kill)",
+      "Acute toxicity (single exposure) differs from chronic toxicity (long-term low-dose exposure)",
+      "Synergistic effects occur when multiple chemicals together are more toxic than their individual effects"
+    ],
+    "humanImpacts": [
+      "EPA sets reference doses (RfD) at 100-1000x below NOAEL to protect sensitive populations",
+      "Occupational exposure limits protect workers from chronic chemical exposure",
+      "Children are more vulnerable to toxins due to higher intake per body weight and developing systems"
+    ],
+    "solutions": [
+      "Toxicity testing identifies dangerous chemicals before widespread exposure occurs",
+      "Regulatory standards (MCLs, RfDs) limit human exposure below harmful thresholds",
+      "Epidemiological studies complement animal testing for human risk assessment",
+      "Precautionary principle restricts chemicals when evidence suggests harm but certainty is incomplete"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Sigmoid dose-response curve showing threshold, linear response region, and maximum response plateau with LD50 marked at the inflection point"
+    },
+    "frqUse": "Interpret a dose-response curve, identify the LD50 value, explain what a lower LD50 indicates about toxicity, and discuss limitations of using LD50 for human risk assessment.",
+    "mcqTrap": "Students think a higher LD50 means more toxic—a LOWER LD50 means more toxic because less substance is needed to kill 50% of the test population.",
+    "commonMistake": "Confusing LD50 direction: a LOWER LD50 = MORE toxic (it takes less of the substance to kill). Students often reverse this relationship.",
+    "modelSentence": "The LD50 of a substance is the dose (in mg/kg body weight) that kills 50% of a test population, with lower values indicating greater toxicity; for example, botulinum toxin's LD50 of 0.001 mg/kg is millions of times more toxic than table salt's LD50 of 3,000 mg/kg.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_ozone_depletion",
+    "unit": "Unit 9",
+    "topicNumber": "9.1",
+    "topicTitle": "Stratospheric Ozone Depletion",
+    "cedLearningObjective": "STB-4.S",
+    "bigIdea": "STB",
+    "sciencePractices": ["1.A", "2.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "pollution_pathway"],
+    "mustKnowConcept": "CFCs released at Earth's surface rise to the stratosphere where UV radiation breaks them apart, releasing chlorine atoms that catalytically destroy ozone molecules in a chain reaction (one Cl atom destroys ~100,000 O₃ molecules).",
+    "diagramDescription": "A diagram showing the ozone destruction cycle: CFC molecule rises to stratosphere → UV breaks off Cl atom → Cl + O₃ → ClO + O₂ → ClO + O → Cl + O₂ (regenerating Cl for another cycle), with annotation showing one chlorine atom destroys ~100,000 ozone molecules.",
+    "specificExamples": [
+      "CFCs (Freon-12, CFC-11) used in refrigerants and aerosol propellants have atmospheric lifetimes of 50-100+ years",
+      "The Antarctic ozone hole forms each spring (September-October) when polar stratospheric clouds provide surfaces for chlorine activation",
+      "One chlorine atom released from a CFC can catalytically destroy approximately 100,000 ozone molecules before being deactivated",
+      "The ozone layer absorbs 97-99% of incoming UV-B radiation (280-315 nm wavelength)"
+    ],
+    "causes": [
+      "CFC production for refrigeration, air conditioning, and aerosol propellants (peaking in 1980s)",
+      "Halons used in fire extinguishers contain bromine that also destroys ozone",
+      "Long atmospheric lifetimes (50-100+ years) mean CFCs already released will continue depleting ozone for decades"
+    ],
+    "effects": [
+      "Increased UV-B radiation reaching Earth's surface",
+      "Higher rates of skin cancer (melanoma) and cataracts in humans",
+      "Damage to marine phytoplankton reducing ocean primary productivity",
+      "Disruption of amphibian development and immune function"
+    ],
+    "humanImpacts": [
+      "Every 1% decrease in ozone causes 2% increase in UV-B reaching surface and 2-5% increase in skin cancer rates",
+      "Antarctic ozone depletion reaches 50-60% each spring over the South Pole",
+      "UV-B damage to phytoplankton threatens the base of marine food webs"
+    ],
+    "solutions": [
+      "Montreal Protocol (1987) phased out CFC production globally",
+      "HFCs and HCFCs developed as transitional replacements (HCFCs still have some ozone-depleting potential)",
+      "Ozone layer expected to recover to 1980 levels by approximately 2066 due to CFC phase-out"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Time series showing stratospheric chlorine concentrations rising from 1960-2000 and beginning slow decline after Montreal Protocol, with corresponding ozone column measurements"
+    },
+    "frqUse": "Describe the chemical mechanism by which CFCs destroy stratospheric ozone, explain why it is catalytic, and evaluate the effectiveness of the Montreal Protocol.",
+    "mcqTrap": "Students confuse ozone depletion (caused by CFCs in the stratosphere, allowing more UV through) with global warming (caused by greenhouse gases trapping infrared radiation)—these are DIFFERENT problems with different causes.",
+    "commonMistake": "Confusing ozone depletion with climate change; ozone depletion is caused by CFCs destroying O₃ in the stratosphere, while climate change is caused by greenhouse gases trapping heat in the troposphere. They are separate phenomena.",
+    "modelSentence": "Chlorofluorocarbons rise to the stratosphere where UV radiation releases chlorine atoms that catalytically destroy ozone in a chain reaction, with each chlorine atom destroying approximately 100,000 ozone molecules before deactivation.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_reducing_ozone_depletion",
+    "unit": "Unit 9",
+    "topicNumber": "9.2",
+    "topicTitle": "Reducing Ozone Depletion",
+    "cedLearningObjective": "STB-4.T",
+    "bigIdea": "STB",
+    "sciencePractices": ["6.A", "7.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["solution_tradeoff", "graph_simulator"],
+    "mustKnowConcept": "The Montreal Protocol (1987) is the most successful international environmental treaty, achieving near-complete phase-out of CFCs; the ozone layer is slowly recovering but won't fully heal until ~2066.",
+    "diagramDescription": "A timeline showing CFC production rising from 1950s, Montreal Protocol signed 1987, CFC production declining to near zero by 2000s, stratospheric chlorine peaking ~2000, and projected ozone recovery to 1980 levels by 2066.",
+    "specificExamples": [
+      "The Montreal Protocol has been ratified by all 198 UN member states—the only universally ratified treaty",
+      "CFC production dropped 99% from peak levels following Montreal Protocol phase-out schedules",
+      "The Kigali Amendment (2016) added HFC phase-down (HFCs don't deplete ozone but are potent greenhouse gases)",
+      "Antarctic ozone hole area peaked at 28.4 million km² in 2000 and shows signs of slow recovery",
+      "Developing nations received 10-year grace period and financial assistance through the Multilateral Fund"
+    ],
+    "causes": [
+      "Scientific evidence (Molina & Rowland 1974, Antarctic ozone hole discovered 1985) drove policy action",
+      "Industry developed economically viable alternatives (HFCs, HCFCs) enabling political agreement",
+      "Multilateral Fund provided financial support for developing nation compliance"
+    ],
+    "effects": [
+      "Global CFC atmospheric concentrations peaked ~2000 and are slowly declining",
+      "Ozone hole showing signs of recovery but full healing delayed by long CFC atmospheric lifetimes",
+      "Prevented an estimated 2 million additional skin cancer cases annually by 2030"
+    ],
+    "humanImpacts": [
+      "Montreal Protocol prevented projected heating of 0.5-1°C from unchecked CFC/HCFC growth (co-benefit)",
+      "UV index forecasts still warn of elevated exposure in high-latitude Southern Hemisphere regions",
+      "Illegal CFC production detected from China (2018) threatened recovery timeline"
+    ],
+    "solutions": [
+      "Montreal Protocol established binding phase-out timelines with compliance monitoring",
+      "Technology transfer and financial assistance enabled developing nation participation",
+      "Adaptive management through amendments addresses new ODS and HFC climate impacts",
+      "Continued monitoring ensures compliance and detects recovery progress"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Graph showing CFC-12 atmospheric concentration rising until ~2000 then slowly declining, with projected return to 1980 levels around 2066"
+    },
+    "frqUse": "Explain why the Montreal Protocol is considered the most successful international environmental agreement, describe two features that enabled its success, and discuss remaining challenges.",
+    "mcqTrap": "Students confuse the Montreal Protocol (ozone/CFCs, 1987) with the Kyoto Protocol (climate change/greenhouse gases, 1997)—these are different treaties addressing different problems.",
+    "commonMistake": "Thinking the ozone hole is already healed because CFC production stopped; due to 50-100 year atmospheric lifetimes of CFCs, full recovery is not expected until approximately 2066.",
+    "modelSentence": "The Montreal Protocol achieved 99% reduction in CFC production through legally binding phase-out schedules, financial assistance to developing nations, and adaptive amendments, though the ozone layer will not fully recover until approximately 2066 due to the long atmospheric lifetime of existing CFCs.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_greenhouse_effect",
+    "unit": "Unit 9",
+    "topicNumber": "9.3",
+    "topicTitle": "The Greenhouse Effect",
+    "cedLearningObjective": "ENG-4.A",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cross_section", "energy_matrix"],
+    "mustKnowConcept": "The natural greenhouse effect keeps Earth ~33°C warmer than it would be without an atmosphere; greenhouse gases (CO₂, CH₄, N₂O, H₂O) absorb and re-emit infrared radiation, warming the troposphere.",
+    "diagramDescription": "An energy balance diagram showing incoming solar radiation (shortwave), Earth's surface absorbing and re-emitting infrared (longwave) radiation, greenhouse gas molecules absorbing and re-emitting IR in all directions including back toward the surface, creating the warming effect.",
+    "specificExamples": [
+      "Without the natural greenhouse effect, Earth's average temperature would be -18°C instead of +15°C (a 33°C warming)",
+      "Water vapor is the most abundant greenhouse gas but acts as a feedback amplifier, not a driver of climate change",
+      "CO₂ absorbs infrared radiation at 15-micrometer wavelength and has a 300-1000 year atmospheric residence time",
+      "Methane (CH₄) is 80x more potent than CO₂ over 20 years but has shorter atmospheric lifetime (~12 years)"
+    ],
+    "causes": [
+      "Greenhouse gases naturally present in the atmosphere absorb outgoing infrared radiation",
+      "Water vapor, CO₂, CH₄, and N₂O are the primary natural greenhouse gases",
+      "The atmospheric window (8-12 μm wavelength) allows some IR to escape directly to space"
+    ],
+    "effects": [
+      "Earth's surface temperature maintained at habitable ~15°C average",
+      "Temperature stable when incoming solar radiation balances outgoing infrared radiation",
+      "Different greenhouse gases absorb at different infrared wavelengths, collectively blocking most outgoing IR"
+    ],
+    "humanImpacts": [
+      "The natural greenhouse effect is essential for life—it is the ENHANCED greenhouse effect that causes climate change",
+      "Venus's runaway greenhouse effect (96% CO₂ atmosphere) creates 460°C surface temperatures",
+      "Understanding the natural greenhouse effect is fundamental to understanding anthropogenic climate change"
+    ],
+    "solutions": [],
+    "graphConnection": {
+      "type": "energy_balance",
+      "description": "Earth's energy budget diagram showing 340 W/m² incoming solar, 240 W/m² outgoing longwave, and greenhouse gas absorption/re-emission creating 155 W/m² downward back-radiation"
+    },
+    "frqUse": "Explain the natural greenhouse effect including which gases are involved, how they interact with radiation, and why this process is essential for life on Earth.",
+    "mcqTrap": "Students think the greenhouse effect is inherently harmful—the NATURAL greenhouse effect is essential for life; only the ENHANCED (anthropogenic) greenhouse effect causes climate change.",
+    "commonMistake": "Thinking greenhouse gases block sunlight from entering—they actually absorb outgoing INFRARED (longwave) radiation emitted by Earth's surface, not incoming solar (shortwave) radiation.",
+    "modelSentence": "The natural greenhouse effect occurs when atmospheric gases such as CO₂, CH₄, and water vapor absorb outgoing infrared radiation emitted by Earth's surface and re-emit it in all directions, including back toward the surface, maintaining Earth's average temperature at 15°C rather than -18°C.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_enhanced_greenhouse",
+    "unit": "Unit 9",
+    "topicNumber": "9.4",
+    "topicTitle": "Increases in the Greenhouse Effect",
+    "cedLearningObjective": "ENG-4.B",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "4.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["graph_simulator", "cause_effect"],
+    "mustKnowConcept": "Human activities have increased atmospheric CO₂ by 50% (280→420+ ppm), CH₄ by 150%, and N₂O by 23% since pre-industrial times, enhancing the greenhouse effect and causing global warming.",
+    "diagramDescription": "Graph overlaying CO₂ concentration (from ice cores and direct measurements) with global temperature anomaly from 1850-present, showing parallel increases with CO₂ rising from 280 to 420+ ppm and temperature rising ~1.2°C.",
+    "specificExamples": [
+      "Fossil fuel combustion releases ~36 billion metric tons of CO₂ annually, raising atmospheric concentration by ~2.5 ppm/year",
+      "Rice paddies and livestock (enteric fermentation) are major anthropogenic sources of methane",
+      "Nitrous oxide (N₂O) from synthetic fertilizer application (Haber-Bosch process nitrogen) has 298x the warming potential of CO₂",
+      "Deforestation accounts for ~10% of anthropogenic CO₂ emissions by releasing stored carbon and eliminating photosynthetic uptake",
+      "Ice core data shows current CO₂ levels are highest in at least 800,000 years"
+    ],
+    "causes": [
+      "Fossil fuel combustion (coal, oil, natural gas) for energy is the primary source (~75% of anthropogenic CO₂)",
+      "Agriculture produces CH₄ (livestock, rice) and N₂O (fertilized soils)",
+      "Deforestation releases stored carbon and reduces photosynthetic CO₂ uptake",
+      "Industrial processes produce CO₂ (cement manufacturing) and synthetic greenhouse gases (HFCs)"
+    ],
+    "effects": [
+      "Global average temperature has increased ~1.2°C since pre-industrial era",
+      "Radiative forcing from increased greenhouse gases exceeds 3 W/m²",
+      "Positive feedback loops (ice-albedo, water vapor, permafrost thaw) amplify initial warming"
+    ],
+    "humanImpacts": [
+      "Per capita CO₂ emissions vary enormously: US ~14 tons/person vs. India ~2 tons/person annually",
+      "Cumulative emissions from industrialized nations bear greatest responsibility for current warming",
+      "2015 Paris Agreement aims to limit warming to 1.5-2°C above pre-industrial levels"
+    ],
+    "solutions": [
+      "Transition from fossil fuels to renewable energy (solar, wind, nuclear) for electricity generation",
+      "Energy efficiency improvements reduce total energy demand",
+      "Carbon pricing (carbon tax or cap-and-trade) internalizes the social cost of carbon",
+      "Reforestation and afforestation sequester atmospheric CO₂ in biomass and soils"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "800,000-year ice core record showing CO₂ oscillating between 180-280 ppm during glacial cycles, then spiking to 420+ ppm in the industrial era"
+    },
+    "frqUse": "Identify three anthropogenic sources of greenhouse gases, explain the positive feedback loop involving ice-albedo, and evaluate one strategy to reduce emissions.",
+    "mcqTrap": "Students identify water vapor as an anthropogenic greenhouse gas—while it's the most abundant GHG, humans don't directly emit significant water vapor; it increases as a FEEDBACK to warming caused by CO₂ and CH₄.",
+    "commonMistake": "Listing water vapor as a human-caused greenhouse gas; water vapor amplifies warming through a positive feedback loop but is not directly emitted in climatically significant quantities by human activities.",
+    "modelSentence": "The enhanced greenhouse effect results from fossil fuel combustion raising atmospheric CO₂ from 280 ppm pre-industrial to over 420 ppm, increasing radiative forcing and raising global average temperature by approximately 1.2°C.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_global_climate_change",
+    "unit": "Unit 9",
+    "topicNumber": "9.5",
+    "topicTitle": "Global Climate Change",
+    "cedLearningObjective": "ENG-4.C",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "4.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "graph_simulator"],
+    "mustKnowConcept": "Global climate change refers to long-term shifts in temperature and weather patterns; evidence includes rising temperatures, melting ice, sea level rise, shifting species ranges, and altered precipitation patterns.",
+    "diagramDescription": "A multi-panel evidence figure showing: global temperature anomaly rising since 1880, Arctic sea ice extent declining, sea level rising ~3.3 mm/year, and glacier mass balance becoming increasingly negative.",
+    "specificExamples": [
+      "Global sea level has risen ~20 cm since 1900 due to thermal expansion and ice melt, accelerating to 3.6 mm/year currently",
+      "Arctic sea ice minimum extent has declined ~13% per decade since satellite records began in 1979",
+      "Species ranges are shifting poleward at an average of 17 km per decade and to higher elevations at 11 m per decade",
+      "Coral bleaching events (2016, 2017, 2020) killed 50-80% of Great Barrier Reef coral when temperatures exceeded tolerance thresholds",
+      "Greenland ice sheet is losing 280 billion tons of ice per year, contributing ~0.8 mm/year to sea level rise"
+    ],
+    "causes": [
+      "Enhanced greenhouse effect from anthropogenic greenhouse gas emissions",
+      "Positive feedbacks: ice-albedo (melting ice exposes dark ocean, absorbing more heat)",
+      "Permafrost thaw releasing stored methane and CO₂ (positive feedback)",
+      "Water vapor feedback (warmer air holds more water vapor, which is itself a greenhouse gas)"
+    ],
+    "effects": [
+      "More frequent and intense heat waves, droughts, and heavy precipitation events",
+      "Sea level rise threatening coastal cities and island nations",
+      "Ocean warming and acidification degrading marine ecosystems",
+      "Shifting agricultural zones and increased pest/disease ranges"
+    ],
+    "humanImpacts": [
+      "Climate refugees projected at 200+ million by 2050 from sea level rise and desertification",
+      "Agricultural disruption threatens food security in tropical and subtropical regions",
+      "Infrastructure damage from extreme weather events costing hundreds of billions annually"
+    ],
+    "solutions": [
+      "Mitigation: reducing greenhouse gas emissions through renewable energy, efficiency, and land use changes",
+      "Adaptation: building seawalls, developing drought-resistant crops, relocating infrastructure",
+      "Paris Agreement (2015) establishes international framework for limiting warming to 1.5-2°C",
+      "Carbon sequestration through reforestation and enhanced weathering"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Global temperature anomaly from 1880-present showing ~1.2°C total warming with acceleration since 1980, superimposed with CO₂ concentration"
+    },
+    "frqUse": "Provide three lines of evidence for global climate change, explain one positive feedback loop, and distinguish between mitigation and adaptation strategies.",
+    "mcqTrap": "Students confuse weather (short-term atmospheric conditions) with climate (long-term statistical patterns)—a single cold winter does NOT disprove climate change.",
+    "commonMistake": "Confusing weather with climate; weather is day-to-day atmospheric conditions at a specific location, while climate is the statistical average of weather patterns over 30+ years across a region.",
+    "modelSentence": "Global climate change is evidenced by rising average temperatures, declining Arctic sea ice extent, accelerating sea level rise, and poleward species range shifts, driven by the enhanced greenhouse effect and amplified by positive feedbacks such as ice-albedo and permafrost methane release.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_ocean_warming",
+    "unit": "Unit 9",
+    "topicNumber": "9.6",
+    "topicTitle": "Ocean Warming",
+    "cedLearningObjective": "ENG-4.D",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cause_effect", "graph_simulator"],
+    "mustKnowConcept": "Oceans absorb over 90% of excess heat from global warming, causing thermal expansion (sea level rise), coral bleaching, disrupted thermohaline circulation, and intensified hurricanes.",
+    "diagramDescription": "A diagram showing the ocean as a heat sink absorbing 93% of trapped energy, with effects radiating outward: thermal expansion raising sea level, surface warming triggering coral bleaching, heat content increasing hurricane intensity, and altered thermohaline circulation.",
+    "specificExamples": [
+      "Oceans have absorbed 93% of the excess energy trapped by greenhouse gases since 1970",
+      "Thermal expansion of warming ocean water contributes approximately 40% of observed sea level rise",
+      "Coral bleaching occurs when water temperature exceeds 1-2°C above normal maximum for 4+ weeks, causing corals to expel symbiotic zooxanthellae",
+      "Hurricane intensity correlates with sea surface temperature; Category 4-5 storms have increased 25-30% since 1980"
+    ],
+    "causes": [
+      "Ocean's high heat capacity absorbs vast quantities of atmospheric heat energy",
+      "Surface warming propagates to deeper layers through thermohaline circulation",
+      "Reduced ocean-atmosphere temperature gradient alters weather patterns"
+    ],
+    "effects": [
+      "Thermal expansion contributes to sea level rise (water expands as it warms)",
+      "Mass coral bleaching when temperatures exceed species' thermal tolerance",
+      "Intensification of tropical cyclones drawing energy from warmer surface waters",
+      "Disruption of thermohaline circulation as freshwater from melting ice reduces density-driven sinking"
+    ],
+    "humanImpacts": [
+      "Small island developing states face existential threat from thermal expansion + ice melt sea level rise",
+      "Fisheries shifting poleward as species follow thermal preferences, disrupting coastal economies",
+      "Increased hurricane intensity threatens coastal populations and infrastructure"
+    ],
+    "solutions": [
+      "Reducing greenhouse gas emissions is the only way to slow ocean heat uptake",
+      "Marine protected areas improve coral reef resilience to thermal stress",
+      "Coastal adaptation including managed retreat from vulnerable shorelines",
+      "Assisted migration and coral gardening to preserve heat-tolerant coral genotypes"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Ocean heat content (0-2000m) increasing steadily from 1960 to present, with acceleration after 1990"
+    },
+    "frqUse": "Explain why oceans are critical in the climate system, describe two consequences of ocean warming, and propose adaptation strategies for coastal communities.",
+    "mcqTrap": "Students think sea level rise is only from melting ice—thermal expansion of warming water contributes approximately 40% of current sea level rise without any ice melting.",
+    "commonMistake": "Thinking coral bleaching kills coral immediately; bleaching is the expulsion of symbiotic algae (zooxanthellae) due to heat stress—corals can recover if stress is short-term, but prolonged bleaching leads to starvation and death.",
+    "modelSentence": "Ocean warming causes coral bleaching when sea surface temperatures exceed species' thermal tolerance by 1-2°C for extended periods, causing corals to expel their symbiotic zooxanthellae algae and lose their primary energy source.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_ocean_acidification",
+    "unit": "Unit 9",
+    "topicNumber": "9.7",
+    "topicTitle": "Ocean Acidification",
+    "cedLearningObjective": "ENG-4.E",
+    "bigIdea": "ENG",
+    "sciencePractices": ["1.A", "2.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "graph_simulator"],
+    "mustKnowConcept": "Ocean acidification occurs when excess atmospheric CO₂ dissolves in seawater forming carbonic acid (CO₂ + H₂O → H₂CO₃), lowering pH and reducing carbonate ion availability needed by shell-building organisms.",
+    "diagramDescription": "A chemical pathway diagram: atmospheric CO₂ dissolves into ocean → forms H₂CO₃ → dissociates to H⁺ + HCO₃⁻ → H⁺ lowers pH → excess H⁺ reacts with CO₃²⁻ → reduces carbonate available for CaCO₃ shell formation by corals, mollusks, and plankton.",
+    "specificExamples": [
+      "Ocean pH has dropped from 8.2 to 8.1 since pre-industrial times—a 30% increase in hydrogen ion concentration (pH is logarithmic)",
+      "Pteropods (sea butterflies) show shell dissolution in waters with aragonite undersaturation, threatening marine food webs",
+      "The chemical reaction: CO₂ + H₂O → H₂CO₃ → H⁺ + HCO₃⁻ reduces available CO₃²⁻ for calcification",
+      "Oyster larvae in Pacific Northwest hatcheries have experienced 80% die-offs linked to corrosive upwelled acidified water"
+    ],
+    "causes": [
+      "Oceans absorb approximately 30% of anthropogenic CO₂ emissions (~26 billion tons since 1850)",
+      "Dissolved CO₂ forms carbonic acid, releasing hydrogen ions that lower pH",
+      "Excess H⁺ ions react with carbonate (CO₃²⁻), reducing availability for calcifying organisms"
+    ],
+    "effects": [
+      "Reduced calcification rates in corals, mollusks, and calcareous plankton",
+      "Shell dissolution in pteropods and other thin-shelled organisms in undersaturated waters",
+      "Disrupted behavior in fish (impaired predator detection, navigation) at elevated CO₂ levels",
+      "Potential collapse of marine food webs dependent on calcareous primary producers"
+    ],
+    "humanImpacts": [
+      "Shellfish aquaculture industry ($3+ billion globally) directly threatened by acidification",
+      "Coral reef degradation affects 500+ million people dependent on reef fisheries and tourism",
+      "Combined warming + acidification stress creates 'double jeopardy' for marine organisms"
+    ],
+    "solutions": [
+      "Reducing CO₂ emissions is the primary solution to ocean acidification",
+      "Local alkalinity enhancement (adding calcium carbonate) can buffer small areas",
+      "Protecting seagrass meadows that absorb CO₂ and raise local pH",
+      "Breeding acid-resistant shellfish strains for aquaculture resilience"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Dual-axis graph showing atmospheric CO₂ increasing (left axis) while ocean pH decreases (right axis, inverted) from 1850-present, demonstrating direct causal relationship"
+    },
+    "frqUse": "Write the chemical equation for ocean acidification, explain how reduced carbonate ion concentration affects shell-building organisms, and describe an economic impact on human communities.",
+    "mcqTrap": "Students think ocean acidification means the ocean becomes acidic (pH < 7)—it actually means the ocean becomes LESS basic (dropping from 8.2 toward 8.1), which is still alkaline but harmful to calcifiers.",
+    "commonMistake": "Thinking the ocean is becoming acidic; 'acidification' means becoming less basic/more acidic relative to prior conditions—ocean pH has dropped from 8.2 to 8.1, still alkaline but representing a 30% increase in H⁺ concentration.",
+    "modelSentence": "Ocean acidification occurs when atmospheric CO₂ dissolves in seawater to form carbonic acid, reducing pH from 8.2 to 8.1 (a 30% increase in hydrogen ion concentration) and decreasing carbonate ion availability needed by corals and shellfish to build calcium carbonate structures.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_invasive_species",
+    "unit": "Unit 9",
+    "topicNumber": "9.8",
+    "topicTitle": "Invasive Species",
+    "cedLearningObjective": "ERT-4.C",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cause_effect"],
+    "mustKnowConcept": "Invasive species are non-native organisms that outcompete native species because they lack natural predators, diseases, and competitors in their new environment, causing ecological and economic harm.",
+    "diagramDescription": "A comparison diagram showing an invasive species (e.g., zebra mussel) in its native range (controlled by predators and competition) versus in its introduced range (no natural enemies, exponential growth, native species declining).",
+    "specificExamples": [
+      "Zebra mussels (from Caspian Sea) entered the Great Lakes via ballast water in 1988, filtering phytoplankton and collapsing native mussel populations",
+      "Kudzu vine (from Japan) grows up to 1 foot per day in the southeastern US, smothering native vegetation and trees",
+      "Burmese pythons in the Florida Everglades (released pets) have eliminated 90-99% of raccoon, opossum, and rabbit populations",
+      "Asian carp in the Mississippi River outcompete native fish and threaten to enter the Great Lakes through the Chicago canal",
+      "Brown tree snake (Guam) caused extinction of 10 of 12 native forest bird species after accidental introduction"
+    ],
+    "causes": [
+      "Ballast water discharge from ships introduces aquatic organisms to new ports",
+      "International trade accidentally transports organisms in packaging and cargo",
+      "Intentional introduction for pest control, landscaping, or pets that escape/are released",
+      "Climate change enables range expansion of species into previously unsuitable habitats"
+    ],
+    "effects": [
+      "Competitive exclusion of native species lacking evolutionary defenses",
+      "Predation on naive native prey that lack anti-predator behaviors",
+      "Alteration of habitat structure (kudzu smothering forests, zebra mussels filtering water)",
+      "Hybridization with native species diluting genetic integrity"
+    ],
+    "humanImpacts": [
+      "Invasive species cause estimated $120+ billion in economic damages annually in the US",
+      "Zebra mussels clog water intake pipes costing $1+ billion for municipalities and power plants",
+      "Agricultural pests (emerald ash borer, spotted lanternfly) destroy crops and forests"
+    ],
+    "solutions": [
+      "Ballast water treatment regulations prevent new aquatic introductions",
+      "Early detection and rapid response programs eliminate populations before establishment",
+      "Biological control introduces natural enemies from the invasive's native range (carefully screened)",
+      "Physical barriers (electric fences in Chicago canal) prevent range expansion"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Exponential population growth curve of zebra mussels in Great Lakes from 1988-2000 compared to declining native mussel populations"
+    },
+    "frqUse": "Explain why invasive species are successful in new environments, provide a specific example with ecological impacts, and evaluate one control strategy.",
+    "mcqTrap": "Students think all non-native species are invasive—a species is only invasive if it causes ecological or economic harm; many non-native species coexist without significant impact.",
+    "commonMistake": "Equating non-native with invasive; not all introduced species become invasive—only those that cause ecological or economic harm by outcompeting, preying on, or displacing native species.",
+    "modelSentence": "Invasive species such as Burmese pythons in the Florida Everglades thrive because they lack natural predators in their introduced range, enabling uncontrolled population growth that has reduced native mammal populations by 90-99%.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_endangered_species",
+    "unit": "Unit 9",
+    "topicNumber": "9.9",
+    "topicTitle": "Endangered Species",
+    "cedLearningObjective": "ERT-4.D",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A", "7.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cause_effect"],
+    "mustKnowConcept": "The Endangered Species Act (1973) protects species at risk of extinction by designating critical habitat, prohibiting take, and requiring recovery plans; CITES regulates international wildlife trade.",
+    "diagramDescription": "A flowchart showing the HIPPCO threats to biodiversity (Habitat loss, Invasive species, Population growth, Pollution, Climate change, Overexploitation) leading to species decline, with the Endangered Species Act providing protections including habitat designation, take prohibition, and recovery planning.",
+    "specificExamples": [
+      "The Endangered Species Act has prevented extinction of 99% of listed species including bald eagle, gray wolf, and grizzly bear",
+      "CITES (Convention on International Trade in Endangered Species) bans commercial trade in ~1,000 species and regulates trade in ~37,000 more",
+      "The bald eagle recovered from 417 nesting pairs (1963) to 316,700+ individuals (2021) through ESA protections and DDT ban",
+      "California condor population dropped to 22 individuals before captive breeding restored it to 500+ birds",
+      "Poaching of African elephants for ivory reduced populations from 1.3 million (1979) to 415,000 (2016)"
+    ],
+    "causes": [
+      "Habitat loss and fragmentation (primary driver of 85%+ of species at risk)",
+      "Overexploitation through hunting, fishing, and collection",
+      "Invasive species outcompeting or preying on native species",
+      "Pollution and climate change altering habitat conditions beyond tolerance"
+    ],
+    "effects": [
+      "Reduced genetic diversity in small populations (genetic bottleneck and inbreeding depression)",
+      "Loss of ecosystem functions as species disappear from food webs",
+      "Extinction cascade when keystone species are lost"
+    ],
+    "humanImpacts": [
+      "Current extinction rate estimated at 100-1,000x the natural background rate",
+      "Loss of potential pharmaceutical compounds (25%+ of medicines derive from natural sources)",
+      "Ecosystem service degradation as biodiversity declines"
+    ],
+    "solutions": [
+      "Endangered Species Act critical habitat designation protects essential areas from development",
+      "Captive breeding and reintroduction programs restore populations (California condor, black-footed ferret)",
+      "Wildlife corridors connect fragmented habitats enabling gene flow",
+      "International agreements (CITES) restrict trade in threatened species"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Bald eagle population recovery graph from 417 pairs (1963) to 316,700+ individuals (2021) following ESA listing and DDT ban"
+    },
+    "frqUse": "Identify the HIPPCO threats to biodiversity, describe how the Endangered Species Act addresses one specific threat, and provide a case study of successful species recovery.",
+    "mcqTrap": "Students confuse endangered (at risk of extinction throughout its range) with threatened (likely to become endangered)—these are distinct legal categories under the ESA.",
+    "commonMistake": "Thinking habitat loss only means deforestation; habitat loss includes fragmentation, degradation, and conversion of any habitat type (wetlands, grasslands, coral reefs) for human use.",
+    "modelSentence": "The Endangered Species Act protects species at risk of extinction by designating critical habitat, prohibiting 'take' (harm, harassment, or killing), and requiring federal recovery plans, as demonstrated by the bald eagle's recovery from 417 nesting pairs to over 316,700 individuals.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit9_human_impacts_biodiversity",
+    "unit": "Unit 9",
+    "topicNumber": "9.10",
+    "topicTitle": "Human Impacts on Biodiversity",
+    "cedLearningObjective": "ERT-4.E",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A", "7.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cause_effect", "solution_tradeoff"],
+    "mustKnowConcept": "Human activities are causing the sixth mass extinction through HIPPCO factors (Habitat loss, Invasive species, Population growth, Pollution, Climate change, Overexploitation), with current extinction rates 100-1,000x background.",
+    "diagramDescription": "A diagram showing the HIPPCO framework with habitat loss as the largest driver, connecting to biodiversity decline metrics (species extinction rate, Living Planet Index decline of 69% since 1970, IUCN Red List categories), and potential solutions.",
+    "specificExamples": [
+      "The Living Planet Index shows 69% decline in monitored wildlife populations from 1970-2018",
+      "Habitat loss from palm oil plantations has reduced Borneo orangutan populations by 50% since 1999",
+      "Overfishing has depleted 90% of large predatory fish (tuna, swordfish, sharks) from the oceans since 1950",
+      "Climate change is projected to put 20-30% of species at risk of extinction if global temperatures rise 2-3°C",
+      "The Atlantic cod fishery collapse (1992) resulted from decades of overexploitation, eliminating 35,000 fishing jobs in Newfoundland"
+    ],
+    "causes": [
+      "Habitat loss: agriculture occupies 40% of ice-free land, converting forests and grasslands",
+      "Invasive species: 42% of threatened species are at risk primarily from invasives",
+      "Overexploitation: unsustainable harvesting of fish, timber, and wildlife",
+      "Climate change: shifting temperature zones faster than many species can adapt or migrate",
+      "Pollution: pesticides, plastics, and nutrients degrading habitat quality"
+    ],
+    "effects": [
+      "Current extinction rate 100-1,000x natural background rate (1-5 species per year)",
+      "Functional extinction of species still present but at non-viable population sizes",
+      "Trophic cascades when keystone predators are removed (wolf removal → deer overpopulation → forest degradation)",
+      "Loss of genetic diversity reducing evolutionary adaptive potential"
+    ],
+    "humanImpacts": [
+      "1 million species currently threatened with extinction (IPBES 2019 assessment)",
+      "Pollinator decline threatens $235-577 billion in annual global crop production",
+      "Loss of coral reefs threatens food security for 500+ million coastal people",
+      "Reduced genetic resources for agriculture, medicine, and biotechnology"
+    ],
+    "solutions": [
+      "Protected area expansion (30x30 target: protect 30% of land and ocean by 2030)",
+      "Sustainable resource management (MSY-based fisheries, FSC-certified forestry)",
+      "Habitat restoration and rewilding (Yellowstone wolf reintroduction restored trophic cascade)",
+      "Reducing consumption and waste to decrease resource extraction pressure",
+      "International cooperation (Convention on Biological Diversity, CITES)"
+    ],
+    "graphConnection": {
+      "type": "line_graph",
+      "description": "Living Planet Index declining from 1.0 (1970 baseline) to 0.31 (2018), showing 69% average decline in monitored vertebrate populations"
+    },
+    "frqUse": "Using the HIPPCO framework, identify and explain two human-caused threats to biodiversity, provide specific examples of affected species, and propose solutions at local and international scales.",
+    "mcqTrap": "Students select climate change as the primary current driver of biodiversity loss—habitat loss is currently the #1 threat (affecting 85%+ of endangered species), though climate change is projected to become dominant.",
+    "commonMistake": "Thinking climate change is currently the biggest threat to biodiversity; habitat loss and degradation is currently the primary driver, though climate change is projected to become the dominant threat by mid-century.",
+    "modelSentence": "The sixth mass extinction is driven primarily by habitat loss from agricultural expansion, which has converted 40% of ice-free land to cropland and pasture, combined with overexploitation, invasive species, pollution, and climate change, resulting in extinction rates 100-1,000 times the natural background rate.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  }
+]

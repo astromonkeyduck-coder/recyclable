@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "unit1_ecosystem_hierarchy",
+    "unit": "Unit 1",
+    "topicNumber": "1.1",
+    "topicTitle": "Introduction to Ecosystems",
+    "cedLearningObjective": "ERT-1.A",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["hierarchy", "diagram"],
+    "mustKnowConcept": "Ecosystems are composed of biotic and abiotic factors organized into hierarchical levels: organism → population → community → ecosystem → biome → biosphere.",
+    "diagramDescription": "A nested hierarchy diagram showing the levels of ecological organization from individual organism to biosphere, with labeled examples at each level.",
+    "specificExamples": [
+      "A population of white-tailed deer in a Virginia deciduous forest",
+      "A coral reef community includes corals, parrotfish, sea urchins, and zooxanthellae algae interacting together",
+      "The Yellowstone ecosystem includes biotic factors (wolves, elk, aspen trees) and abiotic factors (geothermal heat, altitude, precipitation)",
+      "The biosphere includes all ecosystems on Earth, from deep-sea hydrothermal vents to alpine tundra"
+    ],
+    "causes": [
+      "Solar energy input drives photosynthesis and primary production in all ecosystems",
+      "Abiotic factors such as temperature, precipitation, and soil type determine which organisms can survive in an ecosystem",
+      "Nutrient availability in soil and water controls the productivity and structure of ecosystems"
+    ],
+    "effects": [
+      "Changes at one level of organization cascade through the hierarchy — loss of a keystone predator restructures the entire community",
+      "Abiotic changes such as prolonged drought shift community composition toward drought-tolerant species",
+      "Energy flow through the ecosystem determines the number of trophic levels it can support"
+    ],
+    "humanImpacts": [
+      "Urbanization converts natural ecosystems into impervious surfaces, fragmenting habitats",
+      "Agricultural monocultures replace diverse ecosystems with single-species communities",
+      "Pollution alters abiotic factors (e.g., acid rain lowers soil pH), changing which species can survive"
+    ],
+    "solutions": [
+      "Establish wildlife corridors to reconnect fragmented ecosystems",
+      "Restore degraded ecosystems through native species replanting and invasive species removal",
+      "Implement buffer zones around sensitive ecosystems to reduce agricultural and urban runoff"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Level of organization",
+      "yAxis": "Number of species or spatial scale",
+      "trend": "Increasing complexity and spatial scale from organism to biosphere",
+      "possibleCalculation": "Species richness at the community level vs. population density of a single species"
+    },
+    "frqUse": "Define ecosystem and distinguish biotic from abiotic components using specific examples; explain how changes in abiotic factors alter community composition.",
+    "mcqTrap": "Confusing 'community' (all species in an area) with 'population' (one species in an area) — the AP exam frequently tests this distinction.",
+    "commonMistake": "Students often forget that abiotic factors include non-living chemical and physical elements like pH, sunlight, and wind — not just temperature and water.",
+    "modelSentence": "An ecosystem consists of all the biotic organisms and abiotic factors in a defined area, such as the Chesapeake Bay, where interactions between marsh grasses, blue crabs, dissolved oxygen levels, and salinity determine community structure.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_species_interactions",
+    "unit": "Unit 1",
+    "topicNumber": "1.2",
+    "topicTitle": "Species Interactions",
+    "cedLearningObjective": "ERT-1.B",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "table"],
+    "mustKnowConcept": "Species interactions include competition (−/−), predation (+/−), mutualism (+/+), commensalism (+/0), and parasitism (+/−), each shaping community structure and population dynamics.",
+    "diagramDescription": "A table or matrix showing the five major species interactions with +, −, and 0 symbols for each species involved, along with a real-world example for each.",
+    "specificExamples": [
+      "Interspecific competition: native red squirrels in the UK are outcompeted by introduced grey squirrels for food and habitat",
+      "Mutualism: mycorrhizal fungi attach to plant roots, exchanging phosphorus and nitrogen for carbohydrates from the plant",
+      "Predation: sea otters prey on sea urchins, preventing urchins from overgrazing kelp forests (trophic cascade)",
+      "Parasitism: the parasitic brown-headed cowbird lays eggs in the nests of warblers, reducing warbler reproductive success",
+      "Commensalism: cattle egrets follow grazing cattle and eat insects disturbed by the cattle's movement, with no effect on the cattle"
+    ],
+    "causes": [
+      "Limited resources such as food, water, and nesting sites drive interspecific and intraspecific competition",
+      "Coevolution between predator and prey leads to adaptations like mimicry and camouflage",
+      "Nutrient-poor soils favor mutualistic relationships like mycorrhizal associations"
+    ],
+    "effects": [
+      "Competitive exclusion: one species outcompetes another, driving it to local extinction (Gause's principle)",
+      "Predator-prey cycles: lynx and snowshoe hare populations oscillate in roughly 10-year cycles in the Canadian boreal forest",
+      "Mutualism increases fitness of both species — bee pollination increases fruit yield in flowering plants"
+    ],
+    "humanImpacts": [
+      "Removal of apex predators (e.g., wolves from Yellowstone) disrupts predator-prey dynamics and causes trophic cascades",
+      "Introduction of invasive competitors (e.g., zebra mussels outcompeting native mussels in the Great Lakes) destabilizes native communities",
+      "Pesticide use kills beneficial mutualists like honeybees, reducing pollination of agricultural crops"
+    ],
+    "solutions": [
+      "Reintroduce apex predators (e.g., gray wolves in Yellowstone) to restore natural predator-prey dynamics",
+      "Protect pollinator habitat by planting native wildflower strips along agricultural fields",
+      "Use integrated pest management to reduce pesticide impacts on non-target mutualist species"
+    ],
+    "graphConnection": {
+      "graphType": "line graph (dual y-axis)",
+      "xAxis": "Time (years)",
+      "yAxis": "Population size of predator and prey",
+      "trend": "Predator-prey oscillation with prey peaks preceding predator peaks by a time lag",
+      "possibleCalculation": "Estimate the period of population oscillation from a predator-prey graph"
+    },
+    "frqUse": "Identify and describe the type of species interaction; explain how removal or addition of a species alters community dynamics using a specific named example.",
+    "mcqTrap": "Confusing parasitism with predation — parasitism does not typically kill the host immediately, while predation does. Also confusing mutualism (both benefit) with commensalism (one benefits, other unaffected).",
+    "commonMistake": "Students forget that competition can be intraspecific (within the same species) as well as interspecific (between different species), and intraspecific competition is often more intense.",
+    "modelSentence": "The reintroduction of gray wolves to Yellowstone National Park in 1995 restored a predator-prey interaction that controlled elk populations, allowing overgrazed aspen and willow to regenerate along stream banks.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_resource_partitioning",
+    "unit": "Unit 1",
+    "topicNumber": "1.3",
+    "topicTitle": "Resource Partitioning",
+    "cedLearningObjective": "ERT-1.C",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "diagram"],
+    "mustKnowConcept": "Resource partitioning reduces competition between similar species by dividing resources along spatial, temporal, or morphological dimensions, allowing coexistence through niche differentiation.",
+    "diagramDescription": "A diagram showing three types of resource partitioning (spatial, temporal, morphological) with labeled examples of species using each strategy on a shared resource like a tree.",
+    "specificExamples": [
+      "Spatial partitioning: five species of warblers in the spruce forests of New England feed at different heights in the same tree (MacArthur's warblers)",
+      "Temporal partitioning: hawks hunt during the day while owls hunt the same prey species at night in the same habitat",
+      "Morphological partitioning: Darwin's finches on the Galápagos Islands have different beak sizes and shapes adapted to different seed sizes",
+      "Spatial partitioning: anole lizards in the Caribbean occupy different microhabitats — some on tree trunks, others on branches or leaf litter"
+    ],
+    "causes": [
+      "Interspecific competition for the same limited resource drives natural selection favoring niche differentiation",
+      "Character displacement occurs when two similar species evolve different traits where their ranges overlap",
+      "High species diversity in tropical ecosystems increases competitive pressure, promoting finer resource partitioning"
+    ],
+    "effects": [
+      "Resource partitioning allows multiple similar species to coexist in the same habitat without competitive exclusion",
+      "Character displacement leads to measurable morphological differences between sympatric populations compared to allopatric ones",
+      "Niche differentiation increases overall biodiversity within a community by supporting more species"
+    ],
+    "humanImpacts": [
+      "Habitat fragmentation eliminates specific microhabitats needed for spatial partitioning, reducing species coexistence",
+      "Light pollution disrupts temporal partitioning by altering activity patterns of nocturnal and diurnal species",
+      "Monoculture farming eliminates structural diversity that enables spatial resource partitioning among insect species"
+    ],
+    "solutions": [
+      "Preserve habitat heterogeneity in forest management to maintain microhabitats for spatial partitioning",
+      "Implement dark-sky ordinances near natural areas to protect temporal partitioning of nocturnal species",
+      "Practice polyculture and agroforestry to maintain structural complexity that supports diverse niches"
+    ],
+    "graphConnection": {
+      "graphType": "overlapping bell curves",
+      "xAxis": "Resource dimension (e.g., seed size, tree height, time of day)",
+      "yAxis": "Resource use intensity",
+      "trend": "Bell curves of resource use by similar species overlap partially, with peaks offset along the resource axis",
+      "possibleCalculation": "Measure degree of niche overlap between two species based on resource use distributions"
+    },
+    "frqUse": "Explain how resource partitioning reduces interspecific competition; identify the type of partitioning (spatial, temporal, or morphological) and use a specific named example.",
+    "mcqTrap": "Confusing resource partitioning (dividing resources to coexist) with competitive exclusion (one species eliminates the other) — partitioning is the alternative to exclusion.",
+    "commonMistake": "Students describe resource partitioning as an intentional choice by organisms rather than a result of natural selection acting over evolutionary time.",
+    "modelSentence": "MacArthur's warblers demonstrate spatial resource partitioning by foraging at different heights within spruce trees, reducing interspecific competition and allowing five species to coexist in the same forest.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_terrestrial_biomes",
+    "unit": "Unit 1",
+    "topicNumber": "1.4",
+    "topicTitle": "Terrestrial Biomes",
+    "cedLearningObjective": "ERT-1.D",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A", "4.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "graph", "map"],
+    "mustKnowConcept": "Terrestrial biomes are large-scale regions defined by climate (temperature and precipitation), which determine the dominant vegetation and associated animal communities.",
+    "diagramDescription": "A Whittaker biome diagram (climograph) plotting mean annual temperature against mean annual precipitation, with each of the nine major terrestrial biomes labeled in their respective climate zones.",
+    "specificExamples": [
+      "Tropical rainforest: Amazon Basin — high temperature (~25°C year-round), high precipitation (>200 cm/yr), greatest terrestrial biodiversity",
+      "Tundra: Arctic North Slope of Alaska — permafrost, average temperature below 0°C, dominated by lichens, mosses, and low shrubs",
+      "Temperate grassland: North American Great Plains — moderate rainfall (25–75 cm/yr), rich deep soils (mollisols), dominated by grasses like big bluestem",
+      "Desert: Sahara Desert — less than 25 cm of precipitation per year, extreme temperature fluctuations, adapted species like cacti and kangaroo rats",
+      "Boreal forest (taiga): Siberian taiga — long cold winters, dominated by coniferous trees like spruce and fir, largest terrestrial biome by area"
+    ],
+    "causes": [
+      "Global atmospheric circulation patterns (Hadley, Ferrel, Polar cells) distribute heat and moisture, creating climate zones",
+      "Rain shadow effects from mountain ranges create deserts on leeward sides (e.g., Mojave Desert east of the Sierra Nevada)",
+      "Latitude determines solar angle and day length, driving temperature patterns that define biome boundaries"
+    ],
+    "effects": [
+      "Tropical rainforests support the highest terrestrial biodiversity due to consistent warmth, moisture, and year-round growing season",
+      "Tundra has the lowest net primary productivity of vegetated biomes due to extreme cold and short growing season",
+      "Grassland biomes develop deep, nutrient-rich soils because grasses die back annually, adding organic matter"
+    ],
+    "humanImpacts": [
+      "Conversion of temperate grasslands to agriculture has destroyed over 99% of tallgrass prairie in North America",
+      "Tropical deforestation for cattle ranching and palm oil plantations in the Amazon and Southeast Asia destroys the most biodiverse biome",
+      "Climate change is shifting biome boundaries poleward — boreal forest is expanding into tundra as permafrost thaws"
+    ],
+    "solutions": [
+      "Establish protected areas in each biome, such as national parks and biosphere reserves",
+      "Restore degraded grasslands through prescribed burns and native seed planting",
+      "Reduce deforestation through certification programs like FSC (Forest Stewardship Council) for sustainably harvested timber"
+    ],
+    "graphConnection": {
+      "graphType": "scatter plot / climograph (Whittaker diagram)",
+      "xAxis": "Mean annual precipitation (cm/yr)",
+      "yAxis": "Mean annual temperature (°C)",
+      "trend": "Biomes cluster in distinct regions of the temperature-precipitation space; tropical rainforest is high-high, tundra is low-low",
+      "possibleCalculation": "Given temperature and precipitation data, identify the biome from a Whittaker diagram"
+    },
+    "frqUse": "Identify a biome from given climate data; explain how temperature and precipitation determine dominant vegetation; describe human impacts on a specific biome with named location.",
+    "mcqTrap": "Confusing taiga (boreal forest, cold with conifers) with temperate deciduous forest (moderate, with broadleaf trees that lose leaves). Also, tundra has permafrost but is NOT defined solely by snow — it is defined by low temperatures and lack of trees.",
+    "commonMistake": "Students confuse the characteristics of similar biomes, especially taiga vs. temperate forest and savanna vs. temperate grassland — savanna has scattered trees and is tropical, while temperate grasslands lack trees and experience cold winters.",
+    "modelSentence": "The Sahara Desert receives fewer than 25 cm of precipitation annually, resulting in sparse xerophytic vegetation and animal species adapted to extreme heat and water scarcity, such as the fennec fox and date palms near oases.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_aquatic_biomes",
+    "unit": "Unit 1",
+    "topicNumber": "1.5",
+    "topicTitle": "Aquatic Biomes",
+    "cedLearningObjective": "ERT-1.E",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["diagram", "comparison"],
+    "mustKnowConcept": "Aquatic biomes are divided into freshwater (streams, rivers, lakes, wetlands) and marine (ocean, coral reefs, estuaries, intertidal zones), each characterized by salinity, depth, flow rate, and light availability.",
+    "diagramDescription": "A cross-section diagram of aquatic biomes showing freshwater systems (streams, rivers, lakes with littoral, limnetic, and profundal zones) and marine systems (intertidal, neritic, oceanic, photic, and aphotic zones).",
+    "specificExamples": [
+      "Coral reefs: Great Barrier Reef off Australia supports over 1,500 species of fish and 400 species of coral in the warm, shallow photic zone",
+      "Estuaries: Chesapeake Bay is a highly productive estuary where freshwater from rivers mixes with Atlantic Ocean saltwater, serving as a nursery for blue crabs and striped bass",
+      "Wetlands: Florida Everglades — a freshwater wetland that filters water, stores floodwater, and supports American alligators and wading birds",
+      "Open ocean (pelagic zone): the deep aphotic zone of the Pacific Ocean relies on marine snow (sinking organic matter) rather than photosynthesis for energy",
+      "Lakes: Lake Erie has distinct thermal stratification in summer — warm epilimnion, thermocline, and cold hypolimnion — with spring and fall turnover mixing nutrients"
+    ],
+    "causes": [
+      "Salinity differences between freshwater (<0.5 ppt) and marine (35 ppt) environments create distinct osmotic challenges for organisms",
+      "Light penetration decreases with depth, creating photic and aphotic zones that determine where photosynthesis occurs",
+      "Nutrient inputs from rivers and upwelling zones create areas of high marine productivity (e.g., Peruvian coast upwelling)"
+    ],
+    "effects": [
+      "Estuaries are among the most productive ecosystems on Earth due to mixing of nutrient-rich freshwater and saltwater",
+      "Coral reefs support 25% of all marine species despite covering less than 1% of the ocean floor",
+      "Wetlands act as natural water filters, trapping sediments and absorbing excess nitrogen and phosphorus before they reach downstream waters"
+    ],
+    "humanImpacts": [
+      "Ocean acidification from absorbed CO₂ reduces the ability of corals and shellfish to build calcium carbonate structures",
+      "Eutrophication from agricultural runoff creates hypoxic dead zones — the Gulf of Mexico dead zone exceeds 15,000 km² annually",
+      "Draining and filling of wetlands for development has destroyed over 50% of the world's wetlands since 1900"
+    ],
+    "solutions": [
+      "Establish marine protected areas (MPAs) to allow coral reef recovery and protect fish nursery habitats",
+      "Reduce nutrient runoff through riparian buffer zones and precision agriculture to prevent eutrophication",
+      "Implement wetland mitigation banking — developers who destroy wetlands must fund restoration or creation of wetlands elsewhere"
+    ],
+    "graphConnection": {
+      "graphType": "depth profile / cross-section",
+      "xAxis": "Distance from shore or depth",
+      "yAxis": "Light intensity, temperature, or dissolved oxygen",
+      "trend": "Light and temperature decrease with depth; dissolved oxygen may decrease in the hypolimnion due to decomposition",
+      "possibleCalculation": "Determine the depth of the photic zone from a light penetration curve"
+    },
+    "frqUse": "Compare freshwater and marine biomes; explain how salinity, depth, and light determine species distribution; describe human impacts on a specific aquatic biome with a named example.",
+    "mcqTrap": "Confusing estuary (where freshwater meets saltwater, brackish) with an intertidal zone (area between high and low tide lines). Both are transitional, but for different reasons.",
+    "commonMistake": "Students forget that wetlands include both freshwater marshes AND saltwater marshes, and that wetlands are defined by saturated soil and hydrophytic vegetation — not by standing open water.",
+    "modelSentence": "The Chesapeake Bay estuary is one of the most productive aquatic ecosystems in North America because the mixing of nutrient-rich freshwater from the Susquehanna River with Atlantic Ocean saltwater creates ideal conditions for phytoplankton growth, which supports a complex food web.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_carbon_cycle",
+    "unit": "Unit 1",
+    "topicNumber": "1.6",
+    "topicTitle": "The Carbon Cycle",
+    "cedLearningObjective": "ERT-1.F",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cycle", "diagram"],
+    "mustKnowConcept": "Carbon cycles through the atmosphere (CO₂), biosphere (organic molecules), hydrosphere (dissolved CO₂ and carbonate), and lithosphere (fossil fuels, limestone) via photosynthesis, respiration, combustion, and decomposition.",
+    "diagramDescription": "A biogeochemical cycle diagram showing carbon reservoirs (atmosphere, ocean, biomass, fossil fuels, soil, sedimentary rock) and fluxes (photosynthesis, respiration, combustion, decomposition, ocean absorption, volcanic outgassing).",
+    "specificExamples": [
+      "Photosynthesis removes approximately 120 Gt of carbon per year from the atmosphere, converting CO₂ into glucose (6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂)",
+      "Fossil fuel combustion (coal, oil, natural gas) releases carbon stored for millions of years, adding approximately 9.5 Gt C/yr to the atmosphere",
+      "The ocean absorbs about 25% of anthropogenic CO₂, forming carbonic acid (H₂CO₃) and lowering ocean pH from 8.2 to 8.1 since preindustrial times",
+      "Decomposition by soil bacteria and fungi releases CO₂ from dead organic matter back into the atmosphere",
+      "Limestone (CaCO₃) formation in the deep ocean is the largest long-term carbon sink, storing carbon for millions of years in sedimentary rock"
+    ],
+    "causes": [
+      "Photosynthesis and respiration are the primary biological drivers of short-term carbon flux between the atmosphere and biosphere",
+      "Volcanic eruptions release geologic carbon from the lithosphere into the atmosphere as CO₂",
+      "Ocean currents transport dissolved CO₂ to deep water through the thermohaline circulation (biological and solubility pumps)"
+    ],
+    "effects": [
+      "Atmospheric CO₂ concentration has increased from 280 ppm (preindustrial) to over 420 ppm, enhancing the greenhouse effect",
+      "Ocean acidification (pH decrease) impairs calcification in corals, oysters, and pteropods, weakening their shells and skeletons",
+      "Increased atmospheric CO₂ drives global temperature rise, which in turn thaws permafrost, releasing additional stored carbon (positive feedback loop)"
+    ],
+    "humanImpacts": [
+      "Burning fossil fuels transfers carbon from the lithosphere to the atmosphere at a rate 100× faster than natural volcanic outgassing",
+      "Deforestation reduces the terrestrial carbon sink by removing trees that sequester CO₂ through photosynthesis",
+      "Cement production releases CO₂ from limestone (CaCO₃ → CaO + CO₂), contributing approximately 8% of global CO₂ emissions"
+    ],
+    "solutions": [
+      "Transition to renewable energy sources (solar, wind) to reduce fossil fuel combustion and CO₂ emissions",
+      "Reforestation and afforestation increase the terrestrial carbon sink — one hectare of forest can sequester 2–5 tonnes of CO₂ per year",
+      "Carbon capture and storage (CCS) technology captures CO₂ from power plants and injects it into underground geologic formations",
+      "Protect existing old-growth forests, which store more carbon per hectare than young forests"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time (years, 1960–present)",
+      "yAxis": "Atmospheric CO₂ concentration (ppm)",
+      "trend": "Keeling Curve shows steady increase with seasonal oscillations (higher in winter, lower in summer in Northern Hemisphere due to photosynthesis)",
+      "possibleCalculation": "Calculate the rate of CO₂ increase per decade from the Keeling Curve; calculate carbon released from burning a given mass of fossil fuel"
+    },
+    "frqUse": "Trace carbon through multiple reservoirs; explain how human activities disrupt the natural carbon cycle; describe the relationship between CO₂, the greenhouse effect, and climate change with specific data.",
+    "mcqTrap": "Students may think the ocean is only a carbon sink — but warm surface waters can also release CO₂ back to the atmosphere (the ocean is both a sink and a source depending on temperature and location).",
+    "commonMistake": "Students confuse carbon stored in fossil fuels (lithosphere, long-term reservoir) with carbon in living biomass (biosphere, short-term reservoir) — burning fossil fuels adds NEW carbon to the active cycle that was locked away for millions of years.",
+    "modelSentence": "The combustion of fossil fuels transfers carbon from the lithosphere to the atmosphere, increasing atmospheric CO₂ concentrations from 280 ppm to over 420 ppm since the Industrial Revolution and intensifying the greenhouse effect.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_nitrogen_cycle",
+    "unit": "Unit 1",
+    "topicNumber": "1.7",
+    "topicTitle": "The Nitrogen Cycle",
+    "cedLearningObjective": "ERT-1.G",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cycle", "diagram"],
+    "mustKnowConcept": "Nitrogen cycles through the atmosphere (N₂, 78%), soil (NH₄⁺, NO₃⁻), and organisms via nitrogen fixation, nitrification, assimilation, ammonification, and denitrification — all mediated primarily by bacteria.",
+    "diagramDescription": "A biogeochemical cycle diagram showing nitrogen reservoirs (atmosphere as N₂, soil as ammonium and nitrate, biomass) and the five key bacterial processes: fixation, nitrification, assimilation, ammonification, and denitrification.",
+    "specificExamples": [
+      "Nitrogen fixation: Rhizobium bacteria in root nodules of legumes (soybeans, clover, alfalfa) convert atmospheric N₂ into ammonium (NH₄⁺)",
+      "Nitrification: Nitrosomonas bacteria convert ammonium (NH₄⁺) to nitrite (NO₂⁻), then Nitrobacter converts nitrite to nitrate (NO₃⁻)",
+      "Denitrification: anaerobic bacteria in waterlogged soils convert nitrate (NO₃⁻) back to N₂ gas, returning nitrogen to the atmosphere",
+      "The Haber-Bosch process industrially fixes atmospheric N₂ into ammonia (NH₃) for synthetic fertilizer, doubling the global rate of nitrogen fixation",
+      "Lightning provides a small natural source of nitrogen fixation by splitting N₂ molecules in the atmosphere"
+    ],
+    "causes": [
+      "Atmospheric N₂ is extremely stable (triple covalent bond), requiring specialized bacteria or extreme energy (lightning, industrial process) to fix it",
+      "Bacteria are the key mediators of nearly every step in the nitrogen cycle — without them, nitrogen would remain unavailable to plants",
+      "Soil pH, moisture, and oxygen levels determine which nitrogen transformations (nitrification vs. denitrification) dominate"
+    ],
+    "effects": [
+      "Excess nitrogen from fertilizer runoff causes eutrophication — algal blooms deplete dissolved oxygen, creating dead zones like the Gulf of Mexico hypoxic zone",
+      "Nitrogen deposition from air pollution (NOₓ emissions from vehicles) acidifies soils and lakes, harming sensitive species",
+      "Nitrous oxide (N₂O), a byproduct of denitrification and fertilizer use, is a potent greenhouse gas 298× more powerful than CO₂ per molecule"
+    ],
+    "humanImpacts": [
+      "The Haber-Bosch process has doubled the amount of reactive nitrogen entering terrestrial ecosystems, disrupting natural nitrogen balance",
+      "Agricultural application of synthetic nitrogen fertilizer leads to nitrate leaching into groundwater, contaminating drinking water (blue baby syndrome at >10 mg/L NO₃⁻)",
+      "Combustion of fossil fuels releases NOₓ, contributing to acid rain and photochemical smog formation"
+    ],
+    "solutions": [
+      "Plant cover crops and legumes in crop rotation to naturally fix nitrogen and reduce synthetic fertilizer use",
+      "Construct wetlands to intercept agricultural runoff — denitrifying bacteria in wetland soils convert nitrate to harmless N₂ gas",
+      "Implement precision agriculture to apply fertilizer only where and when crops need it, reducing nitrogen waste and runoff",
+      "Install catalytic converters on vehicles to reduce NOₓ emissions"
+    ],
+    "graphConnection": {
+      "graphType": "line graph or bar chart",
+      "xAxis": "Time (years) or distance from fertilizer application site",
+      "yAxis": "Nitrate concentration (mg/L) in water",
+      "trend": "Nitrate levels increase downstream of agricultural areas and decrease with distance from the source; global reactive nitrogen has increased dramatically since 1950",
+      "possibleCalculation": "Calculate the amount of nitrogen applied per hectare and estimate runoff percentage entering waterways"
+    },
+    "frqUse": "Trace nitrogen through each step of the cycle (fixation → nitrification → assimilation → ammonification → denitrification); explain how excess nitrogen from the Haber-Bosch process leads to eutrophication.",
+    "mcqTrap": "Confusing nitrogen fixation (N₂ → NH₄⁺, done by bacteria or industrially) with nitrification (NH₄⁺ → NO₃⁻, done by different bacteria). The AP exam specifically tests whether students know which bacteria perform which step.",
+    "commonMistake": "Students forget that plants can only absorb nitrogen as ammonium (NH₄⁺) or nitrate (NO₃⁻) — they CANNOT use atmospheric N₂ directly, even though it makes up 78% of the atmosphere.",
+    "modelSentence": "Rhizobium bacteria in the root nodules of legumes such as soybeans fix atmospheric N₂ into ammonium (NH₄⁺), making nitrogen available for plant uptake, which is why legume crop rotation reduces the need for synthetic nitrogen fertilizer.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_phosphorus_cycle",
+    "unit": "Unit 1",
+    "topicNumber": "1.8",
+    "topicTitle": "The Phosphorus Cycle",
+    "cedLearningObjective": "ERT-1.H",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["cycle", "diagram"],
+    "mustKnowConcept": "The phosphorus cycle is the slowest biogeochemical cycle, does NOT have a gaseous phase, and moves through the lithosphere (phosphate rock), hydrosphere, soil, and organisms via weathering, absorption, and sedimentation.",
+    "diagramDescription": "A biogeochemical cycle diagram showing phosphorus moving from phosphate rock through weathering into soil, absorbed by plants, transferred through food webs, returned to soil by decomposition, and eventually carried by runoff to the ocean where it sediments.",
+    "specificExamples": [
+      "Phosphate rock (apatite) in Florida and Morocco is mined for fertilizer production — these deposits formed from ancient marine sediments over millions of years",
+      "Phosphorus is a key component of DNA, RNA, ATP, and cell membranes (phospholipid bilayer) in all living organisms",
+      "Guano (seabird and bat excrement) on islands like Nauru was historically mined as a concentrated phosphorus fertilizer source",
+      "Excess phosphorus from detergents and fertilizer caused severe algal blooms in Lake Erie in the 1960s–1970s, leading to the U.S. ban on phosphate detergents"
+    ],
+    "causes": [
+      "Weathering of phosphate-bearing rock is the primary natural source of phosphorus entering the soil — this is an extremely slow process",
+      "Plants absorb phosphorus from the soil as dissolved phosphate ions (H₂PO₄⁻ and HPO₄²⁻)",
+      "Mycorrhizal fungi significantly increase plant phosphorus uptake by extending hyphal networks beyond root reach"
+    ],
+    "effects": [
+      "Phosphorus is often the limiting nutrient in freshwater ecosystems — even small additions trigger algal blooms",
+      "Eutrophication from phosphorus runoff causes dense algal blooms that block sunlight and deplete dissolved oxygen upon decomposition",
+      "Long-term sedimentation in the ocean locks phosphorus in marine sediments for millions of years, making it geologically slow to recycle"
+    ],
+    "humanImpacts": [
+      "Mining phosphate rock for synthetic fertilizer accelerates phosphorus transfer from geologic to active pools 3–4× faster than natural weathering",
+      "Agricultural runoff carries excess phosphorus into lakes and rivers, causing eutrophication (e.g., algal blooms in Lake Erie and the Baltic Sea)",
+      "Concentrated animal feeding operations (CAFOs) produce manure with high phosphorus content that leaches into nearby waterways"
+    ],
+    "solutions": [
+      "Use vegetated buffer strips along waterways to trap phosphorus-laden sediment before it enters surface water",
+      "Recover phosphorus from wastewater treatment (struvite recovery) to reduce both pollution and dependence on mined phosphate",
+      "Apply fertilizer based on soil tests to avoid overapplication of phosphorus",
+      "Ban phosphate-containing detergents, as done successfully in the Great Lakes region in the 1970s"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart or line graph",
+      "xAxis": "Time or distance from phosphorus source",
+      "yAxis": "Phosphorus concentration (mg/L) or algal biomass (chlorophyll-a μg/L)",
+      "trend": "Phosphorus concentration and algal biomass increase in water bodies receiving agricultural or urban runoff",
+      "possibleCalculation": "Calculate phosphorus loading to a lake from fertilizer application rates and watershed area"
+    },
+    "frqUse": "Explain why the phosphorus cycle lacks a gaseous phase; trace phosphorus from rock to organism and back; describe how excess phosphorus causes eutrophication with a specific named water body.",
+    "mcqTrap": "The phosphorus cycle does NOT have a significant atmospheric (gaseous) component — this distinguishes it from the carbon, nitrogen, and water cycles. AP frequently tests this unique feature.",
+    "commonMistake": "Students often confuse which nutrient is limiting in freshwater (phosphorus) vs. saltwater (nitrogen). Phosphorus is typically the limiting nutrient in freshwater ecosystems, while nitrogen limits marine systems.",
+    "modelSentence": "Unlike the carbon and nitrogen cycles, the phosphorus cycle has no gaseous phase, so phosphorus moves slowly from weathered rock into soil, through organisms, and eventually into ocean sediments, where it remains locked for millions of years.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_hydrologic_cycle",
+    "unit": "Unit 1",
+    "topicNumber": "1.9",
+    "topicTitle": "The Hydrologic Cycle",
+    "cedLearningObjective": "ERT-1.I",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["cycle", "diagram"],
+    "mustKnowConcept": "The hydrologic (water) cycle moves water through evaporation, transpiration, condensation, precipitation, infiltration, and runoff, connecting the atmosphere, surface water, groundwater, and oceans driven by solar energy.",
+    "diagramDescription": "A water cycle diagram showing solar-driven evaporation from the ocean, transpiration from vegetation, condensation into clouds, precipitation onto land, surface runoff into rivers, and infiltration into groundwater aquifers.",
+    "specificExamples": [
+      "Transpiration from the Amazon rainforest generates up to 50% of its own rainfall — trees act as biological water pumps",
+      "The Ogallala Aquifer beneath the Great Plains of the U.S. stores ancient groundwater that is being withdrawn for irrigation 3–10× faster than natural recharge",
+      "Snowmelt from the Sierra Nevada mountains provides approximately 60% of California's water supply through surface runoff",
+      "Impervious surfaces in urban areas (parking lots, roads) increase surface runoff by 2–5× compared to forested land, reducing groundwater infiltration"
+    ],
+    "causes": [
+      "Solar energy drives evaporation from oceans, lakes, and soil, moving water into the atmosphere",
+      "Transpiration by plants accounts for approximately 10% of atmospheric water vapor — tropical forests are major contributors",
+      "Gravity drives infiltration of water into soil and aquifers and surface runoff into streams and rivers"
+    ],
+    "effects": [
+      "Groundwater recharge maintains base flow in rivers during dry periods, supporting aquatic ecosystems year-round",
+      "The distribution of precipitation determines biome type — high precipitation supports rainforests, low precipitation creates deserts",
+      "Glaciers and ice caps store approximately 69% of Earth's freshwater and release it slowly through melting, regulating stream flow"
+    ],
+    "humanImpacts": [
+      "Deforestation reduces transpiration, decreasing local rainfall and increasing surface runoff and erosion",
+      "Groundwater overdraft (e.g., Ogallala Aquifer, Central Valley of California) depletes aquifers faster than recharge, causing land subsidence",
+      "Dam construction (e.g., Three Gorges Dam, Hoover Dam) alters natural river flow, traps sediments, and disrupts downstream ecosystems",
+      "Urban sprawl increases impervious surface cover, amplifying flash flood risk and reducing groundwater recharge"
+    ],
+    "solutions": [
+      "Install permeable pavement and rain gardens in urban areas to increase infiltration and reduce surface runoff",
+      "Implement drip irrigation instead of flood irrigation to reduce agricultural water consumption by 30–50%",
+      "Protect and restore watersheds and riparian zones to maintain natural water filtration and groundwater recharge",
+      "Mandate water-efficient fixtures and appliances to reduce per-capita water consumption"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart or water budget diagram",
+      "xAxis": "Water cycle component (evaporation, precipitation, runoff, infiltration)",
+      "yAxis": "Volume of water (km³/yr or % of total)",
+      "trend": "Oceans are the largest reservoir; evaporation exceeds precipitation over oceans, precipitation exceeds evaporation over land — the difference is balanced by runoff",
+      "possibleCalculation": "Calculate groundwater recharge rate from precipitation minus evapotranspiration and runoff"
+    },
+    "frqUse": "Trace water through the cycle; explain how deforestation or urbanization disrupts the hydrologic cycle; describe the consequences of groundwater overdraft on a specific aquifer.",
+    "mcqTrap": "Students may think all precipitation becomes runoff — in reality, much of it infiltrates into groundwater or evaporates/transpires back to the atmosphere. The AP exam tests understanding of the balance between infiltration and runoff.",
+    "commonMistake": "Students forget that transpiration is a major component of the water cycle — plants release water vapor through stomata, and tropical forests significantly influence regional precipitation patterns.",
+    "modelSentence": "The overdraft of the Ogallala Aquifer, which is being depleted 3–10 times faster than its natural recharge rate, threatens the agricultural productivity of the Great Plains and demonstrates how human water extraction can disrupt the hydrologic cycle.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_primary_productivity",
+    "unit": "Unit 1",
+    "topicNumber": "1.10",
+    "topicTitle": "Primary Productivity",
+    "cedLearningObjective": "ERT-1.J",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["graph", "comparison"],
+    "mustKnowConcept": "Gross primary productivity (GPP) is the total rate of photosynthesis; net primary productivity (NPP) is GPP minus respiration (NPP = GPP − R), representing the energy available to consumers.",
+    "diagramDescription": "A bar chart comparing GPP, plant respiration, and NPP across different ecosystems (tropical rainforest, open ocean, temperate forest, desert), plus the formula NPP = GPP − R.",
+    "specificExamples": [
+      "Tropical rainforests have the highest NPP per unit area (~2,200 g C/m²/yr) due to high temperature, rainfall, and year-round sunlight",
+      "Open ocean has low NPP per unit area (~125 g C/m²/yr) but high total NPP because it covers 65% of Earth's surface",
+      "Estuaries and coral reefs have high NPP per unit area (~2,500 g C/m²/yr) due to nutrient inputs and shallow photic zones",
+      "Deserts and tundra have the lowest NPP (<90 g C/m²/yr) due to water limitation and cold temperatures, respectively"
+    ],
+    "causes": [
+      "Light, water, temperature, and nutrient availability are the four primary factors limiting photosynthesis and NPP",
+      "Nutrient upwelling in coastal zones brings nitrogen and phosphorus from deep water, fueling phytoplankton productivity",
+      "Longer growing seasons at lower latitudes allow more photosynthesis per year, increasing annual GPP"
+    ],
+    "effects": [
+      "Higher NPP supports more consumers and longer food chains because more energy is available at the base of the food web",
+      "Ecosystems with high NPP (wetlands, rainforests) sequester more carbon and produce more oxygen",
+      "Low NPP ecosystems support fewer trophic levels and lower biomass of consumers"
+    ],
+    "humanImpacts": [
+      "Deforestation reduces terrestrial NPP by removing photosynthetic biomass",
+      "Eutrophication artificially increases aquatic NPP by adding excess nutrients, but the resulting algal blooms consume oxygen and kill other organisms",
+      "Climate change may increase NPP in some regions (CO₂ fertilization effect) but decrease it in others through drought and heat stress"
+    ],
+    "solutions": [
+      "Protect high-NPP ecosystems (tropical forests, wetlands, mangroves) to maximize carbon sequestration",
+      "Restore degraded ecosystems to increase their photosynthetic capacity and NPP",
+      "Reduce nutrient pollution to prevent artificially elevated NPP that leads to harmful algal blooms"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Ecosystem type",
+      "yAxis": "NPP (g C/m²/yr)",
+      "trend": "Tropical rainforests and estuaries have highest NPP per unit area; deserts and open ocean have lowest per unit area",
+      "possibleCalculation": "NPP = GPP − R; given GPP = 5,000 kcal/m²/yr and R = 3,000 kcal/m²/yr, NPP = 2,000 kcal/m²/yr"
+    },
+    "frqUse": "Calculate NPP from GPP and respiration; compare productivity across ecosystems; explain why certain ecosystems are more productive; connect NPP to energy available for consumers.",
+    "mcqTrap": "The AP exam may give total NPP (per unit area × area) vs. NPP per unit area — open ocean has low productivity per m² but highest TOTAL productivity because of its enormous area. Students must distinguish these.",
+    "commonMistake": "Students forget to subtract plant cellular respiration from GPP to get NPP. GPP is NOT the energy available to herbivores — NPP is, because plants use some energy for their own metabolism.",
+    "modelSentence": "Net primary productivity (NPP) equals gross primary productivity minus cellular respiration (NPP = GPP − R), so a tropical rainforest with a GPP of 5,000 kcal/m²/yr and respiration of 2,500 kcal/m²/yr has an NPP of 2,500 kcal/m²/yr available for herbivores.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_trophic_levels",
+    "unit": "Unit 1",
+    "topicNumber": "1.11",
+    "topicTitle": "Trophic Levels",
+    "cedLearningObjective": "ERT-1.K",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["pyramid", "diagram"],
+    "mustKnowConcept": "Trophic levels represent the feeding positions in a food chain: producers (autotrophs) at the base, followed by primary consumers (herbivores), secondary consumers (carnivores), tertiary consumers, and decomposers that recycle nutrients at every level.",
+    "diagramDescription": "An ecological pyramid showing four trophic levels (producers at the base, primary consumers, secondary consumers, tertiary consumers at the top) with decreasing energy, biomass, and number at each successive level.",
+    "specificExamples": [
+      "Producers: phytoplankton in the ocean, grasses in the Serengeti, oak trees in a temperate forest",
+      "Primary consumers: zooplankton feeding on phytoplankton, zebras grazing on Serengeti grasses, caterpillars eating leaves",
+      "Secondary consumers: small fish eating zooplankton, cheetahs preying on zebras, warblers eating caterpillars",
+      "Tertiary consumers: tuna eating small fish, eagles preying on snakes that eat mice",
+      "Decomposers: fungi and bacteria break down dead organisms at all trophic levels, releasing nutrients back to the soil"
+    ],
+    "causes": [
+      "Autotrophs (producers) form the base of all food chains by converting solar energy to chemical energy through photosynthesis",
+      "Chemosynthetic bacteria at deep-sea hydrothermal vents form the base of food chains in the absence of sunlight",
+      "Energy transfer between trophic levels is inefficient, which limits the number of trophic levels an ecosystem can support"
+    ],
+    "effects": [
+      "Most ecosystems support only 4–5 trophic levels because energy is lost at each transfer",
+      "Biomagnification concentrates persistent toxins (DDT, mercury) at higher trophic levels — top predators are most affected",
+      "Removal of top predators (trophic downgrading) triggers trophic cascades that restructure the entire food web"
+    ],
+    "humanImpacts": [
+      "Overfishing of top predators (sharks, tuna) removes tertiary consumers and triggers trophic cascades in marine ecosystems",
+      "Biomagnification of mercury in aquatic food chains means top-level predatory fish (swordfish, king mackerel) have mercury levels unsafe for frequent human consumption",
+      "Eating lower on the food chain (plants vs. meat) requires less energy input per calorie — feeding grain to cattle uses 10× more land than eating the grain directly"
+    ],
+    "solutions": [
+      "Protect apex predators through endangered species legislation and hunting regulations",
+      "Reduce mercury emissions from coal-fired power plants to decrease biomagnification in aquatic food chains",
+      "Promote plant-based diets to improve ecological efficiency by eating at lower trophic levels"
+    ],
+    "graphConnection": {
+      "graphType": "ecological pyramid (energy, biomass, or numbers)",
+      "xAxis": "Width of pyramid (energy, biomass, or numbers)",
+      "yAxis": "Trophic level (producers at base to top predators at apex)",
+      "trend": "Each successive level has approximately 10% of the energy of the level below it, creating a pyramid shape",
+      "possibleCalculation": "If producers contain 10,000 kcal, primary consumers have ~1,000 kcal, secondary ~100 kcal, tertiary ~10 kcal"
+    },
+    "frqUse": "Identify organisms at each trophic level; explain why energy decreases at higher levels; describe biomagnification through trophic levels with a specific toxin example.",
+    "mcqTrap": "Decomposers are NOT a trophic level above top predators — they operate at ALL levels by breaking down dead matter from any trophic level. The AP exam tests this distinction.",
+    "commonMistake": "Students incorrectly place decomposers at the top of the food chain. Decomposers break down dead organisms from every trophic level and return nutrients to the soil — they are not consumers in the traditional trophic hierarchy.",
+    "modelSentence": "In the Chesapeake Bay food web, phytoplankton (producers) are consumed by zooplankton (primary consumers), which are eaten by menhaden (secondary consumers), which are preyed upon by striped bass (tertiary consumers), with energy decreasing at each trophic level.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_energy_flow_10_percent",
+    "unit": "Unit 1",
+    "topicNumber": "1.11b",
+    "topicTitle": "Energy Flow and the 10% Rule",
+    "cedLearningObjective": "ERT-1.K",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A", "6.B"],
+    "examWeightRelevance": "high",
+    "visualType": ["pyramid", "graph"],
+    "mustKnowConcept": "Only approximately 10% of the energy at one trophic level is transferred to the next; the remaining 90% is lost as metabolic heat through cellular respiration, used for life processes, or not consumed.",
+    "diagramDescription": "An energy flow diagram showing 10,000 kcal at the producer level, 1,000 kcal at primary consumers, 100 kcal at secondary consumers, and 10 kcal at tertiary consumers, with arrows showing 90% heat loss at each level.",
+    "specificExamples": [
+      "If a grassland produces 10,000 kcal/m²/yr of plant biomass, grasshoppers (primary consumers) obtain only ~1,000 kcal, frogs ~100 kcal, and hawks ~10 kcal",
+      "It takes approximately 10 kg of grain to produce 1 kg of beef because cattle lose 90% of the grain's energy as heat",
+      "Antarctic krill (primary consumers) transfer about 10% of phytoplankton energy to baleen whales (secondary consumers)",
+      "The ecological efficiency of energy transfer varies from 5–20% depending on the ecosystem, but 10% is the standard AP approximation"
+    ],
+    "causes": [
+      "Organisms use most consumed energy for cellular respiration (ATP production), releasing heat as a byproduct of metabolism",
+      "Not all biomass at a trophic level is consumed — some dies and is decomposed rather than eaten",
+      "Not all consumed biomass is assimilated — some passes through the digestive tract as waste (feces)"
+    ],
+    "effects": [
+      "The 10% rule limits food chains to typically 4–5 trophic levels because insufficient energy reaches higher levels",
+      "Top predators require enormous home ranges because so little energy is available at their trophic level",
+      "Inverted biomass pyramids can occur in aquatic ecosystems where fast-reproducing phytoplankton support larger zooplankton biomass at any snapshot in time"
+    ],
+    "humanImpacts": [
+      "Meat-intensive diets are ecologically inefficient — producing 1 calorie of beef requires ~10 calories of grain, consuming more land and water",
+      "Overharvesting at any trophic level disrupts energy flow through the entire food web",
+      "Aquaculture of carnivorous fish (salmon, tuna) requires large quantities of wild-caught fish for feed, amplifying inefficiency"
+    ],
+    "solutions": [
+      "Shift dietary patterns toward plant-based foods to reduce the trophic levels between primary production and human consumption",
+      "Farm herbivorous fish (tilapia, catfish) instead of carnivorous species to improve aquaculture energy efficiency",
+      "Reduce food waste — approximately 30–40% of food in the U.S. is wasted, representing a massive loss of the energy invested in producing it"
+    ],
+    "graphConnection": {
+      "graphType": "energy pyramid or bar chart",
+      "xAxis": "Trophic level",
+      "yAxis": "Energy available (kcal/m²/yr)",
+      "trend": "Exponential decrease — each level has ~10% of the energy of the level below it",
+      "possibleCalculation": "If producers have 20,000 kcal, calculate energy at the third trophic level: 20,000 × 0.10 × 0.10 = 200 kcal"
+    },
+    "frqUse": "Calculate energy at any trophic level using the 10% rule; explain why food chains rarely exceed 4–5 levels; argue for ecological efficiency of plant-based diets using energy transfer data.",
+    "mcqTrap": "The AP exam may give a scenario where ecological efficiency is 20% instead of 10% — read the problem carefully and use the given percentage, not always the default 10%.",
+    "commonMistake": "Students incorrectly think the 10% is lost and 90% is transferred — it's the opposite. Only 10% is transferred UP to the next trophic level; the other 90% is lost primarily as heat from cellular respiration.",
+    "modelSentence": "According to the 10% rule, if producers in a grassland ecosystem fix 20,000 kcal/m²/yr of energy, only approximately 2,000 kcal is available to primary consumers, 200 kcal to secondary consumers, and 20 kcal to tertiary consumers, which explains why most food chains have only four to five trophic levels.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit1_food_webs",
+    "unit": "Unit 1",
+    "topicNumber": "1.11c",
+    "topicTitle": "Food Chains and Food Webs",
+    "cedLearningObjective": "ERT-1.K",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B", "3.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["diagram", "network"],
+    "mustKnowConcept": "Food webs are interconnected networks of food chains showing multiple feeding relationships in an ecosystem; they are more realistic than simple food chains because most organisms consume and are consumed by multiple species.",
+    "diagramDescription": "A food web diagram with arrows pointing from prey to predator, showing interconnected feeding relationships among at least 8–10 species across multiple trophic levels in a specific ecosystem.",
+    "specificExamples": [
+      "In a Yellowstone food web: grasses → elk → wolves, but also grasses → rabbits → coyotes, and elk → grizzly bears, showing overlapping connections",
+      "In a marine food web: phytoplankton → krill → penguin → leopard seal → orca, with krill also eaten by baleen whales",
+      "Omnivores like black bears occupy multiple trophic levels — eating berries (primary consumer) and salmon (secondary/tertiary consumer)",
+      "Keystone species like sea otters maintain food web structure — their removal allows sea urchin populations to explode and destroy kelp forests"
+    ],
+    "causes": [
+      "Most organisms have varied diets and multiple predators, creating complex interconnected feeding networks",
+      "Seasonal changes in food availability cause organisms to shift prey species, increasing web complexity",
+      "Generalist species connect multiple food chains by feeding at different trophic levels"
+    ],
+    "effects": [
+      "Complex food webs are more resilient to disturbance — if one prey species declines, predators can switch to alternative food sources",
+      "Simple food chains (e.g., island ecosystems) are more vulnerable to disruption because the loss of one species cascades directly through the chain",
+      "Trophic cascades propagate through food webs — removal of wolves in Yellowstone caused elk overgrazing, which degraded stream banks and reduced songbird habitat"
+    ],
+    "humanImpacts": [
+      "Overfishing of Atlantic cod collapsed the Northwest Atlantic food web, allowing prey species like shrimp and crab to increase",
+      "Pesticide bioaccumulation (DDT) through the food web caused eggshell thinning in bald eagles and peregrine falcons at the top of the food chain",
+      "Removal of keystone species simplifies food webs and reduces overall ecosystem biodiversity"
+    ],
+    "solutions": [
+      "Protect keystone species whose presence maintains food web integrity (e.g., sea otters, wolves, prairie dogs)",
+      "Implement ecosystem-based fisheries management that considers food web interactions rather than single-species harvest quotas",
+      "Ban persistent organic pollutants (POPs) that bioaccumulate through food webs, as accomplished by the Stockholm Convention"
+    ],
+    "graphConnection": {
+      "graphType": "network diagram or food web",
+      "xAxis": "Species nodes",
+      "yAxis": "Trophic connections (arrows from prey to predator)",
+      "trend": "More complex webs (more connections per species) tend to be more stable and resilient to perturbations",
+      "possibleCalculation": "Count the number of direct and indirect pathways through which energy can flow from a producer to a top predator"
+    },
+    "frqUse": "Predict what happens to other species in a food web when one species is removed or added; explain trophic cascades using specific named species and ecosystems.",
+    "mcqTrap": "Arrows in food webs point in the direction of energy flow (prey → predator), NOT in the direction of 'who eats whom.' The AP exam may include food webs with arrows pointing from prey to predator, and students must interpret them correctly.",
+    "commonMistake": "Students forget that arrows in food webs show the direction of energy transfer (from organism being eaten to the organism eating it), not 'this species eats that species' — the arrow goes FROM prey TO predator.",
+    "modelSentence": "In the Yellowstone food web, the reintroduction of wolves created a trophic cascade: wolves reduced elk populations, which allowed overgrazed aspen and willow trees to recover, stabilizing stream banks and increasing habitat for beaver and native songbirds.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit2_biodiversity",
+    "unit": "Unit 2",
+    "topicNumber": "2.1",
+    "topicTitle": "Introduction to Biodiversity",
+    "cedLearningObjective": "ERT-2.A",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "graph"],
+    "mustKnowConcept": "Biodiversity includes genetic diversity (variation within a species), species diversity (number and relative abundance of species in an area), and ecosystem diversity (variety of ecosystems in a region).",
+    "diagramDescription": "A three-panel diagram illustrating the three levels of biodiversity: genetic diversity (different alleles within a population), species diversity (different species in a community with species richness and evenness), and ecosystem diversity (different ecosystems in a landscape).",
+    "specificExamples": [
+      "Genetic diversity: cheetahs have extremely low genetic diversity due to a population bottleneck ~10,000 years ago, making them vulnerable to disease",
+      "Species diversity: a tropical rainforest in Ecuador may contain 300+ tree species per hectare, compared to 10–15 in a temperate forest",
+      "Ecosystem diversity: Costa Rica, despite being smaller than West Virginia, contains 12 distinct ecosystem types including cloud forests, mangroves, and coral reefs",
+      "Species richness: the number of different species in an area (e.g., 150 bird species in a forest)",
+      "Species evenness: a forest with 4 equally abundant tree species has higher evenness than one dominated by a single species"
+    ],
+    "causes": [
+      "Geographic isolation and varied environments drive speciation and increase biodiversity over evolutionary time",
+      "Tropical regions have higher biodiversity due to more solar energy, stable climates, and longer evolutionary history without glaciation",
+      "Genetic diversity within populations arises from mutation, sexual reproduction, and gene flow between populations"
+    ],
+    "effects": [
+      "High genetic diversity allows populations to adapt to changing conditions — Irish Potato Famine (1845) resulted from monoculture of genetically uniform potatoes",
+      "High species diversity increases ecosystem resilience — diverse prairies recover from drought faster than monocultures",
+      "High ecosystem diversity across a landscape supports more total species by providing varied habitats and resources"
+    ],
+    "humanImpacts": [
+      "Habitat destruction is the leading cause of biodiversity loss — tropical deforestation eliminates species before they are even discovered",
+      "Agricultural monocultures reduce genetic diversity within crop species, increasing vulnerability to pests and disease (e.g., Gros Michel banana extinction from Panama disease)",
+      "Climate change shifts habitable ranges faster than many species can adapt or migrate, reducing biodiversity"
+    ],
+    "solutions": [
+      "Establish biodiversity hotspot preserves — 36 hotspots cover just 2.5% of land area but contain 50% of endemic plant species",
+      "Maintain seed banks (e.g., Svalbard Global Seed Vault in Norway) to preserve crop genetic diversity",
+      "Implement CITES (Convention on International Trade in Endangered Species) to prevent overexploitation of species through trade"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart or species-area curve",
+      "xAxis": "Habitat area (km²) or ecosystem type",
+      "yAxis": "Number of species (species richness)",
+      "trend": "Species richness increases with area (species-area relationship: S = cAᶻ); tropical ecosystems have the highest species density",
+      "possibleCalculation": "Compare species diversity indices (Shannon-Wiener) between two communities using richness and evenness data"
+    },
+    "frqUse": "Define and distinguish the three levels of biodiversity; explain why biodiversity matters for ecosystem stability; describe threats to biodiversity with specific named examples.",
+    "mcqTrap": "Species diversity includes BOTH richness (number of species) and evenness (relative abundance). A community with 100 species but 95% of individuals from one species has lower diversity than a community with 50 equally abundant species.",
+    "commonMistake": "Students define biodiversity as only the number of species (species richness) and forget about genetic diversity and ecosystem diversity — the AP exam tests all three levels.",
+    "modelSentence": "The low genetic diversity of cheetah populations, caused by a severe population bottleneck approximately 10,000 years ago, makes the species highly susceptible to infectious diseases and reduces its ability to adapt to environmental changes.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit2_ecosystem_services",
+    "unit": "Unit 2",
+    "topicNumber": "2.2",
+    "topicTitle": "Ecosystem Services",
+    "cedLearningObjective": "ERT-2.B",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["table", "comparison"],
+    "mustKnowConcept": "Ecosystem services are benefits that humans derive from ecosystems, categorized as provisioning (food, water, timber), regulating (climate regulation, water purification, pollination), cultural (recreation, spiritual value), and supporting (nutrient cycling, soil formation, primary production).",
+    "diagramDescription": "A four-quadrant table listing the four categories of ecosystem services (provisioning, regulating, cultural, supporting) with 3–4 specific examples in each category.",
+    "specificExamples": [
+      "Provisioning: wild-caught fisheries provide 17% of global animal protein; the Amazon basin provides 20% of global freshwater discharge",
+      "Regulating: wetlands in Louisiana absorb storm surge from hurricanes, preventing an estimated $23.2 billion in annual flood damage",
+      "Regulating: bees and other pollinators contribute approximately $235–577 billion per year globally in crop pollination services",
+      "Cultural: U.S. National Parks attract over 300 million visitors per year, generating $42 billion in economic activity",
+      "Supporting: earthworms and soil microorganisms create topsoil through decomposition at a rate of approximately 1 cm per 500 years"
+    ],
+    "causes": [
+      "Healthy, biodiverse ecosystems generate ecosystem services through natural processes like photosynthesis, decomposition, and water filtration",
+      "Mangrove forests, coral reefs, and wetlands provide coastal protection through their physical structure",
+      "Predator-prey interactions regulate pest populations, reducing the need for chemical pesticides"
+    ],
+    "effects": [
+      "Loss of pollinator populations threatens $235–577 billion in annual crop production globally",
+      "Deforestation in watersheds increases water treatment costs — New York City saved $6–8 billion by protecting the Catskill/Delaware watershed instead of building a filtration plant",
+      "Degradation of coral reefs reduces coastal storm protection and eliminates fisheries worth billions of dollars"
+    ],
+    "humanImpacts": [
+      "Destruction of mangrove forests for shrimp farming removes coastal storm protection — the 2004 Indian Ocean tsunami caused greater damage in areas where mangroves had been removed",
+      "Conversion of wetlands eliminates natural water filtration, increasing downstream water treatment costs",
+      "Pesticide overuse kills natural pest predators, creating pesticide treadmills where more chemicals are needed over time"
+    ],
+    "solutions": [
+      "Implement payments for ecosystem services (PES) — Costa Rica pays landowners to maintain forest cover for carbon sequestration and watershed protection",
+      "Assign economic value to ecosystem services in cost-benefit analyses of development projects",
+      "Restore degraded ecosystems to recover lost services — mangrove restoration for coastal protection is 2–5× cheaper than building seawalls"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart",
+      "xAxis": "Ecosystem service category or specific service",
+      "yAxis": "Estimated economic value ($/yr) or benefit measure",
+      "trend": "Regulating and supporting services often have the highest total economic value but are the most undervalued in traditional economics",
+      "possibleCalculation": "Compare the cost of natural ecosystem services (wetland water filtration) vs. engineered alternatives (water treatment plant)"
+    },
+    "frqUse": "Identify and categorize ecosystem services; assign economic value to a specific service; argue why preserving an ecosystem is more cost-effective than replacing its services with technology.",
+    "mcqTrap": "Supporting services (nutrient cycling, soil formation) underpin all other services but are NOT directly used by humans — the AP exam may ask you to distinguish supporting from provisioning services.",
+    "commonMistake": "Students confuse provisioning services (direct products like food and water) with regulating services (indirect benefits like flood control and climate regulation). Provisioning is tangible; regulating is functional.",
+    "modelSentence": "New York City's decision to invest $1.5 billion in protecting the Catskill/Delaware watershed to naturally filter drinking water, rather than building a $6–8 billion water filtration plant, demonstrates the economic value of regulating ecosystem services.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit2_island_biogeography",
+    "unit": "Unit 2",
+    "topicNumber": "2.3",
+    "topicTitle": "Island Biogeography",
+    "cedLearningObjective": "ERT-2.C",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["graph", "diagram"],
+    "mustKnowConcept": "The theory of island biogeography (MacArthur and Wilson) predicts that species richness on an island is determined by the balance between immigration rate (decreases with distance from mainland) and extinction rate (decreases with island size).",
+    "diagramDescription": "A graph with two curves — immigration rate (decreasing) and extinction rate (increasing) — plotted against number of species on the island, with the equilibrium point where the curves intersect representing the predicted species richness.",
+    "specificExamples": [
+      "The Hawaiian Islands have higher species richness on the larger islands (Big Island of Hawaii) and lower richness on smaller, more isolated islands (Midway Atoll)",
+      "After the 1883 eruption of Krakatoa destroyed all life, the island was recolonized, reaching 271 plant species and 30 bird species by 1934, approaching equilibrium",
+      "Habitat fragments in a deforested landscape function as 'islands' — small forest fragments in the Amazon lose species faster than large ones",
+      "The Channel Islands off California have fewer mammal species than the mainland, with the smallest islands having the fewest species"
+    ],
+    "causes": [
+      "Larger islands have more habitat diversity and larger population sizes, reducing extinction rates",
+      "Islands closer to the mainland receive more immigrants, increasing immigration rates and species richness",
+      "The equilibrium number of species is reached when immigration of new species equals extinction of existing species"
+    ],
+    "effects": [
+      "Large, near islands have the highest equilibrium species richness; small, far islands have the lowest",
+      "Habitat fragmentation creates terrestrial 'islands' surrounded by inhospitable landscape, reducing species richness in fragments",
+      "Edge effects around habitat fragments increase exposure to wind, predators, and invasive species, further reducing interior species"
+    ],
+    "humanImpacts": [
+      "Deforestation fragments continuous forest into isolated patches that function as islands — the Biological Dynamics of Forest Fragments Project in the Amazon showed fragments <10 ha lose 50% of bird species within 15 years",
+      "Urban development creates isolated green spaces (parks) that support fewer species than connected habitat of the same total area",
+      "Roads and highways act as barriers that increase the 'distance' between habitat patches, reducing wildlife movement"
+    ],
+    "solutions": [
+      "Design nature reserves to be large and connected rather than small and isolated (SLOSS debate — Single Large Or Several Small)",
+      "Create wildlife corridors between habitat fragments to increase immigration rates and gene flow (e.g., Yellowstone to Yukon corridor)",
+      "Maintain buffer zones around reserves to reduce edge effects",
+      "Use stepping-stone habitats (small patches between larger reserves) to facilitate species movement"
+    ],
+    "graphConnection": {
+      "graphType": "line graph (two intersecting curves)",
+      "xAxis": "Number of species on island",
+      "yAxis": "Rate of immigration or extinction",
+      "trend": "Immigration rate decreases as species accumulate (fewer new species to arrive); extinction rate increases as species accumulate (more competition). Equilibrium at intersection.",
+      "possibleCalculation": "Predict relative species richness of islands of different sizes and distances from mainland based on the model"
+    },
+    "frqUse": "Apply island biogeography to habitat fragmentation; explain why large, connected reserves support more species; predict how changing island size or distance affects species richness.",
+    "mcqTrap": "Large, NEAR islands have the MOST species; small, FAR islands have the FEWEST. Students often reverse the distance relationship — being farther from the mainland DECREASES immigration and thus DECREASES species richness.",
+    "commonMistake": "Students think island biogeography only applies to actual oceanic islands — it applies equally to any isolated habitat patch, including mountaintop ecosystems, lakes, and forest fragments surrounded by agriculture.",
+    "modelSentence": "According to the theory of island biogeography, a large forest fragment near continuous habitat will maintain higher species richness than a small, isolated fragment because it has lower extinction rates due to larger area and higher immigration rates due to proximity to source populations.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit2_ecological_tolerance",
+    "unit": "Unit 2",
+    "topicNumber": "2.4",
+    "topicTitle": "Ecological Tolerance",
+    "cedLearningObjective": "ERT-2.D",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B"],
+    "examWeightRelevance": "medium",
+    "visualType": ["graph", "bell curve"],
+    "mustKnowConcept": "Each species has a range of tolerance for abiotic factors (temperature, pH, salinity, dissolved oxygen); organisms function best near the optimum and experience stress or death beyond their upper and lower limits of tolerance.",
+    "diagramDescription": "A bell-shaped tolerance curve with the x-axis showing an environmental variable (e.g., temperature) and the y-axis showing population size or organism performance, labeled with zones of intolerance, stress, and optimum.",
+    "specificExamples": [
+      "Brook trout in Appalachian streams require water temperatures between 0–24°C, with an optimum of 12–16°C — they cannot survive in streams warmed by deforestation",
+      "Saguaro cacti can only survive in the Sonoran Desert where temperatures rarely drop below −8°C — a single hard freeze kills them",
+      "Salmon require dissolved oxygen levels above 6 mg/L and are among the first species to disappear from oxygen-depleted waters",
+      "Mangroves tolerate high salinity (salt-tolerant halophytes) that excludes most tree species from coastal tidal zones"
+    ],
+    "causes": [
+      "Natural selection shapes the tolerance range of each species to match the abiotic conditions of its native habitat",
+      "Enzymes denature and metabolic processes fail outside an organism's tolerance range, reducing fitness or causing death",
+      "Limiting factors — the abiotic factor closest to an organism's tolerance limit — determine species distribution"
+    ],
+    "effects": [
+      "Species with narrow tolerance ranges (stenothermal, stenohaline) are more vulnerable to environmental changes",
+      "Species with wide tolerance ranges (eurythermal, euryhaline) can occupy more diverse habitats and are more resilient to change",
+      "Climate change is shifting temperature zones faster than many species can migrate, pushing them beyond their tolerance limits"
+    ],
+    "humanImpacts": [
+      "Thermal pollution from power plant cooling water raises stream temperatures beyond the tolerance of cold-water fish like trout",
+      "Acid rain lowers lake pH below the tolerance of sensitive species — lakes in the Adirondacks lost brook trout when pH dropped below 5.0",
+      "Climate change is pushing coral reef temperatures beyond the 1–2°C upper tolerance limit for coral-zooxanthellae symbiosis, causing bleaching"
+    ],
+    "solutions": [
+      "Use indicator species (organisms with narrow tolerance ranges) to monitor environmental quality — the presence of stonefly nymphs indicates high water quality",
+      "Regulate thermal pollution by requiring cooling towers or ponds for power plant effluent",
+      "Maintain riparian shade along streams to buffer water temperature increases",
+      "Reduce CO₂ emissions to slow climate change and prevent pushing species beyond their thermal tolerance"
+    ],
+    "graphConnection": {
+      "graphType": "bell curve (tolerance curve)",
+      "xAxis": "Environmental variable (temperature, pH, salinity, dissolved oxygen)",
+      "yAxis": "Population size, growth rate, or organism performance",
+      "trend": "Performance peaks at the optimum and declines toward lower and upper limits of tolerance, forming a bell-shaped curve",
+      "possibleCalculation": "Determine which species can survive a given environmental change based on tolerance curves; identify the limiting factor"
+    },
+    "frqUse": "Interpret tolerance curves to predict species response to environmental change; identify limiting factors; explain why some species are more vulnerable to climate change based on their tolerance range width.",
+    "mcqTrap": "The AP exam may show overlapping tolerance curves for two species and ask which will be more affected by a specific temperature increase — the species with the narrower curve (specialist) is more vulnerable.",
+    "commonMistake": "Students confuse tolerance range (the full range of conditions a species can survive in) with optimal range (the narrow range where the species performs best). Species can survive outside their optimum but with reduced fitness.",
+    "modelSentence": "Brook trout have a narrow thermal tolerance range with an optimum of 12–16°C, so thermal pollution from a power plant that raises stream temperature above 24°C will exceed their upper limit of tolerance and eliminate the local population.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit2_natural_disruptions",
+    "unit": "Unit 2",
+    "topicNumber": "2.5",
+    "topicTitle": "Natural Disruptions to Ecosystems",
+    "cedLearningObjective": "ERT-2.E",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "timeline"],
+    "mustKnowConcept": "Natural disruptions (wildfires, hurricanes, floods, volcanic eruptions, drought, earthquakes) alter ecosystem structure and can maintain biodiversity by creating habitat heterogeneity and resetting succession.",
+    "diagramDescription": "A comparison table of natural disruptions showing the type of disturbance, its cause, ecological effect, recovery process (primary vs. secondary succession), and an example ecosystem affected.",
+    "specificExamples": [
+      "The 1988 Yellowstone fires burned 793,000 acres but triggered nutrient release and regeneration — lodgepole pine cones open only with fire (serotiny)",
+      "Hurricane Katrina (2005) destroyed 320 million trees in Gulf Coast forests but created canopy gaps that allowed light-loving pioneer species to establish",
+      "The 1980 eruption of Mount St. Helens destroyed all life within the blast zone, initiating primary succession that ecologists have studied for 40+ years",
+      "Seasonal flooding of the Nile River historically deposited nutrient-rich silt on floodplains, supporting Egyptian agriculture for millennia"
+    ],
+    "causes": [
+      "Tectonic activity causes earthquakes and volcanic eruptions that destroy existing ecosystems",
+      "Climate patterns produce drought cycles, hurricanes, and extreme precipitation events",
+      "Lightning ignites natural wildfires that are essential for fire-adapted ecosystems like longleaf pine savannas and chaparral"
+    ],
+    "effects": [
+      "Moderate disturbance increases biodiversity by creating a mosaic of habitats at different successional stages (intermediate disturbance hypothesis)",
+      "Fire-dependent ecosystems (chaparral, longleaf pine savanna) require periodic fire to maintain species composition — fire suppression leads to species loss",
+      "Large-scale volcanic eruptions deposit nutriite-rich ash that improves soil fertility for centuries"
+    ],
+    "humanImpacts": [
+      "Fire suppression in western U.S. forests allowed fuel accumulation, leading to more intense, catastrophic megafires",
+      "Levee construction along the Mississippi River prevents natural flooding, reducing floodplain nutrient deposition and wetland habitat",
+      "Climate change increases the frequency and intensity of hurricanes, droughts, and wildfires beyond natural variability"
+    ],
+    "solutions": [
+      "Implement prescribed burns to mimic natural fire regimes and reduce dangerous fuel loads in fire-adapted ecosystems",
+      "Restore natural floodplain connectivity by removing or setting back levees to allow periodic flooding",
+      "Design forest management plans that incorporate natural disturbance regimes rather than suppressing all disturbances"
+    ],
+    "graphConnection": {
+      "graphType": "line graph or hump-shaped curve",
+      "xAxis": "Disturbance frequency or intensity",
+      "yAxis": "Species diversity",
+      "trend": "Intermediate disturbance hypothesis: species diversity peaks at moderate disturbance levels — too little leads to competitive exclusion, too much eliminates sensitive species",
+      "possibleCalculation": "Predict diversity changes after a disturbance event based on the intermediate disturbance hypothesis"
+    },
+    "frqUse": "Describe how a specific natural disruption alters an ecosystem; explain the intermediate disturbance hypothesis; argue why fire suppression can be ecologically harmful in fire-adapted ecosystems.",
+    "mcqTrap": "Natural disruptions are NOT always bad for ecosystems — the AP exam tests whether students understand that moderate disturbance (e.g., periodic fire) can actually INCREASE biodiversity through the intermediate disturbance hypothesis.",
+    "commonMistake": "Students assume all natural disturbances are destructive and harmful. In reality, many ecosystems depend on periodic disturbance — longleaf pine forests, for example, require fire every 2–5 years to prevent hardwood encroachment.",
+    "modelSentence": "The 1988 Yellowstone fires, though initially perceived as catastrophic, were a natural disturbance that triggered nutrient cycling, opened serotinous lodgepole pine cones, and created a mosaic of successional stages that increased habitat diversity across the landscape.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit2_adaptations",
+    "unit": "Unit 2",
+    "topicNumber": "2.6",
+    "topicTitle": "Adaptations",
+    "cedLearningObjective": "ERT-2.F",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "diagram"],
+    "mustKnowConcept": "Adaptations are heritable traits that increase an organism's fitness in its environment; they arise through natural selection and include structural (physical features), behavioral (actions), and physiological (internal processes) adaptations.",
+    "diagramDescription": "A three-column comparison diagram showing examples of structural, behavioral, and physiological adaptations with illustrations and labeled descriptions for each type.",
+    "specificExamples": [
+      "Structural: the thick waxy cuticle and deep taproot of desert cacti minimize water loss and access deep groundwater",
+      "Behavioral: monarch butterflies migrate 4,000 km from Canada to central Mexico annually to avoid freezing winter temperatures",
+      "Physiological: arctic fish produce antifreeze glycoproteins in their blood that prevent ice crystal formation at subzero temperatures",
+      "Structural: the countershading of great white sharks (dark dorsal, light ventral) provides camouflage from prey above and below",
+      "Behavioral: arctic ground squirrels hibernate for 7–8 months, reducing metabolic rate by 90% to survive long winters with no food"
+    ],
+    "causes": [
+      "Natural selection favors individuals with traits that improve survival and reproduction in a specific environment",
+      "Environmental pressures (predation, climate, resource scarcity) drive the evolution of adaptations over many generations",
+      "Coevolution between species (e.g., predator-prey arms races) drives reciprocal adaptations"
+    ],
+    "effects": [
+      "Well-adapted species dominate their niche, while poorly adapted species are outcompeted or go locally extinct",
+      "Mimicry adaptations like Batesian mimicry (harmless viceroy butterfly resembles toxic monarch) provide survival advantages",
+      "Convergent evolution produces similar adaptations in unrelated species facing similar environmental pressures (e.g., streamlined body shape in dolphins and sharks)"
+    ],
+    "humanImpacts": [
+      "Rapid environmental change from climate warming may outpace the ability of many species to adapt, especially those with long generation times",
+      "Pesticide use drives the evolution of resistant pest populations (e.g., DDT-resistant mosquitoes emerged within a decade of widespread DDT use)",
+      "Antibiotic overuse selects for resistant bacteria (MRSA), demonstrating how human actions drive maladaptive evolutionary outcomes"
+    ],
+    "solutions": [
+      "Maintain genetic diversity in populations through habitat corridors and large reserve areas to provide the raw material for adaptation",
+      "Reduce the rate of environmental change (e.g., slow climate change through emissions reduction) to give species more time to adapt",
+      "Rotate pesticides and antibiotics to slow the evolution of resistance"
+    ],
+    "graphConnection": {
+      "graphType": "bar chart or comparison diagram",
+      "xAxis": "Trait variant or environment type",
+      "yAxis": "Fitness or survival rate",
+      "trend": "Organisms with traits matching their environment have higher fitness; mismatched organisms have lower survival",
+      "possibleCalculation": "Compare survival rates of adapted vs. non-adapted organisms in a specific environment"
+    },
+    "frqUse": "Classify an adaptation as structural, behavioral, or physiological; explain how natural selection led to a specific adaptation; describe how rapid environmental change threatens species that cannot adapt fast enough.",
+    "mcqTrap": "Adaptations are the result of natural selection acting on populations over generations — individual organisms do NOT adapt within their lifetime. The AP exam tests whether students understand that adaptation is a population-level evolutionary process.",
+    "commonMistake": "Students say 'the organism adapted to its environment' as if it was a conscious choice. Adaptation occurs through natural selection over many generations — individuals with beneficial traits survive and reproduce more, passing those traits to offspring.",
+    "modelSentence": "The antifreeze glycoproteins produced by Antarctic icefish represent a physiological adaptation that prevents ice crystal formation in their blood, allowing them to survive in water temperatures of −1.8°C that would be lethal to most fish species.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit2_ecological_succession",
+    "unit": "Unit 2",
+    "topicNumber": "2.7",
+    "topicTitle": "Ecological Succession",
+    "cedLearningObjective": "ERT-2.G",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A", "3.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["timeline", "diagram"],
+    "mustKnowConcept": "Ecological succession is the predictable, directional change in community composition over time; primary succession begins on bare substrate (no soil), while secondary succession begins on disturbed land with existing soil.",
+    "diagramDescription": "A timeline diagram showing primary succession stages (bare rock → lichens → mosses → grasses → shrubs → trees → climax community) and secondary succession stages (disturbed land with soil → grasses/herbs → shrubs → young forest → climax community).",
+    "specificExamples": [
+      "Primary succession: after the retreat of a glacier in Glacier Bay, Alaska, bare rock was colonized by lichens, then mosses, alder, spruce, and eventually hemlock over 200+ years",
+      "Primary succession: the 1963 formation of Surtsey Island (volcanic island off Iceland) has been studied for 60+ years as primary succession unfolds",
+      "Secondary succession: an abandoned agricultural field in the Piedmont region of North Carolina progresses from crabgrass → horseweed → broomsedge → pine forest → oak-hickory climax forest over 150 years",
+      "Pioneer species: lichens and mosses are pioneer species in primary succession because they can colonize bare rock and begin soil formation through weathering"
+    ],
+    "causes": [
+      "Pioneer species modify the environment (e.g., lichens weather rock, legumes fix nitrogen) in ways that facilitate colonization by later species",
+      "Competition shifts as succession progresses — shade-tolerant species eventually outcompete shade-intolerant pioneers",
+      "Soil development during succession increases water retention, nutrient availability, and microbial diversity"
+    ],
+    "effects": [
+      "Species diversity generally increases during succession, peaks at intermediate stages, and may decline slightly at climax as competitive dominants take over",
+      "Biomass and structural complexity increase throughout succession from pioneer to climax community",
+      "Primary succession takes much longer than secondary succession (centuries vs. decades) because soil must be created from scratch"
+    ],
+    "humanImpacts": [
+      "Clearing land for agriculture resets succession to an early stage that must be constantly maintained through mowing, tilling, or herbicides",
+      "Mountaintop removal mining destroys soil and resets succession to primary succession, which takes centuries to recover",
+      "Abandoned urban lots undergo secondary succession — researchers in Detroit documented ruderal species colonizing vacant lots within 2–3 years"
+    ],
+    "solutions": [
+      "Allow secondary succession in abandoned agricultural areas to restore native ecosystems (rewilding)",
+      "Accelerate succession by planting native pioneer species in degraded areas",
+      "Use controlled burns to maintain fire-adapted communities at specific successional stages rather than allowing progression to climax"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time (years)",
+      "yAxis": "Species diversity, biomass, or soil depth",
+      "trend": "All three increase over time during succession, with secondary succession starting at a higher baseline than primary succession",
+      "possibleCalculation": "Compare the rate of species accumulation in primary vs. secondary succession"
+    },
+    "frqUse": "Distinguish primary from secondary succession; identify the successional stage of a given community; explain how pioneer species modify the environment for later species; predict the climax community for a given biome.",
+    "mcqTrap": "Primary succession starts on bare rock or newly formed land with NO soil. Secondary succession starts on disturbed land WITH soil. If a question describes a forest fire but the soil remains intact, it is secondary succession, not primary.",
+    "commonMistake": "Students confuse primary and secondary succession. The key distinction is whether soil is present: primary succession begins without soil (bare rock, lava, sand dunes), while secondary succession begins with existing soil (after fire, logging, or abandonment).",
+    "modelSentence": "After the 1980 eruption of Mount St. Helens destroyed all life and soil in the blast zone, primary succession began with colonization by wind-dispersed pioneer species like lupines, which fixed nitrogen and facilitated soil development for later successional species.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit2_invasive_species",
+    "unit": "Unit 2",
+    "topicNumber": "2.8",
+    "topicTitle": "Invasive Species",
+    "cedLearningObjective": "ERT-2.H",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B", "5.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "graph"],
+    "mustKnowConcept": "Invasive species are non-native organisms introduced to new ecosystems where they lack natural predators and outcompete native species, often causing ecological and economic damage; they thrive because of high reproductive rates, generalist diets, and absence of population controls.",
+    "diagramDescription": "A before-and-after diagram showing a native ecosystem with balanced species interactions, then the same ecosystem after an invasive species introduction showing displaced natives, reduced biodiversity, and altered food web structure.",
+    "specificExamples": [
+      "Zebra mussels (Dreissena polymorpha), introduced to the Great Lakes via ship ballast water from the Caspian Sea in 1988, filter-feed on phytoplankton and outcompete native mussels, costing $1 billion per year in damages",
+      "Burmese pythons in the Florida Everglades, released from the pet trade, have caused 90–99% declines in raccoon, opossum, and rabbit populations",
+      "Kudzu vine, introduced from Japan to the U.S. Southeast for erosion control, grows up to 30 cm/day and smothers native vegetation",
+      "Asian carp in the Mississippi River basin outcompete native fish for plankton and threaten to invade the Great Lakes",
+      "Brown tree snakes introduced to Guam after WWII eliminated 10 of 12 native forest bird species through predation"
+    ],
+    "causes": [
+      "Global trade and shipping transport organisms to new habitats via ballast water, packing materials, and cargo",
+      "Intentional introduction for pest control, erosion control, or the pet trade often has unintended consequences",
+      "Invasive species succeed because they lack coevolved natural predators, parasites, and diseases in the new habitat"
+    ],
+    "effects": [
+      "Invasive species are the second-leading cause of species extinction globally, after habitat destruction",
+      "Invasive species alter ecosystem processes — nitrogen-fixing invasive trees in Hawaii change soil chemistry and exclude native species",
+      "Economic costs of invasive species in the U.S. exceed $120 billion per year in damage and control efforts"
+    ],
+    "humanImpacts": [
+      "Ballast water discharge from international shipping is the primary vector for aquatic invasive species introduction",
+      "Pet trade releases (Burmese pythons, lionfish, red-eared slider turtles) introduce predators to ecosystems lacking defenses",
+      "Agricultural imports can carry invasive insects — the emerald ash borer, introduced in wood packing from Asia, has killed hundreds of millions of ash trees in North America"
+    ],
+    "solutions": [
+      "Implement strict ballast water treatment regulations for international shipping to prevent aquatic invasive introductions",
+      "Conduct early detection and rapid response (EDRR) programs to identify and eradicate new invasions before they establish",
+      "Use biological control agents carefully — introducing a natural predator from the invasive species' native range (e.g., using Cactoblastis moths to control invasive prickly pear in Australia)",
+      "Ban import and sale of known invasive species through the Lacey Act and state regulations"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time (years since introduction)",
+      "yAxis": "Population size (invasive species and native species)",
+      "trend": "Invasive species population shows exponential growth (J-curve), while native competitor/prey populations decline simultaneously",
+      "possibleCalculation": "Estimate the rate of spread of an invasive species from population data over time"
+    },
+    "frqUse": "Describe how a specific invasive species disrupts its new ecosystem; explain why it succeeds (no predators, high reproductive rate); propose control strategies with supporting evidence.",
+    "mcqTrap": "Not all non-native species are invasive — a species is invasive only if it causes ecological or economic harm. The AP exam may include a non-native species that coexists without harm as a distractor.",
+    "commonMistake": "Students use 'non-native' and 'invasive' interchangeably. A species must be non-native AND cause ecological or economic harm to be considered invasive. Many non-native species (wheat, cattle) are not invasive.",
+    "modelSentence": "Zebra mussels, introduced to the Great Lakes via ballast water from the Caspian Sea, are invasive because they lack natural predators, reproduce rapidly (each female produces up to one million eggs per year), and outcompete native mussels for food and space, costing approximately $1 billion per year in economic damages.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_generalist_specialist",
+    "unit": "Unit 3",
+    "topicNumber": "3.1",
+    "topicTitle": "Generalist and Specialist Species",
+    "cedLearningObjective": "ERT-3.A",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B"],
+    "examWeightRelevance": "medium",
+    "visualType": ["comparison", "bell curve"],
+    "mustKnowConcept": "Generalist species have broad niches, tolerate a wide range of conditions, and use many different resources; specialist species have narrow niches, tolerate a narrow range of conditions, and depend on specific resources.",
+    "diagramDescription": "Two overlapping tolerance curves — one wide and flat (generalist) and one tall and narrow (specialist) — illustrating the niche breadth difference, with examples of each species type.",
+    "specificExamples": [
+      "Generalist: raccoons eat insects, fruits, garbage, pet food, and bird eggs; they thrive in forests, suburbs, and cities across North America",
+      "Specialist: koalas eat only eucalyptus leaves from a few of the 700+ eucalyptus species, making them entirely dependent on eucalyptus forests",
+      "Generalist: white-tailed deer live in forests, grasslands, suburban areas, and farmlands and eat grasses, crops, acorns, and garden plants",
+      "Specialist: giant pandas depend almost exclusively on bamboo (99% of diet) and are restricted to temperate bamboo forests in central China",
+      "Generalist: coyotes have expanded their range from western prairies to all 50 U.S. states, adapting to diverse habitats and food sources"
+    ],
+    "causes": [
+      "Stable, predictable environments favor specialists that are highly efficient at exploiting specific resources",
+      "Variable, unpredictable environments favor generalists that can switch resources when conditions change",
+      "Evolutionary trade-offs: specialization increases efficiency in one niche but reduces flexibility to use alternative resources"
+    ],
+    "effects": [
+      "Specialists are more vulnerable to extinction because loss of their specific resource eliminates their survival basis",
+      "Generalists are more resilient to environmental change and can often exploit disturbed habitats",
+      "Specialist pollinators (orchid bees, fig wasps) maintain critical mutualisms — their loss threatens the plant species they pollinate"
+    ],
+    "humanImpacts": [
+      "Habitat destruction disproportionately threatens specialists — deforestation in Australia threatens koalas while generalists like possums adapt",
+      "Climate change pushes specialists past their narrow tolerance limits faster than generalists",
+      "Urbanization favors generalists (rats, pigeons, raccoons, coyotes) while displacing specialists"
+    ],
+    "solutions": [
+      "Protect specific habitats required by specialist species (e.g., conserve bamboo forests for giant pandas)",
+      "Maintain habitat diversity within reserves to support both generalist and specialist species",
+      "Create species-specific recovery plans for endangered specialists (e.g., planting milkweed for monarch butterflies)"
+    ],
+    "graphConnection": {
+      "graphType": "bell curves (niche breadth comparison)",
+      "xAxis": "Environmental variable or resource type",
+      "yAxis": "Resource use intensity or population abundance",
+      "trend": "Generalists have wide, flat curves; specialists have narrow, tall curves centered on a specific resource or condition",
+      "possibleCalculation": "Compare niche breadth of two species from resource use data"
+    },
+    "frqUse": "Classify a given species as generalist or specialist; explain why specialists are more vulnerable to environmental change; predict which type will thrive in a disturbed ecosystem.",
+    "mcqTrap": "Being a generalist is NOT always better — specialists are highly efficient in stable environments and may outcompete generalists for a specific resource. The AP exam tests understanding that each strategy has advantages.",
+    "commonMistake": "Students think all specialists are endangered and all generalists are thriving. While specialists are more vulnerable to change, many thrive in stable environments (e.g., fig wasps have survived for millions of years).",
+    "modelSentence": "Giant pandas are specialist species that depend almost exclusively on bamboo, which constitutes 99% of their diet, making them highly vulnerable to habitat loss from deforestation in their restricted range in central China's temperate bamboo forests.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_r_k_selection",
+    "unit": "Unit 3",
+    "topicNumber": "3.2",
+    "topicTitle": "K-selected and r-selected Species",
+    "cedLearningObjective": "ERT-3.B",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B"],
+    "examWeightRelevance": "high",
+    "visualType": ["comparison", "table"],
+    "mustKnowConcept": "r-selected species maximize reproductive rate with many small offspring and little parental care (insects, rodents, weeds); K-selected species invest in fewer, larger offspring with extensive parental care and live near carrying capacity (elephants, whales, humans).",
+    "diagramDescription": "A comparison table showing r-selected vs. K-selected species characteristics: offspring number, body size, lifespan, parental care, maturation rate, population growth curve shape (J-curve vs. S-curve), and example species for each.",
+    "specificExamples": [
+      "r-selected: a single female oyster releases up to 100 million eggs per year, with no parental care and extremely high juvenile mortality",
+      "K-selected: African elephants have a 22-month gestation period, produce one calf at a time, and provide 10+ years of maternal care",
+      "r-selected: dandelions produce thousands of wind-dispersed seeds annually, colonizing disturbed habitats rapidly",
+      "K-selected: blue whales live 80–90 years, reach sexual maturity at 5–10 years, and produce one calf every 2–3 years",
+      "r-selected: bacteria can divide every 20 minutes under optimal conditions, reaching billions in hours"
+    ],
+    "causes": [
+      "Unpredictable, disturbed environments favor r-selected species because rapid reproduction allows quick colonization",
+      "Stable, competitive environments favor K-selected species because investment in fewer, better-provisioned offspring increases survival in crowded conditions",
+      "Life history trade-offs: energy allocated to many offspring cannot also be invested in parental care or long lifespan"
+    ],
+    "effects": [
+      "r-selected species experience boom-bust population cycles with frequent overshooting and crashes (J-curve)",
+      "K-selected species maintain relatively stable populations near carrying capacity (S-curve with logistic growth)",
+      "K-selected species are more vulnerable to population decline because their slow reproduction makes recovery difficult"
+    ],
+    "humanImpacts": [
+      "K-selected species like elephants, whales, and rhinoceroses are more vulnerable to overharvesting because their slow reproductive rate cannot replace lost individuals quickly",
+      "Invasive r-selected species (rats, zebra mussels, kudzu) colonize disturbed habitats created by human activity",
+      "Pest species are often r-selected, making chemical control difficult because they reproduce faster than pesticides can eliminate them"
+    ],
+    "solutions": [
+      "Focus conservation efforts on K-selected species that are most vulnerable to population decline (e.g., whale hunting moratoriums, elephant ivory bans)",
+      "Control r-selected invasive species through integrated pest management rather than relying solely on pesticides",
+      "Protect breeding habitat for K-selected species to maximize reproductive success of each individual"
+    ],
+    "graphConnection": {
+      "graphType": "line graph (population growth curves)",
+      "xAxis": "Time",
+      "yAxis": "Population size",
+      "trend": "r-selected: J-shaped exponential growth followed by crash; K-selected: S-shaped logistic growth leveling at carrying capacity (K)",
+      "possibleCalculation": "Calculate population doubling time for an r-selected species given growth rate"
+    },
+    "frqUse": "Classify a given species as r-selected or K-selected; explain why K-selected species are more vulnerable to extinction; predict which reproductive strategy is favored in a disturbed vs. stable environment.",
+    "mcqTrap": "Most species fall on a continuum between r and K — the AP exam may describe a species with characteristics of both (e.g., sea turtles: many eggs but long lifespan) and ask students to identify the dominant strategy.",
+    "commonMistake": "Students treat r-selection and K-selection as a strict binary. In reality, most species fall along a continuum — sea turtles lay hundreds of eggs (r-trait) but live 50+ years (K-trait).",
+    "modelSentence": "African elephants are K-selected species with a 22-month gestation period, single offspring per birth, and over a decade of parental care, which means that poaching-driven population declines cannot be quickly reversed, making conservation intervention critical.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_survivorship_curves",
+    "unit": "Unit 3",
+    "topicNumber": "3.3",
+    "topicTitle": "Survivorship Curves",
+    "cedLearningObjective": "ERT-3.C",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["graph"],
+    "mustKnowConcept": "Survivorship curves show the pattern of mortality in a population: Type I (high survival until old age — humans, elephants), Type II (constant mortality rate — songbirds, squirrels), Type III (high juvenile mortality with few survivors — oysters, sea turtles, oak trees).",
+    "diagramDescription": "A semi-logarithmic graph with three survivorship curves (Type I convex, Type II diagonal, Type III concave) plotted with age on the x-axis and number of survivors (log scale) on the y-axis, with example species for each curve type.",
+    "specificExamples": [
+      "Type I: humans in developed countries — most individuals survive to old age (75+), with mortality concentrated late in life due to cancer, heart disease",
+      "Type I: elephants — low juvenile mortality due to parental protection, with most individuals dying after age 50",
+      "Type II: American robins — relatively constant mortality rate at all ages; predation, disease, and accidents affect all age classes equally",
+      "Type III: sea turtles — females lay 100–200 eggs per nest, but only about 1 in 1,000 hatchlings survives to adulthood due to predation",
+      "Type III: oak trees — produce thousands of acorns, but the vast majority are eaten or fail to germinate; survivors can live 500+ years"
+    ],
+    "causes": [
+      "Type I curves result from high parental investment, medical care (humans), and low predation on adults",
+      "Type II curves result from age-independent mortality factors like predation and disease affecting all ages equally",
+      "Type III curves result from producing many offspring with minimal parental investment, relying on sheer numbers for some to survive"
+    ],
+    "effects": [
+      "Type I species are most affected by factors that increase adult mortality (pollution, chronic disease, habitat loss)",
+      "Type III species can sustain high harvest rates of adults because their populations depend on a tiny fraction of juveniles surviving",
+      "Type II populations are sensitive to any factor that increases overall mortality rate at any life stage"
+    ],
+    "humanImpacts": [
+      "Overharvesting of adult sea turtles (Type III) is devastating because the few adults that survive are reproductively critical — losing even a small percentage of adults significantly reduces population viability",
+      "Medical advances have shifted human survivorship curves further toward Type I in developed countries",
+      "Pollution affects all survivorship types differently — lead exposure primarily affects juvenile development (shifting Type I toward Type II)"
+    ],
+    "solutions": [
+      "For Type III species, protect nesting habitat and reduce juvenile mortality (e.g., sea turtle nest protection programs, turtle excluder devices on shrimp nets)",
+      "For Type I species, focus conservation on maintaining adult survival and reproductive habitat",
+      "Use survivorship data to design species-specific management plans — different curve types require different conservation strategies"
+    ],
+    "graphConnection": {
+      "graphType": "semi-log line graph",
+      "xAxis": "Age (as percentage of maximum lifespan)",
+      "yAxis": "Number of survivors (logarithmic scale)",
+      "trend": "Type I: convex curve (high early survival, rapid late decline); Type II: straight diagonal line (constant mortality); Type III: concave curve (high early mortality, survivors persist)",
+      "possibleCalculation": "Calculate mortality rate at different life stages from survivorship data; determine which curve type a species follows from life table data"
+    },
+    "frqUse": "Identify the survivorship curve type for a given species; explain how the curve shape relates to reproductive strategy (r vs. K); predict the most effective conservation strategy for each curve type.",
+    "mcqTrap": "The y-axis on survivorship curves is logarithmic, not linear. A straight diagonal line on a log scale represents CONSTANT mortality rate (Type II), not linearly increasing mortality. Students must recognize log-scale interpretation.",
+    "commonMistake": "Students interpret a Type II curve as meaning 'all individuals die at the same age' — it actually means the probability of dying is EQUAL at every age, so individuals die at different ages but with constant risk.",
+    "modelSentence": "Sea turtles exhibit a Type III survivorship curve because females lay 100–200 eggs per nest, but fewer than 1 in 1,000 hatchlings survive to adulthood due to predation by crabs, birds, and fish, meaning that protecting nesting beaches and reducing bycatch of adults are critical conservation strategies.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_carrying_capacity",
+    "unit": "Unit 3",
+    "topicNumber": "3.4",
+    "topicTitle": "Carrying Capacity",
+    "cedLearningObjective": "ERT-3.D",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["graph"],
+    "mustKnowConcept": "Carrying capacity (K) is the maximum population size an environment can sustainably support given available resources; populations that exceed K experience density-dependent limiting factors that reduce growth rate.",
+    "diagramDescription": "A logistic growth curve (S-shaped) showing a population growing exponentially at first, then slowing as it approaches carrying capacity (K), with the K line marked as a horizontal dashed line and density-dependent factors labeled.",
+    "specificExamples": [
+      "The Kaibab Plateau deer population exceeded carrying capacity after predator removal in the 1920s, grew from 4,000 to 100,000, then crashed to 10,000 due to starvation from overgrazing",
+      "Yeast in a culture flask grow exponentially, then level off as nutrients are depleted and waste products accumulate — a classic laboratory demonstration of carrying capacity",
+      "The carrying capacity for the human population is debated — estimates range from 4 to 16 billion depending on technology, consumption patterns, and resource distribution",
+      "Reindeer introduced to St. Matthew Island in the Bering Sea in 1944 grew from 29 to 6,000 by 1963, then crashed to 42 after overgrazing their lichen food source"
+    ],
+    "causes": [
+      "Density-dependent factors (competition for food, water, shelter; disease; predation; waste accumulation) intensify as population approaches K",
+      "Density-independent factors (natural disasters, climate extremes) can reduce population below K regardless of population size",
+      "Resource availability (food, water, nesting sites, territory) sets the upper limit of carrying capacity"
+    ],
+    "effects": [
+      "Populations at or near K experience slower growth rates because birth rates decline and death rates increase",
+      "Populations that overshoot K often crash below it due to resource depletion — this can lead to boom-bust oscillations",
+      "K can change over time as environmental conditions change — drought lowers K, while habitat restoration increases K"
+    ],
+    "humanImpacts": [
+      "Overexploitation of fisheries pushes fish populations below the level at which they can sustain harvest, collapsing the stock (e.g., Atlantic cod collapse in 1992)",
+      "Agricultural technology (Green Revolution) temporarily increased Earth's carrying capacity for humans through synthetic fertilizers and high-yield crop varieties",
+      "Habitat degradation reduces carrying capacity — deforestation decreases K for forest-dependent species"
+    ],
+    "solutions": [
+      "Set sustainable harvest limits based on maximum sustainable yield (MSY), typically at K/2 where population growth rate is highest",
+      "Restore degraded habitat to increase carrying capacity for declining populations",
+      "Manage invasive species that reduce carrying capacity for native species by competing for resources"
+    ],
+    "graphConnection": {
+      "graphType": "line graph (logistic growth / S-curve)",
+      "xAxis": "Time",
+      "yAxis": "Population size (N)",
+      "trend": "Population grows exponentially when small (far below K), growth rate slows as N approaches K, and population stabilizes near K; may oscillate around K",
+      "possibleCalculation": "Logistic growth equation: dN/dt = rN((K−N)/K); calculate growth rate at different population sizes relative to K"
+    },
+    "frqUse": "Define carrying capacity; explain density-dependent vs. density-independent limiting factors; describe an overshoot-and-crash scenario with a specific named population; calculate population growth using the logistic model.",
+    "mcqTrap": "Carrying capacity is NOT fixed — it changes with environmental conditions. The AP exam may present a scenario where K shifts (e.g., drought reduces K) and ask how the population responds.",
+    "commonMistake": "Students think carrying capacity is a permanent, fixed number. K changes with environmental conditions — a drought, disease outbreak, or habitat restoration can lower or raise the carrying capacity of an ecosystem.",
+    "modelSentence": "The reindeer population on St. Matthew Island overshot its carrying capacity when it grew from 29 to 6,000 individuals in 19 years, depleting lichen food resources and crashing to only 42 survivors, demonstrating the consequences of exceeding K in a closed system.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_population_growth",
+    "unit": "Unit 3",
+    "topicNumber": "3.5",
+    "topicTitle": "Population Growth and Resource Availability",
+    "cedLearningObjective": "ERT-3.E",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B", "6.A", "6.B"],
+    "examWeightRelevance": "high",
+    "visualType": ["graph", "comparison"],
+    "mustKnowConcept": "Exponential growth (J-curve, dN/dt = rN) occurs with unlimited resources; logistic growth (S-curve, dN/dt = rN(K−N)/K) occurs when resources are limited; maximum growth rate occurs at K/2.",
+    "diagramDescription": "Two overlaid population growth curves: a J-shaped exponential curve (unlimited resources) and an S-shaped logistic curve (limited resources) with K marked, plus a graph showing growth rate (dN/dt) peaking at N = K/2.",
+    "specificExamples": [
+      "Exponential growth: bacteria in nutrient-rich media double every 20 minutes — 1 cell becomes over 1 billion in 10 hours (before resources run out)",
+      "Logistic growth: the U.S. population of northern elephant seals, reduced to ~20 individuals by hunting in 1890, recovered logistically to ~175,000 by 2010 with protections",
+      "Overshoot and crash: the human-introduced rabbit population in Australia grew exponentially from 24 rabbits in 1859 to hundreds of millions by 1920, devastating native vegetation",
+      "Maximum growth rate at K/2: fisheries management aims to maintain fish stocks at approximately K/2 to maximize sustainable harvest (maximum sustainable yield)"
+    ],
+    "causes": [
+      "Exponential growth occurs when birth rate exceeds death rate in the absence of limiting factors — abundant food, space, and no predators",
+      "Logistic growth occurs as density-dependent factors (competition, disease, predation) increase with population size",
+      "Population growth rate (r) equals birth rate minus death rate plus immigration minus emigration: r = (b − d) + (i − e)"
+    ],
+    "effects": [
+      "Exponential growth cannot continue indefinitely — all populations eventually encounter resource limits",
+      "At K/2, the population grows fastest because there are enough individuals to reproduce but enough resources remain to support growth",
+      "Populations above K decline because death rate exceeds birth rate due to insufficient resources"
+    ],
+    "humanImpacts": [
+      "Human population growth has been approximately exponential for the past 200 years due to agricultural and medical advances, growing from 1 billion (1800) to 8 billion (2022)",
+      "Overfishing drives fish populations below K/2, reducing the population's growth rate and ability to recover",
+      "Land conversion removes habitat and reduces carrying capacity, limiting population growth of native species"
+    ],
+    "solutions": [
+      "Harvest renewable resources at maximum sustainable yield (MSY), which occurs at approximately K/2",
+      "Use contraception and family planning to slow human population growth toward a sustainable level",
+      "Restore habitat to increase K and allow depleted populations to recover through natural growth"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Time or population size (N)",
+      "yAxis": "Population size (N) or growth rate (dN/dt)",
+      "trend": "Exponential: accelerating J-curve; Logistic: S-curve leveling at K; Growth rate: parabola peaking at N = K/2",
+      "possibleCalculation": "Given r = 0.5 and K = 1000, calculate dN/dt when N = 100, N = 500, and N = 900 using the logistic equation"
+    },
+    "frqUse": "Calculate population growth using exponential and logistic equations; interpret growth curves; explain why maximum growth rate occurs at K/2; describe factors that shift a population between exponential and logistic growth.",
+    "mcqTrap": "Maximum population growth rate occurs at K/2, NOT at K. At K, growth rate is zero because (K−N)/K = 0. The AP exam frequently tests this concept with numerical problems.",
+    "commonMistake": "Students think the population grows fastest when it is largest (near K). Actually, the fastest GROWTH RATE (dN/dt) occurs at K/2. At K, the growth rate is zero because resources are fully utilized.",
+    "modelSentence": "According to the logistic growth model, a fish population with r = 0.3 and K = 10,000 grows fastest at N = 5,000 (K/2), where dN/dt = 0.3 × 5,000 × (5,000/10,000) = 750 individuals per time period, which is why fisheries managers aim to maintain stocks at K/2 for maximum sustainable yield.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_age_structure",
+    "unit": "Unit 3",
+    "topicNumber": "3.6",
+    "topicTitle": "Age Structure Diagrams",
+    "cedLearningObjective": "ERT-3.F",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.B", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["diagram", "comparison"],
+    "mustKnowConcept": "Age structure diagrams (population pyramids) show the distribution of a population by age and sex; the shape predicts future population growth: wide base = rapid growth, even columns = slow/zero growth, narrow base = declining population.",
+    "diagramDescription": "Three population pyramids side by side: a wide-base triangle (rapid growth, e.g., Nigeria), a column/rectangle (slow growth, e.g., United States), and an inverted triangle/urn shape (declining population, e.g., Japan), each with age groups on the y-axis and male/female on either side.",
+    "specificExamples": [
+      "Rapid growth: Nigeria has a broad-based pyramid with 43% of the population under age 15 — its population is projected to nearly triple from 220 million (2023) to 550+ million by 2050",
+      "Slow growth: the United States has a roughly columnar age structure with similar numbers in each age group, projecting modest growth",
+      "Declining population: Japan has a narrow-based, top-heavy pyramid with 29% of the population over 65 and a fertility rate of 1.2 (below replacement level of 2.1)",
+      "China's one-child policy (1979–2015) created a visible constriction in the age structure among the 0–35 age group, leading to an aging population crisis"
+    ],
+    "causes": [
+      "High birth rates and declining infant mortality create wide-based pyramids (many developing countries in sub-Saharan Africa)",
+      "Low birth rates and long life expectancy create column-shaped or inverted pyramids (post-demographic transition countries like Japan, Germany)",
+      "Population momentum: even if birth rates drop to replacement level, a wide-based pyramid continues to grow because the large pre-reproductive cohort has not yet had children"
+    ],
+    "effects": [
+      "Countries with wide-based pyramids face pressure on education, healthcare, and job creation for young populations",
+      "Countries with narrow-based pyramids face workforce shortages, strained pension systems, and rising dependency ratios",
+      "Population momentum means a country like India will continue growing for decades even as its total fertility rate approaches replacement level"
+    ],
+    "humanImpacts": [
+      "Government policies (China's one-child policy, pronatalist policies in France and Japan) directly shape age structure over time",
+      "War and disease epidemics create notches in age structure diagrams — the 1918 influenza pandemic and World Wars created visible demographic gaps",
+      "Education of women and access to contraception shift age structures from wide-based to columnar over one to two generations"
+    ],
+    "solutions": [
+      "Invest in education, especially for girls, which is the single most effective factor in reducing birth rates and narrowing the base of population pyramids",
+      "Implement social safety nets for aging populations in countries with declining growth (pensions, elder care)",
+      "Plan infrastructure and public services based on age structure projections — schools for growing populations, healthcare for aging ones"
+    ],
+    "graphConnection": {
+      "graphType": "population pyramid (horizontal bar chart)",
+      "xAxis": "Population size (male on left, female on right)",
+      "yAxis": "Age group (0–4, 5–9, ... 80+)",
+      "trend": "Wide base = rapid growth (high birth rate); column = stable; narrow base = decline (low birth rate, aging population)",
+      "possibleCalculation": "Estimate future population size from the number of pre-reproductive individuals; calculate dependency ratio from age structure data"
+    },
+    "frqUse": "Interpret a population pyramid to predict future growth or decline; explain how age structure creates population momentum; compare pyramids of countries at different stages of the demographic transition.",
+    "mcqTrap": "Population momentum means a country CAN still grow even if its birth rate drops to replacement level (2.1) — the AP exam tests whether students understand that the large pre-reproductive cohort will still produce many children as they age into reproductive years.",
+    "commonMistake": "Students forget about population momentum — they assume that if a country reaches replacement-level fertility (TFR = 2.1), population growth stops immediately. It actually continues for 50–70 years until the age structure adjusts.",
+    "modelSentence": "Nigeria's broad-based age structure diagram, with 43% of its population under age 15, indicates rapid population growth because this large pre-reproductive cohort will enter childbearing years in the coming decades, driving population momentum even if total fertility rate declines.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_total_fertility_rate",
+    "unit": "Unit 3",
+    "topicNumber": "3.7",
+    "topicTitle": "Total Fertility Rate",
+    "cedLearningObjective": "ERT-3.G",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "6.A"],
+    "examWeightRelevance": "medium",
+    "visualType": ["graph", "comparison"],
+    "mustKnowConcept": "Total fertility rate (TFR) is the average number of children born per woman in her lifetime; replacement-level fertility is approximately 2.1 in developed countries; TFR above 2.1 leads to population growth, below 2.1 leads to eventual decline.",
+    "diagramDescription": "A world map or bar chart showing TFR by country or region, with a horizontal line at 2.1 (replacement level) and countries color-coded: above replacement (red/growing) and below replacement (blue/declining).",
+    "specificExamples": [
+      "Niger has the world's highest TFR at approximately 6.7 children per woman, driven by limited access to contraception and education",
+      "South Korea has one of the world's lowest TFR at approximately 0.7 (2024), far below replacement level, leading to severe population decline projections",
+      "The global average TFR has declined from 5.0 in 1950 to approximately 2.3 in 2023, approaching replacement level",
+      "The U.S. TFR has dropped below replacement level to approximately 1.6 (2023), with population growth maintained primarily through immigration"
+    ],
+    "causes": [
+      "Access to education, especially for women, is the strongest predictor of lower TFR — educated women delay childbearing and have fewer children",
+      "Access to modern contraception allows women to control family size — countries with >75% contraceptive use have TFR near or below 2.1",
+      "Urbanization reduces TFR because children are an economic cost in cities (housing, education) rather than an asset (farm labor)",
+      "Cultural, religious, and government policies (pronatalist incentives, one-child policies) influence TFR"
+    ],
+    "effects": [
+      "TFR above replacement leads to population growth and younger age structures, increasing demand for education and jobs",
+      "TFR below replacement leads to aging populations, workforce shortages, and rising dependency ratios",
+      "Declining TFR reduces environmental pressure per generation by slowing resource consumption and land conversion"
+    ],
+    "humanImpacts": [
+      "Government family planning programs in Bangladesh reduced TFR from 6.9 (1971) to 2.0 (2023) through community health workers distributing contraception",
+      "Economic development and urbanization in Brazil reduced TFR from 6.2 (1960) to 1.6 (2023) without a formal one-child policy",
+      "China's one-child policy (1979–2015) reduced TFR from 5.8 to 1.0 but created gender imbalance and an aging population crisis"
+    ],
+    "solutions": [
+      "Invest in girls' education — each additional year of schooling reduces fertility by 0.3–0.5 children per woman on average",
+      "Provide universal access to voluntary family planning and modern contraception",
+      "Implement economic incentives for smaller families (tax benefits, childcare subsidies) in high-TFR countries",
+      "In low-TFR countries, provide parental leave, childcare, and housing subsidies to support families who want children"
+    ],
+    "graphConnection": {
+      "graphType": "line graph or scatter plot",
+      "xAxis": "Year or GDP per capita",
+      "yAxis": "Total fertility rate (children per woman)",
+      "trend": "TFR decreases as countries develop economically and educate women; inverse correlation between GDP per capita and TFR",
+      "possibleCalculation": "Given TFR and population data, estimate whether a country's population is growing, stable, or declining (accounting for immigration)"
+    },
+    "frqUse": "Define TFR and replacement-level fertility; explain factors that increase or decrease TFR; describe how TFR relates to the demographic transition model stages.",
+    "mcqTrap": "Replacement-level fertility is 2.1, not 2.0 — the extra 0.1 accounts for child mortality. Also, TFR below 2.1 does NOT mean population immediately declines — population momentum from a young age structure can sustain growth for decades.",
+    "commonMistake": "Students confuse total fertility rate (TFR, average children per woman over a lifetime) with crude birth rate (births per 1,000 people per year). TFR is a more informative measure because it accounts for the age structure of the population.",
+    "modelSentence": "Bangladesh's total fertility rate dropped from 6.9 in 1971 to 2.0 in 2023, primarily due to community-based family planning programs that provided contraception access to rural women, demonstrating that reducing TFR is achievable even in low-income countries through targeted public health interventions.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_human_population_dynamics",
+    "unit": "Unit 3",
+    "topicNumber": "3.8",
+    "topicTitle": "Human Population Dynamics",
+    "cedLearningObjective": "ERT-3.H",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A", "5.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["graph", "timeline"],
+    "mustKnowConcept": "Human population has grown exponentially since the Industrial Revolution due to advances in agriculture, sanitation, and medicine; current population is ~8 billion and is projected to peak at 9–10 billion by 2050–2100, with growth concentrated in developing nations.",
+    "diagramDescription": "A historical human population growth curve from 10,000 BCE to 2100 CE (projected), showing the dramatic exponential increase starting around 1800, with annotations for key events (Agricultural Revolution, Industrial Revolution, Green Revolution, projected peak).",
+    "specificExamples": [
+      "Human population took 200,000 years to reach 1 billion (1804), then only 123 years to reach 2 billion (1927), and just 12 years to go from 7 to 8 billion (2010–2022)",
+      "The Green Revolution (1960s–1970s) increased grain yields by 2–3× through high-yield crop varieties, irrigation, and synthetic fertilizers, supporting rapid population growth in India and Southeast Asia",
+      "Sub-Saharan Africa's population is projected to double from 1.2 billion (2023) to 2.4 billion by 2050, accounting for over half of global population growth",
+      "Europe's population is projected to decline from 750 million (2023) to 630 million by 2100 due to below-replacement fertility rates"
+    ],
+    "causes": [
+      "The Agricultural Revolution (~10,000 BCE) allowed sedentary farming, increasing food supply and supporting larger populations",
+      "The Industrial Revolution (~1800) improved sanitation, transportation, and manufacturing, reducing death rates",
+      "Medical advances (vaccines, antibiotics, germ theory) dramatically reduced infant and child mortality, increasing life expectancy from ~35 to ~73 years globally"
+    ],
+    "effects": [
+      "8 billion humans consume resources and produce waste at a scale that drives climate change, habitat loss, and mass extinction",
+      "Per capita ecological footprint varies enormously — the average American has an ecological footprint 8× larger than the average Nigerian",
+      "Urbanization concentrates population impacts — over 55% of humans now live in cities, driving demand for energy, water, and food transport"
+    ],
+    "humanImpacts": [
+      "I = P × A × T (IPAT equation): Environmental Impact equals Population × Affluence × Technology — both population size and consumption patterns matter",
+      "Deforestation for agriculture to feed growing populations is the leading driver of biodiversity loss in tropical regions",
+      "Freshwater scarcity affects 2+ billion people as population growth increases demand while climate change reduces supply in many regions"
+    ],
+    "solutions": [
+      "Educate women globally — female education is the strongest single-factor predictor of declining birth rates and slower population growth",
+      "Develop sustainable agriculture that produces more food per hectare without additional land conversion (precision farming, vertical farming)",
+      "Reduce per capita consumption in high-income countries through efficiency improvements and lifestyle changes — addressing the 'A' in IPAT",
+      "Invest in renewable energy and green technology to reduce the environmental impact per unit of economic output — addressing the 'T' in IPAT"
+    ],
+    "graphConnection": {
+      "graphType": "line graph",
+      "xAxis": "Year (10,000 BCE to 2100 CE)",
+      "yAxis": "Global population (billions)",
+      "trend": "Near-flat for most of human history, exponential increase after 1800, projected leveling near 9–10 billion by 2100",
+      "possibleCalculation": "Rule of 70: doubling time = 70/growth rate (%); if growth rate is 1.4%, population doubles in 50 years"
+    },
+    "frqUse": "Describe the historical trajectory of human population growth; apply the IPAT equation to analyze environmental impact; explain why population growth is slowing in some regions but accelerating in others.",
+    "mcqTrap": "The human population is still growing but the RATE of growth has been declining since the 1960s (when it peaked at ~2.1% per year, now ~0.9%). The AP exam distinguishes between growth rate (slowing) and total population (still increasing).",
+    "commonMistake": "Students think that because the growth rate is declining, the population is shrinking. A declining growth RATE means the population is growing MORE SLOWLY, not that it is decreasing. The population continues to increase as long as the growth rate is positive.",
+    "modelSentence": "Using the rule of 70, a country with a population growth rate of 2.0% will double its population in approximately 35 years (70 ÷ 2.0 = 35), which explains why sub-Saharan Africa's population, growing at roughly 2.5%, is projected to double from 1.2 billion to 2.4 billion by approximately 2050.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  },
+  {
+    "id": "unit3_demographic_transition",
+    "unit": "Unit 3",
+    "topicNumber": "3.9",
+    "topicTitle": "Demographic Transition",
+    "cedLearningObjective": "ERT-3.I",
+    "bigIdea": "ERT",
+    "sciencePractices": ["1.A", "2.A", "6.A"],
+    "examWeightRelevance": "high",
+    "visualType": ["graph", "diagram"],
+    "mustKnowConcept": "The demographic transition model describes four stages of population change as countries industrialize: Stage 1 (high birth and death rates, slow growth), Stage 2 (declining death rate, rapid growth), Stage 3 (declining birth rate, slowing growth), Stage 4 (low birth and death rates, slow/zero growth); some models include Stage 5 (birth rate below death rate, population decline).",
+    "diagramDescription": "A four-panel graph showing birth rate and death rate lines across Stages 1–4 (and optional Stage 5), with the area between the lines representing population growth, and named country examples placed at each stage.",
+    "specificExamples": [
+      "Stage 1: no countries currently — pre-industrial societies with high birth and death rates (e.g., medieval Europe, isolated indigenous tribes)",
+      "Stage 2: some sub-Saharan African countries (e.g., Niger, Chad) — death rates declining due to improved sanitation and medicine, birth rates still high, rapid population growth",
+      "Stage 3: countries like India, Brazil, Mexico — birth rates declining due to urbanization, women's education, and contraception access; death rates already low",
+      "Stage 4: United States, France, Australia — low birth and death rates, slow population growth, aging populations",
+      "Stage 5: Japan, Germany, South Korea — birth rates below death rates, population declining without immigration"
+    ],
+    "causes": [
+      "Stage 2 transition occurs when public health improvements (clean water, vaccines, sanitation) reduce death rates before birth rates decline",
+      "Stage 3 transition occurs when urbanization, women's education, and contraceptive access reduce birth rates",
+      "Stage 4 is reached when both birth and death rates are low due to full industrialization, high education, and access to healthcare"
+    ],
+    "effects": [
+      "The lag between death rate decline (Stage 2) and birth rate decline (Stage 3) causes the period of most rapid population growth",
+      "Countries in Stage 4 have aging populations and may face labor shortages, requiring immigration or automation to sustain their economies",
+      "Stage 5 countries face population decline, pension system strain, and potentially contracting economies without policy intervention"
+    ],
+    "humanImpacts": [
+      "Countries stuck in Stage 2 face a 'demographic trap' — rapid population growth outpaces economic development, perpetuating poverty",
+      "The 'demographic dividend' occurs when countries in Stage 3 have a large working-age population relative to dependents, boosting economic growth (e.g., South Korea 1960s–1990s)",
+      "Uneven global demographic transition means some countries face overpopulation while others face depopulation simultaneously"
+    ],
+    "solutions": [
+      "Accelerate the transition through Stage 2 by investing in women's education, contraceptive access, and child survival programs",
+      "Capture the demographic dividend in Stage 3 countries by investing in education and job creation for the large working-age cohort",
+      "Address aging populations in Stage 4–5 through immigration reform, retirement age adjustments, and elder care investment",
+      "Support sustainable development in Stage 2 countries to help them transition through Stage 3 more quickly"
+    ],
+    "graphConnection": {
+      "graphType": "line graph (dual lines: birth rate and death rate)",
+      "xAxis": "Time or Stage (1–5)",
+      "yAxis": "Rate per 1,000 people (birth rate and death rate)",
+      "trend": "Death rate declines first (Stage 2), then birth rate follows (Stage 3); gap between lines represents natural increase; lines converge in Stage 4; birth rate drops below death rate in Stage 5",
+      "possibleCalculation": "Calculate natural increase rate from birth and death rates at each stage; predict which stage a country is in from given demographic data"
+    },
+    "frqUse": "Identify which stage a country is in based on birth and death rate data; explain why the gap between declining death rates and birth rates causes rapid growth in Stage 2; describe factors that push countries from one stage to the next.",
+    "mcqTrap": "In Stage 2, the DEATH rate declines first (not the birth rate). The birth rate remains high while the death rate drops, creating the period of maximum population growth. Students who reverse this get the question wrong.",
+    "commonMistake": "Students confuse which rate declines first in the demographic transition. The DEATH rate declines first in Stage 2 (due to medicine and sanitation), while the BIRTH rate remains high. The birth rate doesn't decline significantly until Stage 3 (due to urbanization and education).",
+    "modelSentence": "Japan exemplifies Stage 5 of the demographic transition, with a total fertility rate of 1.2 (well below the 2.1 replacement level) and 29% of its population over age 65, resulting in a declining population that challenges its pension system and labor market despite being the world's third-largest economy.",
+    "sourceStatus": "CED-based",
+    "confidence": "high"
+  }
+]
